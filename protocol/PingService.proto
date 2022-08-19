@@ -1,0 +1,12 @@
+syntax="proto3";
+
+service PingService {
+  rpc GetFoo (PingFooRequest) returns (PingFooResponse);
+}
+message PingFooRequest {
+  string id = 1;
+}
+message PingFooResponse {
+  string fooName = 1;
+  int64 fooValue = 2;
+}
