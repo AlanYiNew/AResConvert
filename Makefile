@@ -7,8 +7,9 @@ LIBS := -lprotoc\
     -lprotobuf\
 	-lprotobuf-lite
 CPPFLAGS :=
-CXXFLAGS :=-std=c++1y\
-	-I./dep/protobuf-3.21.5/src
+CXXFLAGS :=-std=c++17\
+	-I./dep/protobuf-3.21.5/src\
+	-I./thirdparty/include
 
 
 arpc-gen: $(OBJ_FILES)
