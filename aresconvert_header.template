@@ -1,0 +1,13 @@
+#ifndef ARESCONVERT_{{upper(file_name)}}_
+#define ARESCONVERT_{{upper(file_name)}}_
+
+{% for key, value in messages %}
+struct {{key}} {
+    {% for field_name, field_info in value %}
+    {{field_info.type}} {{field_name}}; //{{field_info.tag}}
+    {% endfor %}
+}
+
+{% endfor %}
+
+#endif

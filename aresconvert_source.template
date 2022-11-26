@@ -1,0 +1,15 @@
+#include <{{file_name}}.h>
+#include "nlohmann/json.hpp"
+
+{% for key, value in messages %}
+bool Load{{key}}({{key}}& to, const json& from) 
+{
+{% for field_name, field_info in value %}
+    {% if not field_info.is_msg %}
+    to.{{field_name}} = from.Get<{{field_info.type}}>(); //{{field_info.tag}}
+    {% else %}
+    Load{{field_info.type}}(to.{{field_name}}, from[{{field_name}}]);
+    {% endif %}
+{% endfor %}
+}
+{% endfor %}

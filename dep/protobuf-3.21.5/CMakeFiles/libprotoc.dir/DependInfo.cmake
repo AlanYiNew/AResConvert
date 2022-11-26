@@ -1,0 +1,116 @@
+# The set of languages for which implicit dependencies are needed:
+set(CMAKE_DEPENDS_LANGUAGES
+  "CXX"
+  )
+# The set of files for implicit dependencies of each language:
+set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/compiler/code_generator.cc" "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/code_generator.cc.o"
+  "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/compiler/command_line_interface.cc" "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/command_line_interface.cc.o"
+  "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/compiler/cpp/enum.cc" "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/cpp/enum.cc.o"
+  "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/compiler/cpp/enum_field.cc" "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/cpp/enum_field.cc.o"
+  "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/compiler/cpp/extension.cc" "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/cpp/extension.cc.o"
+  "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/compiler/cpp/field.cc" "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/cpp/field.cc.o"
+  "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/compiler/cpp/file.cc" "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/cpp/file.cc.o"
+  "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/compiler/cpp/generator.cc" "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/cpp/generator.cc.o"
+  "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/compiler/cpp/helpers.cc" "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/cpp/helpers.cc.o"
+  "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/compiler/cpp/map_field.cc" "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/cpp/map_field.cc.o"
+  "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/compiler/cpp/message.cc" "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/cpp/message.cc.o"
+  "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/compiler/cpp/message_field.cc" "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/cpp/message_field.cc.o"
+  "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/compiler/cpp/padding_optimizer.cc" "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/cpp/padding_optimizer.cc.o"
+  "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/compiler/cpp/parse_function_generator.cc" "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/cpp/parse_function_generator.cc.o"
+  "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/compiler/cpp/primitive_field.cc" "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/cpp/primitive_field.cc.o"
+  "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/compiler/cpp/service.cc" "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/cpp/service.cc.o"
+  "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/compiler/cpp/string_field.cc" "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/cpp/string_field.cc.o"
+  "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/compiler/csharp/csharp_doc_comment.cc" "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/csharp/csharp_doc_comment.cc.o"
+  "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/compiler/csharp/csharp_enum.cc" "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/csharp/csharp_enum.cc.o"
+  "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/compiler/csharp/csharp_enum_field.cc" "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/csharp/csharp_enum_field.cc.o"
+  "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/compiler/csharp/csharp_field_base.cc" "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/csharp/csharp_field_base.cc.o"
+  "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/compiler/csharp/csharp_generator.cc" "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/csharp/csharp_generator.cc.o"
+  "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/compiler/csharp/csharp_helpers.cc" "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/csharp/csharp_helpers.cc.o"
+  "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/compiler/csharp/csharp_map_field.cc" "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/csharp/csharp_map_field.cc.o"
+  "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/compiler/csharp/csharp_message.cc" "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/csharp/csharp_message.cc.o"
+  "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/compiler/csharp/csharp_message_field.cc" "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/csharp/csharp_message_field.cc.o"
+  "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/compiler/csharp/csharp_primitive_field.cc" "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/csharp/csharp_primitive_field.cc.o"
+  "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/compiler/csharp/csharp_reflection_class.cc" "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/csharp/csharp_reflection_class.cc.o"
+  "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/compiler/csharp/csharp_repeated_enum_field.cc" "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/csharp/csharp_repeated_enum_field.cc.o"
+  "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/compiler/csharp/csharp_repeated_message_field.cc" "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/csharp/csharp_repeated_message_field.cc.o"
+  "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/compiler/csharp/csharp_repeated_primitive_field.cc" "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/csharp/csharp_repeated_primitive_field.cc.o"
+  "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/compiler/csharp/csharp_source_generator_base.cc" "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/csharp/csharp_source_generator_base.cc.o"
+  "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/compiler/csharp/csharp_wrapper_field.cc" "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/csharp/csharp_wrapper_field.cc.o"
+  "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/compiler/java/context.cc" "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/context.cc.o"
+  "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/compiler/java/doc_comment.cc" "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/doc_comment.cc.o"
+  "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/compiler/java/enum.cc" "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/enum.cc.o"
+  "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/compiler/java/enum_field.cc" "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/enum_field.cc.o"
+  "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/compiler/java/enum_field_lite.cc" "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/enum_field_lite.cc.o"
+  "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/compiler/java/enum_lite.cc" "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/enum_lite.cc.o"
+  "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/compiler/java/extension.cc" "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/extension.cc.o"
+  "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/compiler/java/extension_lite.cc" "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/extension_lite.cc.o"
+  "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/compiler/java/field.cc" "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/field.cc.o"
+  "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/compiler/java/file.cc" "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/file.cc.o"
+  "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/compiler/java/generator.cc" "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/generator.cc.o"
+  "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/compiler/java/generator_factory.cc" "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/generator_factory.cc.o"
+  "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/compiler/java/helpers.cc" "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/helpers.cc.o"
+  "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/compiler/java/kotlin_generator.cc" "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/kotlin_generator.cc.o"
+  "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/compiler/java/map_field.cc" "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/map_field.cc.o"
+  "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/compiler/java/map_field_lite.cc" "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/map_field_lite.cc.o"
+  "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/compiler/java/message.cc" "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/message.cc.o"
+  "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/compiler/java/message_builder.cc" "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/message_builder.cc.o"
+  "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/compiler/java/message_builder_lite.cc" "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/message_builder_lite.cc.o"
+  "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/compiler/java/message_field.cc" "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/message_field.cc.o"
+  "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/compiler/java/message_field_lite.cc" "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/message_field_lite.cc.o"
+  "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/compiler/java/message_lite.cc" "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/message_lite.cc.o"
+  "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/compiler/java/name_resolver.cc" "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/name_resolver.cc.o"
+  "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/compiler/java/primitive_field.cc" "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/primitive_field.cc.o"
+  "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/compiler/java/primitive_field_lite.cc" "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/primitive_field_lite.cc.o"
+  "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/compiler/java/service.cc" "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/service.cc.o"
+  "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/compiler/java/shared_code_generator.cc" "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/shared_code_generator.cc.o"
+  "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/compiler/java/string_field.cc" "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/string_field.cc.o"
+  "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/compiler/java/string_field_lite.cc" "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/string_field_lite.cc.o"
+  "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/compiler/objectivec/objectivec_enum.cc" "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/objectivec/objectivec_enum.cc.o"
+  "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/compiler/objectivec/objectivec_enum_field.cc" "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/objectivec/objectivec_enum_field.cc.o"
+  "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/compiler/objectivec/objectivec_extension.cc" "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/objectivec/objectivec_extension.cc.o"
+  "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/compiler/objectivec/objectivec_field.cc" "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/objectivec/objectivec_field.cc.o"
+  "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/compiler/objectivec/objectivec_file.cc" "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/objectivec/objectivec_file.cc.o"
+  "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/compiler/objectivec/objectivec_generator.cc" "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/objectivec/objectivec_generator.cc.o"
+  "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/compiler/objectivec/objectivec_helpers.cc" "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/objectivec/objectivec_helpers.cc.o"
+  "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/compiler/objectivec/objectivec_map_field.cc" "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/objectivec/objectivec_map_field.cc.o"
+  "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/compiler/objectivec/objectivec_message.cc" "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/objectivec/objectivec_message.cc.o"
+  "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/compiler/objectivec/objectivec_message_field.cc" "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/objectivec/objectivec_message_field.cc.o"
+  "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/compiler/objectivec/objectivec_oneof.cc" "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/objectivec/objectivec_oneof.cc.o"
+  "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/compiler/objectivec/objectivec_primitive_field.cc" "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/objectivec/objectivec_primitive_field.cc.o"
+  "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/compiler/php/php_generator.cc" "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/php/php_generator.cc.o"
+  "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/compiler/plugin.cc" "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/plugin.cc.o"
+  "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/compiler/plugin.pb.cc" "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/plugin.pb.cc.o"
+  "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/compiler/python/generator.cc" "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/python/generator.cc.o"
+  "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/compiler/python/helpers.cc" "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/python/helpers.cc.o"
+  "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/compiler/python/pyi_generator.cc" "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/python/pyi_generator.cc.o"
+  "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/compiler/ruby/ruby_generator.cc" "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/ruby/ruby_generator.cc.o"
+  "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/compiler/subprocess.cc" "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/subprocess.cc.o"
+  "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/compiler/zip_writer.cc" "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/zip_writer.cc.o"
+  )
+set(CMAKE_CXX_COMPILER_ID "GNU")
+
+# Preprocessor definitions for this target.
+set(CMAKE_TARGET_DEFINITIONS_CXX
+  "GOOGLE_PROTOBUF_CMAKE_BUILD"
+  "HAVE_ZLIB"
+  "LIBPROTOC_EXPORTS"
+  )
+
+# The include file search paths:
+set(CMAKE_CXX_TARGET_INCLUDE_PATH
+  "."
+  "src"
+  "third_party/googletest/googlemock"
+  "third_party/googletest/googletest"
+  "third_party/googletest/googletest/include"
+  "third_party/googletest/googlemock/include"
+  )
+
+# Targets to which this target links.
+set(CMAKE_TARGET_LINKED_INFO_FILES
+  "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles/libprotobuf.dir/DependInfo.cmake"
+  )
+
+# Fortran module output directory.
+set(CMAKE_Fortran_TARGET_MODULE_DIR "")

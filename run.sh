@@ -1,1 +1,1 @@
-./arpc-gen -I=/home/lighthouse/cppworkspace/ARPC/protocol --arpc_out=protocol PingService.proto
+./AResConvert -I=/home/lighthouse/work/cppworkspace/AResConvert/protocol --aresconvert_out=protocol PingService.proto
