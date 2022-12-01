@@ -1,35 +1,61 @@
 #include "aresconvert_generator.h"
+#include "aextension.pb.h"
 #include "inja/inja.hpp"
 #include <iostream>
 
+using namespace nlohmann;
 
 std::string AResConvertGenerator::GetFileName(const std::string& file_name) const
 {
-    string suffix = ".proto";
+    std::string suffix = ".proto";
     return StripSuffixString(file_name, suffix);
 }
 
-using namespace nlohmann;
 bool AResConvertGenerator::Generate(const FileDescriptor* file, 
-                  const string& parameter,
+                  const std::string& parameter,
                   GeneratorContext* generator_context, 
-                  string* error) const
+                  std::string* error) const
 {
     json obj;
     if (!GenerateInfo(file, obj)) return false;
-    auto header_ctx = generator_context->Open(GetFileName(file->name())+ ".h");
-    std::unique_ptr<io::ZeroCopyOutputStream> ptr_header_ctx(header_ctx);
-    Printer header_printer(header_ctx, '$');
-    if (!GenerateHeader(header_printer, obj)) return false;
 
-    auto source_ctx = generator_context->Open(GetFileName(file->name())+ ".cpp");
-    std::unique_ptr<io::ZeroCopyOutputStream> ptr_sourc_ctx(source_ctx);
-    Printer source_printer(source_ctx, '$');
-    if (!GenerateSource(source_printer, obj)) return false;
+    if (parameter == "json") {
+        auto header_ctx = generator_context->Open(GetFileName(file->name())+ ".h");
+        std::unique_ptr<io::ZeroCopyOutputStream> ptr_header_ctx(header_ctx);
+        Printer header_printer(header_ctx, '$');
+        if (!GenerateJsonHeader(header_printer, obj)) return false;
+
+        auto source_ctx = generator_context->Open(GetFileName(file->name())+ ".cpp");
+        std::unique_ptr<io::ZeroCopyOutputStream> ptr_sourc_ctx(source_ctx);
+        Printer source_printer(source_ctx, '$');
+        if (!GenerateJsonSource(source_printer, obj)) return false;
+    }
+    else if (parameter == "resource") {
+        if (!FindAllResourceTable(file)) return false ;           
+
+    }
     return true;
 }
 
-bool AResConvertGenerator::GenerateHeader(Printer& printer, const json& info) const {
+bool AResConvertGenerator::FindAllResourceTable(const FileDescriptor* file) const
+{
+    for (int i = 0; i < file->message_type_count(); i++)
+    {
+        const Descriptor* descriptor = file->message_type(i);
+        auto options = descriptor->options();
+        if (options.HasExtension(AResConvertExt::file_name)) {
+            std::string name = options.GetExtension(AResConvertExt::file_name);
+            m_info.resource_list.push_back({
+                {"file_name", name},
+                {"res_name", descriptor->name()}
+            });
+        }
+    }
+
+    return true;   
+}
+
+bool AResConvertGenerator::GenerateJsonHeader(Printer& printer, const json& info) const {
     inja::Environment env;
     env.set_trim_blocks(true);
     env.set_lstrip_blocks(true);
@@ -37,7 +63,7 @@ bool AResConvertGenerator::GenerateHeader(Printer& printer, const json& info) co
     return true;
 }
 
-bool AResConvertGenerator::GenerateSource(Printer& printer, const json& info) const {
+bool AResConvertGenerator::GenerateJsonSource(Printer& printer, const json& info) const {
     inja::Environment env;
     env.set_trim_blocks(true);
     env.set_lstrip_blocks(true);

@@ -1,6 +1,6 @@
 syntax = "proto3";
 import "google/protobuf/descriptor.proto";
-package PBCExt;
+package AResConvertExt;
 
 extend google.protobuf.OneofOptions {
     string select = 1001;        //  union select
@@ -17,4 +17,7 @@ extend google.protobuf.EnumValueOptions {
     string col_name = 1001;         // cname
 }
 
+extend google.protobuf.MessageOptions {
+    string file_name = 1001;         // filename
+}
 

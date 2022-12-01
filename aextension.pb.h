@@ -45,7 +45,7 @@ struct TableStruct_aextension_2eproto {
 extern const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_aextension_2eproto;
 PROTOBUF_NAMESPACE_OPEN
 PROTOBUF_NAMESPACE_CLOSE
-namespace PBCExt {
+namespace AResConvertExt {
 
 // ===================================================================
 
@@ -76,6 +76,10 @@ static const int kColNameFieldNumber = 1001;
 extern ::PROTOBUF_NAMESPACE_ID::internal::ExtensionIdentifier< ::PROTOBUF_NAMESPACE_ID::EnumValueOptions,
     ::PROTOBUF_NAMESPACE_ID::internal::StringTypeTraits, 9, false >
   col_name;
+static const int kFileNameFieldNumber = 1001;
+extern ::PROTOBUF_NAMESPACE_ID::internal::ExtensionIdentifier< ::PROTOBUF_NAMESPACE_ID::MessageOptions,
+    ::PROTOBUF_NAMESPACE_ID::internal::StringTypeTraits, 9, false >
+  file_name;
 
 // ===================================================================
 
@@ -89,7 +93,7 @@ extern ::PROTOBUF_NAMESPACE_ID::internal::ExtensionIdentifier< ::PROTOBUF_NAMESP
 
 // @@protoc_insertion_point(namespace_scope)
 
-}  // namespace PBCExt
+}  // namespace AResConvertExt
 
 // @@protoc_insertion_point(global_scope)
 
