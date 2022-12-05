@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/lite-arena-test.dir/src/google/protobuf/lite_arena_unittest.cc.o"
-  "lite-arena-test"
+  "CMakeFiles/lite-arena-test.dir/src/google/protobuf/lite_arena_unittest.cc.obj"
+  "liblite-arena-test.dll.a"
+  "lite-arena-test.exe"
   "lite-arena-test.pdb"
 )
 

@@ -1,0 +1,15 @@
+Client/.vscode
+Client/dist
+Client/node_modules
+thirdparty/
+thirdparty/OpenXLSX/CMakeFiles
+dep/protobuf-3.21.5/CMakeFiles
+*.d
+*.o
+dep/**/Po
+thirdparty/**/Plo
+dep/**/*.a
+dep/**/*.exe
+thidparty/**/*.a
+thidparty/**/*.exe
+Client/node_modules

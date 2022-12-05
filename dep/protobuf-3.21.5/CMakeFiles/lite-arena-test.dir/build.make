@@ -63,10 +63,10 @@ RM = /usr/bin/cmake3 -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5
+CMAKE_SOURCE_DIR = /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5
+CMAKE_BINARY_DIR = /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5
 
 # Include any dependencies generated for this target.
 include CMakeFiles/lite-arena-test.dir/depend.make
@@ -77,38 +77,41 @@ include CMakeFiles/lite-arena-test.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/lite-arena-test.dir/flags.make
 
-CMakeFiles/lite-arena-test.dir/src/google/protobuf/lite_arena_unittest.cc.o: CMakeFiles/lite-arena-test.dir/flags.make
-CMakeFiles/lite-arena-test.dir/src/google/protobuf/lite_arena_unittest.cc.o: src/google/protobuf/lite_arena_unittest.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/lite-arena-test.dir/src/google/protobuf/lite_arena_unittest.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lite-arena-test.dir/src/google/protobuf/lite_arena_unittest.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/lite_arena_unittest.cc
+CMakeFiles/lite-arena-test.dir/src/google/protobuf/lite_arena_unittest.cc.obj: CMakeFiles/lite-arena-test.dir/flags.make
+CMakeFiles/lite-arena-test.dir/src/google/protobuf/lite_arena_unittest.cc.obj: CMakeFiles/lite-arena-test.dir/includes_CXX.rsp
+CMakeFiles/lite-arena-test.dir/src/google/protobuf/lite_arena_unittest.cc.obj: src/google/protobuf/lite_arena_unittest.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/lite-arena-test.dir/src/google/protobuf/lite_arena_unittest.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lite-arena-test.dir/src/google/protobuf/lite_arena_unittest.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/lite_arena_unittest.cc
 
 CMakeFiles/lite-arena-test.dir/src/google/protobuf/lite_arena_unittest.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lite-arena-test.dir/src/google/protobuf/lite_arena_unittest.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/lite_arena_unittest.cc > CMakeFiles/lite-arena-test.dir/src/google/protobuf/lite_arena_unittest.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/lite_arena_unittest.cc > CMakeFiles/lite-arena-test.dir/src/google/protobuf/lite_arena_unittest.cc.i
 
 CMakeFiles/lite-arena-test.dir/src/google/protobuf/lite_arena_unittest.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lite-arena-test.dir/src/google/protobuf/lite_arena_unittest.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/lite_arena_unittest.cc -o CMakeFiles/lite-arena-test.dir/src/google/protobuf/lite_arena_unittest.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/lite_arena_unittest.cc -o CMakeFiles/lite-arena-test.dir/src/google/protobuf/lite_arena_unittest.cc.s
 
 # Object files for target lite-arena-test
 lite__arena__test_OBJECTS = \
-"CMakeFiles/lite-arena-test.dir/src/google/protobuf/lite_arena_unittest.cc.o"
+"CMakeFiles/lite-arena-test.dir/src/google/protobuf/lite_arena_unittest.cc.obj"
 
 # External object files for target lite-arena-test
 lite__arena__test_EXTERNAL_OBJECTS =
 
-lite-arena-test: CMakeFiles/lite-arena-test.dir/src/google/protobuf/lite_arena_unittest.cc.o
-lite-arena-test: CMakeFiles/lite-arena-test.dir/build.make
-lite-arena-test: libprotobuf-lite-test-common.a
-lite-arena-test: libprotobuf-lite.a
-lite-arena-test: libgmock_main.a
-lite-arena-test: libgmock.a
-lite-arena-test: CMakeFiles/lite-arena-test.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable lite-arena-test"
+lite-arena-test.exe: CMakeFiles/lite-arena-test.dir/src/google/protobuf/lite_arena_unittest.cc.obj
+lite-arena-test.exe: CMakeFiles/lite-arena-test.dir/build.make
+lite-arena-test.exe: libprotobuf-lite-test-common.a
+lite-arena-test.exe: libprotobuf-lite.a
+lite-arena-test.exe: libgmock_main.a
+lite-arena-test.exe: libgmock.a
+lite-arena-test.exe: CMakeFiles/lite-arena-test.dir/linklibs.rsp
+lite-arena-test.exe: CMakeFiles/lite-arena-test.dir/objects1.rsp
+lite-arena-test.exe: CMakeFiles/lite-arena-test.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable lite-arena-test.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/lite-arena-test.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-CMakeFiles/lite-arena-test.dir/build: lite-arena-test
+CMakeFiles/lite-arena-test.dir/build: lite-arena-test.exe
 
 .PHONY : CMakeFiles/lite-arena-test.dir/build
 
@@ -117,6 +120,6 @@ CMakeFiles/lite-arena-test.dir/clean:
 .PHONY : CMakeFiles/lite-arena-test.dir/clean
 
 CMakeFiles/lite-arena-test.dir/depend:
-	cd /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5 /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5 /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5 /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5 /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles/lite-arena-test.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5 /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5 /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5 /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5 /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles/lite-arena-test.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/lite-arena-test.dir/depend
 

@@ -6,15 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/arena_test_util.cc
-google/protobuf/arena_test_util.h
--
-google/protobuf/stubs/logging.h
--
-google/protobuf/stubs/common.h
--
-
-/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/map_lite_test_util.cc
+/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/map_lite_test_util.cc
 google/protobuf/map_lite_test_util.h
 -
 google/protobuf/map_lite_unittest.pb.h
@@ -22,9 +14,9 @@ google/protobuf/map_lite_unittest.pb.h
 google/protobuf/map_test_util_impl.h
 -
 
-/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/map_lite_unittest.pb.cc
+/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/map_lite_unittest.pb.cc
 google/protobuf/map_lite_unittest.pb.h
-/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/google/protobuf/map_lite_unittest.pb.h
+/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/google/protobuf/map_lite_unittest.pb.h
 algorithm
 -
 google/protobuf/io/coded_stream.h
@@ -40,7 +32,7 @@ google/protobuf/port_def.inc
 google/protobuf/port_undef.inc
 -
 
-/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/test_util_lite.cc
+/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/test_util_lite.cc
 google/protobuf/test_util_lite.h
 -
 google/protobuf/stubs/logging.h
@@ -52,9 +44,9 @@ gtest/gtest.h
 google/protobuf/stubs/strutil.h
 -
 
-/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/unittest_import_lite.pb.cc
+/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/unittest_import_lite.pb.cc
 google/protobuf/unittest_import_lite.pb.h
-/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/google/protobuf/unittest_import_lite.pb.h
+/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/google/protobuf/unittest_import_lite.pb.h
 algorithm
 -
 google/protobuf/io/coded_stream.h
@@ -70,9 +62,9 @@ google/protobuf/port_def.inc
 google/protobuf/port_undef.inc
 -
 
-/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/unittest_import_public_lite.pb.cc
+/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/unittest_import_public_lite.pb.cc
 google/protobuf/unittest_import_public_lite.pb.h
-/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/google/protobuf/unittest_import_public_lite.pb.h
+/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/google/protobuf/unittest_import_public_lite.pb.h
 algorithm
 -
 google/protobuf/io/coded_stream.h
@@ -88,9 +80,9 @@ google/protobuf/port_def.inc
 google/protobuf/port_undef.inc
 -
 
-/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/unittest_lite.pb.cc
+/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/unittest_lite.pb.cc
 google/protobuf/unittest_lite.pb.h
-/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/google/protobuf/unittest_lite.pb.h
+/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/google/protobuf/unittest_lite.pb.h
 algorithm
 -
 google/protobuf/io/coded_stream.h
@@ -164,18 +156,6 @@ google/protobuf/arenaz_sampler.h
 google/protobuf/port_def.inc
 -
 google/protobuf/port_undef.inc
--
-
-src/google/protobuf/arena_test_util.h
-google/protobuf/stubs/logging.h
--
-google/protobuf/stubs/common.h
--
-google/protobuf/arena.h
--
-google/protobuf/io/coded_stream.h
--
-google/protobuf/io/zero_copy_stream_impl_lite.h
 -
 
 src/google/protobuf/arenastring.h

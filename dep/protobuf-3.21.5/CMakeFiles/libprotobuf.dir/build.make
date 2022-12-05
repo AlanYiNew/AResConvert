@@ -63,10 +63,10 @@ RM = /usr/bin/cmake3 -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5
+CMAKE_SOURCE_DIR = /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5
+CMAKE_BINARY_DIR = /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5
 
 # Include any dependencies generated for this target.
 include CMakeFiles/libprotobuf.dir/depend.make
@@ -77,1276 +77,1360 @@ include CMakeFiles/libprotobuf.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/libprotobuf.dir/flags.make
 
-CMakeFiles/libprotobuf.dir/src/google/protobuf/any_lite.cc.o: CMakeFiles/libprotobuf.dir/flags.make
-CMakeFiles/libprotobuf.dir/src/google/protobuf/any_lite.cc.o: src/google/protobuf/any_lite.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/any_lite.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/any_lite.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/any_lite.cc
+CMakeFiles/libprotobuf.dir/src/google/protobuf/any_lite.cc.obj: CMakeFiles/libprotobuf.dir/flags.make
+CMakeFiles/libprotobuf.dir/src/google/protobuf/any_lite.cc.obj: CMakeFiles/libprotobuf.dir/includes_CXX.rsp
+CMakeFiles/libprotobuf.dir/src/google/protobuf/any_lite.cc.obj: src/google/protobuf/any_lite.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/any_lite.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/any_lite.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/any_lite.cc
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/any_lite.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libprotobuf.dir/src/google/protobuf/any_lite.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/any_lite.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/any_lite.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/any_lite.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/any_lite.cc.i
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/any_lite.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libprotobuf.dir/src/google/protobuf/any_lite.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/any_lite.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/any_lite.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/any_lite.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/any_lite.cc.s
 
-CMakeFiles/libprotobuf.dir/src/google/protobuf/arena.cc.o: CMakeFiles/libprotobuf.dir/flags.make
-CMakeFiles/libprotobuf.dir/src/google/protobuf/arena.cc.o: src/google/protobuf/arena.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/arena.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/arena.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/arena.cc
+CMakeFiles/libprotobuf.dir/src/google/protobuf/arena.cc.obj: CMakeFiles/libprotobuf.dir/flags.make
+CMakeFiles/libprotobuf.dir/src/google/protobuf/arena.cc.obj: CMakeFiles/libprotobuf.dir/includes_CXX.rsp
+CMakeFiles/libprotobuf.dir/src/google/protobuf/arena.cc.obj: src/google/protobuf/arena.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/arena.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/arena.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/arena.cc
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/arena.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libprotobuf.dir/src/google/protobuf/arena.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/arena.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/arena.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/arena.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/arena.cc.i
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/arena.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libprotobuf.dir/src/google/protobuf/arena.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/arena.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/arena.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/arena.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/arena.cc.s
 
-CMakeFiles/libprotobuf.dir/src/google/protobuf/arenastring.cc.o: CMakeFiles/libprotobuf.dir/flags.make
-CMakeFiles/libprotobuf.dir/src/google/protobuf/arenastring.cc.o: src/google/protobuf/arenastring.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/arenastring.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/arenastring.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/arenastring.cc
+CMakeFiles/libprotobuf.dir/src/google/protobuf/arenastring.cc.obj: CMakeFiles/libprotobuf.dir/flags.make
+CMakeFiles/libprotobuf.dir/src/google/protobuf/arenastring.cc.obj: CMakeFiles/libprotobuf.dir/includes_CXX.rsp
+CMakeFiles/libprotobuf.dir/src/google/protobuf/arenastring.cc.obj: src/google/protobuf/arenastring.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/arenastring.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/arenastring.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/arenastring.cc
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/arenastring.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libprotobuf.dir/src/google/protobuf/arenastring.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/arenastring.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/arenastring.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/arenastring.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/arenastring.cc.i
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/arenastring.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libprotobuf.dir/src/google/protobuf/arenastring.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/arenastring.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/arenastring.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/arenastring.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/arenastring.cc.s
 
-CMakeFiles/libprotobuf.dir/src/google/protobuf/arenaz_sampler.cc.o: CMakeFiles/libprotobuf.dir/flags.make
-CMakeFiles/libprotobuf.dir/src/google/protobuf/arenaz_sampler.cc.o: src/google/protobuf/arenaz_sampler.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/arenaz_sampler.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/arenaz_sampler.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/arenaz_sampler.cc
+CMakeFiles/libprotobuf.dir/src/google/protobuf/arenaz_sampler.cc.obj: CMakeFiles/libprotobuf.dir/flags.make
+CMakeFiles/libprotobuf.dir/src/google/protobuf/arenaz_sampler.cc.obj: CMakeFiles/libprotobuf.dir/includes_CXX.rsp
+CMakeFiles/libprotobuf.dir/src/google/protobuf/arenaz_sampler.cc.obj: src/google/protobuf/arenaz_sampler.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/arenaz_sampler.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/arenaz_sampler.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/arenaz_sampler.cc
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/arenaz_sampler.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libprotobuf.dir/src/google/protobuf/arenaz_sampler.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/arenaz_sampler.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/arenaz_sampler.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/arenaz_sampler.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/arenaz_sampler.cc.i
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/arenaz_sampler.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libprotobuf.dir/src/google/protobuf/arenaz_sampler.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/arenaz_sampler.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/arenaz_sampler.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/arenaz_sampler.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/arenaz_sampler.cc.s
 
-CMakeFiles/libprotobuf.dir/src/google/protobuf/extension_set.cc.o: CMakeFiles/libprotobuf.dir/flags.make
-CMakeFiles/libprotobuf.dir/src/google/protobuf/extension_set.cc.o: src/google/protobuf/extension_set.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/extension_set.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/extension_set.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/extension_set.cc
+CMakeFiles/libprotobuf.dir/src/google/protobuf/extension_set.cc.obj: CMakeFiles/libprotobuf.dir/flags.make
+CMakeFiles/libprotobuf.dir/src/google/protobuf/extension_set.cc.obj: CMakeFiles/libprotobuf.dir/includes_CXX.rsp
+CMakeFiles/libprotobuf.dir/src/google/protobuf/extension_set.cc.obj: src/google/protobuf/extension_set.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/extension_set.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/extension_set.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/extension_set.cc
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/extension_set.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libprotobuf.dir/src/google/protobuf/extension_set.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/extension_set.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/extension_set.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/extension_set.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/extension_set.cc.i
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/extension_set.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libprotobuf.dir/src/google/protobuf/extension_set.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/extension_set.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/extension_set.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/extension_set.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/extension_set.cc.s
 
-CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_enum_util.cc.o: CMakeFiles/libprotobuf.dir/flags.make
-CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_enum_util.cc.o: src/google/protobuf/generated_enum_util.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_enum_util.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_enum_util.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/generated_enum_util.cc
+CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_enum_util.cc.obj: CMakeFiles/libprotobuf.dir/flags.make
+CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_enum_util.cc.obj: CMakeFiles/libprotobuf.dir/includes_CXX.rsp
+CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_enum_util.cc.obj: src/google/protobuf/generated_enum_util.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_enum_util.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_enum_util.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/generated_enum_util.cc
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_enum_util.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_enum_util.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/generated_enum_util.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_enum_util.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/generated_enum_util.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_enum_util.cc.i
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_enum_util.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_enum_util.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/generated_enum_util.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_enum_util.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/generated_enum_util.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_enum_util.cc.s
 
-CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_message_tctable_lite.cc.o: CMakeFiles/libprotobuf.dir/flags.make
-CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_message_tctable_lite.cc.o: src/google/protobuf/generated_message_tctable_lite.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_message_tctable_lite.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_message_tctable_lite.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/generated_message_tctable_lite.cc
+CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_message_tctable_lite.cc.obj: CMakeFiles/libprotobuf.dir/flags.make
+CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_message_tctable_lite.cc.obj: CMakeFiles/libprotobuf.dir/includes_CXX.rsp
+CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_message_tctable_lite.cc.obj: src/google/protobuf/generated_message_tctable_lite.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_message_tctable_lite.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_message_tctable_lite.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/generated_message_tctable_lite.cc
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_message_tctable_lite.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_message_tctable_lite.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/generated_message_tctable_lite.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_message_tctable_lite.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/generated_message_tctable_lite.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_message_tctable_lite.cc.i
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_message_tctable_lite.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_message_tctable_lite.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/generated_message_tctable_lite.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_message_tctable_lite.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/generated_message_tctable_lite.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_message_tctable_lite.cc.s
 
-CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_message_util.cc.o: CMakeFiles/libprotobuf.dir/flags.make
-CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_message_util.cc.o: src/google/protobuf/generated_message_util.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_message_util.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_message_util.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/generated_message_util.cc
+CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_message_util.cc.obj: CMakeFiles/libprotobuf.dir/flags.make
+CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_message_util.cc.obj: CMakeFiles/libprotobuf.dir/includes_CXX.rsp
+CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_message_util.cc.obj: src/google/protobuf/generated_message_util.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_message_util.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_message_util.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/generated_message_util.cc
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_message_util.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_message_util.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/generated_message_util.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_message_util.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/generated_message_util.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_message_util.cc.i
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_message_util.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_message_util.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/generated_message_util.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_message_util.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/generated_message_util.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_message_util.cc.s
 
-CMakeFiles/libprotobuf.dir/src/google/protobuf/implicit_weak_message.cc.o: CMakeFiles/libprotobuf.dir/flags.make
-CMakeFiles/libprotobuf.dir/src/google/protobuf/implicit_weak_message.cc.o: src/google/protobuf/implicit_weak_message.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/implicit_weak_message.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/implicit_weak_message.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/implicit_weak_message.cc
+CMakeFiles/libprotobuf.dir/src/google/protobuf/implicit_weak_message.cc.obj: CMakeFiles/libprotobuf.dir/flags.make
+CMakeFiles/libprotobuf.dir/src/google/protobuf/implicit_weak_message.cc.obj: CMakeFiles/libprotobuf.dir/includes_CXX.rsp
+CMakeFiles/libprotobuf.dir/src/google/protobuf/implicit_weak_message.cc.obj: src/google/protobuf/implicit_weak_message.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/implicit_weak_message.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/implicit_weak_message.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/implicit_weak_message.cc
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/implicit_weak_message.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libprotobuf.dir/src/google/protobuf/implicit_weak_message.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/implicit_weak_message.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/implicit_weak_message.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/implicit_weak_message.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/implicit_weak_message.cc.i
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/implicit_weak_message.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libprotobuf.dir/src/google/protobuf/implicit_weak_message.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/implicit_weak_message.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/implicit_weak_message.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/implicit_weak_message.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/implicit_weak_message.cc.s
 
-CMakeFiles/libprotobuf.dir/src/google/protobuf/inlined_string_field.cc.o: CMakeFiles/libprotobuf.dir/flags.make
-CMakeFiles/libprotobuf.dir/src/google/protobuf/inlined_string_field.cc.o: src/google/protobuf/inlined_string_field.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/inlined_string_field.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/inlined_string_field.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/inlined_string_field.cc
+CMakeFiles/libprotobuf.dir/src/google/protobuf/inlined_string_field.cc.obj: CMakeFiles/libprotobuf.dir/flags.make
+CMakeFiles/libprotobuf.dir/src/google/protobuf/inlined_string_field.cc.obj: CMakeFiles/libprotobuf.dir/includes_CXX.rsp
+CMakeFiles/libprotobuf.dir/src/google/protobuf/inlined_string_field.cc.obj: src/google/protobuf/inlined_string_field.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/inlined_string_field.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/inlined_string_field.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/inlined_string_field.cc
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/inlined_string_field.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libprotobuf.dir/src/google/protobuf/inlined_string_field.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/inlined_string_field.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/inlined_string_field.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/inlined_string_field.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/inlined_string_field.cc.i
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/inlined_string_field.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libprotobuf.dir/src/google/protobuf/inlined_string_field.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/inlined_string_field.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/inlined_string_field.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/inlined_string_field.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/inlined_string_field.cc.s
 
-CMakeFiles/libprotobuf.dir/src/google/protobuf/io/coded_stream.cc.o: CMakeFiles/libprotobuf.dir/flags.make
-CMakeFiles/libprotobuf.dir/src/google/protobuf/io/coded_stream.cc.o: src/google/protobuf/io/coded_stream.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/io/coded_stream.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/io/coded_stream.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/io/coded_stream.cc
+CMakeFiles/libprotobuf.dir/src/google/protobuf/io/coded_stream.cc.obj: CMakeFiles/libprotobuf.dir/flags.make
+CMakeFiles/libprotobuf.dir/src/google/protobuf/io/coded_stream.cc.obj: CMakeFiles/libprotobuf.dir/includes_CXX.rsp
+CMakeFiles/libprotobuf.dir/src/google/protobuf/io/coded_stream.cc.obj: src/google/protobuf/io/coded_stream.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/io/coded_stream.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/io/coded_stream.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/io/coded_stream.cc
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/io/coded_stream.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libprotobuf.dir/src/google/protobuf/io/coded_stream.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/io/coded_stream.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/io/coded_stream.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/io/coded_stream.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/io/coded_stream.cc.i
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/io/coded_stream.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libprotobuf.dir/src/google/protobuf/io/coded_stream.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/io/coded_stream.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/io/coded_stream.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/io/coded_stream.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/io/coded_stream.cc.s
 
-CMakeFiles/libprotobuf.dir/src/google/protobuf/io/io_win32.cc.o: CMakeFiles/libprotobuf.dir/flags.make
-CMakeFiles/libprotobuf.dir/src/google/protobuf/io/io_win32.cc.o: src/google/protobuf/io/io_win32.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/io/io_win32.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/io/io_win32.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/io/io_win32.cc
+CMakeFiles/libprotobuf.dir/src/google/protobuf/io/io_win32.cc.obj: CMakeFiles/libprotobuf.dir/flags.make
+CMakeFiles/libprotobuf.dir/src/google/protobuf/io/io_win32.cc.obj: CMakeFiles/libprotobuf.dir/includes_CXX.rsp
+CMakeFiles/libprotobuf.dir/src/google/protobuf/io/io_win32.cc.obj: src/google/protobuf/io/io_win32.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/io/io_win32.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/io/io_win32.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/io/io_win32.cc
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/io/io_win32.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libprotobuf.dir/src/google/protobuf/io/io_win32.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/io/io_win32.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/io/io_win32.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/io/io_win32.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/io/io_win32.cc.i
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/io/io_win32.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libprotobuf.dir/src/google/protobuf/io/io_win32.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/io/io_win32.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/io/io_win32.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/io/io_win32.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/io/io_win32.cc.s
 
-CMakeFiles/libprotobuf.dir/src/google/protobuf/io/strtod.cc.o: CMakeFiles/libprotobuf.dir/flags.make
-CMakeFiles/libprotobuf.dir/src/google/protobuf/io/strtod.cc.o: src/google/protobuf/io/strtod.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/io/strtod.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/io/strtod.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/io/strtod.cc
+CMakeFiles/libprotobuf.dir/src/google/protobuf/io/strtod.cc.obj: CMakeFiles/libprotobuf.dir/flags.make
+CMakeFiles/libprotobuf.dir/src/google/protobuf/io/strtod.cc.obj: CMakeFiles/libprotobuf.dir/includes_CXX.rsp
+CMakeFiles/libprotobuf.dir/src/google/protobuf/io/strtod.cc.obj: src/google/protobuf/io/strtod.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/io/strtod.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/io/strtod.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/io/strtod.cc
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/io/strtod.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libprotobuf.dir/src/google/protobuf/io/strtod.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/io/strtod.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/io/strtod.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/io/strtod.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/io/strtod.cc.i
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/io/strtod.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libprotobuf.dir/src/google/protobuf/io/strtod.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/io/strtod.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/io/strtod.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/io/strtod.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/io/strtod.cc.s
 
-CMakeFiles/libprotobuf.dir/src/google/protobuf/io/zero_copy_stream.cc.o: CMakeFiles/libprotobuf.dir/flags.make
-CMakeFiles/libprotobuf.dir/src/google/protobuf/io/zero_copy_stream.cc.o: src/google/protobuf/io/zero_copy_stream.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/io/zero_copy_stream.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/io/zero_copy_stream.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/io/zero_copy_stream.cc
+CMakeFiles/libprotobuf.dir/src/google/protobuf/io/zero_copy_stream.cc.obj: CMakeFiles/libprotobuf.dir/flags.make
+CMakeFiles/libprotobuf.dir/src/google/protobuf/io/zero_copy_stream.cc.obj: CMakeFiles/libprotobuf.dir/includes_CXX.rsp
+CMakeFiles/libprotobuf.dir/src/google/protobuf/io/zero_copy_stream.cc.obj: src/google/protobuf/io/zero_copy_stream.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/io/zero_copy_stream.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/io/zero_copy_stream.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/io/zero_copy_stream.cc
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/io/zero_copy_stream.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libprotobuf.dir/src/google/protobuf/io/zero_copy_stream.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/io/zero_copy_stream.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/io/zero_copy_stream.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/io/zero_copy_stream.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/io/zero_copy_stream.cc.i
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/io/zero_copy_stream.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libprotobuf.dir/src/google/protobuf/io/zero_copy_stream.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/io/zero_copy_stream.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/io/zero_copy_stream.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/io/zero_copy_stream.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/io/zero_copy_stream.cc.s
 
-CMakeFiles/libprotobuf.dir/src/google/protobuf/io/zero_copy_stream_impl.cc.o: CMakeFiles/libprotobuf.dir/flags.make
-CMakeFiles/libprotobuf.dir/src/google/protobuf/io/zero_copy_stream_impl.cc.o: src/google/protobuf/io/zero_copy_stream_impl.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/io/zero_copy_stream_impl.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/io/zero_copy_stream_impl.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/io/zero_copy_stream_impl.cc
+CMakeFiles/libprotobuf.dir/src/google/protobuf/io/zero_copy_stream_impl.cc.obj: CMakeFiles/libprotobuf.dir/flags.make
+CMakeFiles/libprotobuf.dir/src/google/protobuf/io/zero_copy_stream_impl.cc.obj: CMakeFiles/libprotobuf.dir/includes_CXX.rsp
+CMakeFiles/libprotobuf.dir/src/google/protobuf/io/zero_copy_stream_impl.cc.obj: src/google/protobuf/io/zero_copy_stream_impl.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/io/zero_copy_stream_impl.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/io/zero_copy_stream_impl.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/io/zero_copy_stream_impl.cc
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/io/zero_copy_stream_impl.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libprotobuf.dir/src/google/protobuf/io/zero_copy_stream_impl.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/io/zero_copy_stream_impl.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/io/zero_copy_stream_impl.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/io/zero_copy_stream_impl.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/io/zero_copy_stream_impl.cc.i
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/io/zero_copy_stream_impl.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libprotobuf.dir/src/google/protobuf/io/zero_copy_stream_impl.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/io/zero_copy_stream_impl.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/io/zero_copy_stream_impl.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/io/zero_copy_stream_impl.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/io/zero_copy_stream_impl.cc.s
 
-CMakeFiles/libprotobuf.dir/src/google/protobuf/io/zero_copy_stream_impl_lite.cc.o: CMakeFiles/libprotobuf.dir/flags.make
-CMakeFiles/libprotobuf.dir/src/google/protobuf/io/zero_copy_stream_impl_lite.cc.o: src/google/protobuf/io/zero_copy_stream_impl_lite.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/io/zero_copy_stream_impl_lite.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/io/zero_copy_stream_impl_lite.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/io/zero_copy_stream_impl_lite.cc
+CMakeFiles/libprotobuf.dir/src/google/protobuf/io/zero_copy_stream_impl_lite.cc.obj: CMakeFiles/libprotobuf.dir/flags.make
+CMakeFiles/libprotobuf.dir/src/google/protobuf/io/zero_copy_stream_impl_lite.cc.obj: CMakeFiles/libprotobuf.dir/includes_CXX.rsp
+CMakeFiles/libprotobuf.dir/src/google/protobuf/io/zero_copy_stream_impl_lite.cc.obj: src/google/protobuf/io/zero_copy_stream_impl_lite.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/io/zero_copy_stream_impl_lite.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/io/zero_copy_stream_impl_lite.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/io/zero_copy_stream_impl_lite.cc
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/io/zero_copy_stream_impl_lite.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libprotobuf.dir/src/google/protobuf/io/zero_copy_stream_impl_lite.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/io/zero_copy_stream_impl_lite.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/io/zero_copy_stream_impl_lite.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/io/zero_copy_stream_impl_lite.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/io/zero_copy_stream_impl_lite.cc.i
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/io/zero_copy_stream_impl_lite.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libprotobuf.dir/src/google/protobuf/io/zero_copy_stream_impl_lite.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/io/zero_copy_stream_impl_lite.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/io/zero_copy_stream_impl_lite.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/io/zero_copy_stream_impl_lite.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/io/zero_copy_stream_impl_lite.cc.s
 
-CMakeFiles/libprotobuf.dir/src/google/protobuf/map.cc.o: CMakeFiles/libprotobuf.dir/flags.make
-CMakeFiles/libprotobuf.dir/src/google/protobuf/map.cc.o: src/google/protobuf/map.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/map.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/map.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/map.cc
+CMakeFiles/libprotobuf.dir/src/google/protobuf/map.cc.obj: CMakeFiles/libprotobuf.dir/flags.make
+CMakeFiles/libprotobuf.dir/src/google/protobuf/map.cc.obj: CMakeFiles/libprotobuf.dir/includes_CXX.rsp
+CMakeFiles/libprotobuf.dir/src/google/protobuf/map.cc.obj: src/google/protobuf/map.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/map.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/map.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/map.cc
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/map.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libprotobuf.dir/src/google/protobuf/map.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/map.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/map.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/map.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/map.cc.i
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/map.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libprotobuf.dir/src/google/protobuf/map.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/map.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/map.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/map.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/map.cc.s
 
-CMakeFiles/libprotobuf.dir/src/google/protobuf/message_lite.cc.o: CMakeFiles/libprotobuf.dir/flags.make
-CMakeFiles/libprotobuf.dir/src/google/protobuf/message_lite.cc.o: src/google/protobuf/message_lite.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/message_lite.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/message_lite.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/message_lite.cc
+CMakeFiles/libprotobuf.dir/src/google/protobuf/message_lite.cc.obj: CMakeFiles/libprotobuf.dir/flags.make
+CMakeFiles/libprotobuf.dir/src/google/protobuf/message_lite.cc.obj: CMakeFiles/libprotobuf.dir/includes_CXX.rsp
+CMakeFiles/libprotobuf.dir/src/google/protobuf/message_lite.cc.obj: src/google/protobuf/message_lite.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/message_lite.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/message_lite.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/message_lite.cc
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/message_lite.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libprotobuf.dir/src/google/protobuf/message_lite.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/message_lite.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/message_lite.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/message_lite.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/message_lite.cc.i
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/message_lite.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libprotobuf.dir/src/google/protobuf/message_lite.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/message_lite.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/message_lite.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/message_lite.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/message_lite.cc.s
 
-CMakeFiles/libprotobuf.dir/src/google/protobuf/parse_context.cc.o: CMakeFiles/libprotobuf.dir/flags.make
-CMakeFiles/libprotobuf.dir/src/google/protobuf/parse_context.cc.o: src/google/protobuf/parse_context.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/parse_context.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/parse_context.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/parse_context.cc
+CMakeFiles/libprotobuf.dir/src/google/protobuf/parse_context.cc.obj: CMakeFiles/libprotobuf.dir/flags.make
+CMakeFiles/libprotobuf.dir/src/google/protobuf/parse_context.cc.obj: CMakeFiles/libprotobuf.dir/includes_CXX.rsp
+CMakeFiles/libprotobuf.dir/src/google/protobuf/parse_context.cc.obj: src/google/protobuf/parse_context.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/parse_context.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/parse_context.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/parse_context.cc
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/parse_context.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libprotobuf.dir/src/google/protobuf/parse_context.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/parse_context.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/parse_context.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/parse_context.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/parse_context.cc.i
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/parse_context.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libprotobuf.dir/src/google/protobuf/parse_context.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/parse_context.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/parse_context.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/parse_context.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/parse_context.cc.s
 
-CMakeFiles/libprotobuf.dir/src/google/protobuf/repeated_field.cc.o: CMakeFiles/libprotobuf.dir/flags.make
-CMakeFiles/libprotobuf.dir/src/google/protobuf/repeated_field.cc.o: src/google/protobuf/repeated_field.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/repeated_field.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/repeated_field.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/repeated_field.cc
+CMakeFiles/libprotobuf.dir/src/google/protobuf/repeated_field.cc.obj: CMakeFiles/libprotobuf.dir/flags.make
+CMakeFiles/libprotobuf.dir/src/google/protobuf/repeated_field.cc.obj: CMakeFiles/libprotobuf.dir/includes_CXX.rsp
+CMakeFiles/libprotobuf.dir/src/google/protobuf/repeated_field.cc.obj: src/google/protobuf/repeated_field.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/repeated_field.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/repeated_field.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/repeated_field.cc
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/repeated_field.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libprotobuf.dir/src/google/protobuf/repeated_field.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/repeated_field.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/repeated_field.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/repeated_field.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/repeated_field.cc.i
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/repeated_field.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libprotobuf.dir/src/google/protobuf/repeated_field.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/repeated_field.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/repeated_field.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/repeated_field.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/repeated_field.cc.s
 
-CMakeFiles/libprotobuf.dir/src/google/protobuf/repeated_ptr_field.cc.o: CMakeFiles/libprotobuf.dir/flags.make
-CMakeFiles/libprotobuf.dir/src/google/protobuf/repeated_ptr_field.cc.o: src/google/protobuf/repeated_ptr_field.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/repeated_ptr_field.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/repeated_ptr_field.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/repeated_ptr_field.cc
+CMakeFiles/libprotobuf.dir/src/google/protobuf/repeated_ptr_field.cc.obj: CMakeFiles/libprotobuf.dir/flags.make
+CMakeFiles/libprotobuf.dir/src/google/protobuf/repeated_ptr_field.cc.obj: CMakeFiles/libprotobuf.dir/includes_CXX.rsp
+CMakeFiles/libprotobuf.dir/src/google/protobuf/repeated_ptr_field.cc.obj: src/google/protobuf/repeated_ptr_field.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/repeated_ptr_field.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/repeated_ptr_field.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/repeated_ptr_field.cc
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/repeated_ptr_field.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libprotobuf.dir/src/google/protobuf/repeated_ptr_field.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/repeated_ptr_field.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/repeated_ptr_field.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/repeated_ptr_field.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/repeated_ptr_field.cc.i
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/repeated_ptr_field.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libprotobuf.dir/src/google/protobuf/repeated_ptr_field.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/repeated_ptr_field.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/repeated_ptr_field.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/repeated_ptr_field.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/repeated_ptr_field.cc.s
 
-CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/bytestream.cc.o: CMakeFiles/libprotobuf.dir/flags.make
-CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/bytestream.cc.o: src/google/protobuf/stubs/bytestream.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/bytestream.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/bytestream.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/stubs/bytestream.cc
+CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/bytestream.cc.obj: CMakeFiles/libprotobuf.dir/flags.make
+CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/bytestream.cc.obj: CMakeFiles/libprotobuf.dir/includes_CXX.rsp
+CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/bytestream.cc.obj: src/google/protobuf/stubs/bytestream.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/bytestream.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/bytestream.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/stubs/bytestream.cc
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/bytestream.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/bytestream.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/stubs/bytestream.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/bytestream.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/stubs/bytestream.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/bytestream.cc.i
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/bytestream.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/bytestream.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/stubs/bytestream.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/bytestream.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/stubs/bytestream.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/bytestream.cc.s
 
-CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/common.cc.o: CMakeFiles/libprotobuf.dir/flags.make
-CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/common.cc.o: src/google/protobuf/stubs/common.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/common.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/common.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/stubs/common.cc
+CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/common.cc.obj: CMakeFiles/libprotobuf.dir/flags.make
+CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/common.cc.obj: CMakeFiles/libprotobuf.dir/includes_CXX.rsp
+CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/common.cc.obj: src/google/protobuf/stubs/common.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/common.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/common.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/stubs/common.cc
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/common.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/common.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/stubs/common.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/common.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/stubs/common.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/common.cc.i
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/common.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/common.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/stubs/common.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/common.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/stubs/common.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/common.cc.s
 
-CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/int128.cc.o: CMakeFiles/libprotobuf.dir/flags.make
-CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/int128.cc.o: src/google/protobuf/stubs/int128.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/int128.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/int128.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/stubs/int128.cc
+CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/int128.cc.obj: CMakeFiles/libprotobuf.dir/flags.make
+CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/int128.cc.obj: CMakeFiles/libprotobuf.dir/includes_CXX.rsp
+CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/int128.cc.obj: src/google/protobuf/stubs/int128.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/int128.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/int128.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/stubs/int128.cc
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/int128.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/int128.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/stubs/int128.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/int128.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/stubs/int128.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/int128.cc.i
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/int128.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/int128.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/stubs/int128.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/int128.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/stubs/int128.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/int128.cc.s
 
-CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/status.cc.o: CMakeFiles/libprotobuf.dir/flags.make
-CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/status.cc.o: src/google/protobuf/stubs/status.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/status.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/status.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/stubs/status.cc
+CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/status.cc.obj: CMakeFiles/libprotobuf.dir/flags.make
+CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/status.cc.obj: CMakeFiles/libprotobuf.dir/includes_CXX.rsp
+CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/status.cc.obj: src/google/protobuf/stubs/status.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/status.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/status.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/stubs/status.cc
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/status.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/status.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/stubs/status.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/status.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/stubs/status.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/status.cc.i
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/status.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/status.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/stubs/status.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/status.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/stubs/status.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/status.cc.s
 
-CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/statusor.cc.o: CMakeFiles/libprotobuf.dir/flags.make
-CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/statusor.cc.o: src/google/protobuf/stubs/statusor.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/statusor.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/statusor.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/stubs/statusor.cc
+CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/statusor.cc.obj: CMakeFiles/libprotobuf.dir/flags.make
+CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/statusor.cc.obj: CMakeFiles/libprotobuf.dir/includes_CXX.rsp
+CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/statusor.cc.obj: src/google/protobuf/stubs/statusor.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/statusor.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/statusor.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/stubs/statusor.cc
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/statusor.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/statusor.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/stubs/statusor.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/statusor.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/stubs/statusor.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/statusor.cc.i
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/statusor.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/statusor.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/stubs/statusor.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/statusor.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/stubs/statusor.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/statusor.cc.s
 
-CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/stringpiece.cc.o: CMakeFiles/libprotobuf.dir/flags.make
-CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/stringpiece.cc.o: src/google/protobuf/stubs/stringpiece.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/stringpiece.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/stringpiece.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/stubs/stringpiece.cc
+CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/stringpiece.cc.obj: CMakeFiles/libprotobuf.dir/flags.make
+CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/stringpiece.cc.obj: CMakeFiles/libprotobuf.dir/includes_CXX.rsp
+CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/stringpiece.cc.obj: src/google/protobuf/stubs/stringpiece.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/stringpiece.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/stringpiece.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/stubs/stringpiece.cc
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/stringpiece.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/stringpiece.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/stubs/stringpiece.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/stringpiece.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/stubs/stringpiece.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/stringpiece.cc.i
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/stringpiece.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/stringpiece.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/stubs/stringpiece.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/stringpiece.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/stubs/stringpiece.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/stringpiece.cc.s
 
-CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/stringprintf.cc.o: CMakeFiles/libprotobuf.dir/flags.make
-CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/stringprintf.cc.o: src/google/protobuf/stubs/stringprintf.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/stringprintf.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/stringprintf.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/stubs/stringprintf.cc
+CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/stringprintf.cc.obj: CMakeFiles/libprotobuf.dir/flags.make
+CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/stringprintf.cc.obj: CMakeFiles/libprotobuf.dir/includes_CXX.rsp
+CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/stringprintf.cc.obj: src/google/protobuf/stubs/stringprintf.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/stringprintf.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/stringprintf.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/stubs/stringprintf.cc
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/stringprintf.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/stringprintf.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/stubs/stringprintf.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/stringprintf.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/stubs/stringprintf.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/stringprintf.cc.i
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/stringprintf.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/stringprintf.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/stubs/stringprintf.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/stringprintf.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/stubs/stringprintf.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/stringprintf.cc.s
 
-CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/structurally_valid.cc.o: CMakeFiles/libprotobuf.dir/flags.make
-CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/structurally_valid.cc.o: src/google/protobuf/stubs/structurally_valid.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/structurally_valid.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/structurally_valid.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/stubs/structurally_valid.cc
+CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/structurally_valid.cc.obj: CMakeFiles/libprotobuf.dir/flags.make
+CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/structurally_valid.cc.obj: CMakeFiles/libprotobuf.dir/includes_CXX.rsp
+CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/structurally_valid.cc.obj: src/google/protobuf/stubs/structurally_valid.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/structurally_valid.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/structurally_valid.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/stubs/structurally_valid.cc
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/structurally_valid.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/structurally_valid.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/stubs/structurally_valid.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/structurally_valid.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/stubs/structurally_valid.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/structurally_valid.cc.i
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/structurally_valid.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/structurally_valid.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/stubs/structurally_valid.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/structurally_valid.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/stubs/structurally_valid.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/structurally_valid.cc.s
 
-CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/strutil.cc.o: CMakeFiles/libprotobuf.dir/flags.make
-CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/strutil.cc.o: src/google/protobuf/stubs/strutil.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/strutil.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/strutil.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/stubs/strutil.cc
+CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/strutil.cc.obj: CMakeFiles/libprotobuf.dir/flags.make
+CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/strutil.cc.obj: CMakeFiles/libprotobuf.dir/includes_CXX.rsp
+CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/strutil.cc.obj: src/google/protobuf/stubs/strutil.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/strutil.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/strutil.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/stubs/strutil.cc
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/strutil.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/strutil.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/stubs/strutil.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/strutil.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/stubs/strutil.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/strutil.cc.i
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/strutil.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/strutil.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/stubs/strutil.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/strutil.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/stubs/strutil.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/strutil.cc.s
 
-CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/time.cc.o: CMakeFiles/libprotobuf.dir/flags.make
-CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/time.cc.o: src/google/protobuf/stubs/time.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/time.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/time.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/stubs/time.cc
+CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/time.cc.obj: CMakeFiles/libprotobuf.dir/flags.make
+CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/time.cc.obj: CMakeFiles/libprotobuf.dir/includes_CXX.rsp
+CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/time.cc.obj: src/google/protobuf/stubs/time.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/time.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/time.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/stubs/time.cc
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/time.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/time.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/stubs/time.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/time.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/stubs/time.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/time.cc.i
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/time.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/time.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/stubs/time.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/time.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/stubs/time.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/time.cc.s
 
-CMakeFiles/libprotobuf.dir/src/google/protobuf/wire_format_lite.cc.o: CMakeFiles/libprotobuf.dir/flags.make
-CMakeFiles/libprotobuf.dir/src/google/protobuf/wire_format_lite.cc.o: src/google/protobuf/wire_format_lite.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/wire_format_lite.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/wire_format_lite.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/wire_format_lite.cc
+CMakeFiles/libprotobuf.dir/src/google/protobuf/wire_format_lite.cc.obj: CMakeFiles/libprotobuf.dir/flags.make
+CMakeFiles/libprotobuf.dir/src/google/protobuf/wire_format_lite.cc.obj: CMakeFiles/libprotobuf.dir/includes_CXX.rsp
+CMakeFiles/libprotobuf.dir/src/google/protobuf/wire_format_lite.cc.obj: src/google/protobuf/wire_format_lite.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/wire_format_lite.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/wire_format_lite.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/wire_format_lite.cc
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/wire_format_lite.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libprotobuf.dir/src/google/protobuf/wire_format_lite.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/wire_format_lite.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/wire_format_lite.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/wire_format_lite.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/wire_format_lite.cc.i
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/wire_format_lite.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libprotobuf.dir/src/google/protobuf/wire_format_lite.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/wire_format_lite.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/wire_format_lite.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/wire_format_lite.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/wire_format_lite.cc.s
 
-CMakeFiles/libprotobuf.dir/src/google/protobuf/any.cc.o: CMakeFiles/libprotobuf.dir/flags.make
-CMakeFiles/libprotobuf.dir/src/google/protobuf/any.cc.o: src/google/protobuf/any.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/any.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/any.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/any.cc
+CMakeFiles/libprotobuf.dir/src/google/protobuf/any.cc.obj: CMakeFiles/libprotobuf.dir/flags.make
+CMakeFiles/libprotobuf.dir/src/google/protobuf/any.cc.obj: CMakeFiles/libprotobuf.dir/includes_CXX.rsp
+CMakeFiles/libprotobuf.dir/src/google/protobuf/any.cc.obj: src/google/protobuf/any.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/any.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/any.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/any.cc
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/any.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libprotobuf.dir/src/google/protobuf/any.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/any.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/any.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/any.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/any.cc.i
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/any.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libprotobuf.dir/src/google/protobuf/any.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/any.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/any.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/any.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/any.cc.s
 
-CMakeFiles/libprotobuf.dir/src/google/protobuf/any.pb.cc.o: CMakeFiles/libprotobuf.dir/flags.make
-CMakeFiles/libprotobuf.dir/src/google/protobuf/any.pb.cc.o: src/google/protobuf/any.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/any.pb.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/any.pb.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/any.pb.cc
+CMakeFiles/libprotobuf.dir/src/google/protobuf/any.pb.cc.obj: CMakeFiles/libprotobuf.dir/flags.make
+CMakeFiles/libprotobuf.dir/src/google/protobuf/any.pb.cc.obj: CMakeFiles/libprotobuf.dir/includes_CXX.rsp
+CMakeFiles/libprotobuf.dir/src/google/protobuf/any.pb.cc.obj: src/google/protobuf/any.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/any.pb.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/any.pb.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/any.pb.cc
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/any.pb.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libprotobuf.dir/src/google/protobuf/any.pb.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/any.pb.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/any.pb.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/any.pb.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/any.pb.cc.i
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/any.pb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libprotobuf.dir/src/google/protobuf/any.pb.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/any.pb.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/any.pb.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/any.pb.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/any.pb.cc.s
 
-CMakeFiles/libprotobuf.dir/src/google/protobuf/api.pb.cc.o: CMakeFiles/libprotobuf.dir/flags.make
-CMakeFiles/libprotobuf.dir/src/google/protobuf/api.pb.cc.o: src/google/protobuf/api.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/api.pb.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/api.pb.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/api.pb.cc
+CMakeFiles/libprotobuf.dir/src/google/protobuf/api.pb.cc.obj: CMakeFiles/libprotobuf.dir/flags.make
+CMakeFiles/libprotobuf.dir/src/google/protobuf/api.pb.cc.obj: CMakeFiles/libprotobuf.dir/includes_CXX.rsp
+CMakeFiles/libprotobuf.dir/src/google/protobuf/api.pb.cc.obj: src/google/protobuf/api.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/api.pb.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/api.pb.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/api.pb.cc
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/api.pb.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libprotobuf.dir/src/google/protobuf/api.pb.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/api.pb.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/api.pb.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/api.pb.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/api.pb.cc.i
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/api.pb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libprotobuf.dir/src/google/protobuf/api.pb.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/api.pb.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/api.pb.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/api.pb.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/api.pb.cc.s
 
-CMakeFiles/libprotobuf.dir/src/google/protobuf/compiler/importer.cc.o: CMakeFiles/libprotobuf.dir/flags.make
-CMakeFiles/libprotobuf.dir/src/google/protobuf/compiler/importer.cc.o: src/google/protobuf/compiler/importer.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/compiler/importer.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/compiler/importer.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/compiler/importer.cc
+CMakeFiles/libprotobuf.dir/src/google/protobuf/compiler/importer.cc.obj: CMakeFiles/libprotobuf.dir/flags.make
+CMakeFiles/libprotobuf.dir/src/google/protobuf/compiler/importer.cc.obj: CMakeFiles/libprotobuf.dir/includes_CXX.rsp
+CMakeFiles/libprotobuf.dir/src/google/protobuf/compiler/importer.cc.obj: src/google/protobuf/compiler/importer.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/compiler/importer.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/compiler/importer.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/compiler/importer.cc
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/compiler/importer.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libprotobuf.dir/src/google/protobuf/compiler/importer.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/compiler/importer.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/compiler/importer.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/compiler/importer.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/compiler/importer.cc.i
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/compiler/importer.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libprotobuf.dir/src/google/protobuf/compiler/importer.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/compiler/importer.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/compiler/importer.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/compiler/importer.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/compiler/importer.cc.s
 
-CMakeFiles/libprotobuf.dir/src/google/protobuf/compiler/parser.cc.o: CMakeFiles/libprotobuf.dir/flags.make
-CMakeFiles/libprotobuf.dir/src/google/protobuf/compiler/parser.cc.o: src/google/protobuf/compiler/parser.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/compiler/parser.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/compiler/parser.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/compiler/parser.cc
+CMakeFiles/libprotobuf.dir/src/google/protobuf/compiler/parser.cc.obj: CMakeFiles/libprotobuf.dir/flags.make
+CMakeFiles/libprotobuf.dir/src/google/protobuf/compiler/parser.cc.obj: CMakeFiles/libprotobuf.dir/includes_CXX.rsp
+CMakeFiles/libprotobuf.dir/src/google/protobuf/compiler/parser.cc.obj: src/google/protobuf/compiler/parser.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/compiler/parser.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/compiler/parser.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/compiler/parser.cc
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/compiler/parser.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libprotobuf.dir/src/google/protobuf/compiler/parser.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/compiler/parser.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/compiler/parser.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/compiler/parser.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/compiler/parser.cc.i
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/compiler/parser.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libprotobuf.dir/src/google/protobuf/compiler/parser.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/compiler/parser.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/compiler/parser.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/compiler/parser.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/compiler/parser.cc.s
 
-CMakeFiles/libprotobuf.dir/src/google/protobuf/descriptor.cc.o: CMakeFiles/libprotobuf.dir/flags.make
-CMakeFiles/libprotobuf.dir/src/google/protobuf/descriptor.cc.o: src/google/protobuf/descriptor.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/descriptor.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/descriptor.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/descriptor.cc
+CMakeFiles/libprotobuf.dir/src/google/protobuf/descriptor.cc.obj: CMakeFiles/libprotobuf.dir/flags.make
+CMakeFiles/libprotobuf.dir/src/google/protobuf/descriptor.cc.obj: CMakeFiles/libprotobuf.dir/includes_CXX.rsp
+CMakeFiles/libprotobuf.dir/src/google/protobuf/descriptor.cc.obj: src/google/protobuf/descriptor.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/descriptor.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/descriptor.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/descriptor.cc
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/descriptor.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libprotobuf.dir/src/google/protobuf/descriptor.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/descriptor.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/descriptor.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/descriptor.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/descriptor.cc.i
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/descriptor.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libprotobuf.dir/src/google/protobuf/descriptor.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/descriptor.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/descriptor.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/descriptor.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/descriptor.cc.s
 
-CMakeFiles/libprotobuf.dir/src/google/protobuf/descriptor.pb.cc.o: CMakeFiles/libprotobuf.dir/flags.make
-CMakeFiles/libprotobuf.dir/src/google/protobuf/descriptor.pb.cc.o: src/google/protobuf/descriptor.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/descriptor.pb.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/descriptor.pb.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/descriptor.pb.cc
+CMakeFiles/libprotobuf.dir/src/google/protobuf/descriptor.pb.cc.obj: CMakeFiles/libprotobuf.dir/flags.make
+CMakeFiles/libprotobuf.dir/src/google/protobuf/descriptor.pb.cc.obj: CMakeFiles/libprotobuf.dir/includes_CXX.rsp
+CMakeFiles/libprotobuf.dir/src/google/protobuf/descriptor.pb.cc.obj: src/google/protobuf/descriptor.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/descriptor.pb.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/descriptor.pb.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/descriptor.pb.cc
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/descriptor.pb.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libprotobuf.dir/src/google/protobuf/descriptor.pb.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/descriptor.pb.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/descriptor.pb.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/descriptor.pb.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/descriptor.pb.cc.i
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/descriptor.pb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libprotobuf.dir/src/google/protobuf/descriptor.pb.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/descriptor.pb.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/descriptor.pb.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/descriptor.pb.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/descriptor.pb.cc.s
 
-CMakeFiles/libprotobuf.dir/src/google/protobuf/descriptor_database.cc.o: CMakeFiles/libprotobuf.dir/flags.make
-CMakeFiles/libprotobuf.dir/src/google/protobuf/descriptor_database.cc.o: src/google/protobuf/descriptor_database.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/descriptor_database.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/descriptor_database.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/descriptor_database.cc
+CMakeFiles/libprotobuf.dir/src/google/protobuf/descriptor_database.cc.obj: CMakeFiles/libprotobuf.dir/flags.make
+CMakeFiles/libprotobuf.dir/src/google/protobuf/descriptor_database.cc.obj: CMakeFiles/libprotobuf.dir/includes_CXX.rsp
+CMakeFiles/libprotobuf.dir/src/google/protobuf/descriptor_database.cc.obj: src/google/protobuf/descriptor_database.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/descriptor_database.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/descriptor_database.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/descriptor_database.cc
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/descriptor_database.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libprotobuf.dir/src/google/protobuf/descriptor_database.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/descriptor_database.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/descriptor_database.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/descriptor_database.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/descriptor_database.cc.i
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/descriptor_database.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libprotobuf.dir/src/google/protobuf/descriptor_database.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/descriptor_database.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/descriptor_database.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/descriptor_database.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/descriptor_database.cc.s
 
-CMakeFiles/libprotobuf.dir/src/google/protobuf/duration.pb.cc.o: CMakeFiles/libprotobuf.dir/flags.make
-CMakeFiles/libprotobuf.dir/src/google/protobuf/duration.pb.cc.o: src/google/protobuf/duration.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/duration.pb.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/duration.pb.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/duration.pb.cc
+CMakeFiles/libprotobuf.dir/src/google/protobuf/duration.pb.cc.obj: CMakeFiles/libprotobuf.dir/flags.make
+CMakeFiles/libprotobuf.dir/src/google/protobuf/duration.pb.cc.obj: CMakeFiles/libprotobuf.dir/includes_CXX.rsp
+CMakeFiles/libprotobuf.dir/src/google/protobuf/duration.pb.cc.obj: src/google/protobuf/duration.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/duration.pb.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/duration.pb.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/duration.pb.cc
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/duration.pb.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libprotobuf.dir/src/google/protobuf/duration.pb.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/duration.pb.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/duration.pb.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/duration.pb.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/duration.pb.cc.i
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/duration.pb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libprotobuf.dir/src/google/protobuf/duration.pb.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/duration.pb.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/duration.pb.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/duration.pb.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/duration.pb.cc.s
 
-CMakeFiles/libprotobuf.dir/src/google/protobuf/dynamic_message.cc.o: CMakeFiles/libprotobuf.dir/flags.make
-CMakeFiles/libprotobuf.dir/src/google/protobuf/dynamic_message.cc.o: src/google/protobuf/dynamic_message.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/dynamic_message.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/dynamic_message.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/dynamic_message.cc
+CMakeFiles/libprotobuf.dir/src/google/protobuf/dynamic_message.cc.obj: CMakeFiles/libprotobuf.dir/flags.make
+CMakeFiles/libprotobuf.dir/src/google/protobuf/dynamic_message.cc.obj: CMakeFiles/libprotobuf.dir/includes_CXX.rsp
+CMakeFiles/libprotobuf.dir/src/google/protobuf/dynamic_message.cc.obj: src/google/protobuf/dynamic_message.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/dynamic_message.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/dynamic_message.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/dynamic_message.cc
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/dynamic_message.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libprotobuf.dir/src/google/protobuf/dynamic_message.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/dynamic_message.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/dynamic_message.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/dynamic_message.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/dynamic_message.cc.i
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/dynamic_message.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libprotobuf.dir/src/google/protobuf/dynamic_message.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/dynamic_message.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/dynamic_message.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/dynamic_message.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/dynamic_message.cc.s
 
-CMakeFiles/libprotobuf.dir/src/google/protobuf/empty.pb.cc.o: CMakeFiles/libprotobuf.dir/flags.make
-CMakeFiles/libprotobuf.dir/src/google/protobuf/empty.pb.cc.o: src/google/protobuf/empty.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/empty.pb.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/empty.pb.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/empty.pb.cc
+CMakeFiles/libprotobuf.dir/src/google/protobuf/empty.pb.cc.obj: CMakeFiles/libprotobuf.dir/flags.make
+CMakeFiles/libprotobuf.dir/src/google/protobuf/empty.pb.cc.obj: CMakeFiles/libprotobuf.dir/includes_CXX.rsp
+CMakeFiles/libprotobuf.dir/src/google/protobuf/empty.pb.cc.obj: src/google/protobuf/empty.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/empty.pb.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/empty.pb.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/empty.pb.cc
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/empty.pb.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libprotobuf.dir/src/google/protobuf/empty.pb.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/empty.pb.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/empty.pb.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/empty.pb.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/empty.pb.cc.i
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/empty.pb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libprotobuf.dir/src/google/protobuf/empty.pb.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/empty.pb.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/empty.pb.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/empty.pb.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/empty.pb.cc.s
 
-CMakeFiles/libprotobuf.dir/src/google/protobuf/extension_set_heavy.cc.o: CMakeFiles/libprotobuf.dir/flags.make
-CMakeFiles/libprotobuf.dir/src/google/protobuf/extension_set_heavy.cc.o: src/google/protobuf/extension_set_heavy.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/extension_set_heavy.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/extension_set_heavy.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/extension_set_heavy.cc
+CMakeFiles/libprotobuf.dir/src/google/protobuf/extension_set_heavy.cc.obj: CMakeFiles/libprotobuf.dir/flags.make
+CMakeFiles/libprotobuf.dir/src/google/protobuf/extension_set_heavy.cc.obj: CMakeFiles/libprotobuf.dir/includes_CXX.rsp
+CMakeFiles/libprotobuf.dir/src/google/protobuf/extension_set_heavy.cc.obj: src/google/protobuf/extension_set_heavy.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/extension_set_heavy.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/extension_set_heavy.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/extension_set_heavy.cc
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/extension_set_heavy.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libprotobuf.dir/src/google/protobuf/extension_set_heavy.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/extension_set_heavy.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/extension_set_heavy.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/extension_set_heavy.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/extension_set_heavy.cc.i
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/extension_set_heavy.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libprotobuf.dir/src/google/protobuf/extension_set_heavy.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/extension_set_heavy.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/extension_set_heavy.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/extension_set_heavy.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/extension_set_heavy.cc.s
 
-CMakeFiles/libprotobuf.dir/src/google/protobuf/field_mask.pb.cc.o: CMakeFiles/libprotobuf.dir/flags.make
-CMakeFiles/libprotobuf.dir/src/google/protobuf/field_mask.pb.cc.o: src/google/protobuf/field_mask.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/field_mask.pb.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/field_mask.pb.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/field_mask.pb.cc
+CMakeFiles/libprotobuf.dir/src/google/protobuf/field_mask.pb.cc.obj: CMakeFiles/libprotobuf.dir/flags.make
+CMakeFiles/libprotobuf.dir/src/google/protobuf/field_mask.pb.cc.obj: CMakeFiles/libprotobuf.dir/includes_CXX.rsp
+CMakeFiles/libprotobuf.dir/src/google/protobuf/field_mask.pb.cc.obj: src/google/protobuf/field_mask.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/field_mask.pb.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/field_mask.pb.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/field_mask.pb.cc
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/field_mask.pb.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libprotobuf.dir/src/google/protobuf/field_mask.pb.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/field_mask.pb.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/field_mask.pb.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/field_mask.pb.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/field_mask.pb.cc.i
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/field_mask.pb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libprotobuf.dir/src/google/protobuf/field_mask.pb.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/field_mask.pb.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/field_mask.pb.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/field_mask.pb.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/field_mask.pb.cc.s
 
-CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_message_bases.cc.o: CMakeFiles/libprotobuf.dir/flags.make
-CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_message_bases.cc.o: src/google/protobuf/generated_message_bases.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_message_bases.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_message_bases.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/generated_message_bases.cc
+CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_message_bases.cc.obj: CMakeFiles/libprotobuf.dir/flags.make
+CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_message_bases.cc.obj: CMakeFiles/libprotobuf.dir/includes_CXX.rsp
+CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_message_bases.cc.obj: src/google/protobuf/generated_message_bases.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_message_bases.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_message_bases.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/generated_message_bases.cc
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_message_bases.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_message_bases.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/generated_message_bases.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_message_bases.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/generated_message_bases.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_message_bases.cc.i
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_message_bases.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_message_bases.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/generated_message_bases.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_message_bases.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/generated_message_bases.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_message_bases.cc.s
 
-CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_message_reflection.cc.o: CMakeFiles/libprotobuf.dir/flags.make
-CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_message_reflection.cc.o: src/google/protobuf/generated_message_reflection.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_message_reflection.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_message_reflection.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/generated_message_reflection.cc
+CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_message_reflection.cc.obj: CMakeFiles/libprotobuf.dir/flags.make
+CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_message_reflection.cc.obj: CMakeFiles/libprotobuf.dir/includes_CXX.rsp
+CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_message_reflection.cc.obj: src/google/protobuf/generated_message_reflection.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_message_reflection.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_message_reflection.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/generated_message_reflection.cc
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_message_reflection.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_message_reflection.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/generated_message_reflection.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_message_reflection.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/generated_message_reflection.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_message_reflection.cc.i
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_message_reflection.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_message_reflection.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/generated_message_reflection.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_message_reflection.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/generated_message_reflection.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_message_reflection.cc.s
 
-CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_message_tctable_full.cc.o: CMakeFiles/libprotobuf.dir/flags.make
-CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_message_tctable_full.cc.o: src/google/protobuf/generated_message_tctable_full.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_message_tctable_full.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_message_tctable_full.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/generated_message_tctable_full.cc
+CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_message_tctable_full.cc.obj: CMakeFiles/libprotobuf.dir/flags.make
+CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_message_tctable_full.cc.obj: CMakeFiles/libprotobuf.dir/includes_CXX.rsp
+CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_message_tctable_full.cc.obj: src/google/protobuf/generated_message_tctable_full.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_message_tctable_full.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_message_tctable_full.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/generated_message_tctable_full.cc
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_message_tctable_full.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_message_tctable_full.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/generated_message_tctable_full.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_message_tctable_full.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/generated_message_tctable_full.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_message_tctable_full.cc.i
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_message_tctable_full.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_message_tctable_full.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/generated_message_tctable_full.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_message_tctable_full.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/generated_message_tctable_full.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_message_tctable_full.cc.s
 
-CMakeFiles/libprotobuf.dir/src/google/protobuf/io/gzip_stream.cc.o: CMakeFiles/libprotobuf.dir/flags.make
-CMakeFiles/libprotobuf.dir/src/google/protobuf/io/gzip_stream.cc.o: src/google/protobuf/io/gzip_stream.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/io/gzip_stream.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/io/gzip_stream.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/io/gzip_stream.cc
+CMakeFiles/libprotobuf.dir/src/google/protobuf/io/gzip_stream.cc.obj: CMakeFiles/libprotobuf.dir/flags.make
+CMakeFiles/libprotobuf.dir/src/google/protobuf/io/gzip_stream.cc.obj: CMakeFiles/libprotobuf.dir/includes_CXX.rsp
+CMakeFiles/libprotobuf.dir/src/google/protobuf/io/gzip_stream.cc.obj: src/google/protobuf/io/gzip_stream.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/io/gzip_stream.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/io/gzip_stream.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/io/gzip_stream.cc
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/io/gzip_stream.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libprotobuf.dir/src/google/protobuf/io/gzip_stream.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/io/gzip_stream.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/io/gzip_stream.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/io/gzip_stream.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/io/gzip_stream.cc.i
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/io/gzip_stream.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libprotobuf.dir/src/google/protobuf/io/gzip_stream.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/io/gzip_stream.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/io/gzip_stream.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/io/gzip_stream.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/io/gzip_stream.cc.s
 
-CMakeFiles/libprotobuf.dir/src/google/protobuf/io/printer.cc.o: CMakeFiles/libprotobuf.dir/flags.make
-CMakeFiles/libprotobuf.dir/src/google/protobuf/io/printer.cc.o: src/google/protobuf/io/printer.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/io/printer.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/io/printer.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/io/printer.cc
+CMakeFiles/libprotobuf.dir/src/google/protobuf/io/printer.cc.obj: CMakeFiles/libprotobuf.dir/flags.make
+CMakeFiles/libprotobuf.dir/src/google/protobuf/io/printer.cc.obj: CMakeFiles/libprotobuf.dir/includes_CXX.rsp
+CMakeFiles/libprotobuf.dir/src/google/protobuf/io/printer.cc.obj: src/google/protobuf/io/printer.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/io/printer.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/io/printer.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/io/printer.cc
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/io/printer.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libprotobuf.dir/src/google/protobuf/io/printer.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/io/printer.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/io/printer.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/io/printer.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/io/printer.cc.i
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/io/printer.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libprotobuf.dir/src/google/protobuf/io/printer.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/io/printer.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/io/printer.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/io/printer.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/io/printer.cc.s
 
-CMakeFiles/libprotobuf.dir/src/google/protobuf/io/tokenizer.cc.o: CMakeFiles/libprotobuf.dir/flags.make
-CMakeFiles/libprotobuf.dir/src/google/protobuf/io/tokenizer.cc.o: src/google/protobuf/io/tokenizer.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/io/tokenizer.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/io/tokenizer.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/io/tokenizer.cc
+CMakeFiles/libprotobuf.dir/src/google/protobuf/io/tokenizer.cc.obj: CMakeFiles/libprotobuf.dir/flags.make
+CMakeFiles/libprotobuf.dir/src/google/protobuf/io/tokenizer.cc.obj: CMakeFiles/libprotobuf.dir/includes_CXX.rsp
+CMakeFiles/libprotobuf.dir/src/google/protobuf/io/tokenizer.cc.obj: src/google/protobuf/io/tokenizer.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/io/tokenizer.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/io/tokenizer.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/io/tokenizer.cc
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/io/tokenizer.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libprotobuf.dir/src/google/protobuf/io/tokenizer.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/io/tokenizer.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/io/tokenizer.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/io/tokenizer.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/io/tokenizer.cc.i
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/io/tokenizer.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libprotobuf.dir/src/google/protobuf/io/tokenizer.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/io/tokenizer.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/io/tokenizer.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/io/tokenizer.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/io/tokenizer.cc.s
 
-CMakeFiles/libprotobuf.dir/src/google/protobuf/map_field.cc.o: CMakeFiles/libprotobuf.dir/flags.make
-CMakeFiles/libprotobuf.dir/src/google/protobuf/map_field.cc.o: src/google/protobuf/map_field.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/map_field.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/map_field.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/map_field.cc
+CMakeFiles/libprotobuf.dir/src/google/protobuf/map_field.cc.obj: CMakeFiles/libprotobuf.dir/flags.make
+CMakeFiles/libprotobuf.dir/src/google/protobuf/map_field.cc.obj: CMakeFiles/libprotobuf.dir/includes_CXX.rsp
+CMakeFiles/libprotobuf.dir/src/google/protobuf/map_field.cc.obj: src/google/protobuf/map_field.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/map_field.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/map_field.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/map_field.cc
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/map_field.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libprotobuf.dir/src/google/protobuf/map_field.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/map_field.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/map_field.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/map_field.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/map_field.cc.i
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/map_field.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libprotobuf.dir/src/google/protobuf/map_field.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/map_field.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/map_field.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/map_field.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/map_field.cc.s
 
-CMakeFiles/libprotobuf.dir/src/google/protobuf/message.cc.o: CMakeFiles/libprotobuf.dir/flags.make
-CMakeFiles/libprotobuf.dir/src/google/protobuf/message.cc.o: src/google/protobuf/message.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/message.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/message.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/message.cc
+CMakeFiles/libprotobuf.dir/src/google/protobuf/message.cc.obj: CMakeFiles/libprotobuf.dir/flags.make
+CMakeFiles/libprotobuf.dir/src/google/protobuf/message.cc.obj: CMakeFiles/libprotobuf.dir/includes_CXX.rsp
+CMakeFiles/libprotobuf.dir/src/google/protobuf/message.cc.obj: src/google/protobuf/message.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/message.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/message.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/message.cc
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/message.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libprotobuf.dir/src/google/protobuf/message.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/message.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/message.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/message.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/message.cc.i
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/message.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libprotobuf.dir/src/google/protobuf/message.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/message.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/message.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/message.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/message.cc.s
 
-CMakeFiles/libprotobuf.dir/src/google/protobuf/reflection_ops.cc.o: CMakeFiles/libprotobuf.dir/flags.make
-CMakeFiles/libprotobuf.dir/src/google/protobuf/reflection_ops.cc.o: src/google/protobuf/reflection_ops.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/reflection_ops.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/reflection_ops.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/reflection_ops.cc
+CMakeFiles/libprotobuf.dir/src/google/protobuf/reflection_ops.cc.obj: CMakeFiles/libprotobuf.dir/flags.make
+CMakeFiles/libprotobuf.dir/src/google/protobuf/reflection_ops.cc.obj: CMakeFiles/libprotobuf.dir/includes_CXX.rsp
+CMakeFiles/libprotobuf.dir/src/google/protobuf/reflection_ops.cc.obj: src/google/protobuf/reflection_ops.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/reflection_ops.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/reflection_ops.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/reflection_ops.cc
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/reflection_ops.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libprotobuf.dir/src/google/protobuf/reflection_ops.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/reflection_ops.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/reflection_ops.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/reflection_ops.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/reflection_ops.cc.i
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/reflection_ops.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libprotobuf.dir/src/google/protobuf/reflection_ops.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/reflection_ops.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/reflection_ops.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/reflection_ops.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/reflection_ops.cc.s
 
-CMakeFiles/libprotobuf.dir/src/google/protobuf/service.cc.o: CMakeFiles/libprotobuf.dir/flags.make
-CMakeFiles/libprotobuf.dir/src/google/protobuf/service.cc.o: src/google/protobuf/service.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/service.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/service.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/service.cc
+CMakeFiles/libprotobuf.dir/src/google/protobuf/service.cc.obj: CMakeFiles/libprotobuf.dir/flags.make
+CMakeFiles/libprotobuf.dir/src/google/protobuf/service.cc.obj: CMakeFiles/libprotobuf.dir/includes_CXX.rsp
+CMakeFiles/libprotobuf.dir/src/google/protobuf/service.cc.obj: src/google/protobuf/service.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/service.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/service.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/service.cc
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/service.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libprotobuf.dir/src/google/protobuf/service.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/service.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/service.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/service.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/service.cc.i
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/service.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libprotobuf.dir/src/google/protobuf/service.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/service.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/service.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/service.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/service.cc.s
 
-CMakeFiles/libprotobuf.dir/src/google/protobuf/source_context.pb.cc.o: CMakeFiles/libprotobuf.dir/flags.make
-CMakeFiles/libprotobuf.dir/src/google/protobuf/source_context.pb.cc.o: src/google/protobuf/source_context.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/source_context.pb.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/source_context.pb.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/source_context.pb.cc
+CMakeFiles/libprotobuf.dir/src/google/protobuf/source_context.pb.cc.obj: CMakeFiles/libprotobuf.dir/flags.make
+CMakeFiles/libprotobuf.dir/src/google/protobuf/source_context.pb.cc.obj: CMakeFiles/libprotobuf.dir/includes_CXX.rsp
+CMakeFiles/libprotobuf.dir/src/google/protobuf/source_context.pb.cc.obj: src/google/protobuf/source_context.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/source_context.pb.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/source_context.pb.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/source_context.pb.cc
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/source_context.pb.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libprotobuf.dir/src/google/protobuf/source_context.pb.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/source_context.pb.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/source_context.pb.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/source_context.pb.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/source_context.pb.cc.i
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/source_context.pb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libprotobuf.dir/src/google/protobuf/source_context.pb.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/source_context.pb.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/source_context.pb.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/source_context.pb.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/source_context.pb.cc.s
 
-CMakeFiles/libprotobuf.dir/src/google/protobuf/struct.pb.cc.o: CMakeFiles/libprotobuf.dir/flags.make
-CMakeFiles/libprotobuf.dir/src/google/protobuf/struct.pb.cc.o: src/google/protobuf/struct.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/struct.pb.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/struct.pb.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/struct.pb.cc
+CMakeFiles/libprotobuf.dir/src/google/protobuf/struct.pb.cc.obj: CMakeFiles/libprotobuf.dir/flags.make
+CMakeFiles/libprotobuf.dir/src/google/protobuf/struct.pb.cc.obj: CMakeFiles/libprotobuf.dir/includes_CXX.rsp
+CMakeFiles/libprotobuf.dir/src/google/protobuf/struct.pb.cc.obj: src/google/protobuf/struct.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/struct.pb.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/struct.pb.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/struct.pb.cc
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/struct.pb.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libprotobuf.dir/src/google/protobuf/struct.pb.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/struct.pb.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/struct.pb.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/struct.pb.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/struct.pb.cc.i
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/struct.pb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libprotobuf.dir/src/google/protobuf/struct.pb.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/struct.pb.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/struct.pb.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/struct.pb.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/struct.pb.cc.s
 
-CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/substitute.cc.o: CMakeFiles/libprotobuf.dir/flags.make
-CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/substitute.cc.o: src/google/protobuf/stubs/substitute.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/substitute.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/substitute.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/stubs/substitute.cc
+CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/substitute.cc.obj: CMakeFiles/libprotobuf.dir/flags.make
+CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/substitute.cc.obj: CMakeFiles/libprotobuf.dir/includes_CXX.rsp
+CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/substitute.cc.obj: src/google/protobuf/stubs/substitute.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/substitute.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/substitute.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/stubs/substitute.cc
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/substitute.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/substitute.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/stubs/substitute.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/substitute.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/stubs/substitute.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/substitute.cc.i
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/substitute.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/substitute.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/stubs/substitute.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/substitute.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/stubs/substitute.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/substitute.cc.s
 
-CMakeFiles/libprotobuf.dir/src/google/protobuf/text_format.cc.o: CMakeFiles/libprotobuf.dir/flags.make
-CMakeFiles/libprotobuf.dir/src/google/protobuf/text_format.cc.o: src/google/protobuf/text_format.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/text_format.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/text_format.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/text_format.cc
+CMakeFiles/libprotobuf.dir/src/google/protobuf/text_format.cc.obj: CMakeFiles/libprotobuf.dir/flags.make
+CMakeFiles/libprotobuf.dir/src/google/protobuf/text_format.cc.obj: CMakeFiles/libprotobuf.dir/includes_CXX.rsp
+CMakeFiles/libprotobuf.dir/src/google/protobuf/text_format.cc.obj: src/google/protobuf/text_format.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/text_format.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/text_format.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/text_format.cc
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/text_format.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libprotobuf.dir/src/google/protobuf/text_format.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/text_format.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/text_format.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/text_format.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/text_format.cc.i
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/text_format.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libprotobuf.dir/src/google/protobuf/text_format.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/text_format.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/text_format.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/text_format.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/text_format.cc.s
 
-CMakeFiles/libprotobuf.dir/src/google/protobuf/timestamp.pb.cc.o: CMakeFiles/libprotobuf.dir/flags.make
-CMakeFiles/libprotobuf.dir/src/google/protobuf/timestamp.pb.cc.o: src/google/protobuf/timestamp.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/timestamp.pb.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/timestamp.pb.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/timestamp.pb.cc
+CMakeFiles/libprotobuf.dir/src/google/protobuf/timestamp.pb.cc.obj: CMakeFiles/libprotobuf.dir/flags.make
+CMakeFiles/libprotobuf.dir/src/google/protobuf/timestamp.pb.cc.obj: CMakeFiles/libprotobuf.dir/includes_CXX.rsp
+CMakeFiles/libprotobuf.dir/src/google/protobuf/timestamp.pb.cc.obj: src/google/protobuf/timestamp.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/timestamp.pb.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/timestamp.pb.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/timestamp.pb.cc
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/timestamp.pb.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libprotobuf.dir/src/google/protobuf/timestamp.pb.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/timestamp.pb.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/timestamp.pb.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/timestamp.pb.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/timestamp.pb.cc.i
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/timestamp.pb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libprotobuf.dir/src/google/protobuf/timestamp.pb.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/timestamp.pb.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/timestamp.pb.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/timestamp.pb.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/timestamp.pb.cc.s
 
-CMakeFiles/libprotobuf.dir/src/google/protobuf/type.pb.cc.o: CMakeFiles/libprotobuf.dir/flags.make
-CMakeFiles/libprotobuf.dir/src/google/protobuf/type.pb.cc.o: src/google/protobuf/type.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/type.pb.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/type.pb.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/type.pb.cc
+CMakeFiles/libprotobuf.dir/src/google/protobuf/type.pb.cc.obj: CMakeFiles/libprotobuf.dir/flags.make
+CMakeFiles/libprotobuf.dir/src/google/protobuf/type.pb.cc.obj: CMakeFiles/libprotobuf.dir/includes_CXX.rsp
+CMakeFiles/libprotobuf.dir/src/google/protobuf/type.pb.cc.obj: src/google/protobuf/type.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/type.pb.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/type.pb.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/type.pb.cc
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/type.pb.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libprotobuf.dir/src/google/protobuf/type.pb.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/type.pb.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/type.pb.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/type.pb.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/type.pb.cc.i
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/type.pb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libprotobuf.dir/src/google/protobuf/type.pb.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/type.pb.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/type.pb.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/type.pb.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/type.pb.cc.s
 
-CMakeFiles/libprotobuf.dir/src/google/protobuf/unknown_field_set.cc.o: CMakeFiles/libprotobuf.dir/flags.make
-CMakeFiles/libprotobuf.dir/src/google/protobuf/unknown_field_set.cc.o: src/google/protobuf/unknown_field_set.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/unknown_field_set.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/unknown_field_set.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/unknown_field_set.cc
+CMakeFiles/libprotobuf.dir/src/google/protobuf/unknown_field_set.cc.obj: CMakeFiles/libprotobuf.dir/flags.make
+CMakeFiles/libprotobuf.dir/src/google/protobuf/unknown_field_set.cc.obj: CMakeFiles/libprotobuf.dir/includes_CXX.rsp
+CMakeFiles/libprotobuf.dir/src/google/protobuf/unknown_field_set.cc.obj: src/google/protobuf/unknown_field_set.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/unknown_field_set.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/unknown_field_set.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/unknown_field_set.cc
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/unknown_field_set.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libprotobuf.dir/src/google/protobuf/unknown_field_set.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/unknown_field_set.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/unknown_field_set.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/unknown_field_set.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/unknown_field_set.cc.i
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/unknown_field_set.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libprotobuf.dir/src/google/protobuf/unknown_field_set.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/unknown_field_set.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/unknown_field_set.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/unknown_field_set.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/unknown_field_set.cc.s
 
-CMakeFiles/libprotobuf.dir/src/google/protobuf/util/delimited_message_util.cc.o: CMakeFiles/libprotobuf.dir/flags.make
-CMakeFiles/libprotobuf.dir/src/google/protobuf/util/delimited_message_util.cc.o: src/google/protobuf/util/delimited_message_util.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/util/delimited_message_util.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/util/delimited_message_util.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/util/delimited_message_util.cc
+CMakeFiles/libprotobuf.dir/src/google/protobuf/util/delimited_message_util.cc.obj: CMakeFiles/libprotobuf.dir/flags.make
+CMakeFiles/libprotobuf.dir/src/google/protobuf/util/delimited_message_util.cc.obj: CMakeFiles/libprotobuf.dir/includes_CXX.rsp
+CMakeFiles/libprotobuf.dir/src/google/protobuf/util/delimited_message_util.cc.obj: src/google/protobuf/util/delimited_message_util.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/util/delimited_message_util.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/util/delimited_message_util.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/util/delimited_message_util.cc
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/util/delimited_message_util.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libprotobuf.dir/src/google/protobuf/util/delimited_message_util.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/util/delimited_message_util.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/util/delimited_message_util.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/util/delimited_message_util.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/util/delimited_message_util.cc.i
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/util/delimited_message_util.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libprotobuf.dir/src/google/protobuf/util/delimited_message_util.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/util/delimited_message_util.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/util/delimited_message_util.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/util/delimited_message_util.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/util/delimited_message_util.cc.s
 
-CMakeFiles/libprotobuf.dir/src/google/protobuf/util/field_comparator.cc.o: CMakeFiles/libprotobuf.dir/flags.make
-CMakeFiles/libprotobuf.dir/src/google/protobuf/util/field_comparator.cc.o: src/google/protobuf/util/field_comparator.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/util/field_comparator.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/util/field_comparator.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/util/field_comparator.cc
+CMakeFiles/libprotobuf.dir/src/google/protobuf/util/field_comparator.cc.obj: CMakeFiles/libprotobuf.dir/flags.make
+CMakeFiles/libprotobuf.dir/src/google/protobuf/util/field_comparator.cc.obj: CMakeFiles/libprotobuf.dir/includes_CXX.rsp
+CMakeFiles/libprotobuf.dir/src/google/protobuf/util/field_comparator.cc.obj: src/google/protobuf/util/field_comparator.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/util/field_comparator.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/util/field_comparator.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/util/field_comparator.cc
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/util/field_comparator.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libprotobuf.dir/src/google/protobuf/util/field_comparator.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/util/field_comparator.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/util/field_comparator.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/util/field_comparator.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/util/field_comparator.cc.i
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/util/field_comparator.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libprotobuf.dir/src/google/protobuf/util/field_comparator.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/util/field_comparator.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/util/field_comparator.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/util/field_comparator.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/util/field_comparator.cc.s
 
-CMakeFiles/libprotobuf.dir/src/google/protobuf/util/field_mask_util.cc.o: CMakeFiles/libprotobuf.dir/flags.make
-CMakeFiles/libprotobuf.dir/src/google/protobuf/util/field_mask_util.cc.o: src/google/protobuf/util/field_mask_util.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/util/field_mask_util.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/util/field_mask_util.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/util/field_mask_util.cc
+CMakeFiles/libprotobuf.dir/src/google/protobuf/util/field_mask_util.cc.obj: CMakeFiles/libprotobuf.dir/flags.make
+CMakeFiles/libprotobuf.dir/src/google/protobuf/util/field_mask_util.cc.obj: CMakeFiles/libprotobuf.dir/includes_CXX.rsp
+CMakeFiles/libprotobuf.dir/src/google/protobuf/util/field_mask_util.cc.obj: src/google/protobuf/util/field_mask_util.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/util/field_mask_util.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/util/field_mask_util.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/util/field_mask_util.cc
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/util/field_mask_util.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libprotobuf.dir/src/google/protobuf/util/field_mask_util.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/util/field_mask_util.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/util/field_mask_util.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/util/field_mask_util.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/util/field_mask_util.cc.i
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/util/field_mask_util.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libprotobuf.dir/src/google/protobuf/util/field_mask_util.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/util/field_mask_util.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/util/field_mask_util.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/util/field_mask_util.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/util/field_mask_util.cc.s
 
-CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/datapiece.cc.o: CMakeFiles/libprotobuf.dir/flags.make
-CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/datapiece.cc.o: src/google/protobuf/util/internal/datapiece.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/datapiece.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/datapiece.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/util/internal/datapiece.cc
+CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/datapiece.cc.obj: CMakeFiles/libprotobuf.dir/flags.make
+CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/datapiece.cc.obj: CMakeFiles/libprotobuf.dir/includes_CXX.rsp
+CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/datapiece.cc.obj: src/google/protobuf/util/internal/datapiece.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/datapiece.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/datapiece.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/util/internal/datapiece.cc
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/datapiece.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/datapiece.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/util/internal/datapiece.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/datapiece.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/util/internal/datapiece.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/datapiece.cc.i
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/datapiece.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/datapiece.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/util/internal/datapiece.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/datapiece.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/util/internal/datapiece.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/datapiece.cc.s
 
-CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/default_value_objectwriter.cc.o: CMakeFiles/libprotobuf.dir/flags.make
-CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/default_value_objectwriter.cc.o: src/google/protobuf/util/internal/default_value_objectwriter.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/default_value_objectwriter.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/default_value_objectwriter.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/util/internal/default_value_objectwriter.cc
+CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/default_value_objectwriter.cc.obj: CMakeFiles/libprotobuf.dir/flags.make
+CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/default_value_objectwriter.cc.obj: CMakeFiles/libprotobuf.dir/includes_CXX.rsp
+CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/default_value_objectwriter.cc.obj: src/google/protobuf/util/internal/default_value_objectwriter.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/default_value_objectwriter.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/default_value_objectwriter.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/util/internal/default_value_objectwriter.cc
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/default_value_objectwriter.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/default_value_objectwriter.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/util/internal/default_value_objectwriter.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/default_value_objectwriter.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/util/internal/default_value_objectwriter.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/default_value_objectwriter.cc.i
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/default_value_objectwriter.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/default_value_objectwriter.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/util/internal/default_value_objectwriter.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/default_value_objectwriter.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/util/internal/default_value_objectwriter.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/default_value_objectwriter.cc.s
 
-CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/error_listener.cc.o: CMakeFiles/libprotobuf.dir/flags.make
-CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/error_listener.cc.o: src/google/protobuf/util/internal/error_listener.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/error_listener.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/error_listener.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/util/internal/error_listener.cc
+CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/error_listener.cc.obj: CMakeFiles/libprotobuf.dir/flags.make
+CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/error_listener.cc.obj: CMakeFiles/libprotobuf.dir/includes_CXX.rsp
+CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/error_listener.cc.obj: src/google/protobuf/util/internal/error_listener.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/error_listener.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/error_listener.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/util/internal/error_listener.cc
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/error_listener.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/error_listener.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/util/internal/error_listener.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/error_listener.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/util/internal/error_listener.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/error_listener.cc.i
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/error_listener.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/error_listener.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/util/internal/error_listener.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/error_listener.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/util/internal/error_listener.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/error_listener.cc.s
 
-CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/field_mask_utility.cc.o: CMakeFiles/libprotobuf.dir/flags.make
-CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/field_mask_utility.cc.o: src/google/protobuf/util/internal/field_mask_utility.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/field_mask_utility.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/field_mask_utility.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/util/internal/field_mask_utility.cc
+CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/field_mask_utility.cc.obj: CMakeFiles/libprotobuf.dir/flags.make
+CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/field_mask_utility.cc.obj: CMakeFiles/libprotobuf.dir/includes_CXX.rsp
+CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/field_mask_utility.cc.obj: src/google/protobuf/util/internal/field_mask_utility.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/field_mask_utility.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/field_mask_utility.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/util/internal/field_mask_utility.cc
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/field_mask_utility.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/field_mask_utility.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/util/internal/field_mask_utility.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/field_mask_utility.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/util/internal/field_mask_utility.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/field_mask_utility.cc.i
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/field_mask_utility.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/field_mask_utility.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/util/internal/field_mask_utility.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/field_mask_utility.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/util/internal/field_mask_utility.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/field_mask_utility.cc.s
 
-CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/json_escaping.cc.o: CMakeFiles/libprotobuf.dir/flags.make
-CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/json_escaping.cc.o: src/google/protobuf/util/internal/json_escaping.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/json_escaping.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/json_escaping.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/util/internal/json_escaping.cc
+CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/json_escaping.cc.obj: CMakeFiles/libprotobuf.dir/flags.make
+CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/json_escaping.cc.obj: CMakeFiles/libprotobuf.dir/includes_CXX.rsp
+CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/json_escaping.cc.obj: src/google/protobuf/util/internal/json_escaping.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/json_escaping.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/json_escaping.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/util/internal/json_escaping.cc
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/json_escaping.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/json_escaping.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/util/internal/json_escaping.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/json_escaping.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/util/internal/json_escaping.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/json_escaping.cc.i
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/json_escaping.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/json_escaping.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/util/internal/json_escaping.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/json_escaping.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/util/internal/json_escaping.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/json_escaping.cc.s
 
-CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/json_objectwriter.cc.o: CMakeFiles/libprotobuf.dir/flags.make
-CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/json_objectwriter.cc.o: src/google/protobuf/util/internal/json_objectwriter.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/json_objectwriter.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/json_objectwriter.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/util/internal/json_objectwriter.cc
+CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/json_objectwriter.cc.obj: CMakeFiles/libprotobuf.dir/flags.make
+CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/json_objectwriter.cc.obj: CMakeFiles/libprotobuf.dir/includes_CXX.rsp
+CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/json_objectwriter.cc.obj: src/google/protobuf/util/internal/json_objectwriter.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/json_objectwriter.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/json_objectwriter.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/util/internal/json_objectwriter.cc
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/json_objectwriter.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/json_objectwriter.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/util/internal/json_objectwriter.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/json_objectwriter.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/util/internal/json_objectwriter.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/json_objectwriter.cc.i
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/json_objectwriter.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/json_objectwriter.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/util/internal/json_objectwriter.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/json_objectwriter.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/util/internal/json_objectwriter.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/json_objectwriter.cc.s
 
-CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/json_stream_parser.cc.o: CMakeFiles/libprotobuf.dir/flags.make
-CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/json_stream_parser.cc.o: src/google/protobuf/util/internal/json_stream_parser.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/json_stream_parser.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/json_stream_parser.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/util/internal/json_stream_parser.cc
+CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/json_stream_parser.cc.obj: CMakeFiles/libprotobuf.dir/flags.make
+CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/json_stream_parser.cc.obj: CMakeFiles/libprotobuf.dir/includes_CXX.rsp
+CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/json_stream_parser.cc.obj: src/google/protobuf/util/internal/json_stream_parser.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/json_stream_parser.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/json_stream_parser.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/util/internal/json_stream_parser.cc
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/json_stream_parser.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/json_stream_parser.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/util/internal/json_stream_parser.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/json_stream_parser.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/util/internal/json_stream_parser.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/json_stream_parser.cc.i
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/json_stream_parser.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/json_stream_parser.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/util/internal/json_stream_parser.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/json_stream_parser.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/util/internal/json_stream_parser.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/json_stream_parser.cc.s
 
-CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/object_writer.cc.o: CMakeFiles/libprotobuf.dir/flags.make
-CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/object_writer.cc.o: src/google/protobuf/util/internal/object_writer.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/object_writer.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/object_writer.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/util/internal/object_writer.cc
+CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/object_writer.cc.obj: CMakeFiles/libprotobuf.dir/flags.make
+CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/object_writer.cc.obj: CMakeFiles/libprotobuf.dir/includes_CXX.rsp
+CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/object_writer.cc.obj: src/google/protobuf/util/internal/object_writer.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/object_writer.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/object_writer.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/util/internal/object_writer.cc
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/object_writer.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/object_writer.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/util/internal/object_writer.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/object_writer.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/util/internal/object_writer.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/object_writer.cc.i
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/object_writer.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/object_writer.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/util/internal/object_writer.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/object_writer.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/util/internal/object_writer.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/object_writer.cc.s
 
-CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/proto_writer.cc.o: CMakeFiles/libprotobuf.dir/flags.make
-CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/proto_writer.cc.o: src/google/protobuf/util/internal/proto_writer.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/proto_writer.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/proto_writer.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/util/internal/proto_writer.cc
+CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/proto_writer.cc.obj: CMakeFiles/libprotobuf.dir/flags.make
+CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/proto_writer.cc.obj: CMakeFiles/libprotobuf.dir/includes_CXX.rsp
+CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/proto_writer.cc.obj: src/google/protobuf/util/internal/proto_writer.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/proto_writer.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/proto_writer.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/util/internal/proto_writer.cc
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/proto_writer.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/proto_writer.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/util/internal/proto_writer.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/proto_writer.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/util/internal/proto_writer.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/proto_writer.cc.i
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/proto_writer.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/proto_writer.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/util/internal/proto_writer.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/proto_writer.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/util/internal/proto_writer.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/proto_writer.cc.s
 
-CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/protostream_objectsource.cc.o: CMakeFiles/libprotobuf.dir/flags.make
-CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/protostream_objectsource.cc.o: src/google/protobuf/util/internal/protostream_objectsource.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/protostream_objectsource.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/protostream_objectsource.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/util/internal/protostream_objectsource.cc
+CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/protostream_objectsource.cc.obj: CMakeFiles/libprotobuf.dir/flags.make
+CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/protostream_objectsource.cc.obj: CMakeFiles/libprotobuf.dir/includes_CXX.rsp
+CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/protostream_objectsource.cc.obj: src/google/protobuf/util/internal/protostream_objectsource.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/protostream_objectsource.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/protostream_objectsource.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/util/internal/protostream_objectsource.cc
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/protostream_objectsource.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/protostream_objectsource.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/util/internal/protostream_objectsource.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/protostream_objectsource.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/util/internal/protostream_objectsource.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/protostream_objectsource.cc.i
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/protostream_objectsource.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/protostream_objectsource.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/util/internal/protostream_objectsource.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/protostream_objectsource.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/util/internal/protostream_objectsource.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/protostream_objectsource.cc.s
 
-CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/protostream_objectwriter.cc.o: CMakeFiles/libprotobuf.dir/flags.make
-CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/protostream_objectwriter.cc.o: src/google/protobuf/util/internal/protostream_objectwriter.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/protostream_objectwriter.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/protostream_objectwriter.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/util/internal/protostream_objectwriter.cc
+CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/protostream_objectwriter.cc.obj: CMakeFiles/libprotobuf.dir/flags.make
+CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/protostream_objectwriter.cc.obj: CMakeFiles/libprotobuf.dir/includes_CXX.rsp
+CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/protostream_objectwriter.cc.obj: src/google/protobuf/util/internal/protostream_objectwriter.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/protostream_objectwriter.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/protostream_objectwriter.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/util/internal/protostream_objectwriter.cc
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/protostream_objectwriter.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/protostream_objectwriter.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/util/internal/protostream_objectwriter.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/protostream_objectwriter.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/util/internal/protostream_objectwriter.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/protostream_objectwriter.cc.i
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/protostream_objectwriter.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/protostream_objectwriter.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/util/internal/protostream_objectwriter.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/protostream_objectwriter.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/util/internal/protostream_objectwriter.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/protostream_objectwriter.cc.s
 
-CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/type_info.cc.o: CMakeFiles/libprotobuf.dir/flags.make
-CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/type_info.cc.o: src/google/protobuf/util/internal/type_info.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_77) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/type_info.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/type_info.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/util/internal/type_info.cc
+CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/type_info.cc.obj: CMakeFiles/libprotobuf.dir/flags.make
+CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/type_info.cc.obj: CMakeFiles/libprotobuf.dir/includes_CXX.rsp
+CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/type_info.cc.obj: src/google/protobuf/util/internal/type_info.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_77) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/type_info.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/type_info.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/util/internal/type_info.cc
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/type_info.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/type_info.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/util/internal/type_info.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/type_info.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/util/internal/type_info.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/type_info.cc.i
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/type_info.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/type_info.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/util/internal/type_info.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/type_info.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/util/internal/type_info.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/type_info.cc.s
 
-CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/utility.cc.o: CMakeFiles/libprotobuf.dir/flags.make
-CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/utility.cc.o: src/google/protobuf/util/internal/utility.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_78) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/utility.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/utility.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/util/internal/utility.cc
+CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/utility.cc.obj: CMakeFiles/libprotobuf.dir/flags.make
+CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/utility.cc.obj: CMakeFiles/libprotobuf.dir/includes_CXX.rsp
+CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/utility.cc.obj: src/google/protobuf/util/internal/utility.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_78) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/utility.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/utility.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/util/internal/utility.cc
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/utility.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/utility.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/util/internal/utility.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/utility.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/util/internal/utility.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/utility.cc.i
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/utility.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/utility.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/util/internal/utility.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/utility.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/util/internal/utility.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/utility.cc.s
 
-CMakeFiles/libprotobuf.dir/src/google/protobuf/util/json_util.cc.o: CMakeFiles/libprotobuf.dir/flags.make
-CMakeFiles/libprotobuf.dir/src/google/protobuf/util/json_util.cc.o: src/google/protobuf/util/json_util.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_79) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/util/json_util.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/util/json_util.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/util/json_util.cc
+CMakeFiles/libprotobuf.dir/src/google/protobuf/util/json_util.cc.obj: CMakeFiles/libprotobuf.dir/flags.make
+CMakeFiles/libprotobuf.dir/src/google/protobuf/util/json_util.cc.obj: CMakeFiles/libprotobuf.dir/includes_CXX.rsp
+CMakeFiles/libprotobuf.dir/src/google/protobuf/util/json_util.cc.obj: src/google/protobuf/util/json_util.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_79) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/util/json_util.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/util/json_util.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/util/json_util.cc
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/util/json_util.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libprotobuf.dir/src/google/protobuf/util/json_util.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/util/json_util.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/util/json_util.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/util/json_util.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/util/json_util.cc.i
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/util/json_util.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libprotobuf.dir/src/google/protobuf/util/json_util.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/util/json_util.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/util/json_util.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/util/json_util.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/util/json_util.cc.s
 
-CMakeFiles/libprotobuf.dir/src/google/protobuf/util/message_differencer.cc.o: CMakeFiles/libprotobuf.dir/flags.make
-CMakeFiles/libprotobuf.dir/src/google/protobuf/util/message_differencer.cc.o: src/google/protobuf/util/message_differencer.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_80) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/util/message_differencer.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/util/message_differencer.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/util/message_differencer.cc
+CMakeFiles/libprotobuf.dir/src/google/protobuf/util/message_differencer.cc.obj: CMakeFiles/libprotobuf.dir/flags.make
+CMakeFiles/libprotobuf.dir/src/google/protobuf/util/message_differencer.cc.obj: CMakeFiles/libprotobuf.dir/includes_CXX.rsp
+CMakeFiles/libprotobuf.dir/src/google/protobuf/util/message_differencer.cc.obj: src/google/protobuf/util/message_differencer.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_80) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/util/message_differencer.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/util/message_differencer.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/util/message_differencer.cc
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/util/message_differencer.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libprotobuf.dir/src/google/protobuf/util/message_differencer.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/util/message_differencer.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/util/message_differencer.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/util/message_differencer.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/util/message_differencer.cc.i
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/util/message_differencer.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libprotobuf.dir/src/google/protobuf/util/message_differencer.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/util/message_differencer.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/util/message_differencer.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/util/message_differencer.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/util/message_differencer.cc.s
 
-CMakeFiles/libprotobuf.dir/src/google/protobuf/util/time_util.cc.o: CMakeFiles/libprotobuf.dir/flags.make
-CMakeFiles/libprotobuf.dir/src/google/protobuf/util/time_util.cc.o: src/google/protobuf/util/time_util.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_81) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/util/time_util.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/util/time_util.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/util/time_util.cc
+CMakeFiles/libprotobuf.dir/src/google/protobuf/util/time_util.cc.obj: CMakeFiles/libprotobuf.dir/flags.make
+CMakeFiles/libprotobuf.dir/src/google/protobuf/util/time_util.cc.obj: CMakeFiles/libprotobuf.dir/includes_CXX.rsp
+CMakeFiles/libprotobuf.dir/src/google/protobuf/util/time_util.cc.obj: src/google/protobuf/util/time_util.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_81) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/util/time_util.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/util/time_util.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/util/time_util.cc
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/util/time_util.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libprotobuf.dir/src/google/protobuf/util/time_util.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/util/time_util.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/util/time_util.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/util/time_util.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/util/time_util.cc.i
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/util/time_util.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libprotobuf.dir/src/google/protobuf/util/time_util.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/util/time_util.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/util/time_util.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/util/time_util.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/util/time_util.cc.s
 
-CMakeFiles/libprotobuf.dir/src/google/protobuf/util/type_resolver_util.cc.o: CMakeFiles/libprotobuf.dir/flags.make
-CMakeFiles/libprotobuf.dir/src/google/protobuf/util/type_resolver_util.cc.o: src/google/protobuf/util/type_resolver_util.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_82) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/util/type_resolver_util.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/util/type_resolver_util.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/util/type_resolver_util.cc
+CMakeFiles/libprotobuf.dir/src/google/protobuf/util/type_resolver_util.cc.obj: CMakeFiles/libprotobuf.dir/flags.make
+CMakeFiles/libprotobuf.dir/src/google/protobuf/util/type_resolver_util.cc.obj: CMakeFiles/libprotobuf.dir/includes_CXX.rsp
+CMakeFiles/libprotobuf.dir/src/google/protobuf/util/type_resolver_util.cc.obj: src/google/protobuf/util/type_resolver_util.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_82) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/util/type_resolver_util.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/util/type_resolver_util.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/util/type_resolver_util.cc
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/util/type_resolver_util.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libprotobuf.dir/src/google/protobuf/util/type_resolver_util.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/util/type_resolver_util.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/util/type_resolver_util.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/util/type_resolver_util.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/util/type_resolver_util.cc.i
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/util/type_resolver_util.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libprotobuf.dir/src/google/protobuf/util/type_resolver_util.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/util/type_resolver_util.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/util/type_resolver_util.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/util/type_resolver_util.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/util/type_resolver_util.cc.s
 
-CMakeFiles/libprotobuf.dir/src/google/protobuf/wire_format.cc.o: CMakeFiles/libprotobuf.dir/flags.make
-CMakeFiles/libprotobuf.dir/src/google/protobuf/wire_format.cc.o: src/google/protobuf/wire_format.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_83) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/wire_format.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/wire_format.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/wire_format.cc
+CMakeFiles/libprotobuf.dir/src/google/protobuf/wire_format.cc.obj: CMakeFiles/libprotobuf.dir/flags.make
+CMakeFiles/libprotobuf.dir/src/google/protobuf/wire_format.cc.obj: CMakeFiles/libprotobuf.dir/includes_CXX.rsp
+CMakeFiles/libprotobuf.dir/src/google/protobuf/wire_format.cc.obj: src/google/protobuf/wire_format.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_83) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/wire_format.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/wire_format.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/wire_format.cc
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/wire_format.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libprotobuf.dir/src/google/protobuf/wire_format.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/wire_format.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/wire_format.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/wire_format.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/wire_format.cc.i
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/wire_format.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libprotobuf.dir/src/google/protobuf/wire_format.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/wire_format.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/wire_format.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/wire_format.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/wire_format.cc.s
 
-CMakeFiles/libprotobuf.dir/src/google/protobuf/wrappers.pb.cc.o: CMakeFiles/libprotobuf.dir/flags.make
-CMakeFiles/libprotobuf.dir/src/google/protobuf/wrappers.pb.cc.o: src/google/protobuf/wrappers.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_84) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/wrappers.pb.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/wrappers.pb.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/wrappers.pb.cc
+CMakeFiles/libprotobuf.dir/src/google/protobuf/wrappers.pb.cc.obj: CMakeFiles/libprotobuf.dir/flags.make
+CMakeFiles/libprotobuf.dir/src/google/protobuf/wrappers.pb.cc.obj: CMakeFiles/libprotobuf.dir/includes_CXX.rsp
+CMakeFiles/libprotobuf.dir/src/google/protobuf/wrappers.pb.cc.obj: src/google/protobuf/wrappers.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_84) "Building CXX object CMakeFiles/libprotobuf.dir/src/google/protobuf/wrappers.pb.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libprotobuf.dir/src/google/protobuf/wrappers.pb.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/wrappers.pb.cc
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/wrappers.pb.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libprotobuf.dir/src/google/protobuf/wrappers.pb.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/wrappers.pb.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/wrappers.pb.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/wrappers.pb.cc > CMakeFiles/libprotobuf.dir/src/google/protobuf/wrappers.pb.cc.i
 
 CMakeFiles/libprotobuf.dir/src/google/protobuf/wrappers.pb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libprotobuf.dir/src/google/protobuf/wrappers.pb.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/wrappers.pb.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/wrappers.pb.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/wrappers.pb.cc -o CMakeFiles/libprotobuf.dir/src/google/protobuf/wrappers.pb.cc.s
 
 # Object files for target libprotobuf
 libprotobuf_OBJECTS = \
-"CMakeFiles/libprotobuf.dir/src/google/protobuf/any_lite.cc.o" \
-"CMakeFiles/libprotobuf.dir/src/google/protobuf/arena.cc.o" \
-"CMakeFiles/libprotobuf.dir/src/google/protobuf/arenastring.cc.o" \
-"CMakeFiles/libprotobuf.dir/src/google/protobuf/arenaz_sampler.cc.o" \
-"CMakeFiles/libprotobuf.dir/src/google/protobuf/extension_set.cc.o" \
-"CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_enum_util.cc.o" \
-"CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_message_tctable_lite.cc.o" \
-"CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_message_util.cc.o" \
-"CMakeFiles/libprotobuf.dir/src/google/protobuf/implicit_weak_message.cc.o" \
-"CMakeFiles/libprotobuf.dir/src/google/protobuf/inlined_string_field.cc.o" \
-"CMakeFiles/libprotobuf.dir/src/google/protobuf/io/coded_stream.cc.o" \
-"CMakeFiles/libprotobuf.dir/src/google/protobuf/io/io_win32.cc.o" \
-"CMakeFiles/libprotobuf.dir/src/google/protobuf/io/strtod.cc.o" \
-"CMakeFiles/libprotobuf.dir/src/google/protobuf/io/zero_copy_stream.cc.o" \
-"CMakeFiles/libprotobuf.dir/src/google/protobuf/io/zero_copy_stream_impl.cc.o" \
-"CMakeFiles/libprotobuf.dir/src/google/protobuf/io/zero_copy_stream_impl_lite.cc.o" \
-"CMakeFiles/libprotobuf.dir/src/google/protobuf/map.cc.o" \
-"CMakeFiles/libprotobuf.dir/src/google/protobuf/message_lite.cc.o" \
-"CMakeFiles/libprotobuf.dir/src/google/protobuf/parse_context.cc.o" \
-"CMakeFiles/libprotobuf.dir/src/google/protobuf/repeated_field.cc.o" \
-"CMakeFiles/libprotobuf.dir/src/google/protobuf/repeated_ptr_field.cc.o" \
-"CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/bytestream.cc.o" \
-"CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/common.cc.o" \
-"CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/int128.cc.o" \
-"CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/status.cc.o" \
-"CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/statusor.cc.o" \
-"CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/stringpiece.cc.o" \
-"CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/stringprintf.cc.o" \
-"CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/structurally_valid.cc.o" \
-"CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/strutil.cc.o" \
-"CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/time.cc.o" \
-"CMakeFiles/libprotobuf.dir/src/google/protobuf/wire_format_lite.cc.o" \
-"CMakeFiles/libprotobuf.dir/src/google/protobuf/any.cc.o" \
-"CMakeFiles/libprotobuf.dir/src/google/protobuf/any.pb.cc.o" \
-"CMakeFiles/libprotobuf.dir/src/google/protobuf/api.pb.cc.o" \
-"CMakeFiles/libprotobuf.dir/src/google/protobuf/compiler/importer.cc.o" \
-"CMakeFiles/libprotobuf.dir/src/google/protobuf/compiler/parser.cc.o" \
-"CMakeFiles/libprotobuf.dir/src/google/protobuf/descriptor.cc.o" \
-"CMakeFiles/libprotobuf.dir/src/google/protobuf/descriptor.pb.cc.o" \
-"CMakeFiles/libprotobuf.dir/src/google/protobuf/descriptor_database.cc.o" \
-"CMakeFiles/libprotobuf.dir/src/google/protobuf/duration.pb.cc.o" \
-"CMakeFiles/libprotobuf.dir/src/google/protobuf/dynamic_message.cc.o" \
-"CMakeFiles/libprotobuf.dir/src/google/protobuf/empty.pb.cc.o" \
-"CMakeFiles/libprotobuf.dir/src/google/protobuf/extension_set_heavy.cc.o" \
-"CMakeFiles/libprotobuf.dir/src/google/protobuf/field_mask.pb.cc.o" \
-"CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_message_bases.cc.o" \
-"CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_message_reflection.cc.o" \
-"CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_message_tctable_full.cc.o" \
-"CMakeFiles/libprotobuf.dir/src/google/protobuf/io/gzip_stream.cc.o" \
-"CMakeFiles/libprotobuf.dir/src/google/protobuf/io/printer.cc.o" \
-"CMakeFiles/libprotobuf.dir/src/google/protobuf/io/tokenizer.cc.o" \
-"CMakeFiles/libprotobuf.dir/src/google/protobuf/map_field.cc.o" \
-"CMakeFiles/libprotobuf.dir/src/google/protobuf/message.cc.o" \
-"CMakeFiles/libprotobuf.dir/src/google/protobuf/reflection_ops.cc.o" \
-"CMakeFiles/libprotobuf.dir/src/google/protobuf/service.cc.o" \
-"CMakeFiles/libprotobuf.dir/src/google/protobuf/source_context.pb.cc.o" \
-"CMakeFiles/libprotobuf.dir/src/google/protobuf/struct.pb.cc.o" \
-"CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/substitute.cc.o" \
-"CMakeFiles/libprotobuf.dir/src/google/protobuf/text_format.cc.o" \
-"CMakeFiles/libprotobuf.dir/src/google/protobuf/timestamp.pb.cc.o" \
-"CMakeFiles/libprotobuf.dir/src/google/protobuf/type.pb.cc.o" \
-"CMakeFiles/libprotobuf.dir/src/google/protobuf/unknown_field_set.cc.o" \
-"CMakeFiles/libprotobuf.dir/src/google/protobuf/util/delimited_message_util.cc.o" \
-"CMakeFiles/libprotobuf.dir/src/google/protobuf/util/field_comparator.cc.o" \
-"CMakeFiles/libprotobuf.dir/src/google/protobuf/util/field_mask_util.cc.o" \
-"CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/datapiece.cc.o" \
-"CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/default_value_objectwriter.cc.o" \
-"CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/error_listener.cc.o" \
-"CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/field_mask_utility.cc.o" \
-"CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/json_escaping.cc.o" \
-"CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/json_objectwriter.cc.o" \
-"CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/json_stream_parser.cc.o" \
-"CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/object_writer.cc.o" \
-"CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/proto_writer.cc.o" \
-"CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/protostream_objectsource.cc.o" \
-"CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/protostream_objectwriter.cc.o" \
-"CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/type_info.cc.o" \
-"CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/utility.cc.o" \
-"CMakeFiles/libprotobuf.dir/src/google/protobuf/util/json_util.cc.o" \
-"CMakeFiles/libprotobuf.dir/src/google/protobuf/util/message_differencer.cc.o" \
-"CMakeFiles/libprotobuf.dir/src/google/protobuf/util/time_util.cc.o" \
-"CMakeFiles/libprotobuf.dir/src/google/protobuf/util/type_resolver_util.cc.o" \
-"CMakeFiles/libprotobuf.dir/src/google/protobuf/wire_format.cc.o" \
-"CMakeFiles/libprotobuf.dir/src/google/protobuf/wrappers.pb.cc.o"
+"CMakeFiles/libprotobuf.dir/src/google/protobuf/any_lite.cc.obj" \
+"CMakeFiles/libprotobuf.dir/src/google/protobuf/arena.cc.obj" \
+"CMakeFiles/libprotobuf.dir/src/google/protobuf/arenastring.cc.obj" \
+"CMakeFiles/libprotobuf.dir/src/google/protobuf/arenaz_sampler.cc.obj" \
+"CMakeFiles/libprotobuf.dir/src/google/protobuf/extension_set.cc.obj" \
+"CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_enum_util.cc.obj" \
+"CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_message_tctable_lite.cc.obj" \
+"CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_message_util.cc.obj" \
+"CMakeFiles/libprotobuf.dir/src/google/protobuf/implicit_weak_message.cc.obj" \
+"CMakeFiles/libprotobuf.dir/src/google/protobuf/inlined_string_field.cc.obj" \
+"CMakeFiles/libprotobuf.dir/src/google/protobuf/io/coded_stream.cc.obj" \
+"CMakeFiles/libprotobuf.dir/src/google/protobuf/io/io_win32.cc.obj" \
+"CMakeFiles/libprotobuf.dir/src/google/protobuf/io/strtod.cc.obj" \
+"CMakeFiles/libprotobuf.dir/src/google/protobuf/io/zero_copy_stream.cc.obj" \
+"CMakeFiles/libprotobuf.dir/src/google/protobuf/io/zero_copy_stream_impl.cc.obj" \
+"CMakeFiles/libprotobuf.dir/src/google/protobuf/io/zero_copy_stream_impl_lite.cc.obj" \
+"CMakeFiles/libprotobuf.dir/src/google/protobuf/map.cc.obj" \
+"CMakeFiles/libprotobuf.dir/src/google/protobuf/message_lite.cc.obj" \
+"CMakeFiles/libprotobuf.dir/src/google/protobuf/parse_context.cc.obj" \
+"CMakeFiles/libprotobuf.dir/src/google/protobuf/repeated_field.cc.obj" \
+"CMakeFiles/libprotobuf.dir/src/google/protobuf/repeated_ptr_field.cc.obj" \
+"CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/bytestream.cc.obj" \
+"CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/common.cc.obj" \
+"CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/int128.cc.obj" \
+"CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/status.cc.obj" \
+"CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/statusor.cc.obj" \
+"CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/stringpiece.cc.obj" \
+"CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/stringprintf.cc.obj" \
+"CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/structurally_valid.cc.obj" \
+"CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/strutil.cc.obj" \
+"CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/time.cc.obj" \
+"CMakeFiles/libprotobuf.dir/src/google/protobuf/wire_format_lite.cc.obj" \
+"CMakeFiles/libprotobuf.dir/src/google/protobuf/any.cc.obj" \
+"CMakeFiles/libprotobuf.dir/src/google/protobuf/any.pb.cc.obj" \
+"CMakeFiles/libprotobuf.dir/src/google/protobuf/api.pb.cc.obj" \
+"CMakeFiles/libprotobuf.dir/src/google/protobuf/compiler/importer.cc.obj" \
+"CMakeFiles/libprotobuf.dir/src/google/protobuf/compiler/parser.cc.obj" \
+"CMakeFiles/libprotobuf.dir/src/google/protobuf/descriptor.cc.obj" \
+"CMakeFiles/libprotobuf.dir/src/google/protobuf/descriptor.pb.cc.obj" \
+"CMakeFiles/libprotobuf.dir/src/google/protobuf/descriptor_database.cc.obj" \
+"CMakeFiles/libprotobuf.dir/src/google/protobuf/duration.pb.cc.obj" \
+"CMakeFiles/libprotobuf.dir/src/google/protobuf/dynamic_message.cc.obj" \
+"CMakeFiles/libprotobuf.dir/src/google/protobuf/empty.pb.cc.obj" \
+"CMakeFiles/libprotobuf.dir/src/google/protobuf/extension_set_heavy.cc.obj" \
+"CMakeFiles/libprotobuf.dir/src/google/protobuf/field_mask.pb.cc.obj" \
+"CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_message_bases.cc.obj" \
+"CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_message_reflection.cc.obj" \
+"CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_message_tctable_full.cc.obj" \
+"CMakeFiles/libprotobuf.dir/src/google/protobuf/io/gzip_stream.cc.obj" \
+"CMakeFiles/libprotobuf.dir/src/google/protobuf/io/printer.cc.obj" \
+"CMakeFiles/libprotobuf.dir/src/google/protobuf/io/tokenizer.cc.obj" \
+"CMakeFiles/libprotobuf.dir/src/google/protobuf/map_field.cc.obj" \
+"CMakeFiles/libprotobuf.dir/src/google/protobuf/message.cc.obj" \
+"CMakeFiles/libprotobuf.dir/src/google/protobuf/reflection_ops.cc.obj" \
+"CMakeFiles/libprotobuf.dir/src/google/protobuf/service.cc.obj" \
+"CMakeFiles/libprotobuf.dir/src/google/protobuf/source_context.pb.cc.obj" \
+"CMakeFiles/libprotobuf.dir/src/google/protobuf/struct.pb.cc.obj" \
+"CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/substitute.cc.obj" \
+"CMakeFiles/libprotobuf.dir/src/google/protobuf/text_format.cc.obj" \
+"CMakeFiles/libprotobuf.dir/src/google/protobuf/timestamp.pb.cc.obj" \
+"CMakeFiles/libprotobuf.dir/src/google/protobuf/type.pb.cc.obj" \
+"CMakeFiles/libprotobuf.dir/src/google/protobuf/unknown_field_set.cc.obj" \
+"CMakeFiles/libprotobuf.dir/src/google/protobuf/util/delimited_message_util.cc.obj" \
+"CMakeFiles/libprotobuf.dir/src/google/protobuf/util/field_comparator.cc.obj" \
+"CMakeFiles/libprotobuf.dir/src/google/protobuf/util/field_mask_util.cc.obj" \
+"CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/datapiece.cc.obj" \
+"CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/default_value_objectwriter.cc.obj" \
+"CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/error_listener.cc.obj" \
+"CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/field_mask_utility.cc.obj" \
+"CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/json_escaping.cc.obj" \
+"CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/json_objectwriter.cc.obj" \
+"CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/json_stream_parser.cc.obj" \
+"CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/object_writer.cc.obj" \
+"CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/proto_writer.cc.obj" \
+"CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/protostream_objectsource.cc.obj" \
+"CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/protostream_objectwriter.cc.obj" \
+"CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/type_info.cc.obj" \
+"CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/utility.cc.obj" \
+"CMakeFiles/libprotobuf.dir/src/google/protobuf/util/json_util.cc.obj" \
+"CMakeFiles/libprotobuf.dir/src/google/protobuf/util/message_differencer.cc.obj" \
+"CMakeFiles/libprotobuf.dir/src/google/protobuf/util/time_util.cc.obj" \
+"CMakeFiles/libprotobuf.dir/src/google/protobuf/util/type_resolver_util.cc.obj" \
+"CMakeFiles/libprotobuf.dir/src/google/protobuf/wire_format.cc.obj" \
+"CMakeFiles/libprotobuf.dir/src/google/protobuf/wrappers.pb.cc.obj"
 
 # External object files for target libprotobuf
 libprotobuf_EXTERNAL_OBJECTS =
 
-libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/any_lite.cc.o
-libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/arena.cc.o
-libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/arenastring.cc.o
-libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/arenaz_sampler.cc.o
-libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/extension_set.cc.o
-libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_enum_util.cc.o
-libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_message_tctable_lite.cc.o
-libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_message_util.cc.o
-libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/implicit_weak_message.cc.o
-libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/inlined_string_field.cc.o
-libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/io/coded_stream.cc.o
-libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/io/io_win32.cc.o
-libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/io/strtod.cc.o
-libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/io/zero_copy_stream.cc.o
-libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/io/zero_copy_stream_impl.cc.o
-libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/io/zero_copy_stream_impl_lite.cc.o
-libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/map.cc.o
-libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/message_lite.cc.o
-libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/parse_context.cc.o
-libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/repeated_field.cc.o
-libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/repeated_ptr_field.cc.o
-libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/bytestream.cc.o
-libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/common.cc.o
-libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/int128.cc.o
-libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/status.cc.o
-libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/statusor.cc.o
-libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/stringpiece.cc.o
-libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/stringprintf.cc.o
-libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/structurally_valid.cc.o
-libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/strutil.cc.o
-libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/time.cc.o
-libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/wire_format_lite.cc.o
-libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/any.cc.o
-libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/any.pb.cc.o
-libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/api.pb.cc.o
-libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/compiler/importer.cc.o
-libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/compiler/parser.cc.o
-libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/descriptor.cc.o
-libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/descriptor.pb.cc.o
-libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/descriptor_database.cc.o
-libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/duration.pb.cc.o
-libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/dynamic_message.cc.o
-libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/empty.pb.cc.o
-libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/extension_set_heavy.cc.o
-libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/field_mask.pb.cc.o
-libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_message_bases.cc.o
-libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_message_reflection.cc.o
-libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_message_tctable_full.cc.o
-libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/io/gzip_stream.cc.o
-libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/io/printer.cc.o
-libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/io/tokenizer.cc.o
-libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/map_field.cc.o
-libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/message.cc.o
-libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/reflection_ops.cc.o
-libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/service.cc.o
-libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/source_context.pb.cc.o
-libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/struct.pb.cc.o
-libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/substitute.cc.o
-libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/text_format.cc.o
-libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/timestamp.pb.cc.o
-libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/type.pb.cc.o
-libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/unknown_field_set.cc.o
-libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/util/delimited_message_util.cc.o
-libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/util/field_comparator.cc.o
-libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/util/field_mask_util.cc.o
-libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/datapiece.cc.o
-libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/default_value_objectwriter.cc.o
-libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/error_listener.cc.o
-libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/field_mask_utility.cc.o
-libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/json_escaping.cc.o
-libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/json_objectwriter.cc.o
-libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/json_stream_parser.cc.o
-libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/object_writer.cc.o
-libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/proto_writer.cc.o
-libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/protostream_objectsource.cc.o
-libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/protostream_objectwriter.cc.o
-libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/type_info.cc.o
-libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/utility.cc.o
-libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/util/json_util.cc.o
-libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/util/message_differencer.cc.o
-libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/util/time_util.cc.o
-libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/util/type_resolver_util.cc.o
-libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/wire_format.cc.o
-libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/wrappers.pb.cc.o
+libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/any_lite.cc.obj
+libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/arena.cc.obj
+libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/arenastring.cc.obj
+libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/arenaz_sampler.cc.obj
+libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/extension_set.cc.obj
+libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_enum_util.cc.obj
+libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_message_tctable_lite.cc.obj
+libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_message_util.cc.obj
+libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/implicit_weak_message.cc.obj
+libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/inlined_string_field.cc.obj
+libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/io/coded_stream.cc.obj
+libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/io/io_win32.cc.obj
+libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/io/strtod.cc.obj
+libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/io/zero_copy_stream.cc.obj
+libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/io/zero_copy_stream_impl.cc.obj
+libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/io/zero_copy_stream_impl_lite.cc.obj
+libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/map.cc.obj
+libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/message_lite.cc.obj
+libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/parse_context.cc.obj
+libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/repeated_field.cc.obj
+libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/repeated_ptr_field.cc.obj
+libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/bytestream.cc.obj
+libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/common.cc.obj
+libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/int128.cc.obj
+libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/status.cc.obj
+libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/statusor.cc.obj
+libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/stringpiece.cc.obj
+libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/stringprintf.cc.obj
+libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/structurally_valid.cc.obj
+libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/strutil.cc.obj
+libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/time.cc.obj
+libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/wire_format_lite.cc.obj
+libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/any.cc.obj
+libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/any.pb.cc.obj
+libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/api.pb.cc.obj
+libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/compiler/importer.cc.obj
+libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/compiler/parser.cc.obj
+libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/descriptor.cc.obj
+libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/descriptor.pb.cc.obj
+libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/descriptor_database.cc.obj
+libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/duration.pb.cc.obj
+libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/dynamic_message.cc.obj
+libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/empty.pb.cc.obj
+libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/extension_set_heavy.cc.obj
+libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/field_mask.pb.cc.obj
+libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_message_bases.cc.obj
+libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_message_reflection.cc.obj
+libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_message_tctable_full.cc.obj
+libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/io/gzip_stream.cc.obj
+libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/io/printer.cc.obj
+libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/io/tokenizer.cc.obj
+libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/map_field.cc.obj
+libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/message.cc.obj
+libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/reflection_ops.cc.obj
+libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/service.cc.obj
+libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/source_context.pb.cc.obj
+libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/struct.pb.cc.obj
+libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/substitute.cc.obj
+libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/text_format.cc.obj
+libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/timestamp.pb.cc.obj
+libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/type.pb.cc.obj
+libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/unknown_field_set.cc.obj
+libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/util/delimited_message_util.cc.obj
+libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/util/field_comparator.cc.obj
+libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/util/field_mask_util.cc.obj
+libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/datapiece.cc.obj
+libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/default_value_objectwriter.cc.obj
+libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/error_listener.cc.obj
+libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/field_mask_utility.cc.obj
+libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/json_escaping.cc.obj
+libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/json_objectwriter.cc.obj
+libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/json_stream_parser.cc.obj
+libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/object_writer.cc.obj
+libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/proto_writer.cc.obj
+libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/protostream_objectsource.cc.obj
+libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/protostream_objectwriter.cc.obj
+libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/type_info.cc.obj
+libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/utility.cc.obj
+libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/util/json_util.cc.obj
+libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/util/message_differencer.cc.obj
+libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/util/time_util.cc.obj
+libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/util/type_resolver_util.cc.obj
+libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/wire_format.cc.obj
+libprotobuf.a: CMakeFiles/libprotobuf.dir/src/google/protobuf/wrappers.pb.cc.obj
 libprotobuf.a: CMakeFiles/libprotobuf.dir/build.make
 libprotobuf.a: src/libprotobuf.map
 libprotobuf.a: CMakeFiles/libprotobuf.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_85) "Linking CXX static library libprotobuf.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_85) "Linking CXX static library libprotobuf.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/libprotobuf.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/libprotobuf.dir/link.txt --verbose=$(VERBOSE)
 
@@ -1360,6 +1444,6 @@ CMakeFiles/libprotobuf.dir/clean:
 .PHONY : CMakeFiles/libprotobuf.dir/clean
 
 CMakeFiles/libprotobuf.dir/depend:
-	cd /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5 /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5 /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5 /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5 /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles/libprotobuf.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5 /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5 /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5 /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5 /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles/libprotobuf.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/libprotobuf.dir/depend
 

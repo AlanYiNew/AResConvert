@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/any_lite.cc
+/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/any_lite.cc
 google/protobuf/io/zero_copy_stream_impl_lite.h
 -
 google/protobuf/stubs/strutil.h
@@ -18,7 +18,7 @@ google/protobuf/arenastring.h
 google/protobuf/generated_message_util.h
 -
 
-/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/arena.cc
+/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/arena.cc
 google/protobuf/arena.h
 -
 algorithm
@@ -48,7 +48,7 @@ google/protobuf/port_def.inc
 google/protobuf/port_undef.inc
 -
 
-/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/arenastring.cc
+/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/arenastring.cc
 google/protobuf/arenastring.h
 -
 cstddef
@@ -74,7 +74,7 @@ google/protobuf/port_def.inc
 google/protobuf/port_undef.inc
 -
 
-/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/arenaz_sampler.cc
+/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/arenaz_sampler.cc
 google/protobuf/arenaz_sampler.h
 -
 atomic
@@ -86,7 +86,7 @@ limits
 google/protobuf/port_def.inc
 -
 
-/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/extension_set.cc
+/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/extension_set.cc
 google/protobuf/extension_set.h
 -
 tuple
@@ -124,7 +124,7 @@ google/protobuf/port_def.inc
 google/protobuf/port_undef.inc
 -
 
-/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/generated_enum_util.cc
+/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/generated_enum_util.cc
 google/protobuf/generated_enum_util.h
 -
 algorithm
@@ -132,7 +132,7 @@ algorithm
 google/protobuf/generated_message_util.h
 -
 
-/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/generated_message_tctable_lite.cc
+/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/generated_message_tctable_lite.cc
 cstdint
 -
 numeric
@@ -154,7 +154,7 @@ google/protobuf/wire_format_lite.h
 google/protobuf/port_def.inc
 -
 
-/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/generated_message_util.cc
+/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/generated_message_util.cc
 google/protobuf/generated_message_util.h
 -
 atomic
@@ -184,7 +184,7 @@ google/protobuf/port_def.inc
 google/protobuf/port_undef.inc
 -
 
-/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/implicit_weak_message.cc
+/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/implicit_weak_message.cc
 google/protobuf/implicit_weak_message.h
 -
 google/protobuf/io/zero_copy_stream_impl_lite.h
@@ -198,7 +198,7 @@ google/protobuf/port_def.inc
 google/protobuf/port_undef.inc
 -
 
-/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/inlined_string_field.cc
+/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/inlined_string_field.cc
 google/protobuf/inlined_string_field.h
 -
 google/protobuf/arena.h
@@ -214,7 +214,7 @@ google/protobuf/parse_context.h
 google/protobuf/port_def.inc
 -
 
-/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/io/coded_stream.cc
+/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/io/coded_stream.cc
 google/protobuf/io/coded_stream.h
 -
 limits.h
@@ -242,7 +242,7 @@ google/protobuf/port_def.inc
 google/protobuf/port_undef.inc
 -
 
-/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/io/io_win32.cc
+/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/io/io_win32.cc
 google/protobuf/io/io_win32.h
 -
 ctype.h
@@ -272,7 +272,7 @@ string
 vector
 -
 
-/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/io/strtod.cc
+/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/io/strtod.cc
 google/protobuf/io/strtod.h
 -
 cstdio
@@ -290,7 +290,7 @@ google/protobuf/stubs/common.h
 google/protobuf/stubs/strutil.h
 -
 
-/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/io/zero_copy_stream.cc
+/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/io/zero_copy_stream.cc
 google/protobuf/io/zero_copy_stream.h
 -
 google/protobuf/stubs/logging.h
@@ -298,7 +298,7 @@ google/protobuf/stubs/logging.h
 google/protobuf/stubs/common.h
 -
 
-/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/io/zero_copy_stream_impl.cc
+/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/io/zero_copy_stream_impl.cc
 fcntl.h
 -
 sys/stat.h
@@ -324,7 +324,7 @@ google/protobuf/io/zero_copy_stream_impl.h
 google/protobuf/stubs/stl_util.h
 -
 
-/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/io/zero_copy_stream_impl_lite.cc
+/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/io/zero_copy_stream_impl_lite.cc
 google/protobuf/io/zero_copy_stream_impl_lite.h
 -
 algorithm
@@ -340,11 +340,11 @@ google/protobuf/stubs/casts.h
 google/protobuf/stubs/stl_util.h
 -
 
-/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/map.cc
+/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/map.cc
 google/protobuf/map.h
 -
 
-/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/message_lite.cc
+/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/message_lite.cc
 google/protobuf/message_lite.h
 -
 climits
@@ -384,7 +384,7 @@ google/protobuf/port_def.inc
 google/protobuf/port_undef.inc
 -
 
-/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/parse_context.cc
+/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/parse_context.cc
 google/protobuf/parse_context.h
 -
 google/protobuf/io/coded_stream.h
@@ -408,7 +408,7 @@ google/protobuf/port_def.inc
 google/protobuf/port_undef.inc
 -
 
-/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/repeated_field.cc
+/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/repeated_field.cc
 google/protobuf/repeated_field.h
 -
 algorithm
@@ -422,7 +422,7 @@ google/protobuf/port_def.inc
 google/protobuf/port_undef.inc
 -
 
-/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/repeated_ptr_field.cc
+/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/repeated_ptr_field.cc
 algorithm
 -
 google/protobuf/stubs/logging.h
@@ -440,7 +440,7 @@ google/protobuf/port_def.inc
 google/protobuf/port_undef.inc
 -
 
-/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/stubs/bytestream.cc
+/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/stubs/bytestream.cc
 google/protobuf/stubs/bytestream.h
 -
 string.h
@@ -450,7 +450,7 @@ algorithm
 google/protobuf/stubs/logging.h
 -
 
-/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/stubs/common.cc
+/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/stubs/common.cc
 google/protobuf/stubs/common.h
 -
 atomic
@@ -486,7 +486,7 @@ google/protobuf/port_def.inc
 google/protobuf/port_undef.inc
 -
 
-/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/stubs/int128.cc
+/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/stubs/int128.cc
 google/protobuf/stubs/int128.h
 -
 iomanip
@@ -502,7 +502,7 @@ google/protobuf/port_def.inc
 google/protobuf/port_undef.inc
 -
 
-/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/stubs/status.cc
+/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/stubs/status.cc
 google/protobuf/stubs/status.h
 -
 ostream
@@ -514,13 +514,13 @@ string
 utility
 -
 
-/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/stubs/statusor.cc
+/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/stubs/statusor.cc
 google/protobuf/stubs/statusor.h
 -
 google/protobuf/stubs/logging.h
 -
 
-/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/stubs/stringpiece.cc
+/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/stubs/stringpiece.cc
 google/protobuf/stubs/stringpiece.h
 -
 string.h
@@ -536,7 +536,7 @@ ostream
 google/protobuf/stubs/logging.h
 -
 
-/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/stubs/stringprintf.cc
+/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/stubs/stringprintf.cc
 google/protobuf/stubs/stringprintf.h
 -
 errno.h
@@ -552,13 +552,13 @@ google/protobuf/stubs/common.h
 google/protobuf/stubs/logging.h
 -
 
-/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/stubs/structurally_valid.cc
+/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/stubs/structurally_valid.cc
 google/protobuf/stubs/common.h
 -
 google/protobuf/stubs/stringpiece.h
 -
 
-/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/stubs/strutil.cc
+/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/stubs/strutil.cc
 google/protobuf/stubs/strutil.h
 -
 errno.h
@@ -580,7 +580,7 @@ google/protobuf/stubs/logging.h
 google/protobuf/stubs/stl_util.h
 -
 
-/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/stubs/time.cc
+/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/stubs/time.cc
 google/protobuf/stubs/time.h
 -
 ctime
@@ -590,7 +590,7 @@ google/protobuf/stubs/stringprintf.h
 google/protobuf/stubs/strutil.h
 -
 
-/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/wire_format_lite.cc
+/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/wire_format_lite.cc
 google/protobuf/wire_format_lite.h
 -
 limits

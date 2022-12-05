@@ -63,10 +63,10 @@ RM = /usr/bin/cmake3 -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5
+CMAKE_SOURCE_DIR = /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5
+CMAKE_BINARY_DIR = /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5
 
 # Include any dependencies generated for this target.
 include CMakeFiles/protobuf-test-common.dir/depend.make
@@ -77,1035 +77,1088 @@ include CMakeFiles/protobuf-test-common.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/protobuf-test-common.dir/flags.make
 
-src/google/protobuf/any_test.pb.cc: protoc-3.21.5.0
+src/google/protobuf/any_test.pb.cc: protoc.exe-3.21.5.0
 src/google/protobuf/any_test.pb.cc: src/google/protobuf/any_test.proto
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating src/google/protobuf/any_test.pb.cc"
-	./protoc /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/any_test.proto --proto_path=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src --cpp_out=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src --experimental_allow_proto3_optional
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating src/google/protobuf/any_test.pb.cc"
+	protoc /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/any_test.proto --proto_path=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src --cpp_out=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src --experimental_allow_proto3_optional
 
-src/google/protobuf/compiler/cpp/test_bad_identifiers.pb.cc: protoc-3.21.5.0
+src/google/protobuf/compiler/cpp/test_bad_identifiers.pb.cc: protoc.exe-3.21.5.0
 src/google/protobuf/compiler/cpp/test_bad_identifiers.pb.cc: src/google/protobuf/compiler/cpp/test_bad_identifiers.proto
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating src/google/protobuf/compiler/cpp/test_bad_identifiers.pb.cc"
-	./protoc /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/compiler/cpp/test_bad_identifiers.proto --proto_path=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src --cpp_out=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src --experimental_allow_proto3_optional
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating src/google/protobuf/compiler/cpp/test_bad_identifiers.pb.cc"
+	protoc /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/compiler/cpp/test_bad_identifiers.proto --proto_path=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src --cpp_out=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src --experimental_allow_proto3_optional
 
-src/google/protobuf/compiler/cpp/test_large_enum_value.pb.cc: protoc-3.21.5.0
+src/google/protobuf/compiler/cpp/test_large_enum_value.pb.cc: protoc.exe-3.21.5.0
 src/google/protobuf/compiler/cpp/test_large_enum_value.pb.cc: src/google/protobuf/compiler/cpp/test_large_enum_value.proto
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating src/google/protobuf/compiler/cpp/test_large_enum_value.pb.cc"
-	./protoc /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/compiler/cpp/test_large_enum_value.proto --proto_path=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src --cpp_out=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src --experimental_allow_proto3_optional
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating src/google/protobuf/compiler/cpp/test_large_enum_value.pb.cc"
+	protoc /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/compiler/cpp/test_large_enum_value.proto --proto_path=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src --cpp_out=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src --experimental_allow_proto3_optional
 
-src/google/protobuf/map_proto2_unittest.pb.cc: protoc-3.21.5.0
+src/google/protobuf/map_proto2_unittest.pb.cc: protoc.exe-3.21.5.0
 src/google/protobuf/map_proto2_unittest.pb.cc: src/google/protobuf/map_proto2_unittest.proto
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating src/google/protobuf/map_proto2_unittest.pb.cc"
-	./protoc /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/map_proto2_unittest.proto --proto_path=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src --cpp_out=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src --experimental_allow_proto3_optional
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating src/google/protobuf/map_proto2_unittest.pb.cc"
+	protoc /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/map_proto2_unittest.proto --proto_path=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src --cpp_out=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src --experimental_allow_proto3_optional
 
-src/google/protobuf/map_unittest.pb.cc: protoc-3.21.5.0
+src/google/protobuf/map_unittest.pb.cc: protoc.exe-3.21.5.0
 src/google/protobuf/map_unittest.pb.cc: src/google/protobuf/map_unittest.proto
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating src/google/protobuf/map_unittest.pb.cc"
-	./protoc /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/map_unittest.proto --proto_path=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src --cpp_out=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src --experimental_allow_proto3_optional
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating src/google/protobuf/map_unittest.pb.cc"
+	protoc /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/map_unittest.proto --proto_path=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src --cpp_out=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src --experimental_allow_proto3_optional
 
-src/google/protobuf/unittest.pb.cc: protoc-3.21.5.0
+src/google/protobuf/unittest.pb.cc: protoc.exe-3.21.5.0
 src/google/protobuf/unittest.pb.cc: src/google/protobuf/unittest.proto
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Generating src/google/protobuf/unittest.pb.cc"
-	./protoc /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/unittest.proto --proto_path=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src --cpp_out=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src --experimental_allow_proto3_optional
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Generating src/google/protobuf/unittest.pb.cc"
+	protoc /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/unittest.proto --proto_path=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src --cpp_out=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src --experimental_allow_proto3_optional
 
-src/google/protobuf/unittest_arena.pb.cc: protoc-3.21.5.0
+src/google/protobuf/unittest_arena.pb.cc: protoc.exe-3.21.5.0
 src/google/protobuf/unittest_arena.pb.cc: src/google/protobuf/unittest_arena.proto
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Generating src/google/protobuf/unittest_arena.pb.cc"
-	./protoc /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/unittest_arena.proto --proto_path=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src --cpp_out=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src --experimental_allow_proto3_optional
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Generating src/google/protobuf/unittest_arena.pb.cc"
+	protoc /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/unittest_arena.proto --proto_path=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src --cpp_out=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src --experimental_allow_proto3_optional
 
-src/google/protobuf/unittest_custom_options.pb.cc: protoc-3.21.5.0
+src/google/protobuf/unittest_custom_options.pb.cc: protoc.exe-3.21.5.0
 src/google/protobuf/unittest_custom_options.pb.cc: src/google/protobuf/unittest_custom_options.proto
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Generating src/google/protobuf/unittest_custom_options.pb.cc"
-	./protoc /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/unittest_custom_options.proto --proto_path=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src --cpp_out=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src --experimental_allow_proto3_optional
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Generating src/google/protobuf/unittest_custom_options.pb.cc"
+	protoc /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/unittest_custom_options.proto --proto_path=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src --cpp_out=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src --experimental_allow_proto3_optional
 
-src/google/protobuf/unittest_drop_unknown_fields.pb.cc: protoc-3.21.5.0
+src/google/protobuf/unittest_drop_unknown_fields.pb.cc: protoc.exe-3.21.5.0
 src/google/protobuf/unittest_drop_unknown_fields.pb.cc: src/google/protobuf/unittest_drop_unknown_fields.proto
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Generating src/google/protobuf/unittest_drop_unknown_fields.pb.cc"
-	./protoc /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/unittest_drop_unknown_fields.proto --proto_path=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src --cpp_out=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src --experimental_allow_proto3_optional
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Generating src/google/protobuf/unittest_drop_unknown_fields.pb.cc"
+	protoc /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/unittest_drop_unknown_fields.proto --proto_path=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src --cpp_out=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src --experimental_allow_proto3_optional
 
-src/google/protobuf/unittest_embed_optimize_for.pb.cc: protoc-3.21.5.0
+src/google/protobuf/unittest_embed_optimize_for.pb.cc: protoc.exe-3.21.5.0
 src/google/protobuf/unittest_embed_optimize_for.pb.cc: src/google/protobuf/unittest_embed_optimize_for.proto
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Generating src/google/protobuf/unittest_embed_optimize_for.pb.cc"
-	./protoc /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/unittest_embed_optimize_for.proto --proto_path=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src --cpp_out=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src --experimental_allow_proto3_optional
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Generating src/google/protobuf/unittest_embed_optimize_for.pb.cc"
+	protoc /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/unittest_embed_optimize_for.proto --proto_path=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src --cpp_out=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src --experimental_allow_proto3_optional
 
-src/google/protobuf/unittest_empty.pb.cc: protoc-3.21.5.0
+src/google/protobuf/unittest_empty.pb.cc: protoc.exe-3.21.5.0
 src/google/protobuf/unittest_empty.pb.cc: src/google/protobuf/unittest_empty.proto
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Generating src/google/protobuf/unittest_empty.pb.cc"
-	./protoc /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/unittest_empty.proto --proto_path=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src --cpp_out=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src --experimental_allow_proto3_optional
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Generating src/google/protobuf/unittest_empty.pb.cc"
+	protoc /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/unittest_empty.proto --proto_path=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src --cpp_out=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src --experimental_allow_proto3_optional
 
-src/google/protobuf/unittest_enormous_descriptor.pb.cc: protoc-3.21.5.0
+src/google/protobuf/unittest_enormous_descriptor.pb.cc: protoc.exe-3.21.5.0
 src/google/protobuf/unittest_enormous_descriptor.pb.cc: src/google/protobuf/unittest_enormous_descriptor.proto
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Generating src/google/protobuf/unittest_enormous_descriptor.pb.cc"
-	./protoc /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/unittest_enormous_descriptor.proto --proto_path=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src --cpp_out=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src --experimental_allow_proto3_optional
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Generating src/google/protobuf/unittest_enormous_descriptor.pb.cc"
+	protoc /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/unittest_enormous_descriptor.proto --proto_path=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src --cpp_out=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src --experimental_allow_proto3_optional
 
-src/google/protobuf/unittest_import.pb.cc: protoc-3.21.5.0
+src/google/protobuf/unittest_import.pb.cc: protoc.exe-3.21.5.0
 src/google/protobuf/unittest_import.pb.cc: src/google/protobuf/unittest_import.proto
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Generating src/google/protobuf/unittest_import.pb.cc"
-	./protoc /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/unittest_import.proto --proto_path=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src --cpp_out=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src --experimental_allow_proto3_optional
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Generating src/google/protobuf/unittest_import.pb.cc"
+	protoc /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/unittest_import.proto --proto_path=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src --cpp_out=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src --experimental_allow_proto3_optional
 
-src/google/protobuf/unittest_import_public.pb.cc: protoc-3.21.5.0
+src/google/protobuf/unittest_import_public.pb.cc: protoc.exe-3.21.5.0
 src/google/protobuf/unittest_import_public.pb.cc: src/google/protobuf/unittest_import_public.proto
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Generating src/google/protobuf/unittest_import_public.pb.cc"
-	./protoc /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/unittest_import_public.proto --proto_path=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src --cpp_out=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src --experimental_allow_proto3_optional
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Generating src/google/protobuf/unittest_import_public.pb.cc"
+	protoc /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/unittest_import_public.proto --proto_path=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src --cpp_out=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src --experimental_allow_proto3_optional
 
-src/google/protobuf/unittest_lazy_dependencies.pb.cc: protoc-3.21.5.0
+src/google/protobuf/unittest_lazy_dependencies.pb.cc: protoc.exe-3.21.5.0
 src/google/protobuf/unittest_lazy_dependencies.pb.cc: src/google/protobuf/unittest_lazy_dependencies.proto
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Generating src/google/protobuf/unittest_lazy_dependencies.pb.cc"
-	./protoc /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/unittest_lazy_dependencies.proto --proto_path=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src --cpp_out=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src --experimental_allow_proto3_optional
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Generating src/google/protobuf/unittest_lazy_dependencies.pb.cc"
+	protoc /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/unittest_lazy_dependencies.proto --proto_path=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src --cpp_out=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src --experimental_allow_proto3_optional
 
-src/google/protobuf/unittest_lazy_dependencies_custom_option.pb.cc: protoc-3.21.5.0
+src/google/protobuf/unittest_lazy_dependencies_custom_option.pb.cc: protoc.exe-3.21.5.0
 src/google/protobuf/unittest_lazy_dependencies_custom_option.pb.cc: src/google/protobuf/unittest_lazy_dependencies_custom_option.proto
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Generating src/google/protobuf/unittest_lazy_dependencies_custom_option.pb.cc"
-	./protoc /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/unittest_lazy_dependencies_custom_option.proto --proto_path=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src --cpp_out=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src --experimental_allow_proto3_optional
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Generating src/google/protobuf/unittest_lazy_dependencies_custom_option.pb.cc"
+	protoc /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/unittest_lazy_dependencies_custom_option.proto --proto_path=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src --cpp_out=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src --experimental_allow_proto3_optional
 
-src/google/protobuf/unittest_lazy_dependencies_enum.pb.cc: protoc-3.21.5.0
+src/google/protobuf/unittest_lazy_dependencies_enum.pb.cc: protoc.exe-3.21.5.0
 src/google/protobuf/unittest_lazy_dependencies_enum.pb.cc: src/google/protobuf/unittest_lazy_dependencies_enum.proto
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Generating src/google/protobuf/unittest_lazy_dependencies_enum.pb.cc"
-	./protoc /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/unittest_lazy_dependencies_enum.proto --proto_path=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src --cpp_out=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src --experimental_allow_proto3_optional
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Generating src/google/protobuf/unittest_lazy_dependencies_enum.pb.cc"
+	protoc /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/unittest_lazy_dependencies_enum.proto --proto_path=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src --cpp_out=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src --experimental_allow_proto3_optional
 
-src/google/protobuf/unittest_lite_imports_nonlite.pb.cc: protoc-3.21.5.0
+src/google/protobuf/unittest_lite_imports_nonlite.pb.cc: protoc.exe-3.21.5.0
 src/google/protobuf/unittest_lite_imports_nonlite.pb.cc: src/google/protobuf/unittest_lite_imports_nonlite.proto
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Generating src/google/protobuf/unittest_lite_imports_nonlite.pb.cc"
-	./protoc /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/unittest_lite_imports_nonlite.proto --proto_path=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src --cpp_out=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src --experimental_allow_proto3_optional
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Generating src/google/protobuf/unittest_lite_imports_nonlite.pb.cc"
+	protoc /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/unittest_lite_imports_nonlite.proto --proto_path=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src --cpp_out=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src --experimental_allow_proto3_optional
 
-src/google/protobuf/unittest_mset.pb.cc: protoc-3.21.5.0
+src/google/protobuf/unittest_mset.pb.cc: protoc.exe-3.21.5.0
 src/google/protobuf/unittest_mset.pb.cc: src/google/protobuf/unittest_mset.proto
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Generating src/google/protobuf/unittest_mset.pb.cc"
-	./protoc /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/unittest_mset.proto --proto_path=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src --cpp_out=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src --experimental_allow_proto3_optional
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Generating src/google/protobuf/unittest_mset.pb.cc"
+	protoc /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/unittest_mset.proto --proto_path=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src --cpp_out=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src --experimental_allow_proto3_optional
 
-src/google/protobuf/unittest_mset_wire_format.pb.cc: protoc-3.21.5.0
+src/google/protobuf/unittest_mset_wire_format.pb.cc: protoc.exe-3.21.5.0
 src/google/protobuf/unittest_mset_wire_format.pb.cc: src/google/protobuf/unittest_mset_wire_format.proto
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Generating src/google/protobuf/unittest_mset_wire_format.pb.cc"
-	./protoc /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/unittest_mset_wire_format.proto --proto_path=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src --cpp_out=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src --experimental_allow_proto3_optional
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Generating src/google/protobuf/unittest_mset_wire_format.pb.cc"
+	protoc /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/unittest_mset_wire_format.proto --proto_path=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src --cpp_out=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src --experimental_allow_proto3_optional
 
-src/google/protobuf/unittest_no_field_presence.pb.cc: protoc-3.21.5.0
+src/google/protobuf/unittest_no_field_presence.pb.cc: protoc.exe-3.21.5.0
 src/google/protobuf/unittest_no_field_presence.pb.cc: src/google/protobuf/unittest_no_field_presence.proto
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Generating src/google/protobuf/unittest_no_field_presence.pb.cc"
-	./protoc /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/unittest_no_field_presence.proto --proto_path=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src --cpp_out=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src --experimental_allow_proto3_optional
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Generating src/google/protobuf/unittest_no_field_presence.pb.cc"
+	protoc /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/unittest_no_field_presence.proto --proto_path=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src --cpp_out=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src --experimental_allow_proto3_optional
 
-src/google/protobuf/unittest_no_generic_services.pb.cc: protoc-3.21.5.0
+src/google/protobuf/unittest_no_generic_services.pb.cc: protoc.exe-3.21.5.0
 src/google/protobuf/unittest_no_generic_services.pb.cc: src/google/protobuf/unittest_no_generic_services.proto
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Generating src/google/protobuf/unittest_no_generic_services.pb.cc"
-	./protoc /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/unittest_no_generic_services.proto --proto_path=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src --cpp_out=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src --experimental_allow_proto3_optional
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Generating src/google/protobuf/unittest_no_generic_services.pb.cc"
+	protoc /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/unittest_no_generic_services.proto --proto_path=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src --cpp_out=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src --experimental_allow_proto3_optional
 
-src/google/protobuf/unittest_optimize_for.pb.cc: protoc-3.21.5.0
+src/google/protobuf/unittest_optimize_for.pb.cc: protoc.exe-3.21.5.0
 src/google/protobuf/unittest_optimize_for.pb.cc: src/google/protobuf/unittest_optimize_for.proto
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Generating src/google/protobuf/unittest_optimize_for.pb.cc"
-	./protoc /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/unittest_optimize_for.proto --proto_path=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src --cpp_out=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src --experimental_allow_proto3_optional
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Generating src/google/protobuf/unittest_optimize_for.pb.cc"
+	protoc /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/unittest_optimize_for.proto --proto_path=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src --cpp_out=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src --experimental_allow_proto3_optional
 
-src/google/protobuf/unittest_preserve_unknown_enum.pb.cc: protoc-3.21.5.0
+src/google/protobuf/unittest_preserve_unknown_enum.pb.cc: protoc.exe-3.21.5.0
 src/google/protobuf/unittest_preserve_unknown_enum.pb.cc: src/google/protobuf/unittest_preserve_unknown_enum.proto
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Generating src/google/protobuf/unittest_preserve_unknown_enum.pb.cc"
-	./protoc /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/unittest_preserve_unknown_enum.proto --proto_path=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src --cpp_out=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src --experimental_allow_proto3_optional
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Generating src/google/protobuf/unittest_preserve_unknown_enum.pb.cc"
+	protoc /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/unittest_preserve_unknown_enum.proto --proto_path=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src --cpp_out=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src --experimental_allow_proto3_optional
 
-src/google/protobuf/unittest_preserve_unknown_enum2.pb.cc: protoc-3.21.5.0
+src/google/protobuf/unittest_preserve_unknown_enum2.pb.cc: protoc.exe-3.21.5.0
 src/google/protobuf/unittest_preserve_unknown_enum2.pb.cc: src/google/protobuf/unittest_preserve_unknown_enum2.proto
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Generating src/google/protobuf/unittest_preserve_unknown_enum2.pb.cc"
-	./protoc /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/unittest_preserve_unknown_enum2.proto --proto_path=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src --cpp_out=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src --experimental_allow_proto3_optional
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Generating src/google/protobuf/unittest_preserve_unknown_enum2.pb.cc"
+	protoc /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/unittest_preserve_unknown_enum2.proto --proto_path=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src --cpp_out=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src --experimental_allow_proto3_optional
 
-src/google/protobuf/unittest_proto3.pb.cc: protoc-3.21.5.0
+src/google/protobuf/unittest_proto3.pb.cc: protoc.exe-3.21.5.0
 src/google/protobuf/unittest_proto3.pb.cc: src/google/protobuf/unittest_proto3.proto
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Generating src/google/protobuf/unittest_proto3.pb.cc"
-	./protoc /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/unittest_proto3.proto --proto_path=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src --cpp_out=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src --experimental_allow_proto3_optional
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Generating src/google/protobuf/unittest_proto3.pb.cc"
+	protoc /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/unittest_proto3.proto --proto_path=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src --cpp_out=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src --experimental_allow_proto3_optional
 
-src/google/protobuf/unittest_proto3_arena.pb.cc: protoc-3.21.5.0
+src/google/protobuf/unittest_proto3_arena.pb.cc: protoc.exe-3.21.5.0
 src/google/protobuf/unittest_proto3_arena.pb.cc: src/google/protobuf/unittest_proto3_arena.proto
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Generating src/google/protobuf/unittest_proto3_arena.pb.cc"
-	./protoc /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/unittest_proto3_arena.proto --proto_path=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src --cpp_out=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src --experimental_allow_proto3_optional
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Generating src/google/protobuf/unittest_proto3_arena.pb.cc"
+	protoc /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/unittest_proto3_arena.proto --proto_path=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src --cpp_out=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src --experimental_allow_proto3_optional
 
-src/google/protobuf/unittest_proto3_arena_lite.pb.cc: protoc-3.21.5.0
+src/google/protobuf/unittest_proto3_arena_lite.pb.cc: protoc.exe-3.21.5.0
 src/google/protobuf/unittest_proto3_arena_lite.pb.cc: src/google/protobuf/unittest_proto3_arena_lite.proto
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Generating src/google/protobuf/unittest_proto3_arena_lite.pb.cc"
-	./protoc /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/unittest_proto3_arena_lite.proto --proto_path=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src --cpp_out=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src --experimental_allow_proto3_optional
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Generating src/google/protobuf/unittest_proto3_arena_lite.pb.cc"
+	protoc /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/unittest_proto3_arena_lite.proto --proto_path=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src --cpp_out=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src --experimental_allow_proto3_optional
 
-src/google/protobuf/unittest_proto3_lite.pb.cc: protoc-3.21.5.0
+src/google/protobuf/unittest_proto3_lite.pb.cc: protoc.exe-3.21.5.0
 src/google/protobuf/unittest_proto3_lite.pb.cc: src/google/protobuf/unittest_proto3_lite.proto
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Generating src/google/protobuf/unittest_proto3_lite.pb.cc"
-	./protoc /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/unittest_proto3_lite.proto --proto_path=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src --cpp_out=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src --experimental_allow_proto3_optional
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Generating src/google/protobuf/unittest_proto3_lite.pb.cc"
+	protoc /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/unittest_proto3_lite.proto --proto_path=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src --cpp_out=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src --experimental_allow_proto3_optional
 
-src/google/protobuf/unittest_proto3_optional.pb.cc: protoc-3.21.5.0
+src/google/protobuf/unittest_proto3_optional.pb.cc: protoc.exe-3.21.5.0
 src/google/protobuf/unittest_proto3_optional.pb.cc: src/google/protobuf/unittest_proto3_optional.proto
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Generating src/google/protobuf/unittest_proto3_optional.pb.cc"
-	./protoc /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/unittest_proto3_optional.proto --proto_path=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src --cpp_out=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src --experimental_allow_proto3_optional
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Generating src/google/protobuf/unittest_proto3_optional.pb.cc"
+	protoc /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/unittest_proto3_optional.proto --proto_path=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src --cpp_out=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src --experimental_allow_proto3_optional
 
-src/google/protobuf/unittest_well_known_types.pb.cc: protoc-3.21.5.0
+src/google/protobuf/unittest_well_known_types.pb.cc: protoc.exe-3.21.5.0
 src/google/protobuf/unittest_well_known_types.pb.cc: src/google/protobuf/unittest_well_known_types.proto
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Generating src/google/protobuf/unittest_well_known_types.pb.cc"
-	./protoc /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/unittest_well_known_types.proto --proto_path=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src --cpp_out=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src --experimental_allow_proto3_optional
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Generating src/google/protobuf/unittest_well_known_types.pb.cc"
+	protoc /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/unittest_well_known_types.proto --proto_path=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src --cpp_out=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src --experimental_allow_proto3_optional
 
-src/google/protobuf/util/internal/testdata/anys.pb.cc: protoc-3.21.5.0
+src/google/protobuf/util/internal/testdata/anys.pb.cc: protoc.exe-3.21.5.0
 src/google/protobuf/util/internal/testdata/anys.pb.cc: src/google/protobuf/util/internal/testdata/anys.proto
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Generating src/google/protobuf/util/internal/testdata/anys.pb.cc"
-	./protoc /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/util/internal/testdata/anys.proto --proto_path=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src --cpp_out=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src --experimental_allow_proto3_optional
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Generating src/google/protobuf/util/internal/testdata/anys.pb.cc"
+	protoc /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/util/internal/testdata/anys.proto --proto_path=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src --cpp_out=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src --experimental_allow_proto3_optional
 
-src/google/protobuf/util/internal/testdata/books.pb.cc: protoc-3.21.5.0
+src/google/protobuf/util/internal/testdata/books.pb.cc: protoc.exe-3.21.5.0
 src/google/protobuf/util/internal/testdata/books.pb.cc: src/google/protobuf/util/internal/testdata/books.proto
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Generating src/google/protobuf/util/internal/testdata/books.pb.cc"
-	./protoc /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/util/internal/testdata/books.proto --proto_path=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src --cpp_out=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src --experimental_allow_proto3_optional
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Generating src/google/protobuf/util/internal/testdata/books.pb.cc"
+	protoc /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/util/internal/testdata/books.proto --proto_path=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src --cpp_out=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src --experimental_allow_proto3_optional
 
-src/google/protobuf/util/internal/testdata/default_value.pb.cc: protoc-3.21.5.0
+src/google/protobuf/util/internal/testdata/default_value.pb.cc: protoc.exe-3.21.5.0
 src/google/protobuf/util/internal/testdata/default_value.pb.cc: src/google/protobuf/util/internal/testdata/default_value.proto
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Generating src/google/protobuf/util/internal/testdata/default_value.pb.cc"
-	./protoc /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/util/internal/testdata/default_value.proto --proto_path=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src --cpp_out=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src --experimental_allow_proto3_optional
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Generating src/google/protobuf/util/internal/testdata/default_value.pb.cc"
+	protoc /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/util/internal/testdata/default_value.proto --proto_path=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src --cpp_out=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src --experimental_allow_proto3_optional
 
-src/google/protobuf/util/internal/testdata/default_value_test.pb.cc: protoc-3.21.5.0
+src/google/protobuf/util/internal/testdata/default_value_test.pb.cc: protoc.exe-3.21.5.0
 src/google/protobuf/util/internal/testdata/default_value_test.pb.cc: src/google/protobuf/util/internal/testdata/default_value_test.proto
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Generating src/google/protobuf/util/internal/testdata/default_value_test.pb.cc"
-	./protoc /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/util/internal/testdata/default_value_test.proto --proto_path=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src --cpp_out=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src --experimental_allow_proto3_optional
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Generating src/google/protobuf/util/internal/testdata/default_value_test.pb.cc"
+	protoc /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/util/internal/testdata/default_value_test.proto --proto_path=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src --cpp_out=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src --experimental_allow_proto3_optional
 
-src/google/protobuf/util/internal/testdata/field_mask.pb.cc: protoc-3.21.5.0
+src/google/protobuf/util/internal/testdata/field_mask.pb.cc: protoc.exe-3.21.5.0
 src/google/protobuf/util/internal/testdata/field_mask.pb.cc: src/google/protobuf/util/internal/testdata/field_mask.proto
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Generating src/google/protobuf/util/internal/testdata/field_mask.pb.cc"
-	./protoc /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/util/internal/testdata/field_mask.proto --proto_path=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src --cpp_out=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src --experimental_allow_proto3_optional
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Generating src/google/protobuf/util/internal/testdata/field_mask.pb.cc"
+	protoc /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/util/internal/testdata/field_mask.proto --proto_path=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src --cpp_out=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src --experimental_allow_proto3_optional
 
-src/google/protobuf/util/internal/testdata/maps.pb.cc: protoc-3.21.5.0
+src/google/protobuf/util/internal/testdata/maps.pb.cc: protoc.exe-3.21.5.0
 src/google/protobuf/util/internal/testdata/maps.pb.cc: src/google/protobuf/util/internal/testdata/maps.proto
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Generating src/google/protobuf/util/internal/testdata/maps.pb.cc"
-	./protoc /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/util/internal/testdata/maps.proto --proto_path=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src --cpp_out=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src --experimental_allow_proto3_optional
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Generating src/google/protobuf/util/internal/testdata/maps.pb.cc"
+	protoc /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/util/internal/testdata/maps.proto --proto_path=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src --cpp_out=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src --experimental_allow_proto3_optional
 
-src/google/protobuf/util/internal/testdata/oneofs.pb.cc: protoc-3.21.5.0
+src/google/protobuf/util/internal/testdata/oneofs.pb.cc: protoc.exe-3.21.5.0
 src/google/protobuf/util/internal/testdata/oneofs.pb.cc: src/google/protobuf/util/internal/testdata/oneofs.proto
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Generating src/google/protobuf/util/internal/testdata/oneofs.pb.cc"
-	./protoc /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/util/internal/testdata/oneofs.proto --proto_path=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src --cpp_out=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src --experimental_allow_proto3_optional
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Generating src/google/protobuf/util/internal/testdata/oneofs.pb.cc"
+	protoc /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/util/internal/testdata/oneofs.proto --proto_path=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src --cpp_out=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src --experimental_allow_proto3_optional
 
-src/google/protobuf/util/internal/testdata/proto3.pb.cc: protoc-3.21.5.0
+src/google/protobuf/util/internal/testdata/proto3.pb.cc: protoc.exe-3.21.5.0
 src/google/protobuf/util/internal/testdata/proto3.pb.cc: src/google/protobuf/util/internal/testdata/proto3.proto
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Generating src/google/protobuf/util/internal/testdata/proto3.pb.cc"
-	./protoc /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/util/internal/testdata/proto3.proto --proto_path=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src --cpp_out=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src --experimental_allow_proto3_optional
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Generating src/google/protobuf/util/internal/testdata/proto3.pb.cc"
+	protoc /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/util/internal/testdata/proto3.proto --proto_path=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src --cpp_out=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src --experimental_allow_proto3_optional
 
-src/google/protobuf/util/internal/testdata/struct.pb.cc: protoc-3.21.5.0
+src/google/protobuf/util/internal/testdata/struct.pb.cc: protoc.exe-3.21.5.0
 src/google/protobuf/util/internal/testdata/struct.pb.cc: src/google/protobuf/util/internal/testdata/struct.proto
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Generating src/google/protobuf/util/internal/testdata/struct.pb.cc"
-	./protoc /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/util/internal/testdata/struct.proto --proto_path=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src --cpp_out=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src --experimental_allow_proto3_optional
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Generating src/google/protobuf/util/internal/testdata/struct.pb.cc"
+	protoc /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/util/internal/testdata/struct.proto --proto_path=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src --cpp_out=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src --experimental_allow_proto3_optional
 
-src/google/protobuf/util/internal/testdata/timestamp_duration.pb.cc: protoc-3.21.5.0
+src/google/protobuf/util/internal/testdata/timestamp_duration.pb.cc: protoc.exe-3.21.5.0
 src/google/protobuf/util/internal/testdata/timestamp_duration.pb.cc: src/google/protobuf/util/internal/testdata/timestamp_duration.proto
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Generating src/google/protobuf/util/internal/testdata/timestamp_duration.pb.cc"
-	./protoc /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/util/internal/testdata/timestamp_duration.proto --proto_path=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src --cpp_out=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src --experimental_allow_proto3_optional
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Generating src/google/protobuf/util/internal/testdata/timestamp_duration.pb.cc"
+	protoc /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/util/internal/testdata/timestamp_duration.proto --proto_path=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src --cpp_out=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src --experimental_allow_proto3_optional
 
-src/google/protobuf/util/internal/testdata/wrappers.pb.cc: protoc-3.21.5.0
+src/google/protobuf/util/internal/testdata/wrappers.pb.cc: protoc.exe-3.21.5.0
 src/google/protobuf/util/internal/testdata/wrappers.pb.cc: src/google/protobuf/util/internal/testdata/wrappers.proto
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Generating src/google/protobuf/util/internal/testdata/wrappers.pb.cc"
-	./protoc /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/util/internal/testdata/wrappers.proto --proto_path=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src --cpp_out=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src --experimental_allow_proto3_optional
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Generating src/google/protobuf/util/internal/testdata/wrappers.pb.cc"
+	protoc /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/util/internal/testdata/wrappers.proto --proto_path=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src --cpp_out=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src --experimental_allow_proto3_optional
 
-src/google/protobuf/util/json_format.pb.cc: protoc-3.21.5.0
+src/google/protobuf/util/json_format.pb.cc: protoc.exe-3.21.5.0
 src/google/protobuf/util/json_format.pb.cc: src/google/protobuf/util/json_format.proto
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Generating src/google/protobuf/util/json_format.pb.cc"
-	./protoc /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/util/json_format.proto --proto_path=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src --cpp_out=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src --experimental_allow_proto3_optional
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Generating src/google/protobuf/util/json_format.pb.cc"
+	protoc /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/util/json_format.proto --proto_path=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src --cpp_out=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src --experimental_allow_proto3_optional
 
-src/google/protobuf/util/json_format_proto3.pb.cc: protoc-3.21.5.0
+src/google/protobuf/util/json_format_proto3.pb.cc: protoc.exe-3.21.5.0
 src/google/protobuf/util/json_format_proto3.pb.cc: src/google/protobuf/util/json_format_proto3.proto
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Generating src/google/protobuf/util/json_format_proto3.pb.cc"
-	./protoc /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/util/json_format_proto3.proto --proto_path=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src --cpp_out=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src --experimental_allow_proto3_optional
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Generating src/google/protobuf/util/json_format_proto3.pb.cc"
+	protoc /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/util/json_format_proto3.proto --proto_path=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src --cpp_out=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src --experimental_allow_proto3_optional
 
-src/google/protobuf/util/message_differencer_unittest.pb.cc: protoc-3.21.5.0
+src/google/protobuf/util/message_differencer_unittest.pb.cc: protoc.exe-3.21.5.0
 src/google/protobuf/util/message_differencer_unittest.pb.cc: src/google/protobuf/util/message_differencer_unittest.proto
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Generating src/google/protobuf/util/message_differencer_unittest.pb.cc"
-	./protoc /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/util/message_differencer_unittest.proto --proto_path=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src --cpp_out=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src --experimental_allow_proto3_optional
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Generating src/google/protobuf/util/message_differencer_unittest.pb.cc"
+	protoc /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/util/message_differencer_unittest.proto --proto_path=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src --cpp_out=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src --experimental_allow_proto3_optional
 
-CMakeFiles/protobuf-test-common.dir/src/google/protobuf/arena_test_util.cc.o: CMakeFiles/protobuf-test-common.dir/flags.make
-CMakeFiles/protobuf-test-common.dir/src/google/protobuf/arena_test_util.cc.o: src/google/protobuf/arena_test_util.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building CXX object CMakeFiles/protobuf-test-common.dir/src/google/protobuf/arena_test_util.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/arena_test_util.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/arena_test_util.cc
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/arena_test_util.cc.obj: CMakeFiles/protobuf-test-common.dir/flags.make
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/arena_test_util.cc.obj: CMakeFiles/protobuf-test-common.dir/includes_CXX.rsp
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/arena_test_util.cc.obj: src/google/protobuf/arena_test_util.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building CXX object CMakeFiles/protobuf-test-common.dir/src/google/protobuf/arena_test_util.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/arena_test_util.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/arena_test_util.cc
 
 CMakeFiles/protobuf-test-common.dir/src/google/protobuf/arena_test_util.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/protobuf-test-common.dir/src/google/protobuf/arena_test_util.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/arena_test_util.cc > CMakeFiles/protobuf-test-common.dir/src/google/protobuf/arena_test_util.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/arena_test_util.cc > CMakeFiles/protobuf-test-common.dir/src/google/protobuf/arena_test_util.cc.i
 
 CMakeFiles/protobuf-test-common.dir/src/google/protobuf/arena_test_util.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/protobuf-test-common.dir/src/google/protobuf/arena_test_util.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/arena_test_util.cc -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/arena_test_util.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/arena_test_util.cc -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/arena_test_util.cc.s
 
-CMakeFiles/protobuf-test-common.dir/src/google/protobuf/map_lite_test_util.cc.o: CMakeFiles/protobuf-test-common.dir/flags.make
-CMakeFiles/protobuf-test-common.dir/src/google/protobuf/map_lite_test_util.cc.o: src/google/protobuf/map_lite_test_util.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building CXX object CMakeFiles/protobuf-test-common.dir/src/google/protobuf/map_lite_test_util.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/map_lite_test_util.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/map_lite_test_util.cc
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/map_lite_test_util.cc.obj: CMakeFiles/protobuf-test-common.dir/flags.make
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/map_lite_test_util.cc.obj: CMakeFiles/protobuf-test-common.dir/includes_CXX.rsp
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/map_lite_test_util.cc.obj: src/google/protobuf/map_lite_test_util.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building CXX object CMakeFiles/protobuf-test-common.dir/src/google/protobuf/map_lite_test_util.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/map_lite_test_util.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/map_lite_test_util.cc
 
 CMakeFiles/protobuf-test-common.dir/src/google/protobuf/map_lite_test_util.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/protobuf-test-common.dir/src/google/protobuf/map_lite_test_util.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/map_lite_test_util.cc > CMakeFiles/protobuf-test-common.dir/src/google/protobuf/map_lite_test_util.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/map_lite_test_util.cc > CMakeFiles/protobuf-test-common.dir/src/google/protobuf/map_lite_test_util.cc.i
 
 CMakeFiles/protobuf-test-common.dir/src/google/protobuf/map_lite_test_util.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/protobuf-test-common.dir/src/google/protobuf/map_lite_test_util.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/map_lite_test_util.cc -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/map_lite_test_util.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/map_lite_test_util.cc -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/map_lite_test_util.cc.s
 
-CMakeFiles/protobuf-test-common.dir/src/google/protobuf/test_util_lite.cc.o: CMakeFiles/protobuf-test-common.dir/flags.make
-CMakeFiles/protobuf-test-common.dir/src/google/protobuf/test_util_lite.cc.o: src/google/protobuf/test_util_lite.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building CXX object CMakeFiles/protobuf-test-common.dir/src/google/protobuf/test_util_lite.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/test_util_lite.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/test_util_lite.cc
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/test_util_lite.cc.obj: CMakeFiles/protobuf-test-common.dir/flags.make
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/test_util_lite.cc.obj: CMakeFiles/protobuf-test-common.dir/includes_CXX.rsp
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/test_util_lite.cc.obj: src/google/protobuf/test_util_lite.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building CXX object CMakeFiles/protobuf-test-common.dir/src/google/protobuf/test_util_lite.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/test_util_lite.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/test_util_lite.cc
 
 CMakeFiles/protobuf-test-common.dir/src/google/protobuf/test_util_lite.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/protobuf-test-common.dir/src/google/protobuf/test_util_lite.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/test_util_lite.cc > CMakeFiles/protobuf-test-common.dir/src/google/protobuf/test_util_lite.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/test_util_lite.cc > CMakeFiles/protobuf-test-common.dir/src/google/protobuf/test_util_lite.cc.i
 
 CMakeFiles/protobuf-test-common.dir/src/google/protobuf/test_util_lite.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/protobuf-test-common.dir/src/google/protobuf/test_util_lite.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/test_util_lite.cc -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/test_util_lite.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/test_util_lite.cc -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/test_util_lite.cc.s
 
-CMakeFiles/protobuf-test-common.dir/src/google/protobuf/compiler/mock_code_generator.cc.o: CMakeFiles/protobuf-test-common.dir/flags.make
-CMakeFiles/protobuf-test-common.dir/src/google/protobuf/compiler/mock_code_generator.cc.o: src/google/protobuf/compiler/mock_code_generator.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building CXX object CMakeFiles/protobuf-test-common.dir/src/google/protobuf/compiler/mock_code_generator.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/compiler/mock_code_generator.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/compiler/mock_code_generator.cc
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/compiler/mock_code_generator.cc.obj: CMakeFiles/protobuf-test-common.dir/flags.make
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/compiler/mock_code_generator.cc.obj: CMakeFiles/protobuf-test-common.dir/includes_CXX.rsp
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/compiler/mock_code_generator.cc.obj: src/google/protobuf/compiler/mock_code_generator.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building CXX object CMakeFiles/protobuf-test-common.dir/src/google/protobuf/compiler/mock_code_generator.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/compiler/mock_code_generator.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/compiler/mock_code_generator.cc
 
 CMakeFiles/protobuf-test-common.dir/src/google/protobuf/compiler/mock_code_generator.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/protobuf-test-common.dir/src/google/protobuf/compiler/mock_code_generator.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/compiler/mock_code_generator.cc > CMakeFiles/protobuf-test-common.dir/src/google/protobuf/compiler/mock_code_generator.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/compiler/mock_code_generator.cc > CMakeFiles/protobuf-test-common.dir/src/google/protobuf/compiler/mock_code_generator.cc.i
 
 CMakeFiles/protobuf-test-common.dir/src/google/protobuf/compiler/mock_code_generator.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/protobuf-test-common.dir/src/google/protobuf/compiler/mock_code_generator.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/compiler/mock_code_generator.cc -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/compiler/mock_code_generator.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/compiler/mock_code_generator.cc -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/compiler/mock_code_generator.cc.s
 
-CMakeFiles/protobuf-test-common.dir/src/google/protobuf/reflection_tester.cc.o: CMakeFiles/protobuf-test-common.dir/flags.make
-CMakeFiles/protobuf-test-common.dir/src/google/protobuf/reflection_tester.cc.o: src/google/protobuf/reflection_tester.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building CXX object CMakeFiles/protobuf-test-common.dir/src/google/protobuf/reflection_tester.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/reflection_tester.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/reflection_tester.cc
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/reflection_tester.cc.obj: CMakeFiles/protobuf-test-common.dir/flags.make
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/reflection_tester.cc.obj: CMakeFiles/protobuf-test-common.dir/includes_CXX.rsp
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/reflection_tester.cc.obj: src/google/protobuf/reflection_tester.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building CXX object CMakeFiles/protobuf-test-common.dir/src/google/protobuf/reflection_tester.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/reflection_tester.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/reflection_tester.cc
 
 CMakeFiles/protobuf-test-common.dir/src/google/protobuf/reflection_tester.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/protobuf-test-common.dir/src/google/protobuf/reflection_tester.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/reflection_tester.cc > CMakeFiles/protobuf-test-common.dir/src/google/protobuf/reflection_tester.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/reflection_tester.cc > CMakeFiles/protobuf-test-common.dir/src/google/protobuf/reflection_tester.cc.i
 
 CMakeFiles/protobuf-test-common.dir/src/google/protobuf/reflection_tester.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/protobuf-test-common.dir/src/google/protobuf/reflection_tester.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/reflection_tester.cc -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/reflection_tester.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/reflection_tester.cc -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/reflection_tester.cc.s
 
-CMakeFiles/protobuf-test-common.dir/src/google/protobuf/test_util.cc.o: CMakeFiles/protobuf-test-common.dir/flags.make
-CMakeFiles/protobuf-test-common.dir/src/google/protobuf/test_util.cc.o: src/google/protobuf/test_util.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building CXX object CMakeFiles/protobuf-test-common.dir/src/google/protobuf/test_util.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/test_util.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/test_util.cc
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/test_util.cc.obj: CMakeFiles/protobuf-test-common.dir/flags.make
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/test_util.cc.obj: CMakeFiles/protobuf-test-common.dir/includes_CXX.rsp
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/test_util.cc.obj: src/google/protobuf/test_util.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building CXX object CMakeFiles/protobuf-test-common.dir/src/google/protobuf/test_util.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/test_util.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/test_util.cc
 
 CMakeFiles/protobuf-test-common.dir/src/google/protobuf/test_util.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/protobuf-test-common.dir/src/google/protobuf/test_util.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/test_util.cc > CMakeFiles/protobuf-test-common.dir/src/google/protobuf/test_util.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/test_util.cc > CMakeFiles/protobuf-test-common.dir/src/google/protobuf/test_util.cc.i
 
 CMakeFiles/protobuf-test-common.dir/src/google/protobuf/test_util.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/protobuf-test-common.dir/src/google/protobuf/test_util.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/test_util.cc -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/test_util.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/test_util.cc -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/test_util.cc.s
 
-CMakeFiles/protobuf-test-common.dir/src/google/protobuf/testing/file.cc.o: CMakeFiles/protobuf-test-common.dir/flags.make
-CMakeFiles/protobuf-test-common.dir/src/google/protobuf/testing/file.cc.o: src/google/protobuf/testing/file.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building CXX object CMakeFiles/protobuf-test-common.dir/src/google/protobuf/testing/file.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/testing/file.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/testing/file.cc
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/testing/file.cc.obj: CMakeFiles/protobuf-test-common.dir/flags.make
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/testing/file.cc.obj: CMakeFiles/protobuf-test-common.dir/includes_CXX.rsp
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/testing/file.cc.obj: src/google/protobuf/testing/file.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building CXX object CMakeFiles/protobuf-test-common.dir/src/google/protobuf/testing/file.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/testing/file.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/testing/file.cc
 
 CMakeFiles/protobuf-test-common.dir/src/google/protobuf/testing/file.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/protobuf-test-common.dir/src/google/protobuf/testing/file.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/testing/file.cc > CMakeFiles/protobuf-test-common.dir/src/google/protobuf/testing/file.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/testing/file.cc > CMakeFiles/protobuf-test-common.dir/src/google/protobuf/testing/file.cc.i
 
 CMakeFiles/protobuf-test-common.dir/src/google/protobuf/testing/file.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/protobuf-test-common.dir/src/google/protobuf/testing/file.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/testing/file.cc -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/testing/file.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/testing/file.cc -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/testing/file.cc.s
 
-CMakeFiles/protobuf-test-common.dir/src/google/protobuf/testing/googletest.cc.o: CMakeFiles/protobuf-test-common.dir/flags.make
-CMakeFiles/protobuf-test-common.dir/src/google/protobuf/testing/googletest.cc.o: src/google/protobuf/testing/googletest.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building CXX object CMakeFiles/protobuf-test-common.dir/src/google/protobuf/testing/googletest.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/testing/googletest.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/testing/googletest.cc
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/testing/googletest.cc.obj: CMakeFiles/protobuf-test-common.dir/flags.make
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/testing/googletest.cc.obj: CMakeFiles/protobuf-test-common.dir/includes_CXX.rsp
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/testing/googletest.cc.obj: src/google/protobuf/testing/googletest.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building CXX object CMakeFiles/protobuf-test-common.dir/src/google/protobuf/testing/googletest.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/testing/googletest.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/testing/googletest.cc
 
 CMakeFiles/protobuf-test-common.dir/src/google/protobuf/testing/googletest.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/protobuf-test-common.dir/src/google/protobuf/testing/googletest.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/testing/googletest.cc > CMakeFiles/protobuf-test-common.dir/src/google/protobuf/testing/googletest.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/testing/googletest.cc > CMakeFiles/protobuf-test-common.dir/src/google/protobuf/testing/googletest.cc.i
 
 CMakeFiles/protobuf-test-common.dir/src/google/protobuf/testing/googletest.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/protobuf-test-common.dir/src/google/protobuf/testing/googletest.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/testing/googletest.cc -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/testing/googletest.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/testing/googletest.cc -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/testing/googletest.cc.s
 
-CMakeFiles/protobuf-test-common.dir/src/google/protobuf/any_test.pb.cc.o: CMakeFiles/protobuf-test-common.dir/flags.make
-CMakeFiles/protobuf-test-common.dir/src/google/protobuf/any_test.pb.cc.o: src/google/protobuf/any_test.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building CXX object CMakeFiles/protobuf-test-common.dir/src/google/protobuf/any_test.pb.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/any_test.pb.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/any_test.pb.cc
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/any_test.pb.cc.obj: CMakeFiles/protobuf-test-common.dir/flags.make
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/any_test.pb.cc.obj: CMakeFiles/protobuf-test-common.dir/includes_CXX.rsp
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/any_test.pb.cc.obj: src/google/protobuf/any_test.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building CXX object CMakeFiles/protobuf-test-common.dir/src/google/protobuf/any_test.pb.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/any_test.pb.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/any_test.pb.cc
 
 CMakeFiles/protobuf-test-common.dir/src/google/protobuf/any_test.pb.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/protobuf-test-common.dir/src/google/protobuf/any_test.pb.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/any_test.pb.cc > CMakeFiles/protobuf-test-common.dir/src/google/protobuf/any_test.pb.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/any_test.pb.cc > CMakeFiles/protobuf-test-common.dir/src/google/protobuf/any_test.pb.cc.i
 
 CMakeFiles/protobuf-test-common.dir/src/google/protobuf/any_test.pb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/protobuf-test-common.dir/src/google/protobuf/any_test.pb.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/any_test.pb.cc -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/any_test.pb.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/any_test.pb.cc -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/any_test.pb.cc.s
 
-CMakeFiles/protobuf-test-common.dir/src/google/protobuf/compiler/cpp/test_bad_identifiers.pb.cc.o: CMakeFiles/protobuf-test-common.dir/flags.make
-CMakeFiles/protobuf-test-common.dir/src/google/protobuf/compiler/cpp/test_bad_identifiers.pb.cc.o: src/google/protobuf/compiler/cpp/test_bad_identifiers.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building CXX object CMakeFiles/protobuf-test-common.dir/src/google/protobuf/compiler/cpp/test_bad_identifiers.pb.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/compiler/cpp/test_bad_identifiers.pb.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/compiler/cpp/test_bad_identifiers.pb.cc
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/compiler/cpp/test_bad_identifiers.pb.cc.obj: CMakeFiles/protobuf-test-common.dir/flags.make
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/compiler/cpp/test_bad_identifiers.pb.cc.obj: CMakeFiles/protobuf-test-common.dir/includes_CXX.rsp
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/compiler/cpp/test_bad_identifiers.pb.cc.obj: src/google/protobuf/compiler/cpp/test_bad_identifiers.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building CXX object CMakeFiles/protobuf-test-common.dir/src/google/protobuf/compiler/cpp/test_bad_identifiers.pb.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/compiler/cpp/test_bad_identifiers.pb.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/compiler/cpp/test_bad_identifiers.pb.cc
 
 CMakeFiles/protobuf-test-common.dir/src/google/protobuf/compiler/cpp/test_bad_identifiers.pb.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/protobuf-test-common.dir/src/google/protobuf/compiler/cpp/test_bad_identifiers.pb.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/compiler/cpp/test_bad_identifiers.pb.cc > CMakeFiles/protobuf-test-common.dir/src/google/protobuf/compiler/cpp/test_bad_identifiers.pb.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/compiler/cpp/test_bad_identifiers.pb.cc > CMakeFiles/protobuf-test-common.dir/src/google/protobuf/compiler/cpp/test_bad_identifiers.pb.cc.i
 
 CMakeFiles/protobuf-test-common.dir/src/google/protobuf/compiler/cpp/test_bad_identifiers.pb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/protobuf-test-common.dir/src/google/protobuf/compiler/cpp/test_bad_identifiers.pb.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/compiler/cpp/test_bad_identifiers.pb.cc -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/compiler/cpp/test_bad_identifiers.pb.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/compiler/cpp/test_bad_identifiers.pb.cc -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/compiler/cpp/test_bad_identifiers.pb.cc.s
 
-CMakeFiles/protobuf-test-common.dir/src/google/protobuf/compiler/cpp/test_large_enum_value.pb.cc.o: CMakeFiles/protobuf-test-common.dir/flags.make
-CMakeFiles/protobuf-test-common.dir/src/google/protobuf/compiler/cpp/test_large_enum_value.pb.cc.o: src/google/protobuf/compiler/cpp/test_large_enum_value.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building CXX object CMakeFiles/protobuf-test-common.dir/src/google/protobuf/compiler/cpp/test_large_enum_value.pb.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/compiler/cpp/test_large_enum_value.pb.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/compiler/cpp/test_large_enum_value.pb.cc
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/compiler/cpp/test_large_enum_value.pb.cc.obj: CMakeFiles/protobuf-test-common.dir/flags.make
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/compiler/cpp/test_large_enum_value.pb.cc.obj: CMakeFiles/protobuf-test-common.dir/includes_CXX.rsp
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/compiler/cpp/test_large_enum_value.pb.cc.obj: src/google/protobuf/compiler/cpp/test_large_enum_value.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building CXX object CMakeFiles/protobuf-test-common.dir/src/google/protobuf/compiler/cpp/test_large_enum_value.pb.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/compiler/cpp/test_large_enum_value.pb.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/compiler/cpp/test_large_enum_value.pb.cc
 
 CMakeFiles/protobuf-test-common.dir/src/google/protobuf/compiler/cpp/test_large_enum_value.pb.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/protobuf-test-common.dir/src/google/protobuf/compiler/cpp/test_large_enum_value.pb.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/compiler/cpp/test_large_enum_value.pb.cc > CMakeFiles/protobuf-test-common.dir/src/google/protobuf/compiler/cpp/test_large_enum_value.pb.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/compiler/cpp/test_large_enum_value.pb.cc > CMakeFiles/protobuf-test-common.dir/src/google/protobuf/compiler/cpp/test_large_enum_value.pb.cc.i
 
 CMakeFiles/protobuf-test-common.dir/src/google/protobuf/compiler/cpp/test_large_enum_value.pb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/protobuf-test-common.dir/src/google/protobuf/compiler/cpp/test_large_enum_value.pb.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/compiler/cpp/test_large_enum_value.pb.cc -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/compiler/cpp/test_large_enum_value.pb.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/compiler/cpp/test_large_enum_value.pb.cc -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/compiler/cpp/test_large_enum_value.pb.cc.s
 
-CMakeFiles/protobuf-test-common.dir/src/google/protobuf/map_proto2_unittest.pb.cc.o: CMakeFiles/protobuf-test-common.dir/flags.make
-CMakeFiles/protobuf-test-common.dir/src/google/protobuf/map_proto2_unittest.pb.cc.o: src/google/protobuf/map_proto2_unittest.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building CXX object CMakeFiles/protobuf-test-common.dir/src/google/protobuf/map_proto2_unittest.pb.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/map_proto2_unittest.pb.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/map_proto2_unittest.pb.cc
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/map_proto2_unittest.pb.cc.obj: CMakeFiles/protobuf-test-common.dir/flags.make
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/map_proto2_unittest.pb.cc.obj: CMakeFiles/protobuf-test-common.dir/includes_CXX.rsp
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/map_proto2_unittest.pb.cc.obj: src/google/protobuf/map_proto2_unittest.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building CXX object CMakeFiles/protobuf-test-common.dir/src/google/protobuf/map_proto2_unittest.pb.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/map_proto2_unittest.pb.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/map_proto2_unittest.pb.cc
 
 CMakeFiles/protobuf-test-common.dir/src/google/protobuf/map_proto2_unittest.pb.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/protobuf-test-common.dir/src/google/protobuf/map_proto2_unittest.pb.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/map_proto2_unittest.pb.cc > CMakeFiles/protobuf-test-common.dir/src/google/protobuf/map_proto2_unittest.pb.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/map_proto2_unittest.pb.cc > CMakeFiles/protobuf-test-common.dir/src/google/protobuf/map_proto2_unittest.pb.cc.i
 
 CMakeFiles/protobuf-test-common.dir/src/google/protobuf/map_proto2_unittest.pb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/protobuf-test-common.dir/src/google/protobuf/map_proto2_unittest.pb.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/map_proto2_unittest.pb.cc -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/map_proto2_unittest.pb.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/map_proto2_unittest.pb.cc -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/map_proto2_unittest.pb.cc.s
 
-CMakeFiles/protobuf-test-common.dir/src/google/protobuf/map_unittest.pb.cc.o: CMakeFiles/protobuf-test-common.dir/flags.make
-CMakeFiles/protobuf-test-common.dir/src/google/protobuf/map_unittest.pb.cc.o: src/google/protobuf/map_unittest.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building CXX object CMakeFiles/protobuf-test-common.dir/src/google/protobuf/map_unittest.pb.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/map_unittest.pb.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/map_unittest.pb.cc
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/map_unittest.pb.cc.obj: CMakeFiles/protobuf-test-common.dir/flags.make
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/map_unittest.pb.cc.obj: CMakeFiles/protobuf-test-common.dir/includes_CXX.rsp
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/map_unittest.pb.cc.obj: src/google/protobuf/map_unittest.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building CXX object CMakeFiles/protobuf-test-common.dir/src/google/protobuf/map_unittest.pb.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/map_unittest.pb.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/map_unittest.pb.cc
 
 CMakeFiles/protobuf-test-common.dir/src/google/protobuf/map_unittest.pb.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/protobuf-test-common.dir/src/google/protobuf/map_unittest.pb.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/map_unittest.pb.cc > CMakeFiles/protobuf-test-common.dir/src/google/protobuf/map_unittest.pb.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/map_unittest.pb.cc > CMakeFiles/protobuf-test-common.dir/src/google/protobuf/map_unittest.pb.cc.i
 
 CMakeFiles/protobuf-test-common.dir/src/google/protobuf/map_unittest.pb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/protobuf-test-common.dir/src/google/protobuf/map_unittest.pb.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/map_unittest.pb.cc -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/map_unittest.pb.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/map_unittest.pb.cc -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/map_unittest.pb.cc.s
 
-CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest.pb.cc.o: CMakeFiles/protobuf-test-common.dir/flags.make
-CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest.pb.cc.o: src/google/protobuf/unittest.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building CXX object CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest.pb.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest.pb.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/unittest.pb.cc
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest.pb.cc.obj: CMakeFiles/protobuf-test-common.dir/flags.make
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest.pb.cc.obj: CMakeFiles/protobuf-test-common.dir/includes_CXX.rsp
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest.pb.cc.obj: src/google/protobuf/unittest.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building CXX object CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest.pb.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest.pb.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/unittest.pb.cc
 
 CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest.pb.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest.pb.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/unittest.pb.cc > CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest.pb.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/unittest.pb.cc > CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest.pb.cc.i
 
 CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest.pb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest.pb.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/unittest.pb.cc -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest.pb.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/unittest.pb.cc -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest.pb.cc.s
 
-CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_arena.pb.cc.o: CMakeFiles/protobuf-test-common.dir/flags.make
-CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_arena.pb.cc.o: src/google/protobuf/unittest_arena.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building CXX object CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_arena.pb.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_arena.pb.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/unittest_arena.pb.cc
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_arena.pb.cc.obj: CMakeFiles/protobuf-test-common.dir/flags.make
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_arena.pb.cc.obj: CMakeFiles/protobuf-test-common.dir/includes_CXX.rsp
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_arena.pb.cc.obj: src/google/protobuf/unittest_arena.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building CXX object CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_arena.pb.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_arena.pb.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/unittest_arena.pb.cc
 
 CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_arena.pb.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_arena.pb.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/unittest_arena.pb.cc > CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_arena.pb.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/unittest_arena.pb.cc > CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_arena.pb.cc.i
 
 CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_arena.pb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_arena.pb.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/unittest_arena.pb.cc -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_arena.pb.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/unittest_arena.pb.cc -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_arena.pb.cc.s
 
-CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_custom_options.pb.cc.o: CMakeFiles/protobuf-test-common.dir/flags.make
-CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_custom_options.pb.cc.o: src/google/protobuf/unittest_custom_options.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building CXX object CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_custom_options.pb.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_custom_options.pb.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/unittest_custom_options.pb.cc
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_custom_options.pb.cc.obj: CMakeFiles/protobuf-test-common.dir/flags.make
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_custom_options.pb.cc.obj: CMakeFiles/protobuf-test-common.dir/includes_CXX.rsp
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_custom_options.pb.cc.obj: src/google/protobuf/unittest_custom_options.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building CXX object CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_custom_options.pb.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_custom_options.pb.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/unittest_custom_options.pb.cc
 
 CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_custom_options.pb.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_custom_options.pb.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/unittest_custom_options.pb.cc > CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_custom_options.pb.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/unittest_custom_options.pb.cc > CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_custom_options.pb.cc.i
 
 CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_custom_options.pb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_custom_options.pb.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/unittest_custom_options.pb.cc -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_custom_options.pb.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/unittest_custom_options.pb.cc -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_custom_options.pb.cc.s
 
-CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_drop_unknown_fields.pb.cc.o: CMakeFiles/protobuf-test-common.dir/flags.make
-CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_drop_unknown_fields.pb.cc.o: src/google/protobuf/unittest_drop_unknown_fields.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building CXX object CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_drop_unknown_fields.pb.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_drop_unknown_fields.pb.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/unittest_drop_unknown_fields.pb.cc
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_drop_unknown_fields.pb.cc.obj: CMakeFiles/protobuf-test-common.dir/flags.make
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_drop_unknown_fields.pb.cc.obj: CMakeFiles/protobuf-test-common.dir/includes_CXX.rsp
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_drop_unknown_fields.pb.cc.obj: src/google/protobuf/unittest_drop_unknown_fields.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building CXX object CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_drop_unknown_fields.pb.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_drop_unknown_fields.pb.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/unittest_drop_unknown_fields.pb.cc
 
 CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_drop_unknown_fields.pb.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_drop_unknown_fields.pb.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/unittest_drop_unknown_fields.pb.cc > CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_drop_unknown_fields.pb.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/unittest_drop_unknown_fields.pb.cc > CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_drop_unknown_fields.pb.cc.i
 
 CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_drop_unknown_fields.pb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_drop_unknown_fields.pb.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/unittest_drop_unknown_fields.pb.cc -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_drop_unknown_fields.pb.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/unittest_drop_unknown_fields.pb.cc -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_drop_unknown_fields.pb.cc.s
 
-CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_embed_optimize_for.pb.cc.o: CMakeFiles/protobuf-test-common.dir/flags.make
-CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_embed_optimize_for.pb.cc.o: src/google/protobuf/unittest_embed_optimize_for.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building CXX object CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_embed_optimize_for.pb.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_embed_optimize_for.pb.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/unittest_embed_optimize_for.pb.cc
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_embed_optimize_for.pb.cc.obj: CMakeFiles/protobuf-test-common.dir/flags.make
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_embed_optimize_for.pb.cc.obj: CMakeFiles/protobuf-test-common.dir/includes_CXX.rsp
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_embed_optimize_for.pb.cc.obj: src/google/protobuf/unittest_embed_optimize_for.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building CXX object CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_embed_optimize_for.pb.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_embed_optimize_for.pb.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/unittest_embed_optimize_for.pb.cc
 
 CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_embed_optimize_for.pb.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_embed_optimize_for.pb.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/unittest_embed_optimize_for.pb.cc > CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_embed_optimize_for.pb.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/unittest_embed_optimize_for.pb.cc > CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_embed_optimize_for.pb.cc.i
 
 CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_embed_optimize_for.pb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_embed_optimize_for.pb.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/unittest_embed_optimize_for.pb.cc -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_embed_optimize_for.pb.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/unittest_embed_optimize_for.pb.cc -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_embed_optimize_for.pb.cc.s
 
-CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_empty.pb.cc.o: CMakeFiles/protobuf-test-common.dir/flags.make
-CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_empty.pb.cc.o: src/google/protobuf/unittest_empty.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building CXX object CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_empty.pb.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_empty.pb.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/unittest_empty.pb.cc
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_empty.pb.cc.obj: CMakeFiles/protobuf-test-common.dir/flags.make
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_empty.pb.cc.obj: CMakeFiles/protobuf-test-common.dir/includes_CXX.rsp
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_empty.pb.cc.obj: src/google/protobuf/unittest_empty.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building CXX object CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_empty.pb.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_empty.pb.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/unittest_empty.pb.cc
 
 CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_empty.pb.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_empty.pb.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/unittest_empty.pb.cc > CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_empty.pb.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/unittest_empty.pb.cc > CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_empty.pb.cc.i
 
 CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_empty.pb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_empty.pb.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/unittest_empty.pb.cc -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_empty.pb.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/unittest_empty.pb.cc -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_empty.pb.cc.s
 
-CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_enormous_descriptor.pb.cc.o: CMakeFiles/protobuf-test-common.dir/flags.make
-CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_enormous_descriptor.pb.cc.o: src/google/protobuf/unittest_enormous_descriptor.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building CXX object CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_enormous_descriptor.pb.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_enormous_descriptor.pb.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/unittest_enormous_descriptor.pb.cc
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_enormous_descriptor.pb.cc.obj: CMakeFiles/protobuf-test-common.dir/flags.make
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_enormous_descriptor.pb.cc.obj: CMakeFiles/protobuf-test-common.dir/includes_CXX.rsp
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_enormous_descriptor.pb.cc.obj: src/google/protobuf/unittest_enormous_descriptor.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building CXX object CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_enormous_descriptor.pb.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_enormous_descriptor.pb.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/unittest_enormous_descriptor.pb.cc
 
 CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_enormous_descriptor.pb.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_enormous_descriptor.pb.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/unittest_enormous_descriptor.pb.cc > CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_enormous_descriptor.pb.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/unittest_enormous_descriptor.pb.cc > CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_enormous_descriptor.pb.cc.i
 
 CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_enormous_descriptor.pb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_enormous_descriptor.pb.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/unittest_enormous_descriptor.pb.cc -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_enormous_descriptor.pb.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/unittest_enormous_descriptor.pb.cc -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_enormous_descriptor.pb.cc.s
 
-CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_import.pb.cc.o: CMakeFiles/protobuf-test-common.dir/flags.make
-CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_import.pb.cc.o: src/google/protobuf/unittest_import.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building CXX object CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_import.pb.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_import.pb.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/unittest_import.pb.cc
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_import.pb.cc.obj: CMakeFiles/protobuf-test-common.dir/flags.make
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_import.pb.cc.obj: CMakeFiles/protobuf-test-common.dir/includes_CXX.rsp
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_import.pb.cc.obj: src/google/protobuf/unittest_import.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building CXX object CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_import.pb.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_import.pb.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/unittest_import.pb.cc
 
 CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_import.pb.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_import.pb.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/unittest_import.pb.cc > CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_import.pb.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/unittest_import.pb.cc > CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_import.pb.cc.i
 
 CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_import.pb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_import.pb.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/unittest_import.pb.cc -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_import.pb.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/unittest_import.pb.cc -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_import.pb.cc.s
 
-CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_import_public.pb.cc.o: CMakeFiles/protobuf-test-common.dir/flags.make
-CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_import_public.pb.cc.o: src/google/protobuf/unittest_import_public.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building CXX object CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_import_public.pb.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_import_public.pb.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/unittest_import_public.pb.cc
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_import_public.pb.cc.obj: CMakeFiles/protobuf-test-common.dir/flags.make
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_import_public.pb.cc.obj: CMakeFiles/protobuf-test-common.dir/includes_CXX.rsp
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_import_public.pb.cc.obj: src/google/protobuf/unittest_import_public.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building CXX object CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_import_public.pb.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_import_public.pb.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/unittest_import_public.pb.cc
 
 CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_import_public.pb.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_import_public.pb.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/unittest_import_public.pb.cc > CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_import_public.pb.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/unittest_import_public.pb.cc > CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_import_public.pb.cc.i
 
 CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_import_public.pb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_import_public.pb.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/unittest_import_public.pb.cc -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_import_public.pb.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/unittest_import_public.pb.cc -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_import_public.pb.cc.s
 
-CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_lazy_dependencies.pb.cc.o: CMakeFiles/protobuf-test-common.dir/flags.make
-CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_lazy_dependencies.pb.cc.o: src/google/protobuf/unittest_lazy_dependencies.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building CXX object CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_lazy_dependencies.pb.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_lazy_dependencies.pb.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/unittest_lazy_dependencies.pb.cc
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_lazy_dependencies.pb.cc.obj: CMakeFiles/protobuf-test-common.dir/flags.make
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_lazy_dependencies.pb.cc.obj: CMakeFiles/protobuf-test-common.dir/includes_CXX.rsp
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_lazy_dependencies.pb.cc.obj: src/google/protobuf/unittest_lazy_dependencies.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building CXX object CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_lazy_dependencies.pb.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_lazy_dependencies.pb.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/unittest_lazy_dependencies.pb.cc
 
 CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_lazy_dependencies.pb.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_lazy_dependencies.pb.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/unittest_lazy_dependencies.pb.cc > CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_lazy_dependencies.pb.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/unittest_lazy_dependencies.pb.cc > CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_lazy_dependencies.pb.cc.i
 
 CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_lazy_dependencies.pb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_lazy_dependencies.pb.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/unittest_lazy_dependencies.pb.cc -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_lazy_dependencies.pb.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/unittest_lazy_dependencies.pb.cc -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_lazy_dependencies.pb.cc.s
 
-CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_lazy_dependencies_custom_option.pb.cc.o: CMakeFiles/protobuf-test-common.dir/flags.make
-CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_lazy_dependencies_custom_option.pb.cc.o: src/google/protobuf/unittest_lazy_dependencies_custom_option.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building CXX object CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_lazy_dependencies_custom_option.pb.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_lazy_dependencies_custom_option.pb.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/unittest_lazy_dependencies_custom_option.pb.cc
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_lazy_dependencies_custom_option.pb.cc.obj: CMakeFiles/protobuf-test-common.dir/flags.make
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_lazy_dependencies_custom_option.pb.cc.obj: CMakeFiles/protobuf-test-common.dir/includes_CXX.rsp
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_lazy_dependencies_custom_option.pb.cc.obj: src/google/protobuf/unittest_lazy_dependencies_custom_option.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building CXX object CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_lazy_dependencies_custom_option.pb.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_lazy_dependencies_custom_option.pb.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/unittest_lazy_dependencies_custom_option.pb.cc
 
 CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_lazy_dependencies_custom_option.pb.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_lazy_dependencies_custom_option.pb.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/unittest_lazy_dependencies_custom_option.pb.cc > CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_lazy_dependencies_custom_option.pb.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/unittest_lazy_dependencies_custom_option.pb.cc > CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_lazy_dependencies_custom_option.pb.cc.i
 
 CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_lazy_dependencies_custom_option.pb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_lazy_dependencies_custom_option.pb.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/unittest_lazy_dependencies_custom_option.pb.cc -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_lazy_dependencies_custom_option.pb.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/unittest_lazy_dependencies_custom_option.pb.cc -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_lazy_dependencies_custom_option.pb.cc.s
 
-CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_lazy_dependencies_enum.pb.cc.o: CMakeFiles/protobuf-test-common.dir/flags.make
-CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_lazy_dependencies_enum.pb.cc.o: src/google/protobuf/unittest_lazy_dependencies_enum.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building CXX object CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_lazy_dependencies_enum.pb.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_lazy_dependencies_enum.pb.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/unittest_lazy_dependencies_enum.pb.cc
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_lazy_dependencies_enum.pb.cc.obj: CMakeFiles/protobuf-test-common.dir/flags.make
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_lazy_dependencies_enum.pb.cc.obj: CMakeFiles/protobuf-test-common.dir/includes_CXX.rsp
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_lazy_dependencies_enum.pb.cc.obj: src/google/protobuf/unittest_lazy_dependencies_enum.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building CXX object CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_lazy_dependencies_enum.pb.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_lazy_dependencies_enum.pb.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/unittest_lazy_dependencies_enum.pb.cc
 
 CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_lazy_dependencies_enum.pb.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_lazy_dependencies_enum.pb.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/unittest_lazy_dependencies_enum.pb.cc > CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_lazy_dependencies_enum.pb.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/unittest_lazy_dependencies_enum.pb.cc > CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_lazy_dependencies_enum.pb.cc.i
 
 CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_lazy_dependencies_enum.pb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_lazy_dependencies_enum.pb.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/unittest_lazy_dependencies_enum.pb.cc -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_lazy_dependencies_enum.pb.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/unittest_lazy_dependencies_enum.pb.cc -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_lazy_dependencies_enum.pb.cc.s
 
-CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_lite_imports_nonlite.pb.cc.o: CMakeFiles/protobuf-test-common.dir/flags.make
-CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_lite_imports_nonlite.pb.cc.o: src/google/protobuf/unittest_lite_imports_nonlite.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building CXX object CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_lite_imports_nonlite.pb.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_lite_imports_nonlite.pb.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/unittest_lite_imports_nonlite.pb.cc
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_lite_imports_nonlite.pb.cc.obj: CMakeFiles/protobuf-test-common.dir/flags.make
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_lite_imports_nonlite.pb.cc.obj: CMakeFiles/protobuf-test-common.dir/includes_CXX.rsp
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_lite_imports_nonlite.pb.cc.obj: src/google/protobuf/unittest_lite_imports_nonlite.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building CXX object CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_lite_imports_nonlite.pb.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_lite_imports_nonlite.pb.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/unittest_lite_imports_nonlite.pb.cc
 
 CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_lite_imports_nonlite.pb.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_lite_imports_nonlite.pb.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/unittest_lite_imports_nonlite.pb.cc > CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_lite_imports_nonlite.pb.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/unittest_lite_imports_nonlite.pb.cc > CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_lite_imports_nonlite.pb.cc.i
 
 CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_lite_imports_nonlite.pb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_lite_imports_nonlite.pb.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/unittest_lite_imports_nonlite.pb.cc -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_lite_imports_nonlite.pb.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/unittest_lite_imports_nonlite.pb.cc -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_lite_imports_nonlite.pb.cc.s
 
-CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_mset.pb.cc.o: CMakeFiles/protobuf-test-common.dir/flags.make
-CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_mset.pb.cc.o: src/google/protobuf/unittest_mset.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building CXX object CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_mset.pb.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_mset.pb.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/unittest_mset.pb.cc
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_mset.pb.cc.obj: CMakeFiles/protobuf-test-common.dir/flags.make
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_mset.pb.cc.obj: CMakeFiles/protobuf-test-common.dir/includes_CXX.rsp
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_mset.pb.cc.obj: src/google/protobuf/unittest_mset.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building CXX object CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_mset.pb.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_mset.pb.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/unittest_mset.pb.cc
 
 CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_mset.pb.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_mset.pb.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/unittest_mset.pb.cc > CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_mset.pb.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/unittest_mset.pb.cc > CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_mset.pb.cc.i
 
 CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_mset.pb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_mset.pb.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/unittest_mset.pb.cc -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_mset.pb.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/unittest_mset.pb.cc -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_mset.pb.cc.s
 
-CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_mset_wire_format.pb.cc.o: CMakeFiles/protobuf-test-common.dir/flags.make
-CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_mset_wire_format.pb.cc.o: src/google/protobuf/unittest_mset_wire_format.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Building CXX object CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_mset_wire_format.pb.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_mset_wire_format.pb.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/unittest_mset_wire_format.pb.cc
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_mset_wire_format.pb.cc.obj: CMakeFiles/protobuf-test-common.dir/flags.make
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_mset_wire_format.pb.cc.obj: CMakeFiles/protobuf-test-common.dir/includes_CXX.rsp
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_mset_wire_format.pb.cc.obj: src/google/protobuf/unittest_mset_wire_format.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Building CXX object CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_mset_wire_format.pb.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_mset_wire_format.pb.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/unittest_mset_wire_format.pb.cc
 
 CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_mset_wire_format.pb.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_mset_wire_format.pb.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/unittest_mset_wire_format.pb.cc > CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_mset_wire_format.pb.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/unittest_mset_wire_format.pb.cc > CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_mset_wire_format.pb.cc.i
 
 CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_mset_wire_format.pb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_mset_wire_format.pb.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/unittest_mset_wire_format.pb.cc -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_mset_wire_format.pb.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/unittest_mset_wire_format.pb.cc -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_mset_wire_format.pb.cc.s
 
-CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_no_field_presence.pb.cc.o: CMakeFiles/protobuf-test-common.dir/flags.make
-CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_no_field_presence.pb.cc.o: src/google/protobuf/unittest_no_field_presence.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Building CXX object CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_no_field_presence.pb.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_no_field_presence.pb.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/unittest_no_field_presence.pb.cc
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_no_field_presence.pb.cc.obj: CMakeFiles/protobuf-test-common.dir/flags.make
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_no_field_presence.pb.cc.obj: CMakeFiles/protobuf-test-common.dir/includes_CXX.rsp
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_no_field_presence.pb.cc.obj: src/google/protobuf/unittest_no_field_presence.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Building CXX object CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_no_field_presence.pb.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_no_field_presence.pb.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/unittest_no_field_presence.pb.cc
 
 CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_no_field_presence.pb.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_no_field_presence.pb.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/unittest_no_field_presence.pb.cc > CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_no_field_presence.pb.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/unittest_no_field_presence.pb.cc > CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_no_field_presence.pb.cc.i
 
 CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_no_field_presence.pb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_no_field_presence.pb.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/unittest_no_field_presence.pb.cc -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_no_field_presence.pb.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/unittest_no_field_presence.pb.cc -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_no_field_presence.pb.cc.s
 
-CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_no_generic_services.pb.cc.o: CMakeFiles/protobuf-test-common.dir/flags.make
-CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_no_generic_services.pb.cc.o: src/google/protobuf/unittest_no_generic_services.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Building CXX object CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_no_generic_services.pb.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_no_generic_services.pb.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/unittest_no_generic_services.pb.cc
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_no_generic_services.pb.cc.obj: CMakeFiles/protobuf-test-common.dir/flags.make
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_no_generic_services.pb.cc.obj: CMakeFiles/protobuf-test-common.dir/includes_CXX.rsp
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_no_generic_services.pb.cc.obj: src/google/protobuf/unittest_no_generic_services.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Building CXX object CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_no_generic_services.pb.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_no_generic_services.pb.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/unittest_no_generic_services.pb.cc
 
 CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_no_generic_services.pb.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_no_generic_services.pb.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/unittest_no_generic_services.pb.cc > CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_no_generic_services.pb.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/unittest_no_generic_services.pb.cc > CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_no_generic_services.pb.cc.i
 
 CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_no_generic_services.pb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_no_generic_services.pb.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/unittest_no_generic_services.pb.cc -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_no_generic_services.pb.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/unittest_no_generic_services.pb.cc -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_no_generic_services.pb.cc.s
 
-CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_optimize_for.pb.cc.o: CMakeFiles/protobuf-test-common.dir/flags.make
-CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_optimize_for.pb.cc.o: src/google/protobuf/unittest_optimize_for.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Building CXX object CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_optimize_for.pb.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_optimize_for.pb.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/unittest_optimize_for.pb.cc
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_optimize_for.pb.cc.obj: CMakeFiles/protobuf-test-common.dir/flags.make
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_optimize_for.pb.cc.obj: CMakeFiles/protobuf-test-common.dir/includes_CXX.rsp
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_optimize_for.pb.cc.obj: src/google/protobuf/unittest_optimize_for.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Building CXX object CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_optimize_for.pb.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_optimize_for.pb.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/unittest_optimize_for.pb.cc
 
 CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_optimize_for.pb.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_optimize_for.pb.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/unittest_optimize_for.pb.cc > CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_optimize_for.pb.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/unittest_optimize_for.pb.cc > CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_optimize_for.pb.cc.i
 
 CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_optimize_for.pb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_optimize_for.pb.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/unittest_optimize_for.pb.cc -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_optimize_for.pb.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/unittest_optimize_for.pb.cc -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_optimize_for.pb.cc.s
 
-CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_preserve_unknown_enum.pb.cc.o: CMakeFiles/protobuf-test-common.dir/flags.make
-CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_preserve_unknown_enum.pb.cc.o: src/google/protobuf/unittest_preserve_unknown_enum.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_77) "Building CXX object CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_preserve_unknown_enum.pb.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_preserve_unknown_enum.pb.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/unittest_preserve_unknown_enum.pb.cc
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_preserve_unknown_enum.pb.cc.obj: CMakeFiles/protobuf-test-common.dir/flags.make
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_preserve_unknown_enum.pb.cc.obj: CMakeFiles/protobuf-test-common.dir/includes_CXX.rsp
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_preserve_unknown_enum.pb.cc.obj: src/google/protobuf/unittest_preserve_unknown_enum.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_77) "Building CXX object CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_preserve_unknown_enum.pb.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_preserve_unknown_enum.pb.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/unittest_preserve_unknown_enum.pb.cc
 
 CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_preserve_unknown_enum.pb.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_preserve_unknown_enum.pb.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/unittest_preserve_unknown_enum.pb.cc > CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_preserve_unknown_enum.pb.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/unittest_preserve_unknown_enum.pb.cc > CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_preserve_unknown_enum.pb.cc.i
 
 CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_preserve_unknown_enum.pb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_preserve_unknown_enum.pb.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/unittest_preserve_unknown_enum.pb.cc -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_preserve_unknown_enum.pb.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/unittest_preserve_unknown_enum.pb.cc -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_preserve_unknown_enum.pb.cc.s
 
-CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_preserve_unknown_enum2.pb.cc.o: CMakeFiles/protobuf-test-common.dir/flags.make
-CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_preserve_unknown_enum2.pb.cc.o: src/google/protobuf/unittest_preserve_unknown_enum2.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_78) "Building CXX object CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_preserve_unknown_enum2.pb.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_preserve_unknown_enum2.pb.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/unittest_preserve_unknown_enum2.pb.cc
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_preserve_unknown_enum2.pb.cc.obj: CMakeFiles/protobuf-test-common.dir/flags.make
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_preserve_unknown_enum2.pb.cc.obj: CMakeFiles/protobuf-test-common.dir/includes_CXX.rsp
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_preserve_unknown_enum2.pb.cc.obj: src/google/protobuf/unittest_preserve_unknown_enum2.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_78) "Building CXX object CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_preserve_unknown_enum2.pb.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_preserve_unknown_enum2.pb.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/unittest_preserve_unknown_enum2.pb.cc
 
 CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_preserve_unknown_enum2.pb.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_preserve_unknown_enum2.pb.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/unittest_preserve_unknown_enum2.pb.cc > CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_preserve_unknown_enum2.pb.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/unittest_preserve_unknown_enum2.pb.cc > CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_preserve_unknown_enum2.pb.cc.i
 
 CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_preserve_unknown_enum2.pb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_preserve_unknown_enum2.pb.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/unittest_preserve_unknown_enum2.pb.cc -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_preserve_unknown_enum2.pb.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/unittest_preserve_unknown_enum2.pb.cc -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_preserve_unknown_enum2.pb.cc.s
 
-CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_proto3.pb.cc.o: CMakeFiles/protobuf-test-common.dir/flags.make
-CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_proto3.pb.cc.o: src/google/protobuf/unittest_proto3.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_79) "Building CXX object CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_proto3.pb.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_proto3.pb.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/unittest_proto3.pb.cc
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_proto3.pb.cc.obj: CMakeFiles/protobuf-test-common.dir/flags.make
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_proto3.pb.cc.obj: CMakeFiles/protobuf-test-common.dir/includes_CXX.rsp
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_proto3.pb.cc.obj: src/google/protobuf/unittest_proto3.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_79) "Building CXX object CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_proto3.pb.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_proto3.pb.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/unittest_proto3.pb.cc
 
 CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_proto3.pb.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_proto3.pb.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/unittest_proto3.pb.cc > CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_proto3.pb.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/unittest_proto3.pb.cc > CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_proto3.pb.cc.i
 
 CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_proto3.pb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_proto3.pb.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/unittest_proto3.pb.cc -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_proto3.pb.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/unittest_proto3.pb.cc -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_proto3.pb.cc.s
 
-CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_proto3_arena.pb.cc.o: CMakeFiles/protobuf-test-common.dir/flags.make
-CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_proto3_arena.pb.cc.o: src/google/protobuf/unittest_proto3_arena.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_80) "Building CXX object CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_proto3_arena.pb.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_proto3_arena.pb.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/unittest_proto3_arena.pb.cc
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_proto3_arena.pb.cc.obj: CMakeFiles/protobuf-test-common.dir/flags.make
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_proto3_arena.pb.cc.obj: CMakeFiles/protobuf-test-common.dir/includes_CXX.rsp
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_proto3_arena.pb.cc.obj: src/google/protobuf/unittest_proto3_arena.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_80) "Building CXX object CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_proto3_arena.pb.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_proto3_arena.pb.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/unittest_proto3_arena.pb.cc
 
 CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_proto3_arena.pb.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_proto3_arena.pb.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/unittest_proto3_arena.pb.cc > CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_proto3_arena.pb.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/unittest_proto3_arena.pb.cc > CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_proto3_arena.pb.cc.i
 
 CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_proto3_arena.pb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_proto3_arena.pb.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/unittest_proto3_arena.pb.cc -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_proto3_arena.pb.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/unittest_proto3_arena.pb.cc -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_proto3_arena.pb.cc.s
 
-CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_proto3_arena_lite.pb.cc.o: CMakeFiles/protobuf-test-common.dir/flags.make
-CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_proto3_arena_lite.pb.cc.o: src/google/protobuf/unittest_proto3_arena_lite.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_81) "Building CXX object CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_proto3_arena_lite.pb.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_proto3_arena_lite.pb.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/unittest_proto3_arena_lite.pb.cc
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_proto3_arena_lite.pb.cc.obj: CMakeFiles/protobuf-test-common.dir/flags.make
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_proto3_arena_lite.pb.cc.obj: CMakeFiles/protobuf-test-common.dir/includes_CXX.rsp
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_proto3_arena_lite.pb.cc.obj: src/google/protobuf/unittest_proto3_arena_lite.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_81) "Building CXX object CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_proto3_arena_lite.pb.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_proto3_arena_lite.pb.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/unittest_proto3_arena_lite.pb.cc
 
 CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_proto3_arena_lite.pb.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_proto3_arena_lite.pb.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/unittest_proto3_arena_lite.pb.cc > CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_proto3_arena_lite.pb.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/unittest_proto3_arena_lite.pb.cc > CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_proto3_arena_lite.pb.cc.i
 
 CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_proto3_arena_lite.pb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_proto3_arena_lite.pb.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/unittest_proto3_arena_lite.pb.cc -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_proto3_arena_lite.pb.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/unittest_proto3_arena_lite.pb.cc -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_proto3_arena_lite.pb.cc.s
 
-CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_proto3_lite.pb.cc.o: CMakeFiles/protobuf-test-common.dir/flags.make
-CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_proto3_lite.pb.cc.o: src/google/protobuf/unittest_proto3_lite.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_82) "Building CXX object CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_proto3_lite.pb.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_proto3_lite.pb.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/unittest_proto3_lite.pb.cc
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_proto3_lite.pb.cc.obj: CMakeFiles/protobuf-test-common.dir/flags.make
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_proto3_lite.pb.cc.obj: CMakeFiles/protobuf-test-common.dir/includes_CXX.rsp
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_proto3_lite.pb.cc.obj: src/google/protobuf/unittest_proto3_lite.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_82) "Building CXX object CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_proto3_lite.pb.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_proto3_lite.pb.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/unittest_proto3_lite.pb.cc
 
 CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_proto3_lite.pb.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_proto3_lite.pb.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/unittest_proto3_lite.pb.cc > CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_proto3_lite.pb.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/unittest_proto3_lite.pb.cc > CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_proto3_lite.pb.cc.i
 
 CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_proto3_lite.pb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_proto3_lite.pb.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/unittest_proto3_lite.pb.cc -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_proto3_lite.pb.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/unittest_proto3_lite.pb.cc -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_proto3_lite.pb.cc.s
 
-CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_proto3_optional.pb.cc.o: CMakeFiles/protobuf-test-common.dir/flags.make
-CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_proto3_optional.pb.cc.o: src/google/protobuf/unittest_proto3_optional.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_83) "Building CXX object CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_proto3_optional.pb.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_proto3_optional.pb.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/unittest_proto3_optional.pb.cc
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_proto3_optional.pb.cc.obj: CMakeFiles/protobuf-test-common.dir/flags.make
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_proto3_optional.pb.cc.obj: CMakeFiles/protobuf-test-common.dir/includes_CXX.rsp
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_proto3_optional.pb.cc.obj: src/google/protobuf/unittest_proto3_optional.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_83) "Building CXX object CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_proto3_optional.pb.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_proto3_optional.pb.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/unittest_proto3_optional.pb.cc
 
 CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_proto3_optional.pb.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_proto3_optional.pb.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/unittest_proto3_optional.pb.cc > CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_proto3_optional.pb.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/unittest_proto3_optional.pb.cc > CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_proto3_optional.pb.cc.i
 
 CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_proto3_optional.pb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_proto3_optional.pb.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/unittest_proto3_optional.pb.cc -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_proto3_optional.pb.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/unittest_proto3_optional.pb.cc -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_proto3_optional.pb.cc.s
 
-CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_well_known_types.pb.cc.o: CMakeFiles/protobuf-test-common.dir/flags.make
-CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_well_known_types.pb.cc.o: src/google/protobuf/unittest_well_known_types.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_84) "Building CXX object CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_well_known_types.pb.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_well_known_types.pb.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/unittest_well_known_types.pb.cc
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_well_known_types.pb.cc.obj: CMakeFiles/protobuf-test-common.dir/flags.make
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_well_known_types.pb.cc.obj: CMakeFiles/protobuf-test-common.dir/includes_CXX.rsp
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_well_known_types.pb.cc.obj: src/google/protobuf/unittest_well_known_types.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_84) "Building CXX object CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_well_known_types.pb.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_well_known_types.pb.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/unittest_well_known_types.pb.cc
 
 CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_well_known_types.pb.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_well_known_types.pb.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/unittest_well_known_types.pb.cc > CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_well_known_types.pb.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/unittest_well_known_types.pb.cc > CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_well_known_types.pb.cc.i
 
 CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_well_known_types.pb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_well_known_types.pb.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/unittest_well_known_types.pb.cc -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_well_known_types.pb.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/unittest_well_known_types.pb.cc -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_well_known_types.pb.cc.s
 
-CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/anys.pb.cc.o: CMakeFiles/protobuf-test-common.dir/flags.make
-CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/anys.pb.cc.o: src/google/protobuf/util/internal/testdata/anys.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_85) "Building CXX object CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/anys.pb.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/anys.pb.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/util/internal/testdata/anys.pb.cc
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/anys.pb.cc.obj: CMakeFiles/protobuf-test-common.dir/flags.make
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/anys.pb.cc.obj: CMakeFiles/protobuf-test-common.dir/includes_CXX.rsp
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/anys.pb.cc.obj: src/google/protobuf/util/internal/testdata/anys.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_85) "Building CXX object CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/anys.pb.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/anys.pb.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/util/internal/testdata/anys.pb.cc
 
 CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/anys.pb.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/anys.pb.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/util/internal/testdata/anys.pb.cc > CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/anys.pb.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/util/internal/testdata/anys.pb.cc > CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/anys.pb.cc.i
 
 CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/anys.pb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/anys.pb.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/util/internal/testdata/anys.pb.cc -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/anys.pb.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/util/internal/testdata/anys.pb.cc -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/anys.pb.cc.s
 
-CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/books.pb.cc.o: CMakeFiles/protobuf-test-common.dir/flags.make
-CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/books.pb.cc.o: src/google/protobuf/util/internal/testdata/books.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_86) "Building CXX object CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/books.pb.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/books.pb.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/util/internal/testdata/books.pb.cc
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/books.pb.cc.obj: CMakeFiles/protobuf-test-common.dir/flags.make
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/books.pb.cc.obj: CMakeFiles/protobuf-test-common.dir/includes_CXX.rsp
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/books.pb.cc.obj: src/google/protobuf/util/internal/testdata/books.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_86) "Building CXX object CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/books.pb.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/books.pb.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/util/internal/testdata/books.pb.cc
 
 CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/books.pb.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/books.pb.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/util/internal/testdata/books.pb.cc > CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/books.pb.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/util/internal/testdata/books.pb.cc > CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/books.pb.cc.i
 
 CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/books.pb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/books.pb.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/util/internal/testdata/books.pb.cc -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/books.pb.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/util/internal/testdata/books.pb.cc -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/books.pb.cc.s
 
-CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/default_value.pb.cc.o: CMakeFiles/protobuf-test-common.dir/flags.make
-CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/default_value.pb.cc.o: src/google/protobuf/util/internal/testdata/default_value.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_87) "Building CXX object CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/default_value.pb.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/default_value.pb.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/util/internal/testdata/default_value.pb.cc
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/default_value.pb.cc.obj: CMakeFiles/protobuf-test-common.dir/flags.make
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/default_value.pb.cc.obj: CMakeFiles/protobuf-test-common.dir/includes_CXX.rsp
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/default_value.pb.cc.obj: src/google/protobuf/util/internal/testdata/default_value.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_87) "Building CXX object CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/default_value.pb.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/default_value.pb.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/util/internal/testdata/default_value.pb.cc
 
 CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/default_value.pb.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/default_value.pb.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/util/internal/testdata/default_value.pb.cc > CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/default_value.pb.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/util/internal/testdata/default_value.pb.cc > CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/default_value.pb.cc.i
 
 CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/default_value.pb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/default_value.pb.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/util/internal/testdata/default_value.pb.cc -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/default_value.pb.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/util/internal/testdata/default_value.pb.cc -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/default_value.pb.cc.s
 
-CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/default_value_test.pb.cc.o: CMakeFiles/protobuf-test-common.dir/flags.make
-CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/default_value_test.pb.cc.o: src/google/protobuf/util/internal/testdata/default_value_test.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_88) "Building CXX object CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/default_value_test.pb.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/default_value_test.pb.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/util/internal/testdata/default_value_test.pb.cc
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/default_value_test.pb.cc.obj: CMakeFiles/protobuf-test-common.dir/flags.make
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/default_value_test.pb.cc.obj: CMakeFiles/protobuf-test-common.dir/includes_CXX.rsp
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/default_value_test.pb.cc.obj: src/google/protobuf/util/internal/testdata/default_value_test.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_88) "Building CXX object CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/default_value_test.pb.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/default_value_test.pb.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/util/internal/testdata/default_value_test.pb.cc
 
 CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/default_value_test.pb.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/default_value_test.pb.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/util/internal/testdata/default_value_test.pb.cc > CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/default_value_test.pb.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/util/internal/testdata/default_value_test.pb.cc > CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/default_value_test.pb.cc.i
 
 CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/default_value_test.pb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/default_value_test.pb.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/util/internal/testdata/default_value_test.pb.cc -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/default_value_test.pb.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/util/internal/testdata/default_value_test.pb.cc -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/default_value_test.pb.cc.s
 
-CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/field_mask.pb.cc.o: CMakeFiles/protobuf-test-common.dir/flags.make
-CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/field_mask.pb.cc.o: src/google/protobuf/util/internal/testdata/field_mask.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_89) "Building CXX object CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/field_mask.pb.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/field_mask.pb.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/util/internal/testdata/field_mask.pb.cc
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/field_mask.pb.cc.obj: CMakeFiles/protobuf-test-common.dir/flags.make
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/field_mask.pb.cc.obj: CMakeFiles/protobuf-test-common.dir/includes_CXX.rsp
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/field_mask.pb.cc.obj: src/google/protobuf/util/internal/testdata/field_mask.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_89) "Building CXX object CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/field_mask.pb.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/field_mask.pb.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/util/internal/testdata/field_mask.pb.cc
 
 CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/field_mask.pb.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/field_mask.pb.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/util/internal/testdata/field_mask.pb.cc > CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/field_mask.pb.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/util/internal/testdata/field_mask.pb.cc > CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/field_mask.pb.cc.i
 
 CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/field_mask.pb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/field_mask.pb.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/util/internal/testdata/field_mask.pb.cc -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/field_mask.pb.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/util/internal/testdata/field_mask.pb.cc -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/field_mask.pb.cc.s
 
-CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/maps.pb.cc.o: CMakeFiles/protobuf-test-common.dir/flags.make
-CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/maps.pb.cc.o: src/google/protobuf/util/internal/testdata/maps.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_90) "Building CXX object CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/maps.pb.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/maps.pb.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/util/internal/testdata/maps.pb.cc
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/maps.pb.cc.obj: CMakeFiles/protobuf-test-common.dir/flags.make
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/maps.pb.cc.obj: CMakeFiles/protobuf-test-common.dir/includes_CXX.rsp
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/maps.pb.cc.obj: src/google/protobuf/util/internal/testdata/maps.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_90) "Building CXX object CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/maps.pb.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/maps.pb.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/util/internal/testdata/maps.pb.cc
 
 CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/maps.pb.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/maps.pb.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/util/internal/testdata/maps.pb.cc > CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/maps.pb.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/util/internal/testdata/maps.pb.cc > CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/maps.pb.cc.i
 
 CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/maps.pb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/maps.pb.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/util/internal/testdata/maps.pb.cc -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/maps.pb.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/util/internal/testdata/maps.pb.cc -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/maps.pb.cc.s
 
-CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/oneofs.pb.cc.o: CMakeFiles/protobuf-test-common.dir/flags.make
-CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/oneofs.pb.cc.o: src/google/protobuf/util/internal/testdata/oneofs.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_91) "Building CXX object CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/oneofs.pb.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/oneofs.pb.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/util/internal/testdata/oneofs.pb.cc
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/oneofs.pb.cc.obj: CMakeFiles/protobuf-test-common.dir/flags.make
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/oneofs.pb.cc.obj: CMakeFiles/protobuf-test-common.dir/includes_CXX.rsp
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/oneofs.pb.cc.obj: src/google/protobuf/util/internal/testdata/oneofs.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_91) "Building CXX object CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/oneofs.pb.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/oneofs.pb.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/util/internal/testdata/oneofs.pb.cc
 
 CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/oneofs.pb.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/oneofs.pb.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/util/internal/testdata/oneofs.pb.cc > CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/oneofs.pb.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/util/internal/testdata/oneofs.pb.cc > CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/oneofs.pb.cc.i
 
 CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/oneofs.pb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/oneofs.pb.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/util/internal/testdata/oneofs.pb.cc -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/oneofs.pb.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/util/internal/testdata/oneofs.pb.cc -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/oneofs.pb.cc.s
 
-CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/proto3.pb.cc.o: CMakeFiles/protobuf-test-common.dir/flags.make
-CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/proto3.pb.cc.o: src/google/protobuf/util/internal/testdata/proto3.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_92) "Building CXX object CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/proto3.pb.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/proto3.pb.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/util/internal/testdata/proto3.pb.cc
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/proto3.pb.cc.obj: CMakeFiles/protobuf-test-common.dir/flags.make
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/proto3.pb.cc.obj: CMakeFiles/protobuf-test-common.dir/includes_CXX.rsp
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/proto3.pb.cc.obj: src/google/protobuf/util/internal/testdata/proto3.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_92) "Building CXX object CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/proto3.pb.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/proto3.pb.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/util/internal/testdata/proto3.pb.cc
 
 CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/proto3.pb.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/proto3.pb.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/util/internal/testdata/proto3.pb.cc > CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/proto3.pb.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/util/internal/testdata/proto3.pb.cc > CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/proto3.pb.cc.i
 
 CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/proto3.pb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/proto3.pb.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/util/internal/testdata/proto3.pb.cc -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/proto3.pb.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/util/internal/testdata/proto3.pb.cc -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/proto3.pb.cc.s
 
-CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/struct.pb.cc.o: CMakeFiles/protobuf-test-common.dir/flags.make
-CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/struct.pb.cc.o: src/google/protobuf/util/internal/testdata/struct.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_93) "Building CXX object CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/struct.pb.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/struct.pb.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/util/internal/testdata/struct.pb.cc
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/struct.pb.cc.obj: CMakeFiles/protobuf-test-common.dir/flags.make
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/struct.pb.cc.obj: CMakeFiles/protobuf-test-common.dir/includes_CXX.rsp
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/struct.pb.cc.obj: src/google/protobuf/util/internal/testdata/struct.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_93) "Building CXX object CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/struct.pb.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/struct.pb.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/util/internal/testdata/struct.pb.cc
 
 CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/struct.pb.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/struct.pb.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/util/internal/testdata/struct.pb.cc > CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/struct.pb.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/util/internal/testdata/struct.pb.cc > CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/struct.pb.cc.i
 
 CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/struct.pb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/struct.pb.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/util/internal/testdata/struct.pb.cc -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/struct.pb.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/util/internal/testdata/struct.pb.cc -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/struct.pb.cc.s
 
-CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/timestamp_duration.pb.cc.o: CMakeFiles/protobuf-test-common.dir/flags.make
-CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/timestamp_duration.pb.cc.o: src/google/protobuf/util/internal/testdata/timestamp_duration.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_94) "Building CXX object CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/timestamp_duration.pb.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/timestamp_duration.pb.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/util/internal/testdata/timestamp_duration.pb.cc
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/timestamp_duration.pb.cc.obj: CMakeFiles/protobuf-test-common.dir/flags.make
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/timestamp_duration.pb.cc.obj: CMakeFiles/protobuf-test-common.dir/includes_CXX.rsp
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/timestamp_duration.pb.cc.obj: src/google/protobuf/util/internal/testdata/timestamp_duration.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_94) "Building CXX object CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/timestamp_duration.pb.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/timestamp_duration.pb.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/util/internal/testdata/timestamp_duration.pb.cc
 
 CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/timestamp_duration.pb.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/timestamp_duration.pb.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/util/internal/testdata/timestamp_duration.pb.cc > CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/timestamp_duration.pb.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/util/internal/testdata/timestamp_duration.pb.cc > CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/timestamp_duration.pb.cc.i
 
 CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/timestamp_duration.pb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/timestamp_duration.pb.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/util/internal/testdata/timestamp_duration.pb.cc -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/timestamp_duration.pb.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/util/internal/testdata/timestamp_duration.pb.cc -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/timestamp_duration.pb.cc.s
 
-CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/wrappers.pb.cc.o: CMakeFiles/protobuf-test-common.dir/flags.make
-CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/wrappers.pb.cc.o: src/google/protobuf/util/internal/testdata/wrappers.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_95) "Building CXX object CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/wrappers.pb.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/wrappers.pb.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/util/internal/testdata/wrappers.pb.cc
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/wrappers.pb.cc.obj: CMakeFiles/protobuf-test-common.dir/flags.make
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/wrappers.pb.cc.obj: CMakeFiles/protobuf-test-common.dir/includes_CXX.rsp
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/wrappers.pb.cc.obj: src/google/protobuf/util/internal/testdata/wrappers.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_95) "Building CXX object CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/wrappers.pb.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/wrappers.pb.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/util/internal/testdata/wrappers.pb.cc
 
 CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/wrappers.pb.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/wrappers.pb.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/util/internal/testdata/wrappers.pb.cc > CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/wrappers.pb.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/util/internal/testdata/wrappers.pb.cc > CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/wrappers.pb.cc.i
 
 CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/wrappers.pb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/wrappers.pb.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/util/internal/testdata/wrappers.pb.cc -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/wrappers.pb.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/util/internal/testdata/wrappers.pb.cc -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/wrappers.pb.cc.s
 
-CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/json_format.pb.cc.o: CMakeFiles/protobuf-test-common.dir/flags.make
-CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/json_format.pb.cc.o: src/google/protobuf/util/json_format.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_96) "Building CXX object CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/json_format.pb.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/json_format.pb.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/util/json_format.pb.cc
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/json_format.pb.cc.obj: CMakeFiles/protobuf-test-common.dir/flags.make
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/json_format.pb.cc.obj: CMakeFiles/protobuf-test-common.dir/includes_CXX.rsp
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/json_format.pb.cc.obj: src/google/protobuf/util/json_format.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_96) "Building CXX object CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/json_format.pb.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/json_format.pb.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/util/json_format.pb.cc
 
 CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/json_format.pb.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/json_format.pb.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/util/json_format.pb.cc > CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/json_format.pb.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/util/json_format.pb.cc > CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/json_format.pb.cc.i
 
 CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/json_format.pb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/json_format.pb.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/util/json_format.pb.cc -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/json_format.pb.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/util/json_format.pb.cc -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/json_format.pb.cc.s
 
-CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/json_format_proto3.pb.cc.o: CMakeFiles/protobuf-test-common.dir/flags.make
-CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/json_format_proto3.pb.cc.o: src/google/protobuf/util/json_format_proto3.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_97) "Building CXX object CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/json_format_proto3.pb.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/json_format_proto3.pb.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/util/json_format_proto3.pb.cc
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/json_format_proto3.pb.cc.obj: CMakeFiles/protobuf-test-common.dir/flags.make
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/json_format_proto3.pb.cc.obj: CMakeFiles/protobuf-test-common.dir/includes_CXX.rsp
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/json_format_proto3.pb.cc.obj: src/google/protobuf/util/json_format_proto3.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_97) "Building CXX object CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/json_format_proto3.pb.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/json_format_proto3.pb.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/util/json_format_proto3.pb.cc
 
 CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/json_format_proto3.pb.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/json_format_proto3.pb.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/util/json_format_proto3.pb.cc > CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/json_format_proto3.pb.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/util/json_format_proto3.pb.cc > CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/json_format_proto3.pb.cc.i
 
 CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/json_format_proto3.pb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/json_format_proto3.pb.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/util/json_format_proto3.pb.cc -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/json_format_proto3.pb.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/util/json_format_proto3.pb.cc -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/json_format_proto3.pb.cc.s
 
-CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/message_differencer_unittest.pb.cc.o: CMakeFiles/protobuf-test-common.dir/flags.make
-CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/message_differencer_unittest.pb.cc.o: src/google/protobuf/util/message_differencer_unittest.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_98) "Building CXX object CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/message_differencer_unittest.pb.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/message_differencer_unittest.pb.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/util/message_differencer_unittest.pb.cc
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/message_differencer_unittest.pb.cc.obj: CMakeFiles/protobuf-test-common.dir/flags.make
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/message_differencer_unittest.pb.cc.obj: CMakeFiles/protobuf-test-common.dir/includes_CXX.rsp
+CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/message_differencer_unittest.pb.cc.obj: src/google/protobuf/util/message_differencer_unittest.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_98) "Building CXX object CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/message_differencer_unittest.pb.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/message_differencer_unittest.pb.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/util/message_differencer_unittest.pb.cc
 
 CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/message_differencer_unittest.pb.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/message_differencer_unittest.pb.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/util/message_differencer_unittest.pb.cc > CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/message_differencer_unittest.pb.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/util/message_differencer_unittest.pb.cc > CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/message_differencer_unittest.pb.cc.i
 
 CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/message_differencer_unittest.pb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/message_differencer_unittest.pb.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/util/message_differencer_unittest.pb.cc -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/message_differencer_unittest.pb.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/util/message_differencer_unittest.pb.cc -o CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/message_differencer_unittest.pb.cc.s
 
 # Object files for target protobuf-test-common
 protobuf__test__common_OBJECTS = \
-"CMakeFiles/protobuf-test-common.dir/src/google/protobuf/arena_test_util.cc.o" \
-"CMakeFiles/protobuf-test-common.dir/src/google/protobuf/map_lite_test_util.cc.o" \
-"CMakeFiles/protobuf-test-common.dir/src/google/protobuf/test_util_lite.cc.o" \
-"CMakeFiles/protobuf-test-common.dir/src/google/protobuf/compiler/mock_code_generator.cc.o" \
-"CMakeFiles/protobuf-test-common.dir/src/google/protobuf/reflection_tester.cc.o" \
-"CMakeFiles/protobuf-test-common.dir/src/google/protobuf/test_util.cc.o" \
-"CMakeFiles/protobuf-test-common.dir/src/google/protobuf/testing/file.cc.o" \
-"CMakeFiles/protobuf-test-common.dir/src/google/protobuf/testing/googletest.cc.o" \
-"CMakeFiles/protobuf-test-common.dir/src/google/protobuf/any_test.pb.cc.o" \
-"CMakeFiles/protobuf-test-common.dir/src/google/protobuf/compiler/cpp/test_bad_identifiers.pb.cc.o" \
-"CMakeFiles/protobuf-test-common.dir/src/google/protobuf/compiler/cpp/test_large_enum_value.pb.cc.o" \
-"CMakeFiles/protobuf-test-common.dir/src/google/protobuf/map_proto2_unittest.pb.cc.o" \
-"CMakeFiles/protobuf-test-common.dir/src/google/protobuf/map_unittest.pb.cc.o" \
-"CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest.pb.cc.o" \
-"CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_arena.pb.cc.o" \
-"CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_custom_options.pb.cc.o" \
-"CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_drop_unknown_fields.pb.cc.o" \
-"CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_embed_optimize_for.pb.cc.o" \
-"CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_empty.pb.cc.o" \
-"CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_enormous_descriptor.pb.cc.o" \
-"CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_import.pb.cc.o" \
-"CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_import_public.pb.cc.o" \
-"CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_lazy_dependencies.pb.cc.o" \
-"CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_lazy_dependencies_custom_option.pb.cc.o" \
-"CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_lazy_dependencies_enum.pb.cc.o" \
-"CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_lite_imports_nonlite.pb.cc.o" \
-"CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_mset.pb.cc.o" \
-"CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_mset_wire_format.pb.cc.o" \
-"CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_no_field_presence.pb.cc.o" \
-"CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_no_generic_services.pb.cc.o" \
-"CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_optimize_for.pb.cc.o" \
-"CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_preserve_unknown_enum.pb.cc.o" \
-"CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_preserve_unknown_enum2.pb.cc.o" \
-"CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_proto3.pb.cc.o" \
-"CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_proto3_arena.pb.cc.o" \
-"CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_proto3_arena_lite.pb.cc.o" \
-"CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_proto3_lite.pb.cc.o" \
-"CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_proto3_optional.pb.cc.o" \
-"CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_well_known_types.pb.cc.o" \
-"CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/anys.pb.cc.o" \
-"CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/books.pb.cc.o" \
-"CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/default_value.pb.cc.o" \
-"CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/default_value_test.pb.cc.o" \
-"CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/field_mask.pb.cc.o" \
-"CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/maps.pb.cc.o" \
-"CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/oneofs.pb.cc.o" \
-"CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/proto3.pb.cc.o" \
-"CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/struct.pb.cc.o" \
-"CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/timestamp_duration.pb.cc.o" \
-"CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/wrappers.pb.cc.o" \
-"CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/json_format.pb.cc.o" \
-"CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/json_format_proto3.pb.cc.o" \
-"CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/message_differencer_unittest.pb.cc.o"
+"CMakeFiles/protobuf-test-common.dir/src/google/protobuf/arena_test_util.cc.obj" \
+"CMakeFiles/protobuf-test-common.dir/src/google/protobuf/map_lite_test_util.cc.obj" \
+"CMakeFiles/protobuf-test-common.dir/src/google/protobuf/test_util_lite.cc.obj" \
+"CMakeFiles/protobuf-test-common.dir/src/google/protobuf/compiler/mock_code_generator.cc.obj" \
+"CMakeFiles/protobuf-test-common.dir/src/google/protobuf/reflection_tester.cc.obj" \
+"CMakeFiles/protobuf-test-common.dir/src/google/protobuf/test_util.cc.obj" \
+"CMakeFiles/protobuf-test-common.dir/src/google/protobuf/testing/file.cc.obj" \
+"CMakeFiles/protobuf-test-common.dir/src/google/protobuf/testing/googletest.cc.obj" \
+"CMakeFiles/protobuf-test-common.dir/src/google/protobuf/any_test.pb.cc.obj" \
+"CMakeFiles/protobuf-test-common.dir/src/google/protobuf/compiler/cpp/test_bad_identifiers.pb.cc.obj" \
+"CMakeFiles/protobuf-test-common.dir/src/google/protobuf/compiler/cpp/test_large_enum_value.pb.cc.obj" \
+"CMakeFiles/protobuf-test-common.dir/src/google/protobuf/map_proto2_unittest.pb.cc.obj" \
+"CMakeFiles/protobuf-test-common.dir/src/google/protobuf/map_unittest.pb.cc.obj" \
+"CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest.pb.cc.obj" \
+"CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_arena.pb.cc.obj" \
+"CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_custom_options.pb.cc.obj" \
+"CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_drop_unknown_fields.pb.cc.obj" \
+"CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_embed_optimize_for.pb.cc.obj" \
+"CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_empty.pb.cc.obj" \
+"CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_enormous_descriptor.pb.cc.obj" \
+"CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_import.pb.cc.obj" \
+"CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_import_public.pb.cc.obj" \
+"CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_lazy_dependencies.pb.cc.obj" \
+"CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_lazy_dependencies_custom_option.pb.cc.obj" \
+"CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_lazy_dependencies_enum.pb.cc.obj" \
+"CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_lite_imports_nonlite.pb.cc.obj" \
+"CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_mset.pb.cc.obj" \
+"CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_mset_wire_format.pb.cc.obj" \
+"CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_no_field_presence.pb.cc.obj" \
+"CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_no_generic_services.pb.cc.obj" \
+"CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_optimize_for.pb.cc.obj" \
+"CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_preserve_unknown_enum.pb.cc.obj" \
+"CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_preserve_unknown_enum2.pb.cc.obj" \
+"CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_proto3.pb.cc.obj" \
+"CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_proto3_arena.pb.cc.obj" \
+"CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_proto3_arena_lite.pb.cc.obj" \
+"CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_proto3_lite.pb.cc.obj" \
+"CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_proto3_optional.pb.cc.obj" \
+"CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_well_known_types.pb.cc.obj" \
+"CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/anys.pb.cc.obj" \
+"CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/books.pb.cc.obj" \
+"CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/default_value.pb.cc.obj" \
+"CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/default_value_test.pb.cc.obj" \
+"CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/field_mask.pb.cc.obj" \
+"CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/maps.pb.cc.obj" \
+"CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/oneofs.pb.cc.obj" \
+"CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/proto3.pb.cc.obj" \
+"CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/struct.pb.cc.obj" \
+"CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/timestamp_duration.pb.cc.obj" \
+"CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/wrappers.pb.cc.obj" \
+"CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/json_format.pb.cc.obj" \
+"CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/json_format_proto3.pb.cc.obj" \
+"CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/message_differencer_unittest.pb.cc.obj"
 
 # External object files for target protobuf-test-common
 protobuf__test__common_EXTERNAL_OBJECTS =
 
-libprotobuf-test-common.a: CMakeFiles/protobuf-test-common.dir/src/google/protobuf/arena_test_util.cc.o
-libprotobuf-test-common.a: CMakeFiles/protobuf-test-common.dir/src/google/protobuf/map_lite_test_util.cc.o
-libprotobuf-test-common.a: CMakeFiles/protobuf-test-common.dir/src/google/protobuf/test_util_lite.cc.o
-libprotobuf-test-common.a: CMakeFiles/protobuf-test-common.dir/src/google/protobuf/compiler/mock_code_generator.cc.o
-libprotobuf-test-common.a: CMakeFiles/protobuf-test-common.dir/src/google/protobuf/reflection_tester.cc.o
-libprotobuf-test-common.a: CMakeFiles/protobuf-test-common.dir/src/google/protobuf/test_util.cc.o
-libprotobuf-test-common.a: CMakeFiles/protobuf-test-common.dir/src/google/protobuf/testing/file.cc.o
-libprotobuf-test-common.a: CMakeFiles/protobuf-test-common.dir/src/google/protobuf/testing/googletest.cc.o
-libprotobuf-test-common.a: CMakeFiles/protobuf-test-common.dir/src/google/protobuf/any_test.pb.cc.o
-libprotobuf-test-common.a: CMakeFiles/protobuf-test-common.dir/src/google/protobuf/compiler/cpp/test_bad_identifiers.pb.cc.o
-libprotobuf-test-common.a: CMakeFiles/protobuf-test-common.dir/src/google/protobuf/compiler/cpp/test_large_enum_value.pb.cc.o
-libprotobuf-test-common.a: CMakeFiles/protobuf-test-common.dir/src/google/protobuf/map_proto2_unittest.pb.cc.o
-libprotobuf-test-common.a: CMakeFiles/protobuf-test-common.dir/src/google/protobuf/map_unittest.pb.cc.o
-libprotobuf-test-common.a: CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest.pb.cc.o
-libprotobuf-test-common.a: CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_arena.pb.cc.o
-libprotobuf-test-common.a: CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_custom_options.pb.cc.o
-libprotobuf-test-common.a: CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_drop_unknown_fields.pb.cc.o
-libprotobuf-test-common.a: CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_embed_optimize_for.pb.cc.o
-libprotobuf-test-common.a: CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_empty.pb.cc.o
-libprotobuf-test-common.a: CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_enormous_descriptor.pb.cc.o
-libprotobuf-test-common.a: CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_import.pb.cc.o
-libprotobuf-test-common.a: CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_import_public.pb.cc.o
-libprotobuf-test-common.a: CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_lazy_dependencies.pb.cc.o
-libprotobuf-test-common.a: CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_lazy_dependencies_custom_option.pb.cc.o
-libprotobuf-test-common.a: CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_lazy_dependencies_enum.pb.cc.o
-libprotobuf-test-common.a: CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_lite_imports_nonlite.pb.cc.o
-libprotobuf-test-common.a: CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_mset.pb.cc.o
-libprotobuf-test-common.a: CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_mset_wire_format.pb.cc.o
-libprotobuf-test-common.a: CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_no_field_presence.pb.cc.o
-libprotobuf-test-common.a: CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_no_generic_services.pb.cc.o
-libprotobuf-test-common.a: CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_optimize_for.pb.cc.o
-libprotobuf-test-common.a: CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_preserve_unknown_enum.pb.cc.o
-libprotobuf-test-common.a: CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_preserve_unknown_enum2.pb.cc.o
-libprotobuf-test-common.a: CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_proto3.pb.cc.o
-libprotobuf-test-common.a: CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_proto3_arena.pb.cc.o
-libprotobuf-test-common.a: CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_proto3_arena_lite.pb.cc.o
-libprotobuf-test-common.a: CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_proto3_lite.pb.cc.o
-libprotobuf-test-common.a: CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_proto3_optional.pb.cc.o
-libprotobuf-test-common.a: CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_well_known_types.pb.cc.o
-libprotobuf-test-common.a: CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/anys.pb.cc.o
-libprotobuf-test-common.a: CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/books.pb.cc.o
-libprotobuf-test-common.a: CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/default_value.pb.cc.o
-libprotobuf-test-common.a: CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/default_value_test.pb.cc.o
-libprotobuf-test-common.a: CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/field_mask.pb.cc.o
-libprotobuf-test-common.a: CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/maps.pb.cc.o
-libprotobuf-test-common.a: CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/oneofs.pb.cc.o
-libprotobuf-test-common.a: CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/proto3.pb.cc.o
-libprotobuf-test-common.a: CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/struct.pb.cc.o
-libprotobuf-test-common.a: CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/timestamp_duration.pb.cc.o
-libprotobuf-test-common.a: CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/wrappers.pb.cc.o
-libprotobuf-test-common.a: CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/json_format.pb.cc.o
-libprotobuf-test-common.a: CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/json_format_proto3.pb.cc.o
-libprotobuf-test-common.a: CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/message_differencer_unittest.pb.cc.o
+libprotobuf-test-common.a: CMakeFiles/protobuf-test-common.dir/src/google/protobuf/arena_test_util.cc.obj
+libprotobuf-test-common.a: CMakeFiles/protobuf-test-common.dir/src/google/protobuf/map_lite_test_util.cc.obj
+libprotobuf-test-common.a: CMakeFiles/protobuf-test-common.dir/src/google/protobuf/test_util_lite.cc.obj
+libprotobuf-test-common.a: CMakeFiles/protobuf-test-common.dir/src/google/protobuf/compiler/mock_code_generator.cc.obj
+libprotobuf-test-common.a: CMakeFiles/protobuf-test-common.dir/src/google/protobuf/reflection_tester.cc.obj
+libprotobuf-test-common.a: CMakeFiles/protobuf-test-common.dir/src/google/protobuf/test_util.cc.obj
+libprotobuf-test-common.a: CMakeFiles/protobuf-test-common.dir/src/google/protobuf/testing/file.cc.obj
+libprotobuf-test-common.a: CMakeFiles/protobuf-test-common.dir/src/google/protobuf/testing/googletest.cc.obj
+libprotobuf-test-common.a: CMakeFiles/protobuf-test-common.dir/src/google/protobuf/any_test.pb.cc.obj
+libprotobuf-test-common.a: CMakeFiles/protobuf-test-common.dir/src/google/protobuf/compiler/cpp/test_bad_identifiers.pb.cc.obj
+libprotobuf-test-common.a: CMakeFiles/protobuf-test-common.dir/src/google/protobuf/compiler/cpp/test_large_enum_value.pb.cc.obj
+libprotobuf-test-common.a: CMakeFiles/protobuf-test-common.dir/src/google/protobuf/map_proto2_unittest.pb.cc.obj
+libprotobuf-test-common.a: CMakeFiles/protobuf-test-common.dir/src/google/protobuf/map_unittest.pb.cc.obj
+libprotobuf-test-common.a: CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest.pb.cc.obj
+libprotobuf-test-common.a: CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_arena.pb.cc.obj
+libprotobuf-test-common.a: CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_custom_options.pb.cc.obj
+libprotobuf-test-common.a: CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_drop_unknown_fields.pb.cc.obj
+libprotobuf-test-common.a: CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_embed_optimize_for.pb.cc.obj
+libprotobuf-test-common.a: CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_empty.pb.cc.obj
+libprotobuf-test-common.a: CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_enormous_descriptor.pb.cc.obj
+libprotobuf-test-common.a: CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_import.pb.cc.obj
+libprotobuf-test-common.a: CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_import_public.pb.cc.obj
+libprotobuf-test-common.a: CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_lazy_dependencies.pb.cc.obj
+libprotobuf-test-common.a: CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_lazy_dependencies_custom_option.pb.cc.obj
+libprotobuf-test-common.a: CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_lazy_dependencies_enum.pb.cc.obj
+libprotobuf-test-common.a: CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_lite_imports_nonlite.pb.cc.obj
+libprotobuf-test-common.a: CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_mset.pb.cc.obj
+libprotobuf-test-common.a: CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_mset_wire_format.pb.cc.obj
+libprotobuf-test-common.a: CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_no_field_presence.pb.cc.obj
+libprotobuf-test-common.a: CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_no_generic_services.pb.cc.obj
+libprotobuf-test-common.a: CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_optimize_for.pb.cc.obj
+libprotobuf-test-common.a: CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_preserve_unknown_enum.pb.cc.obj
+libprotobuf-test-common.a: CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_preserve_unknown_enum2.pb.cc.obj
+libprotobuf-test-common.a: CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_proto3.pb.cc.obj
+libprotobuf-test-common.a: CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_proto3_arena.pb.cc.obj
+libprotobuf-test-common.a: CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_proto3_arena_lite.pb.cc.obj
+libprotobuf-test-common.a: CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_proto3_lite.pb.cc.obj
+libprotobuf-test-common.a: CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_proto3_optional.pb.cc.obj
+libprotobuf-test-common.a: CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_well_known_types.pb.cc.obj
+libprotobuf-test-common.a: CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/anys.pb.cc.obj
+libprotobuf-test-common.a: CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/books.pb.cc.obj
+libprotobuf-test-common.a: CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/default_value.pb.cc.obj
+libprotobuf-test-common.a: CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/default_value_test.pb.cc.obj
+libprotobuf-test-common.a: CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/field_mask.pb.cc.obj
+libprotobuf-test-common.a: CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/maps.pb.cc.obj
+libprotobuf-test-common.a: CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/oneofs.pb.cc.obj
+libprotobuf-test-common.a: CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/proto3.pb.cc.obj
+libprotobuf-test-common.a: CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/struct.pb.cc.obj
+libprotobuf-test-common.a: CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/timestamp_duration.pb.cc.obj
+libprotobuf-test-common.a: CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/wrappers.pb.cc.obj
+libprotobuf-test-common.a: CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/json_format.pb.cc.obj
+libprotobuf-test-common.a: CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/json_format_proto3.pb.cc.obj
+libprotobuf-test-common.a: CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/message_differencer_unittest.pb.cc.obj
 libprotobuf-test-common.a: CMakeFiles/protobuf-test-common.dir/build.make
 libprotobuf-test-common.a: CMakeFiles/protobuf-test-common.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_99) "Linking CXX static library libprotobuf-test-common.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_99) "Linking CXX static library libprotobuf-test-common.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/protobuf-test-common.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/protobuf-test-common.dir/link.txt --verbose=$(VERBOSE)
 
@@ -1163,6 +1216,6 @@ CMakeFiles/protobuf-test-common.dir/depend: src/google/protobuf/util/internal/te
 CMakeFiles/protobuf-test-common.dir/depend: src/google/protobuf/util/json_format.pb.cc
 CMakeFiles/protobuf-test-common.dir/depend: src/google/protobuf/util/json_format_proto3.pb.cc
 CMakeFiles/protobuf-test-common.dir/depend: src/google/protobuf/util/message_differencer_unittest.pb.cc
-	cd /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5 /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5 /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5 /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5 /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles/protobuf-test-common.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5 /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5 /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5 /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5 /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles/protobuf-test-common.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/protobuf-test-common.dir/depend
 

@@ -63,10 +63,10 @@ RM = /usr/bin/cmake3 -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5
+CMAKE_SOURCE_DIR = /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5
+CMAKE_BINARY_DIR = /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5
 
 # Include any dependencies generated for this target.
 include CMakeFiles/test_plugin.dir/depend.make
@@ -77,68 +77,72 @@ include CMakeFiles/test_plugin.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/test_plugin.dir/flags.make
 
-CMakeFiles/test_plugin.dir/src/google/protobuf/compiler/mock_code_generator.cc.o: CMakeFiles/test_plugin.dir/flags.make
-CMakeFiles/test_plugin.dir/src/google/protobuf/compiler/mock_code_generator.cc.o: src/google/protobuf/compiler/mock_code_generator.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/test_plugin.dir/src/google/protobuf/compiler/mock_code_generator.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test_plugin.dir/src/google/protobuf/compiler/mock_code_generator.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/compiler/mock_code_generator.cc
+CMakeFiles/test_plugin.dir/src/google/protobuf/compiler/mock_code_generator.cc.obj: CMakeFiles/test_plugin.dir/flags.make
+CMakeFiles/test_plugin.dir/src/google/protobuf/compiler/mock_code_generator.cc.obj: CMakeFiles/test_plugin.dir/includes_CXX.rsp
+CMakeFiles/test_plugin.dir/src/google/protobuf/compiler/mock_code_generator.cc.obj: src/google/protobuf/compiler/mock_code_generator.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/test_plugin.dir/src/google/protobuf/compiler/mock_code_generator.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test_plugin.dir/src/google/protobuf/compiler/mock_code_generator.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/compiler/mock_code_generator.cc
 
 CMakeFiles/test_plugin.dir/src/google/protobuf/compiler/mock_code_generator.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test_plugin.dir/src/google/protobuf/compiler/mock_code_generator.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/compiler/mock_code_generator.cc > CMakeFiles/test_plugin.dir/src/google/protobuf/compiler/mock_code_generator.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/compiler/mock_code_generator.cc > CMakeFiles/test_plugin.dir/src/google/protobuf/compiler/mock_code_generator.cc.i
 
 CMakeFiles/test_plugin.dir/src/google/protobuf/compiler/mock_code_generator.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test_plugin.dir/src/google/protobuf/compiler/mock_code_generator.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/compiler/mock_code_generator.cc -o CMakeFiles/test_plugin.dir/src/google/protobuf/compiler/mock_code_generator.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/compiler/mock_code_generator.cc -o CMakeFiles/test_plugin.dir/src/google/protobuf/compiler/mock_code_generator.cc.s
 
-CMakeFiles/test_plugin.dir/src/google/protobuf/compiler/test_plugin.cc.o: CMakeFiles/test_plugin.dir/flags.make
-CMakeFiles/test_plugin.dir/src/google/protobuf/compiler/test_plugin.cc.o: src/google/protobuf/compiler/test_plugin.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/test_plugin.dir/src/google/protobuf/compiler/test_plugin.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test_plugin.dir/src/google/protobuf/compiler/test_plugin.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/compiler/test_plugin.cc
+CMakeFiles/test_plugin.dir/src/google/protobuf/compiler/test_plugin.cc.obj: CMakeFiles/test_plugin.dir/flags.make
+CMakeFiles/test_plugin.dir/src/google/protobuf/compiler/test_plugin.cc.obj: CMakeFiles/test_plugin.dir/includes_CXX.rsp
+CMakeFiles/test_plugin.dir/src/google/protobuf/compiler/test_plugin.cc.obj: src/google/protobuf/compiler/test_plugin.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/test_plugin.dir/src/google/protobuf/compiler/test_plugin.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test_plugin.dir/src/google/protobuf/compiler/test_plugin.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/compiler/test_plugin.cc
 
 CMakeFiles/test_plugin.dir/src/google/protobuf/compiler/test_plugin.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test_plugin.dir/src/google/protobuf/compiler/test_plugin.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/compiler/test_plugin.cc > CMakeFiles/test_plugin.dir/src/google/protobuf/compiler/test_plugin.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/compiler/test_plugin.cc > CMakeFiles/test_plugin.dir/src/google/protobuf/compiler/test_plugin.cc.i
 
 CMakeFiles/test_plugin.dir/src/google/protobuf/compiler/test_plugin.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test_plugin.dir/src/google/protobuf/compiler/test_plugin.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/compiler/test_plugin.cc -o CMakeFiles/test_plugin.dir/src/google/protobuf/compiler/test_plugin.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/compiler/test_plugin.cc -o CMakeFiles/test_plugin.dir/src/google/protobuf/compiler/test_plugin.cc.s
 
-CMakeFiles/test_plugin.dir/src/google/protobuf/testing/file.cc.o: CMakeFiles/test_plugin.dir/flags.make
-CMakeFiles/test_plugin.dir/src/google/protobuf/testing/file.cc.o: src/google/protobuf/testing/file.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/test_plugin.dir/src/google/protobuf/testing/file.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test_plugin.dir/src/google/protobuf/testing/file.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/testing/file.cc
+CMakeFiles/test_plugin.dir/src/google/protobuf/testing/file.cc.obj: CMakeFiles/test_plugin.dir/flags.make
+CMakeFiles/test_plugin.dir/src/google/protobuf/testing/file.cc.obj: CMakeFiles/test_plugin.dir/includes_CXX.rsp
+CMakeFiles/test_plugin.dir/src/google/protobuf/testing/file.cc.obj: src/google/protobuf/testing/file.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/test_plugin.dir/src/google/protobuf/testing/file.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test_plugin.dir/src/google/protobuf/testing/file.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/testing/file.cc
 
 CMakeFiles/test_plugin.dir/src/google/protobuf/testing/file.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test_plugin.dir/src/google/protobuf/testing/file.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/testing/file.cc > CMakeFiles/test_plugin.dir/src/google/protobuf/testing/file.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/testing/file.cc > CMakeFiles/test_plugin.dir/src/google/protobuf/testing/file.cc.i
 
 CMakeFiles/test_plugin.dir/src/google/protobuf/testing/file.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test_plugin.dir/src/google/protobuf/testing/file.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/testing/file.cc -o CMakeFiles/test_plugin.dir/src/google/protobuf/testing/file.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/testing/file.cc -o CMakeFiles/test_plugin.dir/src/google/protobuf/testing/file.cc.s
 
 # Object files for target test_plugin
 test_plugin_OBJECTS = \
-"CMakeFiles/test_plugin.dir/src/google/protobuf/compiler/mock_code_generator.cc.o" \
-"CMakeFiles/test_plugin.dir/src/google/protobuf/compiler/test_plugin.cc.o" \
-"CMakeFiles/test_plugin.dir/src/google/protobuf/testing/file.cc.o"
+"CMakeFiles/test_plugin.dir/src/google/protobuf/compiler/mock_code_generator.cc.obj" \
+"CMakeFiles/test_plugin.dir/src/google/protobuf/compiler/test_plugin.cc.obj" \
+"CMakeFiles/test_plugin.dir/src/google/protobuf/testing/file.cc.obj"
 
 # External object files for target test_plugin
 test_plugin_EXTERNAL_OBJECTS =
 
-test_plugin: CMakeFiles/test_plugin.dir/src/google/protobuf/compiler/mock_code_generator.cc.o
-test_plugin: CMakeFiles/test_plugin.dir/src/google/protobuf/compiler/test_plugin.cc.o
-test_plugin: CMakeFiles/test_plugin.dir/src/google/protobuf/testing/file.cc.o
-test_plugin: CMakeFiles/test_plugin.dir/build.make
-test_plugin: libprotoc.a
-test_plugin: libprotobuf.a
-test_plugin: libgmock.a
-test_plugin: /usr/lib64/libz.so
-test_plugin: CMakeFiles/test_plugin.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable test_plugin"
+test_plugin.exe: CMakeFiles/test_plugin.dir/src/google/protobuf/compiler/mock_code_generator.cc.obj
+test_plugin.exe: CMakeFiles/test_plugin.dir/src/google/protobuf/compiler/test_plugin.cc.obj
+test_plugin.exe: CMakeFiles/test_plugin.dir/src/google/protobuf/testing/file.cc.obj
+test_plugin.exe: CMakeFiles/test_plugin.dir/build.make
+test_plugin.exe: libprotoc.a
+test_plugin.exe: libprotobuf.a
+test_plugin.exe: libgmock.a
+test_plugin.exe: CMakeFiles/test_plugin.dir/linklibs.rsp
+test_plugin.exe: CMakeFiles/test_plugin.dir/objects1.rsp
+test_plugin.exe: CMakeFiles/test_plugin.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable test_plugin.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test_plugin.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-CMakeFiles/test_plugin.dir/build: test_plugin
+CMakeFiles/test_plugin.dir/build: test_plugin.exe
 
 .PHONY : CMakeFiles/test_plugin.dir/build
 
@@ -147,6 +151,6 @@ CMakeFiles/test_plugin.dir/clean:
 .PHONY : CMakeFiles/test_plugin.dir/clean
 
 CMakeFiles/test_plugin.dir/depend:
-	cd /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5 /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5 /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5 /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5 /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles/test_plugin.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5 /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5 /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5 /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5 /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles/test_plugin.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/test_plugin.dir/depend
 

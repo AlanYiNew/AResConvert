@@ -2581,7 +2581,7 @@ class EncodeDecodeTest : public testing::TestWithParam<EncodeDecodeTestMode> {
   }
 
   enum Type { TEXT, BINARY };
-  enum ReturnCode { SUCCESS, ERROR };
+  enum ReturnCode { SUCCESS, B_ERROR };
 
   bool Run(const std::string& command, bool specify_proto_files = true) {
     std::vector<std::string> args;

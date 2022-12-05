@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/lite-test.dir/src/google/protobuf/lite_unittest.cc.o"
-  "lite-test"
+  "CMakeFiles/lite-test.dir/src/google/protobuf/lite_unittest.cc.obj"
+  "liblite-test.dll.a"
+  "lite-test.exe"
   "lite-test.pdb"
 )
 

@@ -1,7 +1,8 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/protoc.dir/src/google/protobuf/compiler/main.cc.o"
-  "protoc"
-  "protoc-3.21.5.0"
+  "CMakeFiles/protoc.dir/src/google/protobuf/compiler/main.cc.obj"
+  "libprotoc.dll.a"
+  "protoc.exe"
+  "protoc.exe-3.21.5.0"
   "protoc.pdb"
 )
 

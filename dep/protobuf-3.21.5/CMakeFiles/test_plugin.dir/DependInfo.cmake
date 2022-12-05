@@ -4,16 +4,15 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/compiler/mock_code_generator.cc" "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles/test_plugin.dir/src/google/protobuf/compiler/mock_code_generator.cc.o"
-  "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/compiler/test_plugin.cc" "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles/test_plugin.dir/src/google/protobuf/compiler/test_plugin.cc.o"
-  "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/testing/file.cc" "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles/test_plugin.dir/src/google/protobuf/testing/file.cc.o"
+  "/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/compiler/mock_code_generator.cc" "/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles/test_plugin.dir/src/google/protobuf/compiler/mock_code_generator.cc.obj"
+  "/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/compiler/test_plugin.cc" "/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles/test_plugin.dir/src/google/protobuf/compiler/test_plugin.cc.obj"
+  "/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/testing/file.cc" "/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles/test_plugin.dir/src/google/protobuf/testing/file.cc.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # Preprocessor definitions for this target.
 set(CMAKE_TARGET_DEFINITIONS_CXX
   "GOOGLE_PROTOBUF_CMAKE_BUILD"
-  "HAVE_ZLIB"
   )
 
 # The include file search paths:
@@ -28,9 +27,9 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles/libprotoc.dir/DependInfo.cmake"
-  "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles/libprotobuf.dir/DependInfo.cmake"
-  "/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles/gmock.dir/DependInfo.cmake"
+  "/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles/libprotoc.dir/DependInfo.cmake"
+  "/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles/libprotobuf.dir/DependInfo.cmake"
+  "/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles/gmock.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

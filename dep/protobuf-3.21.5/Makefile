@@ -68,10 +68,10 @@ RM = /usr/bin/cmake3 -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5
+CMAKE_SOURCE_DIR = /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5
+CMAKE_BINARY_DIR = /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -157,9 +157,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -356,14 +356,14 @@ protobuf-test-common/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/build
 .PHONY : protobuf-test-common/fast
 
-src/google/protobuf/any.o: src/google/protobuf/any.cc.o
+src/google/protobuf/any.obj: src/google/protobuf/any.cc.obj
 
-.PHONY : src/google/protobuf/any.o
+.PHONY : src/google/protobuf/any.obj
 
 # target to build an object file
-src/google/protobuf/any.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/any.cc.o
-.PHONY : src/google/protobuf/any.cc.o
+src/google/protobuf/any.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/any.cc.obj
+.PHONY : src/google/protobuf/any.cc.obj
 
 src/google/protobuf/any.i: src/google/protobuf/any.cc.i
 
@@ -383,14 +383,14 @@ src/google/protobuf/any.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/any.cc.s
 .PHONY : src/google/protobuf/any.cc.s
 
-src/google/protobuf/any.pb.o: src/google/protobuf/any.pb.cc.o
+src/google/protobuf/any.pb.obj: src/google/protobuf/any.pb.cc.obj
 
-.PHONY : src/google/protobuf/any.pb.o
+.PHONY : src/google/protobuf/any.pb.obj
 
 # target to build an object file
-src/google/protobuf/any.pb.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/any.pb.cc.o
-.PHONY : src/google/protobuf/any.pb.cc.o
+src/google/protobuf/any.pb.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/any.pb.cc.obj
+.PHONY : src/google/protobuf/any.pb.cc.obj
 
 src/google/protobuf/any.pb.i: src/google/protobuf/any.pb.cc.i
 
@@ -410,15 +410,15 @@ src/google/protobuf/any.pb.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/any.pb.cc.s
 .PHONY : src/google/protobuf/any.pb.cc.s
 
-src/google/protobuf/any_lite.o: src/google/protobuf/any_lite.cc.o
+src/google/protobuf/any_lite.obj: src/google/protobuf/any_lite.cc.obj
 
-.PHONY : src/google/protobuf/any_lite.o
+.PHONY : src/google/protobuf/any_lite.obj
 
 # target to build an object file
-src/google/protobuf/any_lite.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf-lite.dir/build.make CMakeFiles/libprotobuf-lite.dir/src/google/protobuf/any_lite.cc.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/any_lite.cc.o
-.PHONY : src/google/protobuf/any_lite.cc.o
+src/google/protobuf/any_lite.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf-lite.dir/build.make CMakeFiles/libprotobuf-lite.dir/src/google/protobuf/any_lite.cc.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/any_lite.cc.obj
+.PHONY : src/google/protobuf/any_lite.cc.obj
 
 src/google/protobuf/any_lite.i: src/google/protobuf/any_lite.cc.i
 
@@ -440,14 +440,14 @@ src/google/protobuf/any_lite.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/any_lite.cc.s
 .PHONY : src/google/protobuf/any_lite.cc.s
 
-src/google/protobuf/any_test.o: src/google/protobuf/any_test.cc.o
+src/google/protobuf/any_test.obj: src/google/protobuf/any_test.cc.obj
 
-.PHONY : src/google/protobuf/any_test.o
+.PHONY : src/google/protobuf/any_test.obj
 
 # target to build an object file
-src/google/protobuf/any_test.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/any_test.cc.o
-.PHONY : src/google/protobuf/any_test.cc.o
+src/google/protobuf/any_test.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/any_test.cc.obj
+.PHONY : src/google/protobuf/any_test.cc.obj
 
 src/google/protobuf/any_test.i: src/google/protobuf/any_test.cc.i
 
@@ -467,14 +467,14 @@ src/google/protobuf/any_test.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/any_test.cc.s
 .PHONY : src/google/protobuf/any_test.cc.s
 
-src/google/protobuf/any_test.pb.o: src/google/protobuf/any_test.pb.cc.o
+src/google/protobuf/any_test.pb.obj: src/google/protobuf/any_test.pb.cc.obj
 
-.PHONY : src/google/protobuf/any_test.pb.o
+.PHONY : src/google/protobuf/any_test.pb.obj
 
 # target to build an object file
-src/google/protobuf/any_test.pb.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/any_test.pb.cc.o
-.PHONY : src/google/protobuf/any_test.pb.cc.o
+src/google/protobuf/any_test.pb.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/any_test.pb.cc.obj
+.PHONY : src/google/protobuf/any_test.pb.cc.obj
 
 src/google/protobuf/any_test.pb.i: src/google/protobuf/any_test.pb.cc.i
 
@@ -494,14 +494,14 @@ src/google/protobuf/any_test.pb.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/any_test.pb.cc.s
 .PHONY : src/google/protobuf/any_test.pb.cc.s
 
-src/google/protobuf/api.pb.o: src/google/protobuf/api.pb.cc.o
+src/google/protobuf/api.pb.obj: src/google/protobuf/api.pb.cc.obj
 
-.PHONY : src/google/protobuf/api.pb.o
+.PHONY : src/google/protobuf/api.pb.obj
 
 # target to build an object file
-src/google/protobuf/api.pb.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/api.pb.cc.o
-.PHONY : src/google/protobuf/api.pb.cc.o
+src/google/protobuf/api.pb.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/api.pb.cc.obj
+.PHONY : src/google/protobuf/api.pb.cc.obj
 
 src/google/protobuf/api.pb.i: src/google/protobuf/api.pb.cc.i
 
@@ -521,15 +521,15 @@ src/google/protobuf/api.pb.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/api.pb.cc.s
 .PHONY : src/google/protobuf/api.pb.cc.s
 
-src/google/protobuf/arena.o: src/google/protobuf/arena.cc.o
+src/google/protobuf/arena.obj: src/google/protobuf/arena.cc.obj
 
-.PHONY : src/google/protobuf/arena.o
+.PHONY : src/google/protobuf/arena.obj
 
 # target to build an object file
-src/google/protobuf/arena.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf-lite.dir/build.make CMakeFiles/libprotobuf-lite.dir/src/google/protobuf/arena.cc.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/arena.cc.o
-.PHONY : src/google/protobuf/arena.cc.o
+src/google/protobuf/arena.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf-lite.dir/build.make CMakeFiles/libprotobuf-lite.dir/src/google/protobuf/arena.cc.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/arena.cc.obj
+.PHONY : src/google/protobuf/arena.cc.obj
 
 src/google/protobuf/arena.i: src/google/protobuf/arena.cc.i
 
@@ -551,15 +551,15 @@ src/google/protobuf/arena.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/arena.cc.s
 .PHONY : src/google/protobuf/arena.cc.s
 
-src/google/protobuf/arena_test_util.o: src/google/protobuf/arena_test_util.cc.o
+src/google/protobuf/arena_test_util.obj: src/google/protobuf/arena_test_util.cc.obj
 
-.PHONY : src/google/protobuf/arena_test_util.o
+.PHONY : src/google/protobuf/arena_test_util.obj
 
 # target to build an object file
-src/google/protobuf/arena_test_util.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-lite-test-common.dir/build.make CMakeFiles/protobuf-lite-test-common.dir/src/google/protobuf/arena_test_util.cc.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/arena_test_util.cc.o
-.PHONY : src/google/protobuf/arena_test_util.cc.o
+src/google/protobuf/arena_test_util.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-lite-test-common.dir/build.make CMakeFiles/protobuf-lite-test-common.dir/src/google/protobuf/arena_test_util.cc.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/arena_test_util.cc.obj
+.PHONY : src/google/protobuf/arena_test_util.cc.obj
 
 src/google/protobuf/arena_test_util.i: src/google/protobuf/arena_test_util.cc.i
 
@@ -581,14 +581,14 @@ src/google/protobuf/arena_test_util.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/arena_test_util.cc.s
 .PHONY : src/google/protobuf/arena_test_util.cc.s
 
-src/google/protobuf/arena_unittest.o: src/google/protobuf/arena_unittest.cc.o
+src/google/protobuf/arena_unittest.obj: src/google/protobuf/arena_unittest.cc.obj
 
-.PHONY : src/google/protobuf/arena_unittest.o
+.PHONY : src/google/protobuf/arena_unittest.obj
 
 # target to build an object file
-src/google/protobuf/arena_unittest.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/arena_unittest.cc.o
-.PHONY : src/google/protobuf/arena_unittest.cc.o
+src/google/protobuf/arena_unittest.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/arena_unittest.cc.obj
+.PHONY : src/google/protobuf/arena_unittest.cc.obj
 
 src/google/protobuf/arena_unittest.i: src/google/protobuf/arena_unittest.cc.i
 
@@ -608,15 +608,15 @@ src/google/protobuf/arena_unittest.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/arena_unittest.cc.s
 .PHONY : src/google/protobuf/arena_unittest.cc.s
 
-src/google/protobuf/arenastring.o: src/google/protobuf/arenastring.cc.o
+src/google/protobuf/arenastring.obj: src/google/protobuf/arenastring.cc.obj
 
-.PHONY : src/google/protobuf/arenastring.o
+.PHONY : src/google/protobuf/arenastring.obj
 
 # target to build an object file
-src/google/protobuf/arenastring.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf-lite.dir/build.make CMakeFiles/libprotobuf-lite.dir/src/google/protobuf/arenastring.cc.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/arenastring.cc.o
-.PHONY : src/google/protobuf/arenastring.cc.o
+src/google/protobuf/arenastring.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf-lite.dir/build.make CMakeFiles/libprotobuf-lite.dir/src/google/protobuf/arenastring.cc.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/arenastring.cc.obj
+.PHONY : src/google/protobuf/arenastring.cc.obj
 
 src/google/protobuf/arenastring.i: src/google/protobuf/arenastring.cc.i
 
@@ -638,14 +638,14 @@ src/google/protobuf/arenastring.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/arenastring.cc.s
 .PHONY : src/google/protobuf/arenastring.cc.s
 
-src/google/protobuf/arenastring_unittest.o: src/google/protobuf/arenastring_unittest.cc.o
+src/google/protobuf/arenastring_unittest.obj: src/google/protobuf/arenastring_unittest.cc.obj
 
-.PHONY : src/google/protobuf/arenastring_unittest.o
+.PHONY : src/google/protobuf/arenastring_unittest.obj
 
 # target to build an object file
-src/google/protobuf/arenastring_unittest.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/arenastring_unittest.cc.o
-.PHONY : src/google/protobuf/arenastring_unittest.cc.o
+src/google/protobuf/arenastring_unittest.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/arenastring_unittest.cc.obj
+.PHONY : src/google/protobuf/arenastring_unittest.cc.obj
 
 src/google/protobuf/arenastring_unittest.i: src/google/protobuf/arenastring_unittest.cc.i
 
@@ -665,15 +665,15 @@ src/google/protobuf/arenastring_unittest.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/arenastring_unittest.cc.s
 .PHONY : src/google/protobuf/arenastring_unittest.cc.s
 
-src/google/protobuf/arenaz_sampler.o: src/google/protobuf/arenaz_sampler.cc.o
+src/google/protobuf/arenaz_sampler.obj: src/google/protobuf/arenaz_sampler.cc.obj
 
-.PHONY : src/google/protobuf/arenaz_sampler.o
+.PHONY : src/google/protobuf/arenaz_sampler.obj
 
 # target to build an object file
-src/google/protobuf/arenaz_sampler.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf-lite.dir/build.make CMakeFiles/libprotobuf-lite.dir/src/google/protobuf/arenaz_sampler.cc.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/arenaz_sampler.cc.o
-.PHONY : src/google/protobuf/arenaz_sampler.cc.o
+src/google/protobuf/arenaz_sampler.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf-lite.dir/build.make CMakeFiles/libprotobuf-lite.dir/src/google/protobuf/arenaz_sampler.cc.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/arenaz_sampler.cc.obj
+.PHONY : src/google/protobuf/arenaz_sampler.cc.obj
 
 src/google/protobuf/arenaz_sampler.i: src/google/protobuf/arenaz_sampler.cc.i
 
@@ -695,14 +695,14 @@ src/google/protobuf/arenaz_sampler.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/arenaz_sampler.cc.s
 .PHONY : src/google/protobuf/arenaz_sampler.cc.s
 
-src/google/protobuf/arenaz_sampler_test.o: src/google/protobuf/arenaz_sampler_test.cc.o
+src/google/protobuf/arenaz_sampler_test.obj: src/google/protobuf/arenaz_sampler_test.cc.obj
 
-.PHONY : src/google/protobuf/arenaz_sampler_test.o
+.PHONY : src/google/protobuf/arenaz_sampler_test.obj
 
 # target to build an object file
-src/google/protobuf/arenaz_sampler_test.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/arenaz_sampler_test.cc.o
-.PHONY : src/google/protobuf/arenaz_sampler_test.cc.o
+src/google/protobuf/arenaz_sampler_test.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/arenaz_sampler_test.cc.obj
+.PHONY : src/google/protobuf/arenaz_sampler_test.cc.obj
 
 src/google/protobuf/arenaz_sampler_test.i: src/google/protobuf/arenaz_sampler_test.cc.i
 
@@ -722,14 +722,14 @@ src/google/protobuf/arenaz_sampler_test.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/arenaz_sampler_test.cc.s
 .PHONY : src/google/protobuf/arenaz_sampler_test.cc.s
 
-src/google/protobuf/compiler/annotation_test_util.o: src/google/protobuf/compiler/annotation_test_util.cc.o
+src/google/protobuf/compiler/annotation_test_util.obj: src/google/protobuf/compiler/annotation_test_util.cc.obj
 
-.PHONY : src/google/protobuf/compiler/annotation_test_util.o
+.PHONY : src/google/protobuf/compiler/annotation_test_util.obj
 
 # target to build an object file
-src/google/protobuf/compiler/annotation_test_util.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/compiler/annotation_test_util.cc.o
-.PHONY : src/google/protobuf/compiler/annotation_test_util.cc.o
+src/google/protobuf/compiler/annotation_test_util.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/compiler/annotation_test_util.cc.obj
+.PHONY : src/google/protobuf/compiler/annotation_test_util.cc.obj
 
 src/google/protobuf/compiler/annotation_test_util.i: src/google/protobuf/compiler/annotation_test_util.cc.i
 
@@ -749,14 +749,14 @@ src/google/protobuf/compiler/annotation_test_util.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/compiler/annotation_test_util.cc.s
 .PHONY : src/google/protobuf/compiler/annotation_test_util.cc.s
 
-src/google/protobuf/compiler/code_generator.o: src/google/protobuf/compiler/code_generator.cc.o
+src/google/protobuf/compiler/code_generator.obj: src/google/protobuf/compiler/code_generator.cc.obj
 
-.PHONY : src/google/protobuf/compiler/code_generator.o
+.PHONY : src/google/protobuf/compiler/code_generator.obj
 
 # target to build an object file
-src/google/protobuf/compiler/code_generator.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/code_generator.cc.o
-.PHONY : src/google/protobuf/compiler/code_generator.cc.o
+src/google/protobuf/compiler/code_generator.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/code_generator.cc.obj
+.PHONY : src/google/protobuf/compiler/code_generator.cc.obj
 
 src/google/protobuf/compiler/code_generator.i: src/google/protobuf/compiler/code_generator.cc.i
 
@@ -776,14 +776,14 @@ src/google/protobuf/compiler/code_generator.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/code_generator.cc.s
 .PHONY : src/google/protobuf/compiler/code_generator.cc.s
 
-src/google/protobuf/compiler/command_line_interface.o: src/google/protobuf/compiler/command_line_interface.cc.o
+src/google/protobuf/compiler/command_line_interface.obj: src/google/protobuf/compiler/command_line_interface.cc.obj
 
-.PHONY : src/google/protobuf/compiler/command_line_interface.o
+.PHONY : src/google/protobuf/compiler/command_line_interface.obj
 
 # target to build an object file
-src/google/protobuf/compiler/command_line_interface.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/command_line_interface.cc.o
-.PHONY : src/google/protobuf/compiler/command_line_interface.cc.o
+src/google/protobuf/compiler/command_line_interface.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/command_line_interface.cc.obj
+.PHONY : src/google/protobuf/compiler/command_line_interface.cc.obj
 
 src/google/protobuf/compiler/command_line_interface.i: src/google/protobuf/compiler/command_line_interface.cc.i
 
@@ -803,14 +803,14 @@ src/google/protobuf/compiler/command_line_interface.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/command_line_interface.cc.s
 .PHONY : src/google/protobuf/compiler/command_line_interface.cc.s
 
-src/google/protobuf/compiler/command_line_interface_unittest.o: src/google/protobuf/compiler/command_line_interface_unittest.cc.o
+src/google/protobuf/compiler/command_line_interface_unittest.obj: src/google/protobuf/compiler/command_line_interface_unittest.cc.obj
 
-.PHONY : src/google/protobuf/compiler/command_line_interface_unittest.o
+.PHONY : src/google/protobuf/compiler/command_line_interface_unittest.obj
 
 # target to build an object file
-src/google/protobuf/compiler/command_line_interface_unittest.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/compiler/command_line_interface_unittest.cc.o
-.PHONY : src/google/protobuf/compiler/command_line_interface_unittest.cc.o
+src/google/protobuf/compiler/command_line_interface_unittest.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/compiler/command_line_interface_unittest.cc.obj
+.PHONY : src/google/protobuf/compiler/command_line_interface_unittest.cc.obj
 
 src/google/protobuf/compiler/command_line_interface_unittest.i: src/google/protobuf/compiler/command_line_interface_unittest.cc.i
 
@@ -830,14 +830,14 @@ src/google/protobuf/compiler/command_line_interface_unittest.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/compiler/command_line_interface_unittest.cc.s
 .PHONY : src/google/protobuf/compiler/command_line_interface_unittest.cc.s
 
-src/google/protobuf/compiler/cpp/bootstrap_unittest.o: src/google/protobuf/compiler/cpp/bootstrap_unittest.cc.o
+src/google/protobuf/compiler/cpp/bootstrap_unittest.obj: src/google/protobuf/compiler/cpp/bootstrap_unittest.cc.obj
 
-.PHONY : src/google/protobuf/compiler/cpp/bootstrap_unittest.o
+.PHONY : src/google/protobuf/compiler/cpp/bootstrap_unittest.obj
 
 # target to build an object file
-src/google/protobuf/compiler/cpp/bootstrap_unittest.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/compiler/cpp/bootstrap_unittest.cc.o
-.PHONY : src/google/protobuf/compiler/cpp/bootstrap_unittest.cc.o
+src/google/protobuf/compiler/cpp/bootstrap_unittest.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/compiler/cpp/bootstrap_unittest.cc.obj
+.PHONY : src/google/protobuf/compiler/cpp/bootstrap_unittest.cc.obj
 
 src/google/protobuf/compiler/cpp/bootstrap_unittest.i: src/google/protobuf/compiler/cpp/bootstrap_unittest.cc.i
 
@@ -857,14 +857,14 @@ src/google/protobuf/compiler/cpp/bootstrap_unittest.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/compiler/cpp/bootstrap_unittest.cc.s
 .PHONY : src/google/protobuf/compiler/cpp/bootstrap_unittest.cc.s
 
-src/google/protobuf/compiler/cpp/enum.o: src/google/protobuf/compiler/cpp/enum.cc.o
+src/google/protobuf/compiler/cpp/enum.obj: src/google/protobuf/compiler/cpp/enum.cc.obj
 
-.PHONY : src/google/protobuf/compiler/cpp/enum.o
+.PHONY : src/google/protobuf/compiler/cpp/enum.obj
 
 # target to build an object file
-src/google/protobuf/compiler/cpp/enum.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/cpp/enum.cc.o
-.PHONY : src/google/protobuf/compiler/cpp/enum.cc.o
+src/google/protobuf/compiler/cpp/enum.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/cpp/enum.cc.obj
+.PHONY : src/google/protobuf/compiler/cpp/enum.cc.obj
 
 src/google/protobuf/compiler/cpp/enum.i: src/google/protobuf/compiler/cpp/enum.cc.i
 
@@ -884,14 +884,14 @@ src/google/protobuf/compiler/cpp/enum.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/cpp/enum.cc.s
 .PHONY : src/google/protobuf/compiler/cpp/enum.cc.s
 
-src/google/protobuf/compiler/cpp/enum_field.o: src/google/protobuf/compiler/cpp/enum_field.cc.o
+src/google/protobuf/compiler/cpp/enum_field.obj: src/google/protobuf/compiler/cpp/enum_field.cc.obj
 
-.PHONY : src/google/protobuf/compiler/cpp/enum_field.o
+.PHONY : src/google/protobuf/compiler/cpp/enum_field.obj
 
 # target to build an object file
-src/google/protobuf/compiler/cpp/enum_field.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/cpp/enum_field.cc.o
-.PHONY : src/google/protobuf/compiler/cpp/enum_field.cc.o
+src/google/protobuf/compiler/cpp/enum_field.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/cpp/enum_field.cc.obj
+.PHONY : src/google/protobuf/compiler/cpp/enum_field.cc.obj
 
 src/google/protobuf/compiler/cpp/enum_field.i: src/google/protobuf/compiler/cpp/enum_field.cc.i
 
@@ -911,14 +911,14 @@ src/google/protobuf/compiler/cpp/enum_field.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/cpp/enum_field.cc.s
 .PHONY : src/google/protobuf/compiler/cpp/enum_field.cc.s
 
-src/google/protobuf/compiler/cpp/extension.o: src/google/protobuf/compiler/cpp/extension.cc.o
+src/google/protobuf/compiler/cpp/extension.obj: src/google/protobuf/compiler/cpp/extension.cc.obj
 
-.PHONY : src/google/protobuf/compiler/cpp/extension.o
+.PHONY : src/google/protobuf/compiler/cpp/extension.obj
 
 # target to build an object file
-src/google/protobuf/compiler/cpp/extension.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/cpp/extension.cc.o
-.PHONY : src/google/protobuf/compiler/cpp/extension.cc.o
+src/google/protobuf/compiler/cpp/extension.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/cpp/extension.cc.obj
+.PHONY : src/google/protobuf/compiler/cpp/extension.cc.obj
 
 src/google/protobuf/compiler/cpp/extension.i: src/google/protobuf/compiler/cpp/extension.cc.i
 
@@ -938,14 +938,14 @@ src/google/protobuf/compiler/cpp/extension.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/cpp/extension.cc.s
 .PHONY : src/google/protobuf/compiler/cpp/extension.cc.s
 
-src/google/protobuf/compiler/cpp/field.o: src/google/protobuf/compiler/cpp/field.cc.o
+src/google/protobuf/compiler/cpp/field.obj: src/google/protobuf/compiler/cpp/field.cc.obj
 
-.PHONY : src/google/protobuf/compiler/cpp/field.o
+.PHONY : src/google/protobuf/compiler/cpp/field.obj
 
 # target to build an object file
-src/google/protobuf/compiler/cpp/field.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/cpp/field.cc.o
-.PHONY : src/google/protobuf/compiler/cpp/field.cc.o
+src/google/protobuf/compiler/cpp/field.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/cpp/field.cc.obj
+.PHONY : src/google/protobuf/compiler/cpp/field.cc.obj
 
 src/google/protobuf/compiler/cpp/field.i: src/google/protobuf/compiler/cpp/field.cc.i
 
@@ -965,14 +965,14 @@ src/google/protobuf/compiler/cpp/field.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/cpp/field.cc.s
 .PHONY : src/google/protobuf/compiler/cpp/field.cc.s
 
-src/google/protobuf/compiler/cpp/file.o: src/google/protobuf/compiler/cpp/file.cc.o
+src/google/protobuf/compiler/cpp/file.obj: src/google/protobuf/compiler/cpp/file.cc.obj
 
-.PHONY : src/google/protobuf/compiler/cpp/file.o
+.PHONY : src/google/protobuf/compiler/cpp/file.obj
 
 # target to build an object file
-src/google/protobuf/compiler/cpp/file.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/cpp/file.cc.o
-.PHONY : src/google/protobuf/compiler/cpp/file.cc.o
+src/google/protobuf/compiler/cpp/file.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/cpp/file.cc.obj
+.PHONY : src/google/protobuf/compiler/cpp/file.cc.obj
 
 src/google/protobuf/compiler/cpp/file.i: src/google/protobuf/compiler/cpp/file.cc.i
 
@@ -992,14 +992,14 @@ src/google/protobuf/compiler/cpp/file.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/cpp/file.cc.s
 .PHONY : src/google/protobuf/compiler/cpp/file.cc.s
 
-src/google/protobuf/compiler/cpp/generator.o: src/google/protobuf/compiler/cpp/generator.cc.o
+src/google/protobuf/compiler/cpp/generator.obj: src/google/protobuf/compiler/cpp/generator.cc.obj
 
-.PHONY : src/google/protobuf/compiler/cpp/generator.o
+.PHONY : src/google/protobuf/compiler/cpp/generator.obj
 
 # target to build an object file
-src/google/protobuf/compiler/cpp/generator.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/cpp/generator.cc.o
-.PHONY : src/google/protobuf/compiler/cpp/generator.cc.o
+src/google/protobuf/compiler/cpp/generator.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/cpp/generator.cc.obj
+.PHONY : src/google/protobuf/compiler/cpp/generator.cc.obj
 
 src/google/protobuf/compiler/cpp/generator.i: src/google/protobuf/compiler/cpp/generator.cc.i
 
@@ -1019,14 +1019,14 @@ src/google/protobuf/compiler/cpp/generator.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/cpp/generator.cc.s
 .PHONY : src/google/protobuf/compiler/cpp/generator.cc.s
 
-src/google/protobuf/compiler/cpp/helpers.o: src/google/protobuf/compiler/cpp/helpers.cc.o
+src/google/protobuf/compiler/cpp/helpers.obj: src/google/protobuf/compiler/cpp/helpers.cc.obj
 
-.PHONY : src/google/protobuf/compiler/cpp/helpers.o
+.PHONY : src/google/protobuf/compiler/cpp/helpers.obj
 
 # target to build an object file
-src/google/protobuf/compiler/cpp/helpers.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/cpp/helpers.cc.o
-.PHONY : src/google/protobuf/compiler/cpp/helpers.cc.o
+src/google/protobuf/compiler/cpp/helpers.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/cpp/helpers.cc.obj
+.PHONY : src/google/protobuf/compiler/cpp/helpers.cc.obj
 
 src/google/protobuf/compiler/cpp/helpers.i: src/google/protobuf/compiler/cpp/helpers.cc.i
 
@@ -1046,14 +1046,14 @@ src/google/protobuf/compiler/cpp/helpers.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/cpp/helpers.cc.s
 .PHONY : src/google/protobuf/compiler/cpp/helpers.cc.s
 
-src/google/protobuf/compiler/cpp/map_field.o: src/google/protobuf/compiler/cpp/map_field.cc.o
+src/google/protobuf/compiler/cpp/map_field.obj: src/google/protobuf/compiler/cpp/map_field.cc.obj
 
-.PHONY : src/google/protobuf/compiler/cpp/map_field.o
+.PHONY : src/google/protobuf/compiler/cpp/map_field.obj
 
 # target to build an object file
-src/google/protobuf/compiler/cpp/map_field.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/cpp/map_field.cc.o
-.PHONY : src/google/protobuf/compiler/cpp/map_field.cc.o
+src/google/protobuf/compiler/cpp/map_field.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/cpp/map_field.cc.obj
+.PHONY : src/google/protobuf/compiler/cpp/map_field.cc.obj
 
 src/google/protobuf/compiler/cpp/map_field.i: src/google/protobuf/compiler/cpp/map_field.cc.i
 
@@ -1073,14 +1073,14 @@ src/google/protobuf/compiler/cpp/map_field.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/cpp/map_field.cc.s
 .PHONY : src/google/protobuf/compiler/cpp/map_field.cc.s
 
-src/google/protobuf/compiler/cpp/message.o: src/google/protobuf/compiler/cpp/message.cc.o
+src/google/protobuf/compiler/cpp/message.obj: src/google/protobuf/compiler/cpp/message.cc.obj
 
-.PHONY : src/google/protobuf/compiler/cpp/message.o
+.PHONY : src/google/protobuf/compiler/cpp/message.obj
 
 # target to build an object file
-src/google/protobuf/compiler/cpp/message.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/cpp/message.cc.o
-.PHONY : src/google/protobuf/compiler/cpp/message.cc.o
+src/google/protobuf/compiler/cpp/message.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/cpp/message.cc.obj
+.PHONY : src/google/protobuf/compiler/cpp/message.cc.obj
 
 src/google/protobuf/compiler/cpp/message.i: src/google/protobuf/compiler/cpp/message.cc.i
 
@@ -1100,14 +1100,14 @@ src/google/protobuf/compiler/cpp/message.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/cpp/message.cc.s
 .PHONY : src/google/protobuf/compiler/cpp/message.cc.s
 
-src/google/protobuf/compiler/cpp/message_field.o: src/google/protobuf/compiler/cpp/message_field.cc.o
+src/google/protobuf/compiler/cpp/message_field.obj: src/google/protobuf/compiler/cpp/message_field.cc.obj
 
-.PHONY : src/google/protobuf/compiler/cpp/message_field.o
+.PHONY : src/google/protobuf/compiler/cpp/message_field.obj
 
 # target to build an object file
-src/google/protobuf/compiler/cpp/message_field.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/cpp/message_field.cc.o
-.PHONY : src/google/protobuf/compiler/cpp/message_field.cc.o
+src/google/protobuf/compiler/cpp/message_field.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/cpp/message_field.cc.obj
+.PHONY : src/google/protobuf/compiler/cpp/message_field.cc.obj
 
 src/google/protobuf/compiler/cpp/message_field.i: src/google/protobuf/compiler/cpp/message_field.cc.i
 
@@ -1127,14 +1127,14 @@ src/google/protobuf/compiler/cpp/message_field.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/cpp/message_field.cc.s
 .PHONY : src/google/protobuf/compiler/cpp/message_field.cc.s
 
-src/google/protobuf/compiler/cpp/message_size_unittest.o: src/google/protobuf/compiler/cpp/message_size_unittest.cc.o
+src/google/protobuf/compiler/cpp/message_size_unittest.obj: src/google/protobuf/compiler/cpp/message_size_unittest.cc.obj
 
-.PHONY : src/google/protobuf/compiler/cpp/message_size_unittest.o
+.PHONY : src/google/protobuf/compiler/cpp/message_size_unittest.obj
 
 # target to build an object file
-src/google/protobuf/compiler/cpp/message_size_unittest.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/compiler/cpp/message_size_unittest.cc.o
-.PHONY : src/google/protobuf/compiler/cpp/message_size_unittest.cc.o
+src/google/protobuf/compiler/cpp/message_size_unittest.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/compiler/cpp/message_size_unittest.cc.obj
+.PHONY : src/google/protobuf/compiler/cpp/message_size_unittest.cc.obj
 
 src/google/protobuf/compiler/cpp/message_size_unittest.i: src/google/protobuf/compiler/cpp/message_size_unittest.cc.i
 
@@ -1154,14 +1154,14 @@ src/google/protobuf/compiler/cpp/message_size_unittest.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/compiler/cpp/message_size_unittest.cc.s
 .PHONY : src/google/protobuf/compiler/cpp/message_size_unittest.cc.s
 
-src/google/protobuf/compiler/cpp/metadata_test.o: src/google/protobuf/compiler/cpp/metadata_test.cc.o
+src/google/protobuf/compiler/cpp/metadata_test.obj: src/google/protobuf/compiler/cpp/metadata_test.cc.obj
 
-.PHONY : src/google/protobuf/compiler/cpp/metadata_test.o
+.PHONY : src/google/protobuf/compiler/cpp/metadata_test.obj
 
 # target to build an object file
-src/google/protobuf/compiler/cpp/metadata_test.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/compiler/cpp/metadata_test.cc.o
-.PHONY : src/google/protobuf/compiler/cpp/metadata_test.cc.o
+src/google/protobuf/compiler/cpp/metadata_test.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/compiler/cpp/metadata_test.cc.obj
+.PHONY : src/google/protobuf/compiler/cpp/metadata_test.cc.obj
 
 src/google/protobuf/compiler/cpp/metadata_test.i: src/google/protobuf/compiler/cpp/metadata_test.cc.i
 
@@ -1181,14 +1181,14 @@ src/google/protobuf/compiler/cpp/metadata_test.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/compiler/cpp/metadata_test.cc.s
 .PHONY : src/google/protobuf/compiler/cpp/metadata_test.cc.s
 
-src/google/protobuf/compiler/cpp/move_unittest.o: src/google/protobuf/compiler/cpp/move_unittest.cc.o
+src/google/protobuf/compiler/cpp/move_unittest.obj: src/google/protobuf/compiler/cpp/move_unittest.cc.obj
 
-.PHONY : src/google/protobuf/compiler/cpp/move_unittest.o
+.PHONY : src/google/protobuf/compiler/cpp/move_unittest.obj
 
 # target to build an object file
-src/google/protobuf/compiler/cpp/move_unittest.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/compiler/cpp/move_unittest.cc.o
-.PHONY : src/google/protobuf/compiler/cpp/move_unittest.cc.o
+src/google/protobuf/compiler/cpp/move_unittest.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/compiler/cpp/move_unittest.cc.obj
+.PHONY : src/google/protobuf/compiler/cpp/move_unittest.cc.obj
 
 src/google/protobuf/compiler/cpp/move_unittest.i: src/google/protobuf/compiler/cpp/move_unittest.cc.i
 
@@ -1208,14 +1208,14 @@ src/google/protobuf/compiler/cpp/move_unittest.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/compiler/cpp/move_unittest.cc.s
 .PHONY : src/google/protobuf/compiler/cpp/move_unittest.cc.s
 
-src/google/protobuf/compiler/cpp/padding_optimizer.o: src/google/protobuf/compiler/cpp/padding_optimizer.cc.o
+src/google/protobuf/compiler/cpp/padding_optimizer.obj: src/google/protobuf/compiler/cpp/padding_optimizer.cc.obj
 
-.PHONY : src/google/protobuf/compiler/cpp/padding_optimizer.o
+.PHONY : src/google/protobuf/compiler/cpp/padding_optimizer.obj
 
 # target to build an object file
-src/google/protobuf/compiler/cpp/padding_optimizer.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/cpp/padding_optimizer.cc.o
-.PHONY : src/google/protobuf/compiler/cpp/padding_optimizer.cc.o
+src/google/protobuf/compiler/cpp/padding_optimizer.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/cpp/padding_optimizer.cc.obj
+.PHONY : src/google/protobuf/compiler/cpp/padding_optimizer.cc.obj
 
 src/google/protobuf/compiler/cpp/padding_optimizer.i: src/google/protobuf/compiler/cpp/padding_optimizer.cc.i
 
@@ -1235,14 +1235,14 @@ src/google/protobuf/compiler/cpp/padding_optimizer.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/cpp/padding_optimizer.cc.s
 .PHONY : src/google/protobuf/compiler/cpp/padding_optimizer.cc.s
 
-src/google/protobuf/compiler/cpp/parse_function_generator.o: src/google/protobuf/compiler/cpp/parse_function_generator.cc.o
+src/google/protobuf/compiler/cpp/parse_function_generator.obj: src/google/protobuf/compiler/cpp/parse_function_generator.cc.obj
 
-.PHONY : src/google/protobuf/compiler/cpp/parse_function_generator.o
+.PHONY : src/google/protobuf/compiler/cpp/parse_function_generator.obj
 
 # target to build an object file
-src/google/protobuf/compiler/cpp/parse_function_generator.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/cpp/parse_function_generator.cc.o
-.PHONY : src/google/protobuf/compiler/cpp/parse_function_generator.cc.o
+src/google/protobuf/compiler/cpp/parse_function_generator.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/cpp/parse_function_generator.cc.obj
+.PHONY : src/google/protobuf/compiler/cpp/parse_function_generator.cc.obj
 
 src/google/protobuf/compiler/cpp/parse_function_generator.i: src/google/protobuf/compiler/cpp/parse_function_generator.cc.i
 
@@ -1262,14 +1262,14 @@ src/google/protobuf/compiler/cpp/parse_function_generator.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/cpp/parse_function_generator.cc.s
 .PHONY : src/google/protobuf/compiler/cpp/parse_function_generator.cc.s
 
-src/google/protobuf/compiler/cpp/plugin_unittest.o: src/google/protobuf/compiler/cpp/plugin_unittest.cc.o
+src/google/protobuf/compiler/cpp/plugin_unittest.obj: src/google/protobuf/compiler/cpp/plugin_unittest.cc.obj
 
-.PHONY : src/google/protobuf/compiler/cpp/plugin_unittest.o
+.PHONY : src/google/protobuf/compiler/cpp/plugin_unittest.obj
 
 # target to build an object file
-src/google/protobuf/compiler/cpp/plugin_unittest.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/compiler/cpp/plugin_unittest.cc.o
-.PHONY : src/google/protobuf/compiler/cpp/plugin_unittest.cc.o
+src/google/protobuf/compiler/cpp/plugin_unittest.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/compiler/cpp/plugin_unittest.cc.obj
+.PHONY : src/google/protobuf/compiler/cpp/plugin_unittest.cc.obj
 
 src/google/protobuf/compiler/cpp/plugin_unittest.i: src/google/protobuf/compiler/cpp/plugin_unittest.cc.i
 
@@ -1289,14 +1289,14 @@ src/google/protobuf/compiler/cpp/plugin_unittest.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/compiler/cpp/plugin_unittest.cc.s
 .PHONY : src/google/protobuf/compiler/cpp/plugin_unittest.cc.s
 
-src/google/protobuf/compiler/cpp/primitive_field.o: src/google/protobuf/compiler/cpp/primitive_field.cc.o
+src/google/protobuf/compiler/cpp/primitive_field.obj: src/google/protobuf/compiler/cpp/primitive_field.cc.obj
 
-.PHONY : src/google/protobuf/compiler/cpp/primitive_field.o
+.PHONY : src/google/protobuf/compiler/cpp/primitive_field.obj
 
 # target to build an object file
-src/google/protobuf/compiler/cpp/primitive_field.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/cpp/primitive_field.cc.o
-.PHONY : src/google/protobuf/compiler/cpp/primitive_field.cc.o
+src/google/protobuf/compiler/cpp/primitive_field.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/cpp/primitive_field.cc.obj
+.PHONY : src/google/protobuf/compiler/cpp/primitive_field.cc.obj
 
 src/google/protobuf/compiler/cpp/primitive_field.i: src/google/protobuf/compiler/cpp/primitive_field.cc.i
 
@@ -1316,14 +1316,14 @@ src/google/protobuf/compiler/cpp/primitive_field.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/cpp/primitive_field.cc.s
 .PHONY : src/google/protobuf/compiler/cpp/primitive_field.cc.s
 
-src/google/protobuf/compiler/cpp/service.o: src/google/protobuf/compiler/cpp/service.cc.o
+src/google/protobuf/compiler/cpp/service.obj: src/google/protobuf/compiler/cpp/service.cc.obj
 
-.PHONY : src/google/protobuf/compiler/cpp/service.o
+.PHONY : src/google/protobuf/compiler/cpp/service.obj
 
 # target to build an object file
-src/google/protobuf/compiler/cpp/service.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/cpp/service.cc.o
-.PHONY : src/google/protobuf/compiler/cpp/service.cc.o
+src/google/protobuf/compiler/cpp/service.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/cpp/service.cc.obj
+.PHONY : src/google/protobuf/compiler/cpp/service.cc.obj
 
 src/google/protobuf/compiler/cpp/service.i: src/google/protobuf/compiler/cpp/service.cc.i
 
@@ -1343,14 +1343,14 @@ src/google/protobuf/compiler/cpp/service.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/cpp/service.cc.s
 .PHONY : src/google/protobuf/compiler/cpp/service.cc.s
 
-src/google/protobuf/compiler/cpp/string_field.o: src/google/protobuf/compiler/cpp/string_field.cc.o
+src/google/protobuf/compiler/cpp/string_field.obj: src/google/protobuf/compiler/cpp/string_field.cc.obj
 
-.PHONY : src/google/protobuf/compiler/cpp/string_field.o
+.PHONY : src/google/protobuf/compiler/cpp/string_field.obj
 
 # target to build an object file
-src/google/protobuf/compiler/cpp/string_field.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/cpp/string_field.cc.o
-.PHONY : src/google/protobuf/compiler/cpp/string_field.cc.o
+src/google/protobuf/compiler/cpp/string_field.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/cpp/string_field.cc.obj
+.PHONY : src/google/protobuf/compiler/cpp/string_field.cc.obj
 
 src/google/protobuf/compiler/cpp/string_field.i: src/google/protobuf/compiler/cpp/string_field.cc.i
 
@@ -1370,14 +1370,14 @@ src/google/protobuf/compiler/cpp/string_field.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/cpp/string_field.cc.s
 .PHONY : src/google/protobuf/compiler/cpp/string_field.cc.s
 
-src/google/protobuf/compiler/cpp/test_bad_identifiers.pb.o: src/google/protobuf/compiler/cpp/test_bad_identifiers.pb.cc.o
+src/google/protobuf/compiler/cpp/test_bad_identifiers.pb.obj: src/google/protobuf/compiler/cpp/test_bad_identifiers.pb.cc.obj
 
-.PHONY : src/google/protobuf/compiler/cpp/test_bad_identifiers.pb.o
+.PHONY : src/google/protobuf/compiler/cpp/test_bad_identifiers.pb.obj
 
 # target to build an object file
-src/google/protobuf/compiler/cpp/test_bad_identifiers.pb.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/compiler/cpp/test_bad_identifiers.pb.cc.o
-.PHONY : src/google/protobuf/compiler/cpp/test_bad_identifiers.pb.cc.o
+src/google/protobuf/compiler/cpp/test_bad_identifiers.pb.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/compiler/cpp/test_bad_identifiers.pb.cc.obj
+.PHONY : src/google/protobuf/compiler/cpp/test_bad_identifiers.pb.cc.obj
 
 src/google/protobuf/compiler/cpp/test_bad_identifiers.pb.i: src/google/protobuf/compiler/cpp/test_bad_identifiers.pb.cc.i
 
@@ -1397,14 +1397,14 @@ src/google/protobuf/compiler/cpp/test_bad_identifiers.pb.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/compiler/cpp/test_bad_identifiers.pb.cc.s
 .PHONY : src/google/protobuf/compiler/cpp/test_bad_identifiers.pb.cc.s
 
-src/google/protobuf/compiler/cpp/test_large_enum_value.pb.o: src/google/protobuf/compiler/cpp/test_large_enum_value.pb.cc.o
+src/google/protobuf/compiler/cpp/test_large_enum_value.pb.obj: src/google/protobuf/compiler/cpp/test_large_enum_value.pb.cc.obj
 
-.PHONY : src/google/protobuf/compiler/cpp/test_large_enum_value.pb.o
+.PHONY : src/google/protobuf/compiler/cpp/test_large_enum_value.pb.obj
 
 # target to build an object file
-src/google/protobuf/compiler/cpp/test_large_enum_value.pb.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/compiler/cpp/test_large_enum_value.pb.cc.o
-.PHONY : src/google/protobuf/compiler/cpp/test_large_enum_value.pb.cc.o
+src/google/protobuf/compiler/cpp/test_large_enum_value.pb.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/compiler/cpp/test_large_enum_value.pb.cc.obj
+.PHONY : src/google/protobuf/compiler/cpp/test_large_enum_value.pb.cc.obj
 
 src/google/protobuf/compiler/cpp/test_large_enum_value.pb.i: src/google/protobuf/compiler/cpp/test_large_enum_value.pb.cc.i
 
@@ -1424,14 +1424,14 @@ src/google/protobuf/compiler/cpp/test_large_enum_value.pb.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/compiler/cpp/test_large_enum_value.pb.cc.s
 .PHONY : src/google/protobuf/compiler/cpp/test_large_enum_value.pb.cc.s
 
-src/google/protobuf/compiler/cpp/unittest.o: src/google/protobuf/compiler/cpp/unittest.cc.o
+src/google/protobuf/compiler/cpp/unittest.obj: src/google/protobuf/compiler/cpp/unittest.cc.obj
 
-.PHONY : src/google/protobuf/compiler/cpp/unittest.o
+.PHONY : src/google/protobuf/compiler/cpp/unittest.obj
 
 # target to build an object file
-src/google/protobuf/compiler/cpp/unittest.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/compiler/cpp/unittest.cc.o
-.PHONY : src/google/protobuf/compiler/cpp/unittest.cc.o
+src/google/protobuf/compiler/cpp/unittest.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/compiler/cpp/unittest.cc.obj
+.PHONY : src/google/protobuf/compiler/cpp/unittest.cc.obj
 
 src/google/protobuf/compiler/cpp/unittest.i: src/google/protobuf/compiler/cpp/unittest.cc.i
 
@@ -1451,14 +1451,14 @@ src/google/protobuf/compiler/cpp/unittest.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/compiler/cpp/unittest.cc.s
 .PHONY : src/google/protobuf/compiler/cpp/unittest.cc.s
 
-src/google/protobuf/compiler/csharp/csharp_bootstrap_unittest.o: src/google/protobuf/compiler/csharp/csharp_bootstrap_unittest.cc.o
+src/google/protobuf/compiler/csharp/csharp_bootstrap_unittest.obj: src/google/protobuf/compiler/csharp/csharp_bootstrap_unittest.cc.obj
 
-.PHONY : src/google/protobuf/compiler/csharp/csharp_bootstrap_unittest.o
+.PHONY : src/google/protobuf/compiler/csharp/csharp_bootstrap_unittest.obj
 
 # target to build an object file
-src/google/protobuf/compiler/csharp/csharp_bootstrap_unittest.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/compiler/csharp/csharp_bootstrap_unittest.cc.o
-.PHONY : src/google/protobuf/compiler/csharp/csharp_bootstrap_unittest.cc.o
+src/google/protobuf/compiler/csharp/csharp_bootstrap_unittest.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/compiler/csharp/csharp_bootstrap_unittest.cc.obj
+.PHONY : src/google/protobuf/compiler/csharp/csharp_bootstrap_unittest.cc.obj
 
 src/google/protobuf/compiler/csharp/csharp_bootstrap_unittest.i: src/google/protobuf/compiler/csharp/csharp_bootstrap_unittest.cc.i
 
@@ -1478,14 +1478,14 @@ src/google/protobuf/compiler/csharp/csharp_bootstrap_unittest.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/compiler/csharp/csharp_bootstrap_unittest.cc.s
 .PHONY : src/google/protobuf/compiler/csharp/csharp_bootstrap_unittest.cc.s
 
-src/google/protobuf/compiler/csharp/csharp_doc_comment.o: src/google/protobuf/compiler/csharp/csharp_doc_comment.cc.o
+src/google/protobuf/compiler/csharp/csharp_doc_comment.obj: src/google/protobuf/compiler/csharp/csharp_doc_comment.cc.obj
 
-.PHONY : src/google/protobuf/compiler/csharp/csharp_doc_comment.o
+.PHONY : src/google/protobuf/compiler/csharp/csharp_doc_comment.obj
 
 # target to build an object file
-src/google/protobuf/compiler/csharp/csharp_doc_comment.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/csharp/csharp_doc_comment.cc.o
-.PHONY : src/google/protobuf/compiler/csharp/csharp_doc_comment.cc.o
+src/google/protobuf/compiler/csharp/csharp_doc_comment.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/csharp/csharp_doc_comment.cc.obj
+.PHONY : src/google/protobuf/compiler/csharp/csharp_doc_comment.cc.obj
 
 src/google/protobuf/compiler/csharp/csharp_doc_comment.i: src/google/protobuf/compiler/csharp/csharp_doc_comment.cc.i
 
@@ -1505,14 +1505,14 @@ src/google/protobuf/compiler/csharp/csharp_doc_comment.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/csharp/csharp_doc_comment.cc.s
 .PHONY : src/google/protobuf/compiler/csharp/csharp_doc_comment.cc.s
 
-src/google/protobuf/compiler/csharp/csharp_enum.o: src/google/protobuf/compiler/csharp/csharp_enum.cc.o
+src/google/protobuf/compiler/csharp/csharp_enum.obj: src/google/protobuf/compiler/csharp/csharp_enum.cc.obj
 
-.PHONY : src/google/protobuf/compiler/csharp/csharp_enum.o
+.PHONY : src/google/protobuf/compiler/csharp/csharp_enum.obj
 
 # target to build an object file
-src/google/protobuf/compiler/csharp/csharp_enum.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/csharp/csharp_enum.cc.o
-.PHONY : src/google/protobuf/compiler/csharp/csharp_enum.cc.o
+src/google/protobuf/compiler/csharp/csharp_enum.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/csharp/csharp_enum.cc.obj
+.PHONY : src/google/protobuf/compiler/csharp/csharp_enum.cc.obj
 
 src/google/protobuf/compiler/csharp/csharp_enum.i: src/google/protobuf/compiler/csharp/csharp_enum.cc.i
 
@@ -1532,14 +1532,14 @@ src/google/protobuf/compiler/csharp/csharp_enum.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/csharp/csharp_enum.cc.s
 .PHONY : src/google/protobuf/compiler/csharp/csharp_enum.cc.s
 
-src/google/protobuf/compiler/csharp/csharp_enum_field.o: src/google/protobuf/compiler/csharp/csharp_enum_field.cc.o
+src/google/protobuf/compiler/csharp/csharp_enum_field.obj: src/google/protobuf/compiler/csharp/csharp_enum_field.cc.obj
 
-.PHONY : src/google/protobuf/compiler/csharp/csharp_enum_field.o
+.PHONY : src/google/protobuf/compiler/csharp/csharp_enum_field.obj
 
 # target to build an object file
-src/google/protobuf/compiler/csharp/csharp_enum_field.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/csharp/csharp_enum_field.cc.o
-.PHONY : src/google/protobuf/compiler/csharp/csharp_enum_field.cc.o
+src/google/protobuf/compiler/csharp/csharp_enum_field.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/csharp/csharp_enum_field.cc.obj
+.PHONY : src/google/protobuf/compiler/csharp/csharp_enum_field.cc.obj
 
 src/google/protobuf/compiler/csharp/csharp_enum_field.i: src/google/protobuf/compiler/csharp/csharp_enum_field.cc.i
 
@@ -1559,14 +1559,14 @@ src/google/protobuf/compiler/csharp/csharp_enum_field.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/csharp/csharp_enum_field.cc.s
 .PHONY : src/google/protobuf/compiler/csharp/csharp_enum_field.cc.s
 
-src/google/protobuf/compiler/csharp/csharp_field_base.o: src/google/protobuf/compiler/csharp/csharp_field_base.cc.o
+src/google/protobuf/compiler/csharp/csharp_field_base.obj: src/google/protobuf/compiler/csharp/csharp_field_base.cc.obj
 
-.PHONY : src/google/protobuf/compiler/csharp/csharp_field_base.o
+.PHONY : src/google/protobuf/compiler/csharp/csharp_field_base.obj
 
 # target to build an object file
-src/google/protobuf/compiler/csharp/csharp_field_base.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/csharp/csharp_field_base.cc.o
-.PHONY : src/google/protobuf/compiler/csharp/csharp_field_base.cc.o
+src/google/protobuf/compiler/csharp/csharp_field_base.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/csharp/csharp_field_base.cc.obj
+.PHONY : src/google/protobuf/compiler/csharp/csharp_field_base.cc.obj
 
 src/google/protobuf/compiler/csharp/csharp_field_base.i: src/google/protobuf/compiler/csharp/csharp_field_base.cc.i
 
@@ -1586,14 +1586,14 @@ src/google/protobuf/compiler/csharp/csharp_field_base.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/csharp/csharp_field_base.cc.s
 .PHONY : src/google/protobuf/compiler/csharp/csharp_field_base.cc.s
 
-src/google/protobuf/compiler/csharp/csharp_generator.o: src/google/protobuf/compiler/csharp/csharp_generator.cc.o
+src/google/protobuf/compiler/csharp/csharp_generator.obj: src/google/protobuf/compiler/csharp/csharp_generator.cc.obj
 
-.PHONY : src/google/protobuf/compiler/csharp/csharp_generator.o
+.PHONY : src/google/protobuf/compiler/csharp/csharp_generator.obj
 
 # target to build an object file
-src/google/protobuf/compiler/csharp/csharp_generator.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/csharp/csharp_generator.cc.o
-.PHONY : src/google/protobuf/compiler/csharp/csharp_generator.cc.o
+src/google/protobuf/compiler/csharp/csharp_generator.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/csharp/csharp_generator.cc.obj
+.PHONY : src/google/protobuf/compiler/csharp/csharp_generator.cc.obj
 
 src/google/protobuf/compiler/csharp/csharp_generator.i: src/google/protobuf/compiler/csharp/csharp_generator.cc.i
 
@@ -1613,14 +1613,14 @@ src/google/protobuf/compiler/csharp/csharp_generator.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/csharp/csharp_generator.cc.s
 .PHONY : src/google/protobuf/compiler/csharp/csharp_generator.cc.s
 
-src/google/protobuf/compiler/csharp/csharp_generator_unittest.o: src/google/protobuf/compiler/csharp/csharp_generator_unittest.cc.o
+src/google/protobuf/compiler/csharp/csharp_generator_unittest.obj: src/google/protobuf/compiler/csharp/csharp_generator_unittest.cc.obj
 
-.PHONY : src/google/protobuf/compiler/csharp/csharp_generator_unittest.o
+.PHONY : src/google/protobuf/compiler/csharp/csharp_generator_unittest.obj
 
 # target to build an object file
-src/google/protobuf/compiler/csharp/csharp_generator_unittest.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/compiler/csharp/csharp_generator_unittest.cc.o
-.PHONY : src/google/protobuf/compiler/csharp/csharp_generator_unittest.cc.o
+src/google/protobuf/compiler/csharp/csharp_generator_unittest.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/compiler/csharp/csharp_generator_unittest.cc.obj
+.PHONY : src/google/protobuf/compiler/csharp/csharp_generator_unittest.cc.obj
 
 src/google/protobuf/compiler/csharp/csharp_generator_unittest.i: src/google/protobuf/compiler/csharp/csharp_generator_unittest.cc.i
 
@@ -1640,14 +1640,14 @@ src/google/protobuf/compiler/csharp/csharp_generator_unittest.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/compiler/csharp/csharp_generator_unittest.cc.s
 .PHONY : src/google/protobuf/compiler/csharp/csharp_generator_unittest.cc.s
 
-src/google/protobuf/compiler/csharp/csharp_helpers.o: src/google/protobuf/compiler/csharp/csharp_helpers.cc.o
+src/google/protobuf/compiler/csharp/csharp_helpers.obj: src/google/protobuf/compiler/csharp/csharp_helpers.cc.obj
 
-.PHONY : src/google/protobuf/compiler/csharp/csharp_helpers.o
+.PHONY : src/google/protobuf/compiler/csharp/csharp_helpers.obj
 
 # target to build an object file
-src/google/protobuf/compiler/csharp/csharp_helpers.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/csharp/csharp_helpers.cc.o
-.PHONY : src/google/protobuf/compiler/csharp/csharp_helpers.cc.o
+src/google/protobuf/compiler/csharp/csharp_helpers.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/csharp/csharp_helpers.cc.obj
+.PHONY : src/google/protobuf/compiler/csharp/csharp_helpers.cc.obj
 
 src/google/protobuf/compiler/csharp/csharp_helpers.i: src/google/protobuf/compiler/csharp/csharp_helpers.cc.i
 
@@ -1667,14 +1667,14 @@ src/google/protobuf/compiler/csharp/csharp_helpers.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/csharp/csharp_helpers.cc.s
 .PHONY : src/google/protobuf/compiler/csharp/csharp_helpers.cc.s
 
-src/google/protobuf/compiler/csharp/csharp_map_field.o: src/google/protobuf/compiler/csharp/csharp_map_field.cc.o
+src/google/protobuf/compiler/csharp/csharp_map_field.obj: src/google/protobuf/compiler/csharp/csharp_map_field.cc.obj
 
-.PHONY : src/google/protobuf/compiler/csharp/csharp_map_field.o
+.PHONY : src/google/protobuf/compiler/csharp/csharp_map_field.obj
 
 # target to build an object file
-src/google/protobuf/compiler/csharp/csharp_map_field.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/csharp/csharp_map_field.cc.o
-.PHONY : src/google/protobuf/compiler/csharp/csharp_map_field.cc.o
+src/google/protobuf/compiler/csharp/csharp_map_field.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/csharp/csharp_map_field.cc.obj
+.PHONY : src/google/protobuf/compiler/csharp/csharp_map_field.cc.obj
 
 src/google/protobuf/compiler/csharp/csharp_map_field.i: src/google/protobuf/compiler/csharp/csharp_map_field.cc.i
 
@@ -1694,14 +1694,14 @@ src/google/protobuf/compiler/csharp/csharp_map_field.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/csharp/csharp_map_field.cc.s
 .PHONY : src/google/protobuf/compiler/csharp/csharp_map_field.cc.s
 
-src/google/protobuf/compiler/csharp/csharp_message.o: src/google/protobuf/compiler/csharp/csharp_message.cc.o
+src/google/protobuf/compiler/csharp/csharp_message.obj: src/google/protobuf/compiler/csharp/csharp_message.cc.obj
 
-.PHONY : src/google/protobuf/compiler/csharp/csharp_message.o
+.PHONY : src/google/protobuf/compiler/csharp/csharp_message.obj
 
 # target to build an object file
-src/google/protobuf/compiler/csharp/csharp_message.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/csharp/csharp_message.cc.o
-.PHONY : src/google/protobuf/compiler/csharp/csharp_message.cc.o
+src/google/protobuf/compiler/csharp/csharp_message.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/csharp/csharp_message.cc.obj
+.PHONY : src/google/protobuf/compiler/csharp/csharp_message.cc.obj
 
 src/google/protobuf/compiler/csharp/csharp_message.i: src/google/protobuf/compiler/csharp/csharp_message.cc.i
 
@@ -1721,14 +1721,14 @@ src/google/protobuf/compiler/csharp/csharp_message.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/csharp/csharp_message.cc.s
 .PHONY : src/google/protobuf/compiler/csharp/csharp_message.cc.s
 
-src/google/protobuf/compiler/csharp/csharp_message_field.o: src/google/protobuf/compiler/csharp/csharp_message_field.cc.o
+src/google/protobuf/compiler/csharp/csharp_message_field.obj: src/google/protobuf/compiler/csharp/csharp_message_field.cc.obj
 
-.PHONY : src/google/protobuf/compiler/csharp/csharp_message_field.o
+.PHONY : src/google/protobuf/compiler/csharp/csharp_message_field.obj
 
 # target to build an object file
-src/google/protobuf/compiler/csharp/csharp_message_field.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/csharp/csharp_message_field.cc.o
-.PHONY : src/google/protobuf/compiler/csharp/csharp_message_field.cc.o
+src/google/protobuf/compiler/csharp/csharp_message_field.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/csharp/csharp_message_field.cc.obj
+.PHONY : src/google/protobuf/compiler/csharp/csharp_message_field.cc.obj
 
 src/google/protobuf/compiler/csharp/csharp_message_field.i: src/google/protobuf/compiler/csharp/csharp_message_field.cc.i
 
@@ -1748,14 +1748,14 @@ src/google/protobuf/compiler/csharp/csharp_message_field.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/csharp/csharp_message_field.cc.s
 .PHONY : src/google/protobuf/compiler/csharp/csharp_message_field.cc.s
 
-src/google/protobuf/compiler/csharp/csharp_primitive_field.o: src/google/protobuf/compiler/csharp/csharp_primitive_field.cc.o
+src/google/protobuf/compiler/csharp/csharp_primitive_field.obj: src/google/protobuf/compiler/csharp/csharp_primitive_field.cc.obj
 
-.PHONY : src/google/protobuf/compiler/csharp/csharp_primitive_field.o
+.PHONY : src/google/protobuf/compiler/csharp/csharp_primitive_field.obj
 
 # target to build an object file
-src/google/protobuf/compiler/csharp/csharp_primitive_field.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/csharp/csharp_primitive_field.cc.o
-.PHONY : src/google/protobuf/compiler/csharp/csharp_primitive_field.cc.o
+src/google/protobuf/compiler/csharp/csharp_primitive_field.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/csharp/csharp_primitive_field.cc.obj
+.PHONY : src/google/protobuf/compiler/csharp/csharp_primitive_field.cc.obj
 
 src/google/protobuf/compiler/csharp/csharp_primitive_field.i: src/google/protobuf/compiler/csharp/csharp_primitive_field.cc.i
 
@@ -1775,14 +1775,14 @@ src/google/protobuf/compiler/csharp/csharp_primitive_field.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/csharp/csharp_primitive_field.cc.s
 .PHONY : src/google/protobuf/compiler/csharp/csharp_primitive_field.cc.s
 
-src/google/protobuf/compiler/csharp/csharp_reflection_class.o: src/google/protobuf/compiler/csharp/csharp_reflection_class.cc.o
+src/google/protobuf/compiler/csharp/csharp_reflection_class.obj: src/google/protobuf/compiler/csharp/csharp_reflection_class.cc.obj
 
-.PHONY : src/google/protobuf/compiler/csharp/csharp_reflection_class.o
+.PHONY : src/google/protobuf/compiler/csharp/csharp_reflection_class.obj
 
 # target to build an object file
-src/google/protobuf/compiler/csharp/csharp_reflection_class.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/csharp/csharp_reflection_class.cc.o
-.PHONY : src/google/protobuf/compiler/csharp/csharp_reflection_class.cc.o
+src/google/protobuf/compiler/csharp/csharp_reflection_class.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/csharp/csharp_reflection_class.cc.obj
+.PHONY : src/google/protobuf/compiler/csharp/csharp_reflection_class.cc.obj
 
 src/google/protobuf/compiler/csharp/csharp_reflection_class.i: src/google/protobuf/compiler/csharp/csharp_reflection_class.cc.i
 
@@ -1802,14 +1802,14 @@ src/google/protobuf/compiler/csharp/csharp_reflection_class.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/csharp/csharp_reflection_class.cc.s
 .PHONY : src/google/protobuf/compiler/csharp/csharp_reflection_class.cc.s
 
-src/google/protobuf/compiler/csharp/csharp_repeated_enum_field.o: src/google/protobuf/compiler/csharp/csharp_repeated_enum_field.cc.o
+src/google/protobuf/compiler/csharp/csharp_repeated_enum_field.obj: src/google/protobuf/compiler/csharp/csharp_repeated_enum_field.cc.obj
 
-.PHONY : src/google/protobuf/compiler/csharp/csharp_repeated_enum_field.o
+.PHONY : src/google/protobuf/compiler/csharp/csharp_repeated_enum_field.obj
 
 # target to build an object file
-src/google/protobuf/compiler/csharp/csharp_repeated_enum_field.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/csharp/csharp_repeated_enum_field.cc.o
-.PHONY : src/google/protobuf/compiler/csharp/csharp_repeated_enum_field.cc.o
+src/google/protobuf/compiler/csharp/csharp_repeated_enum_field.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/csharp/csharp_repeated_enum_field.cc.obj
+.PHONY : src/google/protobuf/compiler/csharp/csharp_repeated_enum_field.cc.obj
 
 src/google/protobuf/compiler/csharp/csharp_repeated_enum_field.i: src/google/protobuf/compiler/csharp/csharp_repeated_enum_field.cc.i
 
@@ -1829,14 +1829,14 @@ src/google/protobuf/compiler/csharp/csharp_repeated_enum_field.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/csharp/csharp_repeated_enum_field.cc.s
 .PHONY : src/google/protobuf/compiler/csharp/csharp_repeated_enum_field.cc.s
 
-src/google/protobuf/compiler/csharp/csharp_repeated_message_field.o: src/google/protobuf/compiler/csharp/csharp_repeated_message_field.cc.o
+src/google/protobuf/compiler/csharp/csharp_repeated_message_field.obj: src/google/protobuf/compiler/csharp/csharp_repeated_message_field.cc.obj
 
-.PHONY : src/google/protobuf/compiler/csharp/csharp_repeated_message_field.o
+.PHONY : src/google/protobuf/compiler/csharp/csharp_repeated_message_field.obj
 
 # target to build an object file
-src/google/protobuf/compiler/csharp/csharp_repeated_message_field.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/csharp/csharp_repeated_message_field.cc.o
-.PHONY : src/google/protobuf/compiler/csharp/csharp_repeated_message_field.cc.o
+src/google/protobuf/compiler/csharp/csharp_repeated_message_field.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/csharp/csharp_repeated_message_field.cc.obj
+.PHONY : src/google/protobuf/compiler/csharp/csharp_repeated_message_field.cc.obj
 
 src/google/protobuf/compiler/csharp/csharp_repeated_message_field.i: src/google/protobuf/compiler/csharp/csharp_repeated_message_field.cc.i
 
@@ -1856,14 +1856,14 @@ src/google/protobuf/compiler/csharp/csharp_repeated_message_field.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/csharp/csharp_repeated_message_field.cc.s
 .PHONY : src/google/protobuf/compiler/csharp/csharp_repeated_message_field.cc.s
 
-src/google/protobuf/compiler/csharp/csharp_repeated_primitive_field.o: src/google/protobuf/compiler/csharp/csharp_repeated_primitive_field.cc.o
+src/google/protobuf/compiler/csharp/csharp_repeated_primitive_field.obj: src/google/protobuf/compiler/csharp/csharp_repeated_primitive_field.cc.obj
 
-.PHONY : src/google/protobuf/compiler/csharp/csharp_repeated_primitive_field.o
+.PHONY : src/google/protobuf/compiler/csharp/csharp_repeated_primitive_field.obj
 
 # target to build an object file
-src/google/protobuf/compiler/csharp/csharp_repeated_primitive_field.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/csharp/csharp_repeated_primitive_field.cc.o
-.PHONY : src/google/protobuf/compiler/csharp/csharp_repeated_primitive_field.cc.o
+src/google/protobuf/compiler/csharp/csharp_repeated_primitive_field.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/csharp/csharp_repeated_primitive_field.cc.obj
+.PHONY : src/google/protobuf/compiler/csharp/csharp_repeated_primitive_field.cc.obj
 
 src/google/protobuf/compiler/csharp/csharp_repeated_primitive_field.i: src/google/protobuf/compiler/csharp/csharp_repeated_primitive_field.cc.i
 
@@ -1883,14 +1883,14 @@ src/google/protobuf/compiler/csharp/csharp_repeated_primitive_field.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/csharp/csharp_repeated_primitive_field.cc.s
 .PHONY : src/google/protobuf/compiler/csharp/csharp_repeated_primitive_field.cc.s
 
-src/google/protobuf/compiler/csharp/csharp_source_generator_base.o: src/google/protobuf/compiler/csharp/csharp_source_generator_base.cc.o
+src/google/protobuf/compiler/csharp/csharp_source_generator_base.obj: src/google/protobuf/compiler/csharp/csharp_source_generator_base.cc.obj
 
-.PHONY : src/google/protobuf/compiler/csharp/csharp_source_generator_base.o
+.PHONY : src/google/protobuf/compiler/csharp/csharp_source_generator_base.obj
 
 # target to build an object file
-src/google/protobuf/compiler/csharp/csharp_source_generator_base.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/csharp/csharp_source_generator_base.cc.o
-.PHONY : src/google/protobuf/compiler/csharp/csharp_source_generator_base.cc.o
+src/google/protobuf/compiler/csharp/csharp_source_generator_base.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/csharp/csharp_source_generator_base.cc.obj
+.PHONY : src/google/protobuf/compiler/csharp/csharp_source_generator_base.cc.obj
 
 src/google/protobuf/compiler/csharp/csharp_source_generator_base.i: src/google/protobuf/compiler/csharp/csharp_source_generator_base.cc.i
 
@@ -1910,14 +1910,14 @@ src/google/protobuf/compiler/csharp/csharp_source_generator_base.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/csharp/csharp_source_generator_base.cc.s
 .PHONY : src/google/protobuf/compiler/csharp/csharp_source_generator_base.cc.s
 
-src/google/protobuf/compiler/csharp/csharp_wrapper_field.o: src/google/protobuf/compiler/csharp/csharp_wrapper_field.cc.o
+src/google/protobuf/compiler/csharp/csharp_wrapper_field.obj: src/google/protobuf/compiler/csharp/csharp_wrapper_field.cc.obj
 
-.PHONY : src/google/protobuf/compiler/csharp/csharp_wrapper_field.o
+.PHONY : src/google/protobuf/compiler/csharp/csharp_wrapper_field.obj
 
 # target to build an object file
-src/google/protobuf/compiler/csharp/csharp_wrapper_field.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/csharp/csharp_wrapper_field.cc.o
-.PHONY : src/google/protobuf/compiler/csharp/csharp_wrapper_field.cc.o
+src/google/protobuf/compiler/csharp/csharp_wrapper_field.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/csharp/csharp_wrapper_field.cc.obj
+.PHONY : src/google/protobuf/compiler/csharp/csharp_wrapper_field.cc.obj
 
 src/google/protobuf/compiler/csharp/csharp_wrapper_field.i: src/google/protobuf/compiler/csharp/csharp_wrapper_field.cc.i
 
@@ -1937,14 +1937,14 @@ src/google/protobuf/compiler/csharp/csharp_wrapper_field.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/csharp/csharp_wrapper_field.cc.s
 .PHONY : src/google/protobuf/compiler/csharp/csharp_wrapper_field.cc.s
 
-src/google/protobuf/compiler/importer.o: src/google/protobuf/compiler/importer.cc.o
+src/google/protobuf/compiler/importer.obj: src/google/protobuf/compiler/importer.cc.obj
 
-.PHONY : src/google/protobuf/compiler/importer.o
+.PHONY : src/google/protobuf/compiler/importer.obj
 
 # target to build an object file
-src/google/protobuf/compiler/importer.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/compiler/importer.cc.o
-.PHONY : src/google/protobuf/compiler/importer.cc.o
+src/google/protobuf/compiler/importer.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/compiler/importer.cc.obj
+.PHONY : src/google/protobuf/compiler/importer.cc.obj
 
 src/google/protobuf/compiler/importer.i: src/google/protobuf/compiler/importer.cc.i
 
@@ -1964,14 +1964,14 @@ src/google/protobuf/compiler/importer.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/compiler/importer.cc.s
 .PHONY : src/google/protobuf/compiler/importer.cc.s
 
-src/google/protobuf/compiler/importer_unittest.o: src/google/protobuf/compiler/importer_unittest.cc.o
+src/google/protobuf/compiler/importer_unittest.obj: src/google/protobuf/compiler/importer_unittest.cc.obj
 
-.PHONY : src/google/protobuf/compiler/importer_unittest.o
+.PHONY : src/google/protobuf/compiler/importer_unittest.obj
 
 # target to build an object file
-src/google/protobuf/compiler/importer_unittest.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/compiler/importer_unittest.cc.o
-.PHONY : src/google/protobuf/compiler/importer_unittest.cc.o
+src/google/protobuf/compiler/importer_unittest.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/compiler/importer_unittest.cc.obj
+.PHONY : src/google/protobuf/compiler/importer_unittest.cc.obj
 
 src/google/protobuf/compiler/importer_unittest.i: src/google/protobuf/compiler/importer_unittest.cc.i
 
@@ -1991,14 +1991,14 @@ src/google/protobuf/compiler/importer_unittest.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/compiler/importer_unittest.cc.s
 .PHONY : src/google/protobuf/compiler/importer_unittest.cc.s
 
-src/google/protobuf/compiler/java/context.o: src/google/protobuf/compiler/java/context.cc.o
+src/google/protobuf/compiler/java/context.obj: src/google/protobuf/compiler/java/context.cc.obj
 
-.PHONY : src/google/protobuf/compiler/java/context.o
+.PHONY : src/google/protobuf/compiler/java/context.obj
 
 # target to build an object file
-src/google/protobuf/compiler/java/context.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/context.cc.o
-.PHONY : src/google/protobuf/compiler/java/context.cc.o
+src/google/protobuf/compiler/java/context.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/context.cc.obj
+.PHONY : src/google/protobuf/compiler/java/context.cc.obj
 
 src/google/protobuf/compiler/java/context.i: src/google/protobuf/compiler/java/context.cc.i
 
@@ -2018,14 +2018,14 @@ src/google/protobuf/compiler/java/context.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/context.cc.s
 .PHONY : src/google/protobuf/compiler/java/context.cc.s
 
-src/google/protobuf/compiler/java/doc_comment.o: src/google/protobuf/compiler/java/doc_comment.cc.o
+src/google/protobuf/compiler/java/doc_comment.obj: src/google/protobuf/compiler/java/doc_comment.cc.obj
 
-.PHONY : src/google/protobuf/compiler/java/doc_comment.o
+.PHONY : src/google/protobuf/compiler/java/doc_comment.obj
 
 # target to build an object file
-src/google/protobuf/compiler/java/doc_comment.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/doc_comment.cc.o
-.PHONY : src/google/protobuf/compiler/java/doc_comment.cc.o
+src/google/protobuf/compiler/java/doc_comment.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/doc_comment.cc.obj
+.PHONY : src/google/protobuf/compiler/java/doc_comment.cc.obj
 
 src/google/protobuf/compiler/java/doc_comment.i: src/google/protobuf/compiler/java/doc_comment.cc.i
 
@@ -2045,14 +2045,14 @@ src/google/protobuf/compiler/java/doc_comment.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/doc_comment.cc.s
 .PHONY : src/google/protobuf/compiler/java/doc_comment.cc.s
 
-src/google/protobuf/compiler/java/doc_comment_unittest.o: src/google/protobuf/compiler/java/doc_comment_unittest.cc.o
+src/google/protobuf/compiler/java/doc_comment_unittest.obj: src/google/protobuf/compiler/java/doc_comment_unittest.cc.obj
 
-.PHONY : src/google/protobuf/compiler/java/doc_comment_unittest.o
+.PHONY : src/google/protobuf/compiler/java/doc_comment_unittest.obj
 
 # target to build an object file
-src/google/protobuf/compiler/java/doc_comment_unittest.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/compiler/java/doc_comment_unittest.cc.o
-.PHONY : src/google/protobuf/compiler/java/doc_comment_unittest.cc.o
+src/google/protobuf/compiler/java/doc_comment_unittest.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/compiler/java/doc_comment_unittest.cc.obj
+.PHONY : src/google/protobuf/compiler/java/doc_comment_unittest.cc.obj
 
 src/google/protobuf/compiler/java/doc_comment_unittest.i: src/google/protobuf/compiler/java/doc_comment_unittest.cc.i
 
@@ -2072,14 +2072,14 @@ src/google/protobuf/compiler/java/doc_comment_unittest.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/compiler/java/doc_comment_unittest.cc.s
 .PHONY : src/google/protobuf/compiler/java/doc_comment_unittest.cc.s
 
-src/google/protobuf/compiler/java/enum.o: src/google/protobuf/compiler/java/enum.cc.o
+src/google/protobuf/compiler/java/enum.obj: src/google/protobuf/compiler/java/enum.cc.obj
 
-.PHONY : src/google/protobuf/compiler/java/enum.o
+.PHONY : src/google/protobuf/compiler/java/enum.obj
 
 # target to build an object file
-src/google/protobuf/compiler/java/enum.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/enum.cc.o
-.PHONY : src/google/protobuf/compiler/java/enum.cc.o
+src/google/protobuf/compiler/java/enum.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/enum.cc.obj
+.PHONY : src/google/protobuf/compiler/java/enum.cc.obj
 
 src/google/protobuf/compiler/java/enum.i: src/google/protobuf/compiler/java/enum.cc.i
 
@@ -2099,14 +2099,14 @@ src/google/protobuf/compiler/java/enum.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/enum.cc.s
 .PHONY : src/google/protobuf/compiler/java/enum.cc.s
 
-src/google/protobuf/compiler/java/enum_field.o: src/google/protobuf/compiler/java/enum_field.cc.o
+src/google/protobuf/compiler/java/enum_field.obj: src/google/protobuf/compiler/java/enum_field.cc.obj
 
-.PHONY : src/google/protobuf/compiler/java/enum_field.o
+.PHONY : src/google/protobuf/compiler/java/enum_field.obj
 
 # target to build an object file
-src/google/protobuf/compiler/java/enum_field.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/enum_field.cc.o
-.PHONY : src/google/protobuf/compiler/java/enum_field.cc.o
+src/google/protobuf/compiler/java/enum_field.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/enum_field.cc.obj
+.PHONY : src/google/protobuf/compiler/java/enum_field.cc.obj
 
 src/google/protobuf/compiler/java/enum_field.i: src/google/protobuf/compiler/java/enum_field.cc.i
 
@@ -2126,14 +2126,14 @@ src/google/protobuf/compiler/java/enum_field.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/enum_field.cc.s
 .PHONY : src/google/protobuf/compiler/java/enum_field.cc.s
 
-src/google/protobuf/compiler/java/enum_field_lite.o: src/google/protobuf/compiler/java/enum_field_lite.cc.o
+src/google/protobuf/compiler/java/enum_field_lite.obj: src/google/protobuf/compiler/java/enum_field_lite.cc.obj
 
-.PHONY : src/google/protobuf/compiler/java/enum_field_lite.o
+.PHONY : src/google/protobuf/compiler/java/enum_field_lite.obj
 
 # target to build an object file
-src/google/protobuf/compiler/java/enum_field_lite.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/enum_field_lite.cc.o
-.PHONY : src/google/protobuf/compiler/java/enum_field_lite.cc.o
+src/google/protobuf/compiler/java/enum_field_lite.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/enum_field_lite.cc.obj
+.PHONY : src/google/protobuf/compiler/java/enum_field_lite.cc.obj
 
 src/google/protobuf/compiler/java/enum_field_lite.i: src/google/protobuf/compiler/java/enum_field_lite.cc.i
 
@@ -2153,14 +2153,14 @@ src/google/protobuf/compiler/java/enum_field_lite.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/enum_field_lite.cc.s
 .PHONY : src/google/protobuf/compiler/java/enum_field_lite.cc.s
 
-src/google/protobuf/compiler/java/enum_lite.o: src/google/protobuf/compiler/java/enum_lite.cc.o
+src/google/protobuf/compiler/java/enum_lite.obj: src/google/protobuf/compiler/java/enum_lite.cc.obj
 
-.PHONY : src/google/protobuf/compiler/java/enum_lite.o
+.PHONY : src/google/protobuf/compiler/java/enum_lite.obj
 
 # target to build an object file
-src/google/protobuf/compiler/java/enum_lite.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/enum_lite.cc.o
-.PHONY : src/google/protobuf/compiler/java/enum_lite.cc.o
+src/google/protobuf/compiler/java/enum_lite.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/enum_lite.cc.obj
+.PHONY : src/google/protobuf/compiler/java/enum_lite.cc.obj
 
 src/google/protobuf/compiler/java/enum_lite.i: src/google/protobuf/compiler/java/enum_lite.cc.i
 
@@ -2180,14 +2180,14 @@ src/google/protobuf/compiler/java/enum_lite.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/enum_lite.cc.s
 .PHONY : src/google/protobuf/compiler/java/enum_lite.cc.s
 
-src/google/protobuf/compiler/java/extension.o: src/google/protobuf/compiler/java/extension.cc.o
+src/google/protobuf/compiler/java/extension.obj: src/google/protobuf/compiler/java/extension.cc.obj
 
-.PHONY : src/google/protobuf/compiler/java/extension.o
+.PHONY : src/google/protobuf/compiler/java/extension.obj
 
 # target to build an object file
-src/google/protobuf/compiler/java/extension.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/extension.cc.o
-.PHONY : src/google/protobuf/compiler/java/extension.cc.o
+src/google/protobuf/compiler/java/extension.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/extension.cc.obj
+.PHONY : src/google/protobuf/compiler/java/extension.cc.obj
 
 src/google/protobuf/compiler/java/extension.i: src/google/protobuf/compiler/java/extension.cc.i
 
@@ -2207,14 +2207,14 @@ src/google/protobuf/compiler/java/extension.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/extension.cc.s
 .PHONY : src/google/protobuf/compiler/java/extension.cc.s
 
-src/google/protobuf/compiler/java/extension_lite.o: src/google/protobuf/compiler/java/extension_lite.cc.o
+src/google/protobuf/compiler/java/extension_lite.obj: src/google/protobuf/compiler/java/extension_lite.cc.obj
 
-.PHONY : src/google/protobuf/compiler/java/extension_lite.o
+.PHONY : src/google/protobuf/compiler/java/extension_lite.obj
 
 # target to build an object file
-src/google/protobuf/compiler/java/extension_lite.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/extension_lite.cc.o
-.PHONY : src/google/protobuf/compiler/java/extension_lite.cc.o
+src/google/protobuf/compiler/java/extension_lite.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/extension_lite.cc.obj
+.PHONY : src/google/protobuf/compiler/java/extension_lite.cc.obj
 
 src/google/protobuf/compiler/java/extension_lite.i: src/google/protobuf/compiler/java/extension_lite.cc.i
 
@@ -2234,14 +2234,14 @@ src/google/protobuf/compiler/java/extension_lite.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/extension_lite.cc.s
 .PHONY : src/google/protobuf/compiler/java/extension_lite.cc.s
 
-src/google/protobuf/compiler/java/field.o: src/google/protobuf/compiler/java/field.cc.o
+src/google/protobuf/compiler/java/field.obj: src/google/protobuf/compiler/java/field.cc.obj
 
-.PHONY : src/google/protobuf/compiler/java/field.o
+.PHONY : src/google/protobuf/compiler/java/field.obj
 
 # target to build an object file
-src/google/protobuf/compiler/java/field.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/field.cc.o
-.PHONY : src/google/protobuf/compiler/java/field.cc.o
+src/google/protobuf/compiler/java/field.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/field.cc.obj
+.PHONY : src/google/protobuf/compiler/java/field.cc.obj
 
 src/google/protobuf/compiler/java/field.i: src/google/protobuf/compiler/java/field.cc.i
 
@@ -2261,14 +2261,14 @@ src/google/protobuf/compiler/java/field.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/field.cc.s
 .PHONY : src/google/protobuf/compiler/java/field.cc.s
 
-src/google/protobuf/compiler/java/file.o: src/google/protobuf/compiler/java/file.cc.o
+src/google/protobuf/compiler/java/file.obj: src/google/protobuf/compiler/java/file.cc.obj
 
-.PHONY : src/google/protobuf/compiler/java/file.o
+.PHONY : src/google/protobuf/compiler/java/file.obj
 
 # target to build an object file
-src/google/protobuf/compiler/java/file.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/file.cc.o
-.PHONY : src/google/protobuf/compiler/java/file.cc.o
+src/google/protobuf/compiler/java/file.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/file.cc.obj
+.PHONY : src/google/protobuf/compiler/java/file.cc.obj
 
 src/google/protobuf/compiler/java/file.i: src/google/protobuf/compiler/java/file.cc.i
 
@@ -2288,14 +2288,14 @@ src/google/protobuf/compiler/java/file.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/file.cc.s
 .PHONY : src/google/protobuf/compiler/java/file.cc.s
 
-src/google/protobuf/compiler/java/generator.o: src/google/protobuf/compiler/java/generator.cc.o
+src/google/protobuf/compiler/java/generator.obj: src/google/protobuf/compiler/java/generator.cc.obj
 
-.PHONY : src/google/protobuf/compiler/java/generator.o
+.PHONY : src/google/protobuf/compiler/java/generator.obj
 
 # target to build an object file
-src/google/protobuf/compiler/java/generator.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/generator.cc.o
-.PHONY : src/google/protobuf/compiler/java/generator.cc.o
+src/google/protobuf/compiler/java/generator.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/generator.cc.obj
+.PHONY : src/google/protobuf/compiler/java/generator.cc.obj
 
 src/google/protobuf/compiler/java/generator.i: src/google/protobuf/compiler/java/generator.cc.i
 
@@ -2315,14 +2315,14 @@ src/google/protobuf/compiler/java/generator.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/generator.cc.s
 .PHONY : src/google/protobuf/compiler/java/generator.cc.s
 
-src/google/protobuf/compiler/java/generator_factory.o: src/google/protobuf/compiler/java/generator_factory.cc.o
+src/google/protobuf/compiler/java/generator_factory.obj: src/google/protobuf/compiler/java/generator_factory.cc.obj
 
-.PHONY : src/google/protobuf/compiler/java/generator_factory.o
+.PHONY : src/google/protobuf/compiler/java/generator_factory.obj
 
 # target to build an object file
-src/google/protobuf/compiler/java/generator_factory.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/generator_factory.cc.o
-.PHONY : src/google/protobuf/compiler/java/generator_factory.cc.o
+src/google/protobuf/compiler/java/generator_factory.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/generator_factory.cc.obj
+.PHONY : src/google/protobuf/compiler/java/generator_factory.cc.obj
 
 src/google/protobuf/compiler/java/generator_factory.i: src/google/protobuf/compiler/java/generator_factory.cc.i
 
@@ -2342,14 +2342,14 @@ src/google/protobuf/compiler/java/generator_factory.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/generator_factory.cc.s
 .PHONY : src/google/protobuf/compiler/java/generator_factory.cc.s
 
-src/google/protobuf/compiler/java/helpers.o: src/google/protobuf/compiler/java/helpers.cc.o
+src/google/protobuf/compiler/java/helpers.obj: src/google/protobuf/compiler/java/helpers.cc.obj
 
-.PHONY : src/google/protobuf/compiler/java/helpers.o
+.PHONY : src/google/protobuf/compiler/java/helpers.obj
 
 # target to build an object file
-src/google/protobuf/compiler/java/helpers.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/helpers.cc.o
-.PHONY : src/google/protobuf/compiler/java/helpers.cc.o
+src/google/protobuf/compiler/java/helpers.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/helpers.cc.obj
+.PHONY : src/google/protobuf/compiler/java/helpers.cc.obj
 
 src/google/protobuf/compiler/java/helpers.i: src/google/protobuf/compiler/java/helpers.cc.i
 
@@ -2369,14 +2369,14 @@ src/google/protobuf/compiler/java/helpers.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/helpers.cc.s
 .PHONY : src/google/protobuf/compiler/java/helpers.cc.s
 
-src/google/protobuf/compiler/java/kotlin_generator.o: src/google/protobuf/compiler/java/kotlin_generator.cc.o
+src/google/protobuf/compiler/java/kotlin_generator.obj: src/google/protobuf/compiler/java/kotlin_generator.cc.obj
 
-.PHONY : src/google/protobuf/compiler/java/kotlin_generator.o
+.PHONY : src/google/protobuf/compiler/java/kotlin_generator.obj
 
 # target to build an object file
-src/google/protobuf/compiler/java/kotlin_generator.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/kotlin_generator.cc.o
-.PHONY : src/google/protobuf/compiler/java/kotlin_generator.cc.o
+src/google/protobuf/compiler/java/kotlin_generator.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/kotlin_generator.cc.obj
+.PHONY : src/google/protobuf/compiler/java/kotlin_generator.cc.obj
 
 src/google/protobuf/compiler/java/kotlin_generator.i: src/google/protobuf/compiler/java/kotlin_generator.cc.i
 
@@ -2396,14 +2396,14 @@ src/google/protobuf/compiler/java/kotlin_generator.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/kotlin_generator.cc.s
 .PHONY : src/google/protobuf/compiler/java/kotlin_generator.cc.s
 
-src/google/protobuf/compiler/java/map_field.o: src/google/protobuf/compiler/java/map_field.cc.o
+src/google/protobuf/compiler/java/map_field.obj: src/google/protobuf/compiler/java/map_field.cc.obj
 
-.PHONY : src/google/protobuf/compiler/java/map_field.o
+.PHONY : src/google/protobuf/compiler/java/map_field.obj
 
 # target to build an object file
-src/google/protobuf/compiler/java/map_field.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/map_field.cc.o
-.PHONY : src/google/protobuf/compiler/java/map_field.cc.o
+src/google/protobuf/compiler/java/map_field.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/map_field.cc.obj
+.PHONY : src/google/protobuf/compiler/java/map_field.cc.obj
 
 src/google/protobuf/compiler/java/map_field.i: src/google/protobuf/compiler/java/map_field.cc.i
 
@@ -2423,14 +2423,14 @@ src/google/protobuf/compiler/java/map_field.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/map_field.cc.s
 .PHONY : src/google/protobuf/compiler/java/map_field.cc.s
 
-src/google/protobuf/compiler/java/map_field_lite.o: src/google/protobuf/compiler/java/map_field_lite.cc.o
+src/google/protobuf/compiler/java/map_field_lite.obj: src/google/protobuf/compiler/java/map_field_lite.cc.obj
 
-.PHONY : src/google/protobuf/compiler/java/map_field_lite.o
+.PHONY : src/google/protobuf/compiler/java/map_field_lite.obj
 
 # target to build an object file
-src/google/protobuf/compiler/java/map_field_lite.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/map_field_lite.cc.o
-.PHONY : src/google/protobuf/compiler/java/map_field_lite.cc.o
+src/google/protobuf/compiler/java/map_field_lite.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/map_field_lite.cc.obj
+.PHONY : src/google/protobuf/compiler/java/map_field_lite.cc.obj
 
 src/google/protobuf/compiler/java/map_field_lite.i: src/google/protobuf/compiler/java/map_field_lite.cc.i
 
@@ -2450,14 +2450,14 @@ src/google/protobuf/compiler/java/map_field_lite.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/map_field_lite.cc.s
 .PHONY : src/google/protobuf/compiler/java/map_field_lite.cc.s
 
-src/google/protobuf/compiler/java/message.o: src/google/protobuf/compiler/java/message.cc.o
+src/google/protobuf/compiler/java/message.obj: src/google/protobuf/compiler/java/message.cc.obj
 
-.PHONY : src/google/protobuf/compiler/java/message.o
+.PHONY : src/google/protobuf/compiler/java/message.obj
 
 # target to build an object file
-src/google/protobuf/compiler/java/message.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/message.cc.o
-.PHONY : src/google/protobuf/compiler/java/message.cc.o
+src/google/protobuf/compiler/java/message.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/message.cc.obj
+.PHONY : src/google/protobuf/compiler/java/message.cc.obj
 
 src/google/protobuf/compiler/java/message.i: src/google/protobuf/compiler/java/message.cc.i
 
@@ -2477,14 +2477,14 @@ src/google/protobuf/compiler/java/message.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/message.cc.s
 .PHONY : src/google/protobuf/compiler/java/message.cc.s
 
-src/google/protobuf/compiler/java/message_builder.o: src/google/protobuf/compiler/java/message_builder.cc.o
+src/google/protobuf/compiler/java/message_builder.obj: src/google/protobuf/compiler/java/message_builder.cc.obj
 
-.PHONY : src/google/protobuf/compiler/java/message_builder.o
+.PHONY : src/google/protobuf/compiler/java/message_builder.obj
 
 # target to build an object file
-src/google/protobuf/compiler/java/message_builder.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/message_builder.cc.o
-.PHONY : src/google/protobuf/compiler/java/message_builder.cc.o
+src/google/protobuf/compiler/java/message_builder.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/message_builder.cc.obj
+.PHONY : src/google/protobuf/compiler/java/message_builder.cc.obj
 
 src/google/protobuf/compiler/java/message_builder.i: src/google/protobuf/compiler/java/message_builder.cc.i
 
@@ -2504,14 +2504,14 @@ src/google/protobuf/compiler/java/message_builder.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/message_builder.cc.s
 .PHONY : src/google/protobuf/compiler/java/message_builder.cc.s
 
-src/google/protobuf/compiler/java/message_builder_lite.o: src/google/protobuf/compiler/java/message_builder_lite.cc.o
+src/google/protobuf/compiler/java/message_builder_lite.obj: src/google/protobuf/compiler/java/message_builder_lite.cc.obj
 
-.PHONY : src/google/protobuf/compiler/java/message_builder_lite.o
+.PHONY : src/google/protobuf/compiler/java/message_builder_lite.obj
 
 # target to build an object file
-src/google/protobuf/compiler/java/message_builder_lite.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/message_builder_lite.cc.o
-.PHONY : src/google/protobuf/compiler/java/message_builder_lite.cc.o
+src/google/protobuf/compiler/java/message_builder_lite.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/message_builder_lite.cc.obj
+.PHONY : src/google/protobuf/compiler/java/message_builder_lite.cc.obj
 
 src/google/protobuf/compiler/java/message_builder_lite.i: src/google/protobuf/compiler/java/message_builder_lite.cc.i
 
@@ -2531,14 +2531,14 @@ src/google/protobuf/compiler/java/message_builder_lite.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/message_builder_lite.cc.s
 .PHONY : src/google/protobuf/compiler/java/message_builder_lite.cc.s
 
-src/google/protobuf/compiler/java/message_field.o: src/google/protobuf/compiler/java/message_field.cc.o
+src/google/protobuf/compiler/java/message_field.obj: src/google/protobuf/compiler/java/message_field.cc.obj
 
-.PHONY : src/google/protobuf/compiler/java/message_field.o
+.PHONY : src/google/protobuf/compiler/java/message_field.obj
 
 # target to build an object file
-src/google/protobuf/compiler/java/message_field.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/message_field.cc.o
-.PHONY : src/google/protobuf/compiler/java/message_field.cc.o
+src/google/protobuf/compiler/java/message_field.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/message_field.cc.obj
+.PHONY : src/google/protobuf/compiler/java/message_field.cc.obj
 
 src/google/protobuf/compiler/java/message_field.i: src/google/protobuf/compiler/java/message_field.cc.i
 
@@ -2558,14 +2558,14 @@ src/google/protobuf/compiler/java/message_field.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/message_field.cc.s
 .PHONY : src/google/protobuf/compiler/java/message_field.cc.s
 
-src/google/protobuf/compiler/java/message_field_lite.o: src/google/protobuf/compiler/java/message_field_lite.cc.o
+src/google/protobuf/compiler/java/message_field_lite.obj: src/google/protobuf/compiler/java/message_field_lite.cc.obj
 
-.PHONY : src/google/protobuf/compiler/java/message_field_lite.o
+.PHONY : src/google/protobuf/compiler/java/message_field_lite.obj
 
 # target to build an object file
-src/google/protobuf/compiler/java/message_field_lite.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/message_field_lite.cc.o
-.PHONY : src/google/protobuf/compiler/java/message_field_lite.cc.o
+src/google/protobuf/compiler/java/message_field_lite.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/message_field_lite.cc.obj
+.PHONY : src/google/protobuf/compiler/java/message_field_lite.cc.obj
 
 src/google/protobuf/compiler/java/message_field_lite.i: src/google/protobuf/compiler/java/message_field_lite.cc.i
 
@@ -2585,14 +2585,14 @@ src/google/protobuf/compiler/java/message_field_lite.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/message_field_lite.cc.s
 .PHONY : src/google/protobuf/compiler/java/message_field_lite.cc.s
 
-src/google/protobuf/compiler/java/message_lite.o: src/google/protobuf/compiler/java/message_lite.cc.o
+src/google/protobuf/compiler/java/message_lite.obj: src/google/protobuf/compiler/java/message_lite.cc.obj
 
-.PHONY : src/google/protobuf/compiler/java/message_lite.o
+.PHONY : src/google/protobuf/compiler/java/message_lite.obj
 
 # target to build an object file
-src/google/protobuf/compiler/java/message_lite.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/message_lite.cc.o
-.PHONY : src/google/protobuf/compiler/java/message_lite.cc.o
+src/google/protobuf/compiler/java/message_lite.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/message_lite.cc.obj
+.PHONY : src/google/protobuf/compiler/java/message_lite.cc.obj
 
 src/google/protobuf/compiler/java/message_lite.i: src/google/protobuf/compiler/java/message_lite.cc.i
 
@@ -2612,14 +2612,14 @@ src/google/protobuf/compiler/java/message_lite.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/message_lite.cc.s
 .PHONY : src/google/protobuf/compiler/java/message_lite.cc.s
 
-src/google/protobuf/compiler/java/name_resolver.o: src/google/protobuf/compiler/java/name_resolver.cc.o
+src/google/protobuf/compiler/java/name_resolver.obj: src/google/protobuf/compiler/java/name_resolver.cc.obj
 
-.PHONY : src/google/protobuf/compiler/java/name_resolver.o
+.PHONY : src/google/protobuf/compiler/java/name_resolver.obj
 
 # target to build an object file
-src/google/protobuf/compiler/java/name_resolver.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/name_resolver.cc.o
-.PHONY : src/google/protobuf/compiler/java/name_resolver.cc.o
+src/google/protobuf/compiler/java/name_resolver.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/name_resolver.cc.obj
+.PHONY : src/google/protobuf/compiler/java/name_resolver.cc.obj
 
 src/google/protobuf/compiler/java/name_resolver.i: src/google/protobuf/compiler/java/name_resolver.cc.i
 
@@ -2639,14 +2639,14 @@ src/google/protobuf/compiler/java/name_resolver.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/name_resolver.cc.s
 .PHONY : src/google/protobuf/compiler/java/name_resolver.cc.s
 
-src/google/protobuf/compiler/java/plugin_unittest.o: src/google/protobuf/compiler/java/plugin_unittest.cc.o
+src/google/protobuf/compiler/java/plugin_unittest.obj: src/google/protobuf/compiler/java/plugin_unittest.cc.obj
 
-.PHONY : src/google/protobuf/compiler/java/plugin_unittest.o
+.PHONY : src/google/protobuf/compiler/java/plugin_unittest.obj
 
 # target to build an object file
-src/google/protobuf/compiler/java/plugin_unittest.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/compiler/java/plugin_unittest.cc.o
-.PHONY : src/google/protobuf/compiler/java/plugin_unittest.cc.o
+src/google/protobuf/compiler/java/plugin_unittest.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/compiler/java/plugin_unittest.cc.obj
+.PHONY : src/google/protobuf/compiler/java/plugin_unittest.cc.obj
 
 src/google/protobuf/compiler/java/plugin_unittest.i: src/google/protobuf/compiler/java/plugin_unittest.cc.i
 
@@ -2666,14 +2666,14 @@ src/google/protobuf/compiler/java/plugin_unittest.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/compiler/java/plugin_unittest.cc.s
 .PHONY : src/google/protobuf/compiler/java/plugin_unittest.cc.s
 
-src/google/protobuf/compiler/java/primitive_field.o: src/google/protobuf/compiler/java/primitive_field.cc.o
+src/google/protobuf/compiler/java/primitive_field.obj: src/google/protobuf/compiler/java/primitive_field.cc.obj
 
-.PHONY : src/google/protobuf/compiler/java/primitive_field.o
+.PHONY : src/google/protobuf/compiler/java/primitive_field.obj
 
 # target to build an object file
-src/google/protobuf/compiler/java/primitive_field.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/primitive_field.cc.o
-.PHONY : src/google/protobuf/compiler/java/primitive_field.cc.o
+src/google/protobuf/compiler/java/primitive_field.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/primitive_field.cc.obj
+.PHONY : src/google/protobuf/compiler/java/primitive_field.cc.obj
 
 src/google/protobuf/compiler/java/primitive_field.i: src/google/protobuf/compiler/java/primitive_field.cc.i
 
@@ -2693,14 +2693,14 @@ src/google/protobuf/compiler/java/primitive_field.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/primitive_field.cc.s
 .PHONY : src/google/protobuf/compiler/java/primitive_field.cc.s
 
-src/google/protobuf/compiler/java/primitive_field_lite.o: src/google/protobuf/compiler/java/primitive_field_lite.cc.o
+src/google/protobuf/compiler/java/primitive_field_lite.obj: src/google/protobuf/compiler/java/primitive_field_lite.cc.obj
 
-.PHONY : src/google/protobuf/compiler/java/primitive_field_lite.o
+.PHONY : src/google/protobuf/compiler/java/primitive_field_lite.obj
 
 # target to build an object file
-src/google/protobuf/compiler/java/primitive_field_lite.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/primitive_field_lite.cc.o
-.PHONY : src/google/protobuf/compiler/java/primitive_field_lite.cc.o
+src/google/protobuf/compiler/java/primitive_field_lite.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/primitive_field_lite.cc.obj
+.PHONY : src/google/protobuf/compiler/java/primitive_field_lite.cc.obj
 
 src/google/protobuf/compiler/java/primitive_field_lite.i: src/google/protobuf/compiler/java/primitive_field_lite.cc.i
 
@@ -2720,14 +2720,14 @@ src/google/protobuf/compiler/java/primitive_field_lite.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/primitive_field_lite.cc.s
 .PHONY : src/google/protobuf/compiler/java/primitive_field_lite.cc.s
 
-src/google/protobuf/compiler/java/service.o: src/google/protobuf/compiler/java/service.cc.o
+src/google/protobuf/compiler/java/service.obj: src/google/protobuf/compiler/java/service.cc.obj
 
-.PHONY : src/google/protobuf/compiler/java/service.o
+.PHONY : src/google/protobuf/compiler/java/service.obj
 
 # target to build an object file
-src/google/protobuf/compiler/java/service.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/service.cc.o
-.PHONY : src/google/protobuf/compiler/java/service.cc.o
+src/google/protobuf/compiler/java/service.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/service.cc.obj
+.PHONY : src/google/protobuf/compiler/java/service.cc.obj
 
 src/google/protobuf/compiler/java/service.i: src/google/protobuf/compiler/java/service.cc.i
 
@@ -2747,14 +2747,14 @@ src/google/protobuf/compiler/java/service.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/service.cc.s
 .PHONY : src/google/protobuf/compiler/java/service.cc.s
 
-src/google/protobuf/compiler/java/shared_code_generator.o: src/google/protobuf/compiler/java/shared_code_generator.cc.o
+src/google/protobuf/compiler/java/shared_code_generator.obj: src/google/protobuf/compiler/java/shared_code_generator.cc.obj
 
-.PHONY : src/google/protobuf/compiler/java/shared_code_generator.o
+.PHONY : src/google/protobuf/compiler/java/shared_code_generator.obj
 
 # target to build an object file
-src/google/protobuf/compiler/java/shared_code_generator.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/shared_code_generator.cc.o
-.PHONY : src/google/protobuf/compiler/java/shared_code_generator.cc.o
+src/google/protobuf/compiler/java/shared_code_generator.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/shared_code_generator.cc.obj
+.PHONY : src/google/protobuf/compiler/java/shared_code_generator.cc.obj
 
 src/google/protobuf/compiler/java/shared_code_generator.i: src/google/protobuf/compiler/java/shared_code_generator.cc.i
 
@@ -2774,14 +2774,14 @@ src/google/protobuf/compiler/java/shared_code_generator.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/shared_code_generator.cc.s
 .PHONY : src/google/protobuf/compiler/java/shared_code_generator.cc.s
 
-src/google/protobuf/compiler/java/string_field.o: src/google/protobuf/compiler/java/string_field.cc.o
+src/google/protobuf/compiler/java/string_field.obj: src/google/protobuf/compiler/java/string_field.cc.obj
 
-.PHONY : src/google/protobuf/compiler/java/string_field.o
+.PHONY : src/google/protobuf/compiler/java/string_field.obj
 
 # target to build an object file
-src/google/protobuf/compiler/java/string_field.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/string_field.cc.o
-.PHONY : src/google/protobuf/compiler/java/string_field.cc.o
+src/google/protobuf/compiler/java/string_field.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/string_field.cc.obj
+.PHONY : src/google/protobuf/compiler/java/string_field.cc.obj
 
 src/google/protobuf/compiler/java/string_field.i: src/google/protobuf/compiler/java/string_field.cc.i
 
@@ -2801,14 +2801,14 @@ src/google/protobuf/compiler/java/string_field.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/string_field.cc.s
 .PHONY : src/google/protobuf/compiler/java/string_field.cc.s
 
-src/google/protobuf/compiler/java/string_field_lite.o: src/google/protobuf/compiler/java/string_field_lite.cc.o
+src/google/protobuf/compiler/java/string_field_lite.obj: src/google/protobuf/compiler/java/string_field_lite.cc.obj
 
-.PHONY : src/google/protobuf/compiler/java/string_field_lite.o
+.PHONY : src/google/protobuf/compiler/java/string_field_lite.obj
 
 # target to build an object file
-src/google/protobuf/compiler/java/string_field_lite.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/string_field_lite.cc.o
-.PHONY : src/google/protobuf/compiler/java/string_field_lite.cc.o
+src/google/protobuf/compiler/java/string_field_lite.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/string_field_lite.cc.obj
+.PHONY : src/google/protobuf/compiler/java/string_field_lite.cc.obj
 
 src/google/protobuf/compiler/java/string_field_lite.i: src/google/protobuf/compiler/java/string_field_lite.cc.i
 
@@ -2828,14 +2828,14 @@ src/google/protobuf/compiler/java/string_field_lite.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/java/string_field_lite.cc.s
 .PHONY : src/google/protobuf/compiler/java/string_field_lite.cc.s
 
-src/google/protobuf/compiler/main.o: src/google/protobuf/compiler/main.cc.o
+src/google/protobuf/compiler/main.obj: src/google/protobuf/compiler/main.cc.obj
 
-.PHONY : src/google/protobuf/compiler/main.o
+.PHONY : src/google/protobuf/compiler/main.obj
 
 # target to build an object file
-src/google/protobuf/compiler/main.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/protoc.dir/build.make CMakeFiles/protoc.dir/src/google/protobuf/compiler/main.cc.o
-.PHONY : src/google/protobuf/compiler/main.cc.o
+src/google/protobuf/compiler/main.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/protoc.dir/build.make CMakeFiles/protoc.dir/src/google/protobuf/compiler/main.cc.obj
+.PHONY : src/google/protobuf/compiler/main.cc.obj
 
 src/google/protobuf/compiler/main.i: src/google/protobuf/compiler/main.cc.i
 
@@ -2855,15 +2855,15 @@ src/google/protobuf/compiler/main.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/protoc.dir/build.make CMakeFiles/protoc.dir/src/google/protobuf/compiler/main.cc.s
 .PHONY : src/google/protobuf/compiler/main.cc.s
 
-src/google/protobuf/compiler/mock_code_generator.o: src/google/protobuf/compiler/mock_code_generator.cc.o
+src/google/protobuf/compiler/mock_code_generator.obj: src/google/protobuf/compiler/mock_code_generator.cc.obj
 
-.PHONY : src/google/protobuf/compiler/mock_code_generator.o
+.PHONY : src/google/protobuf/compiler/mock_code_generator.obj
 
 # target to build an object file
-src/google/protobuf/compiler/mock_code_generator.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_plugin.dir/build.make CMakeFiles/test_plugin.dir/src/google/protobuf/compiler/mock_code_generator.cc.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/compiler/mock_code_generator.cc.o
-.PHONY : src/google/protobuf/compiler/mock_code_generator.cc.o
+src/google/protobuf/compiler/mock_code_generator.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_plugin.dir/build.make CMakeFiles/test_plugin.dir/src/google/protobuf/compiler/mock_code_generator.cc.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/compiler/mock_code_generator.cc.obj
+.PHONY : src/google/protobuf/compiler/mock_code_generator.cc.obj
 
 src/google/protobuf/compiler/mock_code_generator.i: src/google/protobuf/compiler/mock_code_generator.cc.i
 
@@ -2885,14 +2885,14 @@ src/google/protobuf/compiler/mock_code_generator.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/compiler/mock_code_generator.cc.s
 .PHONY : src/google/protobuf/compiler/mock_code_generator.cc.s
 
-src/google/protobuf/compiler/objectivec/objectivec_enum.o: src/google/protobuf/compiler/objectivec/objectivec_enum.cc.o
+src/google/protobuf/compiler/objectivec/objectivec_enum.obj: src/google/protobuf/compiler/objectivec/objectivec_enum.cc.obj
 
-.PHONY : src/google/protobuf/compiler/objectivec/objectivec_enum.o
+.PHONY : src/google/protobuf/compiler/objectivec/objectivec_enum.obj
 
 # target to build an object file
-src/google/protobuf/compiler/objectivec/objectivec_enum.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/objectivec/objectivec_enum.cc.o
-.PHONY : src/google/protobuf/compiler/objectivec/objectivec_enum.cc.o
+src/google/protobuf/compiler/objectivec/objectivec_enum.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/objectivec/objectivec_enum.cc.obj
+.PHONY : src/google/protobuf/compiler/objectivec/objectivec_enum.cc.obj
 
 src/google/protobuf/compiler/objectivec/objectivec_enum.i: src/google/protobuf/compiler/objectivec/objectivec_enum.cc.i
 
@@ -2912,14 +2912,14 @@ src/google/protobuf/compiler/objectivec/objectivec_enum.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/objectivec/objectivec_enum.cc.s
 .PHONY : src/google/protobuf/compiler/objectivec/objectivec_enum.cc.s
 
-src/google/protobuf/compiler/objectivec/objectivec_enum_field.o: src/google/protobuf/compiler/objectivec/objectivec_enum_field.cc.o
+src/google/protobuf/compiler/objectivec/objectivec_enum_field.obj: src/google/protobuf/compiler/objectivec/objectivec_enum_field.cc.obj
 
-.PHONY : src/google/protobuf/compiler/objectivec/objectivec_enum_field.o
+.PHONY : src/google/protobuf/compiler/objectivec/objectivec_enum_field.obj
 
 # target to build an object file
-src/google/protobuf/compiler/objectivec/objectivec_enum_field.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/objectivec/objectivec_enum_field.cc.o
-.PHONY : src/google/protobuf/compiler/objectivec/objectivec_enum_field.cc.o
+src/google/protobuf/compiler/objectivec/objectivec_enum_field.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/objectivec/objectivec_enum_field.cc.obj
+.PHONY : src/google/protobuf/compiler/objectivec/objectivec_enum_field.cc.obj
 
 src/google/protobuf/compiler/objectivec/objectivec_enum_field.i: src/google/protobuf/compiler/objectivec/objectivec_enum_field.cc.i
 
@@ -2939,14 +2939,14 @@ src/google/protobuf/compiler/objectivec/objectivec_enum_field.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/objectivec/objectivec_enum_field.cc.s
 .PHONY : src/google/protobuf/compiler/objectivec/objectivec_enum_field.cc.s
 
-src/google/protobuf/compiler/objectivec/objectivec_extension.o: src/google/protobuf/compiler/objectivec/objectivec_extension.cc.o
+src/google/protobuf/compiler/objectivec/objectivec_extension.obj: src/google/protobuf/compiler/objectivec/objectivec_extension.cc.obj
 
-.PHONY : src/google/protobuf/compiler/objectivec/objectivec_extension.o
+.PHONY : src/google/protobuf/compiler/objectivec/objectivec_extension.obj
 
 # target to build an object file
-src/google/protobuf/compiler/objectivec/objectivec_extension.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/objectivec/objectivec_extension.cc.o
-.PHONY : src/google/protobuf/compiler/objectivec/objectivec_extension.cc.o
+src/google/protobuf/compiler/objectivec/objectivec_extension.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/objectivec/objectivec_extension.cc.obj
+.PHONY : src/google/protobuf/compiler/objectivec/objectivec_extension.cc.obj
 
 src/google/protobuf/compiler/objectivec/objectivec_extension.i: src/google/protobuf/compiler/objectivec/objectivec_extension.cc.i
 
@@ -2966,14 +2966,14 @@ src/google/protobuf/compiler/objectivec/objectivec_extension.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/objectivec/objectivec_extension.cc.s
 .PHONY : src/google/protobuf/compiler/objectivec/objectivec_extension.cc.s
 
-src/google/protobuf/compiler/objectivec/objectivec_field.o: src/google/protobuf/compiler/objectivec/objectivec_field.cc.o
+src/google/protobuf/compiler/objectivec/objectivec_field.obj: src/google/protobuf/compiler/objectivec/objectivec_field.cc.obj
 
-.PHONY : src/google/protobuf/compiler/objectivec/objectivec_field.o
+.PHONY : src/google/protobuf/compiler/objectivec/objectivec_field.obj
 
 # target to build an object file
-src/google/protobuf/compiler/objectivec/objectivec_field.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/objectivec/objectivec_field.cc.o
-.PHONY : src/google/protobuf/compiler/objectivec/objectivec_field.cc.o
+src/google/protobuf/compiler/objectivec/objectivec_field.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/objectivec/objectivec_field.cc.obj
+.PHONY : src/google/protobuf/compiler/objectivec/objectivec_field.cc.obj
 
 src/google/protobuf/compiler/objectivec/objectivec_field.i: src/google/protobuf/compiler/objectivec/objectivec_field.cc.i
 
@@ -2993,14 +2993,14 @@ src/google/protobuf/compiler/objectivec/objectivec_field.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/objectivec/objectivec_field.cc.s
 .PHONY : src/google/protobuf/compiler/objectivec/objectivec_field.cc.s
 
-src/google/protobuf/compiler/objectivec/objectivec_file.o: src/google/protobuf/compiler/objectivec/objectivec_file.cc.o
+src/google/protobuf/compiler/objectivec/objectivec_file.obj: src/google/protobuf/compiler/objectivec/objectivec_file.cc.obj
 
-.PHONY : src/google/protobuf/compiler/objectivec/objectivec_file.o
+.PHONY : src/google/protobuf/compiler/objectivec/objectivec_file.obj
 
 # target to build an object file
-src/google/protobuf/compiler/objectivec/objectivec_file.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/objectivec/objectivec_file.cc.o
-.PHONY : src/google/protobuf/compiler/objectivec/objectivec_file.cc.o
+src/google/protobuf/compiler/objectivec/objectivec_file.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/objectivec/objectivec_file.cc.obj
+.PHONY : src/google/protobuf/compiler/objectivec/objectivec_file.cc.obj
 
 src/google/protobuf/compiler/objectivec/objectivec_file.i: src/google/protobuf/compiler/objectivec/objectivec_file.cc.i
 
@@ -3020,14 +3020,14 @@ src/google/protobuf/compiler/objectivec/objectivec_file.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/objectivec/objectivec_file.cc.s
 .PHONY : src/google/protobuf/compiler/objectivec/objectivec_file.cc.s
 
-src/google/protobuf/compiler/objectivec/objectivec_generator.o: src/google/protobuf/compiler/objectivec/objectivec_generator.cc.o
+src/google/protobuf/compiler/objectivec/objectivec_generator.obj: src/google/protobuf/compiler/objectivec/objectivec_generator.cc.obj
 
-.PHONY : src/google/protobuf/compiler/objectivec/objectivec_generator.o
+.PHONY : src/google/protobuf/compiler/objectivec/objectivec_generator.obj
 
 # target to build an object file
-src/google/protobuf/compiler/objectivec/objectivec_generator.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/objectivec/objectivec_generator.cc.o
-.PHONY : src/google/protobuf/compiler/objectivec/objectivec_generator.cc.o
+src/google/protobuf/compiler/objectivec/objectivec_generator.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/objectivec/objectivec_generator.cc.obj
+.PHONY : src/google/protobuf/compiler/objectivec/objectivec_generator.cc.obj
 
 src/google/protobuf/compiler/objectivec/objectivec_generator.i: src/google/protobuf/compiler/objectivec/objectivec_generator.cc.i
 
@@ -3047,14 +3047,14 @@ src/google/protobuf/compiler/objectivec/objectivec_generator.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/objectivec/objectivec_generator.cc.s
 .PHONY : src/google/protobuf/compiler/objectivec/objectivec_generator.cc.s
 
-src/google/protobuf/compiler/objectivec/objectivec_helpers.o: src/google/protobuf/compiler/objectivec/objectivec_helpers.cc.o
+src/google/protobuf/compiler/objectivec/objectivec_helpers.obj: src/google/protobuf/compiler/objectivec/objectivec_helpers.cc.obj
 
-.PHONY : src/google/protobuf/compiler/objectivec/objectivec_helpers.o
+.PHONY : src/google/protobuf/compiler/objectivec/objectivec_helpers.obj
 
 # target to build an object file
-src/google/protobuf/compiler/objectivec/objectivec_helpers.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/objectivec/objectivec_helpers.cc.o
-.PHONY : src/google/protobuf/compiler/objectivec/objectivec_helpers.cc.o
+src/google/protobuf/compiler/objectivec/objectivec_helpers.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/objectivec/objectivec_helpers.cc.obj
+.PHONY : src/google/protobuf/compiler/objectivec/objectivec_helpers.cc.obj
 
 src/google/protobuf/compiler/objectivec/objectivec_helpers.i: src/google/protobuf/compiler/objectivec/objectivec_helpers.cc.i
 
@@ -3074,14 +3074,14 @@ src/google/protobuf/compiler/objectivec/objectivec_helpers.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/objectivec/objectivec_helpers.cc.s
 .PHONY : src/google/protobuf/compiler/objectivec/objectivec_helpers.cc.s
 
-src/google/protobuf/compiler/objectivec/objectivec_helpers_unittest.o: src/google/protobuf/compiler/objectivec/objectivec_helpers_unittest.cc.o
+src/google/protobuf/compiler/objectivec/objectivec_helpers_unittest.obj: src/google/protobuf/compiler/objectivec/objectivec_helpers_unittest.cc.obj
 
-.PHONY : src/google/protobuf/compiler/objectivec/objectivec_helpers_unittest.o
+.PHONY : src/google/protobuf/compiler/objectivec/objectivec_helpers_unittest.obj
 
 # target to build an object file
-src/google/protobuf/compiler/objectivec/objectivec_helpers_unittest.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/compiler/objectivec/objectivec_helpers_unittest.cc.o
-.PHONY : src/google/protobuf/compiler/objectivec/objectivec_helpers_unittest.cc.o
+src/google/protobuf/compiler/objectivec/objectivec_helpers_unittest.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/compiler/objectivec/objectivec_helpers_unittest.cc.obj
+.PHONY : src/google/protobuf/compiler/objectivec/objectivec_helpers_unittest.cc.obj
 
 src/google/protobuf/compiler/objectivec/objectivec_helpers_unittest.i: src/google/protobuf/compiler/objectivec/objectivec_helpers_unittest.cc.i
 
@@ -3101,14 +3101,14 @@ src/google/protobuf/compiler/objectivec/objectivec_helpers_unittest.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/compiler/objectivec/objectivec_helpers_unittest.cc.s
 .PHONY : src/google/protobuf/compiler/objectivec/objectivec_helpers_unittest.cc.s
 
-src/google/protobuf/compiler/objectivec/objectivec_map_field.o: src/google/protobuf/compiler/objectivec/objectivec_map_field.cc.o
+src/google/protobuf/compiler/objectivec/objectivec_map_field.obj: src/google/protobuf/compiler/objectivec/objectivec_map_field.cc.obj
 
-.PHONY : src/google/protobuf/compiler/objectivec/objectivec_map_field.o
+.PHONY : src/google/protobuf/compiler/objectivec/objectivec_map_field.obj
 
 # target to build an object file
-src/google/protobuf/compiler/objectivec/objectivec_map_field.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/objectivec/objectivec_map_field.cc.o
-.PHONY : src/google/protobuf/compiler/objectivec/objectivec_map_field.cc.o
+src/google/protobuf/compiler/objectivec/objectivec_map_field.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/objectivec/objectivec_map_field.cc.obj
+.PHONY : src/google/protobuf/compiler/objectivec/objectivec_map_field.cc.obj
 
 src/google/protobuf/compiler/objectivec/objectivec_map_field.i: src/google/protobuf/compiler/objectivec/objectivec_map_field.cc.i
 
@@ -3128,14 +3128,14 @@ src/google/protobuf/compiler/objectivec/objectivec_map_field.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/objectivec/objectivec_map_field.cc.s
 .PHONY : src/google/protobuf/compiler/objectivec/objectivec_map_field.cc.s
 
-src/google/protobuf/compiler/objectivec/objectivec_message.o: src/google/protobuf/compiler/objectivec/objectivec_message.cc.o
+src/google/protobuf/compiler/objectivec/objectivec_message.obj: src/google/protobuf/compiler/objectivec/objectivec_message.cc.obj
 
-.PHONY : src/google/protobuf/compiler/objectivec/objectivec_message.o
+.PHONY : src/google/protobuf/compiler/objectivec/objectivec_message.obj
 
 # target to build an object file
-src/google/protobuf/compiler/objectivec/objectivec_message.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/objectivec/objectivec_message.cc.o
-.PHONY : src/google/protobuf/compiler/objectivec/objectivec_message.cc.o
+src/google/protobuf/compiler/objectivec/objectivec_message.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/objectivec/objectivec_message.cc.obj
+.PHONY : src/google/protobuf/compiler/objectivec/objectivec_message.cc.obj
 
 src/google/protobuf/compiler/objectivec/objectivec_message.i: src/google/protobuf/compiler/objectivec/objectivec_message.cc.i
 
@@ -3155,14 +3155,14 @@ src/google/protobuf/compiler/objectivec/objectivec_message.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/objectivec/objectivec_message.cc.s
 .PHONY : src/google/protobuf/compiler/objectivec/objectivec_message.cc.s
 
-src/google/protobuf/compiler/objectivec/objectivec_message_field.o: src/google/protobuf/compiler/objectivec/objectivec_message_field.cc.o
+src/google/protobuf/compiler/objectivec/objectivec_message_field.obj: src/google/protobuf/compiler/objectivec/objectivec_message_field.cc.obj
 
-.PHONY : src/google/protobuf/compiler/objectivec/objectivec_message_field.o
+.PHONY : src/google/protobuf/compiler/objectivec/objectivec_message_field.obj
 
 # target to build an object file
-src/google/protobuf/compiler/objectivec/objectivec_message_field.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/objectivec/objectivec_message_field.cc.o
-.PHONY : src/google/protobuf/compiler/objectivec/objectivec_message_field.cc.o
+src/google/protobuf/compiler/objectivec/objectivec_message_field.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/objectivec/objectivec_message_field.cc.obj
+.PHONY : src/google/protobuf/compiler/objectivec/objectivec_message_field.cc.obj
 
 src/google/protobuf/compiler/objectivec/objectivec_message_field.i: src/google/protobuf/compiler/objectivec/objectivec_message_field.cc.i
 
@@ -3182,14 +3182,14 @@ src/google/protobuf/compiler/objectivec/objectivec_message_field.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/objectivec/objectivec_message_field.cc.s
 .PHONY : src/google/protobuf/compiler/objectivec/objectivec_message_field.cc.s
 
-src/google/protobuf/compiler/objectivec/objectivec_oneof.o: src/google/protobuf/compiler/objectivec/objectivec_oneof.cc.o
+src/google/protobuf/compiler/objectivec/objectivec_oneof.obj: src/google/protobuf/compiler/objectivec/objectivec_oneof.cc.obj
 
-.PHONY : src/google/protobuf/compiler/objectivec/objectivec_oneof.o
+.PHONY : src/google/protobuf/compiler/objectivec/objectivec_oneof.obj
 
 # target to build an object file
-src/google/protobuf/compiler/objectivec/objectivec_oneof.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/objectivec/objectivec_oneof.cc.o
-.PHONY : src/google/protobuf/compiler/objectivec/objectivec_oneof.cc.o
+src/google/protobuf/compiler/objectivec/objectivec_oneof.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/objectivec/objectivec_oneof.cc.obj
+.PHONY : src/google/protobuf/compiler/objectivec/objectivec_oneof.cc.obj
 
 src/google/protobuf/compiler/objectivec/objectivec_oneof.i: src/google/protobuf/compiler/objectivec/objectivec_oneof.cc.i
 
@@ -3209,14 +3209,14 @@ src/google/protobuf/compiler/objectivec/objectivec_oneof.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/objectivec/objectivec_oneof.cc.s
 .PHONY : src/google/protobuf/compiler/objectivec/objectivec_oneof.cc.s
 
-src/google/protobuf/compiler/objectivec/objectivec_primitive_field.o: src/google/protobuf/compiler/objectivec/objectivec_primitive_field.cc.o
+src/google/protobuf/compiler/objectivec/objectivec_primitive_field.obj: src/google/protobuf/compiler/objectivec/objectivec_primitive_field.cc.obj
 
-.PHONY : src/google/protobuf/compiler/objectivec/objectivec_primitive_field.o
+.PHONY : src/google/protobuf/compiler/objectivec/objectivec_primitive_field.obj
 
 # target to build an object file
-src/google/protobuf/compiler/objectivec/objectivec_primitive_field.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/objectivec/objectivec_primitive_field.cc.o
-.PHONY : src/google/protobuf/compiler/objectivec/objectivec_primitive_field.cc.o
+src/google/protobuf/compiler/objectivec/objectivec_primitive_field.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/objectivec/objectivec_primitive_field.cc.obj
+.PHONY : src/google/protobuf/compiler/objectivec/objectivec_primitive_field.cc.obj
 
 src/google/protobuf/compiler/objectivec/objectivec_primitive_field.i: src/google/protobuf/compiler/objectivec/objectivec_primitive_field.cc.i
 
@@ -3236,14 +3236,14 @@ src/google/protobuf/compiler/objectivec/objectivec_primitive_field.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/objectivec/objectivec_primitive_field.cc.s
 .PHONY : src/google/protobuf/compiler/objectivec/objectivec_primitive_field.cc.s
 
-src/google/protobuf/compiler/parser.o: src/google/protobuf/compiler/parser.cc.o
+src/google/protobuf/compiler/parser.obj: src/google/protobuf/compiler/parser.cc.obj
 
-.PHONY : src/google/protobuf/compiler/parser.o
+.PHONY : src/google/protobuf/compiler/parser.obj
 
 # target to build an object file
-src/google/protobuf/compiler/parser.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/compiler/parser.cc.o
-.PHONY : src/google/protobuf/compiler/parser.cc.o
+src/google/protobuf/compiler/parser.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/compiler/parser.cc.obj
+.PHONY : src/google/protobuf/compiler/parser.cc.obj
 
 src/google/protobuf/compiler/parser.i: src/google/protobuf/compiler/parser.cc.i
 
@@ -3263,14 +3263,14 @@ src/google/protobuf/compiler/parser.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/compiler/parser.cc.s
 .PHONY : src/google/protobuf/compiler/parser.cc.s
 
-src/google/protobuf/compiler/parser_unittest.o: src/google/protobuf/compiler/parser_unittest.cc.o
+src/google/protobuf/compiler/parser_unittest.obj: src/google/protobuf/compiler/parser_unittest.cc.obj
 
-.PHONY : src/google/protobuf/compiler/parser_unittest.o
+.PHONY : src/google/protobuf/compiler/parser_unittest.obj
 
 # target to build an object file
-src/google/protobuf/compiler/parser_unittest.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/compiler/parser_unittest.cc.o
-.PHONY : src/google/protobuf/compiler/parser_unittest.cc.o
+src/google/protobuf/compiler/parser_unittest.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/compiler/parser_unittest.cc.obj
+.PHONY : src/google/protobuf/compiler/parser_unittest.cc.obj
 
 src/google/protobuf/compiler/parser_unittest.i: src/google/protobuf/compiler/parser_unittest.cc.i
 
@@ -3290,14 +3290,14 @@ src/google/protobuf/compiler/parser_unittest.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/compiler/parser_unittest.cc.s
 .PHONY : src/google/protobuf/compiler/parser_unittest.cc.s
 
-src/google/protobuf/compiler/php/php_generator.o: src/google/protobuf/compiler/php/php_generator.cc.o
+src/google/protobuf/compiler/php/php_generator.obj: src/google/protobuf/compiler/php/php_generator.cc.obj
 
-.PHONY : src/google/protobuf/compiler/php/php_generator.o
+.PHONY : src/google/protobuf/compiler/php/php_generator.obj
 
 # target to build an object file
-src/google/protobuf/compiler/php/php_generator.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/php/php_generator.cc.o
-.PHONY : src/google/protobuf/compiler/php/php_generator.cc.o
+src/google/protobuf/compiler/php/php_generator.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/php/php_generator.cc.obj
+.PHONY : src/google/protobuf/compiler/php/php_generator.cc.obj
 
 src/google/protobuf/compiler/php/php_generator.i: src/google/protobuf/compiler/php/php_generator.cc.i
 
@@ -3317,14 +3317,14 @@ src/google/protobuf/compiler/php/php_generator.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/php/php_generator.cc.s
 .PHONY : src/google/protobuf/compiler/php/php_generator.cc.s
 
-src/google/protobuf/compiler/plugin.o: src/google/protobuf/compiler/plugin.cc.o
+src/google/protobuf/compiler/plugin.obj: src/google/protobuf/compiler/plugin.cc.obj
 
-.PHONY : src/google/protobuf/compiler/plugin.o
+.PHONY : src/google/protobuf/compiler/plugin.obj
 
 # target to build an object file
-src/google/protobuf/compiler/plugin.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/plugin.cc.o
-.PHONY : src/google/protobuf/compiler/plugin.cc.o
+src/google/protobuf/compiler/plugin.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/plugin.cc.obj
+.PHONY : src/google/protobuf/compiler/plugin.cc.obj
 
 src/google/protobuf/compiler/plugin.i: src/google/protobuf/compiler/plugin.cc.i
 
@@ -3344,14 +3344,14 @@ src/google/protobuf/compiler/plugin.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/plugin.cc.s
 .PHONY : src/google/protobuf/compiler/plugin.cc.s
 
-src/google/protobuf/compiler/plugin.pb.o: src/google/protobuf/compiler/plugin.pb.cc.o
+src/google/protobuf/compiler/plugin.pb.obj: src/google/protobuf/compiler/plugin.pb.cc.obj
 
-.PHONY : src/google/protobuf/compiler/plugin.pb.o
+.PHONY : src/google/protobuf/compiler/plugin.pb.obj
 
 # target to build an object file
-src/google/protobuf/compiler/plugin.pb.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/plugin.pb.cc.o
-.PHONY : src/google/protobuf/compiler/plugin.pb.cc.o
+src/google/protobuf/compiler/plugin.pb.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/plugin.pb.cc.obj
+.PHONY : src/google/protobuf/compiler/plugin.pb.cc.obj
 
 src/google/protobuf/compiler/plugin.pb.i: src/google/protobuf/compiler/plugin.pb.cc.i
 
@@ -3371,14 +3371,14 @@ src/google/protobuf/compiler/plugin.pb.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/plugin.pb.cc.s
 .PHONY : src/google/protobuf/compiler/plugin.pb.cc.s
 
-src/google/protobuf/compiler/python/generator.o: src/google/protobuf/compiler/python/generator.cc.o
+src/google/protobuf/compiler/python/generator.obj: src/google/protobuf/compiler/python/generator.cc.obj
 
-.PHONY : src/google/protobuf/compiler/python/generator.o
+.PHONY : src/google/protobuf/compiler/python/generator.obj
 
 # target to build an object file
-src/google/protobuf/compiler/python/generator.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/python/generator.cc.o
-.PHONY : src/google/protobuf/compiler/python/generator.cc.o
+src/google/protobuf/compiler/python/generator.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/python/generator.cc.obj
+.PHONY : src/google/protobuf/compiler/python/generator.cc.obj
 
 src/google/protobuf/compiler/python/generator.i: src/google/protobuf/compiler/python/generator.cc.i
 
@@ -3398,14 +3398,14 @@ src/google/protobuf/compiler/python/generator.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/python/generator.cc.s
 .PHONY : src/google/protobuf/compiler/python/generator.cc.s
 
-src/google/protobuf/compiler/python/helpers.o: src/google/protobuf/compiler/python/helpers.cc.o
+src/google/protobuf/compiler/python/helpers.obj: src/google/protobuf/compiler/python/helpers.cc.obj
 
-.PHONY : src/google/protobuf/compiler/python/helpers.o
+.PHONY : src/google/protobuf/compiler/python/helpers.obj
 
 # target to build an object file
-src/google/protobuf/compiler/python/helpers.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/python/helpers.cc.o
-.PHONY : src/google/protobuf/compiler/python/helpers.cc.o
+src/google/protobuf/compiler/python/helpers.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/python/helpers.cc.obj
+.PHONY : src/google/protobuf/compiler/python/helpers.cc.obj
 
 src/google/protobuf/compiler/python/helpers.i: src/google/protobuf/compiler/python/helpers.cc.i
 
@@ -3425,14 +3425,14 @@ src/google/protobuf/compiler/python/helpers.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/python/helpers.cc.s
 .PHONY : src/google/protobuf/compiler/python/helpers.cc.s
 
-src/google/protobuf/compiler/python/plugin_unittest.o: src/google/protobuf/compiler/python/plugin_unittest.cc.o
+src/google/protobuf/compiler/python/plugin_unittest.obj: src/google/protobuf/compiler/python/plugin_unittest.cc.obj
 
-.PHONY : src/google/protobuf/compiler/python/plugin_unittest.o
+.PHONY : src/google/protobuf/compiler/python/plugin_unittest.obj
 
 # target to build an object file
-src/google/protobuf/compiler/python/plugin_unittest.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/compiler/python/plugin_unittest.cc.o
-.PHONY : src/google/protobuf/compiler/python/plugin_unittest.cc.o
+src/google/protobuf/compiler/python/plugin_unittest.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/compiler/python/plugin_unittest.cc.obj
+.PHONY : src/google/protobuf/compiler/python/plugin_unittest.cc.obj
 
 src/google/protobuf/compiler/python/plugin_unittest.i: src/google/protobuf/compiler/python/plugin_unittest.cc.i
 
@@ -3452,14 +3452,14 @@ src/google/protobuf/compiler/python/plugin_unittest.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/compiler/python/plugin_unittest.cc.s
 .PHONY : src/google/protobuf/compiler/python/plugin_unittest.cc.s
 
-src/google/protobuf/compiler/python/pyi_generator.o: src/google/protobuf/compiler/python/pyi_generator.cc.o
+src/google/protobuf/compiler/python/pyi_generator.obj: src/google/protobuf/compiler/python/pyi_generator.cc.obj
 
-.PHONY : src/google/protobuf/compiler/python/pyi_generator.o
+.PHONY : src/google/protobuf/compiler/python/pyi_generator.obj
 
 # target to build an object file
-src/google/protobuf/compiler/python/pyi_generator.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/python/pyi_generator.cc.o
-.PHONY : src/google/protobuf/compiler/python/pyi_generator.cc.o
+src/google/protobuf/compiler/python/pyi_generator.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/python/pyi_generator.cc.obj
+.PHONY : src/google/protobuf/compiler/python/pyi_generator.cc.obj
 
 src/google/protobuf/compiler/python/pyi_generator.i: src/google/protobuf/compiler/python/pyi_generator.cc.i
 
@@ -3479,14 +3479,14 @@ src/google/protobuf/compiler/python/pyi_generator.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/python/pyi_generator.cc.s
 .PHONY : src/google/protobuf/compiler/python/pyi_generator.cc.s
 
-src/google/protobuf/compiler/ruby/ruby_generator.o: src/google/protobuf/compiler/ruby/ruby_generator.cc.o
+src/google/protobuf/compiler/ruby/ruby_generator.obj: src/google/protobuf/compiler/ruby/ruby_generator.cc.obj
 
-.PHONY : src/google/protobuf/compiler/ruby/ruby_generator.o
+.PHONY : src/google/protobuf/compiler/ruby/ruby_generator.obj
 
 # target to build an object file
-src/google/protobuf/compiler/ruby/ruby_generator.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/ruby/ruby_generator.cc.o
-.PHONY : src/google/protobuf/compiler/ruby/ruby_generator.cc.o
+src/google/protobuf/compiler/ruby/ruby_generator.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/ruby/ruby_generator.cc.obj
+.PHONY : src/google/protobuf/compiler/ruby/ruby_generator.cc.obj
 
 src/google/protobuf/compiler/ruby/ruby_generator.i: src/google/protobuf/compiler/ruby/ruby_generator.cc.i
 
@@ -3506,14 +3506,14 @@ src/google/protobuf/compiler/ruby/ruby_generator.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/ruby/ruby_generator.cc.s
 .PHONY : src/google/protobuf/compiler/ruby/ruby_generator.cc.s
 
-src/google/protobuf/compiler/ruby/ruby_generator_unittest.o: src/google/protobuf/compiler/ruby/ruby_generator_unittest.cc.o
+src/google/protobuf/compiler/ruby/ruby_generator_unittest.obj: src/google/protobuf/compiler/ruby/ruby_generator_unittest.cc.obj
 
-.PHONY : src/google/protobuf/compiler/ruby/ruby_generator_unittest.o
+.PHONY : src/google/protobuf/compiler/ruby/ruby_generator_unittest.obj
 
 # target to build an object file
-src/google/protobuf/compiler/ruby/ruby_generator_unittest.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/compiler/ruby/ruby_generator_unittest.cc.o
-.PHONY : src/google/protobuf/compiler/ruby/ruby_generator_unittest.cc.o
+src/google/protobuf/compiler/ruby/ruby_generator_unittest.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/compiler/ruby/ruby_generator_unittest.cc.obj
+.PHONY : src/google/protobuf/compiler/ruby/ruby_generator_unittest.cc.obj
 
 src/google/protobuf/compiler/ruby/ruby_generator_unittest.i: src/google/protobuf/compiler/ruby/ruby_generator_unittest.cc.i
 
@@ -3533,14 +3533,14 @@ src/google/protobuf/compiler/ruby/ruby_generator_unittest.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/compiler/ruby/ruby_generator_unittest.cc.s
 .PHONY : src/google/protobuf/compiler/ruby/ruby_generator_unittest.cc.s
 
-src/google/protobuf/compiler/subprocess.o: src/google/protobuf/compiler/subprocess.cc.o
+src/google/protobuf/compiler/subprocess.obj: src/google/protobuf/compiler/subprocess.cc.obj
 
-.PHONY : src/google/protobuf/compiler/subprocess.o
+.PHONY : src/google/protobuf/compiler/subprocess.obj
 
 # target to build an object file
-src/google/protobuf/compiler/subprocess.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/subprocess.cc.o
-.PHONY : src/google/protobuf/compiler/subprocess.cc.o
+src/google/protobuf/compiler/subprocess.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/subprocess.cc.obj
+.PHONY : src/google/protobuf/compiler/subprocess.cc.obj
 
 src/google/protobuf/compiler/subprocess.i: src/google/protobuf/compiler/subprocess.cc.i
 
@@ -3560,14 +3560,14 @@ src/google/protobuf/compiler/subprocess.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/subprocess.cc.s
 .PHONY : src/google/protobuf/compiler/subprocess.cc.s
 
-src/google/protobuf/compiler/test_plugin.o: src/google/protobuf/compiler/test_plugin.cc.o
+src/google/protobuf/compiler/test_plugin.obj: src/google/protobuf/compiler/test_plugin.cc.obj
 
-.PHONY : src/google/protobuf/compiler/test_plugin.o
+.PHONY : src/google/protobuf/compiler/test_plugin.obj
 
 # target to build an object file
-src/google/protobuf/compiler/test_plugin.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_plugin.dir/build.make CMakeFiles/test_plugin.dir/src/google/protobuf/compiler/test_plugin.cc.o
-.PHONY : src/google/protobuf/compiler/test_plugin.cc.o
+src/google/protobuf/compiler/test_plugin.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_plugin.dir/build.make CMakeFiles/test_plugin.dir/src/google/protobuf/compiler/test_plugin.cc.obj
+.PHONY : src/google/protobuf/compiler/test_plugin.cc.obj
 
 src/google/protobuf/compiler/test_plugin.i: src/google/protobuf/compiler/test_plugin.cc.i
 
@@ -3587,14 +3587,14 @@ src/google/protobuf/compiler/test_plugin.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_plugin.dir/build.make CMakeFiles/test_plugin.dir/src/google/protobuf/compiler/test_plugin.cc.s
 .PHONY : src/google/protobuf/compiler/test_plugin.cc.s
 
-src/google/protobuf/compiler/zip_writer.o: src/google/protobuf/compiler/zip_writer.cc.o
+src/google/protobuf/compiler/zip_writer.obj: src/google/protobuf/compiler/zip_writer.cc.obj
 
-.PHONY : src/google/protobuf/compiler/zip_writer.o
+.PHONY : src/google/protobuf/compiler/zip_writer.obj
 
 # target to build an object file
-src/google/protobuf/compiler/zip_writer.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/zip_writer.cc.o
-.PHONY : src/google/protobuf/compiler/zip_writer.cc.o
+src/google/protobuf/compiler/zip_writer.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/zip_writer.cc.obj
+.PHONY : src/google/protobuf/compiler/zip_writer.cc.obj
 
 src/google/protobuf/compiler/zip_writer.i: src/google/protobuf/compiler/zip_writer.cc.i
 
@@ -3614,14 +3614,14 @@ src/google/protobuf/compiler/zip_writer.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotoc.dir/build.make CMakeFiles/libprotoc.dir/src/google/protobuf/compiler/zip_writer.cc.s
 .PHONY : src/google/protobuf/compiler/zip_writer.cc.s
 
-src/google/protobuf/descriptor.o: src/google/protobuf/descriptor.cc.o
+src/google/protobuf/descriptor.obj: src/google/protobuf/descriptor.cc.obj
 
-.PHONY : src/google/protobuf/descriptor.o
+.PHONY : src/google/protobuf/descriptor.obj
 
 # target to build an object file
-src/google/protobuf/descriptor.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/descriptor.cc.o
-.PHONY : src/google/protobuf/descriptor.cc.o
+src/google/protobuf/descriptor.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/descriptor.cc.obj
+.PHONY : src/google/protobuf/descriptor.cc.obj
 
 src/google/protobuf/descriptor.i: src/google/protobuf/descriptor.cc.i
 
@@ -3641,14 +3641,14 @@ src/google/protobuf/descriptor.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/descriptor.cc.s
 .PHONY : src/google/protobuf/descriptor.cc.s
 
-src/google/protobuf/descriptor.pb.o: src/google/protobuf/descriptor.pb.cc.o
+src/google/protobuf/descriptor.pb.obj: src/google/protobuf/descriptor.pb.cc.obj
 
-.PHONY : src/google/protobuf/descriptor.pb.o
+.PHONY : src/google/protobuf/descriptor.pb.obj
 
 # target to build an object file
-src/google/protobuf/descriptor.pb.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/descriptor.pb.cc.o
-.PHONY : src/google/protobuf/descriptor.pb.cc.o
+src/google/protobuf/descriptor.pb.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/descriptor.pb.cc.obj
+.PHONY : src/google/protobuf/descriptor.pb.cc.obj
 
 src/google/protobuf/descriptor.pb.i: src/google/protobuf/descriptor.pb.cc.i
 
@@ -3668,14 +3668,14 @@ src/google/protobuf/descriptor.pb.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/descriptor.pb.cc.s
 .PHONY : src/google/protobuf/descriptor.pb.cc.s
 
-src/google/protobuf/descriptor_database.o: src/google/protobuf/descriptor_database.cc.o
+src/google/protobuf/descriptor_database.obj: src/google/protobuf/descriptor_database.cc.obj
 
-.PHONY : src/google/protobuf/descriptor_database.o
+.PHONY : src/google/protobuf/descriptor_database.obj
 
 # target to build an object file
-src/google/protobuf/descriptor_database.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/descriptor_database.cc.o
-.PHONY : src/google/protobuf/descriptor_database.cc.o
+src/google/protobuf/descriptor_database.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/descriptor_database.cc.obj
+.PHONY : src/google/protobuf/descriptor_database.cc.obj
 
 src/google/protobuf/descriptor_database.i: src/google/protobuf/descriptor_database.cc.i
 
@@ -3695,14 +3695,14 @@ src/google/protobuf/descriptor_database.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/descriptor_database.cc.s
 .PHONY : src/google/protobuf/descriptor_database.cc.s
 
-src/google/protobuf/descriptor_database_unittest.o: src/google/protobuf/descriptor_database_unittest.cc.o
+src/google/protobuf/descriptor_database_unittest.obj: src/google/protobuf/descriptor_database_unittest.cc.obj
 
-.PHONY : src/google/protobuf/descriptor_database_unittest.o
+.PHONY : src/google/protobuf/descriptor_database_unittest.obj
 
 # target to build an object file
-src/google/protobuf/descriptor_database_unittest.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/descriptor_database_unittest.cc.o
-.PHONY : src/google/protobuf/descriptor_database_unittest.cc.o
+src/google/protobuf/descriptor_database_unittest.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/descriptor_database_unittest.cc.obj
+.PHONY : src/google/protobuf/descriptor_database_unittest.cc.obj
 
 src/google/protobuf/descriptor_database_unittest.i: src/google/protobuf/descriptor_database_unittest.cc.i
 
@@ -3722,14 +3722,14 @@ src/google/protobuf/descriptor_database_unittest.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/descriptor_database_unittest.cc.s
 .PHONY : src/google/protobuf/descriptor_database_unittest.cc.s
 
-src/google/protobuf/descriptor_unittest.o: src/google/protobuf/descriptor_unittest.cc.o
+src/google/protobuf/descriptor_unittest.obj: src/google/protobuf/descriptor_unittest.cc.obj
 
-.PHONY : src/google/protobuf/descriptor_unittest.o
+.PHONY : src/google/protobuf/descriptor_unittest.obj
 
 # target to build an object file
-src/google/protobuf/descriptor_unittest.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/descriptor_unittest.cc.o
-.PHONY : src/google/protobuf/descriptor_unittest.cc.o
+src/google/protobuf/descriptor_unittest.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/descriptor_unittest.cc.obj
+.PHONY : src/google/protobuf/descriptor_unittest.cc.obj
 
 src/google/protobuf/descriptor_unittest.i: src/google/protobuf/descriptor_unittest.cc.i
 
@@ -3749,14 +3749,14 @@ src/google/protobuf/descriptor_unittest.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/descriptor_unittest.cc.s
 .PHONY : src/google/protobuf/descriptor_unittest.cc.s
 
-src/google/protobuf/drop_unknown_fields_test.o: src/google/protobuf/drop_unknown_fields_test.cc.o
+src/google/protobuf/drop_unknown_fields_test.obj: src/google/protobuf/drop_unknown_fields_test.cc.obj
 
-.PHONY : src/google/protobuf/drop_unknown_fields_test.o
+.PHONY : src/google/protobuf/drop_unknown_fields_test.obj
 
 # target to build an object file
-src/google/protobuf/drop_unknown_fields_test.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/drop_unknown_fields_test.cc.o
-.PHONY : src/google/protobuf/drop_unknown_fields_test.cc.o
+src/google/protobuf/drop_unknown_fields_test.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/drop_unknown_fields_test.cc.obj
+.PHONY : src/google/protobuf/drop_unknown_fields_test.cc.obj
 
 src/google/protobuf/drop_unknown_fields_test.i: src/google/protobuf/drop_unknown_fields_test.cc.i
 
@@ -3776,14 +3776,14 @@ src/google/protobuf/drop_unknown_fields_test.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/drop_unknown_fields_test.cc.s
 .PHONY : src/google/protobuf/drop_unknown_fields_test.cc.s
 
-src/google/protobuf/duration.pb.o: src/google/protobuf/duration.pb.cc.o
+src/google/protobuf/duration.pb.obj: src/google/protobuf/duration.pb.cc.obj
 
-.PHONY : src/google/protobuf/duration.pb.o
+.PHONY : src/google/protobuf/duration.pb.obj
 
 # target to build an object file
-src/google/protobuf/duration.pb.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/duration.pb.cc.o
-.PHONY : src/google/protobuf/duration.pb.cc.o
+src/google/protobuf/duration.pb.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/duration.pb.cc.obj
+.PHONY : src/google/protobuf/duration.pb.cc.obj
 
 src/google/protobuf/duration.pb.i: src/google/protobuf/duration.pb.cc.i
 
@@ -3803,14 +3803,14 @@ src/google/protobuf/duration.pb.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/duration.pb.cc.s
 .PHONY : src/google/protobuf/duration.pb.cc.s
 
-src/google/protobuf/dynamic_message.o: src/google/protobuf/dynamic_message.cc.o
+src/google/protobuf/dynamic_message.obj: src/google/protobuf/dynamic_message.cc.obj
 
-.PHONY : src/google/protobuf/dynamic_message.o
+.PHONY : src/google/protobuf/dynamic_message.obj
 
 # target to build an object file
-src/google/protobuf/dynamic_message.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/dynamic_message.cc.o
-.PHONY : src/google/protobuf/dynamic_message.cc.o
+src/google/protobuf/dynamic_message.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/dynamic_message.cc.obj
+.PHONY : src/google/protobuf/dynamic_message.cc.obj
 
 src/google/protobuf/dynamic_message.i: src/google/protobuf/dynamic_message.cc.i
 
@@ -3830,14 +3830,14 @@ src/google/protobuf/dynamic_message.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/dynamic_message.cc.s
 .PHONY : src/google/protobuf/dynamic_message.cc.s
 
-src/google/protobuf/dynamic_message_unittest.o: src/google/protobuf/dynamic_message_unittest.cc.o
+src/google/protobuf/dynamic_message_unittest.obj: src/google/protobuf/dynamic_message_unittest.cc.obj
 
-.PHONY : src/google/protobuf/dynamic_message_unittest.o
+.PHONY : src/google/protobuf/dynamic_message_unittest.obj
 
 # target to build an object file
-src/google/protobuf/dynamic_message_unittest.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/dynamic_message_unittest.cc.o
-.PHONY : src/google/protobuf/dynamic_message_unittest.cc.o
+src/google/protobuf/dynamic_message_unittest.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/dynamic_message_unittest.cc.obj
+.PHONY : src/google/protobuf/dynamic_message_unittest.cc.obj
 
 src/google/protobuf/dynamic_message_unittest.i: src/google/protobuf/dynamic_message_unittest.cc.i
 
@@ -3857,14 +3857,14 @@ src/google/protobuf/dynamic_message_unittest.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/dynamic_message_unittest.cc.s
 .PHONY : src/google/protobuf/dynamic_message_unittest.cc.s
 
-src/google/protobuf/empty.pb.o: src/google/protobuf/empty.pb.cc.o
+src/google/protobuf/empty.pb.obj: src/google/protobuf/empty.pb.cc.obj
 
-.PHONY : src/google/protobuf/empty.pb.o
+.PHONY : src/google/protobuf/empty.pb.obj
 
 # target to build an object file
-src/google/protobuf/empty.pb.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/empty.pb.cc.o
-.PHONY : src/google/protobuf/empty.pb.cc.o
+src/google/protobuf/empty.pb.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/empty.pb.cc.obj
+.PHONY : src/google/protobuf/empty.pb.cc.obj
 
 src/google/protobuf/empty.pb.i: src/google/protobuf/empty.pb.cc.i
 
@@ -3884,15 +3884,15 @@ src/google/protobuf/empty.pb.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/empty.pb.cc.s
 .PHONY : src/google/protobuf/empty.pb.cc.s
 
-src/google/protobuf/extension_set.o: src/google/protobuf/extension_set.cc.o
+src/google/protobuf/extension_set.obj: src/google/protobuf/extension_set.cc.obj
 
-.PHONY : src/google/protobuf/extension_set.o
+.PHONY : src/google/protobuf/extension_set.obj
 
 # target to build an object file
-src/google/protobuf/extension_set.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf-lite.dir/build.make CMakeFiles/libprotobuf-lite.dir/src/google/protobuf/extension_set.cc.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/extension_set.cc.o
-.PHONY : src/google/protobuf/extension_set.cc.o
+src/google/protobuf/extension_set.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf-lite.dir/build.make CMakeFiles/libprotobuf-lite.dir/src/google/protobuf/extension_set.cc.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/extension_set.cc.obj
+.PHONY : src/google/protobuf/extension_set.cc.obj
 
 src/google/protobuf/extension_set.i: src/google/protobuf/extension_set.cc.i
 
@@ -3914,14 +3914,14 @@ src/google/protobuf/extension_set.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/extension_set.cc.s
 .PHONY : src/google/protobuf/extension_set.cc.s
 
-src/google/protobuf/extension_set_heavy.o: src/google/protobuf/extension_set_heavy.cc.o
+src/google/protobuf/extension_set_heavy.obj: src/google/protobuf/extension_set_heavy.cc.obj
 
-.PHONY : src/google/protobuf/extension_set_heavy.o
+.PHONY : src/google/protobuf/extension_set_heavy.obj
 
 # target to build an object file
-src/google/protobuf/extension_set_heavy.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/extension_set_heavy.cc.o
-.PHONY : src/google/protobuf/extension_set_heavy.cc.o
+src/google/protobuf/extension_set_heavy.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/extension_set_heavy.cc.obj
+.PHONY : src/google/protobuf/extension_set_heavy.cc.obj
 
 src/google/protobuf/extension_set_heavy.i: src/google/protobuf/extension_set_heavy.cc.i
 
@@ -3941,14 +3941,14 @@ src/google/protobuf/extension_set_heavy.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/extension_set_heavy.cc.s
 .PHONY : src/google/protobuf/extension_set_heavy.cc.s
 
-src/google/protobuf/extension_set_unittest.o: src/google/protobuf/extension_set_unittest.cc.o
+src/google/protobuf/extension_set_unittest.obj: src/google/protobuf/extension_set_unittest.cc.obj
 
-.PHONY : src/google/protobuf/extension_set_unittest.o
+.PHONY : src/google/protobuf/extension_set_unittest.obj
 
 # target to build an object file
-src/google/protobuf/extension_set_unittest.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/extension_set_unittest.cc.o
-.PHONY : src/google/protobuf/extension_set_unittest.cc.o
+src/google/protobuf/extension_set_unittest.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/extension_set_unittest.cc.obj
+.PHONY : src/google/protobuf/extension_set_unittest.cc.obj
 
 src/google/protobuf/extension_set_unittest.i: src/google/protobuf/extension_set_unittest.cc.i
 
@@ -3968,14 +3968,14 @@ src/google/protobuf/extension_set_unittest.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/extension_set_unittest.cc.s
 .PHONY : src/google/protobuf/extension_set_unittest.cc.s
 
-src/google/protobuf/field_mask.pb.o: src/google/protobuf/field_mask.pb.cc.o
+src/google/protobuf/field_mask.pb.obj: src/google/protobuf/field_mask.pb.cc.obj
 
-.PHONY : src/google/protobuf/field_mask.pb.o
+.PHONY : src/google/protobuf/field_mask.pb.obj
 
 # target to build an object file
-src/google/protobuf/field_mask.pb.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/field_mask.pb.cc.o
-.PHONY : src/google/protobuf/field_mask.pb.cc.o
+src/google/protobuf/field_mask.pb.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/field_mask.pb.cc.obj
+.PHONY : src/google/protobuf/field_mask.pb.cc.obj
 
 src/google/protobuf/field_mask.pb.i: src/google/protobuf/field_mask.pb.cc.i
 
@@ -3995,15 +3995,15 @@ src/google/protobuf/field_mask.pb.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/field_mask.pb.cc.s
 .PHONY : src/google/protobuf/field_mask.pb.cc.s
 
-src/google/protobuf/generated_enum_util.o: src/google/protobuf/generated_enum_util.cc.o
+src/google/protobuf/generated_enum_util.obj: src/google/protobuf/generated_enum_util.cc.obj
 
-.PHONY : src/google/protobuf/generated_enum_util.o
+.PHONY : src/google/protobuf/generated_enum_util.obj
 
 # target to build an object file
-src/google/protobuf/generated_enum_util.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf-lite.dir/build.make CMakeFiles/libprotobuf-lite.dir/src/google/protobuf/generated_enum_util.cc.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_enum_util.cc.o
-.PHONY : src/google/protobuf/generated_enum_util.cc.o
+src/google/protobuf/generated_enum_util.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf-lite.dir/build.make CMakeFiles/libprotobuf-lite.dir/src/google/protobuf/generated_enum_util.cc.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_enum_util.cc.obj
+.PHONY : src/google/protobuf/generated_enum_util.cc.obj
 
 src/google/protobuf/generated_enum_util.i: src/google/protobuf/generated_enum_util.cc.i
 
@@ -4025,14 +4025,14 @@ src/google/protobuf/generated_enum_util.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_enum_util.cc.s
 .PHONY : src/google/protobuf/generated_enum_util.cc.s
 
-src/google/protobuf/generated_message_bases.o: src/google/protobuf/generated_message_bases.cc.o
+src/google/protobuf/generated_message_bases.obj: src/google/protobuf/generated_message_bases.cc.obj
 
-.PHONY : src/google/protobuf/generated_message_bases.o
+.PHONY : src/google/protobuf/generated_message_bases.obj
 
 # target to build an object file
-src/google/protobuf/generated_message_bases.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_message_bases.cc.o
-.PHONY : src/google/protobuf/generated_message_bases.cc.o
+src/google/protobuf/generated_message_bases.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_message_bases.cc.obj
+.PHONY : src/google/protobuf/generated_message_bases.cc.obj
 
 src/google/protobuf/generated_message_bases.i: src/google/protobuf/generated_message_bases.cc.i
 
@@ -4052,14 +4052,14 @@ src/google/protobuf/generated_message_bases.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_message_bases.cc.s
 .PHONY : src/google/protobuf/generated_message_bases.cc.s
 
-src/google/protobuf/generated_message_reflection.o: src/google/protobuf/generated_message_reflection.cc.o
+src/google/protobuf/generated_message_reflection.obj: src/google/protobuf/generated_message_reflection.cc.obj
 
-.PHONY : src/google/protobuf/generated_message_reflection.o
+.PHONY : src/google/protobuf/generated_message_reflection.obj
 
 # target to build an object file
-src/google/protobuf/generated_message_reflection.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_message_reflection.cc.o
-.PHONY : src/google/protobuf/generated_message_reflection.cc.o
+src/google/protobuf/generated_message_reflection.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_message_reflection.cc.obj
+.PHONY : src/google/protobuf/generated_message_reflection.cc.obj
 
 src/google/protobuf/generated_message_reflection.i: src/google/protobuf/generated_message_reflection.cc.i
 
@@ -4079,14 +4079,14 @@ src/google/protobuf/generated_message_reflection.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_message_reflection.cc.s
 .PHONY : src/google/protobuf/generated_message_reflection.cc.s
 
-src/google/protobuf/generated_message_reflection_unittest.o: src/google/protobuf/generated_message_reflection_unittest.cc.o
+src/google/protobuf/generated_message_reflection_unittest.obj: src/google/protobuf/generated_message_reflection_unittest.cc.obj
 
-.PHONY : src/google/protobuf/generated_message_reflection_unittest.o
+.PHONY : src/google/protobuf/generated_message_reflection_unittest.obj
 
 # target to build an object file
-src/google/protobuf/generated_message_reflection_unittest.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/generated_message_reflection_unittest.cc.o
-.PHONY : src/google/protobuf/generated_message_reflection_unittest.cc.o
+src/google/protobuf/generated_message_reflection_unittest.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/generated_message_reflection_unittest.cc.obj
+.PHONY : src/google/protobuf/generated_message_reflection_unittest.cc.obj
 
 src/google/protobuf/generated_message_reflection_unittest.i: src/google/protobuf/generated_message_reflection_unittest.cc.i
 
@@ -4106,14 +4106,14 @@ src/google/protobuf/generated_message_reflection_unittest.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/generated_message_reflection_unittest.cc.s
 .PHONY : src/google/protobuf/generated_message_reflection_unittest.cc.s
 
-src/google/protobuf/generated_message_tctable_full.o: src/google/protobuf/generated_message_tctable_full.cc.o
+src/google/protobuf/generated_message_tctable_full.obj: src/google/protobuf/generated_message_tctable_full.cc.obj
 
-.PHONY : src/google/protobuf/generated_message_tctable_full.o
+.PHONY : src/google/protobuf/generated_message_tctable_full.obj
 
 # target to build an object file
-src/google/protobuf/generated_message_tctable_full.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_message_tctable_full.cc.o
-.PHONY : src/google/protobuf/generated_message_tctable_full.cc.o
+src/google/protobuf/generated_message_tctable_full.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_message_tctable_full.cc.obj
+.PHONY : src/google/protobuf/generated_message_tctable_full.cc.obj
 
 src/google/protobuf/generated_message_tctable_full.i: src/google/protobuf/generated_message_tctable_full.cc.i
 
@@ -4133,15 +4133,15 @@ src/google/protobuf/generated_message_tctable_full.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_message_tctable_full.cc.s
 .PHONY : src/google/protobuf/generated_message_tctable_full.cc.s
 
-src/google/protobuf/generated_message_tctable_lite.o: src/google/protobuf/generated_message_tctable_lite.cc.o
+src/google/protobuf/generated_message_tctable_lite.obj: src/google/protobuf/generated_message_tctable_lite.cc.obj
 
-.PHONY : src/google/protobuf/generated_message_tctable_lite.o
+.PHONY : src/google/protobuf/generated_message_tctable_lite.obj
 
 # target to build an object file
-src/google/protobuf/generated_message_tctable_lite.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf-lite.dir/build.make CMakeFiles/libprotobuf-lite.dir/src/google/protobuf/generated_message_tctable_lite.cc.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_message_tctable_lite.cc.o
-.PHONY : src/google/protobuf/generated_message_tctable_lite.cc.o
+src/google/protobuf/generated_message_tctable_lite.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf-lite.dir/build.make CMakeFiles/libprotobuf-lite.dir/src/google/protobuf/generated_message_tctable_lite.cc.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_message_tctable_lite.cc.obj
+.PHONY : src/google/protobuf/generated_message_tctable_lite.cc.obj
 
 src/google/protobuf/generated_message_tctable_lite.i: src/google/protobuf/generated_message_tctable_lite.cc.i
 
@@ -4163,14 +4163,14 @@ src/google/protobuf/generated_message_tctable_lite.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_message_tctable_lite.cc.s
 .PHONY : src/google/protobuf/generated_message_tctable_lite.cc.s
 
-src/google/protobuf/generated_message_tctable_lite_test.o: src/google/protobuf/generated_message_tctable_lite_test.cc.o
+src/google/protobuf/generated_message_tctable_lite_test.obj: src/google/protobuf/generated_message_tctable_lite_test.cc.obj
 
-.PHONY : src/google/protobuf/generated_message_tctable_lite_test.o
+.PHONY : src/google/protobuf/generated_message_tctable_lite_test.obj
 
 # target to build an object file
-src/google/protobuf/generated_message_tctable_lite_test.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/generated_message_tctable_lite_test.cc.o
-.PHONY : src/google/protobuf/generated_message_tctable_lite_test.cc.o
+src/google/protobuf/generated_message_tctable_lite_test.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/generated_message_tctable_lite_test.cc.obj
+.PHONY : src/google/protobuf/generated_message_tctable_lite_test.cc.obj
 
 src/google/protobuf/generated_message_tctable_lite_test.i: src/google/protobuf/generated_message_tctable_lite_test.cc.i
 
@@ -4190,15 +4190,15 @@ src/google/protobuf/generated_message_tctable_lite_test.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/generated_message_tctable_lite_test.cc.s
 .PHONY : src/google/protobuf/generated_message_tctable_lite_test.cc.s
 
-src/google/protobuf/generated_message_util.o: src/google/protobuf/generated_message_util.cc.o
+src/google/protobuf/generated_message_util.obj: src/google/protobuf/generated_message_util.cc.obj
 
-.PHONY : src/google/protobuf/generated_message_util.o
+.PHONY : src/google/protobuf/generated_message_util.obj
 
 # target to build an object file
-src/google/protobuf/generated_message_util.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf-lite.dir/build.make CMakeFiles/libprotobuf-lite.dir/src/google/protobuf/generated_message_util.cc.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_message_util.cc.o
-.PHONY : src/google/protobuf/generated_message_util.cc.o
+src/google/protobuf/generated_message_util.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf-lite.dir/build.make CMakeFiles/libprotobuf-lite.dir/src/google/protobuf/generated_message_util.cc.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_message_util.cc.obj
+.PHONY : src/google/protobuf/generated_message_util.cc.obj
 
 src/google/protobuf/generated_message_util.i: src/google/protobuf/generated_message_util.cc.i
 
@@ -4220,15 +4220,15 @@ src/google/protobuf/generated_message_util.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/generated_message_util.cc.s
 .PHONY : src/google/protobuf/generated_message_util.cc.s
 
-src/google/protobuf/implicit_weak_message.o: src/google/protobuf/implicit_weak_message.cc.o
+src/google/protobuf/implicit_weak_message.obj: src/google/protobuf/implicit_weak_message.cc.obj
 
-.PHONY : src/google/protobuf/implicit_weak_message.o
+.PHONY : src/google/protobuf/implicit_weak_message.obj
 
 # target to build an object file
-src/google/protobuf/implicit_weak_message.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf-lite.dir/build.make CMakeFiles/libprotobuf-lite.dir/src/google/protobuf/implicit_weak_message.cc.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/implicit_weak_message.cc.o
-.PHONY : src/google/protobuf/implicit_weak_message.cc.o
+src/google/protobuf/implicit_weak_message.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf-lite.dir/build.make CMakeFiles/libprotobuf-lite.dir/src/google/protobuf/implicit_weak_message.cc.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/implicit_weak_message.cc.obj
+.PHONY : src/google/protobuf/implicit_weak_message.cc.obj
 
 src/google/protobuf/implicit_weak_message.i: src/google/protobuf/implicit_weak_message.cc.i
 
@@ -4250,15 +4250,15 @@ src/google/protobuf/implicit_weak_message.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/implicit_weak_message.cc.s
 .PHONY : src/google/protobuf/implicit_weak_message.cc.s
 
-src/google/protobuf/inlined_string_field.o: src/google/protobuf/inlined_string_field.cc.o
+src/google/protobuf/inlined_string_field.obj: src/google/protobuf/inlined_string_field.cc.obj
 
-.PHONY : src/google/protobuf/inlined_string_field.o
+.PHONY : src/google/protobuf/inlined_string_field.obj
 
 # target to build an object file
-src/google/protobuf/inlined_string_field.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf-lite.dir/build.make CMakeFiles/libprotobuf-lite.dir/src/google/protobuf/inlined_string_field.cc.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/inlined_string_field.cc.o
-.PHONY : src/google/protobuf/inlined_string_field.cc.o
+src/google/protobuf/inlined_string_field.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf-lite.dir/build.make CMakeFiles/libprotobuf-lite.dir/src/google/protobuf/inlined_string_field.cc.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/inlined_string_field.cc.obj
+.PHONY : src/google/protobuf/inlined_string_field.cc.obj
 
 src/google/protobuf/inlined_string_field.i: src/google/protobuf/inlined_string_field.cc.i
 
@@ -4280,14 +4280,14 @@ src/google/protobuf/inlined_string_field.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/inlined_string_field.cc.s
 .PHONY : src/google/protobuf/inlined_string_field.cc.s
 
-src/google/protobuf/inlined_string_field_unittest.o: src/google/protobuf/inlined_string_field_unittest.cc.o
+src/google/protobuf/inlined_string_field_unittest.obj: src/google/protobuf/inlined_string_field_unittest.cc.obj
 
-.PHONY : src/google/protobuf/inlined_string_field_unittest.o
+.PHONY : src/google/protobuf/inlined_string_field_unittest.obj
 
 # target to build an object file
-src/google/protobuf/inlined_string_field_unittest.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/inlined_string_field_unittest.cc.o
-.PHONY : src/google/protobuf/inlined_string_field_unittest.cc.o
+src/google/protobuf/inlined_string_field_unittest.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/inlined_string_field_unittest.cc.obj
+.PHONY : src/google/protobuf/inlined_string_field_unittest.cc.obj
 
 src/google/protobuf/inlined_string_field_unittest.i: src/google/protobuf/inlined_string_field_unittest.cc.i
 
@@ -4307,15 +4307,15 @@ src/google/protobuf/inlined_string_field_unittest.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/inlined_string_field_unittest.cc.s
 .PHONY : src/google/protobuf/inlined_string_field_unittest.cc.s
 
-src/google/protobuf/io/coded_stream.o: src/google/protobuf/io/coded_stream.cc.o
+src/google/protobuf/io/coded_stream.obj: src/google/protobuf/io/coded_stream.cc.obj
 
-.PHONY : src/google/protobuf/io/coded_stream.o
+.PHONY : src/google/protobuf/io/coded_stream.obj
 
 # target to build an object file
-src/google/protobuf/io/coded_stream.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf-lite.dir/build.make CMakeFiles/libprotobuf-lite.dir/src/google/protobuf/io/coded_stream.cc.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/io/coded_stream.cc.o
-.PHONY : src/google/protobuf/io/coded_stream.cc.o
+src/google/protobuf/io/coded_stream.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf-lite.dir/build.make CMakeFiles/libprotobuf-lite.dir/src/google/protobuf/io/coded_stream.cc.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/io/coded_stream.cc.obj
+.PHONY : src/google/protobuf/io/coded_stream.cc.obj
 
 src/google/protobuf/io/coded_stream.i: src/google/protobuf/io/coded_stream.cc.i
 
@@ -4337,14 +4337,14 @@ src/google/protobuf/io/coded_stream.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/io/coded_stream.cc.s
 .PHONY : src/google/protobuf/io/coded_stream.cc.s
 
-src/google/protobuf/io/coded_stream_unittest.o: src/google/protobuf/io/coded_stream_unittest.cc.o
+src/google/protobuf/io/coded_stream_unittest.obj: src/google/protobuf/io/coded_stream_unittest.cc.obj
 
-.PHONY : src/google/protobuf/io/coded_stream_unittest.o
+.PHONY : src/google/protobuf/io/coded_stream_unittest.obj
 
 # target to build an object file
-src/google/protobuf/io/coded_stream_unittest.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/io/coded_stream_unittest.cc.o
-.PHONY : src/google/protobuf/io/coded_stream_unittest.cc.o
+src/google/protobuf/io/coded_stream_unittest.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/io/coded_stream_unittest.cc.obj
+.PHONY : src/google/protobuf/io/coded_stream_unittest.cc.obj
 
 src/google/protobuf/io/coded_stream_unittest.i: src/google/protobuf/io/coded_stream_unittest.cc.i
 
@@ -4364,14 +4364,14 @@ src/google/protobuf/io/coded_stream_unittest.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/io/coded_stream_unittest.cc.s
 .PHONY : src/google/protobuf/io/coded_stream_unittest.cc.s
 
-src/google/protobuf/io/gzip_stream.o: src/google/protobuf/io/gzip_stream.cc.o
+src/google/protobuf/io/gzip_stream.obj: src/google/protobuf/io/gzip_stream.cc.obj
 
-.PHONY : src/google/protobuf/io/gzip_stream.o
+.PHONY : src/google/protobuf/io/gzip_stream.obj
 
 # target to build an object file
-src/google/protobuf/io/gzip_stream.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/io/gzip_stream.cc.o
-.PHONY : src/google/protobuf/io/gzip_stream.cc.o
+src/google/protobuf/io/gzip_stream.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/io/gzip_stream.cc.obj
+.PHONY : src/google/protobuf/io/gzip_stream.cc.obj
 
 src/google/protobuf/io/gzip_stream.i: src/google/protobuf/io/gzip_stream.cc.i
 
@@ -4391,15 +4391,15 @@ src/google/protobuf/io/gzip_stream.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/io/gzip_stream.cc.s
 .PHONY : src/google/protobuf/io/gzip_stream.cc.s
 
-src/google/protobuf/io/io_win32.o: src/google/protobuf/io/io_win32.cc.o
+src/google/protobuf/io/io_win32.obj: src/google/protobuf/io/io_win32.cc.obj
 
-.PHONY : src/google/protobuf/io/io_win32.o
+.PHONY : src/google/protobuf/io/io_win32.obj
 
 # target to build an object file
-src/google/protobuf/io/io_win32.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf-lite.dir/build.make CMakeFiles/libprotobuf-lite.dir/src/google/protobuf/io/io_win32.cc.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/io/io_win32.cc.o
-.PHONY : src/google/protobuf/io/io_win32.cc.o
+src/google/protobuf/io/io_win32.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf-lite.dir/build.make CMakeFiles/libprotobuf-lite.dir/src/google/protobuf/io/io_win32.cc.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/io/io_win32.cc.obj
+.PHONY : src/google/protobuf/io/io_win32.cc.obj
 
 src/google/protobuf/io/io_win32.i: src/google/protobuf/io/io_win32.cc.i
 
@@ -4421,14 +4421,14 @@ src/google/protobuf/io/io_win32.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/io/io_win32.cc.s
 .PHONY : src/google/protobuf/io/io_win32.cc.s
 
-src/google/protobuf/io/io_win32_unittest.o: src/google/protobuf/io/io_win32_unittest.cc.o
+src/google/protobuf/io/io_win32_unittest.obj: src/google/protobuf/io/io_win32_unittest.cc.obj
 
-.PHONY : src/google/protobuf/io/io_win32_unittest.o
+.PHONY : src/google/protobuf/io/io_win32_unittest.obj
 
 # target to build an object file
-src/google/protobuf/io/io_win32_unittest.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/io/io_win32_unittest.cc.o
-.PHONY : src/google/protobuf/io/io_win32_unittest.cc.o
+src/google/protobuf/io/io_win32_unittest.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/io/io_win32_unittest.cc.obj
+.PHONY : src/google/protobuf/io/io_win32_unittest.cc.obj
 
 src/google/protobuf/io/io_win32_unittest.i: src/google/protobuf/io/io_win32_unittest.cc.i
 
@@ -4448,14 +4448,14 @@ src/google/protobuf/io/io_win32_unittest.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/io/io_win32_unittest.cc.s
 .PHONY : src/google/protobuf/io/io_win32_unittest.cc.s
 
-src/google/protobuf/io/printer.o: src/google/protobuf/io/printer.cc.o
+src/google/protobuf/io/printer.obj: src/google/protobuf/io/printer.cc.obj
 
-.PHONY : src/google/protobuf/io/printer.o
+.PHONY : src/google/protobuf/io/printer.obj
 
 # target to build an object file
-src/google/protobuf/io/printer.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/io/printer.cc.o
-.PHONY : src/google/protobuf/io/printer.cc.o
+src/google/protobuf/io/printer.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/io/printer.cc.obj
+.PHONY : src/google/protobuf/io/printer.cc.obj
 
 src/google/protobuf/io/printer.i: src/google/protobuf/io/printer.cc.i
 
@@ -4475,14 +4475,14 @@ src/google/protobuf/io/printer.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/io/printer.cc.s
 .PHONY : src/google/protobuf/io/printer.cc.s
 
-src/google/protobuf/io/printer_unittest.o: src/google/protobuf/io/printer_unittest.cc.o
+src/google/protobuf/io/printer_unittest.obj: src/google/protobuf/io/printer_unittest.cc.obj
 
-.PHONY : src/google/protobuf/io/printer_unittest.o
+.PHONY : src/google/protobuf/io/printer_unittest.obj
 
 # target to build an object file
-src/google/protobuf/io/printer_unittest.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/io/printer_unittest.cc.o
-.PHONY : src/google/protobuf/io/printer_unittest.cc.o
+src/google/protobuf/io/printer_unittest.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/io/printer_unittest.cc.obj
+.PHONY : src/google/protobuf/io/printer_unittest.cc.obj
 
 src/google/protobuf/io/printer_unittest.i: src/google/protobuf/io/printer_unittest.cc.i
 
@@ -4502,15 +4502,15 @@ src/google/protobuf/io/printer_unittest.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/io/printer_unittest.cc.s
 .PHONY : src/google/protobuf/io/printer_unittest.cc.s
 
-src/google/protobuf/io/strtod.o: src/google/protobuf/io/strtod.cc.o
+src/google/protobuf/io/strtod.obj: src/google/protobuf/io/strtod.cc.obj
 
-.PHONY : src/google/protobuf/io/strtod.o
+.PHONY : src/google/protobuf/io/strtod.obj
 
 # target to build an object file
-src/google/protobuf/io/strtod.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf-lite.dir/build.make CMakeFiles/libprotobuf-lite.dir/src/google/protobuf/io/strtod.cc.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/io/strtod.cc.o
-.PHONY : src/google/protobuf/io/strtod.cc.o
+src/google/protobuf/io/strtod.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf-lite.dir/build.make CMakeFiles/libprotobuf-lite.dir/src/google/protobuf/io/strtod.cc.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/io/strtod.cc.obj
+.PHONY : src/google/protobuf/io/strtod.cc.obj
 
 src/google/protobuf/io/strtod.i: src/google/protobuf/io/strtod.cc.i
 
@@ -4532,14 +4532,14 @@ src/google/protobuf/io/strtod.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/io/strtod.cc.s
 .PHONY : src/google/protobuf/io/strtod.cc.s
 
-src/google/protobuf/io/tokenizer.o: src/google/protobuf/io/tokenizer.cc.o
+src/google/protobuf/io/tokenizer.obj: src/google/protobuf/io/tokenizer.cc.obj
 
-.PHONY : src/google/protobuf/io/tokenizer.o
+.PHONY : src/google/protobuf/io/tokenizer.obj
 
 # target to build an object file
-src/google/protobuf/io/tokenizer.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/io/tokenizer.cc.o
-.PHONY : src/google/protobuf/io/tokenizer.cc.o
+src/google/protobuf/io/tokenizer.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/io/tokenizer.cc.obj
+.PHONY : src/google/protobuf/io/tokenizer.cc.obj
 
 src/google/protobuf/io/tokenizer.i: src/google/protobuf/io/tokenizer.cc.i
 
@@ -4559,14 +4559,14 @@ src/google/protobuf/io/tokenizer.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/io/tokenizer.cc.s
 .PHONY : src/google/protobuf/io/tokenizer.cc.s
 
-src/google/protobuf/io/tokenizer_unittest.o: src/google/protobuf/io/tokenizer_unittest.cc.o
+src/google/protobuf/io/tokenizer_unittest.obj: src/google/protobuf/io/tokenizer_unittest.cc.obj
 
-.PHONY : src/google/protobuf/io/tokenizer_unittest.o
+.PHONY : src/google/protobuf/io/tokenizer_unittest.obj
 
 # target to build an object file
-src/google/protobuf/io/tokenizer_unittest.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/io/tokenizer_unittest.cc.o
-.PHONY : src/google/protobuf/io/tokenizer_unittest.cc.o
+src/google/protobuf/io/tokenizer_unittest.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/io/tokenizer_unittest.cc.obj
+.PHONY : src/google/protobuf/io/tokenizer_unittest.cc.obj
 
 src/google/protobuf/io/tokenizer_unittest.i: src/google/protobuf/io/tokenizer_unittest.cc.i
 
@@ -4586,15 +4586,15 @@ src/google/protobuf/io/tokenizer_unittest.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/io/tokenizer_unittest.cc.s
 .PHONY : src/google/protobuf/io/tokenizer_unittest.cc.s
 
-src/google/protobuf/io/zero_copy_stream.o: src/google/protobuf/io/zero_copy_stream.cc.o
+src/google/protobuf/io/zero_copy_stream.obj: src/google/protobuf/io/zero_copy_stream.cc.obj
 
-.PHONY : src/google/protobuf/io/zero_copy_stream.o
+.PHONY : src/google/protobuf/io/zero_copy_stream.obj
 
 # target to build an object file
-src/google/protobuf/io/zero_copy_stream.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf-lite.dir/build.make CMakeFiles/libprotobuf-lite.dir/src/google/protobuf/io/zero_copy_stream.cc.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/io/zero_copy_stream.cc.o
-.PHONY : src/google/protobuf/io/zero_copy_stream.cc.o
+src/google/protobuf/io/zero_copy_stream.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf-lite.dir/build.make CMakeFiles/libprotobuf-lite.dir/src/google/protobuf/io/zero_copy_stream.cc.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/io/zero_copy_stream.cc.obj
+.PHONY : src/google/protobuf/io/zero_copy_stream.cc.obj
 
 src/google/protobuf/io/zero_copy_stream.i: src/google/protobuf/io/zero_copy_stream.cc.i
 
@@ -4616,15 +4616,15 @@ src/google/protobuf/io/zero_copy_stream.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/io/zero_copy_stream.cc.s
 .PHONY : src/google/protobuf/io/zero_copy_stream.cc.s
 
-src/google/protobuf/io/zero_copy_stream_impl.o: src/google/protobuf/io/zero_copy_stream_impl.cc.o
+src/google/protobuf/io/zero_copy_stream_impl.obj: src/google/protobuf/io/zero_copy_stream_impl.cc.obj
 
-.PHONY : src/google/protobuf/io/zero_copy_stream_impl.o
+.PHONY : src/google/protobuf/io/zero_copy_stream_impl.obj
 
 # target to build an object file
-src/google/protobuf/io/zero_copy_stream_impl.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf-lite.dir/build.make CMakeFiles/libprotobuf-lite.dir/src/google/protobuf/io/zero_copy_stream_impl.cc.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/io/zero_copy_stream_impl.cc.o
-.PHONY : src/google/protobuf/io/zero_copy_stream_impl.cc.o
+src/google/protobuf/io/zero_copy_stream_impl.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf-lite.dir/build.make CMakeFiles/libprotobuf-lite.dir/src/google/protobuf/io/zero_copy_stream_impl.cc.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/io/zero_copy_stream_impl.cc.obj
+.PHONY : src/google/protobuf/io/zero_copy_stream_impl.cc.obj
 
 src/google/protobuf/io/zero_copy_stream_impl.i: src/google/protobuf/io/zero_copy_stream_impl.cc.i
 
@@ -4646,15 +4646,15 @@ src/google/protobuf/io/zero_copy_stream_impl.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/io/zero_copy_stream_impl.cc.s
 .PHONY : src/google/protobuf/io/zero_copy_stream_impl.cc.s
 
-src/google/protobuf/io/zero_copy_stream_impl_lite.o: src/google/protobuf/io/zero_copy_stream_impl_lite.cc.o
+src/google/protobuf/io/zero_copy_stream_impl_lite.obj: src/google/protobuf/io/zero_copy_stream_impl_lite.cc.obj
 
-.PHONY : src/google/protobuf/io/zero_copy_stream_impl_lite.o
+.PHONY : src/google/protobuf/io/zero_copy_stream_impl_lite.obj
 
 # target to build an object file
-src/google/protobuf/io/zero_copy_stream_impl_lite.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf-lite.dir/build.make CMakeFiles/libprotobuf-lite.dir/src/google/protobuf/io/zero_copy_stream_impl_lite.cc.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/io/zero_copy_stream_impl_lite.cc.o
-.PHONY : src/google/protobuf/io/zero_copy_stream_impl_lite.cc.o
+src/google/protobuf/io/zero_copy_stream_impl_lite.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf-lite.dir/build.make CMakeFiles/libprotobuf-lite.dir/src/google/protobuf/io/zero_copy_stream_impl_lite.cc.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/io/zero_copy_stream_impl_lite.cc.obj
+.PHONY : src/google/protobuf/io/zero_copy_stream_impl_lite.cc.obj
 
 src/google/protobuf/io/zero_copy_stream_impl_lite.i: src/google/protobuf/io/zero_copy_stream_impl_lite.cc.i
 
@@ -4676,14 +4676,14 @@ src/google/protobuf/io/zero_copy_stream_impl_lite.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/io/zero_copy_stream_impl_lite.cc.s
 .PHONY : src/google/protobuf/io/zero_copy_stream_impl_lite.cc.s
 
-src/google/protobuf/io/zero_copy_stream_unittest.o: src/google/protobuf/io/zero_copy_stream_unittest.cc.o
+src/google/protobuf/io/zero_copy_stream_unittest.obj: src/google/protobuf/io/zero_copy_stream_unittest.cc.obj
 
-.PHONY : src/google/protobuf/io/zero_copy_stream_unittest.o
+.PHONY : src/google/protobuf/io/zero_copy_stream_unittest.obj
 
 # target to build an object file
-src/google/protobuf/io/zero_copy_stream_unittest.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/io/zero_copy_stream_unittest.cc.o
-.PHONY : src/google/protobuf/io/zero_copy_stream_unittest.cc.o
+src/google/protobuf/io/zero_copy_stream_unittest.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/io/zero_copy_stream_unittest.cc.obj
+.PHONY : src/google/protobuf/io/zero_copy_stream_unittest.cc.obj
 
 src/google/protobuf/io/zero_copy_stream_unittest.i: src/google/protobuf/io/zero_copy_stream_unittest.cc.i
 
@@ -4703,14 +4703,14 @@ src/google/protobuf/io/zero_copy_stream_unittest.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/io/zero_copy_stream_unittest.cc.s
 .PHONY : src/google/protobuf/io/zero_copy_stream_unittest.cc.s
 
-src/google/protobuf/lite_arena_unittest.o: src/google/protobuf/lite_arena_unittest.cc.o
+src/google/protobuf/lite_arena_unittest.obj: src/google/protobuf/lite_arena_unittest.cc.obj
 
-.PHONY : src/google/protobuf/lite_arena_unittest.o
+.PHONY : src/google/protobuf/lite_arena_unittest.obj
 
 # target to build an object file
-src/google/protobuf/lite_arena_unittest.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lite-arena-test.dir/build.make CMakeFiles/lite-arena-test.dir/src/google/protobuf/lite_arena_unittest.cc.o
-.PHONY : src/google/protobuf/lite_arena_unittest.cc.o
+src/google/protobuf/lite_arena_unittest.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lite-arena-test.dir/build.make CMakeFiles/lite-arena-test.dir/src/google/protobuf/lite_arena_unittest.cc.obj
+.PHONY : src/google/protobuf/lite_arena_unittest.cc.obj
 
 src/google/protobuf/lite_arena_unittest.i: src/google/protobuf/lite_arena_unittest.cc.i
 
@@ -4730,14 +4730,14 @@ src/google/protobuf/lite_arena_unittest.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lite-arena-test.dir/build.make CMakeFiles/lite-arena-test.dir/src/google/protobuf/lite_arena_unittest.cc.s
 .PHONY : src/google/protobuf/lite_arena_unittest.cc.s
 
-src/google/protobuf/lite_unittest.o: src/google/protobuf/lite_unittest.cc.o
+src/google/protobuf/lite_unittest.obj: src/google/protobuf/lite_unittest.cc.obj
 
-.PHONY : src/google/protobuf/lite_unittest.o
+.PHONY : src/google/protobuf/lite_unittest.obj
 
 # target to build an object file
-src/google/protobuf/lite_unittest.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lite-test.dir/build.make CMakeFiles/lite-test.dir/src/google/protobuf/lite_unittest.cc.o
-.PHONY : src/google/protobuf/lite_unittest.cc.o
+src/google/protobuf/lite_unittest.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lite-test.dir/build.make CMakeFiles/lite-test.dir/src/google/protobuf/lite_unittest.cc.obj
+.PHONY : src/google/protobuf/lite_unittest.cc.obj
 
 src/google/protobuf/lite_unittest.i: src/google/protobuf/lite_unittest.cc.i
 
@@ -4757,15 +4757,15 @@ src/google/protobuf/lite_unittest.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lite-test.dir/build.make CMakeFiles/lite-test.dir/src/google/protobuf/lite_unittest.cc.s
 .PHONY : src/google/protobuf/lite_unittest.cc.s
 
-src/google/protobuf/map.o: src/google/protobuf/map.cc.o
+src/google/protobuf/map.obj: src/google/protobuf/map.cc.obj
 
-.PHONY : src/google/protobuf/map.o
+.PHONY : src/google/protobuf/map.obj
 
 # target to build an object file
-src/google/protobuf/map.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf-lite.dir/build.make CMakeFiles/libprotobuf-lite.dir/src/google/protobuf/map.cc.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/map.cc.o
-.PHONY : src/google/protobuf/map.cc.o
+src/google/protobuf/map.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf-lite.dir/build.make CMakeFiles/libprotobuf-lite.dir/src/google/protobuf/map.cc.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/map.cc.obj
+.PHONY : src/google/protobuf/map.cc.obj
 
 src/google/protobuf/map.i: src/google/protobuf/map.cc.i
 
@@ -4787,14 +4787,14 @@ src/google/protobuf/map.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/map.cc.s
 .PHONY : src/google/protobuf/map.cc.s
 
-src/google/protobuf/map_field.o: src/google/protobuf/map_field.cc.o
+src/google/protobuf/map_field.obj: src/google/protobuf/map_field.cc.obj
 
-.PHONY : src/google/protobuf/map_field.o
+.PHONY : src/google/protobuf/map_field.obj
 
 # target to build an object file
-src/google/protobuf/map_field.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/map_field.cc.o
-.PHONY : src/google/protobuf/map_field.cc.o
+src/google/protobuf/map_field.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/map_field.cc.obj
+.PHONY : src/google/protobuf/map_field.cc.obj
 
 src/google/protobuf/map_field.i: src/google/protobuf/map_field.cc.i
 
@@ -4814,14 +4814,14 @@ src/google/protobuf/map_field.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/map_field.cc.s
 .PHONY : src/google/protobuf/map_field.cc.s
 
-src/google/protobuf/map_field_test.o: src/google/protobuf/map_field_test.cc.o
+src/google/protobuf/map_field_test.obj: src/google/protobuf/map_field_test.cc.obj
 
-.PHONY : src/google/protobuf/map_field_test.o
+.PHONY : src/google/protobuf/map_field_test.obj
 
 # target to build an object file
-src/google/protobuf/map_field_test.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/map_field_test.cc.o
-.PHONY : src/google/protobuf/map_field_test.cc.o
+src/google/protobuf/map_field_test.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/map_field_test.cc.obj
+.PHONY : src/google/protobuf/map_field_test.cc.obj
 
 src/google/protobuf/map_field_test.i: src/google/protobuf/map_field_test.cc.i
 
@@ -4841,15 +4841,15 @@ src/google/protobuf/map_field_test.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/map_field_test.cc.s
 .PHONY : src/google/protobuf/map_field_test.cc.s
 
-src/google/protobuf/map_lite_test_util.o: src/google/protobuf/map_lite_test_util.cc.o
+src/google/protobuf/map_lite_test_util.obj: src/google/protobuf/map_lite_test_util.cc.obj
 
-.PHONY : src/google/protobuf/map_lite_test_util.o
+.PHONY : src/google/protobuf/map_lite_test_util.obj
 
 # target to build an object file
-src/google/protobuf/map_lite_test_util.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-lite-test-common.dir/build.make CMakeFiles/protobuf-lite-test-common.dir/src/google/protobuf/map_lite_test_util.cc.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/map_lite_test_util.cc.o
-.PHONY : src/google/protobuf/map_lite_test_util.cc.o
+src/google/protobuf/map_lite_test_util.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-lite-test-common.dir/build.make CMakeFiles/protobuf-lite-test-common.dir/src/google/protobuf/map_lite_test_util.cc.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/map_lite_test_util.cc.obj
+.PHONY : src/google/protobuf/map_lite_test_util.cc.obj
 
 src/google/protobuf/map_lite_test_util.i: src/google/protobuf/map_lite_test_util.cc.i
 
@@ -4871,14 +4871,14 @@ src/google/protobuf/map_lite_test_util.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/map_lite_test_util.cc.s
 .PHONY : src/google/protobuf/map_lite_test_util.cc.s
 
-src/google/protobuf/map_lite_unittest.pb.o: src/google/protobuf/map_lite_unittest.pb.cc.o
+src/google/protobuf/map_lite_unittest.pb.obj: src/google/protobuf/map_lite_unittest.pb.cc.obj
 
-.PHONY : src/google/protobuf/map_lite_unittest.pb.o
+.PHONY : src/google/protobuf/map_lite_unittest.pb.obj
 
 # target to build an object file
-src/google/protobuf/map_lite_unittest.pb.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-lite-test-common.dir/build.make CMakeFiles/protobuf-lite-test-common.dir/src/google/protobuf/map_lite_unittest.pb.cc.o
-.PHONY : src/google/protobuf/map_lite_unittest.pb.cc.o
+src/google/protobuf/map_lite_unittest.pb.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-lite-test-common.dir/build.make CMakeFiles/protobuf-lite-test-common.dir/src/google/protobuf/map_lite_unittest.pb.cc.obj
+.PHONY : src/google/protobuf/map_lite_unittest.pb.cc.obj
 
 src/google/protobuf/map_lite_unittest.pb.i: src/google/protobuf/map_lite_unittest.pb.cc.i
 
@@ -4898,14 +4898,14 @@ src/google/protobuf/map_lite_unittest.pb.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-lite-test-common.dir/build.make CMakeFiles/protobuf-lite-test-common.dir/src/google/protobuf/map_lite_unittest.pb.cc.s
 .PHONY : src/google/protobuf/map_lite_unittest.pb.cc.s
 
-src/google/protobuf/map_proto2_unittest.pb.o: src/google/protobuf/map_proto2_unittest.pb.cc.o
+src/google/protobuf/map_proto2_unittest.pb.obj: src/google/protobuf/map_proto2_unittest.pb.cc.obj
 
-.PHONY : src/google/protobuf/map_proto2_unittest.pb.o
+.PHONY : src/google/protobuf/map_proto2_unittest.pb.obj
 
 # target to build an object file
-src/google/protobuf/map_proto2_unittest.pb.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/map_proto2_unittest.pb.cc.o
-.PHONY : src/google/protobuf/map_proto2_unittest.pb.cc.o
+src/google/protobuf/map_proto2_unittest.pb.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/map_proto2_unittest.pb.cc.obj
+.PHONY : src/google/protobuf/map_proto2_unittest.pb.cc.obj
 
 src/google/protobuf/map_proto2_unittest.pb.i: src/google/protobuf/map_proto2_unittest.pb.cc.i
 
@@ -4925,14 +4925,14 @@ src/google/protobuf/map_proto2_unittest.pb.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/map_proto2_unittest.pb.cc.s
 .PHONY : src/google/protobuf/map_proto2_unittest.pb.cc.s
 
-src/google/protobuf/map_test.o: src/google/protobuf/map_test.cc.o
+src/google/protobuf/map_test.obj: src/google/protobuf/map_test.cc.obj
 
-.PHONY : src/google/protobuf/map_test.o
+.PHONY : src/google/protobuf/map_test.obj
 
 # target to build an object file
-src/google/protobuf/map_test.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/map_test.cc.o
-.PHONY : src/google/protobuf/map_test.cc.o
+src/google/protobuf/map_test.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/map_test.cc.obj
+.PHONY : src/google/protobuf/map_test.cc.obj
 
 src/google/protobuf/map_test.i: src/google/protobuf/map_test.cc.i
 
@@ -4952,14 +4952,14 @@ src/google/protobuf/map_test.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/map_test.cc.s
 .PHONY : src/google/protobuf/map_test.cc.s
 
-src/google/protobuf/map_unittest.pb.o: src/google/protobuf/map_unittest.pb.cc.o
+src/google/protobuf/map_unittest.pb.obj: src/google/protobuf/map_unittest.pb.cc.obj
 
-.PHONY : src/google/protobuf/map_unittest.pb.o
+.PHONY : src/google/protobuf/map_unittest.pb.obj
 
 # target to build an object file
-src/google/protobuf/map_unittest.pb.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/map_unittest.pb.cc.o
-.PHONY : src/google/protobuf/map_unittest.pb.cc.o
+src/google/protobuf/map_unittest.pb.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/map_unittest.pb.cc.obj
+.PHONY : src/google/protobuf/map_unittest.pb.cc.obj
 
 src/google/protobuf/map_unittest.pb.i: src/google/protobuf/map_unittest.pb.cc.i
 
@@ -4979,14 +4979,14 @@ src/google/protobuf/map_unittest.pb.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/map_unittest.pb.cc.s
 .PHONY : src/google/protobuf/map_unittest.pb.cc.s
 
-src/google/protobuf/message.o: src/google/protobuf/message.cc.o
+src/google/protobuf/message.obj: src/google/protobuf/message.cc.obj
 
-.PHONY : src/google/protobuf/message.o
+.PHONY : src/google/protobuf/message.obj
 
 # target to build an object file
-src/google/protobuf/message.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/message.cc.o
-.PHONY : src/google/protobuf/message.cc.o
+src/google/protobuf/message.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/message.cc.obj
+.PHONY : src/google/protobuf/message.cc.obj
 
 src/google/protobuf/message.i: src/google/protobuf/message.cc.i
 
@@ -5006,15 +5006,15 @@ src/google/protobuf/message.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/message.cc.s
 .PHONY : src/google/protobuf/message.cc.s
 
-src/google/protobuf/message_lite.o: src/google/protobuf/message_lite.cc.o
+src/google/protobuf/message_lite.obj: src/google/protobuf/message_lite.cc.obj
 
-.PHONY : src/google/protobuf/message_lite.o
+.PHONY : src/google/protobuf/message_lite.obj
 
 # target to build an object file
-src/google/protobuf/message_lite.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf-lite.dir/build.make CMakeFiles/libprotobuf-lite.dir/src/google/protobuf/message_lite.cc.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/message_lite.cc.o
-.PHONY : src/google/protobuf/message_lite.cc.o
+src/google/protobuf/message_lite.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf-lite.dir/build.make CMakeFiles/libprotobuf-lite.dir/src/google/protobuf/message_lite.cc.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/message_lite.cc.obj
+.PHONY : src/google/protobuf/message_lite.cc.obj
 
 src/google/protobuf/message_lite.i: src/google/protobuf/message_lite.cc.i
 
@@ -5036,14 +5036,14 @@ src/google/protobuf/message_lite.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/message_lite.cc.s
 .PHONY : src/google/protobuf/message_lite.cc.s
 
-src/google/protobuf/message_unittest.o: src/google/protobuf/message_unittest.cc.o
+src/google/protobuf/message_unittest.obj: src/google/protobuf/message_unittest.cc.obj
 
-.PHONY : src/google/protobuf/message_unittest.o
+.PHONY : src/google/protobuf/message_unittest.obj
 
 # target to build an object file
-src/google/protobuf/message_unittest.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/message_unittest.cc.o
-.PHONY : src/google/protobuf/message_unittest.cc.o
+src/google/protobuf/message_unittest.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/message_unittest.cc.obj
+.PHONY : src/google/protobuf/message_unittest.cc.obj
 
 src/google/protobuf/message_unittest.i: src/google/protobuf/message_unittest.cc.i
 
@@ -5063,14 +5063,14 @@ src/google/protobuf/message_unittest.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/message_unittest.cc.s
 .PHONY : src/google/protobuf/message_unittest.cc.s
 
-src/google/protobuf/no_field_presence_test.o: src/google/protobuf/no_field_presence_test.cc.o
+src/google/protobuf/no_field_presence_test.obj: src/google/protobuf/no_field_presence_test.cc.obj
 
-.PHONY : src/google/protobuf/no_field_presence_test.o
+.PHONY : src/google/protobuf/no_field_presence_test.obj
 
 # target to build an object file
-src/google/protobuf/no_field_presence_test.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/no_field_presence_test.cc.o
-.PHONY : src/google/protobuf/no_field_presence_test.cc.o
+src/google/protobuf/no_field_presence_test.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/no_field_presence_test.cc.obj
+.PHONY : src/google/protobuf/no_field_presence_test.cc.obj
 
 src/google/protobuf/no_field_presence_test.i: src/google/protobuf/no_field_presence_test.cc.i
 
@@ -5090,15 +5090,15 @@ src/google/protobuf/no_field_presence_test.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/no_field_presence_test.cc.s
 .PHONY : src/google/protobuf/no_field_presence_test.cc.s
 
-src/google/protobuf/parse_context.o: src/google/protobuf/parse_context.cc.o
+src/google/protobuf/parse_context.obj: src/google/protobuf/parse_context.cc.obj
 
-.PHONY : src/google/protobuf/parse_context.o
+.PHONY : src/google/protobuf/parse_context.obj
 
 # target to build an object file
-src/google/protobuf/parse_context.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf-lite.dir/build.make CMakeFiles/libprotobuf-lite.dir/src/google/protobuf/parse_context.cc.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/parse_context.cc.o
-.PHONY : src/google/protobuf/parse_context.cc.o
+src/google/protobuf/parse_context.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf-lite.dir/build.make CMakeFiles/libprotobuf-lite.dir/src/google/protobuf/parse_context.cc.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/parse_context.cc.obj
+.PHONY : src/google/protobuf/parse_context.cc.obj
 
 src/google/protobuf/parse_context.i: src/google/protobuf/parse_context.cc.i
 
@@ -5120,14 +5120,14 @@ src/google/protobuf/parse_context.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/parse_context.cc.s
 .PHONY : src/google/protobuf/parse_context.cc.s
 
-src/google/protobuf/preserve_unknown_enum_test.o: src/google/protobuf/preserve_unknown_enum_test.cc.o
+src/google/protobuf/preserve_unknown_enum_test.obj: src/google/protobuf/preserve_unknown_enum_test.cc.obj
 
-.PHONY : src/google/protobuf/preserve_unknown_enum_test.o
+.PHONY : src/google/protobuf/preserve_unknown_enum_test.obj
 
 # target to build an object file
-src/google/protobuf/preserve_unknown_enum_test.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/preserve_unknown_enum_test.cc.o
-.PHONY : src/google/protobuf/preserve_unknown_enum_test.cc.o
+src/google/protobuf/preserve_unknown_enum_test.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/preserve_unknown_enum_test.cc.obj
+.PHONY : src/google/protobuf/preserve_unknown_enum_test.cc.obj
 
 src/google/protobuf/preserve_unknown_enum_test.i: src/google/protobuf/preserve_unknown_enum_test.cc.i
 
@@ -5147,14 +5147,14 @@ src/google/protobuf/preserve_unknown_enum_test.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/preserve_unknown_enum_test.cc.s
 .PHONY : src/google/protobuf/preserve_unknown_enum_test.cc.s
 
-src/google/protobuf/proto3_arena_lite_unittest.o: src/google/protobuf/proto3_arena_lite_unittest.cc.o
+src/google/protobuf/proto3_arena_lite_unittest.obj: src/google/protobuf/proto3_arena_lite_unittest.cc.obj
 
-.PHONY : src/google/protobuf/proto3_arena_lite_unittest.o
+.PHONY : src/google/protobuf/proto3_arena_lite_unittest.obj
 
 # target to build an object file
-src/google/protobuf/proto3_arena_lite_unittest.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/proto3_arena_lite_unittest.cc.o
-.PHONY : src/google/protobuf/proto3_arena_lite_unittest.cc.o
+src/google/protobuf/proto3_arena_lite_unittest.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/proto3_arena_lite_unittest.cc.obj
+.PHONY : src/google/protobuf/proto3_arena_lite_unittest.cc.obj
 
 src/google/protobuf/proto3_arena_lite_unittest.i: src/google/protobuf/proto3_arena_lite_unittest.cc.i
 
@@ -5174,14 +5174,14 @@ src/google/protobuf/proto3_arena_lite_unittest.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/proto3_arena_lite_unittest.cc.s
 .PHONY : src/google/protobuf/proto3_arena_lite_unittest.cc.s
 
-src/google/protobuf/proto3_arena_unittest.o: src/google/protobuf/proto3_arena_unittest.cc.o
+src/google/protobuf/proto3_arena_unittest.obj: src/google/protobuf/proto3_arena_unittest.cc.obj
 
-.PHONY : src/google/protobuf/proto3_arena_unittest.o
+.PHONY : src/google/protobuf/proto3_arena_unittest.obj
 
 # target to build an object file
-src/google/protobuf/proto3_arena_unittest.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/proto3_arena_unittest.cc.o
-.PHONY : src/google/protobuf/proto3_arena_unittest.cc.o
+src/google/protobuf/proto3_arena_unittest.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/proto3_arena_unittest.cc.obj
+.PHONY : src/google/protobuf/proto3_arena_unittest.cc.obj
 
 src/google/protobuf/proto3_arena_unittest.i: src/google/protobuf/proto3_arena_unittest.cc.i
 
@@ -5201,14 +5201,14 @@ src/google/protobuf/proto3_arena_unittest.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/proto3_arena_unittest.cc.s
 .PHONY : src/google/protobuf/proto3_arena_unittest.cc.s
 
-src/google/protobuf/proto3_lite_unittest.o: src/google/protobuf/proto3_lite_unittest.cc.o
+src/google/protobuf/proto3_lite_unittest.obj: src/google/protobuf/proto3_lite_unittest.cc.obj
 
-.PHONY : src/google/protobuf/proto3_lite_unittest.o
+.PHONY : src/google/protobuf/proto3_lite_unittest.obj
 
 # target to build an object file
-src/google/protobuf/proto3_lite_unittest.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/proto3_lite_unittest.cc.o
-.PHONY : src/google/protobuf/proto3_lite_unittest.cc.o
+src/google/protobuf/proto3_lite_unittest.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/proto3_lite_unittest.cc.obj
+.PHONY : src/google/protobuf/proto3_lite_unittest.cc.obj
 
 src/google/protobuf/proto3_lite_unittest.i: src/google/protobuf/proto3_lite_unittest.cc.i
 
@@ -5228,14 +5228,14 @@ src/google/protobuf/proto3_lite_unittest.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/proto3_lite_unittest.cc.s
 .PHONY : src/google/protobuf/proto3_lite_unittest.cc.s
 
-src/google/protobuf/reflection_ops.o: src/google/protobuf/reflection_ops.cc.o
+src/google/protobuf/reflection_ops.obj: src/google/protobuf/reflection_ops.cc.obj
 
-.PHONY : src/google/protobuf/reflection_ops.o
+.PHONY : src/google/protobuf/reflection_ops.obj
 
 # target to build an object file
-src/google/protobuf/reflection_ops.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/reflection_ops.cc.o
-.PHONY : src/google/protobuf/reflection_ops.cc.o
+src/google/protobuf/reflection_ops.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/reflection_ops.cc.obj
+.PHONY : src/google/protobuf/reflection_ops.cc.obj
 
 src/google/protobuf/reflection_ops.i: src/google/protobuf/reflection_ops.cc.i
 
@@ -5255,14 +5255,14 @@ src/google/protobuf/reflection_ops.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/reflection_ops.cc.s
 .PHONY : src/google/protobuf/reflection_ops.cc.s
 
-src/google/protobuf/reflection_ops_unittest.o: src/google/protobuf/reflection_ops_unittest.cc.o
+src/google/protobuf/reflection_ops_unittest.obj: src/google/protobuf/reflection_ops_unittest.cc.obj
 
-.PHONY : src/google/protobuf/reflection_ops_unittest.o
+.PHONY : src/google/protobuf/reflection_ops_unittest.obj
 
 # target to build an object file
-src/google/protobuf/reflection_ops_unittest.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/reflection_ops_unittest.cc.o
-.PHONY : src/google/protobuf/reflection_ops_unittest.cc.o
+src/google/protobuf/reflection_ops_unittest.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/reflection_ops_unittest.cc.obj
+.PHONY : src/google/protobuf/reflection_ops_unittest.cc.obj
 
 src/google/protobuf/reflection_ops_unittest.i: src/google/protobuf/reflection_ops_unittest.cc.i
 
@@ -5282,14 +5282,14 @@ src/google/protobuf/reflection_ops_unittest.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/reflection_ops_unittest.cc.s
 .PHONY : src/google/protobuf/reflection_ops_unittest.cc.s
 
-src/google/protobuf/reflection_tester.o: src/google/protobuf/reflection_tester.cc.o
+src/google/protobuf/reflection_tester.obj: src/google/protobuf/reflection_tester.cc.obj
 
-.PHONY : src/google/protobuf/reflection_tester.o
+.PHONY : src/google/protobuf/reflection_tester.obj
 
 # target to build an object file
-src/google/protobuf/reflection_tester.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/reflection_tester.cc.o
-.PHONY : src/google/protobuf/reflection_tester.cc.o
+src/google/protobuf/reflection_tester.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/reflection_tester.cc.obj
+.PHONY : src/google/protobuf/reflection_tester.cc.obj
 
 src/google/protobuf/reflection_tester.i: src/google/protobuf/reflection_tester.cc.i
 
@@ -5309,15 +5309,15 @@ src/google/protobuf/reflection_tester.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/reflection_tester.cc.s
 .PHONY : src/google/protobuf/reflection_tester.cc.s
 
-src/google/protobuf/repeated_field.o: src/google/protobuf/repeated_field.cc.o
+src/google/protobuf/repeated_field.obj: src/google/protobuf/repeated_field.cc.obj
 
-.PHONY : src/google/protobuf/repeated_field.o
+.PHONY : src/google/protobuf/repeated_field.obj
 
 # target to build an object file
-src/google/protobuf/repeated_field.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf-lite.dir/build.make CMakeFiles/libprotobuf-lite.dir/src/google/protobuf/repeated_field.cc.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/repeated_field.cc.o
-.PHONY : src/google/protobuf/repeated_field.cc.o
+src/google/protobuf/repeated_field.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf-lite.dir/build.make CMakeFiles/libprotobuf-lite.dir/src/google/protobuf/repeated_field.cc.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/repeated_field.cc.obj
+.PHONY : src/google/protobuf/repeated_field.cc.obj
 
 src/google/protobuf/repeated_field.i: src/google/protobuf/repeated_field.cc.i
 
@@ -5339,14 +5339,14 @@ src/google/protobuf/repeated_field.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/repeated_field.cc.s
 .PHONY : src/google/protobuf/repeated_field.cc.s
 
-src/google/protobuf/repeated_field_reflection_unittest.o: src/google/protobuf/repeated_field_reflection_unittest.cc.o
+src/google/protobuf/repeated_field_reflection_unittest.obj: src/google/protobuf/repeated_field_reflection_unittest.cc.obj
 
-.PHONY : src/google/protobuf/repeated_field_reflection_unittest.o
+.PHONY : src/google/protobuf/repeated_field_reflection_unittest.obj
 
 # target to build an object file
-src/google/protobuf/repeated_field_reflection_unittest.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/repeated_field_reflection_unittest.cc.o
-.PHONY : src/google/protobuf/repeated_field_reflection_unittest.cc.o
+src/google/protobuf/repeated_field_reflection_unittest.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/repeated_field_reflection_unittest.cc.obj
+.PHONY : src/google/protobuf/repeated_field_reflection_unittest.cc.obj
 
 src/google/protobuf/repeated_field_reflection_unittest.i: src/google/protobuf/repeated_field_reflection_unittest.cc.i
 
@@ -5366,14 +5366,14 @@ src/google/protobuf/repeated_field_reflection_unittest.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/repeated_field_reflection_unittest.cc.s
 .PHONY : src/google/protobuf/repeated_field_reflection_unittest.cc.s
 
-src/google/protobuf/repeated_field_unittest.o: src/google/protobuf/repeated_field_unittest.cc.o
+src/google/protobuf/repeated_field_unittest.obj: src/google/protobuf/repeated_field_unittest.cc.obj
 
-.PHONY : src/google/protobuf/repeated_field_unittest.o
+.PHONY : src/google/protobuf/repeated_field_unittest.obj
 
 # target to build an object file
-src/google/protobuf/repeated_field_unittest.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/repeated_field_unittest.cc.o
-.PHONY : src/google/protobuf/repeated_field_unittest.cc.o
+src/google/protobuf/repeated_field_unittest.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/repeated_field_unittest.cc.obj
+.PHONY : src/google/protobuf/repeated_field_unittest.cc.obj
 
 src/google/protobuf/repeated_field_unittest.i: src/google/protobuf/repeated_field_unittest.cc.i
 
@@ -5393,15 +5393,15 @@ src/google/protobuf/repeated_field_unittest.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/repeated_field_unittest.cc.s
 .PHONY : src/google/protobuf/repeated_field_unittest.cc.s
 
-src/google/protobuf/repeated_ptr_field.o: src/google/protobuf/repeated_ptr_field.cc.o
+src/google/protobuf/repeated_ptr_field.obj: src/google/protobuf/repeated_ptr_field.cc.obj
 
-.PHONY : src/google/protobuf/repeated_ptr_field.o
+.PHONY : src/google/protobuf/repeated_ptr_field.obj
 
 # target to build an object file
-src/google/protobuf/repeated_ptr_field.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf-lite.dir/build.make CMakeFiles/libprotobuf-lite.dir/src/google/protobuf/repeated_ptr_field.cc.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/repeated_ptr_field.cc.o
-.PHONY : src/google/protobuf/repeated_ptr_field.cc.o
+src/google/protobuf/repeated_ptr_field.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf-lite.dir/build.make CMakeFiles/libprotobuf-lite.dir/src/google/protobuf/repeated_ptr_field.cc.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/repeated_ptr_field.cc.obj
+.PHONY : src/google/protobuf/repeated_ptr_field.cc.obj
 
 src/google/protobuf/repeated_ptr_field.i: src/google/protobuf/repeated_ptr_field.cc.i
 
@@ -5423,14 +5423,14 @@ src/google/protobuf/repeated_ptr_field.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/repeated_ptr_field.cc.s
 .PHONY : src/google/protobuf/repeated_ptr_field.cc.s
 
-src/google/protobuf/service.o: src/google/protobuf/service.cc.o
+src/google/protobuf/service.obj: src/google/protobuf/service.cc.obj
 
-.PHONY : src/google/protobuf/service.o
+.PHONY : src/google/protobuf/service.obj
 
 # target to build an object file
-src/google/protobuf/service.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/service.cc.o
-.PHONY : src/google/protobuf/service.cc.o
+src/google/protobuf/service.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/service.cc.obj
+.PHONY : src/google/protobuf/service.cc.obj
 
 src/google/protobuf/service.i: src/google/protobuf/service.cc.i
 
@@ -5450,14 +5450,14 @@ src/google/protobuf/service.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/service.cc.s
 .PHONY : src/google/protobuf/service.cc.s
 
-src/google/protobuf/source_context.pb.o: src/google/protobuf/source_context.pb.cc.o
+src/google/protobuf/source_context.pb.obj: src/google/protobuf/source_context.pb.cc.obj
 
-.PHONY : src/google/protobuf/source_context.pb.o
+.PHONY : src/google/protobuf/source_context.pb.obj
 
 # target to build an object file
-src/google/protobuf/source_context.pb.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/source_context.pb.cc.o
-.PHONY : src/google/protobuf/source_context.pb.cc.o
+src/google/protobuf/source_context.pb.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/source_context.pb.cc.obj
+.PHONY : src/google/protobuf/source_context.pb.cc.obj
 
 src/google/protobuf/source_context.pb.i: src/google/protobuf/source_context.pb.cc.i
 
@@ -5477,14 +5477,14 @@ src/google/protobuf/source_context.pb.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/source_context.pb.cc.s
 .PHONY : src/google/protobuf/source_context.pb.cc.s
 
-src/google/protobuf/struct.pb.o: src/google/protobuf/struct.pb.cc.o
+src/google/protobuf/struct.pb.obj: src/google/protobuf/struct.pb.cc.obj
 
-.PHONY : src/google/protobuf/struct.pb.o
+.PHONY : src/google/protobuf/struct.pb.obj
 
 # target to build an object file
-src/google/protobuf/struct.pb.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/struct.pb.cc.o
-.PHONY : src/google/protobuf/struct.pb.cc.o
+src/google/protobuf/struct.pb.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/struct.pb.cc.obj
+.PHONY : src/google/protobuf/struct.pb.cc.obj
 
 src/google/protobuf/struct.pb.i: src/google/protobuf/struct.pb.cc.i
 
@@ -5504,15 +5504,15 @@ src/google/protobuf/struct.pb.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/struct.pb.cc.s
 .PHONY : src/google/protobuf/struct.pb.cc.s
 
-src/google/protobuf/stubs/bytestream.o: src/google/protobuf/stubs/bytestream.cc.o
+src/google/protobuf/stubs/bytestream.obj: src/google/protobuf/stubs/bytestream.cc.obj
 
-.PHONY : src/google/protobuf/stubs/bytestream.o
+.PHONY : src/google/protobuf/stubs/bytestream.obj
 
 # target to build an object file
-src/google/protobuf/stubs/bytestream.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf-lite.dir/build.make CMakeFiles/libprotobuf-lite.dir/src/google/protobuf/stubs/bytestream.cc.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/bytestream.cc.o
-.PHONY : src/google/protobuf/stubs/bytestream.cc.o
+src/google/protobuf/stubs/bytestream.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf-lite.dir/build.make CMakeFiles/libprotobuf-lite.dir/src/google/protobuf/stubs/bytestream.cc.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/bytestream.cc.obj
+.PHONY : src/google/protobuf/stubs/bytestream.cc.obj
 
 src/google/protobuf/stubs/bytestream.i: src/google/protobuf/stubs/bytestream.cc.i
 
@@ -5534,14 +5534,14 @@ src/google/protobuf/stubs/bytestream.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/bytestream.cc.s
 .PHONY : src/google/protobuf/stubs/bytestream.cc.s
 
-src/google/protobuf/stubs/bytestream_unittest.o: src/google/protobuf/stubs/bytestream_unittest.cc.o
+src/google/protobuf/stubs/bytestream_unittest.obj: src/google/protobuf/stubs/bytestream_unittest.cc.obj
 
-.PHONY : src/google/protobuf/stubs/bytestream_unittest.o
+.PHONY : src/google/protobuf/stubs/bytestream_unittest.obj
 
 # target to build an object file
-src/google/protobuf/stubs/bytestream_unittest.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/stubs/bytestream_unittest.cc.o
-.PHONY : src/google/protobuf/stubs/bytestream_unittest.cc.o
+src/google/protobuf/stubs/bytestream_unittest.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/stubs/bytestream_unittest.cc.obj
+.PHONY : src/google/protobuf/stubs/bytestream_unittest.cc.obj
 
 src/google/protobuf/stubs/bytestream_unittest.i: src/google/protobuf/stubs/bytestream_unittest.cc.i
 
@@ -5561,15 +5561,15 @@ src/google/protobuf/stubs/bytestream_unittest.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/stubs/bytestream_unittest.cc.s
 .PHONY : src/google/protobuf/stubs/bytestream_unittest.cc.s
 
-src/google/protobuf/stubs/common.o: src/google/protobuf/stubs/common.cc.o
+src/google/protobuf/stubs/common.obj: src/google/protobuf/stubs/common.cc.obj
 
-.PHONY : src/google/protobuf/stubs/common.o
+.PHONY : src/google/protobuf/stubs/common.obj
 
 # target to build an object file
-src/google/protobuf/stubs/common.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf-lite.dir/build.make CMakeFiles/libprotobuf-lite.dir/src/google/protobuf/stubs/common.cc.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/common.cc.o
-.PHONY : src/google/protobuf/stubs/common.cc.o
+src/google/protobuf/stubs/common.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf-lite.dir/build.make CMakeFiles/libprotobuf-lite.dir/src/google/protobuf/stubs/common.cc.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/common.cc.obj
+.PHONY : src/google/protobuf/stubs/common.cc.obj
 
 src/google/protobuf/stubs/common.i: src/google/protobuf/stubs/common.cc.i
 
@@ -5591,14 +5591,14 @@ src/google/protobuf/stubs/common.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/common.cc.s
 .PHONY : src/google/protobuf/stubs/common.cc.s
 
-src/google/protobuf/stubs/common_unittest.o: src/google/protobuf/stubs/common_unittest.cc.o
+src/google/protobuf/stubs/common_unittest.obj: src/google/protobuf/stubs/common_unittest.cc.obj
 
-.PHONY : src/google/protobuf/stubs/common_unittest.o
+.PHONY : src/google/protobuf/stubs/common_unittest.obj
 
 # target to build an object file
-src/google/protobuf/stubs/common_unittest.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/stubs/common_unittest.cc.o
-.PHONY : src/google/protobuf/stubs/common_unittest.cc.o
+src/google/protobuf/stubs/common_unittest.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/stubs/common_unittest.cc.obj
+.PHONY : src/google/protobuf/stubs/common_unittest.cc.obj
 
 src/google/protobuf/stubs/common_unittest.i: src/google/protobuf/stubs/common_unittest.cc.i
 
@@ -5618,15 +5618,15 @@ src/google/protobuf/stubs/common_unittest.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/stubs/common_unittest.cc.s
 .PHONY : src/google/protobuf/stubs/common_unittest.cc.s
 
-src/google/protobuf/stubs/int128.o: src/google/protobuf/stubs/int128.cc.o
+src/google/protobuf/stubs/int128.obj: src/google/protobuf/stubs/int128.cc.obj
 
-.PHONY : src/google/protobuf/stubs/int128.o
+.PHONY : src/google/protobuf/stubs/int128.obj
 
 # target to build an object file
-src/google/protobuf/stubs/int128.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf-lite.dir/build.make CMakeFiles/libprotobuf-lite.dir/src/google/protobuf/stubs/int128.cc.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/int128.cc.o
-.PHONY : src/google/protobuf/stubs/int128.cc.o
+src/google/protobuf/stubs/int128.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf-lite.dir/build.make CMakeFiles/libprotobuf-lite.dir/src/google/protobuf/stubs/int128.cc.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/int128.cc.obj
+.PHONY : src/google/protobuf/stubs/int128.cc.obj
 
 src/google/protobuf/stubs/int128.i: src/google/protobuf/stubs/int128.cc.i
 
@@ -5648,14 +5648,14 @@ src/google/protobuf/stubs/int128.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/int128.cc.s
 .PHONY : src/google/protobuf/stubs/int128.cc.s
 
-src/google/protobuf/stubs/int128_unittest.o: src/google/protobuf/stubs/int128_unittest.cc.o
+src/google/protobuf/stubs/int128_unittest.obj: src/google/protobuf/stubs/int128_unittest.cc.obj
 
-.PHONY : src/google/protobuf/stubs/int128_unittest.o
+.PHONY : src/google/protobuf/stubs/int128_unittest.obj
 
 # target to build an object file
-src/google/protobuf/stubs/int128_unittest.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/stubs/int128_unittest.cc.o
-.PHONY : src/google/protobuf/stubs/int128_unittest.cc.o
+src/google/protobuf/stubs/int128_unittest.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/stubs/int128_unittest.cc.obj
+.PHONY : src/google/protobuf/stubs/int128_unittest.cc.obj
 
 src/google/protobuf/stubs/int128_unittest.i: src/google/protobuf/stubs/int128_unittest.cc.i
 
@@ -5675,15 +5675,15 @@ src/google/protobuf/stubs/int128_unittest.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/stubs/int128_unittest.cc.s
 .PHONY : src/google/protobuf/stubs/int128_unittest.cc.s
 
-src/google/protobuf/stubs/status.o: src/google/protobuf/stubs/status.cc.o
+src/google/protobuf/stubs/status.obj: src/google/protobuf/stubs/status.cc.obj
 
-.PHONY : src/google/protobuf/stubs/status.o
+.PHONY : src/google/protobuf/stubs/status.obj
 
 # target to build an object file
-src/google/protobuf/stubs/status.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf-lite.dir/build.make CMakeFiles/libprotobuf-lite.dir/src/google/protobuf/stubs/status.cc.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/status.cc.o
-.PHONY : src/google/protobuf/stubs/status.cc.o
+src/google/protobuf/stubs/status.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf-lite.dir/build.make CMakeFiles/libprotobuf-lite.dir/src/google/protobuf/stubs/status.cc.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/status.cc.obj
+.PHONY : src/google/protobuf/stubs/status.cc.obj
 
 src/google/protobuf/stubs/status.i: src/google/protobuf/stubs/status.cc.i
 
@@ -5705,14 +5705,14 @@ src/google/protobuf/stubs/status.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/status.cc.s
 .PHONY : src/google/protobuf/stubs/status.cc.s
 
-src/google/protobuf/stubs/status_test.o: src/google/protobuf/stubs/status_test.cc.o
+src/google/protobuf/stubs/status_test.obj: src/google/protobuf/stubs/status_test.cc.obj
 
-.PHONY : src/google/protobuf/stubs/status_test.o
+.PHONY : src/google/protobuf/stubs/status_test.obj
 
 # target to build an object file
-src/google/protobuf/stubs/status_test.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/stubs/status_test.cc.o
-.PHONY : src/google/protobuf/stubs/status_test.cc.o
+src/google/protobuf/stubs/status_test.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/stubs/status_test.cc.obj
+.PHONY : src/google/protobuf/stubs/status_test.cc.obj
 
 src/google/protobuf/stubs/status_test.i: src/google/protobuf/stubs/status_test.cc.i
 
@@ -5732,15 +5732,15 @@ src/google/protobuf/stubs/status_test.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/stubs/status_test.cc.s
 .PHONY : src/google/protobuf/stubs/status_test.cc.s
 
-src/google/protobuf/stubs/statusor.o: src/google/protobuf/stubs/statusor.cc.o
+src/google/protobuf/stubs/statusor.obj: src/google/protobuf/stubs/statusor.cc.obj
 
-.PHONY : src/google/protobuf/stubs/statusor.o
+.PHONY : src/google/protobuf/stubs/statusor.obj
 
 # target to build an object file
-src/google/protobuf/stubs/statusor.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf-lite.dir/build.make CMakeFiles/libprotobuf-lite.dir/src/google/protobuf/stubs/statusor.cc.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/statusor.cc.o
-.PHONY : src/google/protobuf/stubs/statusor.cc.o
+src/google/protobuf/stubs/statusor.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf-lite.dir/build.make CMakeFiles/libprotobuf-lite.dir/src/google/protobuf/stubs/statusor.cc.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/statusor.cc.obj
+.PHONY : src/google/protobuf/stubs/statusor.cc.obj
 
 src/google/protobuf/stubs/statusor.i: src/google/protobuf/stubs/statusor.cc.i
 
@@ -5762,14 +5762,14 @@ src/google/protobuf/stubs/statusor.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/statusor.cc.s
 .PHONY : src/google/protobuf/stubs/statusor.cc.s
 
-src/google/protobuf/stubs/statusor_test.o: src/google/protobuf/stubs/statusor_test.cc.o
+src/google/protobuf/stubs/statusor_test.obj: src/google/protobuf/stubs/statusor_test.cc.obj
 
-.PHONY : src/google/protobuf/stubs/statusor_test.o
+.PHONY : src/google/protobuf/stubs/statusor_test.obj
 
 # target to build an object file
-src/google/protobuf/stubs/statusor_test.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/stubs/statusor_test.cc.o
-.PHONY : src/google/protobuf/stubs/statusor_test.cc.o
+src/google/protobuf/stubs/statusor_test.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/stubs/statusor_test.cc.obj
+.PHONY : src/google/protobuf/stubs/statusor_test.cc.obj
 
 src/google/protobuf/stubs/statusor_test.i: src/google/protobuf/stubs/statusor_test.cc.i
 
@@ -5789,15 +5789,15 @@ src/google/protobuf/stubs/statusor_test.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/stubs/statusor_test.cc.s
 .PHONY : src/google/protobuf/stubs/statusor_test.cc.s
 
-src/google/protobuf/stubs/stringpiece.o: src/google/protobuf/stubs/stringpiece.cc.o
+src/google/protobuf/stubs/stringpiece.obj: src/google/protobuf/stubs/stringpiece.cc.obj
 
-.PHONY : src/google/protobuf/stubs/stringpiece.o
+.PHONY : src/google/protobuf/stubs/stringpiece.obj
 
 # target to build an object file
-src/google/protobuf/stubs/stringpiece.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf-lite.dir/build.make CMakeFiles/libprotobuf-lite.dir/src/google/protobuf/stubs/stringpiece.cc.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/stringpiece.cc.o
-.PHONY : src/google/protobuf/stubs/stringpiece.cc.o
+src/google/protobuf/stubs/stringpiece.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf-lite.dir/build.make CMakeFiles/libprotobuf-lite.dir/src/google/protobuf/stubs/stringpiece.cc.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/stringpiece.cc.obj
+.PHONY : src/google/protobuf/stubs/stringpiece.cc.obj
 
 src/google/protobuf/stubs/stringpiece.i: src/google/protobuf/stubs/stringpiece.cc.i
 
@@ -5819,14 +5819,14 @@ src/google/protobuf/stubs/stringpiece.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/stringpiece.cc.s
 .PHONY : src/google/protobuf/stubs/stringpiece.cc.s
 
-src/google/protobuf/stubs/stringpiece_unittest.o: src/google/protobuf/stubs/stringpiece_unittest.cc.o
+src/google/protobuf/stubs/stringpiece_unittest.obj: src/google/protobuf/stubs/stringpiece_unittest.cc.obj
 
-.PHONY : src/google/protobuf/stubs/stringpiece_unittest.o
+.PHONY : src/google/protobuf/stubs/stringpiece_unittest.obj
 
 # target to build an object file
-src/google/protobuf/stubs/stringpiece_unittest.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/stubs/stringpiece_unittest.cc.o
-.PHONY : src/google/protobuf/stubs/stringpiece_unittest.cc.o
+src/google/protobuf/stubs/stringpiece_unittest.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/stubs/stringpiece_unittest.cc.obj
+.PHONY : src/google/protobuf/stubs/stringpiece_unittest.cc.obj
 
 src/google/protobuf/stubs/stringpiece_unittest.i: src/google/protobuf/stubs/stringpiece_unittest.cc.i
 
@@ -5846,15 +5846,15 @@ src/google/protobuf/stubs/stringpiece_unittest.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/stubs/stringpiece_unittest.cc.s
 .PHONY : src/google/protobuf/stubs/stringpiece_unittest.cc.s
 
-src/google/protobuf/stubs/stringprintf.o: src/google/protobuf/stubs/stringprintf.cc.o
+src/google/protobuf/stubs/stringprintf.obj: src/google/protobuf/stubs/stringprintf.cc.obj
 
-.PHONY : src/google/protobuf/stubs/stringprintf.o
+.PHONY : src/google/protobuf/stubs/stringprintf.obj
 
 # target to build an object file
-src/google/protobuf/stubs/stringprintf.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf-lite.dir/build.make CMakeFiles/libprotobuf-lite.dir/src/google/protobuf/stubs/stringprintf.cc.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/stringprintf.cc.o
-.PHONY : src/google/protobuf/stubs/stringprintf.cc.o
+src/google/protobuf/stubs/stringprintf.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf-lite.dir/build.make CMakeFiles/libprotobuf-lite.dir/src/google/protobuf/stubs/stringprintf.cc.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/stringprintf.cc.obj
+.PHONY : src/google/protobuf/stubs/stringprintf.cc.obj
 
 src/google/protobuf/stubs/stringprintf.i: src/google/protobuf/stubs/stringprintf.cc.i
 
@@ -5876,14 +5876,14 @@ src/google/protobuf/stubs/stringprintf.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/stringprintf.cc.s
 .PHONY : src/google/protobuf/stubs/stringprintf.cc.s
 
-src/google/protobuf/stubs/stringprintf_unittest.o: src/google/protobuf/stubs/stringprintf_unittest.cc.o
+src/google/protobuf/stubs/stringprintf_unittest.obj: src/google/protobuf/stubs/stringprintf_unittest.cc.obj
 
-.PHONY : src/google/protobuf/stubs/stringprintf_unittest.o
+.PHONY : src/google/protobuf/stubs/stringprintf_unittest.obj
 
 # target to build an object file
-src/google/protobuf/stubs/stringprintf_unittest.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/stubs/stringprintf_unittest.cc.o
-.PHONY : src/google/protobuf/stubs/stringprintf_unittest.cc.o
+src/google/protobuf/stubs/stringprintf_unittest.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/stubs/stringprintf_unittest.cc.obj
+.PHONY : src/google/protobuf/stubs/stringprintf_unittest.cc.obj
 
 src/google/protobuf/stubs/stringprintf_unittest.i: src/google/protobuf/stubs/stringprintf_unittest.cc.i
 
@@ -5903,15 +5903,15 @@ src/google/protobuf/stubs/stringprintf_unittest.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/stubs/stringprintf_unittest.cc.s
 .PHONY : src/google/protobuf/stubs/stringprintf_unittest.cc.s
 
-src/google/protobuf/stubs/structurally_valid.o: src/google/protobuf/stubs/structurally_valid.cc.o
+src/google/protobuf/stubs/structurally_valid.obj: src/google/protobuf/stubs/structurally_valid.cc.obj
 
-.PHONY : src/google/protobuf/stubs/structurally_valid.o
+.PHONY : src/google/protobuf/stubs/structurally_valid.obj
 
 # target to build an object file
-src/google/protobuf/stubs/structurally_valid.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf-lite.dir/build.make CMakeFiles/libprotobuf-lite.dir/src/google/protobuf/stubs/structurally_valid.cc.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/structurally_valid.cc.o
-.PHONY : src/google/protobuf/stubs/structurally_valid.cc.o
+src/google/protobuf/stubs/structurally_valid.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf-lite.dir/build.make CMakeFiles/libprotobuf-lite.dir/src/google/protobuf/stubs/structurally_valid.cc.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/structurally_valid.cc.obj
+.PHONY : src/google/protobuf/stubs/structurally_valid.cc.obj
 
 src/google/protobuf/stubs/structurally_valid.i: src/google/protobuf/stubs/structurally_valid.cc.i
 
@@ -5933,14 +5933,14 @@ src/google/protobuf/stubs/structurally_valid.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/structurally_valid.cc.s
 .PHONY : src/google/protobuf/stubs/structurally_valid.cc.s
 
-src/google/protobuf/stubs/structurally_valid_unittest.o: src/google/protobuf/stubs/structurally_valid_unittest.cc.o
+src/google/protobuf/stubs/structurally_valid_unittest.obj: src/google/protobuf/stubs/structurally_valid_unittest.cc.obj
 
-.PHONY : src/google/protobuf/stubs/structurally_valid_unittest.o
+.PHONY : src/google/protobuf/stubs/structurally_valid_unittest.obj
 
 # target to build an object file
-src/google/protobuf/stubs/structurally_valid_unittest.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/stubs/structurally_valid_unittest.cc.o
-.PHONY : src/google/protobuf/stubs/structurally_valid_unittest.cc.o
+src/google/protobuf/stubs/structurally_valid_unittest.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/stubs/structurally_valid_unittest.cc.obj
+.PHONY : src/google/protobuf/stubs/structurally_valid_unittest.cc.obj
 
 src/google/protobuf/stubs/structurally_valid_unittest.i: src/google/protobuf/stubs/structurally_valid_unittest.cc.i
 
@@ -5960,15 +5960,15 @@ src/google/protobuf/stubs/structurally_valid_unittest.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/stubs/structurally_valid_unittest.cc.s
 .PHONY : src/google/protobuf/stubs/structurally_valid_unittest.cc.s
 
-src/google/protobuf/stubs/strutil.o: src/google/protobuf/stubs/strutil.cc.o
+src/google/protobuf/stubs/strutil.obj: src/google/protobuf/stubs/strutil.cc.obj
 
-.PHONY : src/google/protobuf/stubs/strutil.o
+.PHONY : src/google/protobuf/stubs/strutil.obj
 
 # target to build an object file
-src/google/protobuf/stubs/strutil.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf-lite.dir/build.make CMakeFiles/libprotobuf-lite.dir/src/google/protobuf/stubs/strutil.cc.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/strutil.cc.o
-.PHONY : src/google/protobuf/stubs/strutil.cc.o
+src/google/protobuf/stubs/strutil.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf-lite.dir/build.make CMakeFiles/libprotobuf-lite.dir/src/google/protobuf/stubs/strutil.cc.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/strutil.cc.obj
+.PHONY : src/google/protobuf/stubs/strutil.cc.obj
 
 src/google/protobuf/stubs/strutil.i: src/google/protobuf/stubs/strutil.cc.i
 
@@ -5990,14 +5990,14 @@ src/google/protobuf/stubs/strutil.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/strutil.cc.s
 .PHONY : src/google/protobuf/stubs/strutil.cc.s
 
-src/google/protobuf/stubs/strutil_unittest.o: src/google/protobuf/stubs/strutil_unittest.cc.o
+src/google/protobuf/stubs/strutil_unittest.obj: src/google/protobuf/stubs/strutil_unittest.cc.obj
 
-.PHONY : src/google/protobuf/stubs/strutil_unittest.o
+.PHONY : src/google/protobuf/stubs/strutil_unittest.obj
 
 # target to build an object file
-src/google/protobuf/stubs/strutil_unittest.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/stubs/strutil_unittest.cc.o
-.PHONY : src/google/protobuf/stubs/strutil_unittest.cc.o
+src/google/protobuf/stubs/strutil_unittest.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/stubs/strutil_unittest.cc.obj
+.PHONY : src/google/protobuf/stubs/strutil_unittest.cc.obj
 
 src/google/protobuf/stubs/strutil_unittest.i: src/google/protobuf/stubs/strutil_unittest.cc.i
 
@@ -6017,14 +6017,14 @@ src/google/protobuf/stubs/strutil_unittest.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/stubs/strutil_unittest.cc.s
 .PHONY : src/google/protobuf/stubs/strutil_unittest.cc.s
 
-src/google/protobuf/stubs/substitute.o: src/google/protobuf/stubs/substitute.cc.o
+src/google/protobuf/stubs/substitute.obj: src/google/protobuf/stubs/substitute.cc.obj
 
-.PHONY : src/google/protobuf/stubs/substitute.o
+.PHONY : src/google/protobuf/stubs/substitute.obj
 
 # target to build an object file
-src/google/protobuf/stubs/substitute.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/substitute.cc.o
-.PHONY : src/google/protobuf/stubs/substitute.cc.o
+src/google/protobuf/stubs/substitute.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/substitute.cc.obj
+.PHONY : src/google/protobuf/stubs/substitute.cc.obj
 
 src/google/protobuf/stubs/substitute.i: src/google/protobuf/stubs/substitute.cc.i
 
@@ -6044,14 +6044,14 @@ src/google/protobuf/stubs/substitute.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/substitute.cc.s
 .PHONY : src/google/protobuf/stubs/substitute.cc.s
 
-src/google/protobuf/stubs/template_util_unittest.o: src/google/protobuf/stubs/template_util_unittest.cc.o
+src/google/protobuf/stubs/template_util_unittest.obj: src/google/protobuf/stubs/template_util_unittest.cc.obj
 
-.PHONY : src/google/protobuf/stubs/template_util_unittest.o
+.PHONY : src/google/protobuf/stubs/template_util_unittest.obj
 
 # target to build an object file
-src/google/protobuf/stubs/template_util_unittest.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/stubs/template_util_unittest.cc.o
-.PHONY : src/google/protobuf/stubs/template_util_unittest.cc.o
+src/google/protobuf/stubs/template_util_unittest.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/stubs/template_util_unittest.cc.obj
+.PHONY : src/google/protobuf/stubs/template_util_unittest.cc.obj
 
 src/google/protobuf/stubs/template_util_unittest.i: src/google/protobuf/stubs/template_util_unittest.cc.i
 
@@ -6071,15 +6071,15 @@ src/google/protobuf/stubs/template_util_unittest.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/stubs/template_util_unittest.cc.s
 .PHONY : src/google/protobuf/stubs/template_util_unittest.cc.s
 
-src/google/protobuf/stubs/time.o: src/google/protobuf/stubs/time.cc.o
+src/google/protobuf/stubs/time.obj: src/google/protobuf/stubs/time.cc.obj
 
-.PHONY : src/google/protobuf/stubs/time.o
+.PHONY : src/google/protobuf/stubs/time.obj
 
 # target to build an object file
-src/google/protobuf/stubs/time.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf-lite.dir/build.make CMakeFiles/libprotobuf-lite.dir/src/google/protobuf/stubs/time.cc.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/time.cc.o
-.PHONY : src/google/protobuf/stubs/time.cc.o
+src/google/protobuf/stubs/time.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf-lite.dir/build.make CMakeFiles/libprotobuf-lite.dir/src/google/protobuf/stubs/time.cc.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/time.cc.obj
+.PHONY : src/google/protobuf/stubs/time.cc.obj
 
 src/google/protobuf/stubs/time.i: src/google/protobuf/stubs/time.cc.i
 
@@ -6101,14 +6101,14 @@ src/google/protobuf/stubs/time.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/stubs/time.cc.s
 .PHONY : src/google/protobuf/stubs/time.cc.s
 
-src/google/protobuf/stubs/time_test.o: src/google/protobuf/stubs/time_test.cc.o
+src/google/protobuf/stubs/time_test.obj: src/google/protobuf/stubs/time_test.cc.obj
 
-.PHONY : src/google/protobuf/stubs/time_test.o
+.PHONY : src/google/protobuf/stubs/time_test.obj
 
 # target to build an object file
-src/google/protobuf/stubs/time_test.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/stubs/time_test.cc.o
-.PHONY : src/google/protobuf/stubs/time_test.cc.o
+src/google/protobuf/stubs/time_test.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/stubs/time_test.cc.obj
+.PHONY : src/google/protobuf/stubs/time_test.cc.obj
 
 src/google/protobuf/stubs/time_test.i: src/google/protobuf/stubs/time_test.cc.i
 
@@ -6128,14 +6128,14 @@ src/google/protobuf/stubs/time_test.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/stubs/time_test.cc.s
 .PHONY : src/google/protobuf/stubs/time_test.cc.s
 
-src/google/protobuf/test_util.o: src/google/protobuf/test_util.cc.o
+src/google/protobuf/test_util.obj: src/google/protobuf/test_util.cc.obj
 
-.PHONY : src/google/protobuf/test_util.o
+.PHONY : src/google/protobuf/test_util.obj
 
 # target to build an object file
-src/google/protobuf/test_util.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/test_util.cc.o
-.PHONY : src/google/protobuf/test_util.cc.o
+src/google/protobuf/test_util.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/test_util.cc.obj
+.PHONY : src/google/protobuf/test_util.cc.obj
 
 src/google/protobuf/test_util.i: src/google/protobuf/test_util.cc.i
 
@@ -6155,15 +6155,15 @@ src/google/protobuf/test_util.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/test_util.cc.s
 .PHONY : src/google/protobuf/test_util.cc.s
 
-src/google/protobuf/test_util_lite.o: src/google/protobuf/test_util_lite.cc.o
+src/google/protobuf/test_util_lite.obj: src/google/protobuf/test_util_lite.cc.obj
 
-.PHONY : src/google/protobuf/test_util_lite.o
+.PHONY : src/google/protobuf/test_util_lite.obj
 
 # target to build an object file
-src/google/protobuf/test_util_lite.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-lite-test-common.dir/build.make CMakeFiles/protobuf-lite-test-common.dir/src/google/protobuf/test_util_lite.cc.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/test_util_lite.cc.o
-.PHONY : src/google/protobuf/test_util_lite.cc.o
+src/google/protobuf/test_util_lite.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-lite-test-common.dir/build.make CMakeFiles/protobuf-lite-test-common.dir/src/google/protobuf/test_util_lite.cc.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/test_util_lite.cc.obj
+.PHONY : src/google/protobuf/test_util_lite.cc.obj
 
 src/google/protobuf/test_util_lite.i: src/google/protobuf/test_util_lite.cc.i
 
@@ -6185,15 +6185,15 @@ src/google/protobuf/test_util_lite.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/test_util_lite.cc.s
 .PHONY : src/google/protobuf/test_util_lite.cc.s
 
-src/google/protobuf/testing/file.o: src/google/protobuf/testing/file.cc.o
+src/google/protobuf/testing/file.obj: src/google/protobuf/testing/file.cc.obj
 
-.PHONY : src/google/protobuf/testing/file.o
+.PHONY : src/google/protobuf/testing/file.obj
 
 # target to build an object file
-src/google/protobuf/testing/file.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_plugin.dir/build.make CMakeFiles/test_plugin.dir/src/google/protobuf/testing/file.cc.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/testing/file.cc.o
-.PHONY : src/google/protobuf/testing/file.cc.o
+src/google/protobuf/testing/file.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_plugin.dir/build.make CMakeFiles/test_plugin.dir/src/google/protobuf/testing/file.cc.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/testing/file.cc.obj
+.PHONY : src/google/protobuf/testing/file.cc.obj
 
 src/google/protobuf/testing/file.i: src/google/protobuf/testing/file.cc.i
 
@@ -6215,14 +6215,14 @@ src/google/protobuf/testing/file.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/testing/file.cc.s
 .PHONY : src/google/protobuf/testing/file.cc.s
 
-src/google/protobuf/testing/googletest.o: src/google/protobuf/testing/googletest.cc.o
+src/google/protobuf/testing/googletest.obj: src/google/protobuf/testing/googletest.cc.obj
 
-.PHONY : src/google/protobuf/testing/googletest.o
+.PHONY : src/google/protobuf/testing/googletest.obj
 
 # target to build an object file
-src/google/protobuf/testing/googletest.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/testing/googletest.cc.o
-.PHONY : src/google/protobuf/testing/googletest.cc.o
+src/google/protobuf/testing/googletest.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/testing/googletest.cc.obj
+.PHONY : src/google/protobuf/testing/googletest.cc.obj
 
 src/google/protobuf/testing/googletest.i: src/google/protobuf/testing/googletest.cc.i
 
@@ -6242,14 +6242,14 @@ src/google/protobuf/testing/googletest.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/testing/googletest.cc.s
 .PHONY : src/google/protobuf/testing/googletest.cc.s
 
-src/google/protobuf/text_format.o: src/google/protobuf/text_format.cc.o
+src/google/protobuf/text_format.obj: src/google/protobuf/text_format.cc.obj
 
-.PHONY : src/google/protobuf/text_format.o
+.PHONY : src/google/protobuf/text_format.obj
 
 # target to build an object file
-src/google/protobuf/text_format.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/text_format.cc.o
-.PHONY : src/google/protobuf/text_format.cc.o
+src/google/protobuf/text_format.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/text_format.cc.obj
+.PHONY : src/google/protobuf/text_format.cc.obj
 
 src/google/protobuf/text_format.i: src/google/protobuf/text_format.cc.i
 
@@ -6269,14 +6269,14 @@ src/google/protobuf/text_format.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/text_format.cc.s
 .PHONY : src/google/protobuf/text_format.cc.s
 
-src/google/protobuf/text_format_unittest.o: src/google/protobuf/text_format_unittest.cc.o
+src/google/protobuf/text_format_unittest.obj: src/google/protobuf/text_format_unittest.cc.obj
 
-.PHONY : src/google/protobuf/text_format_unittest.o
+.PHONY : src/google/protobuf/text_format_unittest.obj
 
 # target to build an object file
-src/google/protobuf/text_format_unittest.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/text_format_unittest.cc.o
-.PHONY : src/google/protobuf/text_format_unittest.cc.o
+src/google/protobuf/text_format_unittest.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/text_format_unittest.cc.obj
+.PHONY : src/google/protobuf/text_format_unittest.cc.obj
 
 src/google/protobuf/text_format_unittest.i: src/google/protobuf/text_format_unittest.cc.i
 
@@ -6296,14 +6296,14 @@ src/google/protobuf/text_format_unittest.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/text_format_unittest.cc.s
 .PHONY : src/google/protobuf/text_format_unittest.cc.s
 
-src/google/protobuf/timestamp.pb.o: src/google/protobuf/timestamp.pb.cc.o
+src/google/protobuf/timestamp.pb.obj: src/google/protobuf/timestamp.pb.cc.obj
 
-.PHONY : src/google/protobuf/timestamp.pb.o
+.PHONY : src/google/protobuf/timestamp.pb.obj
 
 # target to build an object file
-src/google/protobuf/timestamp.pb.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/timestamp.pb.cc.o
-.PHONY : src/google/protobuf/timestamp.pb.cc.o
+src/google/protobuf/timestamp.pb.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/timestamp.pb.cc.obj
+.PHONY : src/google/protobuf/timestamp.pb.cc.obj
 
 src/google/protobuf/timestamp.pb.i: src/google/protobuf/timestamp.pb.cc.i
 
@@ -6323,14 +6323,14 @@ src/google/protobuf/timestamp.pb.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/timestamp.pb.cc.s
 .PHONY : src/google/protobuf/timestamp.pb.cc.s
 
-src/google/protobuf/type.pb.o: src/google/protobuf/type.pb.cc.o
+src/google/protobuf/type.pb.obj: src/google/protobuf/type.pb.cc.obj
 
-.PHONY : src/google/protobuf/type.pb.o
+.PHONY : src/google/protobuf/type.pb.obj
 
 # target to build an object file
-src/google/protobuf/type.pb.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/type.pb.cc.o
-.PHONY : src/google/protobuf/type.pb.cc.o
+src/google/protobuf/type.pb.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/type.pb.cc.obj
+.PHONY : src/google/protobuf/type.pb.cc.obj
 
 src/google/protobuf/type.pb.i: src/google/protobuf/type.pb.cc.i
 
@@ -6350,14 +6350,14 @@ src/google/protobuf/type.pb.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/type.pb.cc.s
 .PHONY : src/google/protobuf/type.pb.cc.s
 
-src/google/protobuf/unittest.pb.o: src/google/protobuf/unittest.pb.cc.o
+src/google/protobuf/unittest.pb.obj: src/google/protobuf/unittest.pb.cc.obj
 
-.PHONY : src/google/protobuf/unittest.pb.o
+.PHONY : src/google/protobuf/unittest.pb.obj
 
 # target to build an object file
-src/google/protobuf/unittest.pb.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest.pb.cc.o
-.PHONY : src/google/protobuf/unittest.pb.cc.o
+src/google/protobuf/unittest.pb.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest.pb.cc.obj
+.PHONY : src/google/protobuf/unittest.pb.cc.obj
 
 src/google/protobuf/unittest.pb.i: src/google/protobuf/unittest.pb.cc.i
 
@@ -6377,14 +6377,14 @@ src/google/protobuf/unittest.pb.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest.pb.cc.s
 .PHONY : src/google/protobuf/unittest.pb.cc.s
 
-src/google/protobuf/unittest_arena.pb.o: src/google/protobuf/unittest_arena.pb.cc.o
+src/google/protobuf/unittest_arena.pb.obj: src/google/protobuf/unittest_arena.pb.cc.obj
 
-.PHONY : src/google/protobuf/unittest_arena.pb.o
+.PHONY : src/google/protobuf/unittest_arena.pb.obj
 
 # target to build an object file
-src/google/protobuf/unittest_arena.pb.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_arena.pb.cc.o
-.PHONY : src/google/protobuf/unittest_arena.pb.cc.o
+src/google/protobuf/unittest_arena.pb.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_arena.pb.cc.obj
+.PHONY : src/google/protobuf/unittest_arena.pb.cc.obj
 
 src/google/protobuf/unittest_arena.pb.i: src/google/protobuf/unittest_arena.pb.cc.i
 
@@ -6404,14 +6404,14 @@ src/google/protobuf/unittest_arena.pb.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_arena.pb.cc.s
 .PHONY : src/google/protobuf/unittest_arena.pb.cc.s
 
-src/google/protobuf/unittest_custom_options.pb.o: src/google/protobuf/unittest_custom_options.pb.cc.o
+src/google/protobuf/unittest_custom_options.pb.obj: src/google/protobuf/unittest_custom_options.pb.cc.obj
 
-.PHONY : src/google/protobuf/unittest_custom_options.pb.o
+.PHONY : src/google/protobuf/unittest_custom_options.pb.obj
 
 # target to build an object file
-src/google/protobuf/unittest_custom_options.pb.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_custom_options.pb.cc.o
-.PHONY : src/google/protobuf/unittest_custom_options.pb.cc.o
+src/google/protobuf/unittest_custom_options.pb.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_custom_options.pb.cc.obj
+.PHONY : src/google/protobuf/unittest_custom_options.pb.cc.obj
 
 src/google/protobuf/unittest_custom_options.pb.i: src/google/protobuf/unittest_custom_options.pb.cc.i
 
@@ -6431,14 +6431,14 @@ src/google/protobuf/unittest_custom_options.pb.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_custom_options.pb.cc.s
 .PHONY : src/google/protobuf/unittest_custom_options.pb.cc.s
 
-src/google/protobuf/unittest_drop_unknown_fields.pb.o: src/google/protobuf/unittest_drop_unknown_fields.pb.cc.o
+src/google/protobuf/unittest_drop_unknown_fields.pb.obj: src/google/protobuf/unittest_drop_unknown_fields.pb.cc.obj
 
-.PHONY : src/google/protobuf/unittest_drop_unknown_fields.pb.o
+.PHONY : src/google/protobuf/unittest_drop_unknown_fields.pb.obj
 
 # target to build an object file
-src/google/protobuf/unittest_drop_unknown_fields.pb.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_drop_unknown_fields.pb.cc.o
-.PHONY : src/google/protobuf/unittest_drop_unknown_fields.pb.cc.o
+src/google/protobuf/unittest_drop_unknown_fields.pb.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_drop_unknown_fields.pb.cc.obj
+.PHONY : src/google/protobuf/unittest_drop_unknown_fields.pb.cc.obj
 
 src/google/protobuf/unittest_drop_unknown_fields.pb.i: src/google/protobuf/unittest_drop_unknown_fields.pb.cc.i
 
@@ -6458,14 +6458,14 @@ src/google/protobuf/unittest_drop_unknown_fields.pb.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_drop_unknown_fields.pb.cc.s
 .PHONY : src/google/protobuf/unittest_drop_unknown_fields.pb.cc.s
 
-src/google/protobuf/unittest_embed_optimize_for.pb.o: src/google/protobuf/unittest_embed_optimize_for.pb.cc.o
+src/google/protobuf/unittest_embed_optimize_for.pb.obj: src/google/protobuf/unittest_embed_optimize_for.pb.cc.obj
 
-.PHONY : src/google/protobuf/unittest_embed_optimize_for.pb.o
+.PHONY : src/google/protobuf/unittest_embed_optimize_for.pb.obj
 
 # target to build an object file
-src/google/protobuf/unittest_embed_optimize_for.pb.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_embed_optimize_for.pb.cc.o
-.PHONY : src/google/protobuf/unittest_embed_optimize_for.pb.cc.o
+src/google/protobuf/unittest_embed_optimize_for.pb.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_embed_optimize_for.pb.cc.obj
+.PHONY : src/google/protobuf/unittest_embed_optimize_for.pb.cc.obj
 
 src/google/protobuf/unittest_embed_optimize_for.pb.i: src/google/protobuf/unittest_embed_optimize_for.pb.cc.i
 
@@ -6485,14 +6485,14 @@ src/google/protobuf/unittest_embed_optimize_for.pb.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_embed_optimize_for.pb.cc.s
 .PHONY : src/google/protobuf/unittest_embed_optimize_for.pb.cc.s
 
-src/google/protobuf/unittest_empty.pb.o: src/google/protobuf/unittest_empty.pb.cc.o
+src/google/protobuf/unittest_empty.pb.obj: src/google/protobuf/unittest_empty.pb.cc.obj
 
-.PHONY : src/google/protobuf/unittest_empty.pb.o
+.PHONY : src/google/protobuf/unittest_empty.pb.obj
 
 # target to build an object file
-src/google/protobuf/unittest_empty.pb.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_empty.pb.cc.o
-.PHONY : src/google/protobuf/unittest_empty.pb.cc.o
+src/google/protobuf/unittest_empty.pb.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_empty.pb.cc.obj
+.PHONY : src/google/protobuf/unittest_empty.pb.cc.obj
 
 src/google/protobuf/unittest_empty.pb.i: src/google/protobuf/unittest_empty.pb.cc.i
 
@@ -6512,14 +6512,14 @@ src/google/protobuf/unittest_empty.pb.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_empty.pb.cc.s
 .PHONY : src/google/protobuf/unittest_empty.pb.cc.s
 
-src/google/protobuf/unittest_enormous_descriptor.pb.o: src/google/protobuf/unittest_enormous_descriptor.pb.cc.o
+src/google/protobuf/unittest_enormous_descriptor.pb.obj: src/google/protobuf/unittest_enormous_descriptor.pb.cc.obj
 
-.PHONY : src/google/protobuf/unittest_enormous_descriptor.pb.o
+.PHONY : src/google/protobuf/unittest_enormous_descriptor.pb.obj
 
 # target to build an object file
-src/google/protobuf/unittest_enormous_descriptor.pb.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_enormous_descriptor.pb.cc.o
-.PHONY : src/google/protobuf/unittest_enormous_descriptor.pb.cc.o
+src/google/protobuf/unittest_enormous_descriptor.pb.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_enormous_descriptor.pb.cc.obj
+.PHONY : src/google/protobuf/unittest_enormous_descriptor.pb.cc.obj
 
 src/google/protobuf/unittest_enormous_descriptor.pb.i: src/google/protobuf/unittest_enormous_descriptor.pb.cc.i
 
@@ -6539,14 +6539,14 @@ src/google/protobuf/unittest_enormous_descriptor.pb.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_enormous_descriptor.pb.cc.s
 .PHONY : src/google/protobuf/unittest_enormous_descriptor.pb.cc.s
 
-src/google/protobuf/unittest_import.pb.o: src/google/protobuf/unittest_import.pb.cc.o
+src/google/protobuf/unittest_import.pb.obj: src/google/protobuf/unittest_import.pb.cc.obj
 
-.PHONY : src/google/protobuf/unittest_import.pb.o
+.PHONY : src/google/protobuf/unittest_import.pb.obj
 
 # target to build an object file
-src/google/protobuf/unittest_import.pb.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_import.pb.cc.o
-.PHONY : src/google/protobuf/unittest_import.pb.cc.o
+src/google/protobuf/unittest_import.pb.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_import.pb.cc.obj
+.PHONY : src/google/protobuf/unittest_import.pb.cc.obj
 
 src/google/protobuf/unittest_import.pb.i: src/google/protobuf/unittest_import.pb.cc.i
 
@@ -6566,14 +6566,14 @@ src/google/protobuf/unittest_import.pb.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_import.pb.cc.s
 .PHONY : src/google/protobuf/unittest_import.pb.cc.s
 
-src/google/protobuf/unittest_import_lite.pb.o: src/google/protobuf/unittest_import_lite.pb.cc.o
+src/google/protobuf/unittest_import_lite.pb.obj: src/google/protobuf/unittest_import_lite.pb.cc.obj
 
-.PHONY : src/google/protobuf/unittest_import_lite.pb.o
+.PHONY : src/google/protobuf/unittest_import_lite.pb.obj
 
 # target to build an object file
-src/google/protobuf/unittest_import_lite.pb.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-lite-test-common.dir/build.make CMakeFiles/protobuf-lite-test-common.dir/src/google/protobuf/unittest_import_lite.pb.cc.o
-.PHONY : src/google/protobuf/unittest_import_lite.pb.cc.o
+src/google/protobuf/unittest_import_lite.pb.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-lite-test-common.dir/build.make CMakeFiles/protobuf-lite-test-common.dir/src/google/protobuf/unittest_import_lite.pb.cc.obj
+.PHONY : src/google/protobuf/unittest_import_lite.pb.cc.obj
 
 src/google/protobuf/unittest_import_lite.pb.i: src/google/protobuf/unittest_import_lite.pb.cc.i
 
@@ -6593,14 +6593,14 @@ src/google/protobuf/unittest_import_lite.pb.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-lite-test-common.dir/build.make CMakeFiles/protobuf-lite-test-common.dir/src/google/protobuf/unittest_import_lite.pb.cc.s
 .PHONY : src/google/protobuf/unittest_import_lite.pb.cc.s
 
-src/google/protobuf/unittest_import_public.pb.o: src/google/protobuf/unittest_import_public.pb.cc.o
+src/google/protobuf/unittest_import_public.pb.obj: src/google/protobuf/unittest_import_public.pb.cc.obj
 
-.PHONY : src/google/protobuf/unittest_import_public.pb.o
+.PHONY : src/google/protobuf/unittest_import_public.pb.obj
 
 # target to build an object file
-src/google/protobuf/unittest_import_public.pb.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_import_public.pb.cc.o
-.PHONY : src/google/protobuf/unittest_import_public.pb.cc.o
+src/google/protobuf/unittest_import_public.pb.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_import_public.pb.cc.obj
+.PHONY : src/google/protobuf/unittest_import_public.pb.cc.obj
 
 src/google/protobuf/unittest_import_public.pb.i: src/google/protobuf/unittest_import_public.pb.cc.i
 
@@ -6620,14 +6620,14 @@ src/google/protobuf/unittest_import_public.pb.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_import_public.pb.cc.s
 .PHONY : src/google/protobuf/unittest_import_public.pb.cc.s
 
-src/google/protobuf/unittest_import_public_lite.pb.o: src/google/protobuf/unittest_import_public_lite.pb.cc.o
+src/google/protobuf/unittest_import_public_lite.pb.obj: src/google/protobuf/unittest_import_public_lite.pb.cc.obj
 
-.PHONY : src/google/protobuf/unittest_import_public_lite.pb.o
+.PHONY : src/google/protobuf/unittest_import_public_lite.pb.obj
 
 # target to build an object file
-src/google/protobuf/unittest_import_public_lite.pb.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-lite-test-common.dir/build.make CMakeFiles/protobuf-lite-test-common.dir/src/google/protobuf/unittest_import_public_lite.pb.cc.o
-.PHONY : src/google/protobuf/unittest_import_public_lite.pb.cc.o
+src/google/protobuf/unittest_import_public_lite.pb.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-lite-test-common.dir/build.make CMakeFiles/protobuf-lite-test-common.dir/src/google/protobuf/unittest_import_public_lite.pb.cc.obj
+.PHONY : src/google/protobuf/unittest_import_public_lite.pb.cc.obj
 
 src/google/protobuf/unittest_import_public_lite.pb.i: src/google/protobuf/unittest_import_public_lite.pb.cc.i
 
@@ -6647,14 +6647,14 @@ src/google/protobuf/unittest_import_public_lite.pb.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-lite-test-common.dir/build.make CMakeFiles/protobuf-lite-test-common.dir/src/google/protobuf/unittest_import_public_lite.pb.cc.s
 .PHONY : src/google/protobuf/unittest_import_public_lite.pb.cc.s
 
-src/google/protobuf/unittest_lazy_dependencies.pb.o: src/google/protobuf/unittest_lazy_dependencies.pb.cc.o
+src/google/protobuf/unittest_lazy_dependencies.pb.obj: src/google/protobuf/unittest_lazy_dependencies.pb.cc.obj
 
-.PHONY : src/google/protobuf/unittest_lazy_dependencies.pb.o
+.PHONY : src/google/protobuf/unittest_lazy_dependencies.pb.obj
 
 # target to build an object file
-src/google/protobuf/unittest_lazy_dependencies.pb.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_lazy_dependencies.pb.cc.o
-.PHONY : src/google/protobuf/unittest_lazy_dependencies.pb.cc.o
+src/google/protobuf/unittest_lazy_dependencies.pb.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_lazy_dependencies.pb.cc.obj
+.PHONY : src/google/protobuf/unittest_lazy_dependencies.pb.cc.obj
 
 src/google/protobuf/unittest_lazy_dependencies.pb.i: src/google/protobuf/unittest_lazy_dependencies.pb.cc.i
 
@@ -6674,14 +6674,14 @@ src/google/protobuf/unittest_lazy_dependencies.pb.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_lazy_dependencies.pb.cc.s
 .PHONY : src/google/protobuf/unittest_lazy_dependencies.pb.cc.s
 
-src/google/protobuf/unittest_lazy_dependencies_custom_option.pb.o: src/google/protobuf/unittest_lazy_dependencies_custom_option.pb.cc.o
+src/google/protobuf/unittest_lazy_dependencies_custom_option.pb.obj: src/google/protobuf/unittest_lazy_dependencies_custom_option.pb.cc.obj
 
-.PHONY : src/google/protobuf/unittest_lazy_dependencies_custom_option.pb.o
+.PHONY : src/google/protobuf/unittest_lazy_dependencies_custom_option.pb.obj
 
 # target to build an object file
-src/google/protobuf/unittest_lazy_dependencies_custom_option.pb.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_lazy_dependencies_custom_option.pb.cc.o
-.PHONY : src/google/protobuf/unittest_lazy_dependencies_custom_option.pb.cc.o
+src/google/protobuf/unittest_lazy_dependencies_custom_option.pb.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_lazy_dependencies_custom_option.pb.cc.obj
+.PHONY : src/google/protobuf/unittest_lazy_dependencies_custom_option.pb.cc.obj
 
 src/google/protobuf/unittest_lazy_dependencies_custom_option.pb.i: src/google/protobuf/unittest_lazy_dependencies_custom_option.pb.cc.i
 
@@ -6701,14 +6701,14 @@ src/google/protobuf/unittest_lazy_dependencies_custom_option.pb.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_lazy_dependencies_custom_option.pb.cc.s
 .PHONY : src/google/protobuf/unittest_lazy_dependencies_custom_option.pb.cc.s
 
-src/google/protobuf/unittest_lazy_dependencies_enum.pb.o: src/google/protobuf/unittest_lazy_dependencies_enum.pb.cc.o
+src/google/protobuf/unittest_lazy_dependencies_enum.pb.obj: src/google/protobuf/unittest_lazy_dependencies_enum.pb.cc.obj
 
-.PHONY : src/google/protobuf/unittest_lazy_dependencies_enum.pb.o
+.PHONY : src/google/protobuf/unittest_lazy_dependencies_enum.pb.obj
 
 # target to build an object file
-src/google/protobuf/unittest_lazy_dependencies_enum.pb.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_lazy_dependencies_enum.pb.cc.o
-.PHONY : src/google/protobuf/unittest_lazy_dependencies_enum.pb.cc.o
+src/google/protobuf/unittest_lazy_dependencies_enum.pb.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_lazy_dependencies_enum.pb.cc.obj
+.PHONY : src/google/protobuf/unittest_lazy_dependencies_enum.pb.cc.obj
 
 src/google/protobuf/unittest_lazy_dependencies_enum.pb.i: src/google/protobuf/unittest_lazy_dependencies_enum.pb.cc.i
 
@@ -6728,14 +6728,14 @@ src/google/protobuf/unittest_lazy_dependencies_enum.pb.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_lazy_dependencies_enum.pb.cc.s
 .PHONY : src/google/protobuf/unittest_lazy_dependencies_enum.pb.cc.s
 
-src/google/protobuf/unittest_lite.pb.o: src/google/protobuf/unittest_lite.pb.cc.o
+src/google/protobuf/unittest_lite.pb.obj: src/google/protobuf/unittest_lite.pb.cc.obj
 
-.PHONY : src/google/protobuf/unittest_lite.pb.o
+.PHONY : src/google/protobuf/unittest_lite.pb.obj
 
 # target to build an object file
-src/google/protobuf/unittest_lite.pb.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-lite-test-common.dir/build.make CMakeFiles/protobuf-lite-test-common.dir/src/google/protobuf/unittest_lite.pb.cc.o
-.PHONY : src/google/protobuf/unittest_lite.pb.cc.o
+src/google/protobuf/unittest_lite.pb.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-lite-test-common.dir/build.make CMakeFiles/protobuf-lite-test-common.dir/src/google/protobuf/unittest_lite.pb.cc.obj
+.PHONY : src/google/protobuf/unittest_lite.pb.cc.obj
 
 src/google/protobuf/unittest_lite.pb.i: src/google/protobuf/unittest_lite.pb.cc.i
 
@@ -6755,14 +6755,14 @@ src/google/protobuf/unittest_lite.pb.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-lite-test-common.dir/build.make CMakeFiles/protobuf-lite-test-common.dir/src/google/protobuf/unittest_lite.pb.cc.s
 .PHONY : src/google/protobuf/unittest_lite.pb.cc.s
 
-src/google/protobuf/unittest_lite_imports_nonlite.pb.o: src/google/protobuf/unittest_lite_imports_nonlite.pb.cc.o
+src/google/protobuf/unittest_lite_imports_nonlite.pb.obj: src/google/protobuf/unittest_lite_imports_nonlite.pb.cc.obj
 
-.PHONY : src/google/protobuf/unittest_lite_imports_nonlite.pb.o
+.PHONY : src/google/protobuf/unittest_lite_imports_nonlite.pb.obj
 
 # target to build an object file
-src/google/protobuf/unittest_lite_imports_nonlite.pb.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_lite_imports_nonlite.pb.cc.o
-.PHONY : src/google/protobuf/unittest_lite_imports_nonlite.pb.cc.o
+src/google/protobuf/unittest_lite_imports_nonlite.pb.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_lite_imports_nonlite.pb.cc.obj
+.PHONY : src/google/protobuf/unittest_lite_imports_nonlite.pb.cc.obj
 
 src/google/protobuf/unittest_lite_imports_nonlite.pb.i: src/google/protobuf/unittest_lite_imports_nonlite.pb.cc.i
 
@@ -6782,14 +6782,14 @@ src/google/protobuf/unittest_lite_imports_nonlite.pb.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_lite_imports_nonlite.pb.cc.s
 .PHONY : src/google/protobuf/unittest_lite_imports_nonlite.pb.cc.s
 
-src/google/protobuf/unittest_mset.pb.o: src/google/protobuf/unittest_mset.pb.cc.o
+src/google/protobuf/unittest_mset.pb.obj: src/google/protobuf/unittest_mset.pb.cc.obj
 
-.PHONY : src/google/protobuf/unittest_mset.pb.o
+.PHONY : src/google/protobuf/unittest_mset.pb.obj
 
 # target to build an object file
-src/google/protobuf/unittest_mset.pb.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_mset.pb.cc.o
-.PHONY : src/google/protobuf/unittest_mset.pb.cc.o
+src/google/protobuf/unittest_mset.pb.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_mset.pb.cc.obj
+.PHONY : src/google/protobuf/unittest_mset.pb.cc.obj
 
 src/google/protobuf/unittest_mset.pb.i: src/google/protobuf/unittest_mset.pb.cc.i
 
@@ -6809,14 +6809,14 @@ src/google/protobuf/unittest_mset.pb.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_mset.pb.cc.s
 .PHONY : src/google/protobuf/unittest_mset.pb.cc.s
 
-src/google/protobuf/unittest_mset_wire_format.pb.o: src/google/protobuf/unittest_mset_wire_format.pb.cc.o
+src/google/protobuf/unittest_mset_wire_format.pb.obj: src/google/protobuf/unittest_mset_wire_format.pb.cc.obj
 
-.PHONY : src/google/protobuf/unittest_mset_wire_format.pb.o
+.PHONY : src/google/protobuf/unittest_mset_wire_format.pb.obj
 
 # target to build an object file
-src/google/protobuf/unittest_mset_wire_format.pb.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_mset_wire_format.pb.cc.o
-.PHONY : src/google/protobuf/unittest_mset_wire_format.pb.cc.o
+src/google/protobuf/unittest_mset_wire_format.pb.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_mset_wire_format.pb.cc.obj
+.PHONY : src/google/protobuf/unittest_mset_wire_format.pb.cc.obj
 
 src/google/protobuf/unittest_mset_wire_format.pb.i: src/google/protobuf/unittest_mset_wire_format.pb.cc.i
 
@@ -6836,14 +6836,14 @@ src/google/protobuf/unittest_mset_wire_format.pb.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_mset_wire_format.pb.cc.s
 .PHONY : src/google/protobuf/unittest_mset_wire_format.pb.cc.s
 
-src/google/protobuf/unittest_no_field_presence.pb.o: src/google/protobuf/unittest_no_field_presence.pb.cc.o
+src/google/protobuf/unittest_no_field_presence.pb.obj: src/google/protobuf/unittest_no_field_presence.pb.cc.obj
 
-.PHONY : src/google/protobuf/unittest_no_field_presence.pb.o
+.PHONY : src/google/protobuf/unittest_no_field_presence.pb.obj
 
 # target to build an object file
-src/google/protobuf/unittest_no_field_presence.pb.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_no_field_presence.pb.cc.o
-.PHONY : src/google/protobuf/unittest_no_field_presence.pb.cc.o
+src/google/protobuf/unittest_no_field_presence.pb.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_no_field_presence.pb.cc.obj
+.PHONY : src/google/protobuf/unittest_no_field_presence.pb.cc.obj
 
 src/google/protobuf/unittest_no_field_presence.pb.i: src/google/protobuf/unittest_no_field_presence.pb.cc.i
 
@@ -6863,14 +6863,14 @@ src/google/protobuf/unittest_no_field_presence.pb.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_no_field_presence.pb.cc.s
 .PHONY : src/google/protobuf/unittest_no_field_presence.pb.cc.s
 
-src/google/protobuf/unittest_no_generic_services.pb.o: src/google/protobuf/unittest_no_generic_services.pb.cc.o
+src/google/protobuf/unittest_no_generic_services.pb.obj: src/google/protobuf/unittest_no_generic_services.pb.cc.obj
 
-.PHONY : src/google/protobuf/unittest_no_generic_services.pb.o
+.PHONY : src/google/protobuf/unittest_no_generic_services.pb.obj
 
 # target to build an object file
-src/google/protobuf/unittest_no_generic_services.pb.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_no_generic_services.pb.cc.o
-.PHONY : src/google/protobuf/unittest_no_generic_services.pb.cc.o
+src/google/protobuf/unittest_no_generic_services.pb.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_no_generic_services.pb.cc.obj
+.PHONY : src/google/protobuf/unittest_no_generic_services.pb.cc.obj
 
 src/google/protobuf/unittest_no_generic_services.pb.i: src/google/protobuf/unittest_no_generic_services.pb.cc.i
 
@@ -6890,14 +6890,14 @@ src/google/protobuf/unittest_no_generic_services.pb.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_no_generic_services.pb.cc.s
 .PHONY : src/google/protobuf/unittest_no_generic_services.pb.cc.s
 
-src/google/protobuf/unittest_optimize_for.pb.o: src/google/protobuf/unittest_optimize_for.pb.cc.o
+src/google/protobuf/unittest_optimize_for.pb.obj: src/google/protobuf/unittest_optimize_for.pb.cc.obj
 
-.PHONY : src/google/protobuf/unittest_optimize_for.pb.o
+.PHONY : src/google/protobuf/unittest_optimize_for.pb.obj
 
 # target to build an object file
-src/google/protobuf/unittest_optimize_for.pb.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_optimize_for.pb.cc.o
-.PHONY : src/google/protobuf/unittest_optimize_for.pb.cc.o
+src/google/protobuf/unittest_optimize_for.pb.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_optimize_for.pb.cc.obj
+.PHONY : src/google/protobuf/unittest_optimize_for.pb.cc.obj
 
 src/google/protobuf/unittest_optimize_for.pb.i: src/google/protobuf/unittest_optimize_for.pb.cc.i
 
@@ -6917,14 +6917,14 @@ src/google/protobuf/unittest_optimize_for.pb.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_optimize_for.pb.cc.s
 .PHONY : src/google/protobuf/unittest_optimize_for.pb.cc.s
 
-src/google/protobuf/unittest_preserve_unknown_enum.pb.o: src/google/protobuf/unittest_preserve_unknown_enum.pb.cc.o
+src/google/protobuf/unittest_preserve_unknown_enum.pb.obj: src/google/protobuf/unittest_preserve_unknown_enum.pb.cc.obj
 
-.PHONY : src/google/protobuf/unittest_preserve_unknown_enum.pb.o
+.PHONY : src/google/protobuf/unittest_preserve_unknown_enum.pb.obj
 
 # target to build an object file
-src/google/protobuf/unittest_preserve_unknown_enum.pb.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_preserve_unknown_enum.pb.cc.o
-.PHONY : src/google/protobuf/unittest_preserve_unknown_enum.pb.cc.o
+src/google/protobuf/unittest_preserve_unknown_enum.pb.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_preserve_unknown_enum.pb.cc.obj
+.PHONY : src/google/protobuf/unittest_preserve_unknown_enum.pb.cc.obj
 
 src/google/protobuf/unittest_preserve_unknown_enum.pb.i: src/google/protobuf/unittest_preserve_unknown_enum.pb.cc.i
 
@@ -6944,14 +6944,14 @@ src/google/protobuf/unittest_preserve_unknown_enum.pb.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_preserve_unknown_enum.pb.cc.s
 .PHONY : src/google/protobuf/unittest_preserve_unknown_enum.pb.cc.s
 
-src/google/protobuf/unittest_preserve_unknown_enum2.pb.o: src/google/protobuf/unittest_preserve_unknown_enum2.pb.cc.o
+src/google/protobuf/unittest_preserve_unknown_enum2.pb.obj: src/google/protobuf/unittest_preserve_unknown_enum2.pb.cc.obj
 
-.PHONY : src/google/protobuf/unittest_preserve_unknown_enum2.pb.o
+.PHONY : src/google/protobuf/unittest_preserve_unknown_enum2.pb.obj
 
 # target to build an object file
-src/google/protobuf/unittest_preserve_unknown_enum2.pb.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_preserve_unknown_enum2.pb.cc.o
-.PHONY : src/google/protobuf/unittest_preserve_unknown_enum2.pb.cc.o
+src/google/protobuf/unittest_preserve_unknown_enum2.pb.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_preserve_unknown_enum2.pb.cc.obj
+.PHONY : src/google/protobuf/unittest_preserve_unknown_enum2.pb.cc.obj
 
 src/google/protobuf/unittest_preserve_unknown_enum2.pb.i: src/google/protobuf/unittest_preserve_unknown_enum2.pb.cc.i
 
@@ -6971,14 +6971,14 @@ src/google/protobuf/unittest_preserve_unknown_enum2.pb.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_preserve_unknown_enum2.pb.cc.s
 .PHONY : src/google/protobuf/unittest_preserve_unknown_enum2.pb.cc.s
 
-src/google/protobuf/unittest_proto3.pb.o: src/google/protobuf/unittest_proto3.pb.cc.o
+src/google/protobuf/unittest_proto3.pb.obj: src/google/protobuf/unittest_proto3.pb.cc.obj
 
-.PHONY : src/google/protobuf/unittest_proto3.pb.o
+.PHONY : src/google/protobuf/unittest_proto3.pb.obj
 
 # target to build an object file
-src/google/protobuf/unittest_proto3.pb.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_proto3.pb.cc.o
-.PHONY : src/google/protobuf/unittest_proto3.pb.cc.o
+src/google/protobuf/unittest_proto3.pb.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_proto3.pb.cc.obj
+.PHONY : src/google/protobuf/unittest_proto3.pb.cc.obj
 
 src/google/protobuf/unittest_proto3.pb.i: src/google/protobuf/unittest_proto3.pb.cc.i
 
@@ -6998,14 +6998,14 @@ src/google/protobuf/unittest_proto3.pb.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_proto3.pb.cc.s
 .PHONY : src/google/protobuf/unittest_proto3.pb.cc.s
 
-src/google/protobuf/unittest_proto3_arena.pb.o: src/google/protobuf/unittest_proto3_arena.pb.cc.o
+src/google/protobuf/unittest_proto3_arena.pb.obj: src/google/protobuf/unittest_proto3_arena.pb.cc.obj
 
-.PHONY : src/google/protobuf/unittest_proto3_arena.pb.o
+.PHONY : src/google/protobuf/unittest_proto3_arena.pb.obj
 
 # target to build an object file
-src/google/protobuf/unittest_proto3_arena.pb.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_proto3_arena.pb.cc.o
-.PHONY : src/google/protobuf/unittest_proto3_arena.pb.cc.o
+src/google/protobuf/unittest_proto3_arena.pb.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_proto3_arena.pb.cc.obj
+.PHONY : src/google/protobuf/unittest_proto3_arena.pb.cc.obj
 
 src/google/protobuf/unittest_proto3_arena.pb.i: src/google/protobuf/unittest_proto3_arena.pb.cc.i
 
@@ -7025,14 +7025,14 @@ src/google/protobuf/unittest_proto3_arena.pb.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_proto3_arena.pb.cc.s
 .PHONY : src/google/protobuf/unittest_proto3_arena.pb.cc.s
 
-src/google/protobuf/unittest_proto3_arena_lite.pb.o: src/google/protobuf/unittest_proto3_arena_lite.pb.cc.o
+src/google/protobuf/unittest_proto3_arena_lite.pb.obj: src/google/protobuf/unittest_proto3_arena_lite.pb.cc.obj
 
-.PHONY : src/google/protobuf/unittest_proto3_arena_lite.pb.o
+.PHONY : src/google/protobuf/unittest_proto3_arena_lite.pb.obj
 
 # target to build an object file
-src/google/protobuf/unittest_proto3_arena_lite.pb.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_proto3_arena_lite.pb.cc.o
-.PHONY : src/google/protobuf/unittest_proto3_arena_lite.pb.cc.o
+src/google/protobuf/unittest_proto3_arena_lite.pb.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_proto3_arena_lite.pb.cc.obj
+.PHONY : src/google/protobuf/unittest_proto3_arena_lite.pb.cc.obj
 
 src/google/protobuf/unittest_proto3_arena_lite.pb.i: src/google/protobuf/unittest_proto3_arena_lite.pb.cc.i
 
@@ -7052,14 +7052,14 @@ src/google/protobuf/unittest_proto3_arena_lite.pb.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_proto3_arena_lite.pb.cc.s
 .PHONY : src/google/protobuf/unittest_proto3_arena_lite.pb.cc.s
 
-src/google/protobuf/unittest_proto3_lite.pb.o: src/google/protobuf/unittest_proto3_lite.pb.cc.o
+src/google/protobuf/unittest_proto3_lite.pb.obj: src/google/protobuf/unittest_proto3_lite.pb.cc.obj
 
-.PHONY : src/google/protobuf/unittest_proto3_lite.pb.o
+.PHONY : src/google/protobuf/unittest_proto3_lite.pb.obj
 
 # target to build an object file
-src/google/protobuf/unittest_proto3_lite.pb.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_proto3_lite.pb.cc.o
-.PHONY : src/google/protobuf/unittest_proto3_lite.pb.cc.o
+src/google/protobuf/unittest_proto3_lite.pb.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_proto3_lite.pb.cc.obj
+.PHONY : src/google/protobuf/unittest_proto3_lite.pb.cc.obj
 
 src/google/protobuf/unittest_proto3_lite.pb.i: src/google/protobuf/unittest_proto3_lite.pb.cc.i
 
@@ -7079,14 +7079,14 @@ src/google/protobuf/unittest_proto3_lite.pb.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_proto3_lite.pb.cc.s
 .PHONY : src/google/protobuf/unittest_proto3_lite.pb.cc.s
 
-src/google/protobuf/unittest_proto3_optional.pb.o: src/google/protobuf/unittest_proto3_optional.pb.cc.o
+src/google/protobuf/unittest_proto3_optional.pb.obj: src/google/protobuf/unittest_proto3_optional.pb.cc.obj
 
-.PHONY : src/google/protobuf/unittest_proto3_optional.pb.o
+.PHONY : src/google/protobuf/unittest_proto3_optional.pb.obj
 
 # target to build an object file
-src/google/protobuf/unittest_proto3_optional.pb.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_proto3_optional.pb.cc.o
-.PHONY : src/google/protobuf/unittest_proto3_optional.pb.cc.o
+src/google/protobuf/unittest_proto3_optional.pb.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_proto3_optional.pb.cc.obj
+.PHONY : src/google/protobuf/unittest_proto3_optional.pb.cc.obj
 
 src/google/protobuf/unittest_proto3_optional.pb.i: src/google/protobuf/unittest_proto3_optional.pb.cc.i
 
@@ -7106,14 +7106,14 @@ src/google/protobuf/unittest_proto3_optional.pb.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_proto3_optional.pb.cc.s
 .PHONY : src/google/protobuf/unittest_proto3_optional.pb.cc.s
 
-src/google/protobuf/unittest_well_known_types.pb.o: src/google/protobuf/unittest_well_known_types.pb.cc.o
+src/google/protobuf/unittest_well_known_types.pb.obj: src/google/protobuf/unittest_well_known_types.pb.cc.obj
 
-.PHONY : src/google/protobuf/unittest_well_known_types.pb.o
+.PHONY : src/google/protobuf/unittest_well_known_types.pb.obj
 
 # target to build an object file
-src/google/protobuf/unittest_well_known_types.pb.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_well_known_types.pb.cc.o
-.PHONY : src/google/protobuf/unittest_well_known_types.pb.cc.o
+src/google/protobuf/unittest_well_known_types.pb.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_well_known_types.pb.cc.obj
+.PHONY : src/google/protobuf/unittest_well_known_types.pb.cc.obj
 
 src/google/protobuf/unittest_well_known_types.pb.i: src/google/protobuf/unittest_well_known_types.pb.cc.i
 
@@ -7133,14 +7133,14 @@ src/google/protobuf/unittest_well_known_types.pb.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/unittest_well_known_types.pb.cc.s
 .PHONY : src/google/protobuf/unittest_well_known_types.pb.cc.s
 
-src/google/protobuf/unknown_field_set.o: src/google/protobuf/unknown_field_set.cc.o
+src/google/protobuf/unknown_field_set.obj: src/google/protobuf/unknown_field_set.cc.obj
 
-.PHONY : src/google/protobuf/unknown_field_set.o
+.PHONY : src/google/protobuf/unknown_field_set.obj
 
 # target to build an object file
-src/google/protobuf/unknown_field_set.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/unknown_field_set.cc.o
-.PHONY : src/google/protobuf/unknown_field_set.cc.o
+src/google/protobuf/unknown_field_set.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/unknown_field_set.cc.obj
+.PHONY : src/google/protobuf/unknown_field_set.cc.obj
 
 src/google/protobuf/unknown_field_set.i: src/google/protobuf/unknown_field_set.cc.i
 
@@ -7160,14 +7160,14 @@ src/google/protobuf/unknown_field_set.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/unknown_field_set.cc.s
 .PHONY : src/google/protobuf/unknown_field_set.cc.s
 
-src/google/protobuf/unknown_field_set_unittest.o: src/google/protobuf/unknown_field_set_unittest.cc.o
+src/google/protobuf/unknown_field_set_unittest.obj: src/google/protobuf/unknown_field_set_unittest.cc.obj
 
-.PHONY : src/google/protobuf/unknown_field_set_unittest.o
+.PHONY : src/google/protobuf/unknown_field_set_unittest.obj
 
 # target to build an object file
-src/google/protobuf/unknown_field_set_unittest.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/unknown_field_set_unittest.cc.o
-.PHONY : src/google/protobuf/unknown_field_set_unittest.cc.o
+src/google/protobuf/unknown_field_set_unittest.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/unknown_field_set_unittest.cc.obj
+.PHONY : src/google/protobuf/unknown_field_set_unittest.cc.obj
 
 src/google/protobuf/unknown_field_set_unittest.i: src/google/protobuf/unknown_field_set_unittest.cc.i
 
@@ -7187,14 +7187,14 @@ src/google/protobuf/unknown_field_set_unittest.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/unknown_field_set_unittest.cc.s
 .PHONY : src/google/protobuf/unknown_field_set_unittest.cc.s
 
-src/google/protobuf/util/delimited_message_util.o: src/google/protobuf/util/delimited_message_util.cc.o
+src/google/protobuf/util/delimited_message_util.obj: src/google/protobuf/util/delimited_message_util.cc.obj
 
-.PHONY : src/google/protobuf/util/delimited_message_util.o
+.PHONY : src/google/protobuf/util/delimited_message_util.obj
 
 # target to build an object file
-src/google/protobuf/util/delimited_message_util.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/util/delimited_message_util.cc.o
-.PHONY : src/google/protobuf/util/delimited_message_util.cc.o
+src/google/protobuf/util/delimited_message_util.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/util/delimited_message_util.cc.obj
+.PHONY : src/google/protobuf/util/delimited_message_util.cc.obj
 
 src/google/protobuf/util/delimited_message_util.i: src/google/protobuf/util/delimited_message_util.cc.i
 
@@ -7214,14 +7214,14 @@ src/google/protobuf/util/delimited_message_util.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/util/delimited_message_util.cc.s
 .PHONY : src/google/protobuf/util/delimited_message_util.cc.s
 
-src/google/protobuf/util/delimited_message_util_test.o: src/google/protobuf/util/delimited_message_util_test.cc.o
+src/google/protobuf/util/delimited_message_util_test.obj: src/google/protobuf/util/delimited_message_util_test.cc.obj
 
-.PHONY : src/google/protobuf/util/delimited_message_util_test.o
+.PHONY : src/google/protobuf/util/delimited_message_util_test.obj
 
 # target to build an object file
-src/google/protobuf/util/delimited_message_util_test.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/util/delimited_message_util_test.cc.o
-.PHONY : src/google/protobuf/util/delimited_message_util_test.cc.o
+src/google/protobuf/util/delimited_message_util_test.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/util/delimited_message_util_test.cc.obj
+.PHONY : src/google/protobuf/util/delimited_message_util_test.cc.obj
 
 src/google/protobuf/util/delimited_message_util_test.i: src/google/protobuf/util/delimited_message_util_test.cc.i
 
@@ -7241,14 +7241,14 @@ src/google/protobuf/util/delimited_message_util_test.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/util/delimited_message_util_test.cc.s
 .PHONY : src/google/protobuf/util/delimited_message_util_test.cc.s
 
-src/google/protobuf/util/field_comparator.o: src/google/protobuf/util/field_comparator.cc.o
+src/google/protobuf/util/field_comparator.obj: src/google/protobuf/util/field_comparator.cc.obj
 
-.PHONY : src/google/protobuf/util/field_comparator.o
+.PHONY : src/google/protobuf/util/field_comparator.obj
 
 # target to build an object file
-src/google/protobuf/util/field_comparator.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/util/field_comparator.cc.o
-.PHONY : src/google/protobuf/util/field_comparator.cc.o
+src/google/protobuf/util/field_comparator.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/util/field_comparator.cc.obj
+.PHONY : src/google/protobuf/util/field_comparator.cc.obj
 
 src/google/protobuf/util/field_comparator.i: src/google/protobuf/util/field_comparator.cc.i
 
@@ -7268,14 +7268,14 @@ src/google/protobuf/util/field_comparator.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/util/field_comparator.cc.s
 .PHONY : src/google/protobuf/util/field_comparator.cc.s
 
-src/google/protobuf/util/field_comparator_test.o: src/google/protobuf/util/field_comparator_test.cc.o
+src/google/protobuf/util/field_comparator_test.obj: src/google/protobuf/util/field_comparator_test.cc.obj
 
-.PHONY : src/google/protobuf/util/field_comparator_test.o
+.PHONY : src/google/protobuf/util/field_comparator_test.obj
 
 # target to build an object file
-src/google/protobuf/util/field_comparator_test.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/util/field_comparator_test.cc.o
-.PHONY : src/google/protobuf/util/field_comparator_test.cc.o
+src/google/protobuf/util/field_comparator_test.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/util/field_comparator_test.cc.obj
+.PHONY : src/google/protobuf/util/field_comparator_test.cc.obj
 
 src/google/protobuf/util/field_comparator_test.i: src/google/protobuf/util/field_comparator_test.cc.i
 
@@ -7295,14 +7295,14 @@ src/google/protobuf/util/field_comparator_test.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/util/field_comparator_test.cc.s
 .PHONY : src/google/protobuf/util/field_comparator_test.cc.s
 
-src/google/protobuf/util/field_mask_util.o: src/google/protobuf/util/field_mask_util.cc.o
+src/google/protobuf/util/field_mask_util.obj: src/google/protobuf/util/field_mask_util.cc.obj
 
-.PHONY : src/google/protobuf/util/field_mask_util.o
+.PHONY : src/google/protobuf/util/field_mask_util.obj
 
 # target to build an object file
-src/google/protobuf/util/field_mask_util.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/util/field_mask_util.cc.o
-.PHONY : src/google/protobuf/util/field_mask_util.cc.o
+src/google/protobuf/util/field_mask_util.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/util/field_mask_util.cc.obj
+.PHONY : src/google/protobuf/util/field_mask_util.cc.obj
 
 src/google/protobuf/util/field_mask_util.i: src/google/protobuf/util/field_mask_util.cc.i
 
@@ -7322,14 +7322,14 @@ src/google/protobuf/util/field_mask_util.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/util/field_mask_util.cc.s
 .PHONY : src/google/protobuf/util/field_mask_util.cc.s
 
-src/google/protobuf/util/field_mask_util_test.o: src/google/protobuf/util/field_mask_util_test.cc.o
+src/google/protobuf/util/field_mask_util_test.obj: src/google/protobuf/util/field_mask_util_test.cc.obj
 
-.PHONY : src/google/protobuf/util/field_mask_util_test.o
+.PHONY : src/google/protobuf/util/field_mask_util_test.obj
 
 # target to build an object file
-src/google/protobuf/util/field_mask_util_test.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/util/field_mask_util_test.cc.o
-.PHONY : src/google/protobuf/util/field_mask_util_test.cc.o
+src/google/protobuf/util/field_mask_util_test.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/util/field_mask_util_test.cc.obj
+.PHONY : src/google/protobuf/util/field_mask_util_test.cc.obj
 
 src/google/protobuf/util/field_mask_util_test.i: src/google/protobuf/util/field_mask_util_test.cc.i
 
@@ -7349,14 +7349,14 @@ src/google/protobuf/util/field_mask_util_test.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/util/field_mask_util_test.cc.s
 .PHONY : src/google/protobuf/util/field_mask_util_test.cc.s
 
-src/google/protobuf/util/internal/datapiece.o: src/google/protobuf/util/internal/datapiece.cc.o
+src/google/protobuf/util/internal/datapiece.obj: src/google/protobuf/util/internal/datapiece.cc.obj
 
-.PHONY : src/google/protobuf/util/internal/datapiece.o
+.PHONY : src/google/protobuf/util/internal/datapiece.obj
 
 # target to build an object file
-src/google/protobuf/util/internal/datapiece.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/datapiece.cc.o
-.PHONY : src/google/protobuf/util/internal/datapiece.cc.o
+src/google/protobuf/util/internal/datapiece.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/datapiece.cc.obj
+.PHONY : src/google/protobuf/util/internal/datapiece.cc.obj
 
 src/google/protobuf/util/internal/datapiece.i: src/google/protobuf/util/internal/datapiece.cc.i
 
@@ -7376,14 +7376,14 @@ src/google/protobuf/util/internal/datapiece.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/datapiece.cc.s
 .PHONY : src/google/protobuf/util/internal/datapiece.cc.s
 
-src/google/protobuf/util/internal/default_value_objectwriter.o: src/google/protobuf/util/internal/default_value_objectwriter.cc.o
+src/google/protobuf/util/internal/default_value_objectwriter.obj: src/google/protobuf/util/internal/default_value_objectwriter.cc.obj
 
-.PHONY : src/google/protobuf/util/internal/default_value_objectwriter.o
+.PHONY : src/google/protobuf/util/internal/default_value_objectwriter.obj
 
 # target to build an object file
-src/google/protobuf/util/internal/default_value_objectwriter.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/default_value_objectwriter.cc.o
-.PHONY : src/google/protobuf/util/internal/default_value_objectwriter.cc.o
+src/google/protobuf/util/internal/default_value_objectwriter.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/default_value_objectwriter.cc.obj
+.PHONY : src/google/protobuf/util/internal/default_value_objectwriter.cc.obj
 
 src/google/protobuf/util/internal/default_value_objectwriter.i: src/google/protobuf/util/internal/default_value_objectwriter.cc.i
 
@@ -7403,14 +7403,14 @@ src/google/protobuf/util/internal/default_value_objectwriter.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/default_value_objectwriter.cc.s
 .PHONY : src/google/protobuf/util/internal/default_value_objectwriter.cc.s
 
-src/google/protobuf/util/internal/default_value_objectwriter_test.o: src/google/protobuf/util/internal/default_value_objectwriter_test.cc.o
+src/google/protobuf/util/internal/default_value_objectwriter_test.obj: src/google/protobuf/util/internal/default_value_objectwriter_test.cc.obj
 
-.PHONY : src/google/protobuf/util/internal/default_value_objectwriter_test.o
+.PHONY : src/google/protobuf/util/internal/default_value_objectwriter_test.obj
 
 # target to build an object file
-src/google/protobuf/util/internal/default_value_objectwriter_test.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/util/internal/default_value_objectwriter_test.cc.o
-.PHONY : src/google/protobuf/util/internal/default_value_objectwriter_test.cc.o
+src/google/protobuf/util/internal/default_value_objectwriter_test.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/util/internal/default_value_objectwriter_test.cc.obj
+.PHONY : src/google/protobuf/util/internal/default_value_objectwriter_test.cc.obj
 
 src/google/protobuf/util/internal/default_value_objectwriter_test.i: src/google/protobuf/util/internal/default_value_objectwriter_test.cc.i
 
@@ -7430,14 +7430,14 @@ src/google/protobuf/util/internal/default_value_objectwriter_test.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/util/internal/default_value_objectwriter_test.cc.s
 .PHONY : src/google/protobuf/util/internal/default_value_objectwriter_test.cc.s
 
-src/google/protobuf/util/internal/error_listener.o: src/google/protobuf/util/internal/error_listener.cc.o
+src/google/protobuf/util/internal/error_listener.obj: src/google/protobuf/util/internal/error_listener.cc.obj
 
-.PHONY : src/google/protobuf/util/internal/error_listener.o
+.PHONY : src/google/protobuf/util/internal/error_listener.obj
 
 # target to build an object file
-src/google/protobuf/util/internal/error_listener.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/error_listener.cc.o
-.PHONY : src/google/protobuf/util/internal/error_listener.cc.o
+src/google/protobuf/util/internal/error_listener.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/error_listener.cc.obj
+.PHONY : src/google/protobuf/util/internal/error_listener.cc.obj
 
 src/google/protobuf/util/internal/error_listener.i: src/google/protobuf/util/internal/error_listener.cc.i
 
@@ -7457,14 +7457,14 @@ src/google/protobuf/util/internal/error_listener.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/error_listener.cc.s
 .PHONY : src/google/protobuf/util/internal/error_listener.cc.s
 
-src/google/protobuf/util/internal/field_mask_utility.o: src/google/protobuf/util/internal/field_mask_utility.cc.o
+src/google/protobuf/util/internal/field_mask_utility.obj: src/google/protobuf/util/internal/field_mask_utility.cc.obj
 
-.PHONY : src/google/protobuf/util/internal/field_mask_utility.o
+.PHONY : src/google/protobuf/util/internal/field_mask_utility.obj
 
 # target to build an object file
-src/google/protobuf/util/internal/field_mask_utility.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/field_mask_utility.cc.o
-.PHONY : src/google/protobuf/util/internal/field_mask_utility.cc.o
+src/google/protobuf/util/internal/field_mask_utility.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/field_mask_utility.cc.obj
+.PHONY : src/google/protobuf/util/internal/field_mask_utility.cc.obj
 
 src/google/protobuf/util/internal/field_mask_utility.i: src/google/protobuf/util/internal/field_mask_utility.cc.i
 
@@ -7484,14 +7484,14 @@ src/google/protobuf/util/internal/field_mask_utility.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/field_mask_utility.cc.s
 .PHONY : src/google/protobuf/util/internal/field_mask_utility.cc.s
 
-src/google/protobuf/util/internal/json_escaping.o: src/google/protobuf/util/internal/json_escaping.cc.o
+src/google/protobuf/util/internal/json_escaping.obj: src/google/protobuf/util/internal/json_escaping.cc.obj
 
-.PHONY : src/google/protobuf/util/internal/json_escaping.o
+.PHONY : src/google/protobuf/util/internal/json_escaping.obj
 
 # target to build an object file
-src/google/protobuf/util/internal/json_escaping.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/json_escaping.cc.o
-.PHONY : src/google/protobuf/util/internal/json_escaping.cc.o
+src/google/protobuf/util/internal/json_escaping.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/json_escaping.cc.obj
+.PHONY : src/google/protobuf/util/internal/json_escaping.cc.obj
 
 src/google/protobuf/util/internal/json_escaping.i: src/google/protobuf/util/internal/json_escaping.cc.i
 
@@ -7511,14 +7511,14 @@ src/google/protobuf/util/internal/json_escaping.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/json_escaping.cc.s
 .PHONY : src/google/protobuf/util/internal/json_escaping.cc.s
 
-src/google/protobuf/util/internal/json_objectwriter.o: src/google/protobuf/util/internal/json_objectwriter.cc.o
+src/google/protobuf/util/internal/json_objectwriter.obj: src/google/protobuf/util/internal/json_objectwriter.cc.obj
 
-.PHONY : src/google/protobuf/util/internal/json_objectwriter.o
+.PHONY : src/google/protobuf/util/internal/json_objectwriter.obj
 
 # target to build an object file
-src/google/protobuf/util/internal/json_objectwriter.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/json_objectwriter.cc.o
-.PHONY : src/google/protobuf/util/internal/json_objectwriter.cc.o
+src/google/protobuf/util/internal/json_objectwriter.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/json_objectwriter.cc.obj
+.PHONY : src/google/protobuf/util/internal/json_objectwriter.cc.obj
 
 src/google/protobuf/util/internal/json_objectwriter.i: src/google/protobuf/util/internal/json_objectwriter.cc.i
 
@@ -7538,14 +7538,14 @@ src/google/protobuf/util/internal/json_objectwriter.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/json_objectwriter.cc.s
 .PHONY : src/google/protobuf/util/internal/json_objectwriter.cc.s
 
-src/google/protobuf/util/internal/json_objectwriter_test.o: src/google/protobuf/util/internal/json_objectwriter_test.cc.o
+src/google/protobuf/util/internal/json_objectwriter_test.obj: src/google/protobuf/util/internal/json_objectwriter_test.cc.obj
 
-.PHONY : src/google/protobuf/util/internal/json_objectwriter_test.o
+.PHONY : src/google/protobuf/util/internal/json_objectwriter_test.obj
 
 # target to build an object file
-src/google/protobuf/util/internal/json_objectwriter_test.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/util/internal/json_objectwriter_test.cc.o
-.PHONY : src/google/protobuf/util/internal/json_objectwriter_test.cc.o
+src/google/protobuf/util/internal/json_objectwriter_test.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/util/internal/json_objectwriter_test.cc.obj
+.PHONY : src/google/protobuf/util/internal/json_objectwriter_test.cc.obj
 
 src/google/protobuf/util/internal/json_objectwriter_test.i: src/google/protobuf/util/internal/json_objectwriter_test.cc.i
 
@@ -7565,14 +7565,14 @@ src/google/protobuf/util/internal/json_objectwriter_test.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/util/internal/json_objectwriter_test.cc.s
 .PHONY : src/google/protobuf/util/internal/json_objectwriter_test.cc.s
 
-src/google/protobuf/util/internal/json_stream_parser.o: src/google/protobuf/util/internal/json_stream_parser.cc.o
+src/google/protobuf/util/internal/json_stream_parser.obj: src/google/protobuf/util/internal/json_stream_parser.cc.obj
 
-.PHONY : src/google/protobuf/util/internal/json_stream_parser.o
+.PHONY : src/google/protobuf/util/internal/json_stream_parser.obj
 
 # target to build an object file
-src/google/protobuf/util/internal/json_stream_parser.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/json_stream_parser.cc.o
-.PHONY : src/google/protobuf/util/internal/json_stream_parser.cc.o
+src/google/protobuf/util/internal/json_stream_parser.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/json_stream_parser.cc.obj
+.PHONY : src/google/protobuf/util/internal/json_stream_parser.cc.obj
 
 src/google/protobuf/util/internal/json_stream_parser.i: src/google/protobuf/util/internal/json_stream_parser.cc.i
 
@@ -7592,14 +7592,14 @@ src/google/protobuf/util/internal/json_stream_parser.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/json_stream_parser.cc.s
 .PHONY : src/google/protobuf/util/internal/json_stream_parser.cc.s
 
-src/google/protobuf/util/internal/json_stream_parser_test.o: src/google/protobuf/util/internal/json_stream_parser_test.cc.o
+src/google/protobuf/util/internal/json_stream_parser_test.obj: src/google/protobuf/util/internal/json_stream_parser_test.cc.obj
 
-.PHONY : src/google/protobuf/util/internal/json_stream_parser_test.o
+.PHONY : src/google/protobuf/util/internal/json_stream_parser_test.obj
 
 # target to build an object file
-src/google/protobuf/util/internal/json_stream_parser_test.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/util/internal/json_stream_parser_test.cc.o
-.PHONY : src/google/protobuf/util/internal/json_stream_parser_test.cc.o
+src/google/protobuf/util/internal/json_stream_parser_test.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/util/internal/json_stream_parser_test.cc.obj
+.PHONY : src/google/protobuf/util/internal/json_stream_parser_test.cc.obj
 
 src/google/protobuf/util/internal/json_stream_parser_test.i: src/google/protobuf/util/internal/json_stream_parser_test.cc.i
 
@@ -7619,14 +7619,14 @@ src/google/protobuf/util/internal/json_stream_parser_test.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/util/internal/json_stream_parser_test.cc.s
 .PHONY : src/google/protobuf/util/internal/json_stream_parser_test.cc.s
 
-src/google/protobuf/util/internal/object_writer.o: src/google/protobuf/util/internal/object_writer.cc.o
+src/google/protobuf/util/internal/object_writer.obj: src/google/protobuf/util/internal/object_writer.cc.obj
 
-.PHONY : src/google/protobuf/util/internal/object_writer.o
+.PHONY : src/google/protobuf/util/internal/object_writer.obj
 
 # target to build an object file
-src/google/protobuf/util/internal/object_writer.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/object_writer.cc.o
-.PHONY : src/google/protobuf/util/internal/object_writer.cc.o
+src/google/protobuf/util/internal/object_writer.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/object_writer.cc.obj
+.PHONY : src/google/protobuf/util/internal/object_writer.cc.obj
 
 src/google/protobuf/util/internal/object_writer.i: src/google/protobuf/util/internal/object_writer.cc.i
 
@@ -7646,14 +7646,14 @@ src/google/protobuf/util/internal/object_writer.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/object_writer.cc.s
 .PHONY : src/google/protobuf/util/internal/object_writer.cc.s
 
-src/google/protobuf/util/internal/proto_writer.o: src/google/protobuf/util/internal/proto_writer.cc.o
+src/google/protobuf/util/internal/proto_writer.obj: src/google/protobuf/util/internal/proto_writer.cc.obj
 
-.PHONY : src/google/protobuf/util/internal/proto_writer.o
+.PHONY : src/google/protobuf/util/internal/proto_writer.obj
 
 # target to build an object file
-src/google/protobuf/util/internal/proto_writer.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/proto_writer.cc.o
-.PHONY : src/google/protobuf/util/internal/proto_writer.cc.o
+src/google/protobuf/util/internal/proto_writer.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/proto_writer.cc.obj
+.PHONY : src/google/protobuf/util/internal/proto_writer.cc.obj
 
 src/google/protobuf/util/internal/proto_writer.i: src/google/protobuf/util/internal/proto_writer.cc.i
 
@@ -7673,14 +7673,14 @@ src/google/protobuf/util/internal/proto_writer.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/proto_writer.cc.s
 .PHONY : src/google/protobuf/util/internal/proto_writer.cc.s
 
-src/google/protobuf/util/internal/protostream_objectsource.o: src/google/protobuf/util/internal/protostream_objectsource.cc.o
+src/google/protobuf/util/internal/protostream_objectsource.obj: src/google/protobuf/util/internal/protostream_objectsource.cc.obj
 
-.PHONY : src/google/protobuf/util/internal/protostream_objectsource.o
+.PHONY : src/google/protobuf/util/internal/protostream_objectsource.obj
 
 # target to build an object file
-src/google/protobuf/util/internal/protostream_objectsource.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/protostream_objectsource.cc.o
-.PHONY : src/google/protobuf/util/internal/protostream_objectsource.cc.o
+src/google/protobuf/util/internal/protostream_objectsource.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/protostream_objectsource.cc.obj
+.PHONY : src/google/protobuf/util/internal/protostream_objectsource.cc.obj
 
 src/google/protobuf/util/internal/protostream_objectsource.i: src/google/protobuf/util/internal/protostream_objectsource.cc.i
 
@@ -7700,14 +7700,14 @@ src/google/protobuf/util/internal/protostream_objectsource.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/protostream_objectsource.cc.s
 .PHONY : src/google/protobuf/util/internal/protostream_objectsource.cc.s
 
-src/google/protobuf/util/internal/protostream_objectsource_test.o: src/google/protobuf/util/internal/protostream_objectsource_test.cc.o
+src/google/protobuf/util/internal/protostream_objectsource_test.obj: src/google/protobuf/util/internal/protostream_objectsource_test.cc.obj
 
-.PHONY : src/google/protobuf/util/internal/protostream_objectsource_test.o
+.PHONY : src/google/protobuf/util/internal/protostream_objectsource_test.obj
 
 # target to build an object file
-src/google/protobuf/util/internal/protostream_objectsource_test.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/util/internal/protostream_objectsource_test.cc.o
-.PHONY : src/google/protobuf/util/internal/protostream_objectsource_test.cc.o
+src/google/protobuf/util/internal/protostream_objectsource_test.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/util/internal/protostream_objectsource_test.cc.obj
+.PHONY : src/google/protobuf/util/internal/protostream_objectsource_test.cc.obj
 
 src/google/protobuf/util/internal/protostream_objectsource_test.i: src/google/protobuf/util/internal/protostream_objectsource_test.cc.i
 
@@ -7727,14 +7727,14 @@ src/google/protobuf/util/internal/protostream_objectsource_test.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/util/internal/protostream_objectsource_test.cc.s
 .PHONY : src/google/protobuf/util/internal/protostream_objectsource_test.cc.s
 
-src/google/protobuf/util/internal/protostream_objectwriter.o: src/google/protobuf/util/internal/protostream_objectwriter.cc.o
+src/google/protobuf/util/internal/protostream_objectwriter.obj: src/google/protobuf/util/internal/protostream_objectwriter.cc.obj
 
-.PHONY : src/google/protobuf/util/internal/protostream_objectwriter.o
+.PHONY : src/google/protobuf/util/internal/protostream_objectwriter.obj
 
 # target to build an object file
-src/google/protobuf/util/internal/protostream_objectwriter.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/protostream_objectwriter.cc.o
-.PHONY : src/google/protobuf/util/internal/protostream_objectwriter.cc.o
+src/google/protobuf/util/internal/protostream_objectwriter.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/protostream_objectwriter.cc.obj
+.PHONY : src/google/protobuf/util/internal/protostream_objectwriter.cc.obj
 
 src/google/protobuf/util/internal/protostream_objectwriter.i: src/google/protobuf/util/internal/protostream_objectwriter.cc.i
 
@@ -7754,14 +7754,14 @@ src/google/protobuf/util/internal/protostream_objectwriter.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/protostream_objectwriter.cc.s
 .PHONY : src/google/protobuf/util/internal/protostream_objectwriter.cc.s
 
-src/google/protobuf/util/internal/protostream_objectwriter_test.o: src/google/protobuf/util/internal/protostream_objectwriter_test.cc.o
+src/google/protobuf/util/internal/protostream_objectwriter_test.obj: src/google/protobuf/util/internal/protostream_objectwriter_test.cc.obj
 
-.PHONY : src/google/protobuf/util/internal/protostream_objectwriter_test.o
+.PHONY : src/google/protobuf/util/internal/protostream_objectwriter_test.obj
 
 # target to build an object file
-src/google/protobuf/util/internal/protostream_objectwriter_test.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/util/internal/protostream_objectwriter_test.cc.o
-.PHONY : src/google/protobuf/util/internal/protostream_objectwriter_test.cc.o
+src/google/protobuf/util/internal/protostream_objectwriter_test.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/util/internal/protostream_objectwriter_test.cc.obj
+.PHONY : src/google/protobuf/util/internal/protostream_objectwriter_test.cc.obj
 
 src/google/protobuf/util/internal/protostream_objectwriter_test.i: src/google/protobuf/util/internal/protostream_objectwriter_test.cc.i
 
@@ -7781,14 +7781,14 @@ src/google/protobuf/util/internal/protostream_objectwriter_test.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/util/internal/protostream_objectwriter_test.cc.s
 .PHONY : src/google/protobuf/util/internal/protostream_objectwriter_test.cc.s
 
-src/google/protobuf/util/internal/testdata/anys.pb.o: src/google/protobuf/util/internal/testdata/anys.pb.cc.o
+src/google/protobuf/util/internal/testdata/anys.pb.obj: src/google/protobuf/util/internal/testdata/anys.pb.cc.obj
 
-.PHONY : src/google/protobuf/util/internal/testdata/anys.pb.o
+.PHONY : src/google/protobuf/util/internal/testdata/anys.pb.obj
 
 # target to build an object file
-src/google/protobuf/util/internal/testdata/anys.pb.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/anys.pb.cc.o
-.PHONY : src/google/protobuf/util/internal/testdata/anys.pb.cc.o
+src/google/protobuf/util/internal/testdata/anys.pb.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/anys.pb.cc.obj
+.PHONY : src/google/protobuf/util/internal/testdata/anys.pb.cc.obj
 
 src/google/protobuf/util/internal/testdata/anys.pb.i: src/google/protobuf/util/internal/testdata/anys.pb.cc.i
 
@@ -7808,14 +7808,14 @@ src/google/protobuf/util/internal/testdata/anys.pb.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/anys.pb.cc.s
 .PHONY : src/google/protobuf/util/internal/testdata/anys.pb.cc.s
 
-src/google/protobuf/util/internal/testdata/books.pb.o: src/google/protobuf/util/internal/testdata/books.pb.cc.o
+src/google/protobuf/util/internal/testdata/books.pb.obj: src/google/protobuf/util/internal/testdata/books.pb.cc.obj
 
-.PHONY : src/google/protobuf/util/internal/testdata/books.pb.o
+.PHONY : src/google/protobuf/util/internal/testdata/books.pb.obj
 
 # target to build an object file
-src/google/protobuf/util/internal/testdata/books.pb.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/books.pb.cc.o
-.PHONY : src/google/protobuf/util/internal/testdata/books.pb.cc.o
+src/google/protobuf/util/internal/testdata/books.pb.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/books.pb.cc.obj
+.PHONY : src/google/protobuf/util/internal/testdata/books.pb.cc.obj
 
 src/google/protobuf/util/internal/testdata/books.pb.i: src/google/protobuf/util/internal/testdata/books.pb.cc.i
 
@@ -7835,14 +7835,14 @@ src/google/protobuf/util/internal/testdata/books.pb.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/books.pb.cc.s
 .PHONY : src/google/protobuf/util/internal/testdata/books.pb.cc.s
 
-src/google/protobuf/util/internal/testdata/default_value.pb.o: src/google/protobuf/util/internal/testdata/default_value.pb.cc.o
+src/google/protobuf/util/internal/testdata/default_value.pb.obj: src/google/protobuf/util/internal/testdata/default_value.pb.cc.obj
 
-.PHONY : src/google/protobuf/util/internal/testdata/default_value.pb.o
+.PHONY : src/google/protobuf/util/internal/testdata/default_value.pb.obj
 
 # target to build an object file
-src/google/protobuf/util/internal/testdata/default_value.pb.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/default_value.pb.cc.o
-.PHONY : src/google/protobuf/util/internal/testdata/default_value.pb.cc.o
+src/google/protobuf/util/internal/testdata/default_value.pb.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/default_value.pb.cc.obj
+.PHONY : src/google/protobuf/util/internal/testdata/default_value.pb.cc.obj
 
 src/google/protobuf/util/internal/testdata/default_value.pb.i: src/google/protobuf/util/internal/testdata/default_value.pb.cc.i
 
@@ -7862,14 +7862,14 @@ src/google/protobuf/util/internal/testdata/default_value.pb.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/default_value.pb.cc.s
 .PHONY : src/google/protobuf/util/internal/testdata/default_value.pb.cc.s
 
-src/google/protobuf/util/internal/testdata/default_value_test.pb.o: src/google/protobuf/util/internal/testdata/default_value_test.pb.cc.o
+src/google/protobuf/util/internal/testdata/default_value_test.pb.obj: src/google/protobuf/util/internal/testdata/default_value_test.pb.cc.obj
 
-.PHONY : src/google/protobuf/util/internal/testdata/default_value_test.pb.o
+.PHONY : src/google/protobuf/util/internal/testdata/default_value_test.pb.obj
 
 # target to build an object file
-src/google/protobuf/util/internal/testdata/default_value_test.pb.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/default_value_test.pb.cc.o
-.PHONY : src/google/protobuf/util/internal/testdata/default_value_test.pb.cc.o
+src/google/protobuf/util/internal/testdata/default_value_test.pb.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/default_value_test.pb.cc.obj
+.PHONY : src/google/protobuf/util/internal/testdata/default_value_test.pb.cc.obj
 
 src/google/protobuf/util/internal/testdata/default_value_test.pb.i: src/google/protobuf/util/internal/testdata/default_value_test.pb.cc.i
 
@@ -7889,14 +7889,14 @@ src/google/protobuf/util/internal/testdata/default_value_test.pb.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/default_value_test.pb.cc.s
 .PHONY : src/google/protobuf/util/internal/testdata/default_value_test.pb.cc.s
 
-src/google/protobuf/util/internal/testdata/field_mask.pb.o: src/google/protobuf/util/internal/testdata/field_mask.pb.cc.o
+src/google/protobuf/util/internal/testdata/field_mask.pb.obj: src/google/protobuf/util/internal/testdata/field_mask.pb.cc.obj
 
-.PHONY : src/google/protobuf/util/internal/testdata/field_mask.pb.o
+.PHONY : src/google/protobuf/util/internal/testdata/field_mask.pb.obj
 
 # target to build an object file
-src/google/protobuf/util/internal/testdata/field_mask.pb.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/field_mask.pb.cc.o
-.PHONY : src/google/protobuf/util/internal/testdata/field_mask.pb.cc.o
+src/google/protobuf/util/internal/testdata/field_mask.pb.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/field_mask.pb.cc.obj
+.PHONY : src/google/protobuf/util/internal/testdata/field_mask.pb.cc.obj
 
 src/google/protobuf/util/internal/testdata/field_mask.pb.i: src/google/protobuf/util/internal/testdata/field_mask.pb.cc.i
 
@@ -7916,14 +7916,14 @@ src/google/protobuf/util/internal/testdata/field_mask.pb.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/field_mask.pb.cc.s
 .PHONY : src/google/protobuf/util/internal/testdata/field_mask.pb.cc.s
 
-src/google/protobuf/util/internal/testdata/maps.pb.o: src/google/protobuf/util/internal/testdata/maps.pb.cc.o
+src/google/protobuf/util/internal/testdata/maps.pb.obj: src/google/protobuf/util/internal/testdata/maps.pb.cc.obj
 
-.PHONY : src/google/protobuf/util/internal/testdata/maps.pb.o
+.PHONY : src/google/protobuf/util/internal/testdata/maps.pb.obj
 
 # target to build an object file
-src/google/protobuf/util/internal/testdata/maps.pb.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/maps.pb.cc.o
-.PHONY : src/google/protobuf/util/internal/testdata/maps.pb.cc.o
+src/google/protobuf/util/internal/testdata/maps.pb.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/maps.pb.cc.obj
+.PHONY : src/google/protobuf/util/internal/testdata/maps.pb.cc.obj
 
 src/google/protobuf/util/internal/testdata/maps.pb.i: src/google/protobuf/util/internal/testdata/maps.pb.cc.i
 
@@ -7943,14 +7943,14 @@ src/google/protobuf/util/internal/testdata/maps.pb.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/maps.pb.cc.s
 .PHONY : src/google/protobuf/util/internal/testdata/maps.pb.cc.s
 
-src/google/protobuf/util/internal/testdata/oneofs.pb.o: src/google/protobuf/util/internal/testdata/oneofs.pb.cc.o
+src/google/protobuf/util/internal/testdata/oneofs.pb.obj: src/google/protobuf/util/internal/testdata/oneofs.pb.cc.obj
 
-.PHONY : src/google/protobuf/util/internal/testdata/oneofs.pb.o
+.PHONY : src/google/protobuf/util/internal/testdata/oneofs.pb.obj
 
 # target to build an object file
-src/google/protobuf/util/internal/testdata/oneofs.pb.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/oneofs.pb.cc.o
-.PHONY : src/google/protobuf/util/internal/testdata/oneofs.pb.cc.o
+src/google/protobuf/util/internal/testdata/oneofs.pb.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/oneofs.pb.cc.obj
+.PHONY : src/google/protobuf/util/internal/testdata/oneofs.pb.cc.obj
 
 src/google/protobuf/util/internal/testdata/oneofs.pb.i: src/google/protobuf/util/internal/testdata/oneofs.pb.cc.i
 
@@ -7970,14 +7970,14 @@ src/google/protobuf/util/internal/testdata/oneofs.pb.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/oneofs.pb.cc.s
 .PHONY : src/google/protobuf/util/internal/testdata/oneofs.pb.cc.s
 
-src/google/protobuf/util/internal/testdata/proto3.pb.o: src/google/protobuf/util/internal/testdata/proto3.pb.cc.o
+src/google/protobuf/util/internal/testdata/proto3.pb.obj: src/google/protobuf/util/internal/testdata/proto3.pb.cc.obj
 
-.PHONY : src/google/protobuf/util/internal/testdata/proto3.pb.o
+.PHONY : src/google/protobuf/util/internal/testdata/proto3.pb.obj
 
 # target to build an object file
-src/google/protobuf/util/internal/testdata/proto3.pb.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/proto3.pb.cc.o
-.PHONY : src/google/protobuf/util/internal/testdata/proto3.pb.cc.o
+src/google/protobuf/util/internal/testdata/proto3.pb.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/proto3.pb.cc.obj
+.PHONY : src/google/protobuf/util/internal/testdata/proto3.pb.cc.obj
 
 src/google/protobuf/util/internal/testdata/proto3.pb.i: src/google/protobuf/util/internal/testdata/proto3.pb.cc.i
 
@@ -7997,14 +7997,14 @@ src/google/protobuf/util/internal/testdata/proto3.pb.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/proto3.pb.cc.s
 .PHONY : src/google/protobuf/util/internal/testdata/proto3.pb.cc.s
 
-src/google/protobuf/util/internal/testdata/struct.pb.o: src/google/protobuf/util/internal/testdata/struct.pb.cc.o
+src/google/protobuf/util/internal/testdata/struct.pb.obj: src/google/protobuf/util/internal/testdata/struct.pb.cc.obj
 
-.PHONY : src/google/protobuf/util/internal/testdata/struct.pb.o
+.PHONY : src/google/protobuf/util/internal/testdata/struct.pb.obj
 
 # target to build an object file
-src/google/protobuf/util/internal/testdata/struct.pb.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/struct.pb.cc.o
-.PHONY : src/google/protobuf/util/internal/testdata/struct.pb.cc.o
+src/google/protobuf/util/internal/testdata/struct.pb.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/struct.pb.cc.obj
+.PHONY : src/google/protobuf/util/internal/testdata/struct.pb.cc.obj
 
 src/google/protobuf/util/internal/testdata/struct.pb.i: src/google/protobuf/util/internal/testdata/struct.pb.cc.i
 
@@ -8024,14 +8024,14 @@ src/google/protobuf/util/internal/testdata/struct.pb.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/struct.pb.cc.s
 .PHONY : src/google/protobuf/util/internal/testdata/struct.pb.cc.s
 
-src/google/protobuf/util/internal/testdata/timestamp_duration.pb.o: src/google/protobuf/util/internal/testdata/timestamp_duration.pb.cc.o
+src/google/protobuf/util/internal/testdata/timestamp_duration.pb.obj: src/google/protobuf/util/internal/testdata/timestamp_duration.pb.cc.obj
 
-.PHONY : src/google/protobuf/util/internal/testdata/timestamp_duration.pb.o
+.PHONY : src/google/protobuf/util/internal/testdata/timestamp_duration.pb.obj
 
 # target to build an object file
-src/google/protobuf/util/internal/testdata/timestamp_duration.pb.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/timestamp_duration.pb.cc.o
-.PHONY : src/google/protobuf/util/internal/testdata/timestamp_duration.pb.cc.o
+src/google/protobuf/util/internal/testdata/timestamp_duration.pb.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/timestamp_duration.pb.cc.obj
+.PHONY : src/google/protobuf/util/internal/testdata/timestamp_duration.pb.cc.obj
 
 src/google/protobuf/util/internal/testdata/timestamp_duration.pb.i: src/google/protobuf/util/internal/testdata/timestamp_duration.pb.cc.i
 
@@ -8051,14 +8051,14 @@ src/google/protobuf/util/internal/testdata/timestamp_duration.pb.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/timestamp_duration.pb.cc.s
 .PHONY : src/google/protobuf/util/internal/testdata/timestamp_duration.pb.cc.s
 
-src/google/protobuf/util/internal/testdata/wrappers.pb.o: src/google/protobuf/util/internal/testdata/wrappers.pb.cc.o
+src/google/protobuf/util/internal/testdata/wrappers.pb.obj: src/google/protobuf/util/internal/testdata/wrappers.pb.cc.obj
 
-.PHONY : src/google/protobuf/util/internal/testdata/wrappers.pb.o
+.PHONY : src/google/protobuf/util/internal/testdata/wrappers.pb.obj
 
 # target to build an object file
-src/google/protobuf/util/internal/testdata/wrappers.pb.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/wrappers.pb.cc.o
-.PHONY : src/google/protobuf/util/internal/testdata/wrappers.pb.cc.o
+src/google/protobuf/util/internal/testdata/wrappers.pb.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/wrappers.pb.cc.obj
+.PHONY : src/google/protobuf/util/internal/testdata/wrappers.pb.cc.obj
 
 src/google/protobuf/util/internal/testdata/wrappers.pb.i: src/google/protobuf/util/internal/testdata/wrappers.pb.cc.i
 
@@ -8078,14 +8078,14 @@ src/google/protobuf/util/internal/testdata/wrappers.pb.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/internal/testdata/wrappers.pb.cc.s
 .PHONY : src/google/protobuf/util/internal/testdata/wrappers.pb.cc.s
 
-src/google/protobuf/util/internal/type_info.o: src/google/protobuf/util/internal/type_info.cc.o
+src/google/protobuf/util/internal/type_info.obj: src/google/protobuf/util/internal/type_info.cc.obj
 
-.PHONY : src/google/protobuf/util/internal/type_info.o
+.PHONY : src/google/protobuf/util/internal/type_info.obj
 
 # target to build an object file
-src/google/protobuf/util/internal/type_info.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/type_info.cc.o
-.PHONY : src/google/protobuf/util/internal/type_info.cc.o
+src/google/protobuf/util/internal/type_info.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/type_info.cc.obj
+.PHONY : src/google/protobuf/util/internal/type_info.cc.obj
 
 src/google/protobuf/util/internal/type_info.i: src/google/protobuf/util/internal/type_info.cc.i
 
@@ -8105,14 +8105,14 @@ src/google/protobuf/util/internal/type_info.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/type_info.cc.s
 .PHONY : src/google/protobuf/util/internal/type_info.cc.s
 
-src/google/protobuf/util/internal/type_info_test_helper.o: src/google/protobuf/util/internal/type_info_test_helper.cc.o
+src/google/protobuf/util/internal/type_info_test_helper.obj: src/google/protobuf/util/internal/type_info_test_helper.cc.obj
 
-.PHONY : src/google/protobuf/util/internal/type_info_test_helper.o
+.PHONY : src/google/protobuf/util/internal/type_info_test_helper.obj
 
 # target to build an object file
-src/google/protobuf/util/internal/type_info_test_helper.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/util/internal/type_info_test_helper.cc.o
-.PHONY : src/google/protobuf/util/internal/type_info_test_helper.cc.o
+src/google/protobuf/util/internal/type_info_test_helper.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/util/internal/type_info_test_helper.cc.obj
+.PHONY : src/google/protobuf/util/internal/type_info_test_helper.cc.obj
 
 src/google/protobuf/util/internal/type_info_test_helper.i: src/google/protobuf/util/internal/type_info_test_helper.cc.i
 
@@ -8132,14 +8132,14 @@ src/google/protobuf/util/internal/type_info_test_helper.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/util/internal/type_info_test_helper.cc.s
 .PHONY : src/google/protobuf/util/internal/type_info_test_helper.cc.s
 
-src/google/protobuf/util/internal/utility.o: src/google/protobuf/util/internal/utility.cc.o
+src/google/protobuf/util/internal/utility.obj: src/google/protobuf/util/internal/utility.cc.obj
 
-.PHONY : src/google/protobuf/util/internal/utility.o
+.PHONY : src/google/protobuf/util/internal/utility.obj
 
 # target to build an object file
-src/google/protobuf/util/internal/utility.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/utility.cc.o
-.PHONY : src/google/protobuf/util/internal/utility.cc.o
+src/google/protobuf/util/internal/utility.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/utility.cc.obj
+.PHONY : src/google/protobuf/util/internal/utility.cc.obj
 
 src/google/protobuf/util/internal/utility.i: src/google/protobuf/util/internal/utility.cc.i
 
@@ -8159,14 +8159,14 @@ src/google/protobuf/util/internal/utility.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/util/internal/utility.cc.s
 .PHONY : src/google/protobuf/util/internal/utility.cc.s
 
-src/google/protobuf/util/json_format.pb.o: src/google/protobuf/util/json_format.pb.cc.o
+src/google/protobuf/util/json_format.pb.obj: src/google/protobuf/util/json_format.pb.cc.obj
 
-.PHONY : src/google/protobuf/util/json_format.pb.o
+.PHONY : src/google/protobuf/util/json_format.pb.obj
 
 # target to build an object file
-src/google/protobuf/util/json_format.pb.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/json_format.pb.cc.o
-.PHONY : src/google/protobuf/util/json_format.pb.cc.o
+src/google/protobuf/util/json_format.pb.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/json_format.pb.cc.obj
+.PHONY : src/google/protobuf/util/json_format.pb.cc.obj
 
 src/google/protobuf/util/json_format.pb.i: src/google/protobuf/util/json_format.pb.cc.i
 
@@ -8186,14 +8186,14 @@ src/google/protobuf/util/json_format.pb.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/json_format.pb.cc.s
 .PHONY : src/google/protobuf/util/json_format.pb.cc.s
 
-src/google/protobuf/util/json_format_proto3.pb.o: src/google/protobuf/util/json_format_proto3.pb.cc.o
+src/google/protobuf/util/json_format_proto3.pb.obj: src/google/protobuf/util/json_format_proto3.pb.cc.obj
 
-.PHONY : src/google/protobuf/util/json_format_proto3.pb.o
+.PHONY : src/google/protobuf/util/json_format_proto3.pb.obj
 
 # target to build an object file
-src/google/protobuf/util/json_format_proto3.pb.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/json_format_proto3.pb.cc.o
-.PHONY : src/google/protobuf/util/json_format_proto3.pb.cc.o
+src/google/protobuf/util/json_format_proto3.pb.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/json_format_proto3.pb.cc.obj
+.PHONY : src/google/protobuf/util/json_format_proto3.pb.cc.obj
 
 src/google/protobuf/util/json_format_proto3.pb.i: src/google/protobuf/util/json_format_proto3.pb.cc.i
 
@@ -8213,14 +8213,14 @@ src/google/protobuf/util/json_format_proto3.pb.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/json_format_proto3.pb.cc.s
 .PHONY : src/google/protobuf/util/json_format_proto3.pb.cc.s
 
-src/google/protobuf/util/json_util.o: src/google/protobuf/util/json_util.cc.o
+src/google/protobuf/util/json_util.obj: src/google/protobuf/util/json_util.cc.obj
 
-.PHONY : src/google/protobuf/util/json_util.o
+.PHONY : src/google/protobuf/util/json_util.obj
 
 # target to build an object file
-src/google/protobuf/util/json_util.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/util/json_util.cc.o
-.PHONY : src/google/protobuf/util/json_util.cc.o
+src/google/protobuf/util/json_util.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/util/json_util.cc.obj
+.PHONY : src/google/protobuf/util/json_util.cc.obj
 
 src/google/protobuf/util/json_util.i: src/google/protobuf/util/json_util.cc.i
 
@@ -8240,14 +8240,14 @@ src/google/protobuf/util/json_util.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/util/json_util.cc.s
 .PHONY : src/google/protobuf/util/json_util.cc.s
 
-src/google/protobuf/util/json_util_test.o: src/google/protobuf/util/json_util_test.cc.o
+src/google/protobuf/util/json_util_test.obj: src/google/protobuf/util/json_util_test.cc.obj
 
-.PHONY : src/google/protobuf/util/json_util_test.o
+.PHONY : src/google/protobuf/util/json_util_test.obj
 
 # target to build an object file
-src/google/protobuf/util/json_util_test.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/util/json_util_test.cc.o
-.PHONY : src/google/protobuf/util/json_util_test.cc.o
+src/google/protobuf/util/json_util_test.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/util/json_util_test.cc.obj
+.PHONY : src/google/protobuf/util/json_util_test.cc.obj
 
 src/google/protobuf/util/json_util_test.i: src/google/protobuf/util/json_util_test.cc.i
 
@@ -8267,14 +8267,14 @@ src/google/protobuf/util/json_util_test.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/util/json_util_test.cc.s
 .PHONY : src/google/protobuf/util/json_util_test.cc.s
 
-src/google/protobuf/util/message_differencer.o: src/google/protobuf/util/message_differencer.cc.o
+src/google/protobuf/util/message_differencer.obj: src/google/protobuf/util/message_differencer.cc.obj
 
-.PHONY : src/google/protobuf/util/message_differencer.o
+.PHONY : src/google/protobuf/util/message_differencer.obj
 
 # target to build an object file
-src/google/protobuf/util/message_differencer.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/util/message_differencer.cc.o
-.PHONY : src/google/protobuf/util/message_differencer.cc.o
+src/google/protobuf/util/message_differencer.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/util/message_differencer.cc.obj
+.PHONY : src/google/protobuf/util/message_differencer.cc.obj
 
 src/google/protobuf/util/message_differencer.i: src/google/protobuf/util/message_differencer.cc.i
 
@@ -8294,14 +8294,14 @@ src/google/protobuf/util/message_differencer.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/util/message_differencer.cc.s
 .PHONY : src/google/protobuf/util/message_differencer.cc.s
 
-src/google/protobuf/util/message_differencer_unittest.o: src/google/protobuf/util/message_differencer_unittest.cc.o
+src/google/protobuf/util/message_differencer_unittest.obj: src/google/protobuf/util/message_differencer_unittest.cc.obj
 
-.PHONY : src/google/protobuf/util/message_differencer_unittest.o
+.PHONY : src/google/protobuf/util/message_differencer_unittest.obj
 
 # target to build an object file
-src/google/protobuf/util/message_differencer_unittest.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/util/message_differencer_unittest.cc.o
-.PHONY : src/google/protobuf/util/message_differencer_unittest.cc.o
+src/google/protobuf/util/message_differencer_unittest.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/util/message_differencer_unittest.cc.obj
+.PHONY : src/google/protobuf/util/message_differencer_unittest.cc.obj
 
 src/google/protobuf/util/message_differencer_unittest.i: src/google/protobuf/util/message_differencer_unittest.cc.i
 
@@ -8321,14 +8321,14 @@ src/google/protobuf/util/message_differencer_unittest.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/util/message_differencer_unittest.cc.s
 .PHONY : src/google/protobuf/util/message_differencer_unittest.cc.s
 
-src/google/protobuf/util/message_differencer_unittest.pb.o: src/google/protobuf/util/message_differencer_unittest.pb.cc.o
+src/google/protobuf/util/message_differencer_unittest.pb.obj: src/google/protobuf/util/message_differencer_unittest.pb.cc.obj
 
-.PHONY : src/google/protobuf/util/message_differencer_unittest.pb.o
+.PHONY : src/google/protobuf/util/message_differencer_unittest.pb.obj
 
 # target to build an object file
-src/google/protobuf/util/message_differencer_unittest.pb.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/message_differencer_unittest.pb.cc.o
-.PHONY : src/google/protobuf/util/message_differencer_unittest.pb.cc.o
+src/google/protobuf/util/message_differencer_unittest.pb.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/message_differencer_unittest.pb.cc.obj
+.PHONY : src/google/protobuf/util/message_differencer_unittest.pb.cc.obj
 
 src/google/protobuf/util/message_differencer_unittest.pb.i: src/google/protobuf/util/message_differencer_unittest.pb.cc.i
 
@@ -8348,14 +8348,14 @@ src/google/protobuf/util/message_differencer_unittest.pb.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/protobuf-test-common.dir/build.make CMakeFiles/protobuf-test-common.dir/src/google/protobuf/util/message_differencer_unittest.pb.cc.s
 .PHONY : src/google/protobuf/util/message_differencer_unittest.pb.cc.s
 
-src/google/protobuf/util/time_util.o: src/google/protobuf/util/time_util.cc.o
+src/google/protobuf/util/time_util.obj: src/google/protobuf/util/time_util.cc.obj
 
-.PHONY : src/google/protobuf/util/time_util.o
+.PHONY : src/google/protobuf/util/time_util.obj
 
 # target to build an object file
-src/google/protobuf/util/time_util.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/util/time_util.cc.o
-.PHONY : src/google/protobuf/util/time_util.cc.o
+src/google/protobuf/util/time_util.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/util/time_util.cc.obj
+.PHONY : src/google/protobuf/util/time_util.cc.obj
 
 src/google/protobuf/util/time_util.i: src/google/protobuf/util/time_util.cc.i
 
@@ -8375,14 +8375,14 @@ src/google/protobuf/util/time_util.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/util/time_util.cc.s
 .PHONY : src/google/protobuf/util/time_util.cc.s
 
-src/google/protobuf/util/time_util_test.o: src/google/protobuf/util/time_util_test.cc.o
+src/google/protobuf/util/time_util_test.obj: src/google/protobuf/util/time_util_test.cc.obj
 
-.PHONY : src/google/protobuf/util/time_util_test.o
+.PHONY : src/google/protobuf/util/time_util_test.obj
 
 # target to build an object file
-src/google/protobuf/util/time_util_test.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/util/time_util_test.cc.o
-.PHONY : src/google/protobuf/util/time_util_test.cc.o
+src/google/protobuf/util/time_util_test.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/util/time_util_test.cc.obj
+.PHONY : src/google/protobuf/util/time_util_test.cc.obj
 
 src/google/protobuf/util/time_util_test.i: src/google/protobuf/util/time_util_test.cc.i
 
@@ -8402,14 +8402,14 @@ src/google/protobuf/util/time_util_test.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/util/time_util_test.cc.s
 .PHONY : src/google/protobuf/util/time_util_test.cc.s
 
-src/google/protobuf/util/type_resolver_util.o: src/google/protobuf/util/type_resolver_util.cc.o
+src/google/protobuf/util/type_resolver_util.obj: src/google/protobuf/util/type_resolver_util.cc.obj
 
-.PHONY : src/google/protobuf/util/type_resolver_util.o
+.PHONY : src/google/protobuf/util/type_resolver_util.obj
 
 # target to build an object file
-src/google/protobuf/util/type_resolver_util.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/util/type_resolver_util.cc.o
-.PHONY : src/google/protobuf/util/type_resolver_util.cc.o
+src/google/protobuf/util/type_resolver_util.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/util/type_resolver_util.cc.obj
+.PHONY : src/google/protobuf/util/type_resolver_util.cc.obj
 
 src/google/protobuf/util/type_resolver_util.i: src/google/protobuf/util/type_resolver_util.cc.i
 
@@ -8429,14 +8429,14 @@ src/google/protobuf/util/type_resolver_util.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/util/type_resolver_util.cc.s
 .PHONY : src/google/protobuf/util/type_resolver_util.cc.s
 
-src/google/protobuf/util/type_resolver_util_test.o: src/google/protobuf/util/type_resolver_util_test.cc.o
+src/google/protobuf/util/type_resolver_util_test.obj: src/google/protobuf/util/type_resolver_util_test.cc.obj
 
-.PHONY : src/google/protobuf/util/type_resolver_util_test.o
+.PHONY : src/google/protobuf/util/type_resolver_util_test.obj
 
 # target to build an object file
-src/google/protobuf/util/type_resolver_util_test.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/util/type_resolver_util_test.cc.o
-.PHONY : src/google/protobuf/util/type_resolver_util_test.cc.o
+src/google/protobuf/util/type_resolver_util_test.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/util/type_resolver_util_test.cc.obj
+.PHONY : src/google/protobuf/util/type_resolver_util_test.cc.obj
 
 src/google/protobuf/util/type_resolver_util_test.i: src/google/protobuf/util/type_resolver_util_test.cc.i
 
@@ -8456,14 +8456,14 @@ src/google/protobuf/util/type_resolver_util_test.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/util/type_resolver_util_test.cc.s
 .PHONY : src/google/protobuf/util/type_resolver_util_test.cc.s
 
-src/google/protobuf/well_known_types_unittest.o: src/google/protobuf/well_known_types_unittest.cc.o
+src/google/protobuf/well_known_types_unittest.obj: src/google/protobuf/well_known_types_unittest.cc.obj
 
-.PHONY : src/google/protobuf/well_known_types_unittest.o
+.PHONY : src/google/protobuf/well_known_types_unittest.obj
 
 # target to build an object file
-src/google/protobuf/well_known_types_unittest.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/well_known_types_unittest.cc.o
-.PHONY : src/google/protobuf/well_known_types_unittest.cc.o
+src/google/protobuf/well_known_types_unittest.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/well_known_types_unittest.cc.obj
+.PHONY : src/google/protobuf/well_known_types_unittest.cc.obj
 
 src/google/protobuf/well_known_types_unittest.i: src/google/protobuf/well_known_types_unittest.cc.i
 
@@ -8483,14 +8483,14 @@ src/google/protobuf/well_known_types_unittest.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/well_known_types_unittest.cc.s
 .PHONY : src/google/protobuf/well_known_types_unittest.cc.s
 
-src/google/protobuf/wire_format.o: src/google/protobuf/wire_format.cc.o
+src/google/protobuf/wire_format.obj: src/google/protobuf/wire_format.cc.obj
 
-.PHONY : src/google/protobuf/wire_format.o
+.PHONY : src/google/protobuf/wire_format.obj
 
 # target to build an object file
-src/google/protobuf/wire_format.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/wire_format.cc.o
-.PHONY : src/google/protobuf/wire_format.cc.o
+src/google/protobuf/wire_format.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/wire_format.cc.obj
+.PHONY : src/google/protobuf/wire_format.cc.obj
 
 src/google/protobuf/wire_format.i: src/google/protobuf/wire_format.cc.i
 
@@ -8510,15 +8510,15 @@ src/google/protobuf/wire_format.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/wire_format.cc.s
 .PHONY : src/google/protobuf/wire_format.cc.s
 
-src/google/protobuf/wire_format_lite.o: src/google/protobuf/wire_format_lite.cc.o
+src/google/protobuf/wire_format_lite.obj: src/google/protobuf/wire_format_lite.cc.obj
 
-.PHONY : src/google/protobuf/wire_format_lite.o
+.PHONY : src/google/protobuf/wire_format_lite.obj
 
 # target to build an object file
-src/google/protobuf/wire_format_lite.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf-lite.dir/build.make CMakeFiles/libprotobuf-lite.dir/src/google/protobuf/wire_format_lite.cc.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/wire_format_lite.cc.o
-.PHONY : src/google/protobuf/wire_format_lite.cc.o
+src/google/protobuf/wire_format_lite.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf-lite.dir/build.make CMakeFiles/libprotobuf-lite.dir/src/google/protobuf/wire_format_lite.cc.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/wire_format_lite.cc.obj
+.PHONY : src/google/protobuf/wire_format_lite.cc.obj
 
 src/google/protobuf/wire_format_lite.i: src/google/protobuf/wire_format_lite.cc.i
 
@@ -8540,14 +8540,14 @@ src/google/protobuf/wire_format_lite.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/wire_format_lite.cc.s
 .PHONY : src/google/protobuf/wire_format_lite.cc.s
 
-src/google/protobuf/wire_format_unittest.o: src/google/protobuf/wire_format_unittest.cc.o
+src/google/protobuf/wire_format_unittest.obj: src/google/protobuf/wire_format_unittest.cc.obj
 
-.PHONY : src/google/protobuf/wire_format_unittest.o
+.PHONY : src/google/protobuf/wire_format_unittest.obj
 
 # target to build an object file
-src/google/protobuf/wire_format_unittest.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/wire_format_unittest.cc.o
-.PHONY : src/google/protobuf/wire_format_unittest.cc.o
+src/google/protobuf/wire_format_unittest.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/wire_format_unittest.cc.obj
+.PHONY : src/google/protobuf/wire_format_unittest.cc.obj
 
 src/google/protobuf/wire_format_unittest.i: src/google/protobuf/wire_format_unittest.cc.i
 
@@ -8567,14 +8567,14 @@ src/google/protobuf/wire_format_unittest.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/google/protobuf/wire_format_unittest.cc.s
 .PHONY : src/google/protobuf/wire_format_unittest.cc.s
 
-src/google/protobuf/wrappers.pb.o: src/google/protobuf/wrappers.pb.cc.o
+src/google/protobuf/wrappers.pb.obj: src/google/protobuf/wrappers.pb.cc.obj
 
-.PHONY : src/google/protobuf/wrappers.pb.o
+.PHONY : src/google/protobuf/wrappers.pb.obj
 
 # target to build an object file
-src/google/protobuf/wrappers.pb.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/wrappers.pb.cc.o
-.PHONY : src/google/protobuf/wrappers.pb.cc.o
+src/google/protobuf/wrappers.pb.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/wrappers.pb.cc.obj
+.PHONY : src/google/protobuf/wrappers.pb.cc.obj
 
 src/google/protobuf/wrappers.pb.i: src/google/protobuf/wrappers.pb.cc.i
 
@@ -8594,14 +8594,14 @@ src/google/protobuf/wrappers.pb.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/libprotobuf.dir/build.make CMakeFiles/libprotobuf.dir/src/google/protobuf/wrappers.pb.cc.s
 .PHONY : src/google/protobuf/wrappers.pb.cc.s
 
-third_party/googletest/googlemock/src/gmock-all.o: third_party/googletest/googlemock/src/gmock-all.cc.o
+third_party/googletest/googlemock/src/gmock-all.obj: third_party/googletest/googlemock/src/gmock-all.cc.obj
 
-.PHONY : third_party/googletest/googlemock/src/gmock-all.o
+.PHONY : third_party/googletest/googlemock/src/gmock-all.obj
 
 # target to build an object file
-third_party/googletest/googlemock/src/gmock-all.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gmock.dir/build.make CMakeFiles/gmock.dir/third_party/googletest/googlemock/src/gmock-all.cc.o
-.PHONY : third_party/googletest/googlemock/src/gmock-all.cc.o
+third_party/googletest/googlemock/src/gmock-all.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gmock.dir/build.make CMakeFiles/gmock.dir/third_party/googletest/googlemock/src/gmock-all.cc.obj
+.PHONY : third_party/googletest/googlemock/src/gmock-all.cc.obj
 
 third_party/googletest/googlemock/src/gmock-all.i: third_party/googletest/googlemock/src/gmock-all.cc.i
 
@@ -8621,14 +8621,14 @@ third_party/googletest/googlemock/src/gmock-all.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gmock.dir/build.make CMakeFiles/gmock.dir/third_party/googletest/googlemock/src/gmock-all.cc.s
 .PHONY : third_party/googletest/googlemock/src/gmock-all.cc.s
 
-third_party/googletest/googlemock/src/gmock_main.o: third_party/googletest/googlemock/src/gmock_main.cc.o
+third_party/googletest/googlemock/src/gmock_main.obj: third_party/googletest/googlemock/src/gmock_main.cc.obj
 
-.PHONY : third_party/googletest/googlemock/src/gmock_main.o
+.PHONY : third_party/googletest/googlemock/src/gmock_main.obj
 
 # target to build an object file
-third_party/googletest/googlemock/src/gmock_main.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gmock_main.dir/build.make CMakeFiles/gmock_main.dir/third_party/googletest/googlemock/src/gmock_main.cc.o
-.PHONY : third_party/googletest/googlemock/src/gmock_main.cc.o
+third_party/googletest/googlemock/src/gmock_main.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gmock_main.dir/build.make CMakeFiles/gmock_main.dir/third_party/googletest/googlemock/src/gmock_main.cc.obj
+.PHONY : third_party/googletest/googlemock/src/gmock_main.cc.obj
 
 third_party/googletest/googlemock/src/gmock_main.i: third_party/googletest/googlemock/src/gmock_main.cc.i
 
@@ -8648,14 +8648,14 @@ third_party/googletest/googlemock/src/gmock_main.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gmock_main.dir/build.make CMakeFiles/gmock_main.dir/third_party/googletest/googlemock/src/gmock_main.cc.s
 .PHONY : third_party/googletest/googlemock/src/gmock_main.cc.s
 
-third_party/googletest/googletest/src/gtest-all.o: third_party/googletest/googletest/src/gtest-all.cc.o
+third_party/googletest/googletest/src/gtest-all.obj: third_party/googletest/googletest/src/gtest-all.cc.obj
 
-.PHONY : third_party/googletest/googletest/src/gtest-all.o
+.PHONY : third_party/googletest/googletest/src/gtest-all.obj
 
 # target to build an object file
-third_party/googletest/googletest/src/gtest-all.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gmock.dir/build.make CMakeFiles/gmock.dir/third_party/googletest/googletest/src/gtest-all.cc.o
-.PHONY : third_party/googletest/googletest/src/gtest-all.cc.o
+third_party/googletest/googletest/src/gtest-all.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gmock.dir/build.make CMakeFiles/gmock.dir/third_party/googletest/googletest/src/gtest-all.cc.obj
+.PHONY : third_party/googletest/googletest/src/gtest-all.cc.obj
 
 third_party/googletest/googletest/src/gtest-all.i: third_party/googletest/googletest/src/gtest-all.cc.i
 
@@ -8701,916 +8701,916 @@ help:
 	@echo "... protoc"
 	@echo "... test_plugin"
 	@echo "... tests"
-	@echo "... src/google/protobuf/any.o"
+	@echo "... src/google/protobuf/any.obj"
 	@echo "... src/google/protobuf/any.i"
 	@echo "... src/google/protobuf/any.s"
-	@echo "... src/google/protobuf/any.pb.o"
+	@echo "... src/google/protobuf/any.pb.obj"
 	@echo "... src/google/protobuf/any.pb.i"
 	@echo "... src/google/protobuf/any.pb.s"
-	@echo "... src/google/protobuf/any_lite.o"
+	@echo "... src/google/protobuf/any_lite.obj"
 	@echo "... src/google/protobuf/any_lite.i"
 	@echo "... src/google/protobuf/any_lite.s"
-	@echo "... src/google/protobuf/any_test.o"
+	@echo "... src/google/protobuf/any_test.obj"
 	@echo "... src/google/protobuf/any_test.i"
 	@echo "... src/google/protobuf/any_test.s"
-	@echo "... src/google/protobuf/any_test.pb.o"
+	@echo "... src/google/protobuf/any_test.pb.obj"
 	@echo "... src/google/protobuf/any_test.pb.i"
 	@echo "... src/google/protobuf/any_test.pb.s"
-	@echo "... src/google/protobuf/api.pb.o"
+	@echo "... src/google/protobuf/api.pb.obj"
 	@echo "... src/google/protobuf/api.pb.i"
 	@echo "... src/google/protobuf/api.pb.s"
-	@echo "... src/google/protobuf/arena.o"
+	@echo "... src/google/protobuf/arena.obj"
 	@echo "... src/google/protobuf/arena.i"
 	@echo "... src/google/protobuf/arena.s"
-	@echo "... src/google/protobuf/arena_test_util.o"
+	@echo "... src/google/protobuf/arena_test_util.obj"
 	@echo "... src/google/protobuf/arena_test_util.i"
 	@echo "... src/google/protobuf/arena_test_util.s"
-	@echo "... src/google/protobuf/arena_unittest.o"
+	@echo "... src/google/protobuf/arena_unittest.obj"
 	@echo "... src/google/protobuf/arena_unittest.i"
 	@echo "... src/google/protobuf/arena_unittest.s"
-	@echo "... src/google/protobuf/arenastring.o"
+	@echo "... src/google/protobuf/arenastring.obj"
 	@echo "... src/google/protobuf/arenastring.i"
 	@echo "... src/google/protobuf/arenastring.s"
-	@echo "... src/google/protobuf/arenastring_unittest.o"
+	@echo "... src/google/protobuf/arenastring_unittest.obj"
 	@echo "... src/google/protobuf/arenastring_unittest.i"
 	@echo "... src/google/protobuf/arenastring_unittest.s"
-	@echo "... src/google/protobuf/arenaz_sampler.o"
+	@echo "... src/google/protobuf/arenaz_sampler.obj"
 	@echo "... src/google/protobuf/arenaz_sampler.i"
 	@echo "... src/google/protobuf/arenaz_sampler.s"
-	@echo "... src/google/protobuf/arenaz_sampler_test.o"
+	@echo "... src/google/protobuf/arenaz_sampler_test.obj"
 	@echo "... src/google/protobuf/arenaz_sampler_test.i"
 	@echo "... src/google/protobuf/arenaz_sampler_test.s"
-	@echo "... src/google/protobuf/compiler/annotation_test_util.o"
+	@echo "... src/google/protobuf/compiler/annotation_test_util.obj"
 	@echo "... src/google/protobuf/compiler/annotation_test_util.i"
 	@echo "... src/google/protobuf/compiler/annotation_test_util.s"
-	@echo "... src/google/protobuf/compiler/code_generator.o"
+	@echo "... src/google/protobuf/compiler/code_generator.obj"
 	@echo "... src/google/protobuf/compiler/code_generator.i"
 	@echo "... src/google/protobuf/compiler/code_generator.s"
-	@echo "... src/google/protobuf/compiler/command_line_interface.o"
+	@echo "... src/google/protobuf/compiler/command_line_interface.obj"
 	@echo "... src/google/protobuf/compiler/command_line_interface.i"
 	@echo "... src/google/protobuf/compiler/command_line_interface.s"
-	@echo "... src/google/protobuf/compiler/command_line_interface_unittest.o"
+	@echo "... src/google/protobuf/compiler/command_line_interface_unittest.obj"
 	@echo "... src/google/protobuf/compiler/command_line_interface_unittest.i"
 	@echo "... src/google/protobuf/compiler/command_line_interface_unittest.s"
-	@echo "... src/google/protobuf/compiler/cpp/bootstrap_unittest.o"
+	@echo "... src/google/protobuf/compiler/cpp/bootstrap_unittest.obj"
 	@echo "... src/google/protobuf/compiler/cpp/bootstrap_unittest.i"
 	@echo "... src/google/protobuf/compiler/cpp/bootstrap_unittest.s"
-	@echo "... src/google/protobuf/compiler/cpp/enum.o"
+	@echo "... src/google/protobuf/compiler/cpp/enum.obj"
 	@echo "... src/google/protobuf/compiler/cpp/enum.i"
 	@echo "... src/google/protobuf/compiler/cpp/enum.s"
-	@echo "... src/google/protobuf/compiler/cpp/enum_field.o"
+	@echo "... src/google/protobuf/compiler/cpp/enum_field.obj"
 	@echo "... src/google/protobuf/compiler/cpp/enum_field.i"
 	@echo "... src/google/protobuf/compiler/cpp/enum_field.s"
-	@echo "... src/google/protobuf/compiler/cpp/extension.o"
+	@echo "... src/google/protobuf/compiler/cpp/extension.obj"
 	@echo "... src/google/protobuf/compiler/cpp/extension.i"
 	@echo "... src/google/protobuf/compiler/cpp/extension.s"
-	@echo "... src/google/protobuf/compiler/cpp/field.o"
+	@echo "... src/google/protobuf/compiler/cpp/field.obj"
 	@echo "... src/google/protobuf/compiler/cpp/field.i"
 	@echo "... src/google/protobuf/compiler/cpp/field.s"
-	@echo "... src/google/protobuf/compiler/cpp/file.o"
+	@echo "... src/google/protobuf/compiler/cpp/file.obj"
 	@echo "... src/google/protobuf/compiler/cpp/file.i"
 	@echo "... src/google/protobuf/compiler/cpp/file.s"
-	@echo "... src/google/protobuf/compiler/cpp/generator.o"
+	@echo "... src/google/protobuf/compiler/cpp/generator.obj"
 	@echo "... src/google/protobuf/compiler/cpp/generator.i"
 	@echo "... src/google/protobuf/compiler/cpp/generator.s"
-	@echo "... src/google/protobuf/compiler/cpp/helpers.o"
+	@echo "... src/google/protobuf/compiler/cpp/helpers.obj"
 	@echo "... src/google/protobuf/compiler/cpp/helpers.i"
 	@echo "... src/google/protobuf/compiler/cpp/helpers.s"
-	@echo "... src/google/protobuf/compiler/cpp/map_field.o"
+	@echo "... src/google/protobuf/compiler/cpp/map_field.obj"
 	@echo "... src/google/protobuf/compiler/cpp/map_field.i"
 	@echo "... src/google/protobuf/compiler/cpp/map_field.s"
-	@echo "... src/google/protobuf/compiler/cpp/message.o"
+	@echo "... src/google/protobuf/compiler/cpp/message.obj"
 	@echo "... src/google/protobuf/compiler/cpp/message.i"
 	@echo "... src/google/protobuf/compiler/cpp/message.s"
-	@echo "... src/google/protobuf/compiler/cpp/message_field.o"
+	@echo "... src/google/protobuf/compiler/cpp/message_field.obj"
 	@echo "... src/google/protobuf/compiler/cpp/message_field.i"
 	@echo "... src/google/protobuf/compiler/cpp/message_field.s"
-	@echo "... src/google/protobuf/compiler/cpp/message_size_unittest.o"
+	@echo "... src/google/protobuf/compiler/cpp/message_size_unittest.obj"
 	@echo "... src/google/protobuf/compiler/cpp/message_size_unittest.i"
 	@echo "... src/google/protobuf/compiler/cpp/message_size_unittest.s"
-	@echo "... src/google/protobuf/compiler/cpp/metadata_test.o"
+	@echo "... src/google/protobuf/compiler/cpp/metadata_test.obj"
 	@echo "... src/google/protobuf/compiler/cpp/metadata_test.i"
 	@echo "... src/google/protobuf/compiler/cpp/metadata_test.s"
-	@echo "... src/google/protobuf/compiler/cpp/move_unittest.o"
+	@echo "... src/google/protobuf/compiler/cpp/move_unittest.obj"
 	@echo "... src/google/protobuf/compiler/cpp/move_unittest.i"
 	@echo "... src/google/protobuf/compiler/cpp/move_unittest.s"
-	@echo "... src/google/protobuf/compiler/cpp/padding_optimizer.o"
+	@echo "... src/google/protobuf/compiler/cpp/padding_optimizer.obj"
 	@echo "... src/google/protobuf/compiler/cpp/padding_optimizer.i"
 	@echo "... src/google/protobuf/compiler/cpp/padding_optimizer.s"
-	@echo "... src/google/protobuf/compiler/cpp/parse_function_generator.o"
+	@echo "... src/google/protobuf/compiler/cpp/parse_function_generator.obj"
 	@echo "... src/google/protobuf/compiler/cpp/parse_function_generator.i"
 	@echo "... src/google/protobuf/compiler/cpp/parse_function_generator.s"
-	@echo "... src/google/protobuf/compiler/cpp/plugin_unittest.o"
+	@echo "... src/google/protobuf/compiler/cpp/plugin_unittest.obj"
 	@echo "... src/google/protobuf/compiler/cpp/plugin_unittest.i"
 	@echo "... src/google/protobuf/compiler/cpp/plugin_unittest.s"
-	@echo "... src/google/protobuf/compiler/cpp/primitive_field.o"
+	@echo "... src/google/protobuf/compiler/cpp/primitive_field.obj"
 	@echo "... src/google/protobuf/compiler/cpp/primitive_field.i"
 	@echo "... src/google/protobuf/compiler/cpp/primitive_field.s"
-	@echo "... src/google/protobuf/compiler/cpp/service.o"
+	@echo "... src/google/protobuf/compiler/cpp/service.obj"
 	@echo "... src/google/protobuf/compiler/cpp/service.i"
 	@echo "... src/google/protobuf/compiler/cpp/service.s"
-	@echo "... src/google/protobuf/compiler/cpp/string_field.o"
+	@echo "... src/google/protobuf/compiler/cpp/string_field.obj"
 	@echo "... src/google/protobuf/compiler/cpp/string_field.i"
 	@echo "... src/google/protobuf/compiler/cpp/string_field.s"
-	@echo "... src/google/protobuf/compiler/cpp/test_bad_identifiers.pb.o"
+	@echo "... src/google/protobuf/compiler/cpp/test_bad_identifiers.pb.obj"
 	@echo "... src/google/protobuf/compiler/cpp/test_bad_identifiers.pb.i"
 	@echo "... src/google/protobuf/compiler/cpp/test_bad_identifiers.pb.s"
-	@echo "... src/google/protobuf/compiler/cpp/test_large_enum_value.pb.o"
+	@echo "... src/google/protobuf/compiler/cpp/test_large_enum_value.pb.obj"
 	@echo "... src/google/protobuf/compiler/cpp/test_large_enum_value.pb.i"
 	@echo "... src/google/protobuf/compiler/cpp/test_large_enum_value.pb.s"
-	@echo "... src/google/protobuf/compiler/cpp/unittest.o"
+	@echo "... src/google/protobuf/compiler/cpp/unittest.obj"
 	@echo "... src/google/protobuf/compiler/cpp/unittest.i"
 	@echo "... src/google/protobuf/compiler/cpp/unittest.s"
-	@echo "... src/google/protobuf/compiler/csharp/csharp_bootstrap_unittest.o"
+	@echo "... src/google/protobuf/compiler/csharp/csharp_bootstrap_unittest.obj"
 	@echo "... src/google/protobuf/compiler/csharp/csharp_bootstrap_unittest.i"
 	@echo "... src/google/protobuf/compiler/csharp/csharp_bootstrap_unittest.s"
-	@echo "... src/google/protobuf/compiler/csharp/csharp_doc_comment.o"
+	@echo "... src/google/protobuf/compiler/csharp/csharp_doc_comment.obj"
 	@echo "... src/google/protobuf/compiler/csharp/csharp_doc_comment.i"
 	@echo "... src/google/protobuf/compiler/csharp/csharp_doc_comment.s"
-	@echo "... src/google/protobuf/compiler/csharp/csharp_enum.o"
+	@echo "... src/google/protobuf/compiler/csharp/csharp_enum.obj"
 	@echo "... src/google/protobuf/compiler/csharp/csharp_enum.i"
 	@echo "... src/google/protobuf/compiler/csharp/csharp_enum.s"
-	@echo "... src/google/protobuf/compiler/csharp/csharp_enum_field.o"
+	@echo "... src/google/protobuf/compiler/csharp/csharp_enum_field.obj"
 	@echo "... src/google/protobuf/compiler/csharp/csharp_enum_field.i"
 	@echo "... src/google/protobuf/compiler/csharp/csharp_enum_field.s"
-	@echo "... src/google/protobuf/compiler/csharp/csharp_field_base.o"
+	@echo "... src/google/protobuf/compiler/csharp/csharp_field_base.obj"
 	@echo "... src/google/protobuf/compiler/csharp/csharp_field_base.i"
 	@echo "... src/google/protobuf/compiler/csharp/csharp_field_base.s"
-	@echo "... src/google/protobuf/compiler/csharp/csharp_generator.o"
+	@echo "... src/google/protobuf/compiler/csharp/csharp_generator.obj"
 	@echo "... src/google/protobuf/compiler/csharp/csharp_generator.i"
 	@echo "... src/google/protobuf/compiler/csharp/csharp_generator.s"
-	@echo "... src/google/protobuf/compiler/csharp/csharp_generator_unittest.o"
+	@echo "... src/google/protobuf/compiler/csharp/csharp_generator_unittest.obj"
 	@echo "... src/google/protobuf/compiler/csharp/csharp_generator_unittest.i"
 	@echo "... src/google/protobuf/compiler/csharp/csharp_generator_unittest.s"
-	@echo "... src/google/protobuf/compiler/csharp/csharp_helpers.o"
+	@echo "... src/google/protobuf/compiler/csharp/csharp_helpers.obj"
 	@echo "... src/google/protobuf/compiler/csharp/csharp_helpers.i"
 	@echo "... src/google/protobuf/compiler/csharp/csharp_helpers.s"
-	@echo "... src/google/protobuf/compiler/csharp/csharp_map_field.o"
+	@echo "... src/google/protobuf/compiler/csharp/csharp_map_field.obj"
 	@echo "... src/google/protobuf/compiler/csharp/csharp_map_field.i"
 	@echo "... src/google/protobuf/compiler/csharp/csharp_map_field.s"
-	@echo "... src/google/protobuf/compiler/csharp/csharp_message.o"
+	@echo "... src/google/protobuf/compiler/csharp/csharp_message.obj"
 	@echo "... src/google/protobuf/compiler/csharp/csharp_message.i"
 	@echo "... src/google/protobuf/compiler/csharp/csharp_message.s"
-	@echo "... src/google/protobuf/compiler/csharp/csharp_message_field.o"
+	@echo "... src/google/protobuf/compiler/csharp/csharp_message_field.obj"
 	@echo "... src/google/protobuf/compiler/csharp/csharp_message_field.i"
 	@echo "... src/google/protobuf/compiler/csharp/csharp_message_field.s"
-	@echo "... src/google/protobuf/compiler/csharp/csharp_primitive_field.o"
+	@echo "... src/google/protobuf/compiler/csharp/csharp_primitive_field.obj"
 	@echo "... src/google/protobuf/compiler/csharp/csharp_primitive_field.i"
 	@echo "... src/google/protobuf/compiler/csharp/csharp_primitive_field.s"
-	@echo "... src/google/protobuf/compiler/csharp/csharp_reflection_class.o"
+	@echo "... src/google/protobuf/compiler/csharp/csharp_reflection_class.obj"
 	@echo "... src/google/protobuf/compiler/csharp/csharp_reflection_class.i"
 	@echo "... src/google/protobuf/compiler/csharp/csharp_reflection_class.s"
-	@echo "... src/google/protobuf/compiler/csharp/csharp_repeated_enum_field.o"
+	@echo "... src/google/protobuf/compiler/csharp/csharp_repeated_enum_field.obj"
 	@echo "... src/google/protobuf/compiler/csharp/csharp_repeated_enum_field.i"
 	@echo "... src/google/protobuf/compiler/csharp/csharp_repeated_enum_field.s"
-	@echo "... src/google/protobuf/compiler/csharp/csharp_repeated_message_field.o"
+	@echo "... src/google/protobuf/compiler/csharp/csharp_repeated_message_field.obj"
 	@echo "... src/google/protobuf/compiler/csharp/csharp_repeated_message_field.i"
 	@echo "... src/google/protobuf/compiler/csharp/csharp_repeated_message_field.s"
-	@echo "... src/google/protobuf/compiler/csharp/csharp_repeated_primitive_field.o"
+	@echo "... src/google/protobuf/compiler/csharp/csharp_repeated_primitive_field.obj"
 	@echo "... src/google/protobuf/compiler/csharp/csharp_repeated_primitive_field.i"
 	@echo "... src/google/protobuf/compiler/csharp/csharp_repeated_primitive_field.s"
-	@echo "... src/google/protobuf/compiler/csharp/csharp_source_generator_base.o"
+	@echo "... src/google/protobuf/compiler/csharp/csharp_source_generator_base.obj"
 	@echo "... src/google/protobuf/compiler/csharp/csharp_source_generator_base.i"
 	@echo "... src/google/protobuf/compiler/csharp/csharp_source_generator_base.s"
-	@echo "... src/google/protobuf/compiler/csharp/csharp_wrapper_field.o"
+	@echo "... src/google/protobuf/compiler/csharp/csharp_wrapper_field.obj"
 	@echo "... src/google/protobuf/compiler/csharp/csharp_wrapper_field.i"
 	@echo "... src/google/protobuf/compiler/csharp/csharp_wrapper_field.s"
-	@echo "... src/google/protobuf/compiler/importer.o"
+	@echo "... src/google/protobuf/compiler/importer.obj"
 	@echo "... src/google/protobuf/compiler/importer.i"
 	@echo "... src/google/protobuf/compiler/importer.s"
-	@echo "... src/google/protobuf/compiler/importer_unittest.o"
+	@echo "... src/google/protobuf/compiler/importer_unittest.obj"
 	@echo "... src/google/protobuf/compiler/importer_unittest.i"
 	@echo "... src/google/protobuf/compiler/importer_unittest.s"
-	@echo "... src/google/protobuf/compiler/java/context.o"
+	@echo "... src/google/protobuf/compiler/java/context.obj"
 	@echo "... src/google/protobuf/compiler/java/context.i"
 	@echo "... src/google/protobuf/compiler/java/context.s"
-	@echo "... src/google/protobuf/compiler/java/doc_comment.o"
+	@echo "... src/google/protobuf/compiler/java/doc_comment.obj"
 	@echo "... src/google/protobuf/compiler/java/doc_comment.i"
 	@echo "... src/google/protobuf/compiler/java/doc_comment.s"
-	@echo "... src/google/protobuf/compiler/java/doc_comment_unittest.o"
+	@echo "... src/google/protobuf/compiler/java/doc_comment_unittest.obj"
 	@echo "... src/google/protobuf/compiler/java/doc_comment_unittest.i"
 	@echo "... src/google/protobuf/compiler/java/doc_comment_unittest.s"
-	@echo "... src/google/protobuf/compiler/java/enum.o"
+	@echo "... src/google/protobuf/compiler/java/enum.obj"
 	@echo "... src/google/protobuf/compiler/java/enum.i"
 	@echo "... src/google/protobuf/compiler/java/enum.s"
-	@echo "... src/google/protobuf/compiler/java/enum_field.o"
+	@echo "... src/google/protobuf/compiler/java/enum_field.obj"
 	@echo "... src/google/protobuf/compiler/java/enum_field.i"
 	@echo "... src/google/protobuf/compiler/java/enum_field.s"
-	@echo "... src/google/protobuf/compiler/java/enum_field_lite.o"
+	@echo "... src/google/protobuf/compiler/java/enum_field_lite.obj"
 	@echo "... src/google/protobuf/compiler/java/enum_field_lite.i"
 	@echo "... src/google/protobuf/compiler/java/enum_field_lite.s"
-	@echo "... src/google/protobuf/compiler/java/enum_lite.o"
+	@echo "... src/google/protobuf/compiler/java/enum_lite.obj"
 	@echo "... src/google/protobuf/compiler/java/enum_lite.i"
 	@echo "... src/google/protobuf/compiler/java/enum_lite.s"
-	@echo "... src/google/protobuf/compiler/java/extension.o"
+	@echo "... src/google/protobuf/compiler/java/extension.obj"
 	@echo "... src/google/protobuf/compiler/java/extension.i"
 	@echo "... src/google/protobuf/compiler/java/extension.s"
-	@echo "... src/google/protobuf/compiler/java/extension_lite.o"
+	@echo "... src/google/protobuf/compiler/java/extension_lite.obj"
 	@echo "... src/google/protobuf/compiler/java/extension_lite.i"
 	@echo "... src/google/protobuf/compiler/java/extension_lite.s"
-	@echo "... src/google/protobuf/compiler/java/field.o"
+	@echo "... src/google/protobuf/compiler/java/field.obj"
 	@echo "... src/google/protobuf/compiler/java/field.i"
 	@echo "... src/google/protobuf/compiler/java/field.s"
-	@echo "... src/google/protobuf/compiler/java/file.o"
+	@echo "... src/google/protobuf/compiler/java/file.obj"
 	@echo "... src/google/protobuf/compiler/java/file.i"
 	@echo "... src/google/protobuf/compiler/java/file.s"
-	@echo "... src/google/protobuf/compiler/java/generator.o"
+	@echo "... src/google/protobuf/compiler/java/generator.obj"
 	@echo "... src/google/protobuf/compiler/java/generator.i"
 	@echo "... src/google/protobuf/compiler/java/generator.s"
-	@echo "... src/google/protobuf/compiler/java/generator_factory.o"
+	@echo "... src/google/protobuf/compiler/java/generator_factory.obj"
 	@echo "... src/google/protobuf/compiler/java/generator_factory.i"
 	@echo "... src/google/protobuf/compiler/java/generator_factory.s"
-	@echo "... src/google/protobuf/compiler/java/helpers.o"
+	@echo "... src/google/protobuf/compiler/java/helpers.obj"
 	@echo "... src/google/protobuf/compiler/java/helpers.i"
 	@echo "... src/google/protobuf/compiler/java/helpers.s"
-	@echo "... src/google/protobuf/compiler/java/kotlin_generator.o"
+	@echo "... src/google/protobuf/compiler/java/kotlin_generator.obj"
 	@echo "... src/google/protobuf/compiler/java/kotlin_generator.i"
 	@echo "... src/google/protobuf/compiler/java/kotlin_generator.s"
-	@echo "... src/google/protobuf/compiler/java/map_field.o"
+	@echo "... src/google/protobuf/compiler/java/map_field.obj"
 	@echo "... src/google/protobuf/compiler/java/map_field.i"
 	@echo "... src/google/protobuf/compiler/java/map_field.s"
-	@echo "... src/google/protobuf/compiler/java/map_field_lite.o"
+	@echo "... src/google/protobuf/compiler/java/map_field_lite.obj"
 	@echo "... src/google/protobuf/compiler/java/map_field_lite.i"
 	@echo "... src/google/protobuf/compiler/java/map_field_lite.s"
-	@echo "... src/google/protobuf/compiler/java/message.o"
+	@echo "... src/google/protobuf/compiler/java/message.obj"
 	@echo "... src/google/protobuf/compiler/java/message.i"
 	@echo "... src/google/protobuf/compiler/java/message.s"
-	@echo "... src/google/protobuf/compiler/java/message_builder.o"
+	@echo "... src/google/protobuf/compiler/java/message_builder.obj"
 	@echo "... src/google/protobuf/compiler/java/message_builder.i"
 	@echo "... src/google/protobuf/compiler/java/message_builder.s"
-	@echo "... src/google/protobuf/compiler/java/message_builder_lite.o"
+	@echo "... src/google/protobuf/compiler/java/message_builder_lite.obj"
 	@echo "... src/google/protobuf/compiler/java/message_builder_lite.i"
 	@echo "... src/google/protobuf/compiler/java/message_builder_lite.s"
-	@echo "... src/google/protobuf/compiler/java/message_field.o"
+	@echo "... src/google/protobuf/compiler/java/message_field.obj"
 	@echo "... src/google/protobuf/compiler/java/message_field.i"
 	@echo "... src/google/protobuf/compiler/java/message_field.s"
-	@echo "... src/google/protobuf/compiler/java/message_field_lite.o"
+	@echo "... src/google/protobuf/compiler/java/message_field_lite.obj"
 	@echo "... src/google/protobuf/compiler/java/message_field_lite.i"
 	@echo "... src/google/protobuf/compiler/java/message_field_lite.s"
-	@echo "... src/google/protobuf/compiler/java/message_lite.o"
+	@echo "... src/google/protobuf/compiler/java/message_lite.obj"
 	@echo "... src/google/protobuf/compiler/java/message_lite.i"
 	@echo "... src/google/protobuf/compiler/java/message_lite.s"
-	@echo "... src/google/protobuf/compiler/java/name_resolver.o"
+	@echo "... src/google/protobuf/compiler/java/name_resolver.obj"
 	@echo "... src/google/protobuf/compiler/java/name_resolver.i"
 	@echo "... src/google/protobuf/compiler/java/name_resolver.s"
-	@echo "... src/google/protobuf/compiler/java/plugin_unittest.o"
+	@echo "... src/google/protobuf/compiler/java/plugin_unittest.obj"
 	@echo "... src/google/protobuf/compiler/java/plugin_unittest.i"
 	@echo "... src/google/protobuf/compiler/java/plugin_unittest.s"
-	@echo "... src/google/protobuf/compiler/java/primitive_field.o"
+	@echo "... src/google/protobuf/compiler/java/primitive_field.obj"
 	@echo "... src/google/protobuf/compiler/java/primitive_field.i"
 	@echo "... src/google/protobuf/compiler/java/primitive_field.s"
-	@echo "... src/google/protobuf/compiler/java/primitive_field_lite.o"
+	@echo "... src/google/protobuf/compiler/java/primitive_field_lite.obj"
 	@echo "... src/google/protobuf/compiler/java/primitive_field_lite.i"
 	@echo "... src/google/protobuf/compiler/java/primitive_field_lite.s"
-	@echo "... src/google/protobuf/compiler/java/service.o"
+	@echo "... src/google/protobuf/compiler/java/service.obj"
 	@echo "... src/google/protobuf/compiler/java/service.i"
 	@echo "... src/google/protobuf/compiler/java/service.s"
-	@echo "... src/google/protobuf/compiler/java/shared_code_generator.o"
+	@echo "... src/google/protobuf/compiler/java/shared_code_generator.obj"
 	@echo "... src/google/protobuf/compiler/java/shared_code_generator.i"
 	@echo "... src/google/protobuf/compiler/java/shared_code_generator.s"
-	@echo "... src/google/protobuf/compiler/java/string_field.o"
+	@echo "... src/google/protobuf/compiler/java/string_field.obj"
 	@echo "... src/google/protobuf/compiler/java/string_field.i"
 	@echo "... src/google/protobuf/compiler/java/string_field.s"
-	@echo "... src/google/protobuf/compiler/java/string_field_lite.o"
+	@echo "... src/google/protobuf/compiler/java/string_field_lite.obj"
 	@echo "... src/google/protobuf/compiler/java/string_field_lite.i"
 	@echo "... src/google/protobuf/compiler/java/string_field_lite.s"
-	@echo "... src/google/protobuf/compiler/main.o"
+	@echo "... src/google/protobuf/compiler/main.obj"
 	@echo "... src/google/protobuf/compiler/main.i"
 	@echo "... src/google/protobuf/compiler/main.s"
-	@echo "... src/google/protobuf/compiler/mock_code_generator.o"
+	@echo "... src/google/protobuf/compiler/mock_code_generator.obj"
 	@echo "... src/google/protobuf/compiler/mock_code_generator.i"
 	@echo "... src/google/protobuf/compiler/mock_code_generator.s"
-	@echo "... src/google/protobuf/compiler/objectivec/objectivec_enum.o"
+	@echo "... src/google/protobuf/compiler/objectivec/objectivec_enum.obj"
 	@echo "... src/google/protobuf/compiler/objectivec/objectivec_enum.i"
 	@echo "... src/google/protobuf/compiler/objectivec/objectivec_enum.s"
-	@echo "... src/google/protobuf/compiler/objectivec/objectivec_enum_field.o"
+	@echo "... src/google/protobuf/compiler/objectivec/objectivec_enum_field.obj"
 	@echo "... src/google/protobuf/compiler/objectivec/objectivec_enum_field.i"
 	@echo "... src/google/protobuf/compiler/objectivec/objectivec_enum_field.s"
-	@echo "... src/google/protobuf/compiler/objectivec/objectivec_extension.o"
+	@echo "... src/google/protobuf/compiler/objectivec/objectivec_extension.obj"
 	@echo "... src/google/protobuf/compiler/objectivec/objectivec_extension.i"
 	@echo "... src/google/protobuf/compiler/objectivec/objectivec_extension.s"
-	@echo "... src/google/protobuf/compiler/objectivec/objectivec_field.o"
+	@echo "... src/google/protobuf/compiler/objectivec/objectivec_field.obj"
 	@echo "... src/google/protobuf/compiler/objectivec/objectivec_field.i"
 	@echo "... src/google/protobuf/compiler/objectivec/objectivec_field.s"
-	@echo "... src/google/protobuf/compiler/objectivec/objectivec_file.o"
+	@echo "... src/google/protobuf/compiler/objectivec/objectivec_file.obj"
 	@echo "... src/google/protobuf/compiler/objectivec/objectivec_file.i"
 	@echo "... src/google/protobuf/compiler/objectivec/objectivec_file.s"
-	@echo "... src/google/protobuf/compiler/objectivec/objectivec_generator.o"
+	@echo "... src/google/protobuf/compiler/objectivec/objectivec_generator.obj"
 	@echo "... src/google/protobuf/compiler/objectivec/objectivec_generator.i"
 	@echo "... src/google/protobuf/compiler/objectivec/objectivec_generator.s"
-	@echo "... src/google/protobuf/compiler/objectivec/objectivec_helpers.o"
+	@echo "... src/google/protobuf/compiler/objectivec/objectivec_helpers.obj"
 	@echo "... src/google/protobuf/compiler/objectivec/objectivec_helpers.i"
 	@echo "... src/google/protobuf/compiler/objectivec/objectivec_helpers.s"
-	@echo "... src/google/protobuf/compiler/objectivec/objectivec_helpers_unittest.o"
+	@echo "... src/google/protobuf/compiler/objectivec/objectivec_helpers_unittest.obj"
 	@echo "... src/google/protobuf/compiler/objectivec/objectivec_helpers_unittest.i"
 	@echo "... src/google/protobuf/compiler/objectivec/objectivec_helpers_unittest.s"
-	@echo "... src/google/protobuf/compiler/objectivec/objectivec_map_field.o"
+	@echo "... src/google/protobuf/compiler/objectivec/objectivec_map_field.obj"
 	@echo "... src/google/protobuf/compiler/objectivec/objectivec_map_field.i"
 	@echo "... src/google/protobuf/compiler/objectivec/objectivec_map_field.s"
-	@echo "... src/google/protobuf/compiler/objectivec/objectivec_message.o"
+	@echo "... src/google/protobuf/compiler/objectivec/objectivec_message.obj"
 	@echo "... src/google/protobuf/compiler/objectivec/objectivec_message.i"
 	@echo "... src/google/protobuf/compiler/objectivec/objectivec_message.s"
-	@echo "... src/google/protobuf/compiler/objectivec/objectivec_message_field.o"
+	@echo "... src/google/protobuf/compiler/objectivec/objectivec_message_field.obj"
 	@echo "... src/google/protobuf/compiler/objectivec/objectivec_message_field.i"
 	@echo "... src/google/protobuf/compiler/objectivec/objectivec_message_field.s"
-	@echo "... src/google/protobuf/compiler/objectivec/objectivec_oneof.o"
+	@echo "... src/google/protobuf/compiler/objectivec/objectivec_oneof.obj"
 	@echo "... src/google/protobuf/compiler/objectivec/objectivec_oneof.i"
 	@echo "... src/google/protobuf/compiler/objectivec/objectivec_oneof.s"
-	@echo "... src/google/protobuf/compiler/objectivec/objectivec_primitive_field.o"
+	@echo "... src/google/protobuf/compiler/objectivec/objectivec_primitive_field.obj"
 	@echo "... src/google/protobuf/compiler/objectivec/objectivec_primitive_field.i"
 	@echo "... src/google/protobuf/compiler/objectivec/objectivec_primitive_field.s"
-	@echo "... src/google/protobuf/compiler/parser.o"
+	@echo "... src/google/protobuf/compiler/parser.obj"
 	@echo "... src/google/protobuf/compiler/parser.i"
 	@echo "... src/google/protobuf/compiler/parser.s"
-	@echo "... src/google/protobuf/compiler/parser_unittest.o"
+	@echo "... src/google/protobuf/compiler/parser_unittest.obj"
 	@echo "... src/google/protobuf/compiler/parser_unittest.i"
 	@echo "... src/google/protobuf/compiler/parser_unittest.s"
-	@echo "... src/google/protobuf/compiler/php/php_generator.o"
+	@echo "... src/google/protobuf/compiler/php/php_generator.obj"
 	@echo "... src/google/protobuf/compiler/php/php_generator.i"
 	@echo "... src/google/protobuf/compiler/php/php_generator.s"
-	@echo "... src/google/protobuf/compiler/plugin.o"
+	@echo "... src/google/protobuf/compiler/plugin.obj"
 	@echo "... src/google/protobuf/compiler/plugin.i"
 	@echo "... src/google/protobuf/compiler/plugin.s"
-	@echo "... src/google/protobuf/compiler/plugin.pb.o"
+	@echo "... src/google/protobuf/compiler/plugin.pb.obj"
 	@echo "... src/google/protobuf/compiler/plugin.pb.i"
 	@echo "... src/google/protobuf/compiler/plugin.pb.s"
-	@echo "... src/google/protobuf/compiler/python/generator.o"
+	@echo "... src/google/protobuf/compiler/python/generator.obj"
 	@echo "... src/google/protobuf/compiler/python/generator.i"
 	@echo "... src/google/protobuf/compiler/python/generator.s"
-	@echo "... src/google/protobuf/compiler/python/helpers.o"
+	@echo "... src/google/protobuf/compiler/python/helpers.obj"
 	@echo "... src/google/protobuf/compiler/python/helpers.i"
 	@echo "... src/google/protobuf/compiler/python/helpers.s"
-	@echo "... src/google/protobuf/compiler/python/plugin_unittest.o"
+	@echo "... src/google/protobuf/compiler/python/plugin_unittest.obj"
 	@echo "... src/google/protobuf/compiler/python/plugin_unittest.i"
 	@echo "... src/google/protobuf/compiler/python/plugin_unittest.s"
-	@echo "... src/google/protobuf/compiler/python/pyi_generator.o"
+	@echo "... src/google/protobuf/compiler/python/pyi_generator.obj"
 	@echo "... src/google/protobuf/compiler/python/pyi_generator.i"
 	@echo "... src/google/protobuf/compiler/python/pyi_generator.s"
-	@echo "... src/google/protobuf/compiler/ruby/ruby_generator.o"
+	@echo "... src/google/protobuf/compiler/ruby/ruby_generator.obj"
 	@echo "... src/google/protobuf/compiler/ruby/ruby_generator.i"
 	@echo "... src/google/protobuf/compiler/ruby/ruby_generator.s"
-	@echo "... src/google/protobuf/compiler/ruby/ruby_generator_unittest.o"
+	@echo "... src/google/protobuf/compiler/ruby/ruby_generator_unittest.obj"
 	@echo "... src/google/protobuf/compiler/ruby/ruby_generator_unittest.i"
 	@echo "... src/google/protobuf/compiler/ruby/ruby_generator_unittest.s"
-	@echo "... src/google/protobuf/compiler/subprocess.o"
+	@echo "... src/google/protobuf/compiler/subprocess.obj"
 	@echo "... src/google/protobuf/compiler/subprocess.i"
 	@echo "... src/google/protobuf/compiler/subprocess.s"
-	@echo "... src/google/protobuf/compiler/test_plugin.o"
+	@echo "... src/google/protobuf/compiler/test_plugin.obj"
 	@echo "... src/google/protobuf/compiler/test_plugin.i"
 	@echo "... src/google/protobuf/compiler/test_plugin.s"
-	@echo "... src/google/protobuf/compiler/zip_writer.o"
+	@echo "... src/google/protobuf/compiler/zip_writer.obj"
 	@echo "... src/google/protobuf/compiler/zip_writer.i"
 	@echo "... src/google/protobuf/compiler/zip_writer.s"
-	@echo "... src/google/protobuf/descriptor.o"
+	@echo "... src/google/protobuf/descriptor.obj"
 	@echo "... src/google/protobuf/descriptor.i"
 	@echo "... src/google/protobuf/descriptor.s"
-	@echo "... src/google/protobuf/descriptor.pb.o"
+	@echo "... src/google/protobuf/descriptor.pb.obj"
 	@echo "... src/google/protobuf/descriptor.pb.i"
 	@echo "... src/google/protobuf/descriptor.pb.s"
-	@echo "... src/google/protobuf/descriptor_database.o"
+	@echo "... src/google/protobuf/descriptor_database.obj"
 	@echo "... src/google/protobuf/descriptor_database.i"
 	@echo "... src/google/protobuf/descriptor_database.s"
-	@echo "... src/google/protobuf/descriptor_database_unittest.o"
+	@echo "... src/google/protobuf/descriptor_database_unittest.obj"
 	@echo "... src/google/protobuf/descriptor_database_unittest.i"
 	@echo "... src/google/protobuf/descriptor_database_unittest.s"
-	@echo "... src/google/protobuf/descriptor_unittest.o"
+	@echo "... src/google/protobuf/descriptor_unittest.obj"
 	@echo "... src/google/protobuf/descriptor_unittest.i"
 	@echo "... src/google/protobuf/descriptor_unittest.s"
-	@echo "... src/google/protobuf/drop_unknown_fields_test.o"
+	@echo "... src/google/protobuf/drop_unknown_fields_test.obj"
 	@echo "... src/google/protobuf/drop_unknown_fields_test.i"
 	@echo "... src/google/protobuf/drop_unknown_fields_test.s"
-	@echo "... src/google/protobuf/duration.pb.o"
+	@echo "... src/google/protobuf/duration.pb.obj"
 	@echo "... src/google/protobuf/duration.pb.i"
 	@echo "... src/google/protobuf/duration.pb.s"
-	@echo "... src/google/protobuf/dynamic_message.o"
+	@echo "... src/google/protobuf/dynamic_message.obj"
 	@echo "... src/google/protobuf/dynamic_message.i"
 	@echo "... src/google/protobuf/dynamic_message.s"
-	@echo "... src/google/protobuf/dynamic_message_unittest.o"
+	@echo "... src/google/protobuf/dynamic_message_unittest.obj"
 	@echo "... src/google/protobuf/dynamic_message_unittest.i"
 	@echo "... src/google/protobuf/dynamic_message_unittest.s"
-	@echo "... src/google/protobuf/empty.pb.o"
+	@echo "... src/google/protobuf/empty.pb.obj"
 	@echo "... src/google/protobuf/empty.pb.i"
 	@echo "... src/google/protobuf/empty.pb.s"
-	@echo "... src/google/protobuf/extension_set.o"
+	@echo "... src/google/protobuf/extension_set.obj"
 	@echo "... src/google/protobuf/extension_set.i"
 	@echo "... src/google/protobuf/extension_set.s"
-	@echo "... src/google/protobuf/extension_set_heavy.o"
+	@echo "... src/google/protobuf/extension_set_heavy.obj"
 	@echo "... src/google/protobuf/extension_set_heavy.i"
 	@echo "... src/google/protobuf/extension_set_heavy.s"
-	@echo "... src/google/protobuf/extension_set_unittest.o"
+	@echo "... src/google/protobuf/extension_set_unittest.obj"
 	@echo "... src/google/protobuf/extension_set_unittest.i"
 	@echo "... src/google/protobuf/extension_set_unittest.s"
-	@echo "... src/google/protobuf/field_mask.pb.o"
+	@echo "... src/google/protobuf/field_mask.pb.obj"
 	@echo "... src/google/protobuf/field_mask.pb.i"
 	@echo "... src/google/protobuf/field_mask.pb.s"
-	@echo "... src/google/protobuf/generated_enum_util.o"
+	@echo "... src/google/protobuf/generated_enum_util.obj"
 	@echo "... src/google/protobuf/generated_enum_util.i"
 	@echo "... src/google/protobuf/generated_enum_util.s"
-	@echo "... src/google/protobuf/generated_message_bases.o"
+	@echo "... src/google/protobuf/generated_message_bases.obj"
 	@echo "... src/google/protobuf/generated_message_bases.i"
 	@echo "... src/google/protobuf/generated_message_bases.s"
-	@echo "... src/google/protobuf/generated_message_reflection.o"
+	@echo "... src/google/protobuf/generated_message_reflection.obj"
 	@echo "... src/google/protobuf/generated_message_reflection.i"
 	@echo "... src/google/protobuf/generated_message_reflection.s"
-	@echo "... src/google/protobuf/generated_message_reflection_unittest.o"
+	@echo "... src/google/protobuf/generated_message_reflection_unittest.obj"
 	@echo "... src/google/protobuf/generated_message_reflection_unittest.i"
 	@echo "... src/google/protobuf/generated_message_reflection_unittest.s"
-	@echo "... src/google/protobuf/generated_message_tctable_full.o"
+	@echo "... src/google/protobuf/generated_message_tctable_full.obj"
 	@echo "... src/google/protobuf/generated_message_tctable_full.i"
 	@echo "... src/google/protobuf/generated_message_tctable_full.s"
-	@echo "... src/google/protobuf/generated_message_tctable_lite.o"
+	@echo "... src/google/protobuf/generated_message_tctable_lite.obj"
 	@echo "... src/google/protobuf/generated_message_tctable_lite.i"
 	@echo "... src/google/protobuf/generated_message_tctable_lite.s"
-	@echo "... src/google/protobuf/generated_message_tctable_lite_test.o"
+	@echo "... src/google/protobuf/generated_message_tctable_lite_test.obj"
 	@echo "... src/google/protobuf/generated_message_tctable_lite_test.i"
 	@echo "... src/google/protobuf/generated_message_tctable_lite_test.s"
-	@echo "... src/google/protobuf/generated_message_util.o"
+	@echo "... src/google/protobuf/generated_message_util.obj"
 	@echo "... src/google/protobuf/generated_message_util.i"
 	@echo "... src/google/protobuf/generated_message_util.s"
-	@echo "... src/google/protobuf/implicit_weak_message.o"
+	@echo "... src/google/protobuf/implicit_weak_message.obj"
 	@echo "... src/google/protobuf/implicit_weak_message.i"
 	@echo "... src/google/protobuf/implicit_weak_message.s"
-	@echo "... src/google/protobuf/inlined_string_field.o"
+	@echo "... src/google/protobuf/inlined_string_field.obj"
 	@echo "... src/google/protobuf/inlined_string_field.i"
 	@echo "... src/google/protobuf/inlined_string_field.s"
-	@echo "... src/google/protobuf/inlined_string_field_unittest.o"
+	@echo "... src/google/protobuf/inlined_string_field_unittest.obj"
 	@echo "... src/google/protobuf/inlined_string_field_unittest.i"
 	@echo "... src/google/protobuf/inlined_string_field_unittest.s"
-	@echo "... src/google/protobuf/io/coded_stream.o"
+	@echo "... src/google/protobuf/io/coded_stream.obj"
 	@echo "... src/google/protobuf/io/coded_stream.i"
 	@echo "... src/google/protobuf/io/coded_stream.s"
-	@echo "... src/google/protobuf/io/coded_stream_unittest.o"
+	@echo "... src/google/protobuf/io/coded_stream_unittest.obj"
 	@echo "... src/google/protobuf/io/coded_stream_unittest.i"
 	@echo "... src/google/protobuf/io/coded_stream_unittest.s"
-	@echo "... src/google/protobuf/io/gzip_stream.o"
+	@echo "... src/google/protobuf/io/gzip_stream.obj"
 	@echo "... src/google/protobuf/io/gzip_stream.i"
 	@echo "... src/google/protobuf/io/gzip_stream.s"
-	@echo "... src/google/protobuf/io/io_win32.o"
+	@echo "... src/google/protobuf/io/io_win32.obj"
 	@echo "... src/google/protobuf/io/io_win32.i"
 	@echo "... src/google/protobuf/io/io_win32.s"
-	@echo "... src/google/protobuf/io/io_win32_unittest.o"
+	@echo "... src/google/protobuf/io/io_win32_unittest.obj"
 	@echo "... src/google/protobuf/io/io_win32_unittest.i"
 	@echo "... src/google/protobuf/io/io_win32_unittest.s"
-	@echo "... src/google/protobuf/io/printer.o"
+	@echo "... src/google/protobuf/io/printer.obj"
 	@echo "... src/google/protobuf/io/printer.i"
 	@echo "... src/google/protobuf/io/printer.s"
-	@echo "... src/google/protobuf/io/printer_unittest.o"
+	@echo "... src/google/protobuf/io/printer_unittest.obj"
 	@echo "... src/google/protobuf/io/printer_unittest.i"
 	@echo "... src/google/protobuf/io/printer_unittest.s"
-	@echo "... src/google/protobuf/io/strtod.o"
+	@echo "... src/google/protobuf/io/strtod.obj"
 	@echo "... src/google/protobuf/io/strtod.i"
 	@echo "... src/google/protobuf/io/strtod.s"
-	@echo "... src/google/protobuf/io/tokenizer.o"
+	@echo "... src/google/protobuf/io/tokenizer.obj"
 	@echo "... src/google/protobuf/io/tokenizer.i"
 	@echo "... src/google/protobuf/io/tokenizer.s"
-	@echo "... src/google/protobuf/io/tokenizer_unittest.o"
+	@echo "... src/google/protobuf/io/tokenizer_unittest.obj"
 	@echo "... src/google/protobuf/io/tokenizer_unittest.i"
 	@echo "... src/google/protobuf/io/tokenizer_unittest.s"
-	@echo "... src/google/protobuf/io/zero_copy_stream.o"
+	@echo "... src/google/protobuf/io/zero_copy_stream.obj"
 	@echo "... src/google/protobuf/io/zero_copy_stream.i"
 	@echo "... src/google/protobuf/io/zero_copy_stream.s"
-	@echo "... src/google/protobuf/io/zero_copy_stream_impl.o"
+	@echo "... src/google/protobuf/io/zero_copy_stream_impl.obj"
 	@echo "... src/google/protobuf/io/zero_copy_stream_impl.i"
 	@echo "... src/google/protobuf/io/zero_copy_stream_impl.s"
-	@echo "... src/google/protobuf/io/zero_copy_stream_impl_lite.o"
+	@echo "... src/google/protobuf/io/zero_copy_stream_impl_lite.obj"
 	@echo "... src/google/protobuf/io/zero_copy_stream_impl_lite.i"
 	@echo "... src/google/protobuf/io/zero_copy_stream_impl_lite.s"
-	@echo "... src/google/protobuf/io/zero_copy_stream_unittest.o"
+	@echo "... src/google/protobuf/io/zero_copy_stream_unittest.obj"
 	@echo "... src/google/protobuf/io/zero_copy_stream_unittest.i"
 	@echo "... src/google/protobuf/io/zero_copy_stream_unittest.s"
-	@echo "... src/google/protobuf/lite_arena_unittest.o"
+	@echo "... src/google/protobuf/lite_arena_unittest.obj"
 	@echo "... src/google/protobuf/lite_arena_unittest.i"
 	@echo "... src/google/protobuf/lite_arena_unittest.s"
-	@echo "... src/google/protobuf/lite_unittest.o"
+	@echo "... src/google/protobuf/lite_unittest.obj"
 	@echo "... src/google/protobuf/lite_unittest.i"
 	@echo "... src/google/protobuf/lite_unittest.s"
-	@echo "... src/google/protobuf/map.o"
+	@echo "... src/google/protobuf/map.obj"
 	@echo "... src/google/protobuf/map.i"
 	@echo "... src/google/protobuf/map.s"
-	@echo "... src/google/protobuf/map_field.o"
+	@echo "... src/google/protobuf/map_field.obj"
 	@echo "... src/google/protobuf/map_field.i"
 	@echo "... src/google/protobuf/map_field.s"
-	@echo "... src/google/protobuf/map_field_test.o"
+	@echo "... src/google/protobuf/map_field_test.obj"
 	@echo "... src/google/protobuf/map_field_test.i"
 	@echo "... src/google/protobuf/map_field_test.s"
-	@echo "... src/google/protobuf/map_lite_test_util.o"
+	@echo "... src/google/protobuf/map_lite_test_util.obj"
 	@echo "... src/google/protobuf/map_lite_test_util.i"
 	@echo "... src/google/protobuf/map_lite_test_util.s"
-	@echo "... src/google/protobuf/map_lite_unittest.pb.o"
+	@echo "... src/google/protobuf/map_lite_unittest.pb.obj"
 	@echo "... src/google/protobuf/map_lite_unittest.pb.i"
 	@echo "... src/google/protobuf/map_lite_unittest.pb.s"
-	@echo "... src/google/protobuf/map_proto2_unittest.pb.o"
+	@echo "... src/google/protobuf/map_proto2_unittest.pb.obj"
 	@echo "... src/google/protobuf/map_proto2_unittest.pb.i"
 	@echo "... src/google/protobuf/map_proto2_unittest.pb.s"
-	@echo "... src/google/protobuf/map_test.o"
+	@echo "... src/google/protobuf/map_test.obj"
 	@echo "... src/google/protobuf/map_test.i"
 	@echo "... src/google/protobuf/map_test.s"
-	@echo "... src/google/protobuf/map_unittest.pb.o"
+	@echo "... src/google/protobuf/map_unittest.pb.obj"
 	@echo "... src/google/protobuf/map_unittest.pb.i"
 	@echo "... src/google/protobuf/map_unittest.pb.s"
-	@echo "... src/google/protobuf/message.o"
+	@echo "... src/google/protobuf/message.obj"
 	@echo "... src/google/protobuf/message.i"
 	@echo "... src/google/protobuf/message.s"
-	@echo "... src/google/protobuf/message_lite.o"
+	@echo "... src/google/protobuf/message_lite.obj"
 	@echo "... src/google/protobuf/message_lite.i"
 	@echo "... src/google/protobuf/message_lite.s"
-	@echo "... src/google/protobuf/message_unittest.o"
+	@echo "... src/google/protobuf/message_unittest.obj"
 	@echo "... src/google/protobuf/message_unittest.i"
 	@echo "... src/google/protobuf/message_unittest.s"
-	@echo "... src/google/protobuf/no_field_presence_test.o"
+	@echo "... src/google/protobuf/no_field_presence_test.obj"
 	@echo "... src/google/protobuf/no_field_presence_test.i"
 	@echo "... src/google/protobuf/no_field_presence_test.s"
-	@echo "... src/google/protobuf/parse_context.o"
+	@echo "... src/google/protobuf/parse_context.obj"
 	@echo "... src/google/protobuf/parse_context.i"
 	@echo "... src/google/protobuf/parse_context.s"
-	@echo "... src/google/protobuf/preserve_unknown_enum_test.o"
+	@echo "... src/google/protobuf/preserve_unknown_enum_test.obj"
 	@echo "... src/google/protobuf/preserve_unknown_enum_test.i"
 	@echo "... src/google/protobuf/preserve_unknown_enum_test.s"
-	@echo "... src/google/protobuf/proto3_arena_lite_unittest.o"
+	@echo "... src/google/protobuf/proto3_arena_lite_unittest.obj"
 	@echo "... src/google/protobuf/proto3_arena_lite_unittest.i"
 	@echo "... src/google/protobuf/proto3_arena_lite_unittest.s"
-	@echo "... src/google/protobuf/proto3_arena_unittest.o"
+	@echo "... src/google/protobuf/proto3_arena_unittest.obj"
 	@echo "... src/google/protobuf/proto3_arena_unittest.i"
 	@echo "... src/google/protobuf/proto3_arena_unittest.s"
-	@echo "... src/google/protobuf/proto3_lite_unittest.o"
+	@echo "... src/google/protobuf/proto3_lite_unittest.obj"
 	@echo "... src/google/protobuf/proto3_lite_unittest.i"
 	@echo "... src/google/protobuf/proto3_lite_unittest.s"
-	@echo "... src/google/protobuf/reflection_ops.o"
+	@echo "... src/google/protobuf/reflection_ops.obj"
 	@echo "... src/google/protobuf/reflection_ops.i"
 	@echo "... src/google/protobuf/reflection_ops.s"
-	@echo "... src/google/protobuf/reflection_ops_unittest.o"
+	@echo "... src/google/protobuf/reflection_ops_unittest.obj"
 	@echo "... src/google/protobuf/reflection_ops_unittest.i"
 	@echo "... src/google/protobuf/reflection_ops_unittest.s"
-	@echo "... src/google/protobuf/reflection_tester.o"
+	@echo "... src/google/protobuf/reflection_tester.obj"
 	@echo "... src/google/protobuf/reflection_tester.i"
 	@echo "... src/google/protobuf/reflection_tester.s"
-	@echo "... src/google/protobuf/repeated_field.o"
+	@echo "... src/google/protobuf/repeated_field.obj"
 	@echo "... src/google/protobuf/repeated_field.i"
 	@echo "... src/google/protobuf/repeated_field.s"
-	@echo "... src/google/protobuf/repeated_field_reflection_unittest.o"
+	@echo "... src/google/protobuf/repeated_field_reflection_unittest.obj"
 	@echo "... src/google/protobuf/repeated_field_reflection_unittest.i"
 	@echo "... src/google/protobuf/repeated_field_reflection_unittest.s"
-	@echo "... src/google/protobuf/repeated_field_unittest.o"
+	@echo "... src/google/protobuf/repeated_field_unittest.obj"
 	@echo "... src/google/protobuf/repeated_field_unittest.i"
 	@echo "... src/google/protobuf/repeated_field_unittest.s"
-	@echo "... src/google/protobuf/repeated_ptr_field.o"
+	@echo "... src/google/protobuf/repeated_ptr_field.obj"
 	@echo "... src/google/protobuf/repeated_ptr_field.i"
 	@echo "... src/google/protobuf/repeated_ptr_field.s"
-	@echo "... src/google/protobuf/service.o"
+	@echo "... src/google/protobuf/service.obj"
 	@echo "... src/google/protobuf/service.i"
 	@echo "... src/google/protobuf/service.s"
-	@echo "... src/google/protobuf/source_context.pb.o"
+	@echo "... src/google/protobuf/source_context.pb.obj"
 	@echo "... src/google/protobuf/source_context.pb.i"
 	@echo "... src/google/protobuf/source_context.pb.s"
-	@echo "... src/google/protobuf/struct.pb.o"
+	@echo "... src/google/protobuf/struct.pb.obj"
 	@echo "... src/google/protobuf/struct.pb.i"
 	@echo "... src/google/protobuf/struct.pb.s"
-	@echo "... src/google/protobuf/stubs/bytestream.o"
+	@echo "... src/google/protobuf/stubs/bytestream.obj"
 	@echo "... src/google/protobuf/stubs/bytestream.i"
 	@echo "... src/google/protobuf/stubs/bytestream.s"
-	@echo "... src/google/protobuf/stubs/bytestream_unittest.o"
+	@echo "... src/google/protobuf/stubs/bytestream_unittest.obj"
 	@echo "... src/google/protobuf/stubs/bytestream_unittest.i"
 	@echo "... src/google/protobuf/stubs/bytestream_unittest.s"
-	@echo "... src/google/protobuf/stubs/common.o"
+	@echo "... src/google/protobuf/stubs/common.obj"
 	@echo "... src/google/protobuf/stubs/common.i"
 	@echo "... src/google/protobuf/stubs/common.s"
-	@echo "... src/google/protobuf/stubs/common_unittest.o"
+	@echo "... src/google/protobuf/stubs/common_unittest.obj"
 	@echo "... src/google/protobuf/stubs/common_unittest.i"
 	@echo "... src/google/protobuf/stubs/common_unittest.s"
-	@echo "... src/google/protobuf/stubs/int128.o"
+	@echo "... src/google/protobuf/stubs/int128.obj"
 	@echo "... src/google/protobuf/stubs/int128.i"
 	@echo "... src/google/protobuf/stubs/int128.s"
-	@echo "... src/google/protobuf/stubs/int128_unittest.o"
+	@echo "... src/google/protobuf/stubs/int128_unittest.obj"
 	@echo "... src/google/protobuf/stubs/int128_unittest.i"
 	@echo "... src/google/protobuf/stubs/int128_unittest.s"
-	@echo "... src/google/protobuf/stubs/status.o"
+	@echo "... src/google/protobuf/stubs/status.obj"
 	@echo "... src/google/protobuf/stubs/status.i"
 	@echo "... src/google/protobuf/stubs/status.s"
-	@echo "... src/google/protobuf/stubs/status_test.o"
+	@echo "... src/google/protobuf/stubs/status_test.obj"
 	@echo "... src/google/protobuf/stubs/status_test.i"
 	@echo "... src/google/protobuf/stubs/status_test.s"
-	@echo "... src/google/protobuf/stubs/statusor.o"
+	@echo "... src/google/protobuf/stubs/statusor.obj"
 	@echo "... src/google/protobuf/stubs/statusor.i"
 	@echo "... src/google/protobuf/stubs/statusor.s"
-	@echo "... src/google/protobuf/stubs/statusor_test.o"
+	@echo "... src/google/protobuf/stubs/statusor_test.obj"
 	@echo "... src/google/protobuf/stubs/statusor_test.i"
 	@echo "... src/google/protobuf/stubs/statusor_test.s"
-	@echo "... src/google/protobuf/stubs/stringpiece.o"
+	@echo "... src/google/protobuf/stubs/stringpiece.obj"
 	@echo "... src/google/protobuf/stubs/stringpiece.i"
 	@echo "... src/google/protobuf/stubs/stringpiece.s"
-	@echo "... src/google/protobuf/stubs/stringpiece_unittest.o"
+	@echo "... src/google/protobuf/stubs/stringpiece_unittest.obj"
 	@echo "... src/google/protobuf/stubs/stringpiece_unittest.i"
 	@echo "... src/google/protobuf/stubs/stringpiece_unittest.s"
-	@echo "... src/google/protobuf/stubs/stringprintf.o"
+	@echo "... src/google/protobuf/stubs/stringprintf.obj"
 	@echo "... src/google/protobuf/stubs/stringprintf.i"
 	@echo "... src/google/protobuf/stubs/stringprintf.s"
-	@echo "... src/google/protobuf/stubs/stringprintf_unittest.o"
+	@echo "... src/google/protobuf/stubs/stringprintf_unittest.obj"
 	@echo "... src/google/protobuf/stubs/stringprintf_unittest.i"
 	@echo "... src/google/protobuf/stubs/stringprintf_unittest.s"
-	@echo "... src/google/protobuf/stubs/structurally_valid.o"
+	@echo "... src/google/protobuf/stubs/structurally_valid.obj"
 	@echo "... src/google/protobuf/stubs/structurally_valid.i"
 	@echo "... src/google/protobuf/stubs/structurally_valid.s"
-	@echo "... src/google/protobuf/stubs/structurally_valid_unittest.o"
+	@echo "... src/google/protobuf/stubs/structurally_valid_unittest.obj"
 	@echo "... src/google/protobuf/stubs/structurally_valid_unittest.i"
 	@echo "... src/google/protobuf/stubs/structurally_valid_unittest.s"
-	@echo "... src/google/protobuf/stubs/strutil.o"
+	@echo "... src/google/protobuf/stubs/strutil.obj"
 	@echo "... src/google/protobuf/stubs/strutil.i"
 	@echo "... src/google/protobuf/stubs/strutil.s"
-	@echo "... src/google/protobuf/stubs/strutil_unittest.o"
+	@echo "... src/google/protobuf/stubs/strutil_unittest.obj"
 	@echo "... src/google/protobuf/stubs/strutil_unittest.i"
 	@echo "... src/google/protobuf/stubs/strutil_unittest.s"
-	@echo "... src/google/protobuf/stubs/substitute.o"
+	@echo "... src/google/protobuf/stubs/substitute.obj"
 	@echo "... src/google/protobuf/stubs/substitute.i"
 	@echo "... src/google/protobuf/stubs/substitute.s"
-	@echo "... src/google/protobuf/stubs/template_util_unittest.o"
+	@echo "... src/google/protobuf/stubs/template_util_unittest.obj"
 	@echo "... src/google/protobuf/stubs/template_util_unittest.i"
 	@echo "... src/google/protobuf/stubs/template_util_unittest.s"
-	@echo "... src/google/protobuf/stubs/time.o"
+	@echo "... src/google/protobuf/stubs/time.obj"
 	@echo "... src/google/protobuf/stubs/time.i"
 	@echo "... src/google/protobuf/stubs/time.s"
-	@echo "... src/google/protobuf/stubs/time_test.o"
+	@echo "... src/google/protobuf/stubs/time_test.obj"
 	@echo "... src/google/protobuf/stubs/time_test.i"
 	@echo "... src/google/protobuf/stubs/time_test.s"
-	@echo "... src/google/protobuf/test_util.o"
+	@echo "... src/google/protobuf/test_util.obj"
 	@echo "... src/google/protobuf/test_util.i"
 	@echo "... src/google/protobuf/test_util.s"
-	@echo "... src/google/protobuf/test_util_lite.o"
+	@echo "... src/google/protobuf/test_util_lite.obj"
 	@echo "... src/google/protobuf/test_util_lite.i"
 	@echo "... src/google/protobuf/test_util_lite.s"
-	@echo "... src/google/protobuf/testing/file.o"
+	@echo "... src/google/protobuf/testing/file.obj"
 	@echo "... src/google/protobuf/testing/file.i"
 	@echo "... src/google/protobuf/testing/file.s"
-	@echo "... src/google/protobuf/testing/googletest.o"
+	@echo "... src/google/protobuf/testing/googletest.obj"
 	@echo "... src/google/protobuf/testing/googletest.i"
 	@echo "... src/google/protobuf/testing/googletest.s"
-	@echo "... src/google/protobuf/text_format.o"
+	@echo "... src/google/protobuf/text_format.obj"
 	@echo "... src/google/protobuf/text_format.i"
 	@echo "... src/google/protobuf/text_format.s"
-	@echo "... src/google/protobuf/text_format_unittest.o"
+	@echo "... src/google/protobuf/text_format_unittest.obj"
 	@echo "... src/google/protobuf/text_format_unittest.i"
 	@echo "... src/google/protobuf/text_format_unittest.s"
-	@echo "... src/google/protobuf/timestamp.pb.o"
+	@echo "... src/google/protobuf/timestamp.pb.obj"
 	@echo "... src/google/protobuf/timestamp.pb.i"
 	@echo "... src/google/protobuf/timestamp.pb.s"
-	@echo "... src/google/protobuf/type.pb.o"
+	@echo "... src/google/protobuf/type.pb.obj"
 	@echo "... src/google/protobuf/type.pb.i"
 	@echo "... src/google/protobuf/type.pb.s"
-	@echo "... src/google/protobuf/unittest.pb.o"
+	@echo "... src/google/protobuf/unittest.pb.obj"
 	@echo "... src/google/protobuf/unittest.pb.i"
 	@echo "... src/google/protobuf/unittest.pb.s"
-	@echo "... src/google/protobuf/unittest_arena.pb.o"
+	@echo "... src/google/protobuf/unittest_arena.pb.obj"
 	@echo "... src/google/protobuf/unittest_arena.pb.i"
 	@echo "... src/google/protobuf/unittest_arena.pb.s"
-	@echo "... src/google/protobuf/unittest_custom_options.pb.o"
+	@echo "... src/google/protobuf/unittest_custom_options.pb.obj"
 	@echo "... src/google/protobuf/unittest_custom_options.pb.i"
 	@echo "... src/google/protobuf/unittest_custom_options.pb.s"
-	@echo "... src/google/protobuf/unittest_drop_unknown_fields.pb.o"
+	@echo "... src/google/protobuf/unittest_drop_unknown_fields.pb.obj"
 	@echo "... src/google/protobuf/unittest_drop_unknown_fields.pb.i"
 	@echo "... src/google/protobuf/unittest_drop_unknown_fields.pb.s"
-	@echo "... src/google/protobuf/unittest_embed_optimize_for.pb.o"
+	@echo "... src/google/protobuf/unittest_embed_optimize_for.pb.obj"
 	@echo "... src/google/protobuf/unittest_embed_optimize_for.pb.i"
 	@echo "... src/google/protobuf/unittest_embed_optimize_for.pb.s"
-	@echo "... src/google/protobuf/unittest_empty.pb.o"
+	@echo "... src/google/protobuf/unittest_empty.pb.obj"
 	@echo "... src/google/protobuf/unittest_empty.pb.i"
 	@echo "... src/google/protobuf/unittest_empty.pb.s"
-	@echo "... src/google/protobuf/unittest_enormous_descriptor.pb.o"
+	@echo "... src/google/protobuf/unittest_enormous_descriptor.pb.obj"
 	@echo "... src/google/protobuf/unittest_enormous_descriptor.pb.i"
 	@echo "... src/google/protobuf/unittest_enormous_descriptor.pb.s"
-	@echo "... src/google/protobuf/unittest_import.pb.o"
+	@echo "... src/google/protobuf/unittest_import.pb.obj"
 	@echo "... src/google/protobuf/unittest_import.pb.i"
 	@echo "... src/google/protobuf/unittest_import.pb.s"
-	@echo "... src/google/protobuf/unittest_import_lite.pb.o"
+	@echo "... src/google/protobuf/unittest_import_lite.pb.obj"
 	@echo "... src/google/protobuf/unittest_import_lite.pb.i"
 	@echo "... src/google/protobuf/unittest_import_lite.pb.s"
-	@echo "... src/google/protobuf/unittest_import_public.pb.o"
+	@echo "... src/google/protobuf/unittest_import_public.pb.obj"
 	@echo "... src/google/protobuf/unittest_import_public.pb.i"
 	@echo "... src/google/protobuf/unittest_import_public.pb.s"
-	@echo "... src/google/protobuf/unittest_import_public_lite.pb.o"
+	@echo "... src/google/protobuf/unittest_import_public_lite.pb.obj"
 	@echo "... src/google/protobuf/unittest_import_public_lite.pb.i"
 	@echo "... src/google/protobuf/unittest_import_public_lite.pb.s"
-	@echo "... src/google/protobuf/unittest_lazy_dependencies.pb.o"
+	@echo "... src/google/protobuf/unittest_lazy_dependencies.pb.obj"
 	@echo "... src/google/protobuf/unittest_lazy_dependencies.pb.i"
 	@echo "... src/google/protobuf/unittest_lazy_dependencies.pb.s"
-	@echo "... src/google/protobuf/unittest_lazy_dependencies_custom_option.pb.o"
+	@echo "... src/google/protobuf/unittest_lazy_dependencies_custom_option.pb.obj"
 	@echo "... src/google/protobuf/unittest_lazy_dependencies_custom_option.pb.i"
 	@echo "... src/google/protobuf/unittest_lazy_dependencies_custom_option.pb.s"
-	@echo "... src/google/protobuf/unittest_lazy_dependencies_enum.pb.o"
+	@echo "... src/google/protobuf/unittest_lazy_dependencies_enum.pb.obj"
 	@echo "... src/google/protobuf/unittest_lazy_dependencies_enum.pb.i"
 	@echo "... src/google/protobuf/unittest_lazy_dependencies_enum.pb.s"
-	@echo "... src/google/protobuf/unittest_lite.pb.o"
+	@echo "... src/google/protobuf/unittest_lite.pb.obj"
 	@echo "... src/google/protobuf/unittest_lite.pb.i"
 	@echo "... src/google/protobuf/unittest_lite.pb.s"
-	@echo "... src/google/protobuf/unittest_lite_imports_nonlite.pb.o"
+	@echo "... src/google/protobuf/unittest_lite_imports_nonlite.pb.obj"
 	@echo "... src/google/protobuf/unittest_lite_imports_nonlite.pb.i"
 	@echo "... src/google/protobuf/unittest_lite_imports_nonlite.pb.s"
-	@echo "... src/google/protobuf/unittest_mset.pb.o"
+	@echo "... src/google/protobuf/unittest_mset.pb.obj"
 	@echo "... src/google/protobuf/unittest_mset.pb.i"
 	@echo "... src/google/protobuf/unittest_mset.pb.s"
-	@echo "... src/google/protobuf/unittest_mset_wire_format.pb.o"
+	@echo "... src/google/protobuf/unittest_mset_wire_format.pb.obj"
 	@echo "... src/google/protobuf/unittest_mset_wire_format.pb.i"
 	@echo "... src/google/protobuf/unittest_mset_wire_format.pb.s"
-	@echo "... src/google/protobuf/unittest_no_field_presence.pb.o"
+	@echo "... src/google/protobuf/unittest_no_field_presence.pb.obj"
 	@echo "... src/google/protobuf/unittest_no_field_presence.pb.i"
 	@echo "... src/google/protobuf/unittest_no_field_presence.pb.s"
-	@echo "... src/google/protobuf/unittest_no_generic_services.pb.o"
+	@echo "... src/google/protobuf/unittest_no_generic_services.pb.obj"
 	@echo "... src/google/protobuf/unittest_no_generic_services.pb.i"
 	@echo "... src/google/protobuf/unittest_no_generic_services.pb.s"
-	@echo "... src/google/protobuf/unittest_optimize_for.pb.o"
+	@echo "... src/google/protobuf/unittest_optimize_for.pb.obj"
 	@echo "... src/google/protobuf/unittest_optimize_for.pb.i"
 	@echo "... src/google/protobuf/unittest_optimize_for.pb.s"
-	@echo "... src/google/protobuf/unittest_preserve_unknown_enum.pb.o"
+	@echo "... src/google/protobuf/unittest_preserve_unknown_enum.pb.obj"
 	@echo "... src/google/protobuf/unittest_preserve_unknown_enum.pb.i"
 	@echo "... src/google/protobuf/unittest_preserve_unknown_enum.pb.s"
-	@echo "... src/google/protobuf/unittest_preserve_unknown_enum2.pb.o"
+	@echo "... src/google/protobuf/unittest_preserve_unknown_enum2.pb.obj"
 	@echo "... src/google/protobuf/unittest_preserve_unknown_enum2.pb.i"
 	@echo "... src/google/protobuf/unittest_preserve_unknown_enum2.pb.s"
-	@echo "... src/google/protobuf/unittest_proto3.pb.o"
+	@echo "... src/google/protobuf/unittest_proto3.pb.obj"
 	@echo "... src/google/protobuf/unittest_proto3.pb.i"
 	@echo "... src/google/protobuf/unittest_proto3.pb.s"
-	@echo "... src/google/protobuf/unittest_proto3_arena.pb.o"
+	@echo "... src/google/protobuf/unittest_proto3_arena.pb.obj"
 	@echo "... src/google/protobuf/unittest_proto3_arena.pb.i"
 	@echo "... src/google/protobuf/unittest_proto3_arena.pb.s"
-	@echo "... src/google/protobuf/unittest_proto3_arena_lite.pb.o"
+	@echo "... src/google/protobuf/unittest_proto3_arena_lite.pb.obj"
 	@echo "... src/google/protobuf/unittest_proto3_arena_lite.pb.i"
 	@echo "... src/google/protobuf/unittest_proto3_arena_lite.pb.s"
-	@echo "... src/google/protobuf/unittest_proto3_lite.pb.o"
+	@echo "... src/google/protobuf/unittest_proto3_lite.pb.obj"
 	@echo "... src/google/protobuf/unittest_proto3_lite.pb.i"
 	@echo "... src/google/protobuf/unittest_proto3_lite.pb.s"
-	@echo "... src/google/protobuf/unittest_proto3_optional.pb.o"
+	@echo "... src/google/protobuf/unittest_proto3_optional.pb.obj"
 	@echo "... src/google/protobuf/unittest_proto3_optional.pb.i"
 	@echo "... src/google/protobuf/unittest_proto3_optional.pb.s"
-	@echo "... src/google/protobuf/unittest_well_known_types.pb.o"
+	@echo "... src/google/protobuf/unittest_well_known_types.pb.obj"
 	@echo "... src/google/protobuf/unittest_well_known_types.pb.i"
 	@echo "... src/google/protobuf/unittest_well_known_types.pb.s"
-	@echo "... src/google/protobuf/unknown_field_set.o"
+	@echo "... src/google/protobuf/unknown_field_set.obj"
 	@echo "... src/google/protobuf/unknown_field_set.i"
 	@echo "... src/google/protobuf/unknown_field_set.s"
-	@echo "... src/google/protobuf/unknown_field_set_unittest.o"
+	@echo "... src/google/protobuf/unknown_field_set_unittest.obj"
 	@echo "... src/google/protobuf/unknown_field_set_unittest.i"
 	@echo "... src/google/protobuf/unknown_field_set_unittest.s"
-	@echo "... src/google/protobuf/util/delimited_message_util.o"
+	@echo "... src/google/protobuf/util/delimited_message_util.obj"
 	@echo "... src/google/protobuf/util/delimited_message_util.i"
 	@echo "... src/google/protobuf/util/delimited_message_util.s"
-	@echo "... src/google/protobuf/util/delimited_message_util_test.o"
+	@echo "... src/google/protobuf/util/delimited_message_util_test.obj"
 	@echo "... src/google/protobuf/util/delimited_message_util_test.i"
 	@echo "... src/google/protobuf/util/delimited_message_util_test.s"
-	@echo "... src/google/protobuf/util/field_comparator.o"
+	@echo "... src/google/protobuf/util/field_comparator.obj"
 	@echo "... src/google/protobuf/util/field_comparator.i"
 	@echo "... src/google/protobuf/util/field_comparator.s"
-	@echo "... src/google/protobuf/util/field_comparator_test.o"
+	@echo "... src/google/protobuf/util/field_comparator_test.obj"
 	@echo "... src/google/protobuf/util/field_comparator_test.i"
 	@echo "... src/google/protobuf/util/field_comparator_test.s"
-	@echo "... src/google/protobuf/util/field_mask_util.o"
+	@echo "... src/google/protobuf/util/field_mask_util.obj"
 	@echo "... src/google/protobuf/util/field_mask_util.i"
 	@echo "... src/google/protobuf/util/field_mask_util.s"
-	@echo "... src/google/protobuf/util/field_mask_util_test.o"
+	@echo "... src/google/protobuf/util/field_mask_util_test.obj"
 	@echo "... src/google/protobuf/util/field_mask_util_test.i"
 	@echo "... src/google/protobuf/util/field_mask_util_test.s"
-	@echo "... src/google/protobuf/util/internal/datapiece.o"
+	@echo "... src/google/protobuf/util/internal/datapiece.obj"
 	@echo "... src/google/protobuf/util/internal/datapiece.i"
 	@echo "... src/google/protobuf/util/internal/datapiece.s"
-	@echo "... src/google/protobuf/util/internal/default_value_objectwriter.o"
+	@echo "... src/google/protobuf/util/internal/default_value_objectwriter.obj"
 	@echo "... src/google/protobuf/util/internal/default_value_objectwriter.i"
 	@echo "... src/google/protobuf/util/internal/default_value_objectwriter.s"
-	@echo "... src/google/protobuf/util/internal/default_value_objectwriter_test.o"
+	@echo "... src/google/protobuf/util/internal/default_value_objectwriter_test.obj"
 	@echo "... src/google/protobuf/util/internal/default_value_objectwriter_test.i"
 	@echo "... src/google/protobuf/util/internal/default_value_objectwriter_test.s"
-	@echo "... src/google/protobuf/util/internal/error_listener.o"
+	@echo "... src/google/protobuf/util/internal/error_listener.obj"
 	@echo "... src/google/protobuf/util/internal/error_listener.i"
 	@echo "... src/google/protobuf/util/internal/error_listener.s"
-	@echo "... src/google/protobuf/util/internal/field_mask_utility.o"
+	@echo "... src/google/protobuf/util/internal/field_mask_utility.obj"
 	@echo "... src/google/protobuf/util/internal/field_mask_utility.i"
 	@echo "... src/google/protobuf/util/internal/field_mask_utility.s"
-	@echo "... src/google/protobuf/util/internal/json_escaping.o"
+	@echo "... src/google/protobuf/util/internal/json_escaping.obj"
 	@echo "... src/google/protobuf/util/internal/json_escaping.i"
 	@echo "... src/google/protobuf/util/internal/json_escaping.s"
-	@echo "... src/google/protobuf/util/internal/json_objectwriter.o"
+	@echo "... src/google/protobuf/util/internal/json_objectwriter.obj"
 	@echo "... src/google/protobuf/util/internal/json_objectwriter.i"
 	@echo "... src/google/protobuf/util/internal/json_objectwriter.s"
-	@echo "... src/google/protobuf/util/internal/json_objectwriter_test.o"
+	@echo "... src/google/protobuf/util/internal/json_objectwriter_test.obj"
 	@echo "... src/google/protobuf/util/internal/json_objectwriter_test.i"
 	@echo "... src/google/protobuf/util/internal/json_objectwriter_test.s"
-	@echo "... src/google/protobuf/util/internal/json_stream_parser.o"
+	@echo "... src/google/protobuf/util/internal/json_stream_parser.obj"
 	@echo "... src/google/protobuf/util/internal/json_stream_parser.i"
 	@echo "... src/google/protobuf/util/internal/json_stream_parser.s"
-	@echo "... src/google/protobuf/util/internal/json_stream_parser_test.o"
+	@echo "... src/google/protobuf/util/internal/json_stream_parser_test.obj"
 	@echo "... src/google/protobuf/util/internal/json_stream_parser_test.i"
 	@echo "... src/google/protobuf/util/internal/json_stream_parser_test.s"
-	@echo "... src/google/protobuf/util/internal/object_writer.o"
+	@echo "... src/google/protobuf/util/internal/object_writer.obj"
 	@echo "... src/google/protobuf/util/internal/object_writer.i"
 	@echo "... src/google/protobuf/util/internal/object_writer.s"
-	@echo "... src/google/protobuf/util/internal/proto_writer.o"
+	@echo "... src/google/protobuf/util/internal/proto_writer.obj"
 	@echo "... src/google/protobuf/util/internal/proto_writer.i"
 	@echo "... src/google/protobuf/util/internal/proto_writer.s"
-	@echo "... src/google/protobuf/util/internal/protostream_objectsource.o"
+	@echo "... src/google/protobuf/util/internal/protostream_objectsource.obj"
 	@echo "... src/google/protobuf/util/internal/protostream_objectsource.i"
 	@echo "... src/google/protobuf/util/internal/protostream_objectsource.s"
-	@echo "... src/google/protobuf/util/internal/protostream_objectsource_test.o"
+	@echo "... src/google/protobuf/util/internal/protostream_objectsource_test.obj"
 	@echo "... src/google/protobuf/util/internal/protostream_objectsource_test.i"
 	@echo "... src/google/protobuf/util/internal/protostream_objectsource_test.s"
-	@echo "... src/google/protobuf/util/internal/protostream_objectwriter.o"
+	@echo "... src/google/protobuf/util/internal/protostream_objectwriter.obj"
 	@echo "... src/google/protobuf/util/internal/protostream_objectwriter.i"
 	@echo "... src/google/protobuf/util/internal/protostream_objectwriter.s"
-	@echo "... src/google/protobuf/util/internal/protostream_objectwriter_test.o"
+	@echo "... src/google/protobuf/util/internal/protostream_objectwriter_test.obj"
 	@echo "... src/google/protobuf/util/internal/protostream_objectwriter_test.i"
 	@echo "... src/google/protobuf/util/internal/protostream_objectwriter_test.s"
-	@echo "... src/google/protobuf/util/internal/testdata/anys.pb.o"
+	@echo "... src/google/protobuf/util/internal/testdata/anys.pb.obj"
 	@echo "... src/google/protobuf/util/internal/testdata/anys.pb.i"
 	@echo "... src/google/protobuf/util/internal/testdata/anys.pb.s"
-	@echo "... src/google/protobuf/util/internal/testdata/books.pb.o"
+	@echo "... src/google/protobuf/util/internal/testdata/books.pb.obj"
 	@echo "... src/google/protobuf/util/internal/testdata/books.pb.i"
 	@echo "... src/google/protobuf/util/internal/testdata/books.pb.s"
-	@echo "... src/google/protobuf/util/internal/testdata/default_value.pb.o"
+	@echo "... src/google/protobuf/util/internal/testdata/default_value.pb.obj"
 	@echo "... src/google/protobuf/util/internal/testdata/default_value.pb.i"
 	@echo "... src/google/protobuf/util/internal/testdata/default_value.pb.s"
-	@echo "... src/google/protobuf/util/internal/testdata/default_value_test.pb.o"
+	@echo "... src/google/protobuf/util/internal/testdata/default_value_test.pb.obj"
 	@echo "... src/google/protobuf/util/internal/testdata/default_value_test.pb.i"
 	@echo "... src/google/protobuf/util/internal/testdata/default_value_test.pb.s"
-	@echo "... src/google/protobuf/util/internal/testdata/field_mask.pb.o"
+	@echo "... src/google/protobuf/util/internal/testdata/field_mask.pb.obj"
 	@echo "... src/google/protobuf/util/internal/testdata/field_mask.pb.i"
 	@echo "... src/google/protobuf/util/internal/testdata/field_mask.pb.s"
-	@echo "... src/google/protobuf/util/internal/testdata/maps.pb.o"
+	@echo "... src/google/protobuf/util/internal/testdata/maps.pb.obj"
 	@echo "... src/google/protobuf/util/internal/testdata/maps.pb.i"
 	@echo "... src/google/protobuf/util/internal/testdata/maps.pb.s"
-	@echo "... src/google/protobuf/util/internal/testdata/oneofs.pb.o"
+	@echo "... src/google/protobuf/util/internal/testdata/oneofs.pb.obj"
 	@echo "... src/google/protobuf/util/internal/testdata/oneofs.pb.i"
 	@echo "... src/google/protobuf/util/internal/testdata/oneofs.pb.s"
-	@echo "... src/google/protobuf/util/internal/testdata/proto3.pb.o"
+	@echo "... src/google/protobuf/util/internal/testdata/proto3.pb.obj"
 	@echo "... src/google/protobuf/util/internal/testdata/proto3.pb.i"
 	@echo "... src/google/protobuf/util/internal/testdata/proto3.pb.s"
-	@echo "... src/google/protobuf/util/internal/testdata/struct.pb.o"
+	@echo "... src/google/protobuf/util/internal/testdata/struct.pb.obj"
 	@echo "... src/google/protobuf/util/internal/testdata/struct.pb.i"
 	@echo "... src/google/protobuf/util/internal/testdata/struct.pb.s"
-	@echo "... src/google/protobuf/util/internal/testdata/timestamp_duration.pb.o"
+	@echo "... src/google/protobuf/util/internal/testdata/timestamp_duration.pb.obj"
 	@echo "... src/google/protobuf/util/internal/testdata/timestamp_duration.pb.i"
 	@echo "... src/google/protobuf/util/internal/testdata/timestamp_duration.pb.s"
-	@echo "... src/google/protobuf/util/internal/testdata/wrappers.pb.o"
+	@echo "... src/google/protobuf/util/internal/testdata/wrappers.pb.obj"
 	@echo "... src/google/protobuf/util/internal/testdata/wrappers.pb.i"
 	@echo "... src/google/protobuf/util/internal/testdata/wrappers.pb.s"
-	@echo "... src/google/protobuf/util/internal/type_info.o"
+	@echo "... src/google/protobuf/util/internal/type_info.obj"
 	@echo "... src/google/protobuf/util/internal/type_info.i"
 	@echo "... src/google/protobuf/util/internal/type_info.s"
-	@echo "... src/google/protobuf/util/internal/type_info_test_helper.o"
+	@echo "... src/google/protobuf/util/internal/type_info_test_helper.obj"
 	@echo "... src/google/protobuf/util/internal/type_info_test_helper.i"
 	@echo "... src/google/protobuf/util/internal/type_info_test_helper.s"
-	@echo "... src/google/protobuf/util/internal/utility.o"
+	@echo "... src/google/protobuf/util/internal/utility.obj"
 	@echo "... src/google/protobuf/util/internal/utility.i"
 	@echo "... src/google/protobuf/util/internal/utility.s"
-	@echo "... src/google/protobuf/util/json_format.pb.o"
+	@echo "... src/google/protobuf/util/json_format.pb.obj"
 	@echo "... src/google/protobuf/util/json_format.pb.i"
 	@echo "... src/google/protobuf/util/json_format.pb.s"
-	@echo "... src/google/protobuf/util/json_format_proto3.pb.o"
+	@echo "... src/google/protobuf/util/json_format_proto3.pb.obj"
 	@echo "... src/google/protobuf/util/json_format_proto3.pb.i"
 	@echo "... src/google/protobuf/util/json_format_proto3.pb.s"
-	@echo "... src/google/protobuf/util/json_util.o"
+	@echo "... src/google/protobuf/util/json_util.obj"
 	@echo "... src/google/protobuf/util/json_util.i"
 	@echo "... src/google/protobuf/util/json_util.s"
-	@echo "... src/google/protobuf/util/json_util_test.o"
+	@echo "... src/google/protobuf/util/json_util_test.obj"
 	@echo "... src/google/protobuf/util/json_util_test.i"
 	@echo "... src/google/protobuf/util/json_util_test.s"
-	@echo "... src/google/protobuf/util/message_differencer.o"
+	@echo "... src/google/protobuf/util/message_differencer.obj"
 	@echo "... src/google/protobuf/util/message_differencer.i"
 	@echo "... src/google/protobuf/util/message_differencer.s"
-	@echo "... src/google/protobuf/util/message_differencer_unittest.o"
+	@echo "... src/google/protobuf/util/message_differencer_unittest.obj"
 	@echo "... src/google/protobuf/util/message_differencer_unittest.i"
 	@echo "... src/google/protobuf/util/message_differencer_unittest.s"
-	@echo "... src/google/protobuf/util/message_differencer_unittest.pb.o"
+	@echo "... src/google/protobuf/util/message_differencer_unittest.pb.obj"
 	@echo "... src/google/protobuf/util/message_differencer_unittest.pb.i"
 	@echo "... src/google/protobuf/util/message_differencer_unittest.pb.s"
-	@echo "... src/google/protobuf/util/time_util.o"
+	@echo "... src/google/protobuf/util/time_util.obj"
 	@echo "... src/google/protobuf/util/time_util.i"
 	@echo "... src/google/protobuf/util/time_util.s"
-	@echo "... src/google/protobuf/util/time_util_test.o"
+	@echo "... src/google/protobuf/util/time_util_test.obj"
 	@echo "... src/google/protobuf/util/time_util_test.i"
 	@echo "... src/google/protobuf/util/time_util_test.s"
-	@echo "... src/google/protobuf/util/type_resolver_util.o"
+	@echo "... src/google/protobuf/util/type_resolver_util.obj"
 	@echo "... src/google/protobuf/util/type_resolver_util.i"
 	@echo "... src/google/protobuf/util/type_resolver_util.s"
-	@echo "... src/google/protobuf/util/type_resolver_util_test.o"
+	@echo "... src/google/protobuf/util/type_resolver_util_test.obj"
 	@echo "... src/google/protobuf/util/type_resolver_util_test.i"
 	@echo "... src/google/protobuf/util/type_resolver_util_test.s"
-	@echo "... src/google/protobuf/well_known_types_unittest.o"
+	@echo "... src/google/protobuf/well_known_types_unittest.obj"
 	@echo "... src/google/protobuf/well_known_types_unittest.i"
 	@echo "... src/google/protobuf/well_known_types_unittest.s"
-	@echo "... src/google/protobuf/wire_format.o"
+	@echo "... src/google/protobuf/wire_format.obj"
 	@echo "... src/google/protobuf/wire_format.i"
 	@echo "... src/google/protobuf/wire_format.s"
-	@echo "... src/google/protobuf/wire_format_lite.o"
+	@echo "... src/google/protobuf/wire_format_lite.obj"
 	@echo "... src/google/protobuf/wire_format_lite.i"
 	@echo "... src/google/protobuf/wire_format_lite.s"
-	@echo "... src/google/protobuf/wire_format_unittest.o"
+	@echo "... src/google/protobuf/wire_format_unittest.obj"
 	@echo "... src/google/protobuf/wire_format_unittest.i"
 	@echo "... src/google/protobuf/wire_format_unittest.s"
-	@echo "... src/google/protobuf/wrappers.pb.o"
+	@echo "... src/google/protobuf/wrappers.pb.obj"
 	@echo "... src/google/protobuf/wrappers.pb.i"
 	@echo "... src/google/protobuf/wrappers.pb.s"
-	@echo "... third_party/googletest/googlemock/src/gmock-all.o"
+	@echo "... third_party/googletest/googlemock/src/gmock-all.obj"
 	@echo "... third_party/googletest/googlemock/src/gmock-all.i"
 	@echo "... third_party/googletest/googlemock/src/gmock-all.s"
-	@echo "... third_party/googletest/googlemock/src/gmock_main.o"
+	@echo "... third_party/googletest/googlemock/src/gmock_main.obj"
 	@echo "... third_party/googletest/googlemock/src/gmock_main.i"
 	@echo "... third_party/googletest/googlemock/src/gmock_main.s"
-	@echo "... third_party/googletest/googletest/src/gtest-all.o"
+	@echo "... third_party/googletest/googletest/src/gtest-all.obj"
 	@echo "... third_party/googletest/googletest/src/gtest-all.i"
 	@echo "... third_party/googletest/googletest/src/gtest-all.s"
 .PHONY : help

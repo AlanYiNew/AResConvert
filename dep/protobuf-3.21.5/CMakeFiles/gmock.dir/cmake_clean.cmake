@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/gmock.dir/third_party/googletest/googlemock/src/gmock-all.cc.o"
-  "CMakeFiles/gmock.dir/third_party/googletest/googletest/src/gtest-all.cc.o"
+  "CMakeFiles/gmock.dir/third_party/googletest/googlemock/src/gmock-all.cc.obj"
+  "CMakeFiles/gmock.dir/third_party/googletest/googletest/src/gtest-all.cc.obj"
   "libgmock.a"
   "libgmock.pdb"
 )

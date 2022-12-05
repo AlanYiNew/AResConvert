@@ -349,3 +349,4 @@ endif (protobuf_BUILD_EXAMPLES)
 if(protobuf_VERBOSE)
   message(STATUS "Protocol Buffers Configuring done")
 endif(protobuf_VERBOSE)
+

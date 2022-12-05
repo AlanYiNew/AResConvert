@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/compiler/mock_code_generator.cc
+/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/compiler/mock_code_generator.cc
 google/protobuf/compiler/mock_code_generator.h
 -
 stdlib.h
@@ -48,7 +48,7 @@ google/protobuf/io/zero_copy_stream.h
 google/protobuf/text_format.h
 -
 
-/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/compiler/test_plugin.cc
+/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/compiler/test_plugin.cc
 stdlib.h
 -
 string
@@ -58,7 +58,7 @@ google/protobuf/compiler/mock_code_generator.h
 google/protobuf/compiler/plugin.h
 -
 
-/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/src/google/protobuf/testing/file.cc
+/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/src/google/protobuf/testing/file.cc
 google/protobuf/testing/file.h
 -
 stdio.h

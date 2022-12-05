@@ -2,8 +2,10 @@
 ./main.cpp
 ./aresconvert_generator.h
 ./PingService.h
-./comm/ACoroutine.cpp
-./comm/ACoroutine.h
+./aextension.pb.h
+./thirdparty/WebView2/include/WebView2EnvironmentOptions.h
+./thirdparty/WebView2/include/EventToken.h
+./thirdparty/WebView2/include/WebView2.h
 ./thirdparty/include/inja/function_storage.hpp
 ./thirdparty/include/inja/environment.hpp
 ./thirdparty/include/inja/exceptions.hpp
@@ -18,10 +20,15 @@
 ./thirdparty/include/inja/statistics.hpp
 ./thirdparty/include/inja/utils.hpp
 ./thirdparty/include/nlohmann/json.hpp
+./protocol/PingService.h
 ./protocol/PingService.proto
+./protocol/PingService.cpp
+./webview.cc
+./webview.h
 ./dep/protobuf-3.21.5/examples/list_people.cc
 ./dep/protobuf-3.21.5/examples/add_person.cc
 ./dep/protobuf-3.21.5/examples/addressbook.proto
+./dep/protobuf-3.21.5/config.h
 ./dep/protobuf-3.21.5/CMakeFiles/3.17.5/CompilerIdCXX/CMakeCXXCompilerId.cpp
 ./dep/protobuf-3.21.5/conformance/conformance_test_runner.cc
 ./dep/protobuf-3.21.5/conformance/text_format_conformance_suite.h
@@ -49,6 +56,7 @@
 ./dep/protobuf-3.21.5/third_party/googletest/googletest/samples/sample6_unittest.cc
 ./dep/protobuf-3.21.5/third_party/googletest/googletest/samples/prime_tables.h
 ./dep/protobuf-3.21.5/third_party/googletest/googletest/samples/sample1_unittest.cc
+./dep/protobuf-3.21.5/third_party/googletest/googletest/build-aux/config.h
 ./dep/protobuf-3.21.5/third_party/googletest/googletest/fused-src/gtest/gtest.h
 ./dep/protobuf-3.21.5/third_party/googletest/googletest/fused-src/gtest/gtest-all.cc
 ./dep/protobuf-3.21.5/third_party/googletest/googletest/fused-src/gtest/gtest_main.cc
@@ -135,6 +143,7 @@
 ./dep/protobuf-3.21.5/third_party/googletest/googletest/xcode/Samples/FrameworkSample/widget_test.cc
 ./dep/protobuf-3.21.5/third_party/googletest/googletest/xcode/Samples/FrameworkSample/widget.h
 ./dep/protobuf-3.21.5/third_party/googletest/googletest/xcode/Samples/FrameworkSample/widget.cc
+./dep/protobuf-3.21.5/third_party/googletest/googlemock/build-aux/config.h
 ./dep/protobuf-3.21.5/third_party/googletest/googlemock/fused-src/gmock-gtest-all.cc
 ./dep/protobuf-3.21.5/third_party/googletest/googlemock/fused-src/gtest/gtest.h
 ./dep/protobuf-3.21.5/third_party/googletest/googlemock/fused-src/gmock_main.cc
@@ -865,3 +874,5 @@
 ./dep/protobuf-3.21.5/benchmarks/datasets/google_message3/benchmark_message3_2.proto
 ./dep/protobuf-3.21.5/benchmarks/datasets/google_message3/benchmark_message3.proto
 ./dep/protobuf-3.21.5/benchmarks/datasets/google_message3/benchmark_message3_1.proto
+./aextension.pb.cc
+./aextension.proto

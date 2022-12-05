@@ -20,8 +20,8 @@ PROTOBUF_PRAGMA_INIT_SEG
 namespace _pb = ::PROTOBUF_NAMESPACE_ID;
 namespace _pbi = _pb::internal;
 
-namespace PBCExt {
-}  // namespace PBCExt
+namespace AResConvertExt {
+}  // namespace AResConvertExt
 static constexpr ::_pb::EnumDescriptor const** file_level_enum_descriptors_aextension_2eproto = nullptr;
 static constexpr ::_pb::ServiceDescriptor const** file_level_service_descriptors_aextension_2eproto = nullptr;
 const uint32_t TableStruct_aextension_2eproto::offsets[1] = {};
@@ -29,23 +29,25 @@ static constexpr ::_pbi::MigrationSchema* schemas = nullptr;
 static constexpr ::_pb::Message* const* file_default_instances = nullptr;
 
 const char descriptor_table_protodef_aextension_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
-  "\n\020aextension.proto\022\006PBCExt\032 google/proto"
-  "buf/descriptor.proto:.\n\006select\022\035.google."
-  "protobuf.OneofOptions\030\351\007 \001(\t:-\n\005count\022\035."
-  "google.protobuf.FieldOptions\030\351\007 \001(\t:,\n\004s"
-  "ize\022\035.google.protobuf.FieldOptions\030\352\007 \001("
-  "\t:0\n\010oneof_id\022\035.google.protobuf.FieldOpt"
-  "ions\030\355\007 \001(\t:.\n\006c_type\022\035.google.protobuf."
-  "FieldOptions\030\356\007 \001(\t:4\n\010col_name\022!.google"
-  ".protobuf.EnumValueOptions\030\351\007 \001(\tb\006proto"
-  "3"
+  "\n\020aextension.proto\022\016AResConvertExt\032 goog"
+  "le/protobuf/descriptor.proto:.\n\006select\022\035"
+  ".google.protobuf.OneofOptions\030\351\007 \001(\t:-\n\005"
+  "count\022\035.google.protobuf.FieldOptions\030\351\007 "
+  "\001(\t:,\n\004size\022\035.google.protobuf.FieldOptio"
+  "ns\030\352\007 \001(\t:0\n\010oneof_id\022\035.google.protobuf."
+  "FieldOptions\030\355\007 \001(\t:.\n\006c_type\022\035.google.p"
+  "rotobuf.FieldOptions\030\356\007 \001(\t:4\n\010col_name\022"
+  "!.google.protobuf.EnumValueOptions\030\351\007 \001("
+  "\t:3\n\tfile_name\022\037.google.protobuf.Message"
+  "Options\030\351\007 \001(\t:3\n\txlsx_name\022\037.google.pro"
+  "tobuf.MessageOptions\030\352\007 \001(\tb\006proto3"
   ;
 static const ::_pbi::DescriptorTable* const descriptor_table_aextension_2eproto_deps[1] = {
   &::descriptor_table_google_2fprotobuf_2fdescriptor_2eproto,
 };
 static ::_pbi::once_flag descriptor_table_aextension_2eproto_once;
 const ::_pbi::DescriptorTable descriptor_table_aextension_2eproto = {
-    false, false, 361, descriptor_table_protodef_aextension_2eproto,
+    false, false, 475, descriptor_table_protodef_aextension_2eproto,
     "aextension.proto",
     &descriptor_table_aextension_2eproto_once, descriptor_table_aextension_2eproto_deps, 1, 0,
     schemas, file_default_instances, TableStruct_aextension_2eproto::offsets,
@@ -58,7 +60,7 @@ PROTOBUF_ATTRIBUTE_WEAK const ::_pbi::DescriptorTable* descriptor_table_aextensi
 
 // Force running AddDescriptors() at dynamic initialization time.
 PROTOBUF_ATTRIBUTE_INIT_PRIORITY2 static ::_pbi::AddDescriptorsRunner dynamic_init_dummy_aextension_2eproto(&descriptor_table_aextension_2eproto);
-namespace PBCExt {
+namespace AResConvertExt {
 const std::string select_default("");
 PROTOBUF_ATTRIBUTE_INIT_PRIORITY2 ::PROTOBUF_NAMESPACE_ID::internal::ExtensionIdentifier< ::PROTOBUF_NAMESPACE_ID::OneofOptions,
     ::PROTOBUF_NAMESPACE_ID::internal::StringTypeTraits, 9, false>
@@ -83,9 +85,17 @@ const std::string col_name_default("");
 PROTOBUF_ATTRIBUTE_INIT_PRIORITY2 ::PROTOBUF_NAMESPACE_ID::internal::ExtensionIdentifier< ::PROTOBUF_NAMESPACE_ID::EnumValueOptions,
     ::PROTOBUF_NAMESPACE_ID::internal::StringTypeTraits, 9, false>
   col_name(kColNameFieldNumber, col_name_default, nullptr);
+const std::string file_name_default("");
+PROTOBUF_ATTRIBUTE_INIT_PRIORITY2 ::PROTOBUF_NAMESPACE_ID::internal::ExtensionIdentifier< ::PROTOBUF_NAMESPACE_ID::MessageOptions,
+    ::PROTOBUF_NAMESPACE_ID::internal::StringTypeTraits, 9, false>
+  file_name(kFileNameFieldNumber, file_name_default, nullptr);
+const std::string xlsx_name_default("");
+PROTOBUF_ATTRIBUTE_INIT_PRIORITY2 ::PROTOBUF_NAMESPACE_ID::internal::ExtensionIdentifier< ::PROTOBUF_NAMESPACE_ID::MessageOptions,
+    ::PROTOBUF_NAMESPACE_ID::internal::StringTypeTraits, 9, false>
+  xlsx_name(kXlsxNameFieldNumber, xlsx_name_default, nullptr);
 
 // @@protoc_insertion_point(namespace_scope)
-}  // namespace PBCExt
+}  // namespace AResConvertExt
 PROTOBUF_NAMESPACE_OPEN
 PROTOBUF_NAMESPACE_CLOSE
 

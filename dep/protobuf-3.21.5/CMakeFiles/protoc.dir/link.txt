@@ -1,1 +1,3 @@
-/usr/bin/c++     CMakeFiles/protoc.dir/src/google/protobuf/compiler/main.cc.o  -o protoc-3.21.5.0  -Wl,-rpath,:::::::::::::::: libprotoc.a libprotobuf.a -lpthread /usr/lib64/libz.so 
+/usr/bin/cmake3 -E rm -f CMakeFiles/protoc.dir/objects.a
+/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-ar cr CMakeFiles/protoc.dir/objects.a @CMakeFiles/protoc.dir/objects1.rsp
+/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  -Wa,-mbig-obj   -Wl,--stack,16777216 -Wl,--whole-archive CMakeFiles/protoc.dir/objects.a -Wl,--no-whole-archive  -o protoc.exe-3.21.5.0 -Wl,--out-implib,libprotoc.dll.a -Wl,--major-image-version,3,--minor-image-version,21 @CMakeFiles/protoc.dir/linklibs.rsp

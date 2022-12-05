@@ -1,1 +1,3 @@
-/usr/bin/c++     CMakeFiles/lite-test.dir/src/google/protobuf/lite_unittest.cc.o  -o lite-test  libprotobuf-lite-test-common.a libprotobuf-lite.a libgmock_main.a libgmock.a -lpthread 
+/usr/bin/cmake3 -E rm -f CMakeFiles/lite-test.dir/objects.a
+/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-ar cr CMakeFiles/lite-test.dir/objects.a @CMakeFiles/lite-test.dir/objects1.rsp
+/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  -Wa,-mbig-obj   -Wl,--stack,16777216 -Wl,--whole-archive CMakeFiles/lite-test.dir/objects.a -Wl,--no-whole-archive  -o lite-test.exe -Wl,--out-implib,liblite-test.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/lite-test.dir/linklibs.rsp

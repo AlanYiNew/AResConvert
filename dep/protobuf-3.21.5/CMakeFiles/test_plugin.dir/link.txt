@@ -1,1 +1,3 @@
-/usr/bin/c++     CMakeFiles/test_plugin.dir/src/google/protobuf/compiler/mock_code_generator.cc.o CMakeFiles/test_plugin.dir/src/google/protobuf/compiler/test_plugin.cc.o CMakeFiles/test_plugin.dir/src/google/protobuf/testing/file.cc.o  -o test_plugin  libprotoc.a libprotobuf.a libgmock.a /usr/lib64/libz.so -lpthread 
+/usr/bin/cmake3 -E rm -f CMakeFiles/test_plugin.dir/objects.a
+/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-ar cr CMakeFiles/test_plugin.dir/objects.a @CMakeFiles/test_plugin.dir/objects1.rsp
+/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  -Wa,-mbig-obj   -Wl,--stack,16777216 -Wl,--whole-archive CMakeFiles/test_plugin.dir/objects.a -Wl,--no-whole-archive  -o test_plugin.exe -Wl,--out-implib,libtest_plugin.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/test_plugin.dir/linklibs.rsp

@@ -1,2 +1,2 @@
-/usr/bin/ar qc libgmock.a  CMakeFiles/gmock.dir/third_party/googletest/googlemock/src/gmock-all.cc.o CMakeFiles/gmock.dir/third_party/googletest/googletest/src/gtest-all.cc.o
-/usr/bin/ranlib libgmock.a
+/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-ar qc libgmock.a  CMakeFiles/gmock.dir/third_party/googletest/googlemock/src/gmock-all.cc.obj CMakeFiles/gmock.dir/third_party/googletest/googletest/src/gtest-all.cc.obj
+/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-ranlib libgmock.a

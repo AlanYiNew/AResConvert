@@ -63,10 +63,10 @@ RM = /usr/bin/cmake3 -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5
+CMAKE_SOURCE_DIR = /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5
+CMAKE_BINARY_DIR = /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5
 
 # Include any dependencies generated for this target.
 include CMakeFiles/gmock.dir/depend.make
@@ -77,45 +77,47 @@ include CMakeFiles/gmock.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/gmock.dir/flags.make
 
-CMakeFiles/gmock.dir/third_party/googletest/googlemock/src/gmock-all.cc.o: CMakeFiles/gmock.dir/flags.make
-CMakeFiles/gmock.dir/third_party/googletest/googlemock/src/gmock-all.cc.o: third_party/googletest/googlemock/src/gmock-all.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/gmock.dir/third_party/googletest/googlemock/src/gmock-all.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gmock.dir/third_party/googletest/googlemock/src/gmock-all.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/third_party/googletest/googlemock/src/gmock-all.cc
+CMakeFiles/gmock.dir/third_party/googletest/googlemock/src/gmock-all.cc.obj: CMakeFiles/gmock.dir/flags.make
+CMakeFiles/gmock.dir/third_party/googletest/googlemock/src/gmock-all.cc.obj: CMakeFiles/gmock.dir/includes_CXX.rsp
+CMakeFiles/gmock.dir/third_party/googletest/googlemock/src/gmock-all.cc.obj: third_party/googletest/googlemock/src/gmock-all.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/gmock.dir/third_party/googletest/googlemock/src/gmock-all.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gmock.dir/third_party/googletest/googlemock/src/gmock-all.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/third_party/googletest/googlemock/src/gmock-all.cc
 
 CMakeFiles/gmock.dir/third_party/googletest/googlemock/src/gmock-all.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gmock.dir/third_party/googletest/googlemock/src/gmock-all.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/third_party/googletest/googlemock/src/gmock-all.cc > CMakeFiles/gmock.dir/third_party/googletest/googlemock/src/gmock-all.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/third_party/googletest/googlemock/src/gmock-all.cc > CMakeFiles/gmock.dir/third_party/googletest/googlemock/src/gmock-all.cc.i
 
 CMakeFiles/gmock.dir/third_party/googletest/googlemock/src/gmock-all.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gmock.dir/third_party/googletest/googlemock/src/gmock-all.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/third_party/googletest/googlemock/src/gmock-all.cc -o CMakeFiles/gmock.dir/third_party/googletest/googlemock/src/gmock-all.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/third_party/googletest/googlemock/src/gmock-all.cc -o CMakeFiles/gmock.dir/third_party/googletest/googlemock/src/gmock-all.cc.s
 
-CMakeFiles/gmock.dir/third_party/googletest/googletest/src/gtest-all.cc.o: CMakeFiles/gmock.dir/flags.make
-CMakeFiles/gmock.dir/third_party/googletest/googletest/src/gtest-all.cc.o: third_party/googletest/googletest/src/gtest-all.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/gmock.dir/third_party/googletest/googletest/src/gtest-all.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gmock.dir/third_party/googletest/googletest/src/gtest-all.cc.o -c /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/third_party/googletest/googletest/src/gtest-all.cc
+CMakeFiles/gmock.dir/third_party/googletest/googletest/src/gtest-all.cc.obj: CMakeFiles/gmock.dir/flags.make
+CMakeFiles/gmock.dir/third_party/googletest/googletest/src/gtest-all.cc.obj: CMakeFiles/gmock.dir/includes_CXX.rsp
+CMakeFiles/gmock.dir/third_party/googletest/googletest/src/gtest-all.cc.obj: third_party/googletest/googletest/src/gtest-all.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/gmock.dir/third_party/googletest/googletest/src/gtest-all.cc.obj"
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gmock.dir/third_party/googletest/googletest/src/gtest-all.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/third_party/googletest/googletest/src/gtest-all.cc
 
 CMakeFiles/gmock.dir/third_party/googletest/googletest/src/gtest-all.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gmock.dir/third_party/googletest/googletest/src/gtest-all.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/third_party/googletest/googletest/src/gtest-all.cc > CMakeFiles/gmock.dir/third_party/googletest/googletest/src/gtest-all.cc.i
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/third_party/googletest/googletest/src/gtest-all.cc > CMakeFiles/gmock.dir/third_party/googletest/googletest/src/gtest-all.cc.i
 
 CMakeFiles/gmock.dir/third_party/googletest/googletest/src/gtest-all.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gmock.dir/third_party/googletest/googletest/src/gtest-all.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/third_party/googletest/googletest/src/gtest-all.cc -o CMakeFiles/gmock.dir/third_party/googletest/googletest/src/gtest-all.cc.s
+	/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/third_party/googletest/googletest/src/gtest-all.cc -o CMakeFiles/gmock.dir/third_party/googletest/googletest/src/gtest-all.cc.s
 
 # Object files for target gmock
 gmock_OBJECTS = \
-"CMakeFiles/gmock.dir/third_party/googletest/googlemock/src/gmock-all.cc.o" \
-"CMakeFiles/gmock.dir/third_party/googletest/googletest/src/gtest-all.cc.o"
+"CMakeFiles/gmock.dir/third_party/googletest/googlemock/src/gmock-all.cc.obj" \
+"CMakeFiles/gmock.dir/third_party/googletest/googletest/src/gtest-all.cc.obj"
 
 # External object files for target gmock
 gmock_EXTERNAL_OBJECTS =
 
-libgmock.a: CMakeFiles/gmock.dir/third_party/googletest/googlemock/src/gmock-all.cc.o
-libgmock.a: CMakeFiles/gmock.dir/third_party/googletest/googletest/src/gtest-all.cc.o
+libgmock.a: CMakeFiles/gmock.dir/third_party/googletest/googlemock/src/gmock-all.cc.obj
+libgmock.a: CMakeFiles/gmock.dir/third_party/googletest/googletest/src/gtest-all.cc.obj
 libgmock.a: CMakeFiles/gmock.dir/build.make
 libgmock.a: CMakeFiles/gmock.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libgmock.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libgmock.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/gmock.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/gmock.dir/link.txt --verbose=$(VERBOSE)
 
@@ -129,6 +131,6 @@ CMakeFiles/gmock.dir/clean:
 .PHONY : CMakeFiles/gmock.dir/clean
 
 CMakeFiles/gmock.dir/depend:
-	cd /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5 /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5 /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5 /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5 /home/lighthouse/cppworkspace/ARPC/dep/protobuf-3.21.5/CMakeFiles/gmock.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5 /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5 /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5 /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5 /home/lighthouse/work/cppworkspace/AResConvert/dep/protobuf-3.21.5/CMakeFiles/gmock.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/gmock.dir/depend
 
