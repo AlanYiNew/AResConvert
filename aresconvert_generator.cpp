@@ -209,9 +209,11 @@ bool AResConvertGenerator::FindAllResourceTable(const FileDescriptor* file) cons
         if (options.HasExtension(AResConvertExt::file_name) && options.HasExtension(AResConvertExt::xlsx_name)) {
             std::string name = options.GetExtension(AResConvertExt::file_name);
             std::string xlsx = options.GetExtension(AResConvertExt::xlsx_name);
+            std::string sheet_name = options.GetExtension(AResConvertExt::sheet_name );
             m_info.resource_list.push_back({
                 {"file_name", name},
                 {"xlsx_name", xlsx}, 
+                {"sheet_name", sheet_name},
                 {"res_name", descriptor->name()}
             });
         }
@@ -345,8 +347,16 @@ std::string AResConvertGenerator::GetTypeName(const FieldDescriptor* field) cons
 std::string AResConvertGenerator::FindXLSXFileNameByMessageName(const std::string& message_name) const {
     for (auto& item: m_info.resource_list.items()) {
         if (item.value()["res_name"] == message_name) {
-            std::cout << item.value()["xlsx_name"] << "|gg" << std::endl;
             return item.value()["xlsx_name"];
+        }
+    }
+    return "";
+}
+
+std::string AResConvertGenerator::FindSheetNameByMessageName(const std::string& message_name) const {
+    for (auto& item: m_info.resource_list.items()) {
+        if (item.value()["res_name"] == message_name) {
+            return item.value()["sheet_name"];
         }
     }
     return "";

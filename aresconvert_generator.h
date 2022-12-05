@@ -38,6 +38,8 @@ public:
     
     const json& GetResourceNameAll() const { return m_info.resource_list; };
     std::string FindXLSXFileNameByMessageName(const std::string& message_name) const;
+    std::string FindSheetNameByMessageName(const std::string& message_name) const;
+    const std::vector<FieldMeta>& GetColsName() const { return m_cols; };
 
 private:
     std::string GetFileName(const std::string& file_name) const;
@@ -59,6 +61,7 @@ private:
     bool FindEnumInFile(const FileDescriptor* file, const std::vector<std::string>& vec, int curr, int* count) const;
     bool FindEnumValueInEnumType(const EnumDescriptor* enum_type, const std::string enum_name, int* count) const;
     bool FindEnumInMessage(const Descriptor* desc, const std::vector<std::string>& vec, int curr, int* count) const;
+
     int GetTypeSize(const FieldDescriptor* field) const;
 };
 
