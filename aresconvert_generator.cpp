@@ -149,13 +149,16 @@ bool AResConvertGenerator::Flatten(const FileDescriptor* file, const Descriptor*
 
                     for (int i = 0; i < num; i++) {
                         std::string new_prefix = Concat(prefix, field->name() + std::to_string(i+1));
-                        Flatten(file, field->message_type(), vec, new_prefix);
+                        if (!Flatten(file, field->message_type(), vec, new_prefix)) {
+                            return false;   
+                        }
                     }
 
-                }
-                else {
+                }   else {
                     std::string new_prefix = Concat(prefix, field->name());
-                    Flatten(file, field->message_type(), vec, new_prefix);
+                    if (!Flatten(file, field->message_type(), vec, new_prefix)) {
+                        return false;
+                    }
                 }
 
                 break;
@@ -175,12 +178,22 @@ bool AResConvertGenerator::Flatten(const FileDescriptor* file, const Descriptor*
                     }                    
 
                     for (int i = 0; i < num; i++) {
-                        vec.emplace_back(Concat(prefix, field->name() + std::to_string(i+1)), GetTypeSize(field));
+                        int type_size = GetTypeSize(field); 
+                        if (type_size == 0) {
+                            return false;
+                        }
+                        std::string field_name = Concat(prefix, field->name() + std::to_string(i+1));
+                        vec.emplace_back(field_name, GetFieldType(field), type_size);
                     }
 
                 }
                 else {
-                    vec.emplace_back(Concat(prefix, field->name()), GetTypeSize(field)); 
+                    int type_size = GetTypeSize(field); 
+                    if (type_size == 0) {
+                        return false;
+                    }
+                    std::string field_name = Concat(prefix, field->name());
+                    vec.emplace_back(field_name, GetFieldType(field), type_size); 
                 }
                 break;
         }
@@ -280,7 +293,7 @@ int AResConvertGenerator::GetTypeSize(const FieldDescriptor* field) const {
             int num = 0;
             auto options = field->options();            
             if (!options.HasExtension(AResConvertExt::size)) {
-                ERR_RETURN(field->containing_type()->name() + "." + field->name() + " is repeated but does not have count", 0);
+                ERR_RETURN(field->containing_type()->name() + "." + field->name() + " is string but does not have size", 0);
             }
 
             const std::string& enum_name= options.GetExtension(AResConvertExt::size);
@@ -301,6 +314,32 @@ int AResConvertGenerator::GetTypeSize(const FieldDescriptor* field) const {
     }
     GOOGLE_LOG(ERROR) << "Fail to find type size for";
     return 0;
+}
+
+FIELDTYPE AResConvertGenerator::GetFieldType(const FieldDescriptor* field) const
+{
+    switch (field->cpp_type()) {
+        case FieldDescriptor::CPPTYPE_BOOL:
+            return FIELDTYPE_UINT8;
+        case FieldDescriptor::CPPTYPE_DOUBLE:
+            return FIELDTYPE_DOUBLE;
+        case FieldDescriptor::CPPTYPE_FLOAT:
+            return FIELDTYPE_FLOAT;
+        case FieldDescriptor::CPPTYPE_INT32:
+            return FIELDTYPE_INT32;
+        case FieldDescriptor::CPPTYPE_INT64:
+            return FIELDTYPE_INT64;
+        case FieldDescriptor::CPPTYPE_UINT32:
+            return FIELDTYPE_UINT32;
+        case FieldDescriptor::CPPTYPE_UINT64:
+            return FIELDTYPE_UINT64;
+        case FieldDescriptor::CPPTYPE_ENUM:
+            return FIELDTYPE_INT32;
+        case FieldDescriptor::CPPTYPE_STRING:
+            return FIELDTYPE_STRING;
+        default: 
+            return FIELDTYPE_INVALID;
+    }
 }
 
 std::string AResConvertGenerator::GetTypeName(const FieldDescriptor* field) const
@@ -341,6 +380,15 @@ std::string AResConvertGenerator::GetTypeName(const FieldDescriptor* field) cons
             return field->type_name();
     }
     assert(false && "Invalid type given");
+    return "";
+}
+
+std::string AResConvertGenerator::FindBinFileNameByMessageName(const std::string& message_name) const {
+    for (auto& item: m_info.resource_list.items()) {
+        if (item.value()["res_name"] == message_name) {
+            return item.value()["file_name"];
+        }
+    }
     return "";
 }
 
