@@ -1,0 +1,6 @@
+{
+"folders": ["protocol"], 
+"files": ["./protocol/PingService.proto"],
+"xlsx_folder" : "xlsx",
+"output_folder" : "bin"
+}

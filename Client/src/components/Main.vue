@@ -75,23 +75,37 @@ export default {
           <el-card style="height:100%"><el-tree ref="tree" node-key="id" show-checkbox :data="nodes" :props="defaultProps" @node-click="handleNodeClick" />
           </el-card>
         </el-col>
-        <el-col style="display:flex;flex-direction:column" :xs="14" :sm="16" :md="18" :lg="18" :xl="18">
-          <el-row >
-            <el-col >
-              <el-card>
-                <el-button color="#626aef" :dark="isDark" plain @click="clickConvert">运行</el-button>
-              </el-card>
-            </el-col>
-          </el-row>
-          <el-row style="height:100%;margin-top: 0.5rem">
-            <el-col>
-              <el-card style="height:100%">
-                <div v-for="(log,index) in logs" :key="index">
-                  {{log}}
-                </div>
-              </el-card>
-            </el-col>
-          </el-row>
+        <el-col :xs="4" :sm="4" :md="2" :lg="2" :xl="1">
+          
+            <el-card class="item" style="height:100%">
+            
+              <el-row>
+                <el-col style="text-align:center">
+                <el-button :dark="isDark" @click="clickConvert" color="#2f7cce" style="height:42px" circle>
+                  <el-icon style="vertical-align: middle" size="24">
+                    <VideoPlay />
+                  </el-icon>
+                </el-button>
+                </el-col>
+              </el-row>
+              <el-row style="margin-top:25px">
+                <el-col style="text-align:center">
+                <el-button :dark="isDark"  color="#2f7cce" style="height:42px" plain circle>
+                  <el-icon style="vertical-align: middle" size="24">
+                    <Refresh />
+                  </el-icon>
+                </el-button>
+                </el-col>
+              </el-row>
+              
+            </el-card>
+        </el-col>
+        <el-col style="display:flex;flex-direction:column" :xs="10" :sm="12" :md="12" :lg="16" :xl="17">
+          <el-card style="height:100%">
+            <div v-for="(log,index) in logs" :key="index">
+              {{log}}
+            </div>
+          </el-card>
         </el-col>
       </el-row>
   </div>
