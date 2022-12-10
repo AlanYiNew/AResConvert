@@ -4,7 +4,7 @@
 #include <google/protobuf/compiler/cpp/generator.h>
 #include <google/protobuf/compiler/command_line_interface.h>
 #include "application.h"
-#include "endian.h"
+#include "custom_endian.h"
 #include "md5.h"
 #include "helpers.h"
 #include <ctime>

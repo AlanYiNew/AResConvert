@@ -1,4 +1,4 @@
-#include "../AResourceHead.h"
+#include "AResourceHead.h"
 #include "PingService.h"
 #include <iostream>
 

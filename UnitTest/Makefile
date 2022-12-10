@@ -12,7 +12,8 @@ endif
     
 CPPFLAGS := -MD -g 
 CXXFLAGS :=-std=c++17\
-	-I../protocol
+	-I../protocol\
+    -I../
 
 $(OBJ_FILES): %.o: $(SRC_DIR)/%.cpp
 	$(CC) $(CPPFLAGS) $(CXXFLAGS) -c -o $@ $<
