@@ -1,5 +1,5 @@
-#ifndef PORTABLE_ENDIAN_H__
-#define PORTABLE_ENDIAN_H__
+#ifndef _PORTABLE_ENDIAN_H__
+#define _PORTABLE_ENDIAN_H__
 
 #if (defined(_WIN16) || defined(_WIN32) || defined(_WIN64)) && !defined(__WINDOWS__)
 
@@ -111,12 +111,10 @@ inline uint64_t ntohll(uint64_t val)
 #		error byte order not supported
 
 #	endif
-
 #	define __BYTE_ORDER    BYTE_ORDER
 #	define __BIG_ENDIAN    BIG_ENDIAN
 #	define __LITTLE_ENDIAN LITTLE_ENDIAN
 #	define __PDP_ENDIAN    PDP_ENDIAN
-
 #else
 
 #	error platform not supported

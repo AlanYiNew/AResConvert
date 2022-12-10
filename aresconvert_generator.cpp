@@ -37,11 +37,26 @@ bool AResConvertGenerator::Generate(const FileDescriptor* file,
     }
     else if (parameter == "resource") {
         if (!FindAllResourceTable(file)) return false ;           
-    }
-    else if (parameter.find(convert_opt) == 0) {
+    }   else if (parameter.find(convert_opt) == 0) {
         std::string file_name = parameter.substr(convert_opt.size());
         if (!Convert(file, file_name)) return false ;           
+    }   else if (parameter == "struct") {
+        json obj;
+        if (!GenerateInfo(file, obj)) return false;
+        auto header_ctx = generator_context->Open(GetFileName(file->name())+ ".h");
+        std::unique_ptr<io::ZeroCopyOutputStream> ptr_header_ctx(header_ctx);
+        Printer header_printer(header_ctx, '$');
+        if (!GenerateResourceHeader(header_printer, obj)) return false;
     }
+
+    return true;
+}
+
+bool AResConvertGenerator::GenerateResourceHeader(Printer& printer, const json& info) const {
+    inja::Environment env;
+    env.set_trim_blocks(true);
+    env.set_lstrip_blocks(true);
+    printer.PrintRaw(env.render(env.parse_template("aresconvert_resource_header.template"), info));
     return true;
 }
 
@@ -74,8 +89,20 @@ bool AResConvertGenerator::FindEnumValueInEnumType(const EnumDescriptor* enum_ty
     return true;
 }
 
+bool AResConvertGenerator::FindEnumValueInFile(const FileDescriptor* file, const std::string enum_name, int* count) const {
+    auto enum_value = file->FindEnumValueByName(enum_name); 
+    if (!enum_value) {
+        return false;
+    }
+
+    *count = enum_value->number();
+    return true;
+}
+
 bool AResConvertGenerator::FindEnumInFile(const FileDescriptor* file, const std::vector<std::string>& vec, int curr, int* count) const {
-    if (curr + 2 == vec.size()) {
+    if (curr + 1 == vec.size()) {
+        return FindEnumValueInFile(file, vec[curr], count);
+    }   else if (curr + 2 == vec.size()) {
         auto enum_type = file->FindEnumTypeByName(vec[curr]);
         if (!enum_type) {
             return false;
@@ -107,12 +134,12 @@ bool AResConvertGenerator::GetEnumValue(const FileDescriptor* file, const std::s
 
     in_this_file = FindEnumInFile(file, strs, 0, count);
 
-    if (*count == 0) {
-        ERR_RETURN(enum_name + ":size or count can not be specified 0", false);
-    }
-
     if (in_other_file && in_this_file) {
         ERR_RETURN(enum_name + "is ambiguous", false);
+    }
+
+    if (*count == 0) {
+        ERR_RETURN(enum_name + ":size or count can not be specified 0", false);
     }
     return in_other_file || in_this_file;
 }
@@ -124,7 +151,7 @@ std::string Concat(const std::string& prefix, const std::string& next) {
     return prefix + "#" + next;
 }
 
-bool AResConvertGenerator::Flatten(const FileDescriptor* file, const Descriptor* md, std::vector<FieldMeta>& vec, const std::string& prefix) const {
+bool AResConvertGenerator::Flatten(const FileDescriptor* file, const Descriptor* md, AMessageMeta& meta, const std::string& prefix) const {
     for (int j = 0; j < md->field_count(); j++) 
     {
         auto field = md->field(j);
@@ -149,14 +176,14 @@ bool AResConvertGenerator::Flatten(const FileDescriptor* file, const Descriptor*
 
                     for (int i = 0; i < num; i++) {
                         std::string new_prefix = Concat(prefix, field->name() + std::to_string(i+1));
-                        if (!Flatten(file, field->message_type(), vec, new_prefix)) {
+                        if (!Flatten(file, field->message_type(), meta, new_prefix)) {
                             return false;   
                         }
                     }
 
                 }   else {
                     std::string new_prefix = Concat(prefix, field->name());
-                    if (!Flatten(file, field->message_type(), vec, new_prefix)) {
+                    if (!Flatten(file, field->message_type(), meta, new_prefix)) {
                         return false;
                     }
                 }
@@ -183,7 +210,7 @@ bool AResConvertGenerator::Flatten(const FileDescriptor* file, const Descriptor*
                             return false;
                         }
                         std::string field_name = Concat(prefix, field->name() + std::to_string(i+1));
-                        vec.emplace_back(field_name, GetFieldType(field), type_size);
+                        meta.CreateField(field_name, GetFieldType(field), type_size);
                     }
 
                 }
@@ -193,7 +220,7 @@ bool AResConvertGenerator::Flatten(const FileDescriptor* file, const Descriptor*
                         return false;
                     }
                     std::string field_name = Concat(prefix, field->name());
-                    vec.emplace_back(field_name, GetFieldType(field), type_size); 
+                    meta.CreateField(field_name, GetFieldType(field), type_size); 
                 }
                 break;
         }
@@ -206,7 +233,7 @@ bool AResConvertGenerator::Convert(const FileDescriptor* file, const std::string
     if (md == nullptr) {
         ERR_RETURN("Fail to find " + message_name, false);
     }
-    if (!Flatten(file, md, m_cols)) {
+    if (!Flatten(file, md, m_message_meta)) {
         return false;
     }
     return true;
@@ -255,6 +282,7 @@ bool AResConvertGenerator::GenerateInfo(const FileDescriptor* file, json& info) 
     std::string file_name = GetFileName(file->name());
     info["messages"] = json();
     info["file_name"] = file_name;
+    info["package_name"] = file->package();
     for (int i = 0; i < file->message_type_count(); i++)
     {
         const Descriptor* descriptor = file->message_type(i);
@@ -263,8 +291,27 @@ bool AResConvertGenerator::GenerateInfo(const FileDescriptor* file, json& info) 
         {
             const FieldDescriptor* field_descriptor = descriptor->field(j);
             info["messages"][descriptor->name()][field_descriptor->name()]["tag"] = field_descriptor->number();
-            info["messages"][descriptor->name()][field_descriptor->name()]["type"] = GetTypeName(field_descriptor);
+            info["messages"][descriptor->name()][field_descriptor->name()]["type"] = GetJsonTypeName(field_descriptor);
             info["messages"][descriptor->name()][field_descriptor->name()]["is_msg"] = field_descriptor->type() == FieldDescriptor::TYPE_MESSAGE;
+            std::string field_with_type;
+            if (!GetStructTypeField(field_descriptor, field_with_type)) return false ;
+            info["messages"][descriptor->name()][field_descriptor->name()]["type_field"] = field_with_type;
+        }
+
+        if (descriptor->nested_type_count() > 0 || descriptor->enum_type_count() > 0) {
+            GOOGLE_LOG(ERROR) << descriptor->name() <<" Error: Nested message and enum are not supported right now";
+        }
+    }
+
+    info["enums"] = json();
+    for (int i = 0; i < file->enum_type_count(); i++)
+    {
+        const EnumDescriptor* enum_descriptor = file->enum_type(i);
+        info["enums"][enum_descriptor->name()] = json();
+        for (int j = 0; j < enum_descriptor->value_count(); j++) 
+        {
+            const EnumValueDescriptor* enum_value_descriptor = enum_descriptor->value(j);
+            info["enums"][enum_descriptor->name()][enum_value_descriptor->name()] = enum_value_descriptor->number();
         }
     }
 
@@ -342,7 +389,48 @@ FIELDTYPE AResConvertGenerator::GetFieldType(const FieldDescriptor* field) const
     }
 }
 
-std::string AResConvertGenerator::GetTypeName(const FieldDescriptor* field) const
+std::string AResConvertGenerator::GetStructTypeName(const FieldDescriptor* field) const
+{
+    switch (field->type()) {
+        case FieldDescriptor::TYPE_DOUBLE:
+            return "double";
+        case FieldDescriptor::TYPE_FLOAT:
+            return "float";
+        case FieldDescriptor::TYPE_INT64:
+            return "int64_t";
+        case FieldDescriptor::TYPE_UINT64:
+            return "uint64_t";
+        case FieldDescriptor::TYPE_SFIXED32:
+        case FieldDescriptor::TYPE_SINT32:
+        case FieldDescriptor::TYPE_INT32:
+            return "int32_t";
+        case FieldDescriptor::TYPE_SFIXED64:
+        case FieldDescriptor::TYPE_SINT64:
+        case FieldDescriptor::TYPE_FIXED64:
+            return "int64_t";
+        case FieldDescriptor::TYPE_FIXED32:
+            return "int32_t";
+        case FieldDescriptor::TYPE_BOOL:
+            return "bool";
+        case FieldDescriptor::TYPE_STRING:
+            return "char";
+        case FieldDescriptor::TYPE_GROUP:
+            assert(field->type() != FieldDescriptor::TYPE_GROUP && "TYPE_GROUP is not allowed");
+            return "";
+        case FieldDescriptor::TYPE_MESSAGE:
+            return field->message_type()->name();
+        case FieldDescriptor::TYPE_BYTES:
+            return "uint8_t";
+        case FieldDescriptor::TYPE_UINT32:
+            return "uint32_t";
+        case FieldDescriptor::TYPE_ENUM:
+            return field->type_name();
+    }
+    assert(false && "Invalid type given");
+    return "";
+}
+
+std::string AResConvertGenerator::GetJsonTypeName(const FieldDescriptor* field) const
 {
     switch (field->type()) {
         case FieldDescriptor::TYPE_DOUBLE:
@@ -408,4 +496,66 @@ std::string AResConvertGenerator::FindSheetNameByMessageName(const std::string& 
         }
     }
     return "";
+}
+
+bool AResConvertGenerator::GetStructTypeField(const FieldDescriptor* field, std::string& out) const{
+    std::string type_name = GetStructTypeName(field);
+    switch (field->type()) {
+        case FieldDescriptor::TYPE_MESSAGE:
+            if (field->is_map()) {
+                ERR_RETURN("map is not supported", false)
+            }
+
+            if (field->is_repeated()) {
+                auto options = field->options();            
+                if (!options.HasExtension(AResConvertExt::count)) {
+                    ERR_RETURN(field->name() + " is repeated but does not have count", false);
+                }
+
+                const std::string& count  = options.GetExtension(AResConvertExt::count);
+                out = type_name + " " + field->name() + "[" + count + "]"; 
+
+            }   else {
+                out = type_name + " " + field->name();
+            }
+            break;
+        case FieldDescriptor::TYPE_GROUP:
+            ERR_RETURN("Group is not supported", false);
+        case FieldDescriptor::TYPE_STRING:
+            {
+                auto options = field->options();            
+                if (!options.HasExtension(AResConvertExt::size)) {
+                    ERR_RETURN(field->containing_type()->name() + "." + field->name() + " is string but does not have size", false);
+                }
+
+                const std::string& size = options.GetExtension(AResConvertExt::size);
+                if (field->is_repeated()) {
+                    auto options = field->options();            
+                    if (!options.HasExtension(AResConvertExt::count)) {
+                        ERR_RETURN(field->name() + " is repeated but does not have count", false);
+                    }
+
+                    const std::string& count  = options.GetExtension(AResConvertExt::count);
+                    out = type_name + " " + field->name() + "[" + count + "][" + size + "]"; 
+                }   else {
+                    out = type_name + " " + field->name() + "[" + size + "]";
+                }
+            }
+            break;
+        default:
+            if (field->is_repeated()) {
+                auto options = field->options();            
+                if (!options.HasExtension(AResConvertExt::count)) {
+                    ERR_RETURN(field->name() + "is repeated but does not have count", false);
+                }
+
+                const std::string& count  = options.GetExtension(AResConvertExt::count);
+                out = type_name + " " + field->name() + "[" + count + "]"; 
+            }
+            else {
+                out = type_name + " " + field->name();
+            }
+            break;
+    }
+    return true;
 }

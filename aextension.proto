@@ -16,10 +16,8 @@ extend google.protobuf.FieldOptions {
 extend google.protobuf.EnumValueOptions {
     string col_name = 1001;         // cname
 }
-
 extend google.protobuf.MessageOptions {
     string file_name = 1001;         // filename
     string xlsx_name = 1002;         // xlsxname
     string sheet_name = 1003;        // sheet_name
 }
-

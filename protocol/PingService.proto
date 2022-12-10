@@ -1,13 +1,23 @@
 syntax="proto3";
+import "aextension.proto";
 
 message PingFooRequest {
-  string id = 1;
+  string id = 1[(AResConvertExt.size) ="test::test_2"];
+}
+
+enum test {
+  test_0 = 0;
+  test_1 = 1;
+  test_2 = 2;
 }
 
 message PingFooResponse {
-  option (file_name) ="ping_foo_response.cs";
-  string fooName = 1;
+  option (AResConvertExt.file_name) ="ping_foo_response_cs.bin";
+  option (AResConvertExt.xlsx_name) ="ping_foo_response.xlsx";
+  option (AResConvertExt.sheet_name) ="ping_foo_response";
+  string fooName = 1[(AResConvertExt.count) ="test_2", (AResConvertExt.size) ="test_2"];
   int64 fooValue = 2;
-  PingFooRequest msg = 3;
+  repeated PingFooRequest msg = 3[(AResConvertExt.count) ="test_2"];
+  repeated PingFooRequest msgp = 4[(AResConvertExt.count) ="test_2"];
 }
 

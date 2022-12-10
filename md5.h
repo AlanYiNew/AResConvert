@@ -1,9 +1,9 @@
-#ifndef MD5_H
-#define MD5_H
+#ifndef _MD5_H__
+#define _MD5_H__
  
 #include <string>
 #include <fstream>
-#include<cstring>
+#include <cstring>
  
 /* Type define */
 typedef unsigned char byte;

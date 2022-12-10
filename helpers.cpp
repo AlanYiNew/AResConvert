@@ -16,3 +16,13 @@ std::vector<std::string> stringSplit(const std::string& str, const char* delim) 
     }
     return elems;
 }
+
+std::string GetCellNo(int32_t row, int32_t col) {
+    std::string s;
+    while (col != 0){
+        char c = col % 26;
+        s = (char)(c + 'A') + s;
+        col /=26;
+    }
+    return s + std::to_string(row);
+}

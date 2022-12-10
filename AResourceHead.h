@@ -3,13 +3,16 @@
 
 #include <cstdint>
 #include <cstddef>
+#include "md5.h"
+#include <unordered_map>
+#include <map>
 
 struct AResourceHead{
     int32_t total_size{};
-    uint8_t md5[16]{};
-    int32_t col_num{};
-    int32_t col_info_size{};
-    int32_t record_size;
+    int32_t size{}; // size of record in bytes
+    int32_t count{}; // number of records
+    uint8_t meta_md5[16]{};
+    uint8_t content_md5[16]{};
 };
 
 enum FIELDTYPE {
@@ -27,11 +30,46 @@ enum FIELDTYPE {
     FIELDTYPE_FLOAT = 11,
 };
 
-struct FieldMeta {
+struct AFieldMeta {
     std::string name;
     int32_t size;
+    int32_t offset;
     FIELDTYPE field_type;
-    FieldMeta(const std::string& field, FIELDTYPE field_type, int size): field_type(field_type), name(field), size(size) {};
+    AFieldMeta() =  default;
+    AFieldMeta(const std::string& field, FIELDTYPE field_type, int32_t size, int32_t offset): field_type(field_type), name(field), size(size), offset(offset) {};
+};
+
+struct AMessageMeta {
+    int32_t m_size{}; // size of bytes of the records
+    std::map<std::string, AFieldMeta> meta_data;
+    void CreateField(const std::string& name, FIELDTYPE field_type, int32_t size) {
+        meta_data.emplace(name, AFieldMeta{name, field_type, size, m_size});
+        m_size += size;
+    };
+    const AFieldMeta* GetFieldMeta(const std::string& name) const {
+        auto iter = meta_data.find(name);
+        if (iter != meta_data.end()) {
+            return &iter->second;
+        }
+        return nullptr;
+    }
+
+    const std::map<std::string, AFieldMeta>& GetFieldMetas() const {
+        return meta_data;
+    }
+
+    int32_t GetSize() { return m_size; };
+
+    std::string GetMD5() {
+        MD5 md5;
+        for (auto& iter : meta_data) {
+            auto& field_meta = iter.second;
+            md5.update(field_meta.name.c_str(), field_meta.name.size());
+            md5.update(&field_meta.size, sizeof(field_meta.size));
+            md5.update(&field_meta.field_type, sizeof(field_meta.field_type));
+        }
+        return md5.toString();
+    }
 };
 
 #endif
