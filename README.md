@@ -17,6 +17,7 @@
 4. nlohmann
 
 |              | Windows  | Linux | Apple |      
+|  ----        | -------  | ------| ----- |
 | BorwserMode  | Support  |  TODO | TODO  |
 | CommandMode  | Support  |  TODO | TODO  |
        
