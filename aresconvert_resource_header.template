@@ -8,6 +8,8 @@
 namespace {{package_name}} {
 {% endif %}
 
+static inline unsigned char gs_{{file_name}}Meta[] = { {% for x in meta_binary%} 0x{{x}}, {% endfor %} };
+
 {% for key, value in enums %}
 enum {{key}} {
     {% for field_name, field_info in value %}

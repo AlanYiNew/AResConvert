@@ -1,6 +1,7 @@
-PLATFORM := "WINDOWS"
+PLATFORM := "LINUX"
 SRC_DIR := ./
 OBJ_DIR := ./BUILD
+PROTOCOL_DIR := ./protocol
 PROTO_FILES := $(wildcard $(SRC_DIR)/*.proto)
 PROTO_SRCS := $(patsubst $(SRC_DIR)/%.proto, $(SRC_DIR)/%.pb.cc,$(PROTO_FILES))
 PROTO_OBJ_FILES := $(patsubst $(SRC_DIR)/%.pb.cc,$(OBJ_DIR)/%.pb.o,$(PROTO_SRCS))
@@ -23,7 +24,7 @@ LIBS := -lprotoc\
 ifeq ($(PLATFORM),"LINUX")
  	LIBS += $(LINUX_LIBS)
  	CC := g++
-    LDFLAGS += -L$(PROTOBUF_DIR)/src
+    LDFLAGS += -L$(PROTOBUF_DIR)
 else
 	LIBS += $(WINDOWS_LIBS)
  	CC := x86_64-w64-mingw32-g++ 
@@ -38,7 +39,7 @@ CXXFLAGS :=-std=c++17\
     -I./thirdparty/OpenXLSX/OpenXLSX
 
 $(PROTO_SRCS): $(PROTO_FILES)
-	./dep/protobuf-3.21.5/protoc --cpp_out=. -I. -I$(PROTOBUF_DIR) $(PROTO_FILES)
+	./dep/protobuf-3.21.5/protoc --cpp_out=. -I. -I$(PROTOBUF_DIR) -I$(PROTOCOL_DIR) $(PROTO_FILES)
 
 $(PROTO_OBJ_FILES):$(OBJ_DIR)/%.pb.o: $(SRC_DIR)/%.pb.cc
 	$(CC) $(CPPFLAGS) $(CXXFLAGS) -c -o $@ $<

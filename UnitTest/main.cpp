@@ -1,6 +1,7 @@
-#include "AResourceHead.h"
+#include "AMeta.h"
 #include "PingService.h"
 #include <iostream>
+#include "Test.h"
 
 int main(int argc, char* argv[]) {
     std::FILE* file = fopen("ping_foo_response_cs.bin", "r");

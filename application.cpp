@@ -4,191 +4,15 @@
 #include <google/protobuf/compiler/cpp/generator.h>
 #include <google/protobuf/compiler/command_line_interface.h>
 #include "application.h"
-#include "custom_endian.h"
+#include "AEndianessHelper.h"
 #include "md5.h"
 #include "helpers.h"
 #include <ctime>
 #include <thread>
 #include <future>
 
-inline int32_t Application::WriteInt32(std::FILE* f, int32_t val) {
-    if (!m_is_little_endian) {
-        val = htole32(val);
-    }
-    std::fwrite(&val, sizeof(val), 1, f);
-    return sizeof(val);
-}
-
-inline int32_t Application::WriteUInt32(std::FILE* f, uint32_t val) {
-    if (!m_is_little_endian) {
-        val = htole32(val);
-    }
-    std::fwrite(&val, sizeof(val), 1 , f);
-    return sizeof(val);
-}
-
-inline int32_t Application::WriteInt16(std::FILE* f, int16_t val) {
-    if (!m_is_little_endian) {
-        val = htole16(val);
-    }
-    std::fwrite(&val, sizeof(val), 1, f);
-    return sizeof(val);
-}
-
-inline int32_t Application::WriteUInt16(std::FILE* f, uint16_t val) {
-    if (!m_is_little_endian) {
-        val = htole16(val);
-    }
-    std::fwrite(&val, sizeof(val), 1, f);
-    return sizeof(val);
-}
-
-inline int32_t Application::WriteInt64(std::FILE* f, int64_t val) {
-    if (!m_is_little_endian) {
-        val = htole64(val);
-    }
-    std::fwrite(&val, sizeof(val), 1,  f);
-    return sizeof(val);
-}
-
-inline int32_t Application::WriteUInt64(std::FILE* f, uint64_t val) {
-    if (!m_is_little_endian) {
-        val = htole64(val);
-    }
-    std::fwrite(&val, sizeof(val), 1, f);
-    return sizeof(val);
-}
-
-inline int32_t Application::WriteInt8(std::FILE* f, int8_t val) {
-    std::fwrite(&val, sizeof(val), 1,f);
-    return sizeof(val);
-}
-
-inline int32_t Application::WriteUInt8(std::FILE* f, uint8_t val) {
-    std::fwrite(&val, sizeof(val), 1, f);
-    return sizeof(val);
-}
-
-inline int32_t Application::WriteDouble(std::FILE* f, double val) {
-    if (!m_is_little_endian) {
-        val = htole64(val);
-    }
-    std::fwrite(&val, sizeof(val), 1, f);
-    return sizeof(val);
-}
-
-inline int32_t Application::WriteFloat(std::FILE* f, float val) {
-    if (!m_is_little_endian) {
-        val = htole32(val);
-    }
-    std::fwrite(&val, sizeof(val), 1, f);
-    return sizeof(val);
-}
-
-inline int32_t Application::WriteString(std::FILE* f, const std::string& val) {
-    std::fwrite(val.c_str(), 1, val.size() + 1, f);
-    return val.size() + 1;
-}
-
-inline int32_t Application::WriteBytes(std::FILE* f, const std::string& val) {
-    std::fwrite(val.c_str(), 1, val.size(), f);
-    return val.size();
-}
-
-inline int32_t Application::WriteBytes(std::FILE* f, char* buffer, int32_t size) {
-    std::fwrite(buffer, 1, size, f);
-    return size;
-}
-
-inline int32_t Application::WriteUInt32(void* f, uint32_t val) {
-    if (!m_is_little_endian) {
-        (*(uint32_t*)f) = htole32(val);
-    }   else {
-        (*(uint32_t*)f) = val;
-    }
-    return sizeof(val);
-}
-
-inline int32_t Application::WriteInt32(void* f, int32_t val) {
-    if (!m_is_little_endian) {
-        (*(int32_t*)f) = htole32(val);
-    }   else {
-        (*(int32_t*)f) = val;
-    }
-    return sizeof(val);
-}
-
-inline int32_t Application::WriteInt16(void* f, int16_t val) {
-    if (!m_is_little_endian) {
-        (*(int16_t*)f) = htole16(val);
-    }   else {
-        (*(int16_t*)f) = val;
-    }
-    return sizeof(val);
-}
-
-inline int32_t Application::WriteUInt16(void* f, uint16_t val) {
-    if (!m_is_little_endian) {
-        (*(uint16_t*)f) = htole16(val);
-    }   else {
-        (*(uint16_t*)f) = val;
-    }
-    return sizeof(val);
-}
-
-inline int32_t Application::WriteInt64(void* f, int64_t val) {
-    if (!m_is_little_endian) {
-        (*(int64_t*)f) = htole64(val);
-    }   else {
-        (*(int64_t*)f) = val;
-    }
-    return sizeof(val);
-}
-
-inline int32_t Application::WriteUInt64(void* f, uint64_t val) {
-    if (!m_is_little_endian) {
-        (*(uint64_t*)f) = htole64(val);
-    }   else {
-        (*(uint64_t*)f) = val;
-    }
-    return sizeof(val);
-}
-
-inline int32_t Application::WriteInt8(void* f, int8_t val) {
-    (*(int8_t*)f) = val;
-    return sizeof(val);
-}
-
-inline int32_t Application::WriteUInt8(void* f, uint8_t val) {
-    (*(uint8_t*)f) = val;
-    return sizeof(val);
-}
-
-inline int32_t Application::WriteDouble(void* f, double val) {
-    if (!m_is_little_endian) {
-        (*(double*)f) = htole64(val);
-    }   else {
-        (*(double*)f) = val;
-    }
-    return sizeof(val);
-}
-
-inline int32_t Application::WriteFloat(void* f, float val) {
-    if (!m_is_little_endian) {
-        (*(float*)f) = htole32(val);
-    }   else {
-        (*(float*)f) = val;
-    }
-    return sizeof(val);
-}
-
-inline int32_t Application::WriteString(void* f, const std::string& val) {
-    strcpy((char*)f, val.c_str());
-    return val.size() + 1;
-}
-
 #ifdef _WIN32
-bool Application::WriteInt32Cell(char* record_buffer, const AFieldMeta& field_meta, const OpenXLSX::XLCellValue& cell) {
+bool Application::WriteInt32Cell(char* record_buffer, const ATableFieldMeta& field_meta, const OpenXLSX::XLCellValue& cell) {
     int32_t val;
     if  (cell.type() == OpenXLSX::XLValueType::Integer) {
         val = cell.get<int32_t>();
@@ -201,7 +25,7 @@ bool Application::WriteInt32Cell(char* record_buffer, const AFieldMeta& field_me
     return true;
 }
 
-bool Application::WriteUInt32Cell(char* record_buffer, const AFieldMeta& field_meta, const OpenXLSX::XLCellValue& cell) {
+bool Application::WriteUInt32Cell(char* record_buffer, const ATableFieldMeta& field_meta, const OpenXLSX::XLCellValue& cell) {
     uint32_t val;
     if (cell.type() == OpenXLSX::XLValueType::Integer) {
         val = cell.get<uint32_t>();
@@ -214,7 +38,7 @@ bool Application::WriteUInt32Cell(char* record_buffer, const AFieldMeta& field_m
     return true;
 }
 
-bool Application::WriteInt16Cell(char* record_buffer, const AFieldMeta& field_meta, const OpenXLSX::XLCellValue& cell) {
+bool Application::WriteInt16Cell(char* record_buffer, const ATableFieldMeta& field_meta, const OpenXLSX::XLCellValue& cell) {
     int16_t val;
     if (cell.type() == OpenXLSX::XLValueType::Integer) {
         val = cell.get<int16_t>();
@@ -227,7 +51,7 @@ bool Application::WriteInt16Cell(char* record_buffer, const AFieldMeta& field_me
     return true;
 }
 
-bool Application::WriteUInt16Cell(char* record_buffer, const AFieldMeta& field_meta, const OpenXLSX::XLCellValue& cell) {
+bool Application::WriteUInt16Cell(char* record_buffer, const ATableFieldMeta& field_meta, const OpenXLSX::XLCellValue& cell) {
     uint16_t val;
     if (cell.type() == OpenXLSX::XLValueType::Integer) {
         val = cell.get<uint16_t>();
@@ -240,7 +64,7 @@ bool Application::WriteUInt16Cell(char* record_buffer, const AFieldMeta& field_m
     return true;
 }
 
-bool Application::WriteInt64Cell(char* record_buffer, const AFieldMeta& field_meta, const OpenXLSX::XLCellValue& cell) {
+bool Application::WriteInt64Cell(char* record_buffer, const ATableFieldMeta& field_meta, const OpenXLSX::XLCellValue& cell) {
     int64_t val;
     if (cell.type() == OpenXLSX::XLValueType::Integer) {
         val = cell.get<int64_t>();
@@ -253,7 +77,7 @@ bool Application::WriteInt64Cell(char* record_buffer, const AFieldMeta& field_me
     return true;
 }
 
-inline bool Application::WriteUInt64Cell(char* record_buffer, const AFieldMeta& field_meta, const OpenXLSX::XLCellValue& cell) {
+inline bool Application::WriteUInt64Cell(char* record_buffer, const ATableFieldMeta& field_meta, const OpenXLSX::XLCellValue& cell) {
     uint64_t val;
     if (cell.type() == OpenXLSX::XLValueType::Integer) {
         val = cell.get<uint64_t>();
@@ -266,7 +90,7 @@ inline bool Application::WriteUInt64Cell(char* record_buffer, const AFieldMeta& 
     return true;
 }
 
-inline bool Application::WriteInt8Cell(char* record_buffer, const AFieldMeta& field_meta, const OpenXLSX::XLCellValue& cell) {
+inline bool Application::WriteInt8Cell(char* record_buffer, const ATableFieldMeta& field_meta, const OpenXLSX::XLCellValue& cell) {
     int8_t val;
     if (cell.type() == OpenXLSX::XLValueType::Integer) {
         val = cell.get<int8_t>();
@@ -279,7 +103,7 @@ inline bool Application::WriteInt8Cell(char* record_buffer, const AFieldMeta& fi
     return true;
 }
 
-inline bool Application::WriteUInt8Cell(char* record_buffer, const AFieldMeta& field_meta, const OpenXLSX::XLCellValue& cell) {
+inline bool Application::WriteUInt8Cell(char* record_buffer, const ATableFieldMeta& field_meta, const OpenXLSX::XLCellValue& cell) {
     uint8_t val;
     if (cell.type() == OpenXLSX::XLValueType::Integer) {
         val = cell.get<uint8_t>();
@@ -293,7 +117,7 @@ inline bool Application::WriteUInt8Cell(char* record_buffer, const AFieldMeta& f
 }
 
 
-inline bool Application::WriteDoubleCell(char* record_buffer, const AFieldMeta& field_meta, const OpenXLSX::XLCellValue& cell) {
+inline bool Application::WriteDoubleCell(char* record_buffer, const ATableFieldMeta& field_meta, const OpenXLSX::XLCellValue& cell) {
     double val;
     if (cell.type() == OpenXLSX::XLValueType::Float) {
         val = cell.get<double>();
@@ -306,7 +130,7 @@ inline bool Application::WriteDoubleCell(char* record_buffer, const AFieldMeta& 
     return true;
 }
 
-inline bool Application::WriteFloatCell(char* record_buffer, const AFieldMeta& field_meta, const OpenXLSX::XLCellValue& cell) {
+inline bool Application::WriteFloatCell(char* record_buffer, const ATableFieldMeta& field_meta, const OpenXLSX::XLCellValue& cell) {
     float val;
     if (cell.type() == OpenXLSX::XLValueType::Float) {
         val = cell.get<float>();
@@ -319,7 +143,7 @@ inline bool Application::WriteFloatCell(char* record_buffer, const AFieldMeta& f
     return true;
 }
 
-inline bool Application::WriteStringCell(char* record_buffer, const AFieldMeta& field_meta, const OpenXLSX::XLCellValue& cell) {
+inline bool Application::WriteStringCell(char* record_buffer, const ATableFieldMeta& field_meta, const OpenXLSX::XLCellValue& cell) {
     std::string val;
     if (cell.type() == OpenXLSX::XLValueType::String) {
         val = cell.get<std::string>();
@@ -369,7 +193,7 @@ bool Application::SerializeToBin(const std::string& res_name) {
     int col_count = wks.columnCount();
 
     auto message_meta = aresconvert_generator->GetMetaOut();
-    std::map<std::string, AFieldMeta> field_metas = message_meta.GetFieldMetas();
+    std::map<std::string, ATableFieldMeta> field_metas = message_meta.GetFieldMetas();
     std::vector<ColData> columns;
     std::unordered_set<std::string> col_names;
 
@@ -429,7 +253,7 @@ bool Application::SerializeToBin(const std::string& res_name) {
         char* offset = buffer + (rowNo - first_row - 1) * header.size;
         const std::vector<OpenXLSX::XLCellValue>& values = rowData.values();
         for (int col = 0; col < values.size(); col++) {
-            const AFieldMeta& field_meta = columns[col].GetMeta();
+            const ATableFieldMeta& field_meta = columns[col].GetMeta();
             if (!columns[col].IsValid()) {
                 continue;
             }
@@ -643,7 +467,4 @@ json Application::Refresh(const json& req) {
 }
 
 Application::Application() {
-    unsigned int x = 0x76543210;
-    char *c = (char*) &x; 
-    m_is_little_endian = (*c == 0x10);
 }
