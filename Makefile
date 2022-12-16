@@ -1,4 +1,4 @@
-PLATFORM := "LINUX"
+PLATFORM := "WINDOWS"
 SRC_DIR := ./
 OBJ_DIR := ./BUILD
 PROTOCOL_DIR := ./protocol
@@ -53,8 +53,6 @@ $(OBJ_DIR):
 AResConvert: $(PROTO_OBJ_FILES) $(OBJ_FILES)
 	$(CC) $(LDFLAGS) -o $@ $^ $(LIBS)
 
-#include $(OBJ_FILES:.o=.d)
-
 .PHONY: all clean
 
 all : $(OBJ_DIR) AResConvert 
@@ -65,3 +63,4 @@ clean:
 	rm -f AResconvert $(OBJ_DIR)/*.o $(OBJ_DIR)/*.d
 	rm -f *.pb.cc *.pb.h
 
+-include $(OBJ_FILES:.o=.d)

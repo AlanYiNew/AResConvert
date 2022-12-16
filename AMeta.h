@@ -12,8 +12,8 @@ struct AResourceHead{
     int32_t total_size{};
     int32_t size{}; // size of record in bytes
     int32_t count{}; // number of records
-    uint8_t meta_md5[16]{};
-    uint8_t content_md5[16]{};
+    uint8_t meta_md5[32]{};
+    uint8_t content_md5[32]{};
 };
 
 enum FIELDTYPE {
@@ -39,20 +39,20 @@ struct AFieldMeta {
     int32_t count;
     FIELDTYPE field_type;
     AFieldMeta() =  default;
-    AFieldMeta(char* buffer, int32_t size);
-    AFieldMeta(const std::string& field, const std::string& type_name, FIELDTYPE field_type, int32_t size, int32_t offset, int32_t count);
-    bool Serialize(std::vector<unsigned char>& buffer, int32_t buff_offset = 0);
-    int32_t GetSerializationSize();
+    AFieldMeta(unsigned char* buffer, int32_t size);
+    AFieldMeta(const std::string& field, const std::string& type_name, int32_t size, int32_t offset, int32_t count);
+    bool Serialize(std::vector<unsigned char>& buffer, int32_t buff_offset = 0) const;
+    int32_t GetSerializationSize() const;
 };
 
 struct AEnumFieldMeta {
     std::string name;
     int32_t value;
     AEnumFieldMeta() = default;
-    AEnumFieldMeta(char* buffer, int32_t size);
+    AEnumFieldMeta(unsigned char* buffer, int32_t size);
     AEnumFieldMeta(const std::string& name, int32_t value): name(name), value(value) {};
-    bool Serialize(std::vector<unsigned char>& buffer, int32_t offset = 0);
-    int32_t GetSerializationSize();
+    bool Serialize(std::vector<unsigned char>& buffer, int32_t offset = 0) const;
+    int32_t GetSerializationSize() const;
 };
 
 struct AEnumMeta {
@@ -60,21 +60,22 @@ struct AEnumMeta {
     std::string m_name;
 
     AEnumMeta(const std::string& name);
-    AEnumMeta(char* buffer, int32_t size);
+    AEnumMeta(unsigned char* buffer, int32_t size);
     const std::string& GetName() const;
-    bool Serialize(std::vector<unsigned char>& buffer, int32_t offset = 0);
-    int32_t GetSerializationSize();
+    bool Serialize(std::vector<unsigned char>& buffer, int32_t offset = 0) const;
+    int32_t GetSerializationSize() const;
     void CreateEnumFieldMeta(const AEnumFieldMeta& enum_field_meta);
 };
 
 class AMessageMeta {
 public:
     AMessageMeta(const std::string& name);
-    AMessageMeta(char* buffer, int32_t buffer_size);
-    bool Serialize(std::vector<unsigned char>& buffer, int32_t offset = 0);
-    int32_t GetSerializationSize();
+    AMessageMeta(unsigned char* buffer, int32_t buffer_size);
+    bool Serialize(std::vector<unsigned char>& buffer, int32_t offset = 0) const;
+    int32_t GetSerializationSize() const;
     void CreateFieldMeta(const AFieldMeta& field_meta);
     const std::string& GetName() const;
+    std::string GetMD5() const;
 private:
     std::string m_name;
     //int32_t m_size{}; // size of bytes of the records
@@ -83,20 +84,21 @@ private:
 
 class AFileMeta {
     private:
-        std::map<string, AMessageMeta> message_meta;
-        std::map<string, AEnumMeta> enum_meta;
+        std::map<string, AMessageMeta> m_message_meta;
+        std::map<string, AEnumMeta> m_enum_meta;
         std::string m_name;
     private:
-        int32_t GetMessageMetaSerializationSize(); 
-        int32_t GetEnumMetaSerializationSize();
+        int32_t GetMessageMetaSerializationSize() const ; 
+        int32_t GetEnumMetaSerializationSize() const;
 
     public:
         AFileMeta(const std::string& name);
-        AFileMeta(char* buffer, int size);
+        AFileMeta(unsigned char* buffer, int size);
         void CreateMessageMeta(const AMessageMeta& message_meta);
         void CreateEnumMeta(const AEnumMeta& enum_meta);
-        bool Serialize(std::vector<unsigned char>& buffer, int32_t offset = 0);
-        int32_t GetSerializationSize();
+        bool Serialize(std::vector<unsigned char>& buffer, int32_t offset = 0) const;
+        int32_t GetSerializationSize() const;
+        const AMessageMeta* GetMessageMetaByName(const std::string& name);
 };
 
 #endif

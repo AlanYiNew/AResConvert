@@ -2,6 +2,7 @@
 #include "aextension.pb.h"
 #include "inja/inja.hpp"
 #include "helpers.h"
+#include "md5.h"
 #include <iostream>
 
 using namespace nlohmann;
@@ -38,22 +39,14 @@ bool AResConvertGenerator::Generate(const FileDescriptor* file,
     else if (parameter == "resource") {
         if (!FindAllResourceTable(file)) return false ;           
     }   else if (parameter.find(convert_opt) == 0) {
-        std::string file_name = parameter.substr(convert_opt.size());
-        if (!Convert(file, file_name)) return false ;           
+        std::string message_name = parameter.substr(convert_opt.size());
+        if (!Convert(file, message_name)) return false;           
     }   else if (parameter == "struct") {
-        AFileMeta file_meta(file->name());
-        if (!GenerateMeta(file, file_meta)) return false;
         json obj;
-        if (!GenerateInfo(file, obj)) return false;
-
-        std::vector<unsigned char> vec;
-        file_meta.Serialize(vec);
-        std::cout << "file_meta:" << vec.size() << std::endl;
-        for (auto c: vec) {
-            char hex[10];
-            snprintf(hex, sizeof(hex), "%x", c);
-            obj["meta_binary"].push_back(hex);
-        }
+        obj["file_name"] = GetFileName(file->name());
+        obj["package_name"] = file->package();
+        if (!GenerateInfo(file, obj["code_data"])) return false;
+        if (!GenerateMeta(file, obj["meta"])) return false;
 
         auto header_ctx = generator_context->Open(GetFileName(file->name())+ ".h");
         std::unique_ptr<io::ZeroCopyOutputStream> ptr_header_ctx(header_ctx);
@@ -61,6 +54,22 @@ bool AResConvertGenerator::Generate(const FileDescriptor* file,
         if (!GenerateResourceHeader(header_printer, obj)) return false;
     }
 
+    return true;
+}
+
+bool AResConvertGenerator::GenerateMeta(const FileDescriptor* file, json& obj) const {
+    AFileMeta file_meta(file->name());
+    if (!GenerateMeta(file, file_meta)) {
+        return false;
+    }
+
+    std::vector<unsigned char> vec;
+    file_meta.Serialize(vec);
+    for (auto c: vec) {
+        char hex[10];
+        snprintf(hex, sizeof(hex), "%x", c);
+        obj.push_back(hex);
+    }
     return true;
 }
 
@@ -240,25 +249,23 @@ bool AResConvertGenerator::Flatten(const FileDescriptor* file, const Descriptor*
     return true;
 }
 
-bool AResConvertGenerator::CreateMeta(const FileDescriptor* file) const {
-    for (int i = 0; i < file->message_type_count(); i++)
-    {
-        //const Descriptor* descriptor = file->message_type(i);
-        //auto options = descriptor->options();
-    }
-    return true;
-}
 
-bool AResConvertGenerator::Convert(const FileDescriptor* file, const std::string message_name) const {
+bool AResConvertGenerator::Convert(const FileDescriptor* file, const std::string& message_name) const {
     auto md = file->FindMessageTypeByName(message_name);
     if (md == nullptr) {
         ERR_RETURN("Fail to find " + message_name, false);
     }
 
-    if (!CreateMeta(file)) {
-        return false;
+    AMessageMeta message_meta(message_name);
+    if (CreateMessageMetaFromDescriptor(file, md, message_meta)) {
+        GOOGLE_LOG(INFO) << "GG97\n";
+        auto y = message_meta.GetMD5();
+        GOOGLE_LOG(INFO) << "GG98\n";
+        m_message_meta.SetMetaMD5(y);
+        GOOGLE_LOG(INFO) << "GG99\n";
     }
 
+    GOOGLE_LOG(INFO) << "GG100\n";
     if (!Flatten(file, md, m_message_meta)) {
         return false;
     }
@@ -285,7 +292,7 @@ bool AResConvertGenerator::FindAllResourceTable(const FileDescriptor* file) cons
         }
     }
 
-    return true;   
+    return true;
 }
 
 bool AResConvertGenerator::GenerateJsonHeader(Printer& printer, const json& info) const {
@@ -304,30 +311,38 @@ bool AResConvertGenerator::GenerateJsonSource(Printer& printer, const json& info
     return true;
 }
 
+bool AResConvertGenerator::CreateMessageMetaFromDescriptor(const FileDescriptor* file, const Descriptor* descriptor, AMessageMeta& message_meta) const {
+    int32_t offset = 0;
+    for (int j = 0; j < descriptor->field_count(); j++) 
+    {
+        GOOGLE_LOG(INFO) << "GG1 " << descriptor->name() << "\n";
+        const FieldDescriptor* field_descriptor = descriptor->field(j);
+        int size = GetTypeSize(field_descriptor);
+        if (size == 0) return false;
+        if (field_descriptor->is_repeated() && !field_descriptor->options().HasExtension(AResConvertExt::count)) {
+            GOOGLE_LOG(ERROR) << field_descriptor->name() + " is repeatd but does not have count";
+            return false;
+        }
+        GOOGLE_LOG(INFO) << "GG2\n";
+        int count = 1;
+        if (field_descriptor->options().HasExtension(AResConvertExt::count)) {
+            std::string count_str = field_descriptor->options().GetExtension(AResConvertExt::count);
+            if (!GetEnumValue(file,  count_str, &count)) return false;
+        }
+        GOOGLE_LOG(INFO) << "GG3\n";
+        AFieldMeta field_meta(field_descriptor->name(), GetStructTypeName(field_descriptor), size, offset, count);
+        message_meta.CreateFieldMeta(field_meta);
+        offset += count * size; 
+    }
+    return true;
+}
+
 bool AResConvertGenerator::GenerateMeta(const FileDescriptor* file, AFileMeta& file_meta) const {
     for (int i = 0; i < file->message_type_count(); i++)
     {
         const Descriptor* descriptor = file->message_type(i);
         AMessageMeta message_meta(descriptor->name());
-        int32_t offset = 0;
-        for (int j = 0; j < descriptor->field_count(); j++) 
-        {
-            const FieldDescriptor* field_descriptor = descriptor->field(j);
-            int size = GetTypeSize(field_descriptor);
-            if (size == 0) return false;
-            if (field_descriptor->is_repeated() && !field_descriptor->options().HasExtension(AResConvertExt::count)) {
-                GOOGLE_LOG(ERROR) << field_descriptor->name() + " is repeatd but does not have count";
-                return false;
-            }
-            int count = 1;
-            if (field_descriptor->options().HasExtension(AResConvertExt::count)) {
-                std::string count_str = field_descriptor->options().GetExtension(AResConvertExt::count);
-                if (!GetEnumValue(file,  count_str, &count)) return false;
-            }
-            AFieldMeta field_meta(field_descriptor->name(), GetStructTypeName(field_descriptor), GetFieldType(field_descriptor), size, offset, count);
-            message_meta.CreateFieldMeta(field_meta);
-            offset += count * size; 
-        }
+        CreateMessageMetaFromDescriptor(file, descriptor, message_meta); 
         file_meta.CreateMessageMeta(message_meta);
     }
 
@@ -348,8 +363,6 @@ bool AResConvertGenerator::GenerateMeta(const FileDescriptor* file, AFileMeta& f
 bool AResConvertGenerator::GenerateInfo(const FileDescriptor* file, json& info) const {
     std::string file_name = GetFileName(file->name());
     info["messages"] = json();
-    info["file_name"] = file_name;
-    info["package_name"] = file->package();
     for (int i = 0; i < file->message_type_count(); i++)
     {
         const Descriptor* descriptor = file->message_type(i);

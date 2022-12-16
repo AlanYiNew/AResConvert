@@ -36,6 +36,7 @@ struct ATableFieldMeta {
 struct ATableMeta {
     int32_t m_size{}; // size of bytes of the records
     std::map<std::string, ATableFieldMeta> meta_data;
+    std::string md5;
     void CreateField(const std::string& name, FIELDTYPE field_type, int32_t size) {
         meta_data.emplace(name, ATableFieldMeta{name, field_type, size, m_size});
         m_size += size;
@@ -54,15 +55,12 @@ struct ATableMeta {
 
     int32_t GetSize() { return m_size; };
 
-    std::string GetMD5() {
-        MD5 md5;
-        for (auto& iter : meta_data) {
-            auto& field_meta = iter.second;
-            md5.update(field_meta.name.c_str(), field_meta.name.size());
-            md5.update(&field_meta.size, sizeof(field_meta.size));
-            md5.update(&field_meta.field_type, sizeof(field_meta.field_type));
-        }
-        return md5.toString();
+    void SetMetaMD5(const std::string& md5) {
+        this->md5 = md5;
+    }
+
+    std::string GetMetaMD5() {
+        return md5; 
     }
 };
 
@@ -87,12 +85,14 @@ private:
 
     bool GenerateInfo(const FileDescriptor* file, json& info) const; 
     bool GenerateMeta(const FileDescriptor* file, AFileMeta& file_meta) const;
+    bool GenerateMeta(const FileDescriptor* file, json& obj) const;
     bool GenerateJsonHeader(Printer& printer, const json& info) const;
     bool GenerateJsonSource(Printer& printer, const json& info) const;
     bool GenerateResourceHeader(Printer& printer, const json& info) const;
 
     bool CreateMeta(const FileDescriptor* file) const;
-    bool Convert(const FileDescriptor* file, const std::string file_name) const;
+    bool CreateMessageMetaFromDescriptor(const FileDescriptor* file, const Descriptor* descriptor, AMessageMeta& message_meta) const;
+    bool Convert(const FileDescriptor* file, const std::string& file_name) const;
     bool FindAllResourceTable(const FileDescriptor* file) const;
 
 private:

@@ -4,7 +4,7 @@
 #include <google/protobuf/compiler/cpp/generator.h>
 #include <google/protobuf/compiler/command_line_interface.h>
 #include "application.h"
-#include "AEndianessHelper.h"
+#include "AEndiannessHelper.h"
 #include "md5.h"
 #include "helpers.h"
 #include <ctime>
@@ -66,6 +66,7 @@ bool Application::WriteUInt16Cell(char* record_buffer, const ATableFieldMeta& fi
 
 bool Application::WriteInt64Cell(char* record_buffer, const ATableFieldMeta& field_meta, const OpenXLSX::XLCellValue& cell) {
     int64_t val;
+    GOOGLE_LOG(INFO) << (int)cell.type() << "\n";
     if (cell.type() == OpenXLSX::XLValueType::Integer) {
         val = cell.get<int64_t>();
     }   else if (cell.type() == OpenXLSX::XLValueType::Empty) {
@@ -145,13 +146,13 @@ inline bool Application::WriteFloatCell(char* record_buffer, const ATableFieldMe
 
 inline bool Application::WriteStringCell(char* record_buffer, const ATableFieldMeta& field_meta, const OpenXLSX::XLCellValue& cell) {
     std::string val;
-    if (cell.type() == OpenXLSX::XLValueType::String) {
+    if (cell.type() != OpenXLSX::XLValueType::Empty) {
+    }   else if (cell.type() != OpenXLSX::XLValueType::Error) {
         val = cell.get<std::string>();
         if (val.size() >= field_meta.size) {
             GOOGLE_LOG(ERROR) << "string: " << val << " is greater equal to " << field_meta.size;
             return false;
         }
-    }   else if (cell.type() == OpenXLSX::XLValueType::Empty) {
     }   else {
         return false;
     }
@@ -232,7 +233,7 @@ bool Application::SerializeToBin(const std::string& res_name) {
     WriteInt32(f, header.size);
     // 2. md5
     std::fseek(f, offsetof(AResourceHead, meta_md5), SEEK_SET);
-    WriteBytes(f, message_meta.GetMD5());
+    WriteBytes(f, message_meta.GetMetaMD5());
     // 3. record count
     header.count =  row_count - first_row;
     std::fseek(f, offsetof(AResourceHead, count), SEEK_SET);
@@ -262,23 +263,23 @@ bool Application::SerializeToBin(const std::string& res_name) {
             bool result = true;
             const auto field_type = field_meta.field_type;
             switch (field_type) {
-                case FIELDTYPE_INT32: { result = WriteInt32Cell(offset, field_meta, cell); } break;
-                case FIELDTYPE_UINT32: { result = WriteUInt32Cell(offset, field_meta, cell); } break;
-                case FIELDTYPE_INT16: { result = WriteInt16Cell(offset, field_meta, cell); } break;   
-                case FIELDTYPE_UINT16: { result = WriteUInt16Cell(offset, field_meta, cell); } break;
-                case FIELDTYPE_INT64: { result = WriteInt64Cell(offset, field_meta, cell); } break;
-                case FIELDTYPE_UINT64: { result = WriteUInt64Cell(offset, field_meta, cell); } break;
-                case FIELDTYPE_INT8: { result = WriteInt8Cell(offset, field_meta, cell); } break;   
-                case FIELDTYPE_UINT8: { result = WriteUInt8Cell(offset, field_meta, cell); } break;
-                case FIELDTYPE_FLOAT: { result = WriteFloatCell(offset, field_meta, cell); } break;
-                case FIELDTYPE_DOUBLE: { result = WriteDoubleCell(offset, field_meta, cell); } break;
-                case FIELDTYPE_STRING: { result = WriteStringCell(offset, field_meta, cell); } break;
+                case FIELDTYPE_INT32: { result = WriteInt32Cell(offset, field_meta, cell);} break;
+                case FIELDTYPE_UINT32: { result = WriteUInt32Cell(offset, field_meta, cell);} break;
+                case FIELDTYPE_INT16: { result = WriteInt16Cell(offset, field_meta, cell);} break;   
+                case FIELDTYPE_UINT16: { result = WriteUInt16Cell(offset, field_meta, cell);} break;
+                case FIELDTYPE_INT64: { result = WriteInt64Cell(offset, field_meta, cell);} break;
+                case FIELDTYPE_UINT64: { result = WriteUInt64Cell(offset, field_meta, cell);} break;
+                case FIELDTYPE_INT8: { result = WriteInt8Cell(offset, field_meta, cell);} break;   
+                case FIELDTYPE_UINT8: { result = WriteUInt8Cell(offset, field_meta, cell);} break;
+                case FIELDTYPE_FLOAT: { result = WriteFloatCell(offset, field_meta, cell);} break;
+                case FIELDTYPE_DOUBLE: { result = WriteDoubleCell(offset, field_meta, cell);} break;
+                case FIELDTYPE_STRING: { result = WriteStringCell(offset, field_meta, cell);} break;
                 default: {
                     GOOGLE_LOG(ERROR) << "Invalid field_type: " << field_type;
                 }
             }
             if (!result) {
-                GOOGLE_LOG(ERROR) << GetCellNo(rowNo, col);
+                GOOGLE_LOG(ERROR) << GetCellNo(rowNo, col) << "\n";
             }
         }
     }
@@ -289,6 +290,9 @@ bool Application::SerializeToBin(const std::string& res_name) {
     std::string md5 = m_md5->toString();
     std::fseek(f, offsetof(AResourceHead, content_md5), SEEK_SET);
     WriteBytes(f, md5);
+
+    std::fseek(f, offsetof(AResourceHead, meta_md5), SEEK_SET);
+    WriteBytes(f, message_meta.GetMetaMD5());
     
     // 6. record content 
     std::fseek(f, sizeof(AResourceHead), SEEK_SET);
