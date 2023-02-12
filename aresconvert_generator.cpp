@@ -1,5 +1,5 @@
 #include "aresconvert_generator.h"
-#include "aextension.pb.h"
+#include "aext.pb.h"
 #include "inja/inja.hpp"
 #include "helpers.h"
 #include "md5.h"
@@ -185,11 +185,11 @@ bool AResConvertGenerator::Flatten(const FileDescriptor* file, const Descriptor*
 
                 if (field->is_repeated()) {
                     auto options = field->options();            
-                    if (!options.HasExtension(AResConvertExt::count)) {
+                    if (!options.HasExtension(AExt::count)) {
                         ERR_RETURN(md->name() + "." + field->name() + " is repeated but does not have count", false);
                     }
 
-                    const std::string& count  = options.GetExtension(AResConvertExt::count);
+                    const std::string& count  = options.GetExtension(AExt::count);
                     int num = 0;
                     if (!GetEnumValue(file, count, &num)) {
                         ERR_RETURN("Fail to find enum: " + count, false);
@@ -215,11 +215,11 @@ bool AResConvertGenerator::Flatten(const FileDescriptor* file, const Descriptor*
             default:
                 if (field->is_repeated()) {
                     auto options = field->options();            
-                    if (!options.HasExtension(AResConvertExt::count)) {
+                    if (!options.HasExtension(AExt::count)) {
                         ERR_RETURN(field->name() + "is repeated but does not have count", false);
                     }
 
-                    const std::string& count  = options.GetExtension(AResConvertExt::count);
+                    const std::string& count  = options.GetExtension(AExt::count);
                     int num = 0;
                     if (!GetEnumValue(file, count, &num)) {
                         ERR_RETURN("Fail to find enum: " + count, false);
@@ -279,10 +279,10 @@ bool AResConvertGenerator::FindAllResourceTable(const FileDescriptor* file) cons
     {
         const Descriptor* descriptor = file->message_type(i);
         auto options = descriptor->options();
-        if (options.HasExtension(AResConvertExt::file_name) && options.HasExtension(AResConvertExt::xlsx_name)) {
-            std::string name = options.GetExtension(AResConvertExt::file_name);
-            std::string xlsx = options.GetExtension(AResConvertExt::xlsx_name);
-            std::string sheet_name = options.GetExtension(AResConvertExt::sheet_name );
+        if (options.HasExtension(AExt::file_name) && options.HasExtension(AExt::xlsx_name)) {
+            std::string name = options.GetExtension(AExt::file_name);
+            std::string xlsx = options.GetExtension(AExt::xlsx_name);
+            std::string sheet_name = options.GetExtension(AExt::sheet_name );
             m_info.resource_list.push_back({
                 {"file_name", name},
                 {"xlsx_name", xlsx}, 
@@ -319,14 +319,14 @@ bool AResConvertGenerator::CreateMessageMetaFromDescriptor(const FileDescriptor*
         const FieldDescriptor* field_descriptor = descriptor->field(j);
         int size = GetTypeSize(field_descriptor);
         if (size == 0) return false;
-        if (field_descriptor->is_repeated() && !field_descriptor->options().HasExtension(AResConvertExt::count)) {
+        if (field_descriptor->is_repeated() && !field_descriptor->options().HasExtension(AExt::count)) {
             GOOGLE_LOG(ERROR) << field_descriptor->name() + " is repeatd but does not have count";
             return false;
         }
         GOOGLE_LOG(INFO) << "GG2\n";
         int count = 1;
-        if (field_descriptor->options().HasExtension(AResConvertExt::count)) {
-            std::string count_str = field_descriptor->options().GetExtension(AResConvertExt::count);
+        if (field_descriptor->options().HasExtension(AExt::count)) {
+            std::string count_str = field_descriptor->options().GetExtension(AExt::count);
             if (!GetEnumValue(file,  count_str, &count)) return false;
         }
         GOOGLE_LOG(INFO) << "GG3\n";
@@ -418,11 +418,11 @@ int AResConvertGenerator::GetTypeSize(const FieldDescriptor* field) const {
         case FieldDescriptor::CPPTYPE_STRING: {
             int num = 0;
             auto options = field->options();            
-            if (!options.HasExtension(AResConvertExt::size)) {
+            if (!options.HasExtension(AExt::size)) {
                 ERR_RETURN(field->containing_type()->name() + "." + field->name() + " is string but does not have size", 0);
             }
 
-            const std::string& enum_name= options.GetExtension(AResConvertExt::size);
+            const std::string& enum_name= options.GetExtension(AExt::size);
             if (!GetEnumValue(field->file(), enum_name, &num)) {
                 return 0; 
             }
@@ -587,11 +587,11 @@ bool AResConvertGenerator::GetStructTypeField(const FieldDescriptor* field, std:
 
             if (field->is_repeated()) {
                 auto options = field->options();            
-                if (!options.HasExtension(AResConvertExt::count)) {
+                if (!options.HasExtension(AExt::count)) {
                     ERR_RETURN(field->name() + " is repeated but does not have count", false);
                 }
 
-                const std::string& count  = options.GetExtension(AResConvertExt::count);
+                const std::string& count  = options.GetExtension(AExt::count);
                 out = type_name + " " + field->name() + "[" + count + "]"; 
 
             }   else {
@@ -603,18 +603,18 @@ bool AResConvertGenerator::GetStructTypeField(const FieldDescriptor* field, std:
         case FieldDescriptor::TYPE_STRING:
             {
                 auto options = field->options();            
-                if (!options.HasExtension(AResConvertExt::size)) {
+                if (!options.HasExtension(AExt::size)) {
                     ERR_RETURN(field->containing_type()->name() + "." + field->name() + " is string but does not have size", false);
                 }
 
-                const std::string& size = options.GetExtension(AResConvertExt::size);
+                const std::string& size = options.GetExtension(AExt::size);
                 if (field->is_repeated()) {
                     auto options = field->options();            
-                    if (!options.HasExtension(AResConvertExt::count)) {
+                    if (!options.HasExtension(AExt::count)) {
                         ERR_RETURN(field->name() + " is repeated but does not have count", false);
                     }
 
-                    const std::string& count  = options.GetExtension(AResConvertExt::count);
+                    const std::string& count  = options.GetExtension(AExt::count);
                     out = type_name + " " + field->name() + "[" + count + "][" + size + "]"; 
                 }   else {
                     out = type_name + " " + field->name() + "[" + size + "]";
@@ -624,11 +624,11 @@ bool AResConvertGenerator::GetStructTypeField(const FieldDescriptor* field, std:
         default:
             if (field->is_repeated()) {
                 auto options = field->options();            
-                if (!options.HasExtension(AResConvertExt::count)) {
+                if (!options.HasExtension(AExt::count)) {
                     ERR_RETURN(field->name() + "is repeated but does not have count", false);
                 }
 
-                const std::string& count  = options.GetExtension(AResConvertExt::count);
+                const std::string& count  = options.GetExtension(AExt::count);
                 out = type_name + " " + field->name() + "[" + count + "]"; 
             }
             else {

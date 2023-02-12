@@ -98,7 +98,7 @@ class AFileMeta {
         void CreateEnumMeta(const AEnumMeta& enum_meta);
         bool Serialize(std::vector<unsigned char>& buffer, int32_t offset = 0) const;
         int32_t GetSerializationSize() const;
-        const AMessageMeta* GetMessageMetaByName(const std::string& name);
+        const AMessageMeta* GetMessageMetaByName(const std::string& name) const;
 };
 
 #endif

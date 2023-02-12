@@ -2,6 +2,7 @@
 #define _PORTABLE_ENDIAN_H__
 
 #include <cstddef>
+#include <iostream>
 #if (defined(_WIN16) || defined(_WIN32) || defined(_WIN64)) && !defined(__WINDOWS__)
 
 #	define __WINDOWS__
@@ -303,5 +304,112 @@ inline int32_t WriteBytes(std::FILE* f, const std::string& val) {
 inline int32_t WriteBytes(std::FILE* f, char* buffer, int32_t size) {
     std::fwrite(buffer, 1, size, f);
     return size;
+}
+
+inline bool ReadInt32(std::FILE* f, int32_t& val) {
+    val = 0;
+    auto x = std::fread(&val, sizeof(val), 1, f);
+    if (x == 1) {
+       val = le32toh(val);
+       return true;
+    }
+    return false;
+}
+
+inline bool ReadUInt32(std::FILE* f, uint32_t& val) {
+    val = 0;
+    auto x = std::fread(&val, sizeof(val), 1 , f);
+    if (x == 1) {
+       val = le32toh(val);
+       return true;
+    }
+    return false;
+}
+
+inline bool ReadInt16(std::FILE* f, int16_t& val) {
+    val = 0;
+    auto x = std::fread(&val, sizeof(val), 1, f);
+    if (x == 1) {
+       val = le16toh(val);
+       return true;
+    }
+    return false;
+}
+
+inline bool ReadUInt16(std::FILE* f, uint16_t& val) {
+    val = 0;
+    auto x = std::fread(&val, sizeof(val), 1, f);
+    if (x == 1) {
+       val = le16toh(val);
+       return true;
+    }
+    return false;
+;
+}
+
+inline bool ReadInt64(std::FILE* f, int64_t& val) {
+    val = 0;
+    auto x = std::fread(&val, sizeof(val), 1,  f);
+    if (x == 1) {
+       val = le64toh(val);
+       return true;
+    }
+    return false;
+}
+
+inline bool ReadUInt64(std::FILE* f, uint64_t& val) {
+    val = 0;
+    auto x = std::fread(&val, sizeof(val), 1, f);
+    if (x == 1) {
+       val = le64toh(val);
+       return true;
+    }
+    return false;
+}
+
+inline bool ReadInt8(std::FILE* f, int8_t& val) {
+    val = 0;
+    auto x = std::fread(&val, sizeof(val), 1, f);
+    if (x == 1) {
+        return true;   
+    }
+    return false;
+}
+
+inline bool ReadUInt8(std::FILE* f, uint8_t& val) {
+    val = 0;
+    auto x = std::fread(&val, sizeof(val), 1, f);
+    if (x == 1) {
+        return true;   
+    }
+    return false;
+}
+
+inline bool ReadDouble(std::FILE* f, double& val) {
+    val = 0;
+    auto x = std::fread(&val, sizeof(val), 1, f);
+    if (x == 1) {
+        val = le64toh(val);
+        return true;   
+    }
+    return false;
+}
+
+inline bool ReadFloat(std::FILE* f, float& val) {
+    val = 0;
+    auto x = std::fread(&val, sizeof(val), 1, f);
+    if (x == 1) {
+        val = le32toh(val);
+        return true;
+    }
+    return false;
+}
+
+inline bool ReadBytes(std::FILE* f, void* buffer, int32_t size) {
+    auto x = std::fread(buffer, 1, size, f);
+    if (x == size) {
+        return true;
+    }
+    return false;
 }
 #endif

@@ -16,7 +16,7 @@ void AFileMeta::CreateEnumMeta(const AEnumMeta& meta)
     m_enum_meta.emplace(meta.GetName(), meta);
 }
 
-const AMessageMeta* AFileMeta::GetMessageMetaByName(const std::string& name) 
+const AMessageMeta* AFileMeta::GetMessageMetaByName(const std::string& name)  const
 {
     auto iter = m_message_meta.find(name);
     if (iter == m_message_meta.end()) {
