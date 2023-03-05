@@ -56,7 +56,7 @@ export default {
             res_name:nodes[idx]
           }
           
-          window.Convert(req).then((e)=>{
+          window.ConvertJson(req).then((e)=>{
             if (e.code !=0){
                this.renderLog(e.log);
             }
