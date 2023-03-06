@@ -35,8 +35,11 @@ export default {
     window.GetConf().then((e) => {
       
       if (e.code == 0){
-        console.log(e)
-        this.selectValue = e.conf.convert
+        if (e.conf.convert == 'json') {
+          this.selectValue = "转换Json"
+        } else {
+          this.selectValue = "转换Bin"
+        }
       }
     })
 
