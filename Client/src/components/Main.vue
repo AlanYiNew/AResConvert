@@ -19,24 +19,31 @@ export default {
   data(){
     return {
       nodes :  [],
-      logs: []
+      logs: [],
+      selectValue: "",
+      options: [{
+          value: 'Json',
+          label: '转换Json'
+        }, {
+          value: 'Bin',
+          label: '转换Bin'
+        }]
     }
   },
   mounted() {
     let _that = this;
-    window.GetErrMessage().then((e) => {
-      console.log(e)
+    window.GetConf().then((e) => {
+      
       if (e.code == 0){
-        window.GetResourceNameAll().then((e) => {
-          let viewData = resourceMTV(e);
-          this.nodes = viewData;
-        })
+        console.log(e)
+        this.selectValue = e.conf.convert
       }
-      this.renderLog(e.log);
-    });
+    })
 
-    
-    
+    window.GetResourceNameAll().then((e) => {
+      let viewData = resourceMTV(e);
+      this.nodes = viewData;
+    })
   },
   methods: {
     renderLog(logs){
@@ -50,7 +57,7 @@ export default {
       this.convertOne(nodes, 0)
     },
     convertOne(nodes, idx){
-      console.log("aa", idx, nodes.length)
+        console.log(this.selectValue)
         if (idx < nodes.length){
           let req = {
             res_name:nodes[idx]
@@ -75,7 +82,7 @@ export default {
           <el-card style="height:100%"><el-tree ref="tree" node-key="id" show-checkbox :data="nodes" :props="defaultProps" @node-click="handleNodeClick" />
           </el-card>
         </el-col>
-        <el-col :xs="4" :sm="4" :md="2" :lg="2" :xl="1">
+        <el-col :xs="5" :sm="5" :md="3" :lg="3" :xl="2">
           
             <el-card class="item" style="height:100%">
             
@@ -97,10 +104,21 @@ export default {
                 </el-button>
                 </el-col>
               </el-row>
-              
+              <el-row style="margin-top:25px">
+                <el-col style="text-align:center">
+                  <el-select v-model="selectValue" placeholder="请选择">
+                    <el-option
+                      v-for="item in options"
+                      :key="item.value"
+                      :label="item.label"
+                      :value="item.value">
+                    </el-option>
+                  </el-select>
+                  </el-col>
+                </el-row>
             </el-card>
         </el-col>
-        <el-col style="display:flex;flex-direction:column" :xs="10" :sm="12" :md="12" :lg="16" :xl="17">
+        <el-col style="display:flex;flex-direction:column" :xs="9" :sm="11" :md="11" :lg="15" :xl="16">
           <el-card style="height:100%">
             <div v-for="(log,index) in logs" :key="index">
               {{log}}

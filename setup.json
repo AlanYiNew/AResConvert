@@ -2,5 +2,6 @@
 "folders": ["protocol"], 
 "files": ["./protocol/table.proto"],
 "xlsx_folder" : "xlsx",
-"output_folder" : "bin"
+"output_folder" : "bin",
+"convert" : "json"
 }
