@@ -209,8 +209,8 @@ const std::string& AEnumMeta::GetName() const {
     return m_name;
 }
 
-AFieldMeta::AFieldMeta(const std::string& field, const std::string& type_name, int32_t size, int32_t offset, int32_t count)
-:type_name(type_name), name(field), size(size), offset(offset), count(count) {
+AFieldMeta::AFieldMeta(const std::string& field, FIELDTYPE f_type, const std::string& type_name, int32_t size, int32_t offset, int32_t count, bool repeated)
+:type_name(type_name), name(field), size(size), offset(offset), count(count), field_type(f_type), repeated(repeated) {
 }
 
 AFieldMeta::AFieldMeta(unsigned char* buffer, int32_t buffer_size) {

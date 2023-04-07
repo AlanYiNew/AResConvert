@@ -1,0 +1,3 @@
+/usr/bin/cmake3 -E rm -f CMakeFiles/OpenXLSXTests.dir/objects.a
+/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-ar cr CMakeFiles/OpenXLSXTests.dir/objects.a @CMakeFiles/OpenXLSXTests.dir/objects1.rsp
+/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-g++    -Wl,--whole-archive CMakeFiles/OpenXLSXTests.dir/objects.a -Wl,--no-whole-archive  -o ../output/windows/OpenXLSXTests.exe -Wl,--out-implib,../output/windows/libOpenXLSXTests.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/OpenXLSXTests.dir/linklibs.rsp

@@ -1,0 +1,3 @@
+/usr/bin/cmake3 -E rm -f CMakeFiles/Demo7.dir/objects.a
+/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-ar cr CMakeFiles/Demo7.dir/objects.a @CMakeFiles/Demo7.dir/objects1.rsp
+/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-g++    -Wl,--whole-archive CMakeFiles/Demo7.dir/objects.a -Wl,--no-whole-archive  -o ../output/windows/Demo7.exe -Wl,--out-implib,../output/windows/libDemo7.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/Demo7.dir/linklibs.rsp

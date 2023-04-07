@@ -23,21 +23,12 @@ bool AResConvertGenerator::Generate(const FileDescriptor* file,
                   std::string* error) const
 {
     std::string convert_opt = "convert:";
-    if (parameter == "json") {
-        json obj;
-        if (!GenerateInfo(file, obj)) return false;
-        auto header_ctx = generator_context->Open(GetFileName(file->name())+ ".h");
-        std::unique_ptr<io::ZeroCopyOutputStream> ptr_header_ctx(header_ctx);
-        Printer header_printer(header_ctx, '$');
-        if (!GenerateJsonHeader(header_printer, obj)) return false;
-
-        auto source_ctx = generator_context->Open(GetFileName(file->name())+ ".cpp");
-        std::unique_ptr<io::ZeroCopyOutputStream> ptr_sourc_ctx(source_ctx);
-        Printer source_printer(source_ctx, '$');
-        if (!GenerateJsonSource(source_printer, obj)) return false;
-    }
-    else if (parameter == "resource") {
+    std::string convert_json = "convert_json:";
+    if (parameter == "resource") {
         if (!FindAllResourceTable(file)) return false ;           
+    }   else if (parameter.find(convert_json) == 0) {
+        std::string message_name = parameter.substr(convert_json.size());
+        if (!ConvertJson(file, message_name)) return false;
     }   else if (parameter.find(convert_opt) == 0) {
         std::string message_name = parameter.substr(convert_opt.size());
         if (!Convert(file, message_name)) return false;           
@@ -153,7 +144,11 @@ bool AResConvertGenerator::GetEnumValue(const FileDescriptor* file, const std::s
         }
     }
 
-    in_this_file = FindEnumInFile(file, strs, 0, count);
+    if (file->package() == strs[0]) {
+        in_this_file = FindEnumInFile(file, strs, 0, count);
+    }   else {
+        in_this_file = FindEnumInFile(file, strs, 1, count);
+    }
 
     if (in_other_file && in_this_file) {
         ERR_RETURN(enum_name + "is ambiguous", false);
@@ -249,6 +244,18 @@ bool AResConvertGenerator::Flatten(const FileDescriptor* file, const Descriptor*
     return true;
 }
 
+bool AResConvertGenerator::ConvertJson(const FileDescriptor* file, const std::string& message_name) const {
+    auto md = file->FindMessageTypeByName(message_name);
+    if (md == nullptr) {
+        ERR_RETURN("Fail to find " + message_name, false);
+    }
+
+    if (!CollectMessageMetaFromDescriptor(file, md, m_message_meta)) {
+        return false;
+    }
+
+    return true;
+}
 
 bool AResConvertGenerator::Convert(const FileDescriptor* file, const std::string& message_name) const {
     auto md = file->FindMessageTypeByName(message_name);
@@ -258,15 +265,11 @@ bool AResConvertGenerator::Convert(const FileDescriptor* file, const std::string
 
     AMessageMeta message_meta(message_name);
     if (CreateMessageMetaFromDescriptor(file, md, message_meta)) {
-        GOOGLE_LOG(INFO) << "GG97\n";
         auto y = message_meta.GetMD5();
-        GOOGLE_LOG(INFO) << "GG98\n";
-        m_message_meta.SetMetaMD5(y);
-        GOOGLE_LOG(INFO) << "GG99\n";
+        m_table_meta.SetMetaMD5(y);
     }
 
-    GOOGLE_LOG(INFO) << "GG100\n";
-    if (!Flatten(file, md, m_message_meta)) {
+    if (!Flatten(file, md, m_table_meta)) {
         return false;
     }
     return true;
@@ -283,11 +286,13 @@ bool AResConvertGenerator::FindAllResourceTable(const FileDescriptor* file) cons
             std::string name = options.GetExtension(AExt::file_name);
             std::string xlsx = options.GetExtension(AExt::xlsx_name);
             std::string sheet_name = options.GetExtension(AExt::sheet_name );
+            std::string key_name = options.GetExtension(AExt::key_name);
             m_info.resource_list.push_back({
                 {"file_name", name},
                 {"xlsx_name", xlsx}, 
                 {"sheet_name", sheet_name},
-                {"res_name", descriptor->name()}
+                {"res_name", descriptor->name()},
+                {"key_name", key_name}
             });
         }
     }
@@ -295,19 +300,37 @@ bool AResConvertGenerator::FindAllResourceTable(const FileDescriptor* file) cons
     return true;
 }
 
-bool AResConvertGenerator::GenerateJsonHeader(Printer& printer, const json& info) const {
-    inja::Environment env;
-    env.set_trim_blocks(true);
-    env.set_lstrip_blocks(true);
-    printer.PrintRaw(env.render(env.parse_template("aresconvert_header.template"), info));
-    return true;
-}
+bool AResConvertGenerator::CollectMessageMetaFromDescriptor(const FileDescriptor* file, const Descriptor* descriptor, std::unordered_map<std::string, AMessageMeta>& message_meta_map) const {
+    int32_t offset = 0;
+    AMessageMeta message_meta(descriptor->name());
+    for (int j = 0; j < descriptor->field_count(); j++) 
+    {
+        const FieldDescriptor* field_descriptor = descriptor->field(j);
+        int size = GetTypeSize(field_descriptor);
+        if (size == 0) return false;
+        if (field_descriptor->is_repeated() && !field_descriptor->options().HasExtension(AExt::count)) {
+            GOOGLE_LOG(ERROR) << field_descriptor->name() + " is repeatd but does not have count\n";
+            return false;
+        }
+        int count = 1;
+        bool repeated = false;
+        if (field_descriptor->options().HasExtension(AExt::count)) {
+            repeated = true;
+            std::string count_str = field_descriptor->options().GetExtension(AExt::count);
+            if (!GetEnumValue(file,  count_str, &count)) return false;
+        }
 
-bool AResConvertGenerator::GenerateJsonSource(Printer& printer, const json& info) const {
-    inja::Environment env;
-    env.set_trim_blocks(true);
-    env.set_lstrip_blocks(true);
-    printer.PrintRaw(env.render(env.parse_template("aresconvert_source.template"), info));
+        AFieldMeta field_meta(field_descriptor->name(), GetFieldType(field_descriptor), GetStructTypeName(field_descriptor), size, offset, count, repeated);
+        message_meta.CreateFieldMeta(field_meta);
+        offset += count * size; 
+
+        if (field_meta.field_type == FIELDTYPE_MESSAGE) {
+            if (!CollectMessageMetaFromDescriptor(file, field_descriptor->message_type(), message_meta_map)) {
+                GOOGLE_LOG(ERROR) << "Fail Collect Message Meta of " << field_descriptor->name() << "\n"; 
+            };
+        }
+    }
+    message_meta_map.emplace(message_meta.GetName(), message_meta);
     return true;
 }
 
@@ -315,22 +338,21 @@ bool AResConvertGenerator::CreateMessageMetaFromDescriptor(const FileDescriptor*
     int32_t offset = 0;
     for (int j = 0; j < descriptor->field_count(); j++) 
     {
-        GOOGLE_LOG(INFO) << "GG1 " << descriptor->name() << "\n";
         const FieldDescriptor* field_descriptor = descriptor->field(j);
         int size = GetTypeSize(field_descriptor);
         if (size == 0) return false;
         if (field_descriptor->is_repeated() && !field_descriptor->options().HasExtension(AExt::count)) {
-            GOOGLE_LOG(ERROR) << field_descriptor->name() + " is repeatd but does not have count";
+            GOOGLE_LOG(ERROR) << field_descriptor->name() + " is repeatd but does not have count\n";
             return false;
         }
-        GOOGLE_LOG(INFO) << "GG2\n";
         int count = 1;
+        bool repeated = false;
         if (field_descriptor->options().HasExtension(AExt::count)) {
+            repeated = true;
             std::string count_str = field_descriptor->options().GetExtension(AExt::count);
             if (!GetEnumValue(file,  count_str, &count)) return false;
         }
-        GOOGLE_LOG(INFO) << "GG3\n";
-        AFieldMeta field_meta(field_descriptor->name(), GetStructTypeName(field_descriptor), size, offset, count);
+        AFieldMeta field_meta(field_descriptor->name(), GetFieldType(field_descriptor), GetStructTypeName(field_descriptor), size, offset, count, repeated);
         message_meta.CreateFieldMeta(field_meta);
         offset += count * size; 
     }
@@ -379,7 +401,7 @@ bool AResConvertGenerator::GenerateInfo(const FileDescriptor* file, json& info) 
         }
 
         if (descriptor->nested_type_count() > 0 || descriptor->enum_type_count() > 0) {
-            GOOGLE_LOG(ERROR) << descriptor->name() <<" Error: Nested message and enum are not supported right now";
+            GOOGLE_LOG(ERROR) << descriptor->name() <<" Error: Nested message and enum are not supported right now\n";
         }
     }
 
@@ -438,7 +460,7 @@ int AResConvertGenerator::GetTypeSize(const FieldDescriptor* field) const {
             return total;
         }
     }
-    GOOGLE_LOG(ERROR) << "Fail to find type size for";
+    GOOGLE_LOG(ERROR) << "Fail to find type size for\n";
     return 0;
 }
 
@@ -463,6 +485,8 @@ FIELDTYPE AResConvertGenerator::GetFieldType(const FieldDescriptor* field) const
             return FIELDTYPE_INT32;
         case FieldDescriptor::CPPTYPE_STRING:
             return FIELDTYPE_STRING;
+        case FieldDescriptor::CPPTYPE_MESSAGE:
+            return FIELDTYPE_MESSAGE;
         default: 
             return FIELDTYPE_INVALID;
     }
@@ -563,6 +587,15 @@ std::string AResConvertGenerator::FindXLSXFileNameByMessageName(const std::strin
     for (auto& item: m_info.resource_list.items()) {
         if (item.value()["res_name"] == message_name) {
             return item.value()["xlsx_name"];
+        }
+    }
+    return "";
+}
+
+std::string AResConvertGenerator::FindKeyNameByMessageName(const std::string& message_name) const {
+    for (auto& item: m_info.resource_list.items()) {
+        if (item.value()["res_name"] == message_name) {
+            return item.value()["key_name"];
         }
     }
     return "";

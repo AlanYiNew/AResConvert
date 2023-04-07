@@ -1,0 +1,337 @@
+[
+{
+  "directory": "/home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/OpenXLSX",
+  "command": "/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-g++  -DCHARCONV_ENABLED -DOPENXLSX_STATIC_DEFINE @CMakeFiles/OpenXLSX.dir/includes_CXX.rsp -fvisibility=hidden -fno-keep-inline-dllexport   -std=c++17 -o CMakeFiles/OpenXLSX.dir/sources/XLCell.cpp.obj -c /home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/OpenXLSX/sources/XLCell.cpp",
+  "file": "/home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/OpenXLSX/sources/XLCell.cpp"
+},
+{
+  "directory": "/home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/OpenXLSX",
+  "command": "/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-g++  -DCHARCONV_ENABLED -DOPENXLSX_STATIC_DEFINE @CMakeFiles/OpenXLSX.dir/includes_CXX.rsp -fvisibility=hidden -fno-keep-inline-dllexport   -std=c++17 -o CMakeFiles/OpenXLSX.dir/sources/XLCellIterator.cpp.obj -c /home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/OpenXLSX/sources/XLCellIterator.cpp",
+  "file": "/home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/OpenXLSX/sources/XLCellIterator.cpp"
+},
+{
+  "directory": "/home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/OpenXLSX",
+  "command": "/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-g++  -DCHARCONV_ENABLED -DOPENXLSX_STATIC_DEFINE @CMakeFiles/OpenXLSX.dir/includes_CXX.rsp -fvisibility=hidden -fno-keep-inline-dllexport   -std=c++17 -o CMakeFiles/OpenXLSX.dir/sources/XLCellRange.cpp.obj -c /home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/OpenXLSX/sources/XLCellRange.cpp",
+  "file": "/home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/OpenXLSX/sources/XLCellRange.cpp"
+},
+{
+  "directory": "/home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/OpenXLSX",
+  "command": "/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-g++  -DCHARCONV_ENABLED -DOPENXLSX_STATIC_DEFINE @CMakeFiles/OpenXLSX.dir/includes_CXX.rsp -fvisibility=hidden -fno-keep-inline-dllexport   -std=c++17 -o CMakeFiles/OpenXLSX.dir/sources/XLCellReference.cpp.obj -c /home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/OpenXLSX/sources/XLCellReference.cpp",
+  "file": "/home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/OpenXLSX/sources/XLCellReference.cpp"
+},
+{
+  "directory": "/home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/OpenXLSX",
+  "command": "/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-g++  -DCHARCONV_ENABLED -DOPENXLSX_STATIC_DEFINE @CMakeFiles/OpenXLSX.dir/includes_CXX.rsp -fvisibility=hidden -fno-keep-inline-dllexport   -std=c++17 -o CMakeFiles/OpenXLSX.dir/sources/XLCellValue.cpp.obj -c /home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/OpenXLSX/sources/XLCellValue.cpp",
+  "file": "/home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/OpenXLSX/sources/XLCellValue.cpp"
+},
+{
+  "directory": "/home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/OpenXLSX",
+  "command": "/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-g++  -DCHARCONV_ENABLED -DOPENXLSX_STATIC_DEFINE @CMakeFiles/OpenXLSX.dir/includes_CXX.rsp -fvisibility=hidden -fno-keep-inline-dllexport   -std=c++17 -o CMakeFiles/OpenXLSX.dir/sources/XLColor.cpp.obj -c /home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/OpenXLSX/sources/XLColor.cpp",
+  "file": "/home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/OpenXLSX/sources/XLColor.cpp"
+},
+{
+  "directory": "/home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/OpenXLSX",
+  "command": "/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-g++  -DCHARCONV_ENABLED -DOPENXLSX_STATIC_DEFINE @CMakeFiles/OpenXLSX.dir/includes_CXX.rsp -fvisibility=hidden -fno-keep-inline-dllexport   -std=c++17 -o CMakeFiles/OpenXLSX.dir/sources/XLColumn.cpp.obj -c /home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/OpenXLSX/sources/XLColumn.cpp",
+  "file": "/home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/OpenXLSX/sources/XLColumn.cpp"
+},
+{
+  "directory": "/home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/OpenXLSX",
+  "command": "/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-g++  -DCHARCONV_ENABLED -DOPENXLSX_STATIC_DEFINE @CMakeFiles/OpenXLSX.dir/includes_CXX.rsp -fvisibility=hidden -fno-keep-inline-dllexport   -std=c++17 -o CMakeFiles/OpenXLSX.dir/sources/XLContentTypes.cpp.obj -c /home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/OpenXLSX/sources/XLContentTypes.cpp",
+  "file": "/home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/OpenXLSX/sources/XLContentTypes.cpp"
+},
+{
+  "directory": "/home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/OpenXLSX",
+  "command": "/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-g++  -DCHARCONV_ENABLED -DOPENXLSX_STATIC_DEFINE @CMakeFiles/OpenXLSX.dir/includes_CXX.rsp -fvisibility=hidden -fno-keep-inline-dllexport   -std=c++17 -o CMakeFiles/OpenXLSX.dir/sources/XLDateTime.cpp.obj -c /home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/OpenXLSX/sources/XLDateTime.cpp",
+  "file": "/home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/OpenXLSX/sources/XLDateTime.cpp"
+},
+{
+  "directory": "/home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/OpenXLSX",
+  "command": "/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-g++  -DCHARCONV_ENABLED -DOPENXLSX_STATIC_DEFINE @CMakeFiles/OpenXLSX.dir/includes_CXX.rsp -fvisibility=hidden -fno-keep-inline-dllexport   -std=c++17 -o CMakeFiles/OpenXLSX.dir/sources/XLDocument.cpp.obj -c /home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/OpenXLSX/sources/XLDocument.cpp",
+  "file": "/home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/OpenXLSX/sources/XLDocument.cpp"
+},
+{
+  "directory": "/home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/OpenXLSX",
+  "command": "/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-g++  -DCHARCONV_ENABLED -DOPENXLSX_STATIC_DEFINE @CMakeFiles/OpenXLSX.dir/includes_CXX.rsp -fvisibility=hidden -fno-keep-inline-dllexport   -std=c++17 -o CMakeFiles/OpenXLSX.dir/sources/XLFormula.cpp.obj -c /home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/OpenXLSX/sources/XLFormula.cpp",
+  "file": "/home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/OpenXLSX/sources/XLFormula.cpp"
+},
+{
+  "directory": "/home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/OpenXLSX",
+  "command": "/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-g++  -DCHARCONV_ENABLED -DOPENXLSX_STATIC_DEFINE @CMakeFiles/OpenXLSX.dir/includes_CXX.rsp -fvisibility=hidden -fno-keep-inline-dllexport   -std=c++17 -o CMakeFiles/OpenXLSX.dir/sources/XLProperties.cpp.obj -c /home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/OpenXLSX/sources/XLProperties.cpp",
+  "file": "/home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/OpenXLSX/sources/XLProperties.cpp"
+},
+{
+  "directory": "/home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/OpenXLSX",
+  "command": "/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-g++  -DCHARCONV_ENABLED -DOPENXLSX_STATIC_DEFINE @CMakeFiles/OpenXLSX.dir/includes_CXX.rsp -fvisibility=hidden -fno-keep-inline-dllexport   -std=c++17 -o CMakeFiles/OpenXLSX.dir/sources/XLRelationships.cpp.obj -c /home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/OpenXLSX/sources/XLRelationships.cpp",
+  "file": "/home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/OpenXLSX/sources/XLRelationships.cpp"
+},
+{
+  "directory": "/home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/OpenXLSX",
+  "command": "/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-g++  -DCHARCONV_ENABLED -DOPENXLSX_STATIC_DEFINE @CMakeFiles/OpenXLSX.dir/includes_CXX.rsp -fvisibility=hidden -fno-keep-inline-dllexport   -std=c++17 -o CMakeFiles/OpenXLSX.dir/sources/XLRow.cpp.obj -c /home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/OpenXLSX/sources/XLRow.cpp",
+  "file": "/home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/OpenXLSX/sources/XLRow.cpp"
+},
+{
+  "directory": "/home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/OpenXLSX",
+  "command": "/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-g++  -DCHARCONV_ENABLED -DOPENXLSX_STATIC_DEFINE @CMakeFiles/OpenXLSX.dir/includes_CXX.rsp -fvisibility=hidden -fno-keep-inline-dllexport   -std=c++17 -o CMakeFiles/OpenXLSX.dir/sources/XLRowData.cpp.obj -c /home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/OpenXLSX/sources/XLRowData.cpp",
+  "file": "/home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/OpenXLSX/sources/XLRowData.cpp"
+},
+{
+  "directory": "/home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/OpenXLSX",
+  "command": "/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-g++  -DCHARCONV_ENABLED -DOPENXLSX_STATIC_DEFINE @CMakeFiles/OpenXLSX.dir/includes_CXX.rsp -fvisibility=hidden -fno-keep-inline-dllexport   -std=c++17 -o CMakeFiles/OpenXLSX.dir/sources/XLSharedStrings.cpp.obj -c /home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/OpenXLSX/sources/XLSharedStrings.cpp",
+  "file": "/home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/OpenXLSX/sources/XLSharedStrings.cpp"
+},
+{
+  "directory": "/home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/OpenXLSX",
+  "command": "/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-g++  -DCHARCONV_ENABLED -DOPENXLSX_STATIC_DEFINE @CMakeFiles/OpenXLSX.dir/includes_CXX.rsp -fvisibility=hidden -fno-keep-inline-dllexport   -std=c++17 -o CMakeFiles/OpenXLSX.dir/sources/XLSheet.cpp.obj -c /home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/OpenXLSX/sources/XLSheet.cpp",
+  "file": "/home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/OpenXLSX/sources/XLSheet.cpp"
+},
+{
+  "directory": "/home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/OpenXLSX",
+  "command": "/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-g++  -DCHARCONV_ENABLED -DOPENXLSX_STATIC_DEFINE @CMakeFiles/OpenXLSX.dir/includes_CXX.rsp -fvisibility=hidden -fno-keep-inline-dllexport   -std=c++17 -o CMakeFiles/OpenXLSX.dir/sources/XLWorkbook.cpp.obj -c /home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/OpenXLSX/sources/XLWorkbook.cpp",
+  "file": "/home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/OpenXLSX/sources/XLWorkbook.cpp"
+},
+{
+  "directory": "/home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/OpenXLSX",
+  "command": "/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-g++  -DCHARCONV_ENABLED -DOPENXLSX_STATIC_DEFINE @CMakeFiles/OpenXLSX.dir/includes_CXX.rsp -fvisibility=hidden -fno-keep-inline-dllexport   -std=c++17 -o CMakeFiles/OpenXLSX.dir/sources/XLXmlData.cpp.obj -c /home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/OpenXLSX/sources/XLXmlData.cpp",
+  "file": "/home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/OpenXLSX/sources/XLXmlData.cpp"
+},
+{
+  "directory": "/home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/OpenXLSX",
+  "command": "/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-g++  -DCHARCONV_ENABLED -DOPENXLSX_STATIC_DEFINE @CMakeFiles/OpenXLSX.dir/includes_CXX.rsp -fvisibility=hidden -fno-keep-inline-dllexport   -std=c++17 -o CMakeFiles/OpenXLSX.dir/sources/XLXmlFile.cpp.obj -c /home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/OpenXLSX/sources/XLXmlFile.cpp",
+  "file": "/home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/OpenXLSX/sources/XLXmlFile.cpp"
+},
+{
+  "directory": "/home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/OpenXLSX",
+  "command": "/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-g++  -DCHARCONV_ENABLED -DOPENXLSX_STATIC_DEFINE @CMakeFiles/OpenXLSX.dir/includes_CXX.rsp -fvisibility=hidden -fno-keep-inline-dllexport   -std=c++17 -o CMakeFiles/OpenXLSX.dir/sources/XLZipArchive.cpp.obj -c /home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/OpenXLSX/sources/XLZipArchive.cpp",
+  "file": "/home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/OpenXLSX/sources/XLZipArchive.cpp"
+},
+{
+  "directory": "/home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/Examples",
+  "command": "/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-g++  -DOPENXLSX_STATIC_DEFINE @CMakeFiles/Demo1.dir/includes_CXX.rsp -fvisibility=hidden -fno-keep-inline-dllexport   -std=c++17 -o CMakeFiles/Demo1.dir/Demo1.cpp.obj -c /home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/Examples/Demo1.cpp",
+  "file": "/home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/Examples/Demo1.cpp"
+},
+{
+  "directory": "/home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/Examples",
+  "command": "/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-g++  -DOPENXLSX_STATIC_DEFINE @CMakeFiles/Demo2.dir/includes_CXX.rsp -fvisibility=hidden -fno-keep-inline-dllexport   -std=c++17 -o CMakeFiles/Demo2.dir/Demo2.cpp.obj -c /home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/Examples/Demo2.cpp",
+  "file": "/home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/Examples/Demo2.cpp"
+},
+{
+  "directory": "/home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/Examples",
+  "command": "/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-g++  -DOPENXLSX_STATIC_DEFINE @CMakeFiles/Demo3.dir/includes_CXX.rsp -fvisibility=hidden -fno-keep-inline-dllexport   -std=c++17 -o CMakeFiles/Demo3.dir/Demo3.cpp.obj -c /home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/Examples/Demo3.cpp",
+  "file": "/home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/Examples/Demo3.cpp"
+},
+{
+  "directory": "/home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/Examples",
+  "command": "/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-g++  -DNOWIDE_NO_LIB -DOPENXLSX_STATIC_DEFINE @CMakeFiles/Demo4.dir/includes_CXX.rsp -fvisibility=hidden -fno-keep-inline-dllexport   -std=c++17 -o CMakeFiles/Demo4.dir/Demo4.cpp.obj -c /home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/Examples/Demo4.cpp",
+  "file": "/home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/Examples/Demo4.cpp"
+},
+{
+  "directory": "/home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/Examples",
+  "command": "/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-g++  -DOPENXLSX_STATIC_DEFINE @CMakeFiles/Demo5.dir/includes_CXX.rsp -fvisibility=hidden -fno-keep-inline-dllexport   -std=c++17 -o CMakeFiles/Demo5.dir/Demo5.cpp.obj -c /home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/Examples/Demo5.cpp",
+  "file": "/home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/Examples/Demo5.cpp"
+},
+{
+  "directory": "/home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/Examples",
+  "command": "/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-g++  -DOPENXLSX_STATIC_DEFINE @CMakeFiles/Demo6.dir/includes_CXX.rsp -fvisibility=hidden -fno-keep-inline-dllexport   -std=c++17 -o CMakeFiles/Demo6.dir/Demo6.cpp.obj -c /home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/Examples/Demo6.cpp",
+  "file": "/home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/Examples/Demo6.cpp"
+},
+{
+  "directory": "/home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/Examples",
+  "command": "/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-g++  -DOPENXLSX_STATIC_DEFINE @CMakeFiles/Demo8.dir/includes_CXX.rsp -fvisibility=hidden -fno-keep-inline-dllexport   -std=c++17 -o CMakeFiles/Demo8.dir/Demo8.cpp.obj -c /home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/Examples/Demo8.cpp",
+  "file": "/home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/Examples/Demo8.cpp"
+},
+{
+  "directory": "/home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/Examples",
+  "command": "/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-g++  -DOPENXLSX_STATIC_DEFINE @CMakeFiles/Demo7.dir/includes_CXX.rsp -fvisibility=hidden -fno-keep-inline-dllexport   -std=c++17 -o CMakeFiles/Demo7.dir/Demo7.cpp.obj -c /home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/Examples/Demo7.cpp",
+  "file": "/home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/Examples/Demo7.cpp"
+},
+{
+  "directory": "/home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/Examples/external/nowide",
+  "command": "/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-g++  -DNOWIDE_NO_LIB @CMakeFiles/nowide.dir/includes_CXX.rsp -fvisibility=hidden -fno-keep-inline-dllexport   -Wall -Wextra -pedantic -Wno-cpp -std=c++17 -o CMakeFiles/nowide.dir/src/cstdio.cpp.obj -c /home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/Examples/external/nowide/src/cstdio.cpp",
+  "file": "/home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/Examples/external/nowide/src/cstdio.cpp"
+},
+{
+  "directory": "/home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/Examples/external/nowide",
+  "command": "/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-g++  -DNOWIDE_NO_LIB @CMakeFiles/nowide.dir/includes_CXX.rsp -fvisibility=hidden -fno-keep-inline-dllexport   -Wall -Wextra -pedantic -Wno-cpp -std=c++17 -o CMakeFiles/nowide.dir/src/cstdlib.cpp.obj -c /home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/Examples/external/nowide/src/cstdlib.cpp",
+  "file": "/home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/Examples/external/nowide/src/cstdlib.cpp"
+},
+{
+  "directory": "/home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/Examples/external/nowide",
+  "command": "/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-g++  -DNOWIDE_NO_LIB @CMakeFiles/nowide.dir/includes_CXX.rsp -fvisibility=hidden -fno-keep-inline-dllexport   -Wall -Wextra -pedantic -Wno-cpp -std=c++17 -o CMakeFiles/nowide.dir/src/filebuf.cpp.obj -c /home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/Examples/external/nowide/src/filebuf.cpp",
+  "file": "/home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/Examples/external/nowide/src/filebuf.cpp"
+},
+{
+  "directory": "/home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/Examples/external/nowide",
+  "command": "/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-g++  -DNOWIDE_NO_LIB @CMakeFiles/nowide.dir/includes_CXX.rsp -fvisibility=hidden -fno-keep-inline-dllexport   -Wall -Wextra -pedantic -Wno-cpp -std=c++17 -o CMakeFiles/nowide.dir/src/iostream.cpp.obj -c /home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/Examples/external/nowide/src/iostream.cpp",
+  "file": "/home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/Examples/external/nowide/src/iostream.cpp"
+},
+{
+  "directory": "/home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/Examples/external/nowide",
+  "command": "/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-g++  -DNOWIDE_NO_LIB @CMakeFiles/nowide.dir/includes_CXX.rsp -fvisibility=hidden -fno-keep-inline-dllexport   -Wall -Wextra -pedantic -Wno-cpp -std=c++17 -o CMakeFiles/nowide.dir/src/stat.cpp.obj -c /home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/Examples/external/nowide/src/stat.cpp",
+  "file": "/home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/Examples/external/nowide/src/stat.cpp"
+},
+{
+  "directory": "/home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/Tests",
+  "command": "/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-g++  -DOPENXLSX_STATIC_DEFINE @CMakeFiles/OpenXLSXTests.dir/includes_CXX.rsp -fvisibility=hidden -fno-keep-inline-dllexport   -std=c++17 -o CMakeFiles/OpenXLSXTests.dir/main.cpp.obj -c /home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/Tests/main.cpp",
+  "file": "/home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/Tests/main.cpp"
+},
+{
+  "directory": "/home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/Tests",
+  "command": "/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-g++  -DOPENXLSX_STATIC_DEFINE @CMakeFiles/OpenXLSXTests.dir/includes_CXX.rsp -fvisibility=hidden -fno-keep-inline-dllexport   -std=c++17 -o CMakeFiles/OpenXLSXTests.dir/testXLDocument.cpp.obj -c /home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/Tests/testXLDocument.cpp",
+  "file": "/home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/Tests/testXLDocument.cpp"
+},
+{
+  "directory": "/home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/Tests",
+  "command": "/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-g++  -DOPENXLSX_STATIC_DEFINE @CMakeFiles/OpenXLSXTests.dir/includes_CXX.rsp -fvisibility=hidden -fno-keep-inline-dllexport   -std=c++17 -o CMakeFiles/OpenXLSXTests.dir/testXLCell.cpp.obj -c /home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/Tests/testXLCell.cpp",
+  "file": "/home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/Tests/testXLCell.cpp"
+},
+{
+  "directory": "/home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/Tests",
+  "command": "/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-g++  -DOPENXLSX_STATIC_DEFINE @CMakeFiles/OpenXLSXTests.dir/includes_CXX.rsp -fvisibility=hidden -fno-keep-inline-dllexport   -std=c++17 -o CMakeFiles/OpenXLSXTests.dir/testXLCellRange.cpp.obj -c /home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/Tests/testXLCellRange.cpp",
+  "file": "/home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/Tests/testXLCellRange.cpp"
+},
+{
+  "directory": "/home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/Tests",
+  "command": "/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-g++  -DOPENXLSX_STATIC_DEFINE @CMakeFiles/OpenXLSXTests.dir/includes_CXX.rsp -fvisibility=hidden -fno-keep-inline-dllexport   -std=c++17 -o CMakeFiles/OpenXLSXTests.dir/testXLCellReference.cpp.obj -c /home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/Tests/testXLCellReference.cpp",
+  "file": "/home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/Tests/testXLCellReference.cpp"
+},
+{
+  "directory": "/home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/Tests",
+  "command": "/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-g++  -DOPENXLSX_STATIC_DEFINE @CMakeFiles/OpenXLSXTests.dir/includes_CXX.rsp -fvisibility=hidden -fno-keep-inline-dllexport   -std=c++17 -o CMakeFiles/OpenXLSXTests.dir/testXLCellValue.cpp.obj -c /home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/Tests/testXLCellValue.cpp",
+  "file": "/home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/Tests/testXLCellValue.cpp"
+},
+{
+  "directory": "/home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/Tests",
+  "command": "/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-g++  -DOPENXLSX_STATIC_DEFINE @CMakeFiles/OpenXLSXTests.dir/includes_CXX.rsp -fvisibility=hidden -fno-keep-inline-dllexport   -std=c++17 -o CMakeFiles/OpenXLSXTests.dir/testXLCellValueProxy.cpp.obj -c /home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/Tests/testXLCellValueProxy.cpp",
+  "file": "/home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/Tests/testXLCellValueProxy.cpp"
+},
+{
+  "directory": "/home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/Tests",
+  "command": "/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-g++  -DOPENXLSX_STATIC_DEFINE @CMakeFiles/OpenXLSXTests.dir/includes_CXX.rsp -fvisibility=hidden -fno-keep-inline-dllexport   -std=c++17 -o CMakeFiles/OpenXLSXTests.dir/testXLColor.cpp.obj -c /home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/Tests/testXLColor.cpp",
+  "file": "/home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/Tests/testXLColor.cpp"
+},
+{
+  "directory": "/home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/Tests",
+  "command": "/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-g++  -DOPENXLSX_STATIC_DEFINE @CMakeFiles/OpenXLSXTests.dir/includes_CXX.rsp -fvisibility=hidden -fno-keep-inline-dllexport   -std=c++17 -o CMakeFiles/OpenXLSXTests.dir/testXLDateTime.cpp.obj -c /home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/Tests/testXLDateTime.cpp",
+  "file": "/home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/Tests/testXLDateTime.cpp"
+},
+{
+  "directory": "/home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/Tests",
+  "command": "/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-g++  -DOPENXLSX_STATIC_DEFINE @CMakeFiles/OpenXLSXTests.dir/includes_CXX.rsp -fvisibility=hidden -fno-keep-inline-dllexport   -std=c++17 -o CMakeFiles/OpenXLSXTests.dir/testXLFormula.cpp.obj -c /home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/Tests/testXLFormula.cpp",
+  "file": "/home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/Tests/testXLFormula.cpp"
+},
+{
+  "directory": "/home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/Tests",
+  "command": "/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-g++  -DOPENXLSX_STATIC_DEFINE @CMakeFiles/OpenXLSXTests.dir/includes_CXX.rsp -fvisibility=hidden -fno-keep-inline-dllexport   -std=c++17 -o CMakeFiles/OpenXLSXTests.dir/testXLRow.cpp.obj -c /home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/Tests/testXLRow.cpp",
+  "file": "/home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/Tests/testXLRow.cpp"
+},
+{
+  "directory": "/home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/Tests",
+  "command": "/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-g++  -DOPENXLSX_STATIC_DEFINE @CMakeFiles/OpenXLSXTests.dir/includes_CXX.rsp -fvisibility=hidden -fno-keep-inline-dllexport   -std=c++17 -o CMakeFiles/OpenXLSXTests.dir/testXLSheet.cpp.obj -c /home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/Tests/testXLSheet.cpp",
+  "file": "/home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/Tests/testXLSheet.cpp"
+},
+{
+  "directory": "/home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/Benchmarks",
+  "command": "/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-g++  -DOPENXLSX_STATIC_DEFINE @CMakeFiles/OpenXLSXBenchmark.dir/includes_CXX.rsp -fvisibility=hidden -fno-keep-inline-dllexport   -std=c++17 -o CMakeFiles/OpenXLSXBenchmark.dir/Benchmark.cpp.obj -c /home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/Benchmarks/Benchmark.cpp",
+  "file": "/home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/Benchmarks/Benchmark.cpp"
+},
+{
+  "directory": "/home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/Benchmarks/gbench/src",
+  "command": "/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-g++  -DHAVE_STD_REGEX -DHAVE_STEADY_CLOCK @CMakeFiles/benchmark_main.dir/includes_CXX.rsp   -std=c++11  -Wall  -Wextra  -Wshadow  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wstrict-aliasing -fvisibility=hidden -fno-keep-inline-dllexport   -std=c++17 -o CMakeFiles/benchmark_main.dir/benchmark_main.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/Benchmarks/gbench/src/benchmark_main.cc",
+  "file": "/home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/Benchmarks/gbench/src/benchmark_main.cc"
+},
+{
+  "directory": "/home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/Benchmarks/gbench/src",
+  "command": "/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-g++  -DHAVE_STD_REGEX -DHAVE_STEADY_CLOCK @CMakeFiles/benchmark.dir/includes_CXX.rsp   -std=c++11  -Wall  -Wextra  -Wshadow  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wstrict-aliasing -fvisibility=hidden -fno-keep-inline-dllexport   -std=c++17 -o CMakeFiles/benchmark.dir/benchmark.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/Benchmarks/gbench/src/benchmark.cc",
+  "file": "/home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/Benchmarks/gbench/src/benchmark.cc"
+},
+{
+  "directory": "/home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/Benchmarks/gbench/src",
+  "command": "/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-g++  -DHAVE_STD_REGEX -DHAVE_STEADY_CLOCK @CMakeFiles/benchmark.dir/includes_CXX.rsp   -std=c++11  -Wall  -Wextra  -Wshadow  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wstrict-aliasing -fvisibility=hidden -fno-keep-inline-dllexport   -std=c++17 -o CMakeFiles/benchmark.dir/benchmark_api_internal.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/Benchmarks/gbench/src/benchmark_api_internal.cc",
+  "file": "/home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/Benchmarks/gbench/src/benchmark_api_internal.cc"
+},
+{
+  "directory": "/home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/Benchmarks/gbench/src",
+  "command": "/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-g++  -DHAVE_STD_REGEX -DHAVE_STEADY_CLOCK @CMakeFiles/benchmark.dir/includes_CXX.rsp   -std=c++11  -Wall  -Wextra  -Wshadow  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wstrict-aliasing -fvisibility=hidden -fno-keep-inline-dllexport   -std=c++17 -o CMakeFiles/benchmark.dir/benchmark_name.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/Benchmarks/gbench/src/benchmark_name.cc",
+  "file": "/home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/Benchmarks/gbench/src/benchmark_name.cc"
+},
+{
+  "directory": "/home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/Benchmarks/gbench/src",
+  "command": "/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-g++  -DHAVE_STD_REGEX -DHAVE_STEADY_CLOCK @CMakeFiles/benchmark.dir/includes_CXX.rsp   -std=c++11  -Wall  -Wextra  -Wshadow  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wstrict-aliasing -fvisibility=hidden -fno-keep-inline-dllexport   -std=c++17 -o CMakeFiles/benchmark.dir/benchmark_register.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/Benchmarks/gbench/src/benchmark_register.cc",
+  "file": "/home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/Benchmarks/gbench/src/benchmark_register.cc"
+},
+{
+  "directory": "/home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/Benchmarks/gbench/src",
+  "command": "/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-g++  -DHAVE_STD_REGEX -DHAVE_STEADY_CLOCK @CMakeFiles/benchmark.dir/includes_CXX.rsp   -std=c++11  -Wall  -Wextra  -Wshadow  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wstrict-aliasing -fvisibility=hidden -fno-keep-inline-dllexport   -std=c++17 -o CMakeFiles/benchmark.dir/benchmark_runner.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/Benchmarks/gbench/src/benchmark_runner.cc",
+  "file": "/home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/Benchmarks/gbench/src/benchmark_runner.cc"
+},
+{
+  "directory": "/home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/Benchmarks/gbench/src",
+  "command": "/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-g++  -DHAVE_STD_REGEX -DHAVE_STEADY_CLOCK @CMakeFiles/benchmark.dir/includes_CXX.rsp   -std=c++11  -Wall  -Wextra  -Wshadow  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wstrict-aliasing -fvisibility=hidden -fno-keep-inline-dllexport   -std=c++17 -o CMakeFiles/benchmark.dir/colorprint.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/Benchmarks/gbench/src/colorprint.cc",
+  "file": "/home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/Benchmarks/gbench/src/colorprint.cc"
+},
+{
+  "directory": "/home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/Benchmarks/gbench/src",
+  "command": "/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-g++  -DHAVE_STD_REGEX -DHAVE_STEADY_CLOCK @CMakeFiles/benchmark.dir/includes_CXX.rsp   -std=c++11  -Wall  -Wextra  -Wshadow  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wstrict-aliasing -fvisibility=hidden -fno-keep-inline-dllexport   -std=c++17 -o CMakeFiles/benchmark.dir/commandlineflags.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/Benchmarks/gbench/src/commandlineflags.cc",
+  "file": "/home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/Benchmarks/gbench/src/commandlineflags.cc"
+},
+{
+  "directory": "/home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/Benchmarks/gbench/src",
+  "command": "/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-g++  -DHAVE_STD_REGEX -DHAVE_STEADY_CLOCK @CMakeFiles/benchmark.dir/includes_CXX.rsp   -std=c++11  -Wall  -Wextra  -Wshadow  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wstrict-aliasing -fvisibility=hidden -fno-keep-inline-dllexport   -std=c++17 -o CMakeFiles/benchmark.dir/complexity.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/Benchmarks/gbench/src/complexity.cc",
+  "file": "/home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/Benchmarks/gbench/src/complexity.cc"
+},
+{
+  "directory": "/home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/Benchmarks/gbench/src",
+  "command": "/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-g++  -DHAVE_STD_REGEX -DHAVE_STEADY_CLOCK @CMakeFiles/benchmark.dir/includes_CXX.rsp   -std=c++11  -Wall  -Wextra  -Wshadow  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wstrict-aliasing -fvisibility=hidden -fno-keep-inline-dllexport   -std=c++17 -o CMakeFiles/benchmark.dir/console_reporter.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/Benchmarks/gbench/src/console_reporter.cc",
+  "file": "/home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/Benchmarks/gbench/src/console_reporter.cc"
+},
+{
+  "directory": "/home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/Benchmarks/gbench/src",
+  "command": "/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-g++  -DHAVE_STD_REGEX -DHAVE_STEADY_CLOCK @CMakeFiles/benchmark.dir/includes_CXX.rsp   -std=c++11  -Wall  -Wextra  -Wshadow  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wstrict-aliasing -fvisibility=hidden -fno-keep-inline-dllexport   -std=c++17 -o CMakeFiles/benchmark.dir/counter.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/Benchmarks/gbench/src/counter.cc",
+  "file": "/home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/Benchmarks/gbench/src/counter.cc"
+},
+{
+  "directory": "/home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/Benchmarks/gbench/src",
+  "command": "/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-g++  -DHAVE_STD_REGEX -DHAVE_STEADY_CLOCK @CMakeFiles/benchmark.dir/includes_CXX.rsp   -std=c++11  -Wall  -Wextra  -Wshadow  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wstrict-aliasing -fvisibility=hidden -fno-keep-inline-dllexport   -std=c++17 -o CMakeFiles/benchmark.dir/csv_reporter.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/Benchmarks/gbench/src/csv_reporter.cc",
+  "file": "/home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/Benchmarks/gbench/src/csv_reporter.cc"
+},
+{
+  "directory": "/home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/Benchmarks/gbench/src",
+  "command": "/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-g++  -DHAVE_STD_REGEX -DHAVE_STEADY_CLOCK @CMakeFiles/benchmark.dir/includes_CXX.rsp   -std=c++11  -Wall  -Wextra  -Wshadow  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wstrict-aliasing -fvisibility=hidden -fno-keep-inline-dllexport   -std=c++17 -o CMakeFiles/benchmark.dir/json_reporter.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/Benchmarks/gbench/src/json_reporter.cc",
+  "file": "/home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/Benchmarks/gbench/src/json_reporter.cc"
+},
+{
+  "directory": "/home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/Benchmarks/gbench/src",
+  "command": "/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-g++  -DHAVE_STD_REGEX -DHAVE_STEADY_CLOCK @CMakeFiles/benchmark.dir/includes_CXX.rsp   -std=c++11  -Wall  -Wextra  -Wshadow  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wstrict-aliasing -fvisibility=hidden -fno-keep-inline-dllexport   -std=c++17 -o CMakeFiles/benchmark.dir/perf_counters.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/Benchmarks/gbench/src/perf_counters.cc",
+  "file": "/home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/Benchmarks/gbench/src/perf_counters.cc"
+},
+{
+  "directory": "/home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/Benchmarks/gbench/src",
+  "command": "/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-g++  -DHAVE_STD_REGEX -DHAVE_STEADY_CLOCK @CMakeFiles/benchmark.dir/includes_CXX.rsp   -std=c++11  -Wall  -Wextra  -Wshadow  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wstrict-aliasing -fvisibility=hidden -fno-keep-inline-dllexport   -std=c++17 -o CMakeFiles/benchmark.dir/reporter.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/Benchmarks/gbench/src/reporter.cc",
+  "file": "/home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/Benchmarks/gbench/src/reporter.cc"
+},
+{
+  "directory": "/home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/Benchmarks/gbench/src",
+  "command": "/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-g++  -DHAVE_STD_REGEX -DHAVE_STEADY_CLOCK @CMakeFiles/benchmark.dir/includes_CXX.rsp   -std=c++11  -Wall  -Wextra  -Wshadow  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wstrict-aliasing -fvisibility=hidden -fno-keep-inline-dllexport   -std=c++17 -o CMakeFiles/benchmark.dir/sleep.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/Benchmarks/gbench/src/sleep.cc",
+  "file": "/home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/Benchmarks/gbench/src/sleep.cc"
+},
+{
+  "directory": "/home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/Benchmarks/gbench/src",
+  "command": "/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-g++  -DHAVE_STD_REGEX -DHAVE_STEADY_CLOCK @CMakeFiles/benchmark.dir/includes_CXX.rsp   -std=c++11  -Wall  -Wextra  -Wshadow  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wstrict-aliasing -fvisibility=hidden -fno-keep-inline-dllexport   -std=c++17 -o CMakeFiles/benchmark.dir/statistics.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/Benchmarks/gbench/src/statistics.cc",
+  "file": "/home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/Benchmarks/gbench/src/statistics.cc"
+},
+{
+  "directory": "/home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/Benchmarks/gbench/src",
+  "command": "/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-g++  -DHAVE_STD_REGEX -DHAVE_STEADY_CLOCK @CMakeFiles/benchmark.dir/includes_CXX.rsp   -std=c++11  -Wall  -Wextra  -Wshadow  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wstrict-aliasing -fvisibility=hidden -fno-keep-inline-dllexport   -std=c++17 -o CMakeFiles/benchmark.dir/string_util.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/Benchmarks/gbench/src/string_util.cc",
+  "file": "/home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/Benchmarks/gbench/src/string_util.cc"
+},
+{
+  "directory": "/home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/Benchmarks/gbench/src",
+  "command": "/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-g++  -DHAVE_STD_REGEX -DHAVE_STEADY_CLOCK @CMakeFiles/benchmark.dir/includes_CXX.rsp   -std=c++11  -Wall  -Wextra  -Wshadow  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wstrict-aliasing -fvisibility=hidden -fno-keep-inline-dllexport   -std=c++17 -o CMakeFiles/benchmark.dir/sysinfo.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/Benchmarks/gbench/src/sysinfo.cc",
+  "file": "/home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/Benchmarks/gbench/src/sysinfo.cc"
+},
+{
+  "directory": "/home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/Benchmarks/gbench/src",
+  "command": "/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-g++  -DHAVE_STD_REGEX -DHAVE_STEADY_CLOCK @CMakeFiles/benchmark.dir/includes_CXX.rsp   -std=c++11  -Wall  -Wextra  -Wshadow  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wstrict-aliasing -fvisibility=hidden -fno-keep-inline-dllexport   -std=c++17 -o CMakeFiles/benchmark.dir/timers.cc.obj -c /home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/Benchmarks/gbench/src/timers.cc",
+  "file": "/home/lighthouse/work/cppworkspace/AResConvert/thirdparty/OpenXLSX/Benchmarks/gbench/src/timers.cc"
+}
+]

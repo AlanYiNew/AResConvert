@@ -4,6 +4,7 @@
 #include "aresconvert_generator.h"
 #include "md5.h"
 #include <memory>
+#include <cstdio>
 #ifdef _WIN32
 #include "OpenXLSX.hpp"
 #endif
@@ -13,6 +14,11 @@ struct Settings {
     std::vector<std::string> folders;
     std::string xlsx_folder;
     std::string output_folder;
+    std::string cloud_directory;
+    std::string bucket_name;
+    std::string oss_end_point;
+    std::string access_key_id;
+    std::string access_key_secret;
 };
 
 class ColData {
@@ -33,12 +39,17 @@ struct Application {
     std::unique_ptr<AResConvertGenerator> aresconvert_generator{std::make_unique<AResConvertGenerator>()};
 
     bool SerializeToBin(const std::string& res_name); 
+    bool SerializeToJson(const std::string& res_name); 
+    bool WriteJsonToFile(std::FILE* f, std::unordered_map<std::string, AMessageMeta>& message_meta_map, const std::vector<OpenXLSX::XLCellValue>&, const std::unordered_map<std::string, int>& field_to_index_mapping, const std::string& res_name, const std::string& col_name);
+    bool GetPrimitiveValForJson(FIELDTYPE field_type, const std::vector<OpenXLSX::XLCellValue>& row_data, int col_index, std::string& val);
 
     bool LoadSetting(const std::string& path, int argc, char* argv[]); 
     void Run(); 
 
-    json Convert(const json& req);
-    json GetErrMessage(const json& req);
+    json Upload(const json& req);
+    json ConvertBin(const json& req);
+    json ConvertJson(const json& req);
+    json GetConf(const json& req);
     json GetResourceNameAll(const json& req); 
     json Refresh(const json& req);
     std::stringstream& GetLogStream() { return m_log_stream; };
@@ -48,6 +59,7 @@ private:
     char** m_argv;
     char* program_name{};
     Settings conf{};
+    json conf_json{}; 
     std::stringstream m_log_stream{};
     std::unique_ptr<MD5> m_md5{};
     void RunBrowserMode();
@@ -65,6 +77,13 @@ private:
     bool WriteDoubleCell(char* record_buffer, const ATableFieldMeta& field_meta, const OpenXLSX::XLCellValue& cell);
     bool WriteFloatCell(char* record_buffer, const ATableFieldMeta& field_meta, const OpenXLSX::XLCellValue& cell);
     bool WriteStringCell(char* record_buffer, const ATableFieldMeta& field_meta, const OpenXLSX::XLCellValue& cell);
+
+    template<typename T>
+    bool GetLargeNumberCellVal(const std::vector<OpenXLSX::XLCellValue>& row, int index, std::string& val);
+    template<typename T>
+    bool GetNumberCellVal(const std::vector<OpenXLSX::XLCellValue>& row, int index, std::string& val);
+    bool GetStringCellVal(const std::vector<OpenXLSX::XLCellValue>& row, int index, std::string& val);
+
 #endif
 };
 #endif

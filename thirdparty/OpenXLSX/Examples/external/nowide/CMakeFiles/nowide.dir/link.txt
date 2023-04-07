@@ -1,0 +1,2 @@
+/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-ar qc ../../../output/windows/libnowide.a  CMakeFiles/nowide.dir/src/cstdio.cpp.obj CMakeFiles/nowide.dir/src/cstdlib.cpp.obj CMakeFiles/nowide.dir/src/filebuf.cpp.obj CMakeFiles/nowide.dir/src/iostream.cpp.obj CMakeFiles/nowide.dir/src/stat.cpp.obj
+/home/lighthouse/.zeranoe/mingw-w64/x86_64/bin/x86_64-w64-mingw32-ranlib ../../../output/windows/libnowide.a

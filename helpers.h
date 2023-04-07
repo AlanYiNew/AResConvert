@@ -6,5 +6,6 @@
 
 std::vector<std::string> stringSplit(const std::string& str, const char* delim);
 std::string GetCellNo(int32_t row, int32_t col);
+std::string GetCellCol(int32_t col);
 
 #endif

@@ -1,0 +1,1 @@
+ ../output/windows/libbenchmark.a ../output/windows/libbenchmark_main.a ../output/windows/libOpenXLSX.a ../output/windows/libbenchmark.a -lshlwapi -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 

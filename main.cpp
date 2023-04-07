@@ -16,7 +16,6 @@ Application app;
 template <typename Func, typename Obj>
 auto HandlerWrapper(Func f, Obj* obj)
 {
-    
     auto handler = [=](const std::string &s) -> std::string {
         auto& log_stream = app.GetLogStream();
         auto old_cerr = std::cerr.rdbuf();
@@ -71,12 +70,12 @@ void CustomLogHandler(LogLevel level, const char* filename, int line, const std:
     timeStr = "[" + timeStr.substr(0, timeStr.size()-1) + "] ";
     std::string log = timeStr + filename +  ":" + std::to_string(line) + ": " + level_name + ": " + message;
     if (level > LOGLEVEL_INFO) {
-        std::cerr << log;
-        printf("%s", log.c_str());
+        std::cerr << log << std::endl;
+        printf("%s\n", log.c_str());
     }
     else {
-        std::cout << log;
-        printf("%s", log.c_str());
+        std::cout << log << std::endl;
+        printf("%s\n", log.c_str());
     }
 }
 
@@ -90,10 +89,12 @@ int main(int argc, char* argv[]) {
 
 #ifdef _WIN32
     webview::webview w(true, nullptr, 1024, 768);
-    w.bind("Convert", HandlerWrapper(&Application::Convert, &app));
+    w.bind("Convert", HandlerWrapper(&Application::ConvertBin, &app));
+    w.bind("ConvertJson", HandlerWrapper(&Application::ConvertJson, &app));
     w.bind("GetResourceNameAll", HandlerWrapper(&Application::GetResourceNameAll, &app));
-    w.bind("GetErrMessage", HandlerWrapper(&Application::GetErrMessage, &app));
+    w.bind("GetConf", HandlerWrapper(&Application::GetConf, &app));
     w.bind("Refresh", HandlerWrapper(&Application::Refresh, &app));
+    w.bind("Upload", HandlerWrapper(&Application::Upload, &app));
     w.navigate("https://appassets.example/index.html");
     w.run();
 #endif

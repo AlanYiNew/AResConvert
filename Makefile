@@ -12,8 +12,10 @@ OBJ_FILES := $(patsubst $(SRC_DIR)/%.cpp,$(OBJ_DIR)/%.o,$(SRC_FILES))
 LDFLAGS := -O2 -g\
         -L./thirdparty/WebView2/x64/\
         -L./thirdparty/OpenXLSX/output/windows\
+        -L./thirdparty/aliyun-oss-cpp-sdk/build/lib\
+        -L./thirdparty/aliyun-oss-cpp-sdk/third_party/lib/x64
 
-WINDOWS_LIBS := -lole32 -lshell32 -lshlwapi -luser32 -lws2_32 -lWebView2Loader.dll -lOpenXLSX
+WINDOWS_LIBS := -lole32 -lshell32 -lshlwapi -luser32 -lws2_32 -lWebView2Loader.dll -lOpenXLSX -lalibabacloud-oss-cpp-sdk -lcurl -leay32 -lssleay32
 LINUX_LIBS := $(pkg-config --cflags --libs gtk+-3.0 webkit2gtk-4.0)
 
 LIBS := -lprotoc\
@@ -22,21 +24,23 @@ LIBS := -lprotoc\
     -lpthread\
 
 ifeq ($(PLATFORM),"LINUX")
- 	LIBS += $(LINUX_LIBS)
+ 	LIBS := $(LINUX_LIBS) $(LIBS)
  	CC := g++
     LDFLAGS += -L$(PROTOBUF_DIR)
 else
-	LIBS += $(WINDOWS_LIBS)
+	LIBS := $(WINDOWS_LIBS) $(LIBS)
  	CC := x86_64-w64-mingw32-g++ 
     LDFLAGS += -L$(PROTOBUF_DIR)/windows
 endif
     
-CPPFLAGS := -MD -g -O2 
+CPPFLAGS := -MD -g -O2 -DCURL_STATIC_LIB 
 CXXFLAGS :=-std=c++17\
 	-I./thirdparty/include\
+	-I./thirdparty/cos/include\
 	-I$(PROTOBUF_DIR)/src\
     -I./thirdparty/WebView2/include\
-    -I./thirdparty/OpenXLSX/OpenXLSX
+    -I./thirdparty/OpenXLSX/OpenXLSX\
+    -I./thirdparty/aliyun-oss-cpp-sdk/sdk/include/
 
 $(PROTO_SRCS): $(PROTO_FILES)
 	./dep/protobuf-3.21.5/protoc --cpp_out=. -I. -I$(PROTOBUF_DIR) -I$(PROTOCOL_DIR) $(PROTO_FILES)

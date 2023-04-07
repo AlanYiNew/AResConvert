@@ -29,6 +29,7 @@ enum FIELDTYPE {
     FIELDTYPE_STRING = 9,
     FIELDTYPE_DOUBLE = 10,
     FIELDTYPE_FLOAT = 11,
+    FIELDTYPE_MESSAGE = 12
 };
 
 struct AFieldMeta {
@@ -37,10 +38,11 @@ struct AFieldMeta {
     int32_t size;
     int32_t offset;
     int32_t count;
+    bool repeated;
     FIELDTYPE field_type;
     AFieldMeta() =  default;
     AFieldMeta(unsigned char* buffer, int32_t size);
-    AFieldMeta(const std::string& field, const std::string& type_name, int32_t size, int32_t offset, int32_t count);
+    AFieldMeta(const std::string& field, FIELDTYPE f_type, const std::string& type_name, int32_t size, int32_t offset, int32_t count, bool repeated);
     bool Serialize(std::vector<unsigned char>& buffer, int32_t buff_offset = 0) const;
     int32_t GetSerializationSize() const;
 };
@@ -76,6 +78,7 @@ public:
     void CreateFieldMeta(const AFieldMeta& field_meta);
     const std::string& GetName() const;
     std::string GetMD5() const;
+    const std::map<std::string, AFieldMeta>& GetMetaData() const { return meta_data;};
 private:
     std::string m_name;
     //int32_t m_size{}; // size of bytes of the records

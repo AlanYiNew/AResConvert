@@ -75,7 +75,9 @@ public:
     std::string FindXLSXFileNameByMessageName(const std::string& message_name) const;
     std::string FindSheetNameByMessageName(const std::string& message_name) const;
     std::string FindBinFileNameByMessageName(const std::string& message_name) const;
-    const ATableMeta& GetMetaOut() const { return m_message_meta; };
+    const ATableMeta& GetMetaOut() const { return m_table_meta; };
+    const std::unordered_map<std::string, AMessageMeta>& GetMessageMeta() const { return m_message_meta; };
+    std::string FindKeyNameByMessageName(const std::string& message_name) const;
 
 private:
     std::string GetFileName(const std::string& file_name) const;
@@ -86,18 +88,19 @@ private:
     bool GenerateInfo(const FileDescriptor* file, json& info) const; 
     bool GenerateMeta(const FileDescriptor* file, AFileMeta& file_meta) const;
     bool GenerateMeta(const FileDescriptor* file, json& obj) const;
-    bool GenerateJsonHeader(Printer& printer, const json& info) const;
-    bool GenerateJsonSource(Printer& printer, const json& info) const;
     bool GenerateResourceHeader(Printer& printer, const json& info) const;
 
     bool CreateMeta(const FileDescriptor* file) const;
     bool CreateMessageMetaFromDescriptor(const FileDescriptor* file, const Descriptor* descriptor, AMessageMeta& message_meta) const;
+    bool CollectMessageMetaFromDescriptor(const FileDescriptor* file, const Descriptor* descriptor, std::unordered_map<std::string, AMessageMeta>& message_meta) const;
     bool Convert(const FileDescriptor* file, const std::string& file_name) const;
+    bool ConvertJson(const FileDescriptor* file, const std::string& file_name) const;
     bool FindAllResourceTable(const FileDescriptor* file) const;
 
 private:
     mutable DataInfo m_info;
-    mutable ATableMeta m_message_meta;
+    mutable ATableMeta m_table_meta;
+    mutable std::unordered_map<std::string, AMessageMeta> m_message_meta;
 
     bool Flatten(const FileDescriptor* file, const Descriptor* md, ATableMeta& vec, const std::string& prefix="") const;
     bool GetEnumValue(const FileDescriptor* file, const std::string enum_name, int* count) const;
