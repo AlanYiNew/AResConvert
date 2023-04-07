@@ -27,21 +27,13 @@ export default {
         }, {
           value: 'Bin',
           label: '转换Bin'
-        }]
+        }],
+      conf: null,
     }
   },
   mounted() {
     let _that = this;
-    window.GetConf().then((e) => {
-      
-      if (e.code == 0){
-        if (e.conf.convert == 'json') {
-          this.selectValue = "转换Json"
-        } else {
-          this.selectValue = "转换Bin"
-        }
-      }
-    })
+    this.getConf();
 
     window.GetResourceNameAll().then((e) => {
       let viewData = resourceMTV(e);
@@ -49,6 +41,20 @@ export default {
     })
   },
   methods: {
+    getConf(){
+      window.GetConf().then((e) => {
+      
+        if (e.code == 0){
+          this.conf = e.conf;
+          if (e.conf.convert == 'json') {
+            this.selectValue = "转换Json"
+          } else {
+            this.selectValue = "转换Bin"
+          }
+        }
+      })
+    },
+
     renderLog(logs){
       for (let idx in logs){
         this.logs.push(logs[idx]);
@@ -67,12 +73,37 @@ export default {
           }
           
           window.ConvertJson(req).then((e)=>{
-            if (e.code !=0){
+            if (e.log){
                this.renderLog(e.log);
             }
             this.convertOne(nodes, idx+1)
           })
         }
+    },
+    uploadToCloudOne(nodes, idx) {
+      if (idx < nodes.length){
+        let req = {
+          res_name: nodes[idx]
+        }
+        window.Upload(req).then((e) => {
+          if (e.log){
+            this.renderLog(e.log);
+          }
+          this.uploadToCloudOne(nodes, idx+1)
+        })
+      }
+    },
+    uploadToCloud() {
+      console.log("uploadToCloud")
+      let nodes = this.$refs.tree.getCheckedKeys().concat(this.$refs.tree.getHalfCheckedKeys());
+      this.uploadToCloudOne(nodes, 0)
+    },
+    refresh() {
+      let req = {}
+      window.Refresh(req).then((e) => {
+        console.log(e)
+        this.getConf();
+      })
     }
   }
 }
@@ -88,8 +119,19 @@ export default {
         <el-col :xs="5" :sm="5" :md="3" :lg="3" :xl="2">
           
             <el-card class="item" style="height:100%">
-            
               <el-row>
+                <el-col style="text-align:center">
+                  <el-select v-model="selectValue" placeholder="请选择">
+                    <el-option
+                      v-for="item in options"
+                      :key="item.value"
+                      :label="item.label"
+                      :value="item.value">
+                    </el-option>
+                  </el-select>
+                </el-col>
+              </el-row>
+              <el-row style="margin-top:25px">
                 <el-col style="text-align:center">
                 <el-button :dark="isDark" @click="clickConvert" color="#2f7cce" style="height:42px" circle>
                   <el-icon style="vertical-align: middle" size="24">
@@ -100,25 +142,23 @@ export default {
               </el-row>
               <el-row style="margin-top:25px">
                 <el-col style="text-align:center">
-                <el-button :dark="isDark"  color="#2f7cce" style="height:42px" plain circle>
+                <el-button :dark="isDark" @click="refresh" color="#2f7cce" style="height:42px" plain circle>
                   <el-icon style="vertical-align: middle" size="24">
                     <Refresh />
                   </el-icon>
                 </el-button>
                 </el-col>
               </el-row>
+              
               <el-row style="margin-top:25px">
                 <el-col style="text-align:center">
-                  <el-select v-model="selectValue" placeholder="请选择">
-                    <el-option
-                      v-for="item in options"
-                      :key="item.value"
-                      :label="item.label"
-                      :value="item.value">
-                    </el-option>
-                  </el-select>
-                  </el-col>
-                </el-row>
+                  <el-button :dark="isDark" @click="uploadToCloud" color="#2f7cce" style="height:42px" plain circle>
+                    <el-icon style="vertical-align: middle" size="24">
+                      <UploadFilled />
+                    </el-icon>
+                  </el-button>
+                </el-col>
+              </el-row>
             </el-card>
         </el-col>
         <el-col style="display:flex;flex-direction:column" :xs="9" :sm="11" :md="11" :lg="15" :xl="16">

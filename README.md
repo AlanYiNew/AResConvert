@@ -3,6 +3,7 @@
 ### 1. Suport BrowserMode (GUI) ResourceConvert from xlxs to binary by defining protocol/*.proto in protobuf
 ### 2. BrowserMode: Convert from xlsx to binary format
 ### 3. CommandMode: Generate Resource Structure defined by protobuf. All generated structures are pods.
+### 4. Support uploading to oss bucket
 
 ## TODO
 ### 1. Does not support compile the GUI interface under linux and apple
@@ -15,9 +16,25 @@
 2. OpenXlsx
 3. inja
 4. nlohmann
+5. aliyun-oss-cpp-sdk
 
 |              | Windows  | Linux | Apple |      
 |  ----        | -------  | ------| ----- |
 | BorwserMode  | Support  |  TODO | TODO  |
 | CommandMode  | Support  |  TODO | TODO  |
+
+
+## setup.json
+    {
+        "folders": ["protocol"], 
+        "files": ["./protocol/table.proto"],
+        "xlsx_folder" : "xlsx",
+        "output_folder" : "bin",
+        "convert" : "json",
+        "oss_end_point": "<oss-end-point | optional, can be just empty string>",
+        "bucket_name": "<oss-bucket-name | optional, can be just empty string>",
+        "cloud_directory": "<directory-you-want-to-upload-in-the-bucket | optional, can be just empty string>",
+        "access_key_id": "<oss-access-key-id | optional, can be just empty string>d",
+        "access_key_secret": "<oss-access-key-secret | optional, can be just empty string>"
+    }
        

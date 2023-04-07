@@ -1,0 +1,12 @@
+{
+    "folders": ["protocol"], 
+    "files": ["./protocol/table.proto"],
+    "xlsx_folder" : "xlsx",
+    "output_folder" : "bin",
+    "convert" : "json",
+    "oss_end_point": "oss-cn-shanghai.aliyuncs.com",
+    "bucket_name": "lifesim",
+    "cloud_directory": "dev/",
+    "access_key_id": "LTAI5tRX4ebv4hGT3MRiW7V2",
+    "access_key_secret": "WQ9Kp7P5NqEiXHoiX2GRpHNq3hdbOl"
+}
