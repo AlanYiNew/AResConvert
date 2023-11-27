@@ -1,5 +1,4 @@
 Client/.vscode
-Client/dist
 Client/node_modules
 thirdparty/aliyun-oss-cpp-sdk/build
 thirdparty/OpenXLSX/CMakeFiles
