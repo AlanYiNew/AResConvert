@@ -881,7 +881,7 @@ json Application::Refresh(const json& req) {
     if (LoadSetting("setup.json", m_argc, m_argv)) {
         Run();
     }
-
+    GOOGLE_LOG(INFO) << "Refresh succeed.";
     result["code"] = 0;
     result["message"] = "success";
     return result; 
