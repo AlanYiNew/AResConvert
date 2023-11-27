@@ -860,7 +860,7 @@ json Application::ConvertJson(const json& req) {
     }   else {
         result["message"] = "success";
         result["code"] == 0;
-        GOOGLE_LOG(INFO) << "Convert Json succeed!!!";
+        GOOGLE_LOG(INFO) << "Convert Json " + res_name + " succeed!!!";
     }
     return result;
 }
