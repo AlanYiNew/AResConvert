@@ -20,6 +20,7 @@ export default {
     return {
       nodes :  [],
       logs: [],
+      progress: 0,
       selectValue: "",
       options: [{
           value: 'Json',
@@ -35,15 +36,12 @@ export default {
     let _that = this;
     this.getConf();
 
-    window.GetResourceNameAll().then((e) => {
-      let viewData = resourceMTV(e);
-      this.nodes = viewData;
-    })
+   
   },
   methods: {
     getConf(){
+      this.conf = {}
       window.GetConf().then((e) => {
-      
         if (e.code == 0){
           this.conf = e.conf;
           if (e.conf.convert == 'json') {
@@ -53,7 +51,13 @@ export default {
           }
         }
       })
+      this.nodes = []
+      window.GetResourceNameAll().then((e) => {
+        let viewData = resourceMTV(e);
+        this.nodes = viewData;
+      })
     },
+    
 
     renderLog(logs){
       for (let idx in logs){
@@ -62,7 +66,9 @@ export default {
     },
     clickConvert() {
       console.log("cc")
-      let nodes = this.$refs.tree.getCheckedKeys().concat(this.$refs.tree.getHalfCheckedKeys());    
+      let nodes = this.$refs.tree.getCheckedKeys().concat(this.$refs.tree.getHalfCheckedKeys());
+      if (nodes.length == 0) return;
+      this.progress = 0;
       this.convertOne(nodes, 0)
     },
     convertOne(nodes, idx){
@@ -75,6 +81,11 @@ export default {
           window.ConvertJson(req).then((e)=>{
             if (e.log){
                this.renderLog(e.log);
+            }
+            if (idx + 1 != nodes.length) {
+              this.progress += Math.floor(100 / this.nodes.length)
+            } else {
+              this.progress = 100
             }
             this.convertOne(nodes, idx+1)
           })
@@ -100,10 +111,24 @@ export default {
     },
     refresh() {
       let req = {}
+      this.progress = 0
+      this.logs = []
+      this.nodes = []
       window.Refresh(req).then((e) => {
-        console.log(e)
         this.getConf();
+        if (e.log){
+          this.renderLog(e.log);
+        }
       })
+    },
+    handleCheckAllChange(x) {
+      if (x) {
+        let all = this.nodes.map((element)=> element.id)
+        console.log(all)
+        this.$refs.tree.setCheckedKeys(all)
+      } else {
+        this.$refs.tree.setCheckedNodes([]);
+      }
     }
   }
 }
@@ -113,7 +138,11 @@ export default {
    <div class="common-layout">
       <el-row :gutter="10" style="height:100%">
         <el-col :xs="10" :sm="8" :md="6" :lg="6" :xl="6">
-          <el-card style="height:100%"><el-tree ref="tree" node-key="id" show-checkbox :data="nodes" :props="defaultProps" @node-click="handleNodeClick" />
+          <el-card style="height:100%">
+            <el-checkbox size="mini" 
+              @change="handleCheckAllChange" style="padding:0px;margin-left:24px;">
+            All</el-checkbox>
+            <el-tree ref="tree" node-key="id" show-checkbox :data="nodes" :props="defaultProps" @node-click="handleNodeClick" />
           </el-card>
         </el-col>
         <el-col :xs="5" :sm="5" :md="3" :lg="3" :xl="2">
@@ -161,7 +190,8 @@ export default {
               </el-row>
             </el-card>
         </el-col>
-        <el-col style="display:flex;flex-direction:column" :xs="9" :sm="11" :md="11" :lg="15" :xl="16">
+        <el-col style="display:flex;flex-direction:column" :xs="9" :sm="11" :md="15" :lg="15" :xl="16">
+          <el-progress :percentage="progress" :text-inside="true" style="display:flex;justify-content: center;align-items: center;"></el-progress>
           <el-card style="height:100%">
             <div v-for="(log,index) in logs" :key="index">
               {{log}}
