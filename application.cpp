@@ -668,9 +668,9 @@ bool Application::SerializeToBin(const std::string& res_name) {
 }
 
 bool Application::LoadSetting(const std::string& path, int argc, char* argv[]) {
+    m_argc = argc;    
+    m_argv = argv;
     if (argc > 1) {
-        m_argc = argc;    
-        m_argv = argv;
         return true;
     }
 
