@@ -88,7 +88,7 @@ int main(int argc, char* argv[]) {
     }
 
 #ifdef _WIN32
-    webview::webview w(true, nullptr, 1024, 768);
+    webview::webview w(true, nullptr, 1920, 1080);
     w.bind("Convert", HandlerWrapper(&Application::ConvertBin, &app));
     w.bind("ConvertJson", HandlerWrapper(&Application::ConvertJson, &app));
     w.bind("GetResourceNameAll", HandlerWrapper(&Application::GetResourceNameAll, &app));
