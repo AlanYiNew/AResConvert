@@ -386,6 +386,7 @@ bool Application::SerializeToJson(const std::string& res_name) {
         std::fclose(f);
     }   catch (const std::exception& e) {
         GOOGLE_LOG(ERROR) << e.what();
+        return false;
     }
 
 #endif
