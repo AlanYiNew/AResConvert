@@ -289,100 +289,104 @@ bool Application::SerializeToJson(const std::string& res_name) {
     std::string bin_name = aresconvert_generator->FindBinFileNameByMessageName(res_name);
     std::string key_name = aresconvert_generator->FindKeyNameByMessageName(res_name);
 
-    time_t start = std::time(nullptr);
-    OpenXLSX::XLDocument doc;
-    doc.open(conf.xlsx_folder + "/" + xlsx_name);
-    //TODO catch exception
-    auto wks = doc.workbook().worksheet(sheet_name);
-    int first_row = 1;
-    if (wks.cell("A1").value() == "##NOTE##") {
-        first_row = 2;
-    }
-
-    if (!std::filesystem::exists(conf.output_folder)) {
-        std::filesystem::create_directories(conf.output_folder);
-    }   else if (!std::filesystem::is_directory(conf.output_folder)) {
-        GOOGLE_LOG(ERROR) << conf.output_folder << "already exists but is not a directory";
-        return false;
-    }
-
-    int row_count = wks.rowCount();
-    std::string out_file = conf.output_folder + "/" + bin_name;
-    std::FILE* f = std::fopen(out_file.c_str(), "w+");
-    if (f == nullptr) {
-        GOOGLE_LOG(ERROR) << "fail to open " << out_file;
-        return false;
-    }
-
-    std::unordered_map<std::string, int> field_to_index_mapping;
-    const std::vector<OpenXLSX::XLCellValue>& values = wks.row(first_row).values();
-    int idx = 0;
-    for (const auto& cell: values) {
-        std::string name = cell.get<std::string>();
-        if (name == "") {
-            idx++;
-            continue;
+    try {
+        time_t start = std::time(nullptr);
+        OpenXLSX::XLDocument doc;
+        doc.open(conf.xlsx_folder + "/" + xlsx_name);
+        //TODO catch exception
+        auto wks = doc.workbook().worksheet(sheet_name);
+        int first_row = 1;
+        if (wks.cell("A1").value() == "##NOTE##") {
+            first_row = 2;
         }
 
-        if (field_to_index_mapping.find(name) != field_to_index_mapping.end()) {
-            GOOGLE_LOG(ERROR) << "duplicate name:" << name;
-            return false;
-        }
-        field_to_index_mapping.emplace(name, idx++);
-    }
-
-    auto iter = field_to_index_mapping.find(key_name);
-    if (iter == field_to_index_mapping.end()) {
-        GOOGLE_LOG(WARNING) << "can't find key name" << key_name;
-        return false;
-    }
-    int key_index = iter->second;
-
-    std::unordered_map<std::string, AMessageMeta> message_meta_map = aresconvert_generator->GetMessageMeta();
-    auto message_meta_iter = message_meta_map.find(res_name);
-    if (message_meta_iter == message_meta_map.end()) {
-        GOOGLE_LOG(ERROR) << "Fail to find message_meta:" << res_name;
-        return false;
-    }
-    
-    const AMessageMeta& meta = message_meta_iter->second;
-    const std::map<std::string, AFieldMeta>& meta_data = meta.GetMetaData();
-    auto field_meta_iter = meta_data.find(key_name);
-    if (field_meta_iter == meta_data.end()) {
-        GOOGLE_LOG(ERROR) << "Fail to find field_meta:" << key_name;
-        return false; 
-    }
-
-    int rowNo = 0; 
-    std::fwrite("{", 1, 1, f);
-    for (const auto& rowData : wks.rows()) {
-        rowNo++;
-        if (rowNo <= first_row) {
-            continue;
-        }
-
-        std::string key;
-        const std::vector<OpenXLSX::XLCellValue>& values = rowData.values();
-        if (!GetPrimitiveValForJson(field_meta_iter->second.field_type, values, key_index, key)) {
-            GOOGLE_LOG(INFO) << "fail to get key:" << key << " in row:" << rowNo;
-            return false;
-        }
-        
-        key = "\"" + key +"\":";
-        std::fwrite(key.c_str(), key.size(), 1, f);
-
-        if (!WriteJsonToFile(f, message_meta_map, values, field_to_index_mapping, res_name, "")) {
-            GOOGLE_LOG(INFO) << "row:" << rowNo;
-            std::fclose(f);
+        if (!std::filesystem::exists(conf.output_folder)) {
+            std::filesystem::create_directories(conf.output_folder);
+        }   else if (!std::filesystem::is_directory(conf.output_folder)) {
+            GOOGLE_LOG(ERROR) << conf.output_folder << "already exists but is not a directory";
             return false;
         }
 
-        if (rowNo < row_count) {
-            std::fwrite(",", 1, 1, f);
+        int row_count = wks.rowCount();
+        std::string out_file = conf.output_folder + "/" + bin_name;
+        std::FILE* f = std::fopen(out_file.c_str(), "w+");
+        if (f == nullptr) {
+            GOOGLE_LOG(ERROR) << "fail to open " << out_file;
+            return false;
         }
+
+        std::unordered_map<std::string, int> field_to_index_mapping;
+        const std::vector<OpenXLSX::XLCellValue>& values = wks.row(first_row).values();
+        int idx = 0;
+        for (const auto& cell: values) {
+            std::string name = cell.get<std::string>();
+            if (name == "") {
+                idx++;
+                continue;
+            }
+
+            if (field_to_index_mapping.find(name) != field_to_index_mapping.end()) {
+                GOOGLE_LOG(ERROR) << "duplicate name:" << name;
+                return false;
+            }
+            field_to_index_mapping.emplace(name, idx++);
+        }
+
+        auto iter = field_to_index_mapping.find(key_name);
+        if (iter == field_to_index_mapping.end()) {
+            GOOGLE_LOG(WARNING) << "can't find key name" << key_name;
+            return false;
+        }
+        int key_index = iter->second;
+
+        std::unordered_map<std::string, AMessageMeta> message_meta_map = aresconvert_generator->GetMessageMeta();
+        auto message_meta_iter = message_meta_map.find(res_name);
+        if (message_meta_iter == message_meta_map.end()) {
+            GOOGLE_LOG(ERROR) << "Fail to find message_meta:" << res_name;
+            return false;
+        }
+
+        const AMessageMeta& meta = message_meta_iter->second;
+        const std::map<std::string, AFieldMeta>& meta_data = meta.GetMetaData();
+        auto field_meta_iter = meta_data.find(key_name);
+        if (field_meta_iter == meta_data.end()) {
+            GOOGLE_LOG(ERROR) << "Fail to find field_meta:" << key_name;
+            return false; 
+        }
+
+        int rowNo = 0; 
+        std::fwrite("{", 1, 1, f);
+        for (const auto& rowData : wks.rows()) {
+            rowNo++;
+            if (rowNo <= first_row) {
+                continue;
+            }
+
+            std::string key;
+            const std::vector<OpenXLSX::XLCellValue>& values = rowData.values();
+            if (!GetPrimitiveValForJson(field_meta_iter->second.field_type, values, key_index, key)) {
+                GOOGLE_LOG(INFO) << "fail to get key:" << key << " in row:" << rowNo;
+                return false;
+            }
+
+            key = "\"" + key +"\":";
+            std::fwrite(key.c_str(), key.size(), 1, f);
+
+            if (!WriteJsonToFile(f, message_meta_map, values, field_to_index_mapping, res_name, "")) {
+                GOOGLE_LOG(INFO) << "row:" << rowNo;
+                std::fclose(f);
+                return false;
+            }
+
+            if (rowNo < row_count) {
+                std::fwrite(",", 1, 1, f);
+            }
+        }
+        std::fwrite("}", 1, 1, f);
+        std::fclose(f);
+    }   catch (const std::exception& e) {
+        GOOGLE_LOG(ERROR) << e.what();
     }
-    std::fwrite("}", 1, 1, f);
-    std::fclose(f);
 
 #endif
     return true;
@@ -532,137 +536,145 @@ bool Application::SerializeToBin(const std::string& res_name) {
 
     time_t start = std::time(nullptr);
     OpenXLSX::XLDocument doc;
-    doc.open(conf.xlsx_folder + "/" + xlsx_name);
-    auto wks = doc.workbook().worksheet(sheet_name);
-    int first_row = 1;
-    if (wks.cell("A1").value() == "##NOTE##") {
-        first_row = 2;
-    }
+    try {
+        doc.open(conf.xlsx_folder + "/" + xlsx_name);
+        auto wks = doc.workbook().worksheet(sheet_name);
 
-    if (!std::filesystem::exists(conf.output_folder)) {
-        std::filesystem::create_directories(conf.output_folder);
-    }   else if (!std::filesystem::is_directory(conf.output_folder)) {
-        GOOGLE_LOG(ERROR) << conf.output_folder << "already exists but is not a directory";
-        return false;
-    }
+        int first_row = 1;
+        if (wks.cell("A1").value() == "##NOTE##") {
+            first_row = 2;
+        }
 
-    std::string out_file = conf.output_folder + "/" + bin_name;
-    std::FILE* f = std::fopen(out_file.c_str(), "wb+");
-    if (f == nullptr) {
-        GOOGLE_LOG(ERROR) << "fail to open " << out_file;
-        return false;
-    }
-
-    int row_count = wks.rowCount();
-    int col_count = wks.columnCount();
-
-    auto message_meta = aresconvert_generator->GetMetaOut();
-    std::map<std::string, ATableFieldMeta> field_metas = message_meta.GetFieldMetas();
-    std::vector<ColData> columns;
-    std::unordered_set<std::string> col_names;
-
-    const std::vector<OpenXLSX::XLCellValue>& values = wks.row(first_row).values();
-    for (const auto& cell: values) {
-        int size = columns.size();
-        std::string name = cell.get<std::string>();
-        auto field_meta = message_meta.GetFieldMeta(name);
-
-        if (col_names.find(name) != col_names.end()) {
-            GOOGLE_LOG(ERROR) << "Duplicate column name: " << name;
+        if (!std::filesystem::exists(conf.output_folder)) {
+            std::filesystem::create_directories(conf.output_folder);
+        }   else if (!std::filesystem::is_directory(conf.output_folder)) {
+            GOOGLE_LOG(ERROR) << conf.output_folder << "already exists but is not a directory";
             return false;
         }
-        col_names.insert(name);
 
-        if (field_meta != nullptr) {
-            columns.emplace_back(*field_meta, true);
-            field_metas.erase(name);
-        }   else {
-            columns.emplace_back(false);
-        }
-    }
-
-    if (field_metas.size() != 0) {
-        for (const auto& field_meta: field_metas) {
-            GOOGLE_LOG(ERROR) << field_meta.first << " can not be found"; 
-        }
-        return false;
-    }
-
-    AResourceHead header;
-    // 1. record size
-    header.size = message_meta.GetSize();
-    std::fseek(f, offsetof(AResourceHead, size), SEEK_SET);
-    WriteInt32(f, header.size);
-    // 2. md5
-    std::fseek(f, offsetof(AResourceHead, meta_md5), SEEK_SET);
-    WriteBytes(f, message_meta.GetMetaMD5());
-    // 3. record count
-    header.count =  row_count - first_row;
-    std::fseek(f, offsetof(AResourceHead, count), SEEK_SET);
-    WriteInt32(f, header.count);
-    // 4. record total size
-    header.total_size = header.count * header.size;
-    std::fseek(f, offsetof(AResourceHead, total_size), SEEK_SET);
-    WriteInt32(f, header.total_size);
-
-    char* buffer = new char[header.count * header.size];
-    int rowNo = 0; 
-    for (const auto& rowData : wks.rows()) {
-        rowNo++;
-        if (rowNo <= first_row) {
-            continue;
+        std::string out_file = conf.output_folder + "/" + bin_name;
+        std::FILE* f = std::fopen(out_file.c_str(), "wb+");
+        if (f == nullptr) {
+            GOOGLE_LOG(ERROR) << "fail to open " << out_file;
+            return false;
         }
 
-        char* offset = buffer + (rowNo - first_row - 1) * header.size;
-        const std::vector<OpenXLSX::XLCellValue>& values = rowData.values();
-        for (int col = 0; col < values.size(); col++) {
-            const ATableFieldMeta& field_meta = columns[col].GetMeta();
-            if (!columns[col].IsValid()) {
+        int row_count = wks.rowCount();
+        int col_count = wks.columnCount();
+
+        auto message_meta = aresconvert_generator->GetMetaOut();
+        std::map<std::string, ATableFieldMeta> field_metas = message_meta.GetFieldMetas();
+        std::vector<ColData> columns;
+        std::unordered_set<std::string> col_names;
+
+        const std::vector<OpenXLSX::XLCellValue>& values = wks.row(first_row).values();
+        for (const auto& cell: values) {
+            int size = columns.size();
+            std::string name = cell.get<std::string>();
+            auto field_meta = message_meta.GetFieldMeta(name);
+
+            if (col_names.find(name) != col_names.end()) {
+                GOOGLE_LOG(ERROR) << "Duplicate column name: " << name;
+                return false;
+            }
+            col_names.insert(name);
+
+            if (field_meta != nullptr) {
+                columns.emplace_back(*field_meta, true);
+                field_metas.erase(name);
+            }   else {
+                columns.emplace_back(false);
+            }
+        }
+
+        if (field_metas.size() != 0) {
+            for (const auto& field_meta: field_metas) {
+                GOOGLE_LOG(ERROR) << field_meta.first << " can not be found"; 
+            }
+            return false;
+        }
+
+        AResourceHead header;
+        // 1. record size
+        header.size = message_meta.GetSize();
+        std::fseek(f, offsetof(AResourceHead, size), SEEK_SET);
+        WriteInt32(f, header.size);
+        // 2. md5
+        std::fseek(f, offsetof(AResourceHead, meta_md5), SEEK_SET);
+        WriteBytes(f, message_meta.GetMetaMD5());
+        // 3. record count
+        header.count =  row_count - first_row;
+        std::fseek(f, offsetof(AResourceHead, count), SEEK_SET);
+        WriteInt32(f, header.count);
+        // 4. record total size
+        header.total_size = header.count * header.size;
+        std::fseek(f, offsetof(AResourceHead, total_size), SEEK_SET);
+        WriteInt32(f, header.total_size);
+
+        char* buffer = new char[header.count * header.size];
+        int rowNo = 0; 
+        for (const auto& rowData : wks.rows()) {
+            rowNo++;
+            if (rowNo <= first_row) {
                 continue;
             }
 
-            const auto& cell = values[col];
-            bool result = true;
-            const auto field_type = field_meta.field_type;
-            switch (field_type) {
-                case FIELDTYPE_INT32: { result = WriteInt32Cell(offset, field_meta, cell);} break;
-                case FIELDTYPE_UINT32: { result = WriteUInt32Cell(offset, field_meta, cell);} break;
-                case FIELDTYPE_INT16: { result = WriteInt16Cell(offset, field_meta, cell);} break;   
-                case FIELDTYPE_UINT16: { result = WriteUInt16Cell(offset, field_meta, cell);} break;
-                case FIELDTYPE_INT64: { result = WriteInt64Cell(offset, field_meta, cell);} break;
-                case FIELDTYPE_UINT64: { result = WriteUInt64Cell(offset, field_meta, cell);} break;
-                case FIELDTYPE_INT8: { result = WriteInt8Cell(offset, field_meta, cell);} break;   
-                case FIELDTYPE_UINT8: { result = WriteUInt8Cell(offset, field_meta, cell);} break;
-                case FIELDTYPE_FLOAT: { result = WriteFloatCell(offset, field_meta, cell);} break;
-                case FIELDTYPE_DOUBLE: { result = WriteDoubleCell(offset, field_meta, cell);} break;
-                case FIELDTYPE_STRING: { result = WriteStringCell(offset, field_meta, cell);} break;
-                default: {
-                    GOOGLE_LOG(ERROR) << "Invalid field_type: " << field_type;
+            char* offset = buffer + (rowNo - first_row - 1) * header.size;
+            const std::vector<OpenXLSX::XLCellValue>& values = rowData.values();
+            for (int col = 0; col < values.size(); col++) {
+                const ATableFieldMeta& field_meta = columns[col].GetMeta();
+                if (!columns[col].IsValid()) {
+                    continue;
+                }
+
+                const auto& cell = values[col];
+                bool result = true;
+                const auto field_type = field_meta.field_type;
+                switch (field_type) {
+                    case FIELDTYPE_INT32: { result = WriteInt32Cell(offset, field_meta, cell);} break;
+                    case FIELDTYPE_UINT32: { result = WriteUInt32Cell(offset, field_meta, cell);} break;
+                    case FIELDTYPE_INT16: { result = WriteInt16Cell(offset, field_meta, cell);} break;   
+                    case FIELDTYPE_UINT16: { result = WriteUInt16Cell(offset, field_meta, cell);} break;
+                    case FIELDTYPE_INT64: { result = WriteInt64Cell(offset, field_meta, cell);} break;
+                    case FIELDTYPE_UINT64: { result = WriteUInt64Cell(offset, field_meta, cell);} break;
+                    case FIELDTYPE_INT8: { result = WriteInt8Cell(offset, field_meta, cell);} break;   
+                    case FIELDTYPE_UINT8: { result = WriteUInt8Cell(offset, field_meta, cell);} break;
+                    case FIELDTYPE_FLOAT: { result = WriteFloatCell(offset, field_meta, cell);} break;
+                    case FIELDTYPE_DOUBLE: { result = WriteDoubleCell(offset, field_meta, cell);} break;
+                    case FIELDTYPE_STRING: { result = WriteStringCell(offset, field_meta, cell);} break;
+                    default: {
+                                 GOOGLE_LOG(ERROR) << "Invalid field_type: " << field_type;
+                             }
+                }
+                if (!result) {
+                    GOOGLE_LOG(ERROR) << GetCellNo(rowNo, col);
                 }
             }
-            if (!result) {
-                GOOGLE_LOG(ERROR) << GetCellNo(rowNo, col);
-            }
         }
+
+        // 5. content md5
+        m_md5 = std::make_unique<MD5>(); 
+        m_md5->update(buffer, header.count * header.size);
+        std::string md5 = m_md5->toString();
+        std::fseek(f, offsetof(AResourceHead, content_md5), SEEK_SET);
+        WriteBytes(f, md5);
+
+        std::fseek(f, offsetof(AResourceHead, meta_md5), SEEK_SET);
+        WriteBytes(f, message_meta.GetMetaMD5());
+
+        // 6. record content 
+        std::fseek(f, sizeof(AResourceHead), SEEK_SET);
+        WriteBytes(f, buffer, header.count * header.size);
+        delete[] buffer;
+        std::fclose(f);
+        time_t end = time(nullptr);
+        GOOGLE_LOG(INFO)<< "Take times: "<< (double)(end-start)<<" Seconds";
+
+    }   catch (const std::exception& e) {
+        GOOGLE_LOG(ERROR) << e.what();
+        return false;
     }
 
-    // 5. content md5
-    m_md5 = std::make_unique<MD5>(); 
-    m_md5->update(buffer, header.count * header.size);
-    std::string md5 = m_md5->toString();
-    std::fseek(f, offsetof(AResourceHead, content_md5), SEEK_SET);
-    WriteBytes(f, md5);
-
-    std::fseek(f, offsetof(AResourceHead, meta_md5), SEEK_SET);
-    WriteBytes(f, message_meta.GetMetaMD5());
-    
-    // 6. record content 
-    std::fseek(f, sizeof(AResourceHead), SEEK_SET);
-    WriteBytes(f, buffer, header.count * header.size);
-    delete[] buffer;
-    std::fclose(f);
-    time_t end = time(nullptr);
-    GOOGLE_LOG(INFO)<< "Take times: "<< (double)(end-start)<<" Seconds";
 #endif
     return true;
 }
