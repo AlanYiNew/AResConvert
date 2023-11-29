@@ -67,3 +67,13 @@ message Result {
     string szName = 2[(AExt.size) = "RES::MAX_RESULT_NAME_LENGTH"];
     string szDesc = 3[(AExt.size) = "RES::MAX_DESC_LENGTH"];
 }
+
+message Money {
+    option (AExt.file_name) ="ResMoney.json";
+    option (AExt.xlsx_name) ="Money.xlsx";
+    option (AExt.sheet_name) ="Money";
+    option (AExt.key_name) ="iType";
+    int32 iType = 1;
+    int32 iHardLimitMax = 2;
+}
+
