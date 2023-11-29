@@ -94,8 +94,8 @@ export default {
                         else {
                             this.progress = 100;
                         }
-                        console.group(e)
-                        if (e.code != null) {
+                        console.log(e)
+                        if (e.message != "success") {
                             this.status[nodes[idx]] = false;
                         }
                         else {
