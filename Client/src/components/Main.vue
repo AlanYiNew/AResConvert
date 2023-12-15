@@ -1,6 +1,7 @@
 <script>
 import { CircleCheck, CircleCheckFilled, CircleCloseFilled } from '@element-plus/icons-vue';
 import { useTransitionFallthroughEmits } from 'element-plus';
+import { SelectProps } from 'element-plus/es/components/select-v2/src/defaults';
 
 
 function resourceMTV(data) {
@@ -26,6 +27,7 @@ export default {
             progress: 0,
             selectValue: "",
             status: {},
+            checkAllState: false,
             options: [{
                     value: 'Json',
                     label: '转换Json'
@@ -47,20 +49,26 @@ export default {
             window.GetConf().then((e) => {
                 if (e.code == 0) {
                     this.conf = e.conf;
-                    if (e.conf.convert == 'json') {
-                        this.selectValue = "转换Json";
+                    if (e.conf.convert == 'Json') {
+                        this.selectValue = "Json";
                         this.convertMethod = window.ConvertJson;
                     }
                     else {
-                        this.selectValue = "转换Bin";
+                        this.selectValue = "Bin";
                         this.convertMethod = window.Convert;
                     }
                 }
             });
-            this.nodes = [];
+            this.$refs.tree.setCheckedNodes([]);
+
             window.GetResourceNameAll().then((e) => {
                 let viewData = resourceMTV(e);
+                this.checkAllState = false;
                 this.nodes = viewData;
+                this.$nextTick(()=>{
+                  this.$refs.tree.setCheckedNodes([]);
+                })
+                
             });
         },
         renderLog(logs) {
@@ -69,21 +77,29 @@ export default {
             }
         },
         clickConvert() {
-            console.log("cc");
+            console.log(this.selectValue);
             let nodes = this.$refs.tree.getCheckedKeys().concat(this.$refs.tree.getHalfCheckedKeys());
             if (nodes.length == 0)
                 return;
             this.progress = 0;
             this.status = {};
+            if (this.selectValue == "Json") {
+                this.convertMethod = window.ConvertJson;
+            }
+            else {
+                this.convertMethod = window.Convert;
+            }
             this.convertOne(nodes, 0);
         },
         convertOne(nodes, idx) {
-            console.log(this.selectValue);
+            
             if (idx < nodes.length) {
                 let req = {
                     res_name: nodes[idx]
                 };
+                console.log(req);
                 try {
+                  
                     this.convertMethod(req).then((e) => {
                         if (e.log) {
                             this.renderLog(e.log);
@@ -135,11 +151,14 @@ export default {
             this.logs = [];
             this.nodes = [];
             this.status = {};
+            this.checkAllState = false;
             window.Refresh(req).then((e) => {
                 this.getConf();
+               
                 if (e.log) {
                     this.renderLog(e.log);
                 }
+                
             });
         },
         handleCheckAllChange(x) {
@@ -174,11 +193,11 @@ export default {
       <el-row :gutter="10" style="height:100%">
         <el-col :xs="10" :sm="8" :md="6" :lg="6" :xl="6">
           <el-card style="height:100%">
-            <el-checkbox size="mini" 
+            <el-checkbox size="mini" v-model="checkAllState"
               @change="handleCheckAllChange" style="padding:0px;margin-left:26.5px;">
             All</el-checkbox>
-            <el-tree ref="tree" node-key="id" show-checkbox :data="nodes" :props="defaultProps" @node-click="handleNodeClick" default-expand-all>
-              <template #default="{ node}">
+            <el-tree ref="tree" node-key="id" show-checkbox :data="nodes"  @node-click="handleNodeClick" default-expand-all :default-checked_keys="[]">
+              <template #default="{node}">
                 <span class="custom-tree-node" >
                   <span>{{ node.label }}</span>
                   <span>

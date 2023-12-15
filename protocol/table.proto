@@ -16,6 +16,14 @@ enum COMM_LENGTH {
     MAX_DESC_LENGTH = 512;
 }
 
+enum ATTR {
+    ATTR_MAX_HP = 0;
+    ATTR_ATK = 1;
+    ATTR_DEF = 2;
+    ATTR_CTI = 3;
+}
+
+
 message Option {
     string szName = 1[(AExt.size) = "RES::MAX_OPTION_NAME_LENGTH"];
     int32 iType = 2;
@@ -77,3 +85,12 @@ message Money {
     int32 iHardLimitMax = 2;
 }
 
+message Buffer {
+    option (AExt.file_name) ="ResBuff.json";
+    option (AExt.xlsx_name) ="Buffer.xlsx";
+    option (AExt.sheet_name) ="Buffer";
+    option (AExt.key_name) ="iType";
+    int32 iType = 1;
+    ATTR enAttr = 2;
+
+}
