@@ -16,13 +16,6 @@ enum COMM_LENGTH {
     MAX_DESC_LENGTH = 512;
 }
 
-enum ATTR {
-    ATTR_MAX_HP = 0;
-    ATTR_ATK = 1;
-    ATTR_DEF = 2;
-    ATTR_CTI = 3;
-}
-
 message Option {
     string szName = 1[(AExt.size) = "RES::MAX_OPTION_NAME_LENGTH"];
     int32 iType = 2;
