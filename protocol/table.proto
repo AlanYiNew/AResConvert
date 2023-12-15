@@ -4,8 +4,8 @@ package Res;
 
 enum COMM_LENGTH {
     option allow_alias = true;
-    LENGTH_INVALID = 0;
-    MAX_OPTION_COUNT = 4;
+    MAX_LENGTH_IVALID = 0;
+    OPTION_COUNT = 4;
     MAX_EVENT_TITLE_LENGTH = 128;
     MAX_EVENT_CONTENT_LENGTH = 512;
     MAX_OPTION_NAME_LENGTH = 128;
@@ -23,12 +23,12 @@ enum ATTR {
     ATTR_CTI = 3;
 }
 
-
 message Option {
     string szName = 1[(AExt.size) = "RES::MAX_OPTION_NAME_LENGTH"];
     int32 iType = 2;
     int32 iJump = 3;
     int32 iPop = 4;
+    int32 iResult = 5;
     int32 iVal = 6;
 }
 
@@ -36,21 +36,19 @@ message Event {
     option (AExt.file_name) ="ResEvent.json";
     option (AExt.xlsx_name) ="LifeSimulator.xlsx";
     option (AExt.sheet_name) ="Event";
-    option (AExt.key_name) ="iId";
     int32 iId = 1;
     int32 iStatus = 2;
     string szTitle = 3[(AExt.size) = "RES::MAX_EVENT_TITLE_LENGTH"];
     string szContent = 4[(AExt.size) = "RES::MAX_EVENT_CONTENT_LENGTH"];
     int32 iStartRound = 5;
     int32 iEndRound = 6;
-    repeated Option astOptions = 7[(AExt.count) = "RES::MAX_OPTION_COUNT"];
+    repeated Option astOptions = 7[(AExt.count) = "RES::OPTION_COUNT"];
 }
 
 message Ending {
     option (AExt.file_name) ="ResEnding.json";
     option (AExt.xlsx_name) ="LifeSimulator.xlsx";
     option (AExt.sheet_name) ="Ending";
-    option (AExt.key_name) ="iId";
     int32 iId = 1;
     string szTitle = 2[(AExt.size) = "RES::MAX_ENDING_TITLE_LENGTH"];
     string szPic = 3[(AExt.size) = "RES::MAX_PIC_URL_LENGTH"];
@@ -60,7 +58,6 @@ message Property {
     option (AExt.file_name) ="ResProperty.json";
     option (AExt.xlsx_name) ="LifeSimulator.xlsx";
     option (AExt.sheet_name) ="Property";
-    option (AExt.key_name) ="iId";
     int32 iId = 1;
     string szName = 2[(AExt.size) = "RES::MAX_PROPERTY_NAME_LENGTH"];
     int32 iDefault = 3;
@@ -70,7 +67,6 @@ message Result {
     option (AExt.file_name) ="ResResult.json";
     option (AExt.xlsx_name) ="LifeSimulator.xlsx";
     option (AExt.sheet_name) ="Result";
-    option (AExt.key_name) ="iId";
     int32 iId = 1;
     string szName = 2[(AExt.size) = "RES::MAX_RESULT_NAME_LENGTH"];
     string szDesc = 3[(AExt.size) = "RES::MAX_DESC_LENGTH"];
@@ -80,7 +76,6 @@ message Money {
     option (AExt.file_name) ="ResMoney.json";
     option (AExt.xlsx_name) ="Money.xlsx";
     option (AExt.sheet_name) ="Money";
-    option (AExt.key_name) ="iType";
     int32 iType = 1;
     int32 iHardLimitMax = 2;
 }
@@ -92,5 +87,4 @@ message Buffer {
     option (AExt.key_name) ="iType";
     int32 iType = 1;
     ATTR enAttr = 2;
-
 }
