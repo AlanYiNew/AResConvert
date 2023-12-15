@@ -33,6 +33,7 @@ public:
 
 struct Application {
     Application();
+    ~Application();
 
     std::vector<std::string> err_message;
     std::vector<std::unique_ptr<char[]>> plugin_arguments;
@@ -41,9 +42,10 @@ struct Application {
     bool SerializeToBin(const std::string& res_name); 
     bool SerializeToJson(const std::string& res_name); 
     bool WriteJsonToFile(std::FILE* f, std::unordered_map<std::string, AMessageMeta>& message_meta_map, const std::vector<OpenXLSX::XLCellValue>&, const std::unordered_map<std::string, int>& field_to_index_mapping, const std::string& res_name, const std::string& col_name);
-    bool GetPrimitiveValForJson(FIELDTYPE field_type, const std::vector<OpenXLSX::XLCellValue>& row_data, int col_index, std::string& val);
+    bool GetPrimitiveValForJson(const AFieldMeta& field_meta, const std::vector<OpenXLSX::XLCellValue>& row_data, int col_index, std::string& val);
 
     bool LoadSetting(const std::string& path, int argc, char* argv[]); 
+    bool SaveSetting(const std::string& path);
     void Run(); 
 
     json Upload(const json& req);
@@ -64,6 +66,8 @@ private:
     std::unique_ptr<MD5> m_md5{};
     void RunBrowserMode();
     void RunCommandMode();
+    std::unordered_map<std::string, AEnumMeta> m_enum_meta_map;
+    std::string m_setting_file_name = "setup.json";
 
 #ifdef _WIN32
     bool WriteInt32Cell(char* record_buffer, const ATableFieldMeta& field_meta, const OpenXLSX::XLCellValue& cell);
@@ -73,6 +77,7 @@ private:
     bool WriteInt16Cell(char* record_buffer, const ATableFieldMeta& field_meta, const OpenXLSX::XLCellValue& cell);
     bool WriteUInt16Cell(char* record_buffer, const ATableFieldMeta& field_meta, const OpenXLSX::XLCellValue& cell);
     bool WriteInt64Cell(char* record_buffer, const ATableFieldMeta& field_meta, const OpenXLSX::XLCellValue& cell);
+    bool WriteEnumCell(char* record_buffer, const ATableFieldMeta& field_meta, const AEnumMeta& enum_meta, const OpenXLSX::XLCellValue& cell);
     bool WriteUInt64Cell(char* record_buffer, const ATableFieldMeta& field_meta, const OpenXLSX::XLCellValue& cell);
     bool WriteDoubleCell(char* record_buffer, const ATableFieldMeta& field_meta, const OpenXLSX::XLCellValue& cell);
     bool WriteFloatCell(char* record_buffer, const ATableFieldMeta& field_meta, const OpenXLSX::XLCellValue& cell);
@@ -83,6 +88,7 @@ private:
     template<typename T>
     bool GetNumberCellVal(const std::vector<OpenXLSX::XLCellValue>& row, int index, std::string& val);
     bool GetStringCellVal(const std::vector<OpenXLSX::XLCellValue>& row, int index, std::string& val);
+    bool GetEnumCellVal(const std::vector<OpenXLSX::XLCellValue>& row, int index, AEnumMeta& enum_meta, std::string& val);
 
 #endif
 };

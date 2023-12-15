@@ -108,6 +108,32 @@ json Application::Upload(const json& req) {
     return result;
 }
 
+bool Application::GetEnumCellVal(const std::vector<OpenXLSX::XLCellValue>& row, int index, AEnumMeta& enum_meta, std::string& val) {
+    if (index >= row.size()) {
+        val = "0";
+        return true;
+    }
+
+    const OpenXLSX::XLCellValue& cell = row[index];
+    if  (cell.type() == OpenXLSX::XLValueType::Integer) {
+        val = std::to_string(cell.get<int32_t>());
+    }   else if (cell.type() == OpenXLSX::XLValueType::String) {
+        std::string enum_val = cell.get<std::string>();
+        auto iter = enum_meta.meta_data.find(enum_val);
+        if (iter == enum_meta.meta_data.end()) {
+            GOOGLE_LOG(WARNING) << "Invalid cell.enum_value:" << enum_val << ", cell.col:" << GetCellCol(index);
+            return false;       
+        }
+        val = std::to_string(iter->second.value);
+    }   else if (cell.type() == OpenXLSX::XLValueType::Empty) {
+        val = "0";
+    }   else {
+        GOOGLE_LOG(WARNING) << "Invalid cell.type:" << (int)cell.type() << ", cell.col:" << GetCellCol(index);
+        return false;
+    }
+    return true;
+}
+
 bool Application::GetStringCellVal(const std::vector<OpenXLSX::XLCellValue>& row, int index, std::string& val) {
     if (index >= row.size()) {
         val = "\"\"";
@@ -136,6 +162,27 @@ bool Application::WriteInt32Cell(char* record_buffer, const ATableFieldMeta& fie
         val = cell.get<int32_t>();
     }   else if (cell.type() == OpenXLSX::XLValueType::Empty) {
         val = 0;
+    }   else if (cell.type() != OpenXLSX::XLValueType::Integer) {
+        return false;
+    }
+    WriteInt32(record_buffer + field_meta.offset, val);
+    return true;
+}
+
+bool Application::WriteEnumCell(char* record_buffer, const ATableFieldMeta& field_meta, const AEnumMeta& enum_meta, const OpenXLSX::XLCellValue& cell) {
+    int32_t val;
+    if  (cell.type() == OpenXLSX::XLValueType::Integer) {
+        val = cell.get<int32_t>();
+    }   else if (cell.type() == OpenXLSX::XLValueType::Empty) {
+        val = 0;
+    }   else if (cell.type() == OpenXLSX::XLValueType::String) {
+        std::string enum_val = cell.get<std::string>();
+        auto iter = enum_meta.meta_data.find(enum_val);
+        if (iter == enum_meta.meta_data.end()) {
+            GOOGLE_LOG(WARNING) << "Invalid cell.enum_value:" << enum_val;
+            return false;       
+        }
+        val = iter->second.value;
     }   else if (cell.type() != OpenXLSX::XLValueType::Integer) {
         return false;
     }
@@ -340,6 +387,7 @@ bool Application::SerializeToJson(const std::string& res_name) {
         int key_index = iter->second;
 
         std::unordered_map<std::string, AMessageMeta> message_meta_map = aresconvert_generator->GetMessageMeta();
+        m_enum_meta_map = aresconvert_generator->GetEnumMeta();
         auto message_meta_iter = message_meta_map.find(res_name);
         if (message_meta_iter == message_meta_map.end()) {
             GOOGLE_LOG(ERROR) << "Fail to find message_meta:" << res_name;
@@ -364,7 +412,7 @@ bool Application::SerializeToJson(const std::string& res_name) {
 
             std::string key;
             const std::vector<OpenXLSX::XLCellValue>& values = rowData.values();
-            if (!GetPrimitiveValForJson(field_meta_iter->second.field_type, values, key_index, key)) {
+            if (!GetPrimitiveValForJson(field_meta_iter->second, values, key_index, key)) {
                 GOOGLE_LOG(INFO) << "fail to get key:" << key << " in row:" << rowNo;
                 return false;
             }
@@ -393,9 +441,10 @@ bool Application::SerializeToJson(const std::string& res_name) {
     return true;
 }
 
-bool Application::GetPrimitiveValForJson(FIELDTYPE field_type, const std::vector<OpenXLSX::XLCellValue>& row_data, int col_index, std::string& val)
+bool Application::GetPrimitiveValForJson(const AFieldMeta& field_meta, const std::vector<OpenXLSX::XLCellValue>& row_data, int col_index, std::string& val)
 {
     bool ret = false;
+    FIELDTYPE field_type = field_meta.field_type;
     switch (field_type) {
         case FIELDTYPE_INT16: {
             ret = GetNumberCellVal<int16_t>(row_data, col_index, val);
@@ -430,6 +479,15 @@ bool Application::GetPrimitiveValForJson(FIELDTYPE field_type, const std::vector
         };break;
         case FIELDTYPE_STRING: {
             ret = GetStringCellVal(row_data, col_index, val);
+        };break;
+        case FIELDTYPE_ENUM: {
+            auto iter  = m_enum_meta_map.find(field_meta.type_name);
+            if (iter == m_enum_meta_map.end()) {
+                GOOGLE_LOG(ERROR) << "Invalid field_type:" << (int)field_type << ", col:" << GetCellCol(col_index) << ", enum:" << field_meta.type_name;
+                ret = false;
+                break;
+            }
+            ret = GetEnumCellVal(row_data, col_index, iter->second, val);
         };break;
         default:
             GOOGLE_LOG(ERROR) << "Invalid field_type:" << (int)field_type << ", col:" << GetCellCol(col_index);
@@ -478,7 +536,7 @@ bool Application::WriteJsonToFile(std::FILE* f, std::unordered_map<std::string, 
                     };
                 }   else {
                     std::string val;
-                    if (!GetPrimitiveValForJson(iter.second.field_type, row_data, col_index, val)) {
+                    if (!GetPrimitiveValForJson(iter.second, row_data, col_index, val)) {
                         GOOGLE_LOG(WARNING) << "WritePrimitiveValToFile fail";
                         return false;
                     }
@@ -511,7 +569,7 @@ bool Application::WriteJsonToFile(std::FILE* f, std::unordered_map<std::string, 
                 };
             }   else {
                 std::string val;
-                if (!GetPrimitiveValForJson(iter.second.field_type, row_data, col_index, val)) {
+                if (!GetPrimitiveValForJson(iter.second, row_data, col_index, val)) {
                     GOOGLE_LOG(WARNING) << "WritePrimitiveValToFile fail";
                     return false;
                 }
@@ -564,22 +622,23 @@ bool Application::SerializeToBin(const std::string& res_name) {
         int col_count = wks.columnCount();
 
         auto message_meta = aresconvert_generator->GetMetaOut();
+        m_enum_meta_map = aresconvert_generator->GetEnumMeta();
         std::map<std::string, ATableFieldMeta> field_metas = message_meta.GetFieldMetas();
         std::vector<ColData> columns;
         std::unordered_set<std::string> col_names;
 
         const std::vector<OpenXLSX::XLCellValue>& values = wks.row(first_row).values();
+        GOOGLE_LOG(INFO) << values.size();
         for (const auto& cell: values) {
             int size = columns.size();
             std::string name = cell.get<std::string>();
-            auto field_meta = message_meta.GetFieldMeta(name);
-
-            if (col_names.find(name) != col_names.end()) {
+            if (col_names.find(name) != col_names.end() && name != "") {
                 GOOGLE_LOG(ERROR) << "Duplicate column name: " << name;
                 return false;
             }
             col_names.insert(name);
 
+            auto field_meta = message_meta.GetFieldMeta(name);
             if (field_meta != nullptr) {
                 columns.emplace_back(*field_meta, true);
                 field_metas.erase(name);
@@ -643,12 +702,21 @@ bool Application::SerializeToBin(const std::string& res_name) {
                     case FIELDTYPE_FLOAT: { result = WriteFloatCell(offset, field_meta, cell);} break;
                     case FIELDTYPE_DOUBLE: { result = WriteDoubleCell(offset, field_meta, cell);} break;
                     case FIELDTYPE_STRING: { result = WriteStringCell(offset, field_meta, cell);} break;
+                    case FIELDTYPE_ENUM: {  
+                        auto iter = m_enum_meta_map.find(field_meta.type_name);
+                        if (iter == m_enum_meta_map.end()) {
+                             GOOGLE_LOG(ERROR) << "Fail to get enum_meta by name:" << field_meta.type_name;
+                             return false;
+                        }
+                        result = WriteEnumCell(offset, field_meta, iter->second, cell);
+                    } break;
                     default: {
                                  GOOGLE_LOG(ERROR) << "Invalid field_type: " << field_type;
                              }
                 }
                 if (!result) {
                     GOOGLE_LOG(ERROR) << GetCellNo(rowNo, col);
+                    return false;
                 }
             }
         }
@@ -677,6 +745,23 @@ bool Application::SerializeToBin(const std::string& res_name) {
     }
 
 #endif
+    return true;
+}
+
+
+bool Application::SaveSetting(const std::string& path) {
+    std::ofstream jfile(path);
+    if (!jfile.is_open()) {
+        GOOGLE_LOG(ERROR) << "Could not open the file";
+        return false;
+    }
+
+    try {
+        jfile << conf_json;
+    }   catch (json::exception& e) {
+        GOOGLE_LOG(ERROR) << "Fail Save json files: " <<  path <<  ", " <<  e.what(); 
+        return false;
+    }
     return true;
 }
 
@@ -839,12 +924,13 @@ json Application::ConvertBin(const json& req) {
     if (!SerializeToBin(res_name)) {
         result["message"] = "fail";
         result["code"] == -1;
-        GOOGLE_LOG(INFO) << "Convert Bin failed!!!";
+        GOOGLE_LOG(INFO) << res_name + " Convert Bin failed!!!";
     }   else {
         result["message"] = "success";
         result["code"] == 0;
-        GOOGLE_LOG(INFO) << "Convert Bin failed!!!";
+        GOOGLE_LOG(INFO) << res_name + " Convert Bin Succeed!!!";
     }
+    conf_json["convert"] = "Bin";
     return result;
 }
 
@@ -869,13 +955,18 @@ json Application::ConvertJson(const json& req) {
     if (!SerializeToJson(res_name)) {
         result["message"] = "fail";
         result["code"] == -1;
-        GOOGLE_LOG(INFO) << "Convert Json failed!!!";
+        GOOGLE_LOG(INFO) << res_name + " Convert Json failed!!!";
     }   else {
         result["message"] = "success";
         result["code"] == 0;
-        GOOGLE_LOG(INFO) << "Convert Json " + res_name + " succeed!!!";
+        GOOGLE_LOG(INFO) << res_name + "Convert Json " + res_name + " succeed!!!";
     }
+    conf_json["convert"] = "Json";
     return result;
+}
+
+Application::~Application(){
+    SaveSetting(m_setting_file_name);
 }
 
 json Application::GetResourceNameAll(const json& req) {
@@ -891,7 +982,7 @@ json Application::Refresh(const json& req) {
     err_message.clear();
     plugin_arguments.clear();
     aresconvert_generator = std::make_unique<AResConvertGenerator>();
-    if (LoadSetting("setup.json", m_argc, m_argv)) {
+    if (LoadSetting(m_setting_file_name, m_argc, m_argv)) {
         Run();
     }
     GOOGLE_LOG(INFO) << "Refresh succeed.";

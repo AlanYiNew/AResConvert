@@ -26,19 +26,20 @@ struct DataInfo {
 
 struct ATableFieldMeta {
     std::string name;
+    std::string type_name;
     int32_t size;
     int32_t offset;
     FIELDTYPE field_type;
     ATableFieldMeta() =  default;
-    ATableFieldMeta(const std::string& field, FIELDTYPE field_type, int32_t size, int32_t offset): field_type(field_type), name(field), size(size), offset(offset) {};
+    ATableFieldMeta(const std::string& field, const std::string& type_name, FIELDTYPE field_type, int32_t size, int32_t offset): field_type(field_type), type_name(type_name), name(field), size(size), offset(offset) {};
 };
 
 struct ATableMeta {
     int32_t m_size{}; // size of bytes of the records
     std::map<std::string, ATableFieldMeta> meta_data;
     std::string md5;
-    void CreateField(const std::string& name, FIELDTYPE field_type, int32_t size) {
-        meta_data.emplace(name, ATableFieldMeta{name, field_type, size, m_size});
+    void CreateField(const std::string& name, const std::string& type_name, FIELDTYPE field_type, int32_t size) {
+        meta_data.emplace(name, ATableFieldMeta{name, type_name, field_type, size, m_size});
         m_size += size;
     };
     const ATableFieldMeta* GetFieldMeta(const std::string& name) const {
@@ -62,6 +63,12 @@ struct ATableMeta {
     std::string GetMetaMD5() {
         return md5; 
     }
+
+    void Clear() {
+        md5 = "";
+        meta_data.clear();
+        m_size = 0;
+    }
 };
 
 class AResConvertGenerator: public CodeGenerator {
@@ -77,6 +84,7 @@ public:
     std::string FindBinFileNameByMessageName(const std::string& message_name) const;
     const ATableMeta& GetMetaOut() const { return m_table_meta; };
     const std::unordered_map<std::string, AMessageMeta>& GetMessageMeta() const { return m_message_meta; };
+    const std::unordered_map<std::string, AEnumMeta>& GetEnumMeta() const { return m_enum_meta; };
     std::string FindKeyNameByMessageName(const std::string& message_name) const;
 
 private:
@@ -101,6 +109,7 @@ private:
     mutable DataInfo m_info;
     mutable ATableMeta m_table_meta;
     mutable std::unordered_map<std::string, AMessageMeta> m_message_meta;
+    mutable std::unordered_map<std::string, AEnumMeta> m_enum_meta;
 
     bool Flatten(const FileDescriptor* file, const Descriptor* md, ATableMeta& vec, const std::string& prefix="") const;
     bool GetEnumValue(const FileDescriptor* file, const std::string enum_name, int* count) const;
