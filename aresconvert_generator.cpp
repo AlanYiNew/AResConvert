@@ -226,7 +226,7 @@ bool AResConvertGenerator::Flatten(const FileDescriptor* file, const Descriptor*
                             return false;
                         }
                         std::string field_name = Concat(prefix, field->name() + std::to_string(i+1));
-                        meta.CreateField(field_name, GetFieldType(field), type_size);
+                        meta.CreateField(field_name, GetStructTypeName(field), GetFieldType(field), type_size);
                     }
 
                 }
@@ -236,7 +236,7 @@ bool AResConvertGenerator::Flatten(const FileDescriptor* file, const Descriptor*
                         return false;
                     }
                     std::string field_name = Concat(prefix, field->name());
-                    meta.CreateField(field_name, GetFieldType(field), type_size); 
+                    meta.CreateField(field_name, GetStructTypeName(field), GetFieldType(field), type_size); 
                 }
                 break;
         }
@@ -263,6 +263,7 @@ bool AResConvertGenerator::Convert(const FileDescriptor* file, const std::string
         ERR_RETURN("Fail to find " + message_name, false);
     }
 
+    m_table_meta.Clear();
     AMessageMeta message_meta(message_name);
     if (CreateMessageMetaFromDescriptor(file, md, message_meta)) {
         auto y = message_meta.GetMD5();
@@ -328,6 +329,18 @@ bool AResConvertGenerator::CollectMessageMetaFromDescriptor(const FileDescriptor
             if (!CollectMessageMetaFromDescriptor(file, field_descriptor->message_type(), message_meta_map)) {
                 GOOGLE_LOG(ERROR) << "Fail Collect Message Meta of " << field_descriptor->name() << "\n"; 
             };
+        }   else if (field_meta.field_type == FIELDTYPE_ENUM) {
+            if (m_enum_meta.find(descriptor->name()) != m_enum_meta.end()) {
+                continue;
+            }
+            const EnumDescriptor* enum_descriptor = field_descriptor->enum_type(); 
+            AEnumMeta enum_meta(enum_descriptor->name());
+            for (int j = 0; j < enum_descriptor->value_count(); j++)
+            {
+                const EnumValueDescriptor* value_descriptor = enum_descriptor->value(j);
+                enum_meta.CreateEnumFieldMeta(AEnumFieldMeta(value_descriptor->name(), value_descriptor->number()));
+            }
+            m_enum_meta.emplace(enum_descriptor->name(), enum_meta);
         }
     }
     message_meta_map.emplace(message_meta.GetName(), message_meta);
@@ -355,6 +368,21 @@ bool AResConvertGenerator::CreateMessageMetaFromDescriptor(const FileDescriptor*
         AFieldMeta field_meta(field_descriptor->name(), GetFieldType(field_descriptor), GetStructTypeName(field_descriptor), size, offset, count, repeated);
         message_meta.CreateFieldMeta(field_meta);
         offset += count * size; 
+
+
+        if (field_meta.field_type == FIELDTYPE_ENUM) {
+            if (m_enum_meta.find(descriptor->name()) != m_enum_meta.end()) {
+                continue;
+            }
+            const EnumDescriptor* enum_descriptor = field_descriptor->enum_type(); 
+            AEnumMeta enum_meta(enum_descriptor->name());
+            for (int j = 0; j < enum_descriptor->value_count(); j++)
+            {
+                const EnumValueDescriptor* value_descriptor = enum_descriptor->value(j);
+                enum_meta.CreateEnumFieldMeta(AEnumFieldMeta(value_descriptor->name(), value_descriptor->number()));
+            }
+            m_enum_meta.emplace(enum_descriptor->name(), enum_meta);
+        }
     }
     return true;
 }
@@ -482,7 +510,7 @@ FIELDTYPE AResConvertGenerator::GetFieldType(const FieldDescriptor* field) const
         case FieldDescriptor::CPPTYPE_UINT64:
             return FIELDTYPE_UINT64;
         case FieldDescriptor::CPPTYPE_ENUM:
-            return FIELDTYPE_INT32;
+            return FIELDTYPE_ENUM;
         case FieldDescriptor::CPPTYPE_STRING:
             return FIELDTYPE_STRING;
         case FieldDescriptor::CPPTYPE_MESSAGE:
@@ -527,7 +555,7 @@ std::string AResConvertGenerator::GetStructTypeName(const FieldDescriptor* field
         case FieldDescriptor::TYPE_UINT32:
             return "uint32_t";
         case FieldDescriptor::TYPE_ENUM:
-            return field->type_name();
+            return field->enum_type()->name();
     }
     assert(false && "Invalid type given");
     return "";
