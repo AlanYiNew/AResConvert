@@ -78,6 +78,6 @@ message Buffer {
     option (AExt.xlsx_name) ="Buffer.xlsx";
     option (AExt.sheet_name) ="Buffer";
     option (AExt.key_name) ="iType";
-    int32 iType = 1;
+    int32 iType = 1; 
     ATTR enAttr = 2;
 }
