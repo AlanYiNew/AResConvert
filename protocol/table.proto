@@ -50,6 +50,7 @@ message Ending {
     option (AExt.file_name) ="ResEnding.json";
     option (AExt.xlsx_name) ="LifeSimulator.xlsx";
     option (AExt.sheet_name) ="Ending";
+    option (AExt.key_name) ="iId";
     int32 iId = 1;
     string szTitle = 2[(AExt.size) = "RES::MAX_ENDING_TITLE_LENGTH"];
     string szPic = 3[(AExt.size) = "RES::MAX_PIC_URL_LENGTH"];
@@ -59,6 +60,7 @@ message Property {
     option (AExt.file_name) ="ResProperty.json";
     option (AExt.xlsx_name) ="LifeSimulator.xlsx";
     option (AExt.sheet_name) ="Property";
+    option (AExt.key_name) ="iId";
     int32 iId = 1;
     string szName = 2[(AExt.size) = "RES::MAX_PROPERTY_NAME_LENGTH"];
     int32 iDefault = 3;
@@ -68,6 +70,7 @@ message Result {
     option (AExt.file_name) ="ResResult.json";
     option (AExt.xlsx_name) ="LifeSimulator.xlsx";
     option (AExt.sheet_name) ="Result";
+    option (AExt.key_name) ="iId";
     int32 iId = 1;
     string szName = 2[(AExt.size) = "RES::MAX_RESULT_NAME_LENGTH"];
     string szDesc = 3[(AExt.size) = "RES::MAX_DESC_LENGTH"];
@@ -77,6 +80,7 @@ message Money {
     option (AExt.file_name) ="ResMoney.json";
     option (AExt.xlsx_name) ="Money.xlsx";
     option (AExt.sheet_name) ="Money";
+    option (AExt.key_name) ="iType";
     int32 iType = 1;
     int32 iHardLimitMax = 2;
 }
