@@ -1613,7 +1613,7 @@ public:
   }
 
   // Asynchronous bind
-  void bind(const std::string &name, binding_t f, void *arg) {
+  void bind(const std::string &name, binding_t f, void *arg = nullptr) {
     if (bindings.count(name) == 0) {
       bindings[name] = new binding_ctx_t(new binding_t(f), arg, false);
       bind_js(name);

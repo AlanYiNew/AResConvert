@@ -13,45 +13,6 @@
 
 Application app;
 
-template <typename Func, typename Obj>
-auto HandlerWrapper(Func f, Obj* obj)
-{
-    auto handler = [=](const std::string &s) -> std::string {
-        auto& log_stream = app.GetLogStream();
-        auto old_cerr = std::cerr.rdbuf();
-        auto old_cout = std::cout.rdbuf();
-        std::cerr.rdbuf(log_stream.rdbuf());
-        std::cout.rdbuf(log_stream.rdbuf());
-        json result;
-        try
-        {
-            json req = json::parse(s);
-            result = (obj->*f)(std::forward<json>(req));
-        }
-        catch (json::parse_error& ex)
-        {
-            result["code"] = -1;
-            GOOGLE_LOG(ERROR) << "parse error at byte " + ex.byte;
-        }
-        std::cout.rdbuf(old_cout);
-        std::cerr.rdbuf(old_cerr);
-
-        // LogHandling
-        const std::string& logs = log_stream.str();
-        if (logs.size() != 0) {
-            std::vector<std::string> out = stringSplit(logs, "\n");
-            for (auto& x: out){
-                result["log"].push_back(x);
-            }
-        }
-        log_stream.str("");
-
-        return result.dump();
-
-    };
-    return handler;
-}
-
 void CustomLogHandler(LogLevel level, const char* filename, int line, const std::string& message) {
     const char* level_name = nullptr;
     switch (level) {
@@ -89,12 +50,12 @@ int main(int argc, char* argv[]) {
 
 #ifdef _WIN32
     webview::webview w(true, nullptr, 1920, 1080);
-    w.bind("Convert", HandlerWrapper(&Application::ConvertBin, &app));
-    w.bind("ConvertJson", HandlerWrapper(&Application::ConvertJson, &app));
-    w.bind("GetResourceNameAll", HandlerWrapper(&Application::GetResourceNameAll, &app));
-    w.bind("GetConf", HandlerWrapper(&Application::GetConf, &app));
-    w.bind("Refresh", HandlerWrapper(&Application::Refresh, &app));
-    w.bind("Upload", HandlerWrapper(&Application::Upload, &app));
+    w.bind("Convert", app.HandlerWrapper(&Application::ConvertBin, &w));
+    w.bind("ConvertJson", app.HandlerWrapper(&Application::ConvertJson, &w));
+    w.bind("GetResourceNameAll", app.HandlerWrapper(&Application::GetResourceNameAll, &w));
+    w.bind("GetConf", app.HandlerWrapper(&Application::GetConf, &w));
+    w.bind("Refresh", app.HandlerWrapper(&Application::Refresh, &w));
+    w.bind("Upload", app.HandlerWrapper(&Application::Upload, &w));
     w.navigate("https://appassets.example/index.html");
     w.run();
 #endif

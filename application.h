@@ -3,6 +3,8 @@
 
 #include "aresconvert_generator.h"
 #include "md5.h"
+#include "helpers.h"
+#include "task_dispatcher.h"
 #include <memory>
 #include <cstdio>
 #ifdef _WIN32
@@ -48,6 +50,52 @@ struct Application {
     bool SaveSetting(const std::string& path);
     void Run(); 
 
+    template <typename Func, typename Resolver>
+    auto HandlerWrapper(Func f, Resolver resolver)
+    {
+        auto handler = [=](const std::string &seq, const std::string &s, void* arg) -> void {
+            try
+            {
+                json req = json::parse(s);
+                m_task_dispatcher.dispatch([seq, req, f, arg, resolver, this](){
+                    auto& log_stream = GetLogStream();
+                    auto old_cerr = std::cerr.rdbuf();
+                    auto old_cout = std::cout.rdbuf();
+                    std::cerr.rdbuf(log_stream.rdbuf());
+                    std::cout.rdbuf(log_stream.rdbuf());
+
+                    json result = (this->*f)(req);
+                    std::cout.rdbuf(old_cout);
+                    std::cerr.rdbuf(old_cerr);
+
+                    // LogHandling
+                    const std::string& logs = log_stream.str();
+                    if (logs.size() != 0) {
+                        std::vector<std::string> out = stringSplit(logs, "\n");
+                        for (auto& x: out) {
+                            result["log"].push_back(x);
+                        }
+                    }
+                    log_stream.str("");
+                    int ret = 0;
+                    if (!result["code"].is_null()) {
+                        ret = result["code"].get<int>();
+                    }
+                    resolver->resolve(seq, ret, result.dump()); 
+                });
+            }
+            catch (json::parse_error& ex)
+            {
+                json result;
+                result["code"] = -1;
+                GOOGLE_LOG(ERROR) << "parse error at byte " + ex.byte;
+                auto w = (Resolver*)arg;
+                resolver->resolve(seq, -1, result.dump()); 
+            }
+        };
+        return handler;
+    }
+
     json Upload(const json& req);
     json ConvertBin(const json& req);
     json ConvertJson(const json& req);
@@ -68,6 +116,7 @@ private:
     void RunCommandMode();
     std::unordered_map<std::string, AEnumMeta> m_enum_meta_map;
     std::string m_setting_file_name = "setup.json";
+    TaskDispatcher m_task_dispatcher{1}; 
 
 #ifdef _WIN32
     bool WriteInt32Cell(char* record_buffer, const ATableFieldMeta& field_meta, const OpenXLSX::XLCellValue& cell);
