@@ -36,6 +36,7 @@ message Event {
     option (AExt.file_name) ="ResEvent.json";
     option (AExt.xlsx_name) ="LifeSimulator.xlsx";
     option (AExt.sheet_name) ="Event";
+    option (AExt.key_name) ="iId";
     int32 iId = 1;
     int32 iStatus = 2;
     string szTitle = 3[(AExt.size) = "RES::MAX_EVENT_TITLE_LENGTH"];
